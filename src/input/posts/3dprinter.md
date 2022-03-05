@@ -28,3 +28,4 @@ What else should you do to cure bordem but buy a 3D Printer. I have so many idea
 
 - https://www.3djake.uk/anycubic-3d-printer-and-accessories/mega-s?sai=7073
 - https://www.3djake.uk/3djake/uk-universal-adaptor?sai=11040
+- https://www.anycubic.com/products/anycubic-i3-mega-s
