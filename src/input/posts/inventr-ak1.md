@@ -11,6 +11,10 @@ published: 2022-12-09
 
 <!-- # 30 Days Lost in Space - Inventr -->
 
+<?# Markdown ?>
+<?!^ "./../includes/posts/inventr-ak1.md" /?>
+<?#/ Markdown ?>
+
 Having worked with some arduino stuff after watching Frank's streams on Twitch (see [Build Light](/buildlight)), I'd been talking to a mate who said he'd bought the following for his son. What better way to get a good broad understand of a number of items but to get a whole kit trying out various pieces of hardware.
 
 Look out for more posts for each Day I work on...
@@ -51,3 +55,7 @@ Starting with those dang lights, it’s kind of hard to fix complex systems if y
 - https://inventr.io/
 - https://inventr.io/product/adventure-kit-30-days-lost-in-space/
 - https://inventr.io/courses/adventurekit30dayslostinspace/
+- https://github.com/inventrdotio
+- https://github.com/inventrdotio/30DaysLostInSpace
+
+- https://fritzing.org/
