@@ -11,9 +11,19 @@ published: 2023-03-15
 
 <!-- # Adventure Kit 2 - Inventr -->
 
+<?# Markdown ?>
+<?!^ "./../includes/posts/inventr-ak2.md" /?>
+<?#/ Markdown ?>
+
 Without even finishing [30 Days Lost in Space](/30-days-lost-in-space) I went ahead and bought Adventure Kit 2 - AI Apocalypse. This has even more hardware devices!
 
 !["Adventure Kit 2"](images/inventr/adventurekit2.png "Adventure Kit 2")
+
+!["Adventure Kit 2"](images/inventr/ak2/AI_Apocalypse_1.jpg "Adventure Kit 2")
+
+!["Adventure Kit 2"](images/inventr/ak2/AI_Apocalypse_2.jpg "Adventure Kit 2")
+
+!["Adventure Kit 2"](images/inventr/ak2/AI_Apocalypse_3.jpg "Adventure Kit 2")
 
 ## Cost
 
@@ -27,5 +37,8 @@ Without even finishing [30 Days Lost in Space](/30-days-lost-in-space) I went ah
 ## Links
 
 - https://inventr.io/
+- https://inventr.io/dayzero
 - https://inventr.io/product/adventure-kit-2/
 - https://inventr.io/courses/adventure-kit-2-day-0/
+- https://github.com/inventrdotio
+- https://github.com/inventrdotio/AdventureKit2
