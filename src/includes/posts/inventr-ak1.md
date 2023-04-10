@@ -1,2 +1,7 @@
 - [30 Days Lost in Space](inventr-ak1)
 - [Day 1](inventr-ak1-day1)
+- [Day 2](inventr-ak1-day2)
+- [Day 3](inventr-ak1-day3)
+- [Day 4](inventr-ak1-day4)
+- [Day 5](inventr-ak1-day5)
+- [Day 6](inventr-ak1-day6)
