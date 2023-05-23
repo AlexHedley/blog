@@ -5,10 +5,11 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AlexHedley">
 
-  <title>Alex Hedley - Paged Archive</title>
+  <title>Alex Hedley - Comparing a file</title>
 
-  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/paged-archive'>
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/comparing-a-file'>
 
       <link type="application/rss+xml" rel="alternate" href="/blog/feed.rss" />
       <link type="application/atom+xml" rel="alternate" href="/blog/feed.atom" />
@@ -17,9 +18,9 @@
   <meta name="msapplication-tooltip" content='Alex Hedley' />
   <meta name="msapplication-starturl" content='/blog/' />
 
-  <meta property="og:title" content='Alex Hedley - Paged Archive' />
+  <meta property="og:title" content='Alex Hedley - Comparing a file' />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/paged-archive' />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/comparing-a-file' />
 
   <link rel="icon" href='/blog/favicon.ico'>
 
@@ -77,9 +78,11 @@
       <div class="col-md-12">
         <div class='post-heading'>
           <h1>
-            Paged Archive
+            Comparing a file
           </h1>
-            <div class="meta">Published on Tuesday, 23 May 2023</div>
+            <div class="meta">Published on Tuesday, 14 June 2011</div>
+              <div class="mt-3">
+              </div>
         </div>
       </div>
     </div>
@@ -91,19 +94,22 @@
   <div class="container">
     <div class="row">
       <div id="content" class="col-md-12">
-        <p>
-    This is a paged archive that lists all the documents from the <code>posts</code> folder in pages of 4 items without any sorting.
-    Note that the <code>Title</code> setting is needed to populate the titles for each page. Alternativly, you can set <code>ArchiveTitle</code> to have full control over the page title.
-<p>
-
-<p class="font-weight-bold">Page 1</p>
-
-    <h5><a href="/blog/posts/ios-programming-itunes-file-sharing-emailing-a-file">iOS Programming - iTunes File Sharing &amp;amp; Emailing a File</a></h5>
-<p>So I've spent some of the day integrating the iTunes File Sharing and then how to Import/Export that File, also adding that option through an email.</p>    <h5><a href="/blog/posts/welcome">My First Post</a></h5>
-<p>Hi All, I've decided to start a blog, yes I could have added one by another company but thought I’d create my own for training/learning principles etc.</p>    <h5><a href="/blog/posts/scary-bugs-part-33-completed">Scary Bugs Part 3/3 Completed</a></h5>
-<p>So that's part 3 completed.</p>    <h5><a href="/blog/posts/starting-ios-development">Starting iOS Development</a></h5>
-<p>I'm going through a book called '<a href="http://learningiphoneprogramming.com/">Learning iPhone Programming</a>' by Alasdair Allan.</p>
-    <div><a class="btn btn-primary" href="/blog/posts/paged-archive/2" role="button">Next Page <i class="fas fa-angle-double-right"></i></a></div>
+        <p>So I've been hard at work again today going through a some iOS tutorials.</p>
+<p>Making silly mistakes as usual but hey, best way to learn.</p>
+<p>Ran an app and wasn't getting the results I need so I tracked down where it was, couldn't figure it out so copied the solution code into my code, ran it and it worked. Clearly I can't copy from a webpage into Xcode.</p>
+<p>Looked at the code, compared it, compared it line by line, looked at it again and still couldn't work it out.</p>
+<p>So this got me thinking there must be file comparison tools out there.</p>
+<p>I did a quick search on google and there are many but I didn't want to download any, there must be an online solution. I found a blog that suggested using <a href="https://docs.google.com/">Google Docs</a>, create a new doc, paste in the code, save it,  delete the code, paste in the second lot of code, save it,  now click on File -&gt; See revision history. Now this should show up the changes, wasn't quite what I wanted, unless I was looking at it wrong, but may come in useful somewhere down the line.</p>
+<p>Next I found it could be done in the terminal.</p>
+<p>Comm a.txt b.txt</p>
+<p>The result was quite complex looking as I haven't worked in the terminal for a few years, should probably get back there as it is very powerful and much quicker than windows based alternatives, although they have their place. I think the columns the text was in denoted whether it was the same or not depending on the file.</p>
+<p>Next I did a quick search for it in Textmate and there it was in a bundles - <strong>Bundles -&gt; Diff</strong></p>
+<p>Hazarr saved both versions, sample and my incorrect attempt, <strong>Bundles -&gt; Diff -&gt; Document with Arbitrary file ...</strong> and there appears a colourful version showing what is different.</p>
+<p>Guess what, I copied a line wrong and couldn't see for looking!</p>
+<p><img src="images/5834364128_c2b0c88a3b_z.jpg" alt="" title="Fill Difference" /></p>
+<p>Serves me right for copying the initial [playerElement addChild:nameElement]; and only changing the RHS and not checking the LHS.</p>
+<p>Well this lesson has taught me a few new things in different programs so has had some use.</p>
+<p><a href="https://alexhedley.wordpress.com/2011/06/14/comparing-a-file/">Original Link</a></p>
 
 
         
