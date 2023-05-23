@@ -4,7 +4,88 @@
 	<title />
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-05-15T18:21:13Z</updated>
+	<updated>2023-05-23T07:30:21Z</updated>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/for-orchestra</id>
+		<title>For Orchestra</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/for-orchestra" />
+		<updated>2011-04-11T00:00:00Z</updated>
+		<content>&lt;p&gt;So I was listening to Scott Mills on BBC Radio 1 today and he was playing a few songs from &lt;a href="http://fororchestra.com/"&gt;For Orchestra&lt;/a&gt; by Walt Ribeiro. Some cool orchestral versions of songs you might know.&lt;/p&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/instagram</id>
+		<title>Instagram</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/instagram" />
+		<updated>2011-04-08T00:00:00Z</updated>
+		<content>&lt;p&gt;I love &lt;a href="http://instagr.am/"&gt;Instagram&lt;/a&gt; :) I need to take more photos tho, just be more creative.&lt;/p&gt;
+&lt;p&gt;I've come across two sites since they released their &lt;a href="http://instagram.com/developer/"&gt;API&lt;/a&gt; that do some cool things.&lt;/p&gt;
+&lt;p&gt;The first is &lt;a href="http://instagoodies.com/"&gt;Insta Goodies&lt;/a&gt; &amp;quot;Stickers of your Instagram photos!&amp;quot; hence the reason I need to take more photos.&lt;/p&gt;
+&lt;p&gt;The next is &lt;a href="http://instagrid.me/"&gt;Instagrid&lt;/a&gt; - &amp;quot;A Clean Web Gallery For Your Instagram Photos&amp;quot;, this is because there isn't an easy way on the web to see all your photos, you can scan through your feed on the iPhone app but it's small etc. Hopefully more things will become available soon or make your own using the API!&lt;/p&gt;
+&lt;p&gt;Edit: &lt;a href="http://hatchcraft.com/"&gt;Hatchcraft&lt;/a&gt; - BOO BOX – bamboo shadow box frames for your photos and art &amp;#64;Hatchcraft - Twitter&lt;/p&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/syntax-hightling-update</id>
+		<title>Syntax Hightling Update</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/syntax-hightling-update" />
+		<updated>2011-02-16T00:00:00Z</updated>
+		<content>&lt;p&gt;So I've added a theme switcher to the syntax highlighting on the 599 pages and maybe other coding pages later, took a theme switcher I'd used from a magazine tutorial from a while back. Need to style it so it looks better but its functional.&lt;/p&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/code-highlighting</id>
+		<title>Code Highlighting</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/code-highlighting" />
+		<updated>2011-02-14T00:00:00Z</updated>
+		<content>&lt;p&gt;I've started making more tutorials and putting them up on here. I was using a crude method of divs and classes to highlight different code which looked ok but I'd seen it looks much better on other sites so I went looking and found &lt;a href="http://alexgorbatchev.com/SyntaxHighlighter/"&gt;Syntax Highlighter&lt;/a&gt; which does an amazing job. I've used it on &lt;a href="http://alexhedley.com/testing/twitter.asp"&gt;My Twitter integration tutorial&lt;/a&gt; locally and a quick hosted &lt;a href="http://alexhedley.com/workings/highlighter/index.html"&gt;demo&lt;/a&gt;. I think it makes the page look a lot better. I'm gonna add it to my 599CD Classroom, hopefully in the next couple of days.&lt;/p&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/project-list</id>
+		<title>Project List</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/project-list" />
+		<updated>2011-01-02T00:00:00Z</updated>
+		<content>&lt;p&gt;Just added a new page with the Web &lt;a href="http://alexhedley.com/projects/"&gt;Projects&lt;/a&gt; I'm working on, should be an expanding list :)&lt;/p&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/quotes</id>
+		<title>Quotes</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/quotes" />
+		<updated>2010-11-19T00:00:00Z</updated>
+		<content>&lt;p&gt;Misquotations are the only quotations that are never misquoted.&amp;quot; - Hesketh Pearson&lt;/p&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/css3</id>
+		<title>CSS3</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/css3" />
+		<updated>2010-11-09T00:00:00Z</updated>
+		<content>&lt;p&gt;Just seen a video by Think Vitamin and they showed a cool &lt;a href="http://neography.com/experiment/circles/solarsystem/"&gt;example&lt;/a&gt; of the border-radius and transitions (Only in Chrome or Safari) Also cool &lt;a href="http://neography.com/journal/css-transforms-font-face-experiment/"&gt;text&lt;/a&gt; Check &lt;a href="http://webkit.org/blog-files/3d-transforms/morphing-cubes.html"&gt;this&lt;/a&gt; out in Safari!&lt;/p&gt;
+</content>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/welcome</id>
 		<title>My First Post</title>
@@ -13,5 +94,16 @@
 		<content>&lt;p&gt;Hi All, I've decided to start a blog, yes I could have added one by another company but thought I’d create my own for training/learning principles etc.&lt;/p&gt;
 </content>
 		<summary>&lt;p&gt;Hi All, I've decided to start a blog, yes I could have added one by another company but thought I’d create my own for training/learning principles etc.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/rss-feeds</id>
+		<title>RSS Feeds</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/rss-feeds" />
+		<updated>2010-11-08T00:00:00Z</updated>
+		<content>&lt;p&gt;I've added RSS Feeds for this blog, the Music list and the film list They are all separate so you add only the ones you wish, if you want to.&lt;/p&gt;
+</content>
 	</entry>
 </feed>
