@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AlexHedley">
+
+  <title>Alex Hedley - Custom UIAlertController in ObjC</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/custom-uialertcontroller-in-objc'>
+
+      <link type="application/rss+xml" rel="alternate" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - Custom UIAlertController in ObjC' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/custom-uialertcontroller-in-objc' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead no-image">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            Custom UIAlertController in ObjC
+          </h1>
+            <div class="meta">Published on Tuesday, 25 April 2017</div>
+              <div class="mt-3">
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <p>Custom UIAlertController in Objc</p>
+<p>[gist 7dbb81c526aa3facceb461ea3a19d83e /]</p>
+<p><code>Alert.m</code></p>
+<pre><code class="language-objectivec">//http://hayageek.com/uialertcontroller-example-ios/
+
+- (void)alert {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:&#64;&quot;Info&quot; message:&#64;&quot;You are using UIAlertController&quot; preferredStyle:UIAlertControllerStyleAlert];
+        
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:&#64;&quot;OK&quot;
+                                                 style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction * action)
+                         {
+                             [alert dismissViewControllerAnimated:YES completion:nil];
+                         }];
+    
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:&#64;&quot;Cancel&quot;
+                                                     style:UIAlertActionStyleCancel
+                                                   handler:^(UIAlertAction * action)
+                             {
+                                 [alert dismissViewControllerAnimated:YES completion:nil];
+                             }];
+    [cancel setValue:[UIColor redColor] forKey:&#64;&quot;titleTextColor&quot;];
+    
+    [alert addAction:cancel];
+    [alert addAction:ok];
+    [alert setPreferredAction:ok];
+        
+    [self presentViewController:alert animated:YES completion:nil];
+}
+</code></pre>
+<p><code>CustomAlert.m</code></p>
+<pre><code class="language-objectivec">- (void)showAlert {
+    // http://stackoverflow.com/a/26530577/2895831
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:&#64;&quot;Dont care what goes here, since we're about to change below&quot; message:&#64;&quot;&quot; preferredStyle:UIAlertControllerStyleAlert]; //UIAlertControllerStyleActionSheet
+    NSMutableAttributedString *hogan = [[NSMutableAttributedString alloc] initWithString:&#64;&quot;Presenting the great... Hulk Hogan!&quot;];
+    [hogan addAttribute:NSFontAttributeName
+                  value:[UIFont systemFontOfSize:50.0]
+                  range:NSMakeRange(24, 11)];
+    
+    
+    //[[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:kFont size:17.0f], NSFontAttributeName, titleColor, NSForegroundColorAttributeName, nil]];
+    [hogan addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(24, 11)];
+    
+    [alertVC setValue:hogan forKey:&#64;&quot;attributedTitle&quot;];
+    
+    NSMutableAttributedString *hogan2 = [[NSMutableAttributedString alloc] initWithString:&#64;&quot;Super Leg Drop!&quot;];
+    [hogan addAttribute:NSFontAttributeName
+                  value:[UIFont systemFontOfSize:30.0]
+                  range:NSMakeRange(0, [hogan length])];
+    
+    //[[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:kFont size:17.0f], NSFontAttributeName, titleColor, NSForegroundColorAttributeName, nil]];
+    [hogan2 addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(0, [hogan2 length])];
+    
+    [alertVC setValue:hogan2 forKey:&#64;&quot;attributedMessage&quot;];
+    
+    UIAlertAction *button = [UIAlertAction actionWithTitle:&#64;&quot;Label text&quot;
+                                                     style:UIAlertActionStyleDefault
+                                                   handler:^(UIAlertAction *action){
+                                                       //add code to make something happen once tapped
+                                                   }];
+    UIImage *accessoryImage = [UIImage imageNamed:&#64;&quot;someImage&quot;];
+    [button setValue:accessoryImage forKey:&#64;&quot;image&quot;];
+    
+    [alertVC addAction:button];
+    
+    [alertVC addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = NSLocalizedString(&#64;&quot;Code&quot;, nil);
+        textField.textColor = [UIColor redColor];
+        textField.tintColor = [UIColor greenColor];
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+    }];
+    
+    [alertVC addAction:[UIAlertAction actionWithTitle:NSLocalizedString(&#64;&quot;OK&quot;, nil)
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction *action)
+                                {
+                                    UITextField *textField = [alertVC.textFields firstObject];
+                                    NSLog(&#64;&quot;%&#64;&quot;, textField.text);
+                                }]
+     ];
+    
+    //http://stackoverflow.com/a/39853234/2895831
+    UIView *firstSubview = alertVC.view.subviews.firstObject;
+    UIView *alertContentView = firstSubview.subviews.firstObject;
+    for (UIView *subSubView in alertContentView.subviews) { //This is main catch
+        subSubView.backgroundColor = [UIColor darkGrayColor]; //Here you change background
+    }
+    
+    [self presentViewController:alertVC animated:YES completion:nil];
+    alertVC.view.tintColor = [UIColor purpleColor];
+    
+    //Change the background color of the UITextField view
+    //http://stackoverflow.com/a/30225592/2895831
+    for (UIView *textfield in alertVC.textFields) {
+        UIView *container = textfield.superview;
+        UIView *effectView = container.superview.subviews[0];
+        
+        if (effectView &amp;&amp; [effectView class] == [UIVisualEffectView class]){
+            container.backgroundColor = [UIColor purpleColor]; //[UIColor clearColor];
+            //[effectView removeFromSuperview];
+        }
+    }
+}
+</code></pre>
+<ul>
+<li><a href="http://hayageek.com/uialertcontroller-example-ios/">http://hayageek.com/uialertcontroller-example-ios/</a></li>
+<li><a href="https://iosdevcenters.blogspot.com/2016/05/hacking-uialertcontroller-in-swift.html">https://iosdevcenters.blogspot.com/2016/05/hacking-uialertcontroller-in-swift.html</a></li>
+</ul>
+<p>[gallery ids=&quot;976,981&quot; type=&quot;rectangular&quot;]</p>
+<p><img src="images/simulator-screen-shot-25-apr-2017-14-50-06.png" alt="" />
+<img src="images/uialertcontroller-2.png" alt="" /></p>
+<p>You can change the background colour of the Alert too.</p>
+<p>Change the colour of added controls like UITextField too!</p>
+<p><em>Links</em></p>
+<p>Hacking UIAlertController in Swift. <a href="https://iosdevcenters.blogspot.com/2016/05/hacking-uialertcontroller-in-swift.html">https://iosdevcenters.blogspot.com/2016/05/hacking-uialertcontroller-in-swift.html</a></p>
+<p>UIAlertController custom font, size, color <a href="http://stackoverflow.com/a/26530577/2895831">http://stackoverflow.com/a/26530577/2895831</a></p>
+
+
+        
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2023</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+  
+
+  
+
+</body>
+
+</html>
