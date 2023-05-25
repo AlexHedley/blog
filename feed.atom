@@ -4,7 +4,419 @@
 	<title />
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-05-25T13:33:13Z</updated>
+	<updated>2023-05-25T14:22:30Z</updated>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/delegates-and-navigation-controllers</id>
+		<title>Delegates and Navigation Controllers</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/delegates-and-navigation-controllers" />
+		<updated>2016-11-28T00:00:00Z</updated>
+		<content>&lt;p&gt;Using Delegates with Navigation Controllers&lt;/p&gt;
+&lt;p&gt;Get the nav controller first.&lt;/p&gt;
+&lt;p&gt;[gist b044059d586dd051b4c88225df1168b4]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Controller.m&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showLocations"]) {
+        //LocationsTableViewController *ltvc = (LocationsTableViewController *)[segue destinationViewController];
+        
+        UINavigationController *navController = [segue destinationViewController];
+        LocationsTableViewController *ltvc = (LocationsTableViewController *)([navController viewControllers][0]);
+        ltvc.delegate = self;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2016/11/28/delegates-and-navigation-controllers/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Using Delegates with Navigation Controllers&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/tvml-tvos-10</id>
+		<title>TVML tvOS 10</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/tvml-tvos-10" />
+		<updated>2016-06-18T00:00:00Z</updated>
+		<content>&lt;p&gt;So there's an updated TVML Catalog sample code project out.&lt;/p&gt;
+&lt;p&gt;Instead of having js files that make an XML file, it's just a straight XML file now. Makes much more sense to me to have it this way.&lt;/p&gt;
+&lt;p&gt;TVML Catalog: Using TVML Templates&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.apple.com/library/prerelease/content/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505-Intro-DontLinkElementID_2"&gt;https://developer.apple.com/library/prerelease/content/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505-Intro-DontLinkElementID_2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another thing they've changed is they suggest using Ruby instead of Python.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ruby -run -ehttpd . -p9001&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I think this might &amp;nbsp;be to get around the fact videos locally didn't work with Python, I still need to test this.&lt;/p&gt;
+&lt;p&gt;In most of my previous files I was using template=".xml.js" whereas now they use documentURL=".xml" so one to check on.&lt;/p&gt;
+&lt;p&gt;I've also amended a couple of files to get video playback working, the documentcontroller.js was the place to add it.&lt;/p&gt;
+&lt;p&gt;[gist 1f510cc84ce9968642383aa62b621643]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Catalog.xml&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;&amp;lt;listItemLockup videoURL=""&amp;gt;
+  &amp;lt;ordinal minLength="2" class="ordinalLayout"&amp;gt;0&amp;lt;/ordinal&amp;gt;
+  &amp;lt;title&amp;gt;Introduction&amp;lt;/title&amp;gt;
+  &amp;lt;subtitle&amp;gt;0&amp;lt;/subtitle&amp;gt;
+  &amp;lt;decorationLabel&amp;gt;(9:58)&amp;lt;/decorationLabel&amp;gt;
+&amp;lt;/listItemLockup&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;DocumentController.js&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;class DocumentController {
+...
+    setupDocument(document) {
+        document.addEventListener("select", this.handleEvent);
+        document.addEventListener("play", this.handleEvent);
+    }
+...
+    handleEvent(event) {
+        const target = event.target;
+        ...
+        const videoURL = target.getAttribute("videoURL");
+        ...
+        } else if (videoURL) {
+            var player = new Player();
+            var playlist = new Playlist();
+            var mediaItem = new MediaItem("video", videoURL);
+
+            player.playlist = playlist;
+            player.playlist.push(mediaItem);
+            player.play();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A useful dub dub video to watch is the following.&lt;/p&gt;
+&lt;p&gt;WWDC 212 - Developing tvOS Apps Using TVMLKit: Part 1&lt;/p&gt;
+&lt;p&gt;(&lt;a href="https://developer.apple.com/videos/play/wwdc2016/212/"&gt;https://developer.apple.com/videos/play/wwdc2016/212/&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;The video/slides do cover a basic example:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://devstreaming.apple.com/videos/wwdc/2016/212s41rh77qgdg26s86/212/212_developing_tvos_apps_using_tvmlkit_part_1.pdf"&gt;http://devstreaming.apple.com/videos/wwdc/2016/212s41rh77qgdg26s86/212/212_developing_tvos_apps_using_tvmlkit_part_1.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;// Setting up a TVMLKit JS Video Player
+
+var video = new MediaItem('video', '[https://example.com/video.m3u8](https://example.com/video.m3u8)');
+
+video.title = 'My Great Movie';
+
+video.description = 'An extensive description...';
+
+video.resumeTime = 10.0; // seconds
+
+var playlist = new Playlist();
+
+playlist.push(video);
+
+var player = new Player();
+
+player.playlist = playlist;
+
+player.play(); // Present the player
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The AudioVideo sample code hasn't been updated yet and there isn't an example of video playback in the above Catalog sample, the WWDC video was handy though. I like the embedded player in a lockup.&lt;/p&gt;
+&lt;p&gt;TVMLAudioVideo: Audio and Video Playback on tvOS&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.apple.com/library/tvos/samplecode/TVMLAudioVideo/Introduction/Intro.html#//apple_ref/doc/uid/TP40016506"&gt;https://developer.apple.com/library/tvos/samplecode/TVMLAudioVideo/Introduction/Intro.html#//apple_ref/doc/uid/TP40016506&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Check out the new MediaContent docs:&lt;/p&gt;
+&lt;p&gt;MediaContent&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/CompoundMultimediaElements.html#//apple_ref/doc/uid/TP40015064-CH46-SW2https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/CompoundMultimediaElements.html#//apple_ref/doc/uid/TP40015064-CH46-SW2"&gt;https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/CompoundMultimediaElements.html#//apple_ref/doc/uid/TP40015064-CH46-SW2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2016/06/18/tvml-tvos-10/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;So there's an updated TVML Catalog sample code project out.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/using-itmstransporter-to-upload-game-centre-achievements</id>
+		<title>Using iTMSTransporter to upload Game Centre Achievements</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/using-itmstransporter-to-upload-game-centre-achievements" />
+		<updated>2016-04-09T00:00:00Z</updated>
+		<content>&lt;p&gt;I'm currently creating a game &lt;a href="https://alexhedley.wordpress.com/category/movem/"&gt;Movem&lt;/a&gt;, and I wanted to add some &lt;a href="https://developer.apple.com/game-center/"&gt;Game Center&lt;/a&gt; achievements. I'd done this before in another app I'm making for &lt;a href="http://www.jacktrelawny.com/keyquizzes.html"&gt;Kernowland Quizzes&lt;/a&gt;&amp;nbsp;(still in development). There are only a couple of achievements there so wasn't much hassle to create them manually but here I want 1 for each of the 50 levels. This would be a big pain to do.&lt;/p&gt;
+&lt;p&gt;[gallery ids="525,524,526" type="rectangular"]&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/add-achievement.png" alt=""&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/add-language.png" alt=""&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/features-game-center-group-achievements.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;So I turned to twitter and asked &lt;a href="https://twitter.com/krausefx"&gt;@KrauseFx&lt;/a&gt;&amp;nbsp;as I thought he might know.&lt;/p&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p dir="ltr" lang="en"&gt;&lt;a href="https://twitter.com/AlexHedley"&gt;@AlexHedley&lt;/a&gt; You can also use iTunes Transporter as far as I know&lt;/p&gt;— Felix Krause (@KrauseFx) &lt;a href="https://twitter.com/KrauseFx/status/718526581950427136"&gt;April 8, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;Researching a little I found the app should be in either Xcode or App Transporter. Some SO answers said it was under the MacOS folder but I found it to be now just under itms in the Contents folder.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/MacOS/itms/ bin =&amp;gt; /Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/itms/bin&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now to find some information about the app itself, lets look to &lt;a href="https://itunesconnect.apple.com/"&gt;iTunesConnect&lt;/a&gt; &lt;a href="https://itunespartner.apple.com/en/apps/overview"&gt;Resources and Help&lt;/a&gt; under &lt;a href="http://itunespartner.apple.com/en/apps/guides"&gt;Apps&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Open the terminal and navigate to the above folder:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./iTMSTransporter -m diagnostic&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Next we want to download the information we have on an app so we can use the&amp;nbsp;lookupMetadata flag.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./iTMSTransporter -m lookupMetadata -u # -p # -apple_id # -subitemtype GameCenterAchievement -destination "#"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Replace the #s with your actual inputs.&lt;/p&gt;
+&lt;p&gt;This will download a file "&lt;em&gt;AppleID&lt;/em&gt;.itmsp", if you double click this it will open in Application Loader, you don't want this, instead Right+Click and Show Package Contents:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/show-package-contents.png" alt="Show Package Contents.png"&gt;&lt;/p&gt;
+&lt;p&gt;There's a file called "metadata.xml", open this in your editor of choice, Xcode works fine since it's just XML.&lt;/p&gt;
+&lt;p&gt;I'm interested in the Game Center info so scroll down:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;&amp;lt;game_center&amp;gt;
+&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;lt;achievements&amp;gt;
+&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;...
+&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;lt;/achievements&amp;gt;
+&amp;lt;/game_center&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Within here are a couple of achievements I've already created, from research errors can occur if you remove these and re-upload so either leave them in and only make additions to the file or remove them from iTunesConnect and run&amp;nbsp;lookupMetadata again.&lt;/p&gt;
+&lt;p&gt;I needed at least one already created so I had a template to work with.&lt;/p&gt;
+&lt;p&gt;I created a playground as this would be the quickest way to create what I needed&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;for i in 1...50 {
+&amp;nbsp; &amp;nbsp; print(blah \\(i))
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I just needed to replace the number with \(i) in all the places necessary and show the console.&lt;/p&gt;
+&lt;p&gt;[gist 06bab62bee6402d97f3eb3c5cf6db9d4/]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;GameCenterAchievements.swift&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;for i in 1...50 {
+    print("&amp;lt;achievement position=\"\(i)\"&amp;gt;")
+    print("   &amp;lt;achievement_id&amp;gt;grp.alexhedley.movem.levels.\(i)&amp;lt;/achievement_id&amp;gt;")
+    print("   &amp;lt;reference_name&amp;gt;Level \(i)&amp;lt;/reference_name&amp;gt;")
+    print("   &amp;lt;points&amp;gt;20&amp;lt;/points&amp;gt;")
+    print("   &amp;lt;hidden&amp;gt;false&amp;lt;/hidden&amp;gt;")
+    print("   &amp;lt;locales&amp;gt;")
+    print("       &amp;lt;locale name=\"en-US\"&amp;gt;")
+    print("           &amp;lt;title&amp;gt;Level \(i)&amp;lt;/title&amp;gt;")
+    print("           &amp;lt;before_earned_description&amp;gt;Complete Level \(i)&amp;lt;/before_earned_description&amp;gt;")
+    print("           &amp;lt;after_earned_description&amp;gt;Level \(i) Completed&amp;lt;/after_earned_description&amp;gt;")
+    print("           &amp;lt;achievement_after_earned_image&amp;gt;")
+    print("               &amp;lt;size&amp;gt;373711&amp;lt;/size&amp;gt;")
+    print("               &amp;lt;file_name&amp;gt;Game_20Center_20Level.png&amp;lt;/file_name&amp;gt;")
+    print("               &amp;lt;checksum type=\"md5\"&amp;gt;b2a849caa092e5bee3e117e67f54fd35&amp;lt;/checksum&amp;gt;")
+    print("           &amp;lt;/achievement_after_earned_image&amp;gt;")
+    print("       &amp;lt;/locale&amp;gt;")
+    print("   &amp;lt;/locales&amp;gt;")
+    print("&amp;lt;/achievement&amp;gt;")
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Copy and paste that back into the&amp;nbsp;"metadata.xml" and I'm ready to upload.&lt;/p&gt;
+&lt;p&gt;First thing to do is &lt;strong&gt;verify&lt;/strong&gt; the file.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./iTMSTransporter -m verify -f "#/\[AppleId\].itmsp" -u # -p #&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now I can &lt;strong&gt;upload&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./iTMSTransporter -m upload -f "#/\[AppleId\].itmsp" -u # -p #&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;There was one thing that was missing, the image file:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ERROR: The file Game_20Center_20Level.png is from the list of files requested by Apple, but it was not found locally.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To fix this I just renamed the file I'd uploaded in iTunesConnect to match the above and added it to the PackageContents folder and all was good.&lt;/p&gt;
+&lt;p&gt;I'd originally tried the "lookupMetadata"&amp;nbsp;without the -subitemtype flag but got an error when trying to upload,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ERROR ITMS-10001: "Multiple items in this package use the same vendor ID. Use unique vendor IDs for the items [leaderboard, achievement] and resubmit the package." at Software/SoftwareMetadata&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;main&gt; DBG-X: The error code is: 1102
+&lt;/main&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Learn more about Game Center in Chapters 25 and 26 of&amp;nbsp;&lt;a href="https://www.raywenderlich.com/store/2d-ios-tvos-games-by-tutorials"&gt;2D iOS &amp;amp; tvOS Games by Tutorials&lt;/a&gt;&amp;nbsp;from Ray Wenderlich.&lt;/p&gt;
+&lt;p&gt;Links &lt;a href="https://twitter.com/AlexHedley/status/718513616132161536"&gt;https://twitter.com/AlexHedley/status/718513616132161536&lt;/a&gt; &lt;a href="https://twitter.com/KrauseFx/status/718526581950427136"&gt;https://twitter.com/KrauseFx/status/718526581950427136&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://itunespartner.apple.com/en/apps/guides"&gt;http://itunespartner.apple.com/en/apps/guides&lt;/a&gt; &lt;a href="https://help.apple.com/itc/transporteruserguide/"&gt;https://help.apple.com/itc/transporteruserguide/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/11205998/ios-game-center-achievement-upload"&gt;http://stackoverflow.com/questions/11205998/ios-game-center-achievement-upload&lt;/a&gt; &lt;a href="http://bou.io/UploadingScreenshotsWithITMSTransporter.html"&gt;http://bou.io/UploadingScreenshotsWithITMSTransporter.html&lt;/a&gt; &lt;a href="http://www.cyrilchandelier.com/having-fun-with-itmstransporter"&gt;http://www.cyrilchandelier.com/having-fun-with-itmstransporter&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="whats-new-in-itunes-connect"&gt;What's New in iTunes Connect&lt;/h3&gt;
+&lt;p&gt;WWDC 2013 - &lt;a href="https://developer.apple.com/videos/play/wwdc2013/306/"&gt;Session 306&lt;/a&gt; - iOS, OS X&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://web.archive.org/web/20150216153821/http://realmacsoftware.com/blog/mastering-itunes-connect-transporter"&gt;http://web.archive.org/web/20150216153821/http://realmacsoftware.com/blog/mastering-itunes-connect-transporter&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/realmacsoftware/RMConnecter"&gt;https://github.com/realmacsoftware/RMConnecter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2016/04/09/using-itmstransporter-to-upload-game-centre-achievements/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;I'm currently creating a game &lt;a href="https://alexhedley.wordpress.com/category/movem/"&gt;Movem&lt;/a&gt;, and I wanted to add some &lt;a href="https://developer.apple.com/game-center/"&gt;Game Center&lt;/a&gt; achievements. I'd done this before in another app I'm making for &lt;a href="http://www.jacktrelawny.com/keyquizzes.html"&gt;Kernowland Quizzes&lt;/a&gt; (still in development). There are only a couple of achievements there so wasn't much hassle to create them manually but here I want 1 for each of the 50 levels. This would be a big pain to do.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/movem-progress</id>
+		<title>Movem progress</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/movem-progress" />
+		<updated>2016-03-28T00:00:00Z</updated>
+		<content>&lt;p&gt;I've made some progress on my movem game&lt;/p&gt;
+&lt;p&gt;[gallery ids="496,495,493,497,500" type="rectangular"]&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/12439453_10153904295042626_704539446687422450_n.jpg" alt=""&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/12920253_10153904294997626_7004068413552353298_n.jpg" alt=""&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/9590_10153904295237626_3349345897379034331_n.jpg" alt=""&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/simulator-screen-shot-28-mar-2016-14-49-20.png" alt=""&gt;&lt;/p&gt;
+&lt;!-- ![](images/simulator-screen-shot-28-mar-2016-14-49-201.png "") --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/simulator-screen-shot-28-mar-2016-16-06-12.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Main Menu&lt;/p&gt;
+&lt;p&gt;Level select parsed from the plist&lt;/p&gt;
+&lt;p&gt;HUD updating with Moves, Pushes and Level&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2016/03/28/movem-progress/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;I've made some progress on my movem game&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/movem-level-editor</id>
+		<title>Movem Level Editor</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/movem-level-editor" />
+		<updated>2016-03-19T00:00:00Z</updated>
+		<content>&lt;p&gt;I've been working a little more on my Movem port, and there are over 50 levels, so I thought I'd make a level editor, one to speed up creating the levels, one because it's flipped using the code from boxxle and two because I could then create my own levels.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/screen-shot-2016-03-19-at-22-11-37.png" alt="Screen Shot 2016-03-19 at 22.11.37.png"&gt;&lt;/p&gt;
+&lt;p&gt;True I still need to create a sokoban solver to make sure&lt;/p&gt;
+&lt;p&gt;I used one to create a solution for another iOS game once:&amp;nbsp;https://www.youtube.com/watch?v=9IodB2OrpuE&lt;/p&gt;
+&lt;p&gt;I used the following as a starting block for my level builder:&lt;/p&gt;
+&lt;p&gt;Code&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.knowstack.com/minesweeper-game-for-mac-os-written-in-cocoa-objective-c/"&gt;http://www.knowstack.com/minesweeper-game-for-mac-os-written-in-cocoa-objective-c/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2016/03/19/movem-level-editor/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;I've been working a little more on my Movem port, and there are over 50 levels, so I thought I'd make a level editor, one to speed up creating the levels, one because it's flipped using the code from boxxle and two because I could then create my own levels.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/movem-ios-game</id>
+		<title>Movem iOS game</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/movem-ios-game" />
+		<updated>2016-03-06T00:00:00Z</updated>
+		<content>&lt;p&gt;So I found an implementation of an iOS Sokoban game&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/kennycason/swift_boxxle"&gt;https://github.com/kennycason/swift_boxxle&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It's a year old so my first step was to update it.&lt;/p&gt;
+&lt;p&gt;I ran the Xcode updater then got to the left over errors.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;@nonobjc var isPaused: Bool = false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Touches Began&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;override func touchesBegan(touches: Set&amp;lt;UITouch&amp;gt;?, withEvent event: UIEvent?)
+
+let touch = touches!.first
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;CheckForWin&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;func checkForWin()
+
+if ~isBoxOnGoal(box)
+
+if !isBoxOnGoal(box)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I swapped out some images&lt;/p&gt;
+&lt;p&gt;Then i wanted to tile a background sprite&lt;/p&gt;
+&lt;p&gt;I found&amp;nbsp;http://www.spritekitlessons.com/tile-a-background-image-with-sprite-kit/ then I converted it&lt;/p&gt;
+&lt;p&gt;[gist id=b5e6ad227d988fe61327 file=TileSprite2.swift /]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;TileSprite2.swift&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;func createBackgroundTiled() {
+  //var coverageSize: CGSize = CGSizeMake(2000, 2000)
+  var coverageSize: CGSize = CGSizeMake(self.size.width, self.size.height)
+  var textureSize: CGRect = CGRectMake(0, 0, 32, 32)
+  var backgroundCGImage: CGImageRef = UIImage(named: "Background")!.CGImage!
+  UIGraphicsBeginImageContext(CGSizeMake(coverageSize.width, coverageSize.height))
+  var context: CGContextRef = UIGraphicsGetCurrentContext()!
+  CGContextDrawTiledImage(context, textureSize, backgroundCGImage)
+  var tiledBackground: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+  UIGraphicsEndImageContext()
+  //var backgroundTexture: SKTexture = SKTexture.textureWithCGImage(tiledBackground.CGImage!)
+  let backgroundTexture = SKTexture(CGImage: tiledBackground.CGImage!)
+  //var backgroundTiles: SKSpriteNode = SKSpriteNode.spriteNodeWithTexture(backgroundTexture)
+  var backgroundTiles: SKSpriteNode = SKSpriteNode(texture: backgroundTexture)
+  backgroundTiles.yScale = -1
+  backgroundTiles.position = CGPointMake(0, 0)
+  
+  backgroundTiles.zPosition = -1
+  backgroundTiles.position = CGPointMake(self.size.width/2, self.size.height/2)
+  
+  self.addChild(backgroundTiles)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;padNumber&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-swift"&gt;let digits = countElements(String(number))
+
+let digits = String(number).characters.count
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Links&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2011/06/14/rw-beginning-iphone-programming-finished/"&gt;https://alexhedley.wordpress.com/2011/06/14/rw-beginning-iphone-programming-finished/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2015/01/25/ios-maze-game-tutorial-initial-setup/"&gt;https://alexhedley.wordpress.com/2015/01/25/ios-maze-game-tutorial-initial-setup/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2016/03/06/movem-ios-game/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;So I found an implementation of an iOS Sokoban game&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/apple-public-beta</id>
+		<title>Apple Public Beta</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/apple-public-beta" />
+		<updated>2016-01-14T00:00:00Z</updated>
+		<content>&lt;p&gt;Signed up for the Public beta, shouldn't it be this easy for devs or am I just being lazy?&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://beta.apple.com/"&gt;https://beta.apple.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You install a certificate, which then requires a restart, really! &lt;a href="https://alexhedley.files.wordpress.com/2016/01/img_1882.png"&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_1882.png" alt=""&gt;&lt;/a&gt;&amp;nbsp; You're advised to make a backup.&lt;/p&gt;
+&lt;p&gt;Archive an iOS backup with iTunes&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://support.apple.com/HT203282"&gt;https://support.apple.com/HT203282&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then you can install the update over the air (OTA), very simple.&lt;/p&gt;
+&lt;p&gt;It installs a nice Feedback app:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_1885.jpeg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_1884.jpeg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_1887.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_1886.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_1888.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2016/01/14/apple-public-beta/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Signed up for the Public beta, shouldn't it be this easy for devs or am I just being lazy?&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/cloudkit</id>
+		<title>CloudKit</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/cloudkit" />
+		<updated>2016-01-04T00:00:00Z</updated>
+		<content>&lt;p&gt;I've been looking into CloudKit today and it looks really good.&lt;/p&gt;
+&lt;p&gt;The website is slick. Very easy to use and nice destination between Dev and Prod&lt;/p&gt;
+&lt;p&gt;Just watched WWDC 2015 - Session 710 CloudKit JS and Web Services&lt;/p&gt;
+&lt;p&gt;Think this is what I'll use for the bowling app.&lt;/p&gt;
+&lt;p&gt;Was looking into CoreData, already using FMDB, but syncing was an issue, do I store it in Dropbox. I needed to do more researching into CoreData and iCloud, this seems the better solution, plus I can sync to the Mac App I want to make and now make a website too.&lt;/p&gt;
+&lt;p&gt;There are other sessions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;715 - Tips and Tricks&lt;/li&gt;
+&lt;li&gt;704 - What's New in CloudKit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2014&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;208 - Introducing CloudKit&lt;/li&gt;
+&lt;li&gt;231 - Advanced CloudKit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2016/01/04/cloudkit/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;I've been looking into CloudKit today and it looks really good.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/goals-for-2016</id>
+		<title>Goals for 2016</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/goals-for-2016" />
+		<updated>2016-01-01T00:00:00Z</updated>
+		<content>&lt;p&gt;Thought it would be worth setting some goals for the year, then look back next year.&lt;/p&gt;
+&lt;p&gt;Finish some apps I've started&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sign Language (Apple TV)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://youtu.be/fOM4hS34HI8"&gt;https://youtu.be/fOM4hS34HI8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://youtu.be/rR0XLrDe294"&gt;https://youtu.be/rR0XLrDe294&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;599CD (Apple TV)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;This is live, just need more content, I can't get certain pages to load after mass creating them&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;599CD (iPad)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Semi working version, just need to polish it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;599CD (Android)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Carcassonne Score Keeper (iOS/Mac)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="http://www.alexhedley.com/carcassonne/"&gt;http://www.alexhedley.com/carcassonne/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bowling Score Keeper (iOS)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Wanted to add an Apple Watch&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I've finally set up my Raspberry Pi, only got it the Christmas before as a Secret Santa, just need ideas of what to do with it.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2016/01/01/goals-for-2016/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Thought it would be worth setting some goals for the year, then look back next year.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/2015-in-review</id>
 		<title>2015 in review</title>
@@ -23,329 +435,5 @@
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/12/30/2015-in-review/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
 </content>
 		<summary>&lt;p&gt;The WordPress.com stats helper monkeys prepared a 2015 annual report for this blog.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/apple-tv-app-upload-error</id>
-		<title>Apple TV App - Upload Error</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/apple-tv-app-upload-error" />
-		<updated>2015-11-28T00:00:00Z</updated>
-		<content>&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/33291394/xcode-7-1-not-authorized-to-use-this-service-error"&gt;http://stackoverflow.com/questions/33291394/xcode-7-1-not-authorized-to-use-this-service-error&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You are not authorized to use this service&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Xcode 7.1 ships with App Loader 3.3&lt;/p&gt;
-&lt;p&gt;I tried removing and adding my iTunes account, restarting Xcode, checking the provisioning profiles.&lt;/p&gt;
-&lt;p&gt;A couple of reboots later and the App loader finally worked.&lt;/p&gt;
-&lt;p&gt;Tools&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://developer.apple.com/downloads/?name=for%20Xcode"&gt;https://developer.apple.com/downloads/?name=for%20Xcode&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://itunespartner.apple.com/en/apps/tools"&gt;https://itunespartner.apple.com/en/apps/tools&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://itunesconnect.apple.com/apploader/ApplicationLoader_3.0.dmg"&gt;https://itunesconnect.apple.com/apploader/ApplicationLoader_3.0.dmg&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://itunesconnect.apple.com/apploader/ApplicationLoader_3.1.dmg"&gt;https://itunesconnect.apple.com/apploader/ApplicationLoader_3.1.dmg&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/11/28/apple-tv-app-upload-error/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/33291394/xcode-7-1-not-authorized-to-use-this-service-error"&gt;http://stackoverflow.com/questions/33291394/xcode-7-1-not-authorized-to-use-this-service-error&lt;/a&gt;&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/debugging-a-tvml-tvos-app</id>
-		<title>Debugging a TVML tvOS App</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/debugging-a-tvml-tvos-app" />
-		<updated>2015-09-14T00:00:00Z</updated>
-		<content>&lt;p&gt;If you download and open the Readme.md of the&amp;nbsp;&lt;a href="https://developer.apple.com/library/prerelease/tvos/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505"&gt;TVML Catalog&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To help debug and experiment, you can use the Safari WebInspector to attach to the JavaScript context. WebInspector provides you with a full JavaScript debugging environment. You will need to turn on the Develop menu from Safari &amp;gt; Preferences &amp;gt; Advanced. Select your device from the Develop drop down menu to see a list of running JavaScript contexts.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You will need to &lt;a href="https://developer.apple.com/downloads/?q=safari"&gt;download&lt;/a&gt; Safari 9.&lt;/p&gt;
-&lt;p&gt;Start your client app&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;python -m SimpleHTTPServer 8000&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Run your Xcode app.&lt;/p&gt;
-&lt;p&gt;Now open Safari&lt;/p&gt;
-&lt;p&gt;Turn on the Develop tab, explained above.&lt;/p&gt;
-&lt;p&gt;Then go to the &lt;strong&gt;Simulator&lt;/strong&gt; | &lt;app&gt;&lt;/app&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/screen-shot-2015-09-14-at-20-09-46.png" alt="Simulator" title="Simulator"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/screen-shot-2015-09-14-at-20-09-56.png" alt="App" title="App"&gt;&lt;/p&gt;
-&lt;p&gt;Now you will see the Web Inspector.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/screen-shot-2015-09-14-at-20-12-04.png" alt="Web Inspector" title="Web Inspector"&gt;&lt;/p&gt;
-&lt;p&gt;Debug to your hearts content.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/09/14/debugging-a-tvml-tvos-app/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;If you download and open the Readme.md of the &lt;a href="https://developer.apple.com/library/prerelease/tvos/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505"&gt;TVML Catalog&lt;/a&gt;&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/tvos-playing-a-video</id>
-		<title>tvOS Playing a Video</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/tvos-playing-a-video" />
-		<updated>2015-09-12T00:00:00Z</updated>
-		<content>&lt;p&gt;So I'd like to play a Video in an Apple TV App.&lt;/p&gt;
-&lt;p&gt;I need to look into Player from the TVJS Lib.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://developer.apple.com/library/prerelease/tvos/documentation/TVMLJS/Reference/TVJSPlayer/_Ref/index.html#//apple%5C_ref/javascript/cl/Player"&gt;https://developer.apple.com/library/prerelease/tvos/documentation/TVMLJS/Reference/TVJSPlayer\_Ref/index.html#//apple\_ref/javascript/cl/Player&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Forum&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://forums.developer.apple.com/thread/17338?sr=stream&amp;amp;ru=377"&gt;https://forums.developer.apple.com/thread/17338?sr=stream&amp;amp;ru=377&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://forums.developer.apple.com/message/52011#52011"&gt;https://forums.developer.apple.com/message/52011#52011&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://forums.developer.apple.com/message/53126#53126"&gt;https://forums.developer.apple.com/message/53126#53126&lt;/a&gt; I can play a Video using AVPlayer but need to look into the controls&lt;/p&gt;
-&lt;p&gt;[gist dac53c99670daddebd72 /]&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;application.js&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-javascript"&gt;function launchPlayer() {  
-  var player = new Player();  
-  var playlist = new Playlist();  
-  var mediaItem = new MediaItem("video", "http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov");  
-  player.playlist = playlist;  
-  player.playlist.push(mediaItem);  
-  player.present();  
-}
-
-//in application.js  
-App.onLaunch = function(options) {  
-   launchPlayer();  
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;PlayerViewController.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;NSString *filepath = [[NSBundle mainBundle] pathForResource:@"FILENAME" ofType:@"mp4"];
-NSURL *fileURL = [NSURL fileURLWithPath:filepath];
-self.avPlayer = [AVPlayer playerWithURL:fileURL];
-
-AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
-self.avPlayer.actionAtItemEnd = AVPlayerActionAtItemEndNone;
-layer.frame = CGRectMake(0, 0, 1024, 768);
-[self.view.layer addSublayer: layer];
-
-[self.avPlayer play];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I'd prefer to create the view using the TVML as the 'Compilation.xml' seems to be the perfect fit for it.&lt;/p&gt;
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Trying out an idea for Apple TV with &lt;a href="https://twitter.com/599CD?ref_src=twsrc%5Etfw"&gt;@599CD&lt;/a&gt;&lt;br&gt;How would the Registration Seminar look?&lt;a href="https://t.co/A8eFsx29Th"&gt;https://t.co/A8eFsx29Th&lt;/a&gt; &lt;a href="http://t.co/5jVGuGF22b"&gt;pic.twitter.com/5jVGuGF22b&lt;/a&gt;&lt;/p&gt;— Alex Hedley (@AlexHedley) &lt;a href="https://twitter.com/AlexHedley/status/642737644309487616?ref_src=twsrc%5Etfw"&gt;September 12, 2015&lt;/a&gt;&lt;/blockquote&gt; &lt;script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;p&gt;&lt;a href="https://twitter.com/AlexHedley/status/642737644309487616/photo/1"&gt;https://twitter.com/AlexHedley/status/642737644309487616/photo/1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/COt2ewTWgAAoJbE.png" alt="Registration Seminar" title="Registration Seminar"&gt;&lt;/p&gt;
-&lt;p&gt;Finally found out that the videos files can't be running under python.&lt;/p&gt;
-&lt;p&gt;If you change the URL to a file on the web it works fine.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/32518673/setting-up-apple-tv-video-javascript"&gt;http://stackoverflow.com/questions/32518673/setting-up-apple-tv-video-javascript&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I think you're using the Python SimpleHTTPServer for your test, it did not worked for video streaming, but if you use Apache or for example this file directly from apple "&lt;a href="http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov"&gt;http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov&lt;/a&gt;" it will work. &lt;a href="http://stackoverflow.com/users/2418630/user2418630"&gt;user2418630&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is correct. I think video playback requires that the server supports, among other things, byte-range requests.&amp;nbsp;–&amp;nbsp;&amp;nbsp;&lt;a href="http://stackoverflow.com/users/196079/lemnar" title="3326 reputation"&gt;lemnar&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Blogs&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://martinnormark.com/playing-video-on-apple-tv-with-tvos/"&gt;http://martinnormark.com/playing-video-on-apple-tv-with-tvos/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/09/12/tvos-playing-a-video/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;So I'd like to play a Video in an Apple TV App.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/tvos-links</id>
-		<title>tvOS Links</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/tvos-links" />
-		<updated>2015-09-12T00:00:00Z</updated>
-		<content>&lt;p&gt;Thought I'd list some tvOS links as and when I find them.&lt;/p&gt;
-&lt;p&gt;The sample code, from Apple, is excellent, although where's the ObjC versions? &lt;strong&gt;Links&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://jamesonquave.com/blog/developing-tvos-apps-for-apple-tv-with-swift/"&gt;http://jamesonquave.com/blog/developing-tvos-apps-for-apple-tv-with-swift/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://jamesonquave.com/blog/developing-tvos-apps-for-apple-tv-part-2/"&gt;http://jamesonquave.com/blog/developing-tvos-apps-for-apple-tv-part-2/&lt;/a&gt; &lt;a href="http://nerds.airbnb.com/tvos-focus-engine/"&gt;http://nerds.airbnb.com/tvos-focus-engine/&lt;/a&gt; &lt;a href="http://venturebeat.com/2015/09/10/hands-on-with-tvos-for-the-new-apple-tv/"&gt;http://venturebeat.com/2015/09/10/hands-on-with-tvos-for-the-new-apple-tv/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.madeupbypeople.com/blog/2015/9/9/tvos-tutorial-make-apple-tv-apps"&gt;http://www.madeupbypeople.com/blog/2015/9/9/tvos-tutorial-make-apple-tv-apps&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/09/12/tvos-links/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Thought I'd list some tvOS links as and when I find them.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/mac-syntax-highlighting</id>
-		<title>Mac - Syntax Highlighting</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/mac-syntax-highlighting" />
-		<updated>2015-08-20T00:00:00Z</updated>
-		<content>&lt;p&gt;ACEView &lt;a href="https://github.com/faceleg/ACEView"&gt;https://github.com/faceleg/ACEView&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/08/20/mac-syntax-highlighting/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;ACEView &lt;a href="https://github.com/faceleg/ACEView"&gt;https://github.com/faceleg/ACEView&lt;/a&gt;&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/utility-mac-app</id>
-		<title>Utility Mac App</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/utility-mac-app" />
-		<updated>2015-08-20T00:00:00Z</updated>
-		<content>&lt;p&gt;I've released my first Mac App today, Utility is a helper app to help in day to day tasks.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://itunes.apple.com/gb/app/utility/id1027541844?mt=12"&gt;https://itunes.apple.com/gb/app/utility/id1027541844?mt=12&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Source&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/AlexHedley/Utility-Mac"&gt;https://github.com/AlexHedley/Utility-Mac&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/08/20/utility-mac-app/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;I've released my first Mac App today, Utility is a helper app to help in day to day tasks.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/marvel-api</id>
-		<title>Marvel API</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/marvel-api" />
-		<updated>2015-08-16T00:00:00Z</updated>
-		<content>&lt;p&gt;So I found that Marvel have an API.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Marvel API&lt;/strong&gt;
-&lt;a href="http://developer.marvel.com/"&gt;http://developer.marvel.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Community&lt;/em&gt;
-&lt;a href="http://developer.marvel.com/community"&gt;http://developer.marvel.com/community&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Authorization&lt;/em&gt;
-&lt;a href="http://developer.marvel.com/documentation/authorization"&gt;http://developer.marvel.com/documentation/authorization&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Original
-&lt;a href="https://gist.github.com/oshliaer/eb8d7197e6749475652a"&gt;https://gist.github.com/oshliaer/eb8d7197e6749475652a&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[gist 2726b33578720c42b24c /]&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;character_by_name.py&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-python"&gt;# #!/usr/bin/python
-# -*- coding: utf-8 -*-
-import time
-import hashlib
-import urllib.parse
-import urllib.request
-
-q = {}
-q['ts'] = str(time.time())
-q['apikey'] = '{Your_public_key}'
-q['name'] = 'Spider-Man'
-privateKey = '{Your_private_key}'
-q['hash'] = hashlib.md5(bytes(q['ts'] + privateKey + q['apikey'], 'utf-8')).hexdigest()
-
-params = urllib.parse.urlencode(q)
-url = 'http://gateway.marvel.com/v1/public/characters?%s' % params
-
-with urllib.request.urlopen(url) as f:
-	print(f.read())
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;characters.py&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-python"&gt;# #!/usr/bin/python
-# -*- coding: utf-8 -*-
-import time
-import hashlib
-import urllib.parse
-import urllib.request
-
-q = {}
-q['ts'] = str(time.time())
-q['apikey'] = '{Your_public_key}'
-privateKey = '{Your_private_key}'
-q['hash'] = hashlib.md5(bytes(q['ts'] + privateKey + q['apikey'], 'utf-8')).hexdigest()
-
-params = urllib.parse.urlencode(q)
-url = 'http://gateway.marvel.com/v1/public/characters?%s' % params
-
-with urllib.request.urlopen(url) as f:
-	print(f.read())
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;characters2.py&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-python"&gt;# #!/usr/bin/python
-# -*- coding: utf-8 -*-
-from __future__ import with_statement
-from __future__ import absolute_import
-import time
-import hashlib
-import urllib2, urllib, urlparse
-
-q = {}
-q[u'ts'] = unicode(time.time())
-q['apikey'] = '{Your_public_key}'
-privateKey = '{Your_private_key}'
-q[u'hash'] = hashlib.md5(str(q['ts'] + privateKey + q['apikey']).encode('utf-8')).hexdigest()
-
-params = urllib.urlencode(q)
-print params
-url = u'http://gateway.marvel.com/v1/public/characters?%s' % params
-
-#with urllib2.urlopen(url) as f:
-f = urllib2.urlopen(url)
-#print f.read()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I converted them to version 2 as I only have 2.7 on my machine atm&lt;/p&gt;
-&lt;p&gt;Convert from 3 to 2 &lt;a href="https://pypi.python.org/pypi/3to2/1.1.1"&gt;https://pypi.python.org/pypi/3to2/1.1.1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;3to2 -w FILENAME.py&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;MD5&lt;/strong&gt; &lt;a href="http://www.miraclesalad.com/webtools/md5.php"&gt;http://www.miraclesalad.com/webtools/md5.php&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The &lt;a href="http://developer.marvel.com/documentation/authorization"&gt;Authorisation&lt;/a&gt; page shows:&lt;/p&gt;
-&lt;p&gt;ts: 1&lt;/p&gt;
-&lt;p&gt;Public Key:&amp;nbsp;1234&lt;/p&gt;
-&lt;p&gt;Private Key:&amp;nbsp;abcd&lt;/p&gt;
-&lt;p&gt;making:&amp;nbsp;1abcd1234&lt;/p&gt;
-&lt;p&gt;hash:&amp;nbsp;ffd275c5130566a2916217b101f26150&lt;/p&gt;
-&lt;p&gt;(&lt;a href="http://gateway.marvel.com/v1/comics?ts=1&amp;amp;apikey=1234&amp;amp;hash=ffd275c5130566a2916217b101f26150"&gt;http://gateway.marvel.com/v1/comics?ts=1&amp;amp;apikey=1234&amp;amp;hash=ffd275c5130566a2916217b101f26150&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;I created a Mac App to create the Hash and create this URL.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2018550/how-do-i-create-an-md5-hash-of-a-string-in-cocoa"&gt;http://stackoverflow.com/questions/2018550/how-do-i-create-an-md5-hash-of-a-string-in-cocoa&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;NSTimeInterval timeStamp = \[\[NSDate date\] timeIntervalSince1970\];
-// NSTimeInterval is defined as double
-NSNumber \*timeStampObj = \[NSNumber numberWithDouble: timeStamp\];
-txtTimestamp.stringValue = \[timeStampObj stringValue\];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I call this in the app and it doesn't work.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/index.html#//apple_ref/doc/constant_group/URL_Loading_System_Error_Codes"&gt;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/index.html#//apple_ref/doc/constant_group/URL_Loading_System_Error_Codes&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;NSURLErrorUserAuthenticationRequired = -1013
-NSURLErrorDomain Code=-1013
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I can't get the MD5 from Python to match the ObjC one.&lt;/p&gt;
-&lt;p&gt;I can't get it to work with &lt;a href="http://mmattozzi.github.io/cocoa-rest-client/"&gt;CocoaRestClient&lt;/a&gt;&amp;nbsp;or ObjC.&lt;/p&gt;
-&lt;p&gt;Then I realise I've got my keys swapped, d'oh!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/08/16/marvel-api/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;So I found that Marvel have an API.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/multi-select-tableview</id>
-		<title>Multi Select TableView</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/multi-select-tableview" />
-		<updated>2015-08-13T00:00:00Z</updated>
-		<content>&lt;p&gt;Want to select more than one row in a TableView?&lt;/p&gt;
-&lt;p&gt;[gist 1e4aefb923ee02c652fd /]&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;TableViewController.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;NSArray *selectedRows = [self.tableView indexPathsForSelectedRows];
-NSLog(@"selected: %@", selectedRows);
-for (NSIndexPath *indexPath in selectedRows) {
-    if(indexPath.section == 0){
-        Player *player = [self.playersNotInGame objectAtIndex:indexPath.row];
-        NSLog(@"1: %@", player.PlayerName);
-    }
-    else if(indexPath.section == 1){
-        Player *player = [self.playersInGame objectAtIndex:indexPath.row];
-        NSLog(@"2: %@", player.PlayerName);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;TVC.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;self.tableView.allowsMultipleSelection = YES;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/08/13/multi-select-tableview/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Want to select more than one row in a TableView?&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/mac-osx-pasteboard</id>
-		<title>Mac OSX Pasteboard</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/mac-osx-pasteboard" />
-		<updated>2015-07-26T00:00:00Z</updated>
-		<content>&lt;p&gt;Need to copy a value to the Pasteboard?&lt;/p&gt;
-&lt;p&gt;Don't forget to clear it first.&lt;/p&gt;
-&lt;p&gt;[gist 92a8e93464a3f0f449be&amp;nbsp;/]&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;pb.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (IBAction)copyURL:(id)sender {
-    NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
-    //pasteboard.string = txtURLEncode.stringValue;
-    [pasteboard clearContents];
-    [pasteboard setString:txtURLEncode.stringValue forType:NSPasteboardTypeString]; //NSStringPboardType;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/07/26/mac-osx-pasteboard/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Need to copy a value to the Pasteboard?&lt;/p&gt;</summary>
 	</entry>
 </feed>
