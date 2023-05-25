@@ -5,8 +5,27 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description />
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Thu, 25 May 2023 16:38:17 GMT</pubDate>
-		<lastBuildDate>Thu, 25 May 2023 16:38:17 GMT</lastBuildDate>
+		<pubDate>Thu, 25 May 2023 16:45:26 GMT</pubDate>
+		<lastBuildDate>Thu, 25 May 2023 16:45:26 GMT</lastBuildDate>
+		<item>
+			<title>Symantec Connect - 100 Solutions</title>
+			<link>https://alexhedley.github.io/blog/posts/symantec-connect-100-solutions</link>
+			<description>&lt;p&gt;After 6 years and 23 weeks I've hit 100 solutions from 1,028 comments.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/img_1318.jpg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/symantec-connect-100-solutions</guid>
+			<pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;After 6 years and 23 weeks I've hit 100 solutions from 1,028 comments.&lt;/p&gt;
+&lt;p&gt;Not sure if that's a good ratio in comparison to others but it is a milestone I thought I'd document.&lt;/p&gt;
+&lt;p&gt;You can find my profile here:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.symantec.com/connect/user/alexhedley"&gt;https://www.symantec.com/connect/user/alexhedley&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_1318.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;I've made a lot of Articles over the years, mostly for Symantec Workflow / ServiceDesk / SMP.&lt;/p&gt;
+&lt;p&gt;Let's see when I hit 200!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2019/12/23/symantec-connect-100-solutions/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>JSQMessagesViewController - Messages UI</title>
 			<link>https://alexhedley.github.io/blog/posts/jsqmessagesviewcontroller-messages-ui</link>
@@ -1559,75 +1578,6 @@ typedef NS_ENUM(NSInteger, kCardPosition) {
 &lt;p&gt;Directions&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://gist.github.com/AlexHedley/528148bf47b634fda5fb007e4a5d9638"&gt;https://gist.github.com/AlexHedley/528148bf47b634fda5fb007e4a5d9638&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/05/22/carousel-view/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Jam Jar Cinema Wallet Passes</title>
-			<link>https://alexhedley.github.io/blog/posts/jam-jar-cinema-wallet-passes</link>
-			<description>&lt;p&gt;My local cinema is Awesome!&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/jam-jar-cinema-wallet-passes</guid>
-			<pubDate>Sat, 20 May 2017 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;My local cinema is Awesome!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.jamjarcinema.com/"&gt;http://www.jamjarcinema.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I want to create passes to keep a memento of the films I've seen. I order online so don't get ticket stubs from the venue and I like having a digital copy, like CineWorld does.&lt;/p&gt;
-&lt;p&gt;There are a number of websites which allow you to make Wallet Passes.&lt;/p&gt;
-&lt;p&gt;I've recently tried PassSlot (&lt;a href="https://www.passslot.com/"&gt;https://www.passslot.com&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/passslot.png" alt="PassSlot" title="PassSlot"&gt;&lt;/p&gt;
-&lt;p&gt;It has a free tier which allows you to create 1 PassID, multiple templates, and a set limit of passes, which is all I need.&lt;/p&gt;
-&lt;p&gt;It has an SDK which is great.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/passslot/passslot-ios-sdk"&gt;https://github.com/passslot/passslot-ios-sdk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I created my Template with variables for the various pieces of information and now I have an iOS app which allows me to fill in the values, pick an image and create a pass.&lt;/p&gt;
-&lt;p&gt;It uses the iTunes Artwork&amp;nbsp;Finder from Ben Dodson.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://bendodson.com/projects/itunes-artwork-finder/"&gt;https://bendodson.com/projects/itunes-artwork-finder/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[gallery ids="1003,1004,1005,1006,1007,1008,1009,1010" type="rectangular"]&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/jjc-passes-1.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/jjc-passes-2.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/jjc-passes-3.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/jjc-passes-4.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/jjc-passes-5.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/jjc-passes-6.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/jjc-passes-7.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/jjc-passes-8.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Wallet&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_4042.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/img_4043.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/img_4044.png" alt=""&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://developer.apple.com/wallet/"&gt;https://developer.apple.com/wallet/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://developer.apple.com/reference/passkit"&gt;https://developer.apple.com/reference/passkit&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;The PassSlot API is available on 'mashape'&lt;/p&gt;
-&lt;p&gt;The documentation mentions&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Other Platforms -&amp;nbsp;The PassSlot API is also available through mashape. They have client libraries for Node, Ruby, Java, .NET, Windows 8&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;On the marketplace&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://market.mashape.com/passslot/passbook"&gt;https://market.mashape.com/passslot/passbook&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;There is a button for open in Paw. I can't get it to work at the moment.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;I'd started making a Mac app to create Wallet Passes.&lt;/p&gt;
-&lt;p&gt;I followed the RW tutorials on PassKit but my PHP was rusty so never got that side working.&lt;/p&gt;
-&lt;p&gt;I got the local one working which used the sign tool and created all the files&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;pass.json&lt;/li&gt;
-&lt;li&gt;manifest.json&lt;/li&gt;
-&lt;li&gt;.pkpass&lt;/li&gt;
-&lt;li&gt;etc&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/jjc-passes-mac-1.png" alt="JJC Passes (Mac) (1)" title="JJC Passes (Mac) (1)"&gt;&lt;/p&gt;
-&lt;p&gt;But when I tried to add them to my phone I ran into issues, I raised a bug will Apple and they are working on something.&lt;/p&gt;
-&lt;p&gt;The pass has to be served over SSL.&lt;/p&gt;
-&lt;p&gt;I made my own Contact Card:&amp;nbsp;&lt;a href="https://alexhedley.wordpress.com/2014/12/29/passbook/"&gt;https://alexhedley.wordpress.com/2014/12/29/passbook/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/05/20/jam-jar-cinema-wallet-passes/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
