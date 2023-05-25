@@ -4,242 +4,348 @@
 	<title />
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-05-23T15:40:58Z</updated>
+	<updated>2023-05-25T13:33:13Z</updated>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/2014-in-review</id>
-		<title>2014 in review</title>
+		<id>https://alexhedley.github.io/blog/posts/2015-in-review</id>
+		<title>2015 in review</title>
 		<author>
 			<name>AlexHedley</name>
 		</author>
-		<link href="https://alexhedley.github.io/blog/posts/2014-in-review" />
-		<updated>2014-12-31T00:00:00Z</updated>
-		<content>&lt;p&gt;The WordPress.com stats helper monkeys prepared a 2014 annual report for this blog.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://alexhedley.wordpress.com/2014/annual-report/"&gt;&lt;img src="https://alexhedley.github.io/blog/images/2014-emailteaser.png" alt=""&gt;&lt;/a&gt;&lt;/p&gt;
+		<link href="https://alexhedley.github.io/blog/posts/2015-in-review" />
+		<updated>2015-12-30T00:00:00Z</updated>
+		<content>&lt;p&gt;The WordPress.com stats helper monkeys prepared a 2015 annual report for this blog.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/2014-emailteaser.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Here's an excerpt:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A San Francisco cable car holds 60 people. This blog was viewed about &lt;strong&gt;630&lt;/strong&gt; times in 2014. If it were a cable car, it would take about 11 trips to carry that many people.&lt;/p&gt;
+&lt;p&gt;A New York City subway train holds 1,200 people. This blog was viewed about &lt;strong&gt;5,900&lt;/strong&gt; times in 2015. If it were a NYC subway train, it would take about 5 trips to carry that many people.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="http://alexhedley.wordpress.com/2014/annual-report/"&gt;Click here to see the complete report.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2014/12/31/2014-in-review/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://alexhedley.wordpress.com/2015/annual-report/"&gt;Click here to see the complete report.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/12/30/2015-in-review/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;The WordPress.com stats helper monkeys prepared a 2014 annual report for this blog.&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;The WordPress.com stats helper monkeys prepared a 2015 annual report for this blog.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/passbook</id>
-		<title>PassBook</title>
+		<id>https://alexhedley.github.io/blog/posts/apple-tv-app-upload-error</id>
+		<title>Apple TV App - Upload Error</title>
 		<author>
 			<name>AlexHedley</name>
 		</author>
-		<link href="https://alexhedley.github.io/blog/posts/passbook" />
-		<updated>2014-12-29T00:00:00Z</updated>
-		<content>&lt;p&gt;Finally got my passbook to work,&lt;/p&gt;
-&lt;p&gt;Combination of using the following sites:&lt;/p&gt;
-&lt;p&gt;Found it on:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.atomicbird.com/blog/passbook-card-details"&gt;http://www.atomicbird.com/blog/passbook-card-details&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;But I couldn't get it to work, it viewed fine on my mac but wouldn't load in the simulator or when uploaded to S3.&lt;/p&gt;
-&lt;p&gt;Found another article and tried again and it's working.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.myuiviews.com/2014/06/01/step-by-step-create-a-passbook-business-card.html"&gt;http://www.myuiviews.com/2014/06/01/step-by-step-create-a-passbook-business-card.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Get it here:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/add_to_passbook_badge.png" alt="Add_to_Passbook_Badge"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2014/12/29/passbook/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+		<link href="https://alexhedley.github.io/blog/posts/apple-tv-app-upload-error" />
+		<updated>2015-11-28T00:00:00Z</updated>
+		<content>&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/33291394/xcode-7-1-not-authorized-to-use-this-service-error"&gt;http://stackoverflow.com/questions/33291394/xcode-7-1-not-authorized-to-use-this-service-error&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You are not authorized to use this service&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Xcode 7.1 ships with App Loader 3.3&lt;/p&gt;
+&lt;p&gt;I tried removing and adding my iTunes account, restarting Xcode, checking the provisioning profiles.&lt;/p&gt;
+&lt;p&gt;A couple of reboots later and the App loader finally worked.&lt;/p&gt;
+&lt;p&gt;Tools&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.apple.com/downloads/?name=for%20Xcode"&gt;https://developer.apple.com/downloads/?name=for%20Xcode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://itunespartner.apple.com/en/apps/tools"&gt;https://itunespartner.apple.com/en/apps/tools&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://itunesconnect.apple.com/apploader/ApplicationLoader_3.0.dmg"&gt;https://itunesconnect.apple.com/apploader/ApplicationLoader_3.0.dmg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://itunesconnect.apple.com/apploader/ApplicationLoader_3.1.dmg"&gt;https://itunesconnect.apple.com/apploader/ApplicationLoader_3.1.dmg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/11/28/apple-tv-app-upload-error/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;Finally got my passbook to work,&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/33291394/xcode-7-1-not-authorized-to-use-this-service-error"&gt;http://stackoverflow.com/questions/33291394/xcode-7-1-not-authorized-to-use-this-service-error&lt;/a&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/stop-ibooks-from-dimming</id>
-		<title>Stop iBooks from Dimming</title>
+		<id>https://alexhedley.github.io/blog/posts/debugging-a-tvml-tvos-app</id>
+		<title>Debugging a TVML tvOS App</title>
 		<author>
 			<name>AlexHedley</name>
 		</author>
-		<link href="https://alexhedley.github.io/blog/posts/stop-ibooks-from-dimming" />
-		<updated>2014-12-28T00:00:00Z</updated>
-		<content>&lt;p&gt;I'm working through a chapter of &lt;a href="http://www.raywenderlich.com/store/ios-8-by-tutorials" title="iOS By Tutorials"&gt;iOS8 By Tutorials&lt;/a&gt; on iBooks on the iPad and it auto dims after a couple of minutes. Rather annoying.&lt;/p&gt;
-&lt;p&gt;Settings &amp;gt; General &amp;gt; AutoLock&lt;/p&gt;
-&lt;p&gt;Change this and it stops.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2014/12/28/stop-ibooks-from-dimming/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+		<link href="https://alexhedley.github.io/blog/posts/debugging-a-tvml-tvos-app" />
+		<updated>2015-09-14T00:00:00Z</updated>
+		<content>&lt;p&gt;If you download and open the Readme.md of the&amp;nbsp;&lt;a href="https://developer.apple.com/library/prerelease/tvos/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505"&gt;TVML Catalog&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To help debug and experiment, you can use the Safari WebInspector to attach to the JavaScript context. WebInspector provides you with a full JavaScript debugging environment. You will need to turn on the Develop menu from Safari &amp;gt; Preferences &amp;gt; Advanced. Select your device from the Develop drop down menu to see a list of running JavaScript contexts.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You will need to &lt;a href="https://developer.apple.com/downloads/?q=safari"&gt;download&lt;/a&gt; Safari 9.&lt;/p&gt;
+&lt;p&gt;Start your client app&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python -m SimpleHTTPServer 8000&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Run your Xcode app.&lt;/p&gt;
+&lt;p&gt;Now open Safari&lt;/p&gt;
+&lt;p&gt;Turn on the Develop tab, explained above.&lt;/p&gt;
+&lt;p&gt;Then go to the &lt;strong&gt;Simulator&lt;/strong&gt; | &lt;app&gt;&lt;/app&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/screen-shot-2015-09-14-at-20-09-46.png" alt="Simulator" title="Simulator"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/screen-shot-2015-09-14-at-20-09-56.png" alt="App" title="App"&gt;&lt;/p&gt;
+&lt;p&gt;Now you will see the Web Inspector.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/screen-shot-2015-09-14-at-20-12-04.png" alt="Web Inspector" title="Web Inspector"&gt;&lt;/p&gt;
+&lt;p&gt;Debug to your hearts content.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/09/14/debugging-a-tvml-tvos-app/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;I'm working through a chapter of &lt;a href="http://www.raywenderlich.com/store/ios-8-by-tutorials" title="iOS By Tutorials"&gt;iOS8 By Tutorials&lt;/a&gt; on iBooks on the iPad and it auto dims after a couple of minutes. Rather annoying.&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;If you download and open the Readme.md of the &lt;a href="https://developer.apple.com/library/prerelease/tvos/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505"&gt;TVML Catalog&lt;/a&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/ios-post</id>
-		<title>iOS - POST</title>
+		<id>https://alexhedley.github.io/blog/posts/tvos-playing-a-video</id>
+		<title>tvOS Playing a Video</title>
 		<author>
 			<name>AlexHedley</name>
 		</author>
-		<link href="https://alexhedley.github.io/blog/posts/ios-post" />
-		<updated>2014-10-25T00:00:00Z</updated>
-		<content>&lt;p&gt;Finally managed to get a POST to work in my iOS app.&lt;/p&gt;
-&lt;p&gt;Can create a login then update for the website.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Finally managed to get a POST to work in my iOS app.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/xcode-missing-empty-application-template</id>
-		<title>Xcode - Missing 'Empty Application' Template</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/xcode-missing-empty-application-template" />
-		<updated>2014-10-18T00:00:00Z</updated>
-		<content>&lt;p&gt;Where has the Empty Application Template gone in Xcode?&lt;/p&gt;
-&lt;p&gt;Add it back from here&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.reddit.com/r/iOSProgramming/comments/2a3jyr/xcode/_6/_beta/_3/_removes/_empty/_application/_option/"&gt;http://www.reddit.com/r/iOSProgramming/comments/2a3jyr/xcode\_6\_beta\_3\_removes\_empty\_application\_option/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2014/10/18/xcode-missing-empty-application-template/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Where has the Empty Application Template gone in Xcode?&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/mfmailcomposeviewcontroller</id>
-		<title>MFMailComposeViewController</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/mfmailcomposeviewcontroller" />
-		<updated>2014-10-14T00:00:00Z</updated>
-		<content>&lt;p&gt;I used the following tutorial to get an email to send in the app.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.appcoda.com/tag/mfmailcomposeviewcontroller/"&gt;http://www.appcoda.com/tag/mfmailcomposeviewcontroller/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The issue i then came across was it didn't have the white theme I needed.&lt;/p&gt;
-&lt;p&gt;[gist d326c1efbd1830d33a48 /]&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;//http://www.appcoda.com/ios-programming-101-send-email-iphone-app/
-- (IBAction)sendEmail:(id)sender {
-    // Email Subject
-    NSString *emailTitle = &amp;#64;&amp;quot;iOS Email&amp;quot;;
-    // Email Content
-    NSString *messageBody = &amp;#64;&amp;quot;Sent from iOS App&amp;quot;;
-    // To address
-    NSArray *toRecipents = [NSArray arrayWithObject:&amp;#64;&amp;quot;unpluggedne&amp;#64;gmail.com&amp;quot;];
-    
-    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
-    mc.mailComposeDelegate = self;
-    [mc setSubject:emailTitle];
-    [mc setMessageBody:messageBody isHTML:NO];
-    [mc setToRecipients:toRecipents];
-    //[[mc navigationBar] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName]];
-    [[mc navigationBar] setTintColor:[UIColor whiteColor]];
-    
-    // Present mail view controller on screen
-    [self presentViewController:mc animated:YES completion:^{
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    }];
-    
-    //[self applyComposerInterfaceApperance];
+		<link href="https://alexhedley.github.io/blog/posts/tvos-playing-a-video" />
+		<updated>2015-09-12T00:00:00Z</updated>
+		<content>&lt;p&gt;So I'd like to play a Video in an Apple TV App.&lt;/p&gt;
+&lt;p&gt;I need to look into Player from the TVJS Lib.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.apple.com/library/prerelease/tvos/documentation/TVMLJS/Reference/TVJSPlayer/_Ref/index.html#//apple%5C_ref/javascript/cl/Player"&gt;https://developer.apple.com/library/prerelease/tvos/documentation/TVMLJS/Reference/TVJSPlayer\_Ref/index.html#//apple\_ref/javascript/cl/Player&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Forum&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://forums.developer.apple.com/thread/17338?sr=stream&amp;amp;ru=377"&gt;https://forums.developer.apple.com/thread/17338?sr=stream&amp;amp;ru=377&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://forums.developer.apple.com/message/52011#52011"&gt;https://forums.developer.apple.com/message/52011#52011&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://forums.developer.apple.com/message/53126#53126"&gt;https://forums.developer.apple.com/message/53126#53126&lt;/a&gt; I can play a Video using AVPlayer but need to look into the controls&lt;/p&gt;
+&lt;p&gt;[gist dac53c99670daddebd72 /]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;application.js&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;function launchPlayer() {  
+  var player = new Player();  
+  var playlist = new Playlist();  
+  var mediaItem = new MediaItem("video", "http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov");  
+  player.playlist = playlist;  
+  player.playlist.push(mediaItem);  
+  player.present();  
+}
+
+//in application.js  
+App.onLaunch = function(options) {  
+   launchPlayer();  
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
-{
-    switch (result)
-    {
-        case MFMailComposeResultCancelled:
-            NSLog(&amp;#64;&amp;quot;Mail cancelled&amp;quot;);
-            break;
-        case MFMailComposeResultSaved:
-            NSLog(&amp;#64;&amp;quot;Mail saved&amp;quot;);
-            break;
-        case MFMailComposeResultSent:
-            NSLog(&amp;#64;&amp;quot;Mail sent&amp;quot;);
-            break;
-        case MFMailComposeResultFailed:
-            NSLog(&amp;#64;&amp;quot;Mail sent failure: %&amp;#64;&amp;quot;, [error localizedDescription]);
-            break;
-        default:
-            break;
+&lt;p&gt;&lt;code&gt;PlayerViewController.m&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;NSString *filepath = [[NSBundle mainBundle] pathForResource:@"FILENAME" ofType:@"mp4"];
+NSURL *fileURL = [NSURL fileURLWithPath:filepath];
+self.avPlayer = [AVPlayer playerWithURL:fileURL];
+
+AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
+self.avPlayer.actionAtItemEnd = AVPlayerActionAtItemEndNone;
+layer.frame = CGRectMake(0, 0, 1024, 768);
+[self.view.layer addSublayer: layer];
+
+[self.avPlayer play];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I'd prefer to create the view using the TVML as the 'Compilation.xml' seems to be the perfect fit for it.&lt;/p&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Trying out an idea for Apple TV with &lt;a href="https://twitter.com/599CD?ref_src=twsrc%5Etfw"&gt;@599CD&lt;/a&gt;&lt;br&gt;How would the Registration Seminar look?&lt;a href="https://t.co/A8eFsx29Th"&gt;https://t.co/A8eFsx29Th&lt;/a&gt; &lt;a href="http://t.co/5jVGuGF22b"&gt;pic.twitter.com/5jVGuGF22b&lt;/a&gt;&lt;/p&gt;— Alex Hedley (@AlexHedley) &lt;a href="https://twitter.com/AlexHedley/status/642737644309487616?ref_src=twsrc%5Etfw"&gt;September 12, 2015&lt;/a&gt;&lt;/blockquote&gt; &lt;script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/AlexHedley/status/642737644309487616/photo/1"&gt;https://twitter.com/AlexHedley/status/642737644309487616/photo/1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/COt2ewTWgAAoJbE.png" alt="Registration Seminar" title="Registration Seminar"&gt;&lt;/p&gt;
+&lt;p&gt;Finally found out that the videos files can't be running under python.&lt;/p&gt;
+&lt;p&gt;If you change the URL to a file on the web it works fine.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/32518673/setting-up-apple-tv-video-javascript"&gt;http://stackoverflow.com/questions/32518673/setting-up-apple-tv-video-javascript&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I think you're using the Python SimpleHTTPServer for your test, it did not worked for video streaming, but if you use Apache or for example this file directly from apple "&lt;a href="http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov"&gt;http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov&lt;/a&gt;" it will work. &lt;a href="http://stackoverflow.com/users/2418630/user2418630"&gt;user2418630&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is correct. I think video playback requires that the server supports, among other things, byte-range requests.&amp;nbsp;–&amp;nbsp;&amp;nbsp;&lt;a href="http://stackoverflow.com/users/196079/lemnar" title="3326 reputation"&gt;lemnar&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Blogs&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://martinnormark.com/playing-video-on-apple-tv-with-tvos/"&gt;http://martinnormark.com/playing-video-on-apple-tv-with-tvos/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/09/12/tvos-playing-a-video/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;So I'd like to play a Video in an Apple TV App.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/tvos-links</id>
+		<title>tvOS Links</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/tvos-links" />
+		<updated>2015-09-12T00:00:00Z</updated>
+		<content>&lt;p&gt;Thought I'd list some tvOS links as and when I find them.&lt;/p&gt;
+&lt;p&gt;The sample code, from Apple, is excellent, although where's the ObjC versions? &lt;strong&gt;Links&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://jamesonquave.com/blog/developing-tvos-apps-for-apple-tv-with-swift/"&gt;http://jamesonquave.com/blog/developing-tvos-apps-for-apple-tv-with-swift/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://jamesonquave.com/blog/developing-tvos-apps-for-apple-tv-part-2/"&gt;http://jamesonquave.com/blog/developing-tvos-apps-for-apple-tv-part-2/&lt;/a&gt; &lt;a href="http://nerds.airbnb.com/tvos-focus-engine/"&gt;http://nerds.airbnb.com/tvos-focus-engine/&lt;/a&gt; &lt;a href="http://venturebeat.com/2015/09/10/hands-on-with-tvos-for-the-new-apple-tv/"&gt;http://venturebeat.com/2015/09/10/hands-on-with-tvos-for-the-new-apple-tv/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.madeupbypeople.com/blog/2015/9/9/tvos-tutorial-make-apple-tv-apps"&gt;http://www.madeupbypeople.com/blog/2015/9/9/tvos-tutorial-make-apple-tv-apps&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/09/12/tvos-links/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Thought I'd list some tvOS links as and when I find them.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/mac-syntax-highlighting</id>
+		<title>Mac - Syntax Highlighting</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/mac-syntax-highlighting" />
+		<updated>2015-08-20T00:00:00Z</updated>
+		<content>&lt;p&gt;ACEView &lt;a href="https://github.com/faceleg/ACEView"&gt;https://github.com/faceleg/ACEView&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/08/20/mac-syntax-highlighting/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;ACEView &lt;a href="https://github.com/faceleg/ACEView"&gt;https://github.com/faceleg/ACEView&lt;/a&gt;&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/utility-mac-app</id>
+		<title>Utility Mac App</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/utility-mac-app" />
+		<updated>2015-08-20T00:00:00Z</updated>
+		<content>&lt;p&gt;I've released my first Mac App today, Utility is a helper app to help in day to day tasks.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://itunes.apple.com/gb/app/utility/id1027541844?mt=12"&gt;https://itunes.apple.com/gb/app/utility/id1027541844?mt=12&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Source&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/AlexHedley/Utility-Mac"&gt;https://github.com/AlexHedley/Utility-Mac&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/08/20/utility-mac-app/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;I've released my first Mac App today, Utility is a helper app to help in day to day tasks.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/marvel-api</id>
+		<title>Marvel API</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/marvel-api" />
+		<updated>2015-08-16T00:00:00Z</updated>
+		<content>&lt;p&gt;So I found that Marvel have an API.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Marvel API&lt;/strong&gt;
+&lt;a href="http://developer.marvel.com/"&gt;http://developer.marvel.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Community&lt;/em&gt;
+&lt;a href="http://developer.marvel.com/community"&gt;http://developer.marvel.com/community&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Authorization&lt;/em&gt;
+&lt;a href="http://developer.marvel.com/documentation/authorization"&gt;http://developer.marvel.com/documentation/authorization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Original
+&lt;a href="https://gist.github.com/oshliaer/eb8d7197e6749475652a"&gt;https://gist.github.com/oshliaer/eb8d7197e6749475652a&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[gist 2726b33578720c42b24c /]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;character_by_name.py&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# #!/usr/bin/python
+# -*- coding: utf-8 -*-
+import time
+import hashlib
+import urllib.parse
+import urllib.request
+
+q = {}
+q['ts'] = str(time.time())
+q['apikey'] = '{Your_public_key}'
+q['name'] = 'Spider-Man'
+privateKey = '{Your_private_key}'
+q['hash'] = hashlib.md5(bytes(q['ts'] + privateKey + q['apikey'], 'utf-8')).hexdigest()
+
+params = urllib.parse.urlencode(q)
+url = 'http://gateway.marvel.com/v1/public/characters?%s' % params
+
+with urllib.request.urlopen(url) as f:
+	print(f.read())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;characters.py&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# #!/usr/bin/python
+# -*- coding: utf-8 -*-
+import time
+import hashlib
+import urllib.parse
+import urllib.request
+
+q = {}
+q['ts'] = str(time.time())
+q['apikey'] = '{Your_public_key}'
+privateKey = '{Your_private_key}'
+q['hash'] = hashlib.md5(bytes(q['ts'] + privateKey + q['apikey'], 'utf-8')).hexdigest()
+
+params = urllib.parse.urlencode(q)
+url = 'http://gateway.marvel.com/v1/public/characters?%s' % params
+
+with urllib.request.urlopen(url) as f:
+	print(f.read())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;characters2.py&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# #!/usr/bin/python
+# -*- coding: utf-8 -*-
+from __future__ import with_statement
+from __future__ import absolute_import
+import time
+import hashlib
+import urllib2, urllib, urlparse
+
+q = {}
+q[u'ts'] = unicode(time.time())
+q['apikey'] = '{Your_public_key}'
+privateKey = '{Your_private_key}'
+q[u'hash'] = hashlib.md5(str(q['ts'] + privateKey + q['apikey']).encode('utf-8')).hexdigest()
+
+params = urllib.urlencode(q)
+print params
+url = u'http://gateway.marvel.com/v1/public/characters?%s' % params
+
+#with urllib2.urlopen(url) as f:
+f = urllib2.urlopen(url)
+#print f.read()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I converted them to version 2 as I only have 2.7 on my machine atm&lt;/p&gt;
+&lt;p&gt;Convert from 3 to 2 &lt;a href="https://pypi.python.org/pypi/3to2/1.1.1"&gt;https://pypi.python.org/pypi/3to2/1.1.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;3to2 -w FILENAME.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MD5&lt;/strong&gt; &lt;a href="http://www.miraclesalad.com/webtools/md5.php"&gt;http://www.miraclesalad.com/webtools/md5.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href="http://developer.marvel.com/documentation/authorization"&gt;Authorisation&lt;/a&gt; page shows:&lt;/p&gt;
+&lt;p&gt;ts: 1&lt;/p&gt;
+&lt;p&gt;Public Key:&amp;nbsp;1234&lt;/p&gt;
+&lt;p&gt;Private Key:&amp;nbsp;abcd&lt;/p&gt;
+&lt;p&gt;making:&amp;nbsp;1abcd1234&lt;/p&gt;
+&lt;p&gt;hash:&amp;nbsp;ffd275c5130566a2916217b101f26150&lt;/p&gt;
+&lt;p&gt;(&lt;a href="http://gateway.marvel.com/v1/comics?ts=1&amp;amp;apikey=1234&amp;amp;hash=ffd275c5130566a2916217b101f26150"&gt;http://gateway.marvel.com/v1/comics?ts=1&amp;amp;apikey=1234&amp;amp;hash=ffd275c5130566a2916217b101f26150&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;I created a Mac App to create the Hash and create this URL.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/2018550/how-do-i-create-an-md5-hash-of-a-string-in-cocoa"&gt;http://stackoverflow.com/questions/2018550/how-do-i-create-an-md5-hash-of-a-string-in-cocoa&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;NSTimeInterval timeStamp = \[\[NSDate date\] timeIntervalSince1970\];
+// NSTimeInterval is defined as double
+NSNumber \*timeStampObj = \[NSNumber numberWithDouble: timeStamp\];
+txtTimestamp.stringValue = \[timeStampObj stringValue\];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I call this in the app and it doesn't work.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/index.html#//apple_ref/doc/constant_group/URL_Loading_System_Error_Codes"&gt;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/index.html#//apple_ref/doc/constant_group/URL_Loading_System_Error_Codes&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;NSURLErrorUserAuthenticationRequired = -1013
+NSURLErrorDomain Code=-1013
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I can't get the MD5 from Python to match the ObjC one.&lt;/p&gt;
+&lt;p&gt;I can't get it to work with &lt;a href="http://mmattozzi.github.io/cocoa-rest-client/"&gt;CocoaRestClient&lt;/a&gt;&amp;nbsp;or ObjC.&lt;/p&gt;
+&lt;p&gt;Then I realise I've got my keys swapped, d'oh!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/08/16/marvel-api/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;So I found that Marvel have an API.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/multi-select-tableview</id>
+		<title>Multi Select TableView</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/multi-select-tableview" />
+		<updated>2015-08-13T00:00:00Z</updated>
+		<content>&lt;p&gt;Want to select more than one row in a TableView?&lt;/p&gt;
+&lt;p&gt;[gist 1e4aefb923ee02c652fd /]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;TableViewController.m&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;NSArray *selectedRows = [self.tableView indexPathsForSelectedRows];
+NSLog(@"selected: %@", selectedRows);
+for (NSIndexPath *indexPath in selectedRows) {
+    if(indexPath.section == 0){
+        Player *player = [self.playersNotInGame objectAtIndex:indexPath.row];
+        NSLog(@"1: %@", player.PlayerName);
     }
-    
-    // Close the Mail Interface
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    else if(indexPath.section == 1){
+        Player *player = [self.playersInGame objectAtIndex:indexPath.row];
+        NSLog(@"2: %@", player.PlayerName);
+    }
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (void)applyComposerInterfaceApperance
-{
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes:&amp;#64;{NSForegroundColorAttributeName: [UIColor whiteColor]}];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+&lt;p&gt;&lt;code&gt;TVC.m&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;self.tableView.allowsMultipleSelection = YES;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/08/13/multi-select-tableview/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Want to select more than one row in a TableView?&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/mac-osx-pasteboard</id>
+		<title>Mac OSX Pasteboard</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/mac-osx-pasteboard" />
+		<updated>2015-07-26T00:00:00Z</updated>
+		<content>&lt;p&gt;Need to copy a value to the Pasteboard?&lt;/p&gt;
+&lt;p&gt;Don't forget to clear it first.&lt;/p&gt;
+&lt;p&gt;[gist 92a8e93464a3f0f449be&amp;nbsp;/]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pb.m&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (IBAction)copyURL:(id)sender {
+    NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
+    //pasteboard.string = txtURLEncode.stringValue;
+    [pasteboard clearContents];
+    [pasteboard setString:txtURLEncode.stringValue forType:NSPasteboardTypeString]; //NSStringPboardType;
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I now would like the first responder to be the Body so you can start typing from the get go.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2014/10/14/mfmailcomposeviewcontroller/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2015/07/26/mac-osx-pasteboard/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;I used the following tutorial to get an email to send in the app.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/navigation-bar-status-bar-colours</id>
-		<title>Navigation Bar / Tab Bar / Status Bar Colours</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/navigation-bar-status-bar-colours" />
-		<updated>2014-10-03T00:00:00Z</updated>
-		<content>&lt;p&gt;&lt;a href="http://www.appcoda.com/customize-navigation-status-bar-ios-7/"&gt;http://www.appcoda.com/customize-navigation-status-bar-ios-7/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Add to .plist&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;View controller-based status bar appearance: NO
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue &amp;amp; 0xFF0000) &amp;gt;&amp;gt; 16))/255.0 green:((float)((rgbValue &amp;amp; 0xFF00) &amp;gt;&amp;gt; 8))/255.0 blue:((float)(rgbValue &amp;amp; 0xFF))/255.0 alpha:1.0]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  // Override point for customization after application launch. [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]]; //[[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
-  [[UINavigationBar appearance] setTitleTextAttributes:&amp;#64;{NSForegroundColorAttributeName: [UIColor whiteColor]}]; 
-  [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; return YES;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Tab Bar&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;[[UITabBar appearance] setTintColor:[UIColor redColor]]; [[UITabBar appearance] setBarTintColor:[UIColor yellowColor]];&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Change the highlighted colour&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;[[UITabBarItem appearance] setTitleTextAttributes:&amp;#64;{ NSFontAttributeName : [UIFont fontWithName:&amp;#64;&amp;quot;HelveticaNeue-Bold&amp;quot; size:10.0f], NSForegroundColorAttributeName : [UIColor colorWithRed:0/255.0 green:138/255.0 blue:196/255.0 alpha:1.0],} forState:UIControlStateSelected];&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;code&gt;navigationBar.barStyle = UIBarStyleBlackOpaque;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2014/10/03/navigation-bar-status-bar-colours/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;&lt;a href="http://www.appcoda.com/customize-navigation-status-bar-ios-7/"&gt;http://www.appcoda.com/customize-navigation-status-bar-ios-7/&lt;/a&gt;&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/app-not-fitting-the-full-screen</id>
-		<title>App not fitting the full screen</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/app-not-fitting-the-full-screen" />
-		<updated>2014-10-02T00:00:00Z</updated>
-		<content>&lt;p&gt;Had an issue where I created a brand new app in Xcode 6. It uses a story board with a tab bar set up. Whenever I ran it on my phone it wasn't going full screen.&lt;/p&gt;
-&lt;p&gt;I added an Default image for the splash screen and used an Image Catalog instead of the LaunchScreen.xib and it started working again.&lt;/p&gt;
-&lt;p&gt;Default-586h&amp;#64;2x (640 × 1136) Default&amp;#64;2x (640 × 960)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2014/10/02/app-not-fitting-the-full-screen/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Had an issue where I created a brand new app in Xcode 6. It uses a story board with a tab bar set up. Whenever I ran it on my phone it wasn't going full screen.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/replace</id>
-		<title>Replace</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/replace" />
-		<updated>2014-10-02T00:00:00Z</updated>
-		<content>&lt;p&gt;&lt;code&gt;xLabel.text = [STRING stringByReplacingOccurrencesOfString:&amp;#64;&amp;quot; &amp;quot; withString:&amp;#64;&amp;quot;&amp;quot;];&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;-(NSString *) stringByStrippingHTML: (NSString *)strValue { NSRange r; while ((r = [strValue rangeOfString:&amp;#64;&amp;quot;]+&amp;gt;&amp;quot; options:NSRegularExpressionSearch]).location != NSNotFound) strValue = [strValue stringByReplacingCharactersInRange:r withString:&amp;#64;&amp;quot;&amp;quot;]; return strValue; }&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;HTML&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;NSString *cleanTitle = facebookPost.title; cleanTitle = [cleanTitle stringByReplacingOccurrencesOfString:&amp;#64;&amp;quot;'&amp;quot; withString:&amp;#64;&amp;quot;'&amp;quot;]; cleanTitle = [cleanTitle stringByReplacingOccurrencesOfString:&amp;#64;&amp;quot;&amp;amp;#064&amp;quot; withString:&amp;#64;&amp;quot;&amp;#64;&amp;quot;]; cell.textLabel.text = cleanTitle;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2014/10/02/replace/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;&lt;code&gt;xLabel.text = [STRING stringByReplacingOccurrencesOfString:&amp;#64;&amp;quot; &amp;quot; withString:&amp;#64;&amp;quot;&amp;quot;];&lt;/code&gt;&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/youtube-unplugged</id>
-		<title>YouTube - Unplugged</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/youtube-unplugged" />
-		<updated>2014-10-02T00:00:00Z</updated>
-		<content>&lt;p&gt;So I've started parsing the YouTube feed of uploads for a User, the User being Uplugged.&lt;/p&gt;
-&lt;p&gt;URL: &lt;a href="http://gdata.youtube.com/feeds/api/users/unpluggedacoustic1/uploads/?alt=json"&gt;http://gdata.youtube.com/feeds/api/users/unpluggedacoustic1/uploads/?alt=json&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Here is the result so far.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/youtube-unplugged.png" alt="YouTube - Unplugged"&gt;&lt;/p&gt;
-&lt;p&gt;Updated:
-&lt;img src="https://alexhedley.github.io/blog/images/youtube-unplugged-2.png" alt="YouTube - Unplugged (2)"&gt;&lt;/p&gt;
-&lt;p&gt;See previous posts for parsing tips.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2014/10/02/youtube-unplugged/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;So I've started parsing the YouTube feed of uploads for a User, the User being Uplugged.&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;Need to copy a value to the Pasteboard?&lt;/p&gt;</summary>
 	</entry>
 </feed>

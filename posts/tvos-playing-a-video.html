@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AlexHedley">
+
+  <title>Alex Hedley - tvOS Playing a Video</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/tvos-playing-a-video'>
+
+      <link type="application/rss+xml" rel="alternate" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - tvOS Playing a Video' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/tvos-playing-a-video' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead no-image">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            tvOS Playing a Video
+          </h1>
+            <div class="meta">Published on Saturday, 12 September 2015</div>
+              <div class="mt-3">
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <p>So I'd like to play a Video in an Apple TV App.</p>
+<p>I need to look into Player from the TVJS Lib.</p>
+<p><a href="https://developer.apple.com/library/prerelease/tvos/documentation/TVMLJS/Reference/TVJSPlayer/_Ref/index.html#//apple%5C_ref/javascript/cl/Player">https://developer.apple.com/library/prerelease/tvos/documentation/TVMLJS/Reference/TVJSPlayer\_Ref/index.html#//apple\_ref/javascript/cl/Player</a></p>
+<p><em>Forum</em></p>
+<p><a href="https://forums.developer.apple.com/thread/17338?sr=stream&amp;ru=377">https://forums.developer.apple.com/thread/17338?sr=stream&amp;ru=377</a></p>
+<p><a href="https://forums.developer.apple.com/message/52011#52011">https://forums.developer.apple.com/message/52011#52011</a></p>
+<p><a href="https://forums.developer.apple.com/message/53126#53126">https://forums.developer.apple.com/message/53126#53126</a> I can play a Video using AVPlayer but need to look into the controls</p>
+<p>[gist dac53c99670daddebd72 /]</p>
+<p><code>application.js</code></p>
+<pre><code class="language-javascript">function launchPlayer() {  
+  var player = new Player();  
+  var playlist = new Playlist();  
+  var mediaItem = new MediaItem(&quot;video&quot;, &quot;http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov&quot;);  
+  player.playlist = playlist;  
+  player.playlist.push(mediaItem);  
+  player.present();  
+}
+
+//in application.js  
+App.onLaunch = function(options) {  
+   launchPlayer();  
+}
+</code></pre>
+<p><code>PlayerViewController.m</code></p>
+<pre><code class="language-objectivec">NSString *filepath = [[NSBundle mainBundle] pathForResource:&#64;&quot;FILENAME&quot; ofType:&#64;&quot;mp4&quot;];
+NSURL *fileURL = [NSURL fileURLWithPath:filepath];
+self.avPlayer = [AVPlayer playerWithURL:fileURL];
+
+AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
+self.avPlayer.actionAtItemEnd = AVPlayerActionAtItemEndNone;
+layer.frame = CGRectMake(0, 0, 1024, 768);
+[self.view.layer addSublayer: layer];
+
+[self.avPlayer play];
+</code></pre>
+<p>I'd prefer to create the view using the TVML as the 'Compilation.xml' seems to be the perfect fit for it.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Trying out an idea for Apple TV with <a href="https://twitter.com/599CD?ref_src=twsrc%5Etfw">&#64;599CD</a><br>How would the Registration Seminar look?<a href="https://t.co/A8eFsx29Th">https://t.co/A8eFsx29Th</a> <a href="http://t.co/5jVGuGF22b">pic.twitter.com/5jVGuGF22b</a></p>&mdash; Alex Hedley (&#64;AlexHedley) <a href="https://twitter.com/AlexHedley/status/642737644309487616?ref_src=twsrc%5Etfw">September 12, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p><a href="https://twitter.com/AlexHedley/status/642737644309487616/photo/1">https://twitter.com/AlexHedley/status/642737644309487616/photo/1</a></p>
+<p><img src="images/COt2ewTWgAAoJbE.png" alt="Registration Seminar" title="Registration Seminar" /></p>
+<p>Finally found out that the videos files can't be running under python.</p>
+<p>If you change the URL to a file on the web it works fine.</p>
+<p><a href="http://stackoverflow.com/questions/32518673/setting-up-apple-tv-video-javascript">http://stackoverflow.com/questions/32518673/setting-up-apple-tv-video-javascript</a></p>
+<blockquote>
+<p>I think you're using the Python SimpleHTTPServer for your test, it did not worked for video streaming, but if you use Apache or for example this file directly from apple &quot;<a href="http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov">http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov</a>&quot; it will work. <a href="http://stackoverflow.com/users/2418630/user2418630">user2418630</a></p>
+<p>This is correct. I think video playback requires that the server supports, among other things, byte-range requests. –  <a href="http://stackoverflow.com/users/196079/lemnar" title="3326 reputation">lemnar</a></p>
+</blockquote>
+<p><strong>Blogs</strong></p>
+<p><a href="http://martinnormark.com/playing-video-on-apple-tv-with-tvos/">http://martinnormark.com/playing-video-on-apple-tv-with-tvos/</a></p>
+<p><img src="../images/wordpress.png" alt="Wordpress" title="Wordpress" /> <a href="https://alexhedley.wordpress.com/2015/09/12/tvos-playing-a-video/">Original Link</a></p>
+
+
+        
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2023</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+  
+
+  
+
+</body>
+
+</html>

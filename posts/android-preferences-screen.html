@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AlexHedley">
+
+  <title>Alex Hedley - Android - Preferences Screen</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/android-preferences-screen'>
+
+      <link type="application/rss+xml" rel="alternate" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - Android - Preferences Screen' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/android-preferences-screen' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead no-image">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            Android - Preferences Screen
+          </h1>
+            <div class="meta">Published on Friday, 30 January 2015</div>
+              <div class="mt-3">
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <p>I've wanted to add Preferences Screen to my app.</p>
+<p>There's a section on Treehouse</p>
+<p><a href="http://teamtreehouse.com/library/android-data-persistence">http://teamtreehouse.com/library/android-data-persistence</a></p>
+<p>Key-Value Saving with SharedPreferences</p>
+<p>It had a lot going on and most of it was already configured</p>
+<p>The article I found most useful was:</p>
+<p><a href="https://androidresearch.wordpress.com/2012/03/09/creating-a-preference-activity-in-android/">https://androidresearch.wordpress.com/2012/03/09/creating-a-preference-activity-in-android/</a></p>
+<p>Added here in case the site goes.</p>
+<p>[gist 9b3d87f19f4a7c3caea6/]</p>
+<p><code>AndroidManifest.xml</code></p>
+<pre><code class="language-xml">&lt;application
+......./&gt;
+  &lt;activity
+    android:name=&quot;.PrefsActivity&quot;
+    android:theme=&quot;&#64;android:style/Theme.Black.NoTitleBar&quot; &gt;
+  &lt;/activity&gt;
+&lt;/application&gt;
+</code></pre>
+<p><code>array.xml</code></p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+ &lt;resources&gt;
+   &lt;string-array name=&quot;listOptions&quot;&gt;
+     &lt;item&gt;Option 1&lt;/item&gt;
+     &lt;item&gt;Option 2&lt;/item&gt;
+     &lt;item&gt;Option 3&lt;/item&gt;
+     &lt;/string-array&gt;
+ 
+   &lt;string-array name=&quot;listValues&quot;&gt;
+     &lt;item&gt;1 is selected&lt;/item&gt;
+     &lt;item&gt;2 is selected&lt;/item&gt;
+     &lt;item&gt;3 is selected&lt;/item&gt;
+   &lt;/string-array&gt;
+ &lt;/resources&gt;
+</code></pre>
+<p><code>layout.xml</code></p>
+<pre><code class="language-xml">&lt;Button
+  android:id=&quot;&#64;+id/btnPrefs&quot;
+  android:layout_width=&quot;wrap_content&quot;
+  android:layout_height=&quot;wrap_content&quot;
+  android:text=&quot;Preferences Screen&quot; /&gt;
+</code></pre>
+<p><code>MainActivity.java</code></p>
+<pre><code class="language-java">public static final String DEFAULT_URL = &quot;http://alexhedley.com/landingpage&quot;;
+SharedPreferences sharedPref;
+
+// Set the Default Values
+PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+String defaultURL = sharedPref.getString(&quot;url&quot;, DEFAULT_URL);
+
+SharedPreferences.Editor editor = sharedPref.edit();
+editor.putString(&quot;url&quot;, url); //url is value you get
+editor.commit();
+Toast.makeText(getApplicationContext(), &quot;Default URL Updated&quot;, Toast.LENGTH_SHORT).show();
+
+`PreferenceDemoActivity.java`
+public class PreferenceDemoActivity extends Activity {
+TextView textView;
+ 
+&#64;Override
+public void onCreate(Bundle savedInstanceState) {
+   super.onCreate(savedInstanceState);
+   setContentView(R.layout.main);
+ 
+   Button btnPrefs = (Button) findViewById(R.id.btnPrefs);
+   Button btnGetPrefs = (Button) findViewById(R.id.btnGetPreferences);
+ 
+   textView = (TextView) findViewById(R.id.txtPrefs);
+ 
+   View.OnClickListener listener = new View.OnClickListener() {
+ 
+   &#64;Override
+   public void onClick(View v) {
+   switch (v.getId()) {
+     case R.id.btnPrefs:
+        Intent intent = new Intent(PreferenceDemoActivity.this,
+        PrefsActivity.class);
+        startActivity(intent);
+        break;
+   
+     case R.id.btnGetPreferences:
+        displaySharedPreferences();
+        break;
+   
+     default:
+       break;
+     }
+    }
+   };
+ 
+   btnPrefs.setOnClickListener(listener);
+}
+</code></pre>
+<p><code>preferences.xml</code></p>
+<pre><code class="language-xml">//https://androidresearch.wordpress.com/2012/03/09/creating-a-preference-activity-in-android/
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;PreferenceScreen xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; &gt;
+ &lt;PreferenceCategory
+   android:summary=&quot;Username and password information&quot;
+   android:title=&quot;Login information&quot; &gt;
+  &lt;EditTextPreference
+     android:key=&quot;username&quot;
+     android:summary=&quot;Please enter your login username&quot;
+     android:title=&quot;Username&quot; /&gt;
+ &lt;/PreferenceCategory&gt;
+&lt;/PreferenceScreen&gt;
+</code></pre>
+<p><code>PrefsActivity.java</code></p>
+<pre><code class="language-java">public class PrefsActivity extends PreferenceActivity{
+ 
+  &#64;Override
+  protected void onCreate(Bundle savedInstanceState) {
+     super.onCreate(savedInstanceState);
+     addPreferencesFromResource(R.xml.prefs);
+  }
+}
+</code></pre>
+<p>Others included but were old:</p>
+<p><a href="http://android-elements.blogspot.co.uk/2011/06/creating-android-preferences-screen.html">http://android-elements.blogspot.co.uk/2011/06/creating-android-preferences-screen.html</a></p>
+<p><a href="http://stackoverflow.com/questions/14756457/android-deprecated-method-warning-regarding-preferenceactivity/24051942#24051942">http://stackoverflow.com/questions/14756457/android-deprecated-method-warning-regarding-preferenceactivity/24051942#24051942</a></p>
+<p><a href="http://stackoverflow.com/questions/15126290/adding-settings-to-android-app">http://stackoverflow.com/questions/15126290/adding-settings-to-android-app</a></p>
+<p><a href="https://alexhedley.wordpress.com/2015/01/30/android-preferences-screen/">Original Link</a></p>
+
+
+        
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2023</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+  
+
+  
+
+</body>
+
+</html>
