@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AlexHedley">
+
+  <title>Alex Hedley - MapKit</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/mapkit'>
+
+      <link type="application/rss+xml" rel="alternate" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - MapKit' />
+    <meta property="og:image" content='/blog/posts/images/maps_ios-128x128_2x.png' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/mapkit' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(&quot;/blog/posts/images/maps_ios-128x128_2x.png&quot;)">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            MapKit
+          </h1>
+            <div class="meta">Published on Saturday, 3 February 2018</div>
+              <div class="mt-3">
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="image-attribution badge text-bg-secondary rounded-pill"><p>https://www.apple.com/uk/maps/</p>
+</div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <p>So I've been learning <a href="https://developer.apple.com/maps/">MapKit</a> this week.</p>
+<ul>
+<li><a href="https://developer.apple.com/reference/mapkit">Developer</a></li>
+</ul>
+<p>It's been a fun new framework to look into.</p>
+<p>Create an Annotation so you can have custom properties.</p>
+<pre><code class="language-objectivec">&#64;interface Annotation : NSObject&lt;MKAnnotation&gt;
+</code></pre>
+<p>Add a category to it so you have a way of telling what it is.</p>
+<p>This could be an enum.</p>
+<p>In the Delegate method</p>
+<pre><code class="language-objectivec">- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id &lt;MKAnnotation&gt;)annotation
+</code></pre>
+<p>You can use the category to set up some properties like a button and the pin colour.</p>
+<p>I'm wondering if the &quot;reuseIdentifier&quot; should be unique here too?</p>
+<p>You've added a button, now how to call it?</p>
+<p>You could add a target and action</p>
+<pre><code class="language-objectivec">[rightButton addTarget:## action:## forControlEvents:UIControlEventTouchUpInside];
+</code></pre>
+<p>but instead you can use the &quot;calloutAccessoryControlTapped&quot; delegate method.</p>
+<pre><code class="language-objectivec">- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+</code></pre>
+<p>As this isn't a  &quot;MKAnnotation&quot; like &quot;viewForAnnotation&quot; but an &quot;MKAnnotationView&quot; we need to get the annotation from the passed view.</p>
+<pre><code class="language-objectivec">if ([view.annotation isKindOfClass:[OotAnnotation class]]) { ... }
+</code></pre>
+<p>Then call pfs,</p>
+<p>Then in the &quot;prepareForSegue&quot; you need to get the Annotation when you click on a Pin button, this can be cast from the Sender</p>
+<pre><code class="language-objectivec">if ([view.annotation isKindOfClass:[OotAnnotation class]]) { ... }
+</code></pre>
+<pre><code class="language-objectivec">Annotation \*annotation = (Annotation *)[(MKAnnotationView *)sender annotation];
+</code></pre>
+<p>You could then pass your custom Location details via the ViewController. (See code)</p>
+<hr />
+<p>Searching for locations to add to the map:</p>
+<p>MKLocalSearchRequest</p>
+<hr />
+<p>Adding a route, need to investigate this more.</p>
+<p>MKPolyline</p>
+<hr />
+<p>All Code</p>
+<p>[gist 6ac1c60428f6e13692f7f3f11d931f0e]</p>
+<p><code>Annotation.h</code></p>
+<pre><code class="language-objectivec">#import &lt;UIKit/UIKit.h&gt;
+#import &lt;Foundation/Foundation.h&gt;
+#import &lt;MapKit/MapKit.h&gt;
+#import &quot;Location.h&quot;
+
+&#64;interface OotAnnotation : NSObject&lt;MKAnnotation&gt; {
+    CLLocationCoordinate2D  coordinate;
+    NSString *title;
+    NSString *subtitle;
+    NSInteger categoryID;
+}
+
+&#64;property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+&#64;property (nonatomic, copy) NSString *title;
+&#64;property (nonatomic, copy) NSString *subtitle;
+&#64;property NSInteger categoryID;
+&#64;property (nonatomic, strong) Location *locationDetails;
+
+typedef NS_ENUM(NSInteger, Category) {
+    PinCategoryPlace,
+    PinCategoryUser,
+    PinCategoryPub,
+    PinCategoryNightclub,
+    PinCategoryFood
+};
+
+&#64;end
+</code></pre>
+<p><code>Annotation.m</code></p>
+<pre><code class="language-objectivec">#import &quot;Annotation.h&quot;
+
+&#64;implementation OotAnnotation
+
+&#64;end
+</code></pre>
+<p><code>Location.h</code></p>
+<pre><code class="language-objectivec">#import &lt;Foundation/Foundation.h&gt;
+
+&#64;interface Location : NSObject
+
+&#64;property (nonatomic, strong) NSString *locationName;
+&#64;property double locationRating;
+&#64;property NSInteger locationNumOfReviews;
+&#64;property (nonatomic, strong) NSString *locationDetails;
+&#64;property (nonatomic, strong) NSString *locationImageUrl;
+&#64;property (nonatomic, strong) NSString *locationEmail;
+&#64;property (nonatomic, strong) NSString *locationPhone;
+&#64;property (nonatomic, strong) NSString *locationRouteDetails;
+&#64;property (nonatomic, strong) NSString *locationNotes;
+&#64;property (nonatomic, strong) NSString *locationDeal;
+
+- (id)initWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal;
+
++ (id)locationWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal;
+
+&#64;end
+</code></pre>
+<p><code>Location.m</code></p>
+<pre><code class="language-objectivec">#import &quot;Location.h&quot;
+
+&#64;implementation Location
+
+- (id)initWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal {
+    self = [super init];
+    
+    if (self) {
+        self.locationName = name;
+        self.locationRating = rating;
+        self.locationNumOfReviews = numOfReviews;
+        self.locationDetails = details;
+        self.locationImageUrl = imageUrl;
+        self.locationEmail = email;
+        self.locationPhone = phone;
+        self.locationRouteDetails = routeDetails;
+        self.locationNotes = notes;
+        self.locationDeal = deal;
+    }
+    return self;
+}
+
++ (id)locationWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal {
+    return [[self alloc] initWithName:name rating:rating numOfReviews:numOfReviews details:details imageUrl:imageUrl email:email phone:phone routeDetails:routeDetails notes:notes deal:deal];
+}
+
+&#64;end
+</code></pre>
+<p><code>MapViewController.h</code></p>
+<pre><code class="language-objectivec">#import &lt;UIKit/UIKit.h&gt;
+#import &lt;MapKit/MapKit.h&gt;
+#import &lt;MapKit/MKAnnotation.h&gt;
+#import &lt;AddressBook/AddressBook.h&gt;
+#import &lt;Contacts/Contacts.h&gt;
+
+&#64;interface MapViewController : UIViewController &lt;MKMapViewDelegate,  CLLocationManagerDelegate&gt;
+
+&#64;property (nonatomic, strong) IBOutlet MKMapView *mapView;
+&#64;property (nonatomic, retain) CLLocationManager *locationManager;
+
+&#64;property (nonatomic, retain) MKPolyline *routeLine;
+&#64;property (nonatomic, retain) MKPolylineView *routeLineView;
+
+&#64;end
+</code></pre>
+<p><code>MapViewController.m</code></p>
+<pre><code class="language-objectivec">#import &quot;MapViewController.h&quot;
+#import &quot;Annotation.h&quot;
+#import &quot;LocationViewController.h&quot;
+
+&#64;interface MapViewController ()
+
+&#64;end
+
+&#64;implementation MapViewController
+
+#pragma mark - View Methods
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.mapView.delegate = self;
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    #ifdef __IPHONE_8_0
+    if(IS_OS_8_OR_LATER) {
+        // Use one or the other, not both. Depending on what you put in info.plist
+        [self.locationManager requestWhenInUseAuthorization];
+        [self.locationManager requestAlwaysAuthorization];
+    }
+    #endif
+    [self.locationManager startUpdatingLocation];
+    
+    _mapView.showsUserLocation = YES;
+    [_mapView setMapType:MKMapTypeStandard];
+    [_mapView setZoomEnabled:YES];
+    [_mapView setScrollEnabled:YES];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
+    
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+    NSLog(&#64;&quot;%&#64;&quot;, [self deviceLocation]);
+    
+    //View Area
+    MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
+    region.center.latitude = self.locationManager.location.coordinate.latitude;
+    region.center.longitude = self.locationManager.location.coordinate.longitude;
+    region.span.longitudeDelta = 0.005f;
+    region.span.longitudeDelta = 0.005f;
+    [_mapView setRegion:region animated:YES];
+    
+    //[self addLocation:&#64;&quot;Protirus&quot; subTitle:&#64;&quot;Office&quot; lat:54.969617 lon:-1.618393];
+    //[self addLocation:&#64;&quot;Town Wall&quot; subTitle:&#64;&quot;Gastropub&quot; lat:54.9694 lon:-1.6184]; //54.9694° N, 1.6184° W
+    
+    Location *locationDetails = [Location locationWithName:&#64;&quot;Town Wall&quot; rating:4.2 numOfReviews:73 details:&#64;&quot;Gastropub&quot; imageUrl:&#64;&quot;TheTownWall&quot; email:&#64;&quot;hayley&#64;thetownwall.com&quot; phone:&#64;&quot;01912323000&quot; routeDetails:&#64;&quot;Town Wall - 5 minutes away - marked&quot; notes:&#64;&quot;Plan to stay for an hour perhaps&quot; deal:&#64;&quot;DEAL - 2 for 1 Drinks&quot;];
+    
+    [self addPinWithTitle:&#64;&quot;Protirus&quot; subTitle:&#64;&quot;Office&quot; lat:54.969617 lon:-1.618393 category:PinCategoryPlace locationDetails:nil];
+    [self addPinWithTitle:&#64;&quot;Town Wall&quot; subTitle:&#64;&quot;Gastropub&quot; lat:54.9694 lon:-1.6184 category:PinCategoryPub locationDetails:locationDetails];
+    
+    CLLocationCoordinate2D coordinateArray[2];
+    coordinateArray[0] = CLLocationCoordinate2DMake(54.969617, -1.618393);
+    coordinateArray[1] = CLLocationCoordinate2DMake(54.9694, -1.6184);
+    [self addRoute:coordinateArray];
+    
+    [self addFood];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Locations
+
+// http://stackoverflow.com/a/27164326
+- (void)addPinWithTitle:(NSString *)title subTitle:(NSString *)subTitle lat:(double)lat lon:(double)lon category:(int)category locationDetails:(OotLocation *)locationDetails {
+    CLLocationCoordinate2D coordinates = CLLocationCoordinate2DMake(lat, lon);
+    Annotation *annotation = [[Annotation alloc] init];
+    annotation.coordinate = coordinates;
+    annotation.title = title;
+    annotation.subtitle = subTitle;
+    annotation.categoryID = category;
+    annotation.locationDetails = locationDetails;
+    
+    [self.mapView addAnnotation:annotation];
+}
+
+// http://stackoverflow.com/a/14951825
+- (void)addFood {
+    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
+    request.naturalLanguageQuery = &#64;&quot;Restaurants&quot;;
+    request.region = self.mapView.region;
+    
+    MKLocalSearch *localSearch = [[MKLocalSearch alloc] initWithRequest:request];
+    [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
+        
+        NSMutableArray *annotations = [NSMutableArray array];
+        
+        [response.mapItems enumerateObjectsUsingBlock:^(MKMapItem *item, NSUInteger idx, BOOL *stop) {
+            Annotation *annotation = [[Annotation alloc] init];
+            annotation.coordinate = item.placemark.location.coordinate;
+            annotation.title = item.name;
+            annotation.subtitle = item.placemark.addressDictionary[&#64;&quot;Street&quot;]; //item.placemark.thoroughfare;
+                //item.placemark.addressDictionary[CNMutablePostalAddress.street]; // kABPersonAddressStreetKey]; //item.phoneNumber;
+            annotation.categoryID = PinCategoryFood;
+            annotation.locationDetails = nil;
+            
+            [annotations addObject:annotation];
+        }];
+        
+        [self.mapView addAnnotations:annotations];
+    }];
+}
+
+// http://stackoverflow.com/a/10598646
+- (void)addRoute:(CLLocationCoordinate2D [])coordinateArray {
+    self.routeLine = [MKPolyline polylineWithCoordinates:coordinateArray count:2];
+    [self.mapView setVisibleMapRect:[self.routeLine boundingMapRect]]; //If you want the route to be visible
+    
+    [self.mapView addOverlay:self.routeLine];
+}  
+
+#pragma mark - Helper Methods
+
+- (NSString *)deviceLocation {
+    return [NSString stringWithFormat:&#64;&quot;latitude: %f longitude: %f&quot;, self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:&#64;&quot;showLocation&quot;]) {
+        //LocationViewController *lvc = (LocationViewController *)[segue destinationViewController];
+        UINavigationController *navController = [segue destinationViewController];
+        LocationViewController *lvc = (LocationViewController *)([navController viewControllers][0]);
+        
+        //http://stackoverflow.com/a/25483130
+        Annotation *annotation = (Annotation *)[(MKAnnotationView *)sender annotation];
+        lvc.location = annotation.locationDetails;
+    }
+}
+
+#pragma mark - MapView Delegate
+
+//https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/AnnotatingMaps/AnnotatingMaps.html#//apple_ref/doc/uid/TP40009497-CH6-SW1
+- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id &lt;MKAnnotation&gt;)annotation {
+    // Try to dequeue an existing pin view first (code not shown).
+    
+    // If no pin view already exists, create a new one.
+    MKPinAnnotationView *customPinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:&#64;&quot;anything&quot;];
+    customPinView.pinColor = MKPinAnnotationColorPurple;
+    customPinView.animatesDrop = YES;
+    customPinView.canShowCallout = YES;
+    
+    // Because this is an iOS app, add the detail disclosure button to display details about the annotation in another view.
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    //[rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
+    //customPinView.rightCalloutAccessoryView = rightButton;
+    
+    NSString* imageName = &#64;&quot;Pin&quot;;
+    
+    if ([annotation isKindOfClass:[Annotation class]]) {
+        long categoryId = [(Annotation *)annotation categoryID];
+        
+        switch (categoryId) {
+            case PinCategoryUser:
+                imageName = &#64;&quot;User&quot;;
+                //customPinView.pinTintColor = MKPinAnnotationColorRed;
+                break;
+            case PinCategoryPub:
+                imageName = &#64;&quot;Beer&quot;;
+                customPinView.pinTintColor = [UIColor orangeColor];
+                customPinView.rightCalloutAccessoryView = rightButton;
+                break;
+            case PinCategoryNightclub:
+                imageName = &#64;&quot;Nightclub&quot;;
+                //customPinView.pinTintColor = MKPinAnnotationColorPurple;
+                break;
+            case PinCategoryFood:
+                imageName = &#64;&quot;Food&quot;;
+                //customPinView.pinTintColor = MKPinAnnotationColorPurple;
+                customPinView.pinTintColor = [UIColor redColor];
+                break;
+            default:
+                imageName = &#64;&quot;Pin&quot;;
+                //customPinView.pinTintColor = MKPinAnnotationColorRed;
+                break;
+        }
+        //if([(OotAnnotation *)annotation categoryID] == PinCategoryUser) {
+            // Add a custom image to the left side of the callout.
+        //}
+    }
+        
+    // Add a custom image to the left side of the callout.
+    UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+    customPinView.leftCalloutAccessoryView = myCustomImage;
+    
+    return customPinView;
+}
+
+// http://stackoverflow.com/a/6941743
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+    if ([view.annotation isKindOfClass:[Annotation class]]) {
+        [self performSegueWithIdentifier:&#64;&quot;showLocation&quot; sender:view];
+    }
+}
+
+-(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id&lt;MKOverlay&gt;)overlay {
+    if(overlay == self.routeLine) {
+        if(nil == self.routeLineView) {
+            self.routeLineView = [[MKPolylineView alloc] initWithPolyline:self.routeLine];
+            self.routeLineView.fillColor = [UIColor yellowColor];
+            self.routeLineView.strokeColor = [UIColor yellowColor];
+            self.routeLineView.lineWidth = 10;
+        }
+        return self.routeLineView;
+    }
+    return nil;
+}
+
+&#64;end
+</code></pre>
+<p><img src="../images/wordpress.png" alt="Wordpress" title="Wordpress" /> <a href="https://alexhedley.wordpress.com/2018/02/03/mapkit/">Original Link</a></p>
+
+
+        
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2023</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+  
+
+  
+
+</body>
+
+</html>

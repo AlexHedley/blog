@@ -4,7 +4,573 @@
 	<title />
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-05-25T16:21:13Z</updated>
+	<updated>2023-05-25T16:38:17Z</updated>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/jsqmessagesviewcontroller-messages-ui</id>
+		<title>JSQMessagesViewController - Messages UI</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/jsqmessagesviewcontroller-messages-ui" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/jsq_messages_banner.png" />
+		<updated>2018-02-03T00:00:00Z</updated>
+		<content>&lt;p&gt;On the app I'm currently working on I've got a messaging portion.&lt;/p&gt;
+&lt;p&gt;Originally I implemented a basic TableView with a TextField to add a message.&lt;/p&gt;
+&lt;p&gt;Then I searched for Messages UI frameworks and came across&amp;nbsp;&lt;strong&gt;JSQMessagesViewController&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.jessesquires.com/JSQMessagesViewController/"&gt;http://www.jessesquires.com/JSQMessagesViewController/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jessesquires/JSQMessagesViewController"&gt;https://github.com/jessesquires/JSQMessagesViewController&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There's a Sample project you can look into - JSQMessagesDemo.&lt;/p&gt;
+&lt;p&gt;It comes as a Cocoapod:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://cocoapods.org/pods/JSQMessagesViewController"&gt;https://cocoapods.org/pods/JSQMessagesViewController&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I'm using 7.3.4.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Create a new Xcode project.&lt;/p&gt;
+&lt;p&gt;Open terminal at that folder&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pod init&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;add&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pod 'JSQMessagesViewController'&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;then&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pod install&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Open the Xcode '#App.xcworkspace'&lt;/p&gt;
+&lt;p&gt;Create a View Controller that inherits&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;: JSQMessagesViewController&amp;lt;UIActionSheetDelegate, JSQMessagesComposerTextViewPasteDelegate&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#import &amp;lt;JSQMessagesViewController/JSQMessagesViewController.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#import "DemoData.h"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@class MessageViewController;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@protocol MessageViewControllerDelegate &amp;lt;NSObject&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;- (void)didDismissMessagesViewController:(MessageViewController *)vc;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@end&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Add some properties and methods&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@property (weak, nonatomic) id&amp;lt;MessageViewControllerDelegate&amp;gt; delegateModal;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) DemoData *data;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;- (void)receiveMessagePressed:(UIBarButtonItem *)sender;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;- (void)closePressed:(UIBarButtonItem *)sender;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I didn't bother with any of the settings so commented these checks out.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I couldn't find the Accessory Button Delegate to add to my View Controller.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#import "JSQMessagesViewAccessoryButtonDelegate.h"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;JSQMessagesViewAccessoryButtonDelegate&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;For testing create a new class for your demo data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DemoData.h&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@interface DemoData : NSObject&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) NSMutableArray *messages;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) NSDictionary *users;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) JSQMessagesBubbleImage *outgoingBubbleImageData;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) JSQMessagesBubbleImage *incomingBubbleImageData;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;@end&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;DemoData.m&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Create some test Users.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (instancetype)init
+{
+&amp;nbsp; &amp;nbsp; self = [super init];
+&amp;nbsp; &amp;nbsp; if (self) { &amp;nbsp;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [self loadFakeMessages];
+
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.users = @{ @"1" : @"Alex",
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; @"2" : @"Sam",
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; @"3" : @"Kev",
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; @"4" : @"Ray" };
+
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; JSQMessagesBubbleImageFactory *bubbleFactory = [[JSQMessagesBubbleImageFactory alloc] init];&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.outgoingBubbleImageData = [bubbleFactory outgoingMessagesBubbleImageWithColor:[UIColor jsq_messageBubbleLightGrayColor]];
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.incomingBubbleImageData = [bubbleFactory incomingMessagesBubbleImageWithColor:[UIColor jsq_messageBubbleGreenColor]];
+&amp;nbsp; &amp;nbsp; }
+&amp;nbsp; &amp;nbsp; return self;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create the Fake Messages&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;- (void)loadFakeMessages { ... }&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;We can use this back in our&amp;nbsp;&lt;code&gt;MessageViewController.m&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - View lifecycle&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;viewDidLoad&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;viewWillAppear&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;viewDidAppear&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since I'm not using Avatars add this to &lt;code&gt;viewDidLoad&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;&amp;nbsp;self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Also return nil in 'avatarImageDataForItemAtIndexPath'&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (id&amp;lt;JSQMessageAvatarImageDataSource&amp;gt;)collectionView:(JSQMessagesCollectionView \*)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath \*)indexPath {
+    ...
+    return nil;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Implement these other methods.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - Custom menu actions for cells&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - Actions&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessagesViewController method overrides&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessages CollectionView DataSource&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Choose a user here&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;senderId&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;senderId&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - UICollectionView DataSource&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - UICollectionView Delegate&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - Custom menu items&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessages collection view flow layout delegate&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - Adjusting cell label heights&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - Responding to collection view tap events&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessagesComposerTextViewPasteDelegate methods&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessagesViewAccessoryDelegate methods&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Changing some settings&lt;/p&gt;
+&lt;p&gt;I didn't want the Add Attachments button.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;viewDidLoad&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;self.inputToolbar.contentView.leftBarButtonItem = nil;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/jessesquires/JSQMessagesViewController/issues/338"&gt;https://github.com/jessesquires/JSQMessagesViewController/issues/338&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jessesquires/JSQMessagesViewController/issues/280"&gt;https://github.com/jessesquires/JSQMessagesViewController/issues/280&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Now just to swap out the messages to my XMPP Server...&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2018/02/03/jsqmessagesviewcontroller-messages-ui/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;On the app I'm currently working on I've got a messaging portion.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/xmppframework</id>
+		<title>XMPPFramework</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/xmppframework" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/xmppframework2.png" />
+		<updated>2018-02-03T00:00:00Z</updated>
+		<content>&lt;p&gt;XMPPFramework&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/robbiehanson/XMPPFramework"&gt;https://github.com/robbiehanson/XMPPFramework&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Create an Xcode project.&lt;/p&gt;
+&lt;p&gt;Open terminal at that folder location.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pod init&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pod 'XMPPFramework', :git =&amp;gt; "https://github.com/robbiehanson/XMPPFramework.git", :branch =&amp;gt; 'master'&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;@import XMPPFramework;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Getting Started&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/robbiehanson/XMPPFramework/wiki/GettingStarted_iOS"&gt;https://github.com/robbiehanson/XMPPFramework/wiki/GettingStarted_iOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Tutorials&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://code.tutsplus.com/series/building-a-jabber-client-for-ios--mobile-22620"&gt;https://code.tutsplus.com/series/building-a-jabber-client-for-ios--mobile-22620&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-server-setup--mobile-6958"&gt;https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-server-setup--mobile-6958&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-interface-setup--mobile-7188"&gt;https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-interface-setup--mobile-7188&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-xmpp-setup--mobile-7190"&gt;https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-xmpp-setup--mobile-7190&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-custom-chat-view-and-emoticons--mobile-7728"&gt;https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-custom-chat-view-and-emoticons--mobile-7728&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Had issues setting up&amp;nbsp;&lt;a href="https://www.ejabberd.im/"&gt;Ejabbered&lt;/a&gt; on the mac.&lt;/p&gt;
+&lt;p&gt;I'm using an&amp;nbsp;&lt;a href="https://www.igniterealtime.org/projects/openfire/"&gt;OpenFire&lt;/a&gt;&amp;nbsp;server I setup&amp;nbsp;so used that instead, with a couple of clients connected to there instead.&lt;/p&gt;
+&lt;p&gt;Clients&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.igniterealtime.org/downloads/index.jsp"&gt;Spark 2.8.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://adium.im/"&gt;Adium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://xchat.org/"&gt;XChat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Stack Overflow&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/9091767/up-to-date-instructions-on-how-to-install-xmppframework-manually/30543948#30543948"&gt;http://stackoverflow.com/questions/9091767/up-to-date-instructions-on-how-to-install-xmppframework-manually/30543948#30543948&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Setting the Server&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;set the server url&lt;/p&gt;
+&lt;p&gt;set the port&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Delivery Receipts&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Read Receipts&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Group Chat&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2018/02/03/xmppframework/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;XMPPFramework&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/mapkit</id>
+		<title>MapKit</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/mapkit" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/maps_ios-128x128_2x.png" />
+		<updated>2018-02-03T00:00:00Z</updated>
+		<content>&lt;p&gt;So I've been learning &lt;a href="https://developer.apple.com/maps/"&gt;MapKit&lt;/a&gt; this week.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developer.apple.com/reference/mapkit"&gt;Developer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It's been a fun new framework to look into.&lt;/p&gt;
+&lt;p&gt;Create an Annotation so you can have custom properties.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;@interface Annotation : NSObject&amp;lt;MKAnnotation&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add a category to it so you have a way of telling what it is.&lt;/p&gt;
+&lt;p&gt;This could be an enum.&lt;/p&gt;
+&lt;p&gt;In the Delegate method&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id &amp;lt;MKAnnotation&amp;gt;)annotation
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can use the category to set up some properties like a button and the pin colour.&lt;/p&gt;
+&lt;p&gt;I'm wondering if the&amp;nbsp;"reuseIdentifier" should be unique here too?&lt;/p&gt;
+&lt;p&gt;You've added a button, now how to call it?&lt;/p&gt;
+&lt;p&gt;You could add a target and action&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;[rightButton addTarget:## action:## forControlEvents:UIControlEventTouchUpInside];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;but instead you can use the "calloutAccessoryControlTapped" delegate method.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As this isn't a &amp;nbsp;"MKAnnotation" like "viewForAnnotation" but an "MKAnnotationView" we need to get the annotation from the passed view.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;if ([view.annotation isKindOfClass:[OotAnnotation class]]) { ... }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then call pfs,&lt;/p&gt;
+&lt;p&gt;Then in the "prepareForSegue" you need to get the Annotation when you click on a Pin button, this can be cast from the Sender&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;if ([view.annotation isKindOfClass:[OotAnnotation class]]) { ... }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;Annotation \*annotation = (Annotation *)[(MKAnnotationView *)sender annotation];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You could then pass your custom Location details via the ViewController. (See code)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Searching for locations to add to the map:&lt;/p&gt;
+&lt;p&gt;MKLocalSearchRequest&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Adding a route, need to investigate this more.&lt;/p&gt;
+&lt;p&gt;MKPolyline&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;All Code&lt;/p&gt;
+&lt;p&gt;[gist 6ac1c60428f6e13692f7f3f11d931f0e]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Annotation.h&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import &amp;lt;UIKit/UIKit.h&amp;gt;
+#import &amp;lt;Foundation/Foundation.h&amp;gt;
+#import &amp;lt;MapKit/MapKit.h&amp;gt;
+#import "Location.h"
+
+@interface OotAnnotation : NSObject&amp;lt;MKAnnotation&amp;gt; {
+    CLLocationCoordinate2D  coordinate;
+    NSString *title;
+    NSString *subtitle;
+    NSInteger categoryID;
+}
+
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
+@property NSInteger categoryID;
+@property (nonatomic, strong) Location *locationDetails;
+
+typedef NS_ENUM(NSInteger, Category) {
+    PinCategoryPlace,
+    PinCategoryUser,
+    PinCategoryPub,
+    PinCategoryNightclub,
+    PinCategoryFood
+};
+
+@end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Annotation.m&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import "Annotation.h"
+
+@implementation OotAnnotation
+
+@end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Location.h&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import &amp;lt;Foundation/Foundation.h&amp;gt;
+
+@interface Location : NSObject
+
+@property (nonatomic, strong) NSString *locationName;
+@property double locationRating;
+@property NSInteger locationNumOfReviews;
+@property (nonatomic, strong) NSString *locationDetails;
+@property (nonatomic, strong) NSString *locationImageUrl;
+@property (nonatomic, strong) NSString *locationEmail;
+@property (nonatomic, strong) NSString *locationPhone;
+@property (nonatomic, strong) NSString *locationRouteDetails;
+@property (nonatomic, strong) NSString *locationNotes;
+@property (nonatomic, strong) NSString *locationDeal;
+
+- (id)initWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal;
+
++ (id)locationWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal;
+
+@end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Location.m&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import "Location.h"
+
+@implementation Location
+
+- (id)initWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal {
+    self = [super init];
+    
+    if (self) {
+        self.locationName = name;
+        self.locationRating = rating;
+        self.locationNumOfReviews = numOfReviews;
+        self.locationDetails = details;
+        self.locationImageUrl = imageUrl;
+        self.locationEmail = email;
+        self.locationPhone = phone;
+        self.locationRouteDetails = routeDetails;
+        self.locationNotes = notes;
+        self.locationDeal = deal;
+    }
+    return self;
+}
+
++ (id)locationWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal {
+    return [[self alloc] initWithName:name rating:rating numOfReviews:numOfReviews details:details imageUrl:imageUrl email:email phone:phone routeDetails:routeDetails notes:notes deal:deal];
+}
+
+@end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;MapViewController.h&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import &amp;lt;UIKit/UIKit.h&amp;gt;
+#import &amp;lt;MapKit/MapKit.h&amp;gt;
+#import &amp;lt;MapKit/MKAnnotation.h&amp;gt;
+#import &amp;lt;AddressBook/AddressBook.h&amp;gt;
+#import &amp;lt;Contacts/Contacts.h&amp;gt;
+
+@interface MapViewController : UIViewController &amp;lt;MKMapViewDelegate,  CLLocationManagerDelegate&amp;gt;
+
+@property (nonatomic, strong) IBOutlet MKMapView *mapView;
+@property (nonatomic, retain) CLLocationManager *locationManager;
+
+@property (nonatomic, retain) MKPolyline *routeLine;
+@property (nonatomic, retain) MKPolylineView *routeLineView;
+
+@end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;MapViewController.m&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import "MapViewController.h"
+#import "Annotation.h"
+#import "LocationViewController.h"
+
+@interface MapViewController ()
+
+@end
+
+@implementation MapViewController
+
+#pragma mark - View Methods
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.mapView.delegate = self;
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    #ifdef __IPHONE_8_0
+    if(IS_OS_8_OR_LATER) {
+        // Use one or the other, not both. Depending on what you put in info.plist
+        [self.locationManager requestWhenInUseAuthorization];
+        [self.locationManager requestAlwaysAuthorization];
+    }
+    #endif
+    [self.locationManager startUpdatingLocation];
+    
+    _mapView.showsUserLocation = YES;
+    [_mapView setMapType:MKMapTypeStandard];
+    [_mapView setZoomEnabled:YES];
+    [_mapView setScrollEnabled:YES];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
+    
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+    NSLog(@"%@", [self deviceLocation]);
+    
+    //View Area
+    MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
+    region.center.latitude = self.locationManager.location.coordinate.latitude;
+    region.center.longitude = self.locationManager.location.coordinate.longitude;
+    region.span.longitudeDelta = 0.005f;
+    region.span.longitudeDelta = 0.005f;
+    [_mapView setRegion:region animated:YES];
+    
+    //[self addLocation:@"Protirus" subTitle:@"Office" lat:54.969617 lon:-1.618393];
+    //[self addLocation:@"Town Wall" subTitle:@"Gastropub" lat:54.9694 lon:-1.6184]; //54.9694° N, 1.6184° W
+    
+    Location *locationDetails = [Location locationWithName:@"Town Wall" rating:4.2 numOfReviews:73 details:@"Gastropub" imageUrl:@"TheTownWall" email:@"hayley@thetownwall.com" phone:@"01912323000" routeDetails:@"Town Wall - 5 minutes away - marked" notes:@"Plan to stay for an hour perhaps" deal:@"DEAL - 2 for 1 Drinks"];
+    
+    [self addPinWithTitle:@"Protirus" subTitle:@"Office" lat:54.969617 lon:-1.618393 category:PinCategoryPlace locationDetails:nil];
+    [self addPinWithTitle:@"Town Wall" subTitle:@"Gastropub" lat:54.9694 lon:-1.6184 category:PinCategoryPub locationDetails:locationDetails];
+    
+    CLLocationCoordinate2D coordinateArray[2];
+    coordinateArray[0] = CLLocationCoordinate2DMake(54.969617, -1.618393);
+    coordinateArray[1] = CLLocationCoordinate2DMake(54.9694, -1.6184);
+    [self addRoute:coordinateArray];
+    
+    [self addFood];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Locations
+
+// http://stackoverflow.com/a/27164326
+- (void)addPinWithTitle:(NSString *)title subTitle:(NSString *)subTitle lat:(double)lat lon:(double)lon category:(int)category locationDetails:(OotLocation *)locationDetails {
+    CLLocationCoordinate2D coordinates = CLLocationCoordinate2DMake(lat, lon);
+    Annotation *annotation = [[Annotation alloc] init];
+    annotation.coordinate = coordinates;
+    annotation.title = title;
+    annotation.subtitle = subTitle;
+    annotation.categoryID = category;
+    annotation.locationDetails = locationDetails;
+    
+    [self.mapView addAnnotation:annotation];
+}
+
+// http://stackoverflow.com/a/14951825
+- (void)addFood {
+    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
+    request.naturalLanguageQuery = @"Restaurants";
+    request.region = self.mapView.region;
+    
+    MKLocalSearch *localSearch = [[MKLocalSearch alloc] initWithRequest:request];
+    [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
+        
+        NSMutableArray *annotations = [NSMutableArray array];
+        
+        [response.mapItems enumerateObjectsUsingBlock:^(MKMapItem *item, NSUInteger idx, BOOL *stop) {
+            Annotation *annotation = [[Annotation alloc] init];
+            annotation.coordinate = item.placemark.location.coordinate;
+            annotation.title = item.name;
+            annotation.subtitle = item.placemark.addressDictionary[@"Street"]; //item.placemark.thoroughfare;
+                //item.placemark.addressDictionary[CNMutablePostalAddress.street]; // kABPersonAddressStreetKey]; //item.phoneNumber;
+            annotation.categoryID = PinCategoryFood;
+            annotation.locationDetails = nil;
+            
+            [annotations addObject:annotation];
+        }];
+        
+        [self.mapView addAnnotations:annotations];
+    }];
+}
+
+// http://stackoverflow.com/a/10598646
+- (void)addRoute:(CLLocationCoordinate2D [])coordinateArray {
+    self.routeLine = [MKPolyline polylineWithCoordinates:coordinateArray count:2];
+    [self.mapView setVisibleMapRect:[self.routeLine boundingMapRect]]; //If you want the route to be visible
+    
+    [self.mapView addOverlay:self.routeLine];
+}  
+
+#pragma mark - Helper Methods
+
+- (NSString *)deviceLocation {
+    return [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showLocation"]) {
+        //LocationViewController *lvc = (LocationViewController *)[segue destinationViewController];
+        UINavigationController *navController = [segue destinationViewController];
+        LocationViewController *lvc = (LocationViewController *)([navController viewControllers][0]);
+        
+        //http://stackoverflow.com/a/25483130
+        Annotation *annotation = (Annotation *)[(MKAnnotationView *)sender annotation];
+        lvc.location = annotation.locationDetails;
+    }
+}
+
+#pragma mark - MapView Delegate
+
+//https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/AnnotatingMaps/AnnotatingMaps.html#//apple_ref/doc/uid/TP40009497-CH6-SW1
+- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id &amp;lt;MKAnnotation&amp;gt;)annotation {
+    // Try to dequeue an existing pin view first (code not shown).
+    
+    // If no pin view already exists, create a new one.
+    MKPinAnnotationView *customPinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"anything"];
+    customPinView.pinColor = MKPinAnnotationColorPurple;
+    customPinView.animatesDrop = YES;
+    customPinView.canShowCallout = YES;
+    
+    // Because this is an iOS app, add the detail disclosure button to display details about the annotation in another view.
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    //[rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
+    //customPinView.rightCalloutAccessoryView = rightButton;
+    
+    NSString* imageName = @"Pin";
+    
+    if ([annotation isKindOfClass:[Annotation class]]) {
+        long categoryId = [(Annotation *)annotation categoryID];
+        
+        switch (categoryId) {
+            case PinCategoryUser:
+                imageName = @"User";
+                //customPinView.pinTintColor = MKPinAnnotationColorRed;
+                break;
+            case PinCategoryPub:
+                imageName = @"Beer";
+                customPinView.pinTintColor = [UIColor orangeColor];
+                customPinView.rightCalloutAccessoryView = rightButton;
+                break;
+            case PinCategoryNightclub:
+                imageName = @"Nightclub";
+                //customPinView.pinTintColor = MKPinAnnotationColorPurple;
+                break;
+            case PinCategoryFood:
+                imageName = @"Food";
+                //customPinView.pinTintColor = MKPinAnnotationColorPurple;
+                customPinView.pinTintColor = [UIColor redColor];
+                break;
+            default:
+                imageName = @"Pin";
+                //customPinView.pinTintColor = MKPinAnnotationColorRed;
+                break;
+        }
+        //if([(OotAnnotation *)annotation categoryID] == PinCategoryUser) {
+            // Add a custom image to the left side of the callout.
+        //}
+    }
+        
+    // Add a custom image to the left side of the callout.
+    UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+    customPinView.leftCalloutAccessoryView = myCustomImage;
+    
+    return customPinView;
+}
+
+// http://stackoverflow.com/a/6941743
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+    if ([view.annotation isKindOfClass:[Annotation class]]) {
+        [self performSegueWithIdentifier:@"showLocation" sender:view];
+    }
+}
+
+-(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id&amp;lt;MKOverlay&amp;gt;)overlay {
+    if(overlay == self.routeLine) {
+        if(nil == self.routeLineView) {
+            self.routeLineView = [[MKPolylineView alloc] initWithPolyline:self.routeLine];
+            self.routeLineView.fillColor = [UIColor yellowColor];
+            self.routeLineView.strokeColor = [UIColor yellowColor];
+            self.routeLineView.lineWidth = 10;
+        }
+        return self.routeLineView;
+    }
+    return nil;
+}
+
+@end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2018/02/03/mapkit/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;So I've been learning &lt;a href="https://developer.apple.com/maps/"&gt;MapKit&lt;/a&gt; this week.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/goals-for-2018</id>
 		<title>Goals for 2018</title>
@@ -1072,362 +1638,5 @@ typedef NS_ENUM(NSInteger, kCardPosition) {
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/05/20/jam-jar-cinema-wallet-passes/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
 </content>
 		<summary>&lt;p&gt;My local cinema is Awesome!&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/custom-uialertcontroller-in-objc</id>
-		<title>Custom UIAlertController in ObjC</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/custom-uialertcontroller-in-objc" />
-		<updated>2017-04-25T00:00:00Z</updated>
-		<content>&lt;p&gt;Custom UIAlertController in Objc&lt;/p&gt;
-&lt;p&gt;[gist 7dbb81c526aa3facceb461ea3a19d83e /]&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Alert.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;//http://hayageek.com/uialertcontroller-example-ios/
-
-- (void)alert {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Info" message:@"You are using UIAlertController" preferredStyle:UIAlertControllerStyleAlert];
-        
-    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK"
-                                                 style:UIAlertActionStyleDefault
-                                               handler:^(UIAlertAction * action)
-                         {
-                             [alert dismissViewControllerAnimated:YES completion:nil];
-                         }];
-    
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel"
-                                                     style:UIAlertActionStyleCancel
-                                                   handler:^(UIAlertAction * action)
-                             {
-                                 [alert dismissViewControllerAnimated:YES completion:nil];
-                             }];
-    [cancel setValue:[UIColor redColor] forKey:@"titleTextColor"];
-    
-    [alert addAction:cancel];
-    [alert addAction:ok];
-    [alert setPreferredAction:ok];
-        
-    [self presentViewController:alert animated:YES completion:nil];
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;CustomAlert.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (void)showAlert {
-    // http://stackoverflow.com/a/26530577/2895831
-    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"Dont care what goes here, since we're about to change below" message:@"" preferredStyle:UIAlertControllerStyleAlert]; //UIAlertControllerStyleActionSheet
-    NSMutableAttributedString *hogan = [[NSMutableAttributedString alloc] initWithString:@"Presenting the great... Hulk Hogan!"];
-    [hogan addAttribute:NSFontAttributeName
-                  value:[UIFont systemFontOfSize:50.0]
-                  range:NSMakeRange(24, 11)];
-    
-    
-    //[[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:kFont size:17.0f], NSFontAttributeName, titleColor, NSForegroundColorAttributeName, nil]];
-    [hogan addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(24, 11)];
-    
-    [alertVC setValue:hogan forKey:@"attributedTitle"];
-    
-    NSMutableAttributedString *hogan2 = [[NSMutableAttributedString alloc] initWithString:@"Super Leg Drop!"];
-    [hogan addAttribute:NSFontAttributeName
-                  value:[UIFont systemFontOfSize:30.0]
-                  range:NSMakeRange(0, [hogan length])];
-    
-    //[[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:kFont size:17.0f], NSFontAttributeName, titleColor, NSForegroundColorAttributeName, nil]];
-    [hogan2 addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(0, [hogan2 length])];
-    
-    [alertVC setValue:hogan2 forKey:@"attributedMessage"];
-    
-    UIAlertAction *button = [UIAlertAction actionWithTitle:@"Label text"
-                                                     style:UIAlertActionStyleDefault
-                                                   handler:^(UIAlertAction *action){
-                                                       //add code to make something happen once tapped
-                                                   }];
-    UIImage *accessoryImage = [UIImage imageNamed:@"someImage"];
-    [button setValue:accessoryImage forKey:@"image"];
-    
-    [alertVC addAction:button];
-    
-    [alertVC addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.placeholder = NSLocalizedString(@"Code", nil);
-        textField.textColor = [UIColor redColor];
-        textField.tintColor = [UIColor greenColor];
-        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
-        textField.borderStyle = UITextBorderStyleRoundedRect;
-        textField.keyboardType = UIKeyboardTypeNumberPad;
-    }];
-    
-    [alertVC addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", nil)
-                                                        style:UIAlertActionStyleDefault
-                                                      handler:^(UIAlertAction *action)
-                                {
-                                    UITextField *textField = [alertVC.textFields firstObject];
-                                    NSLog(@"%@", textField.text);
-                                }]
-     ];
-    
-    //http://stackoverflow.com/a/39853234/2895831
-    UIView *firstSubview = alertVC.view.subviews.firstObject;
-    UIView *alertContentView = firstSubview.subviews.firstObject;
-    for (UIView *subSubView in alertContentView.subviews) { //This is main catch
-        subSubView.backgroundColor = [UIColor darkGrayColor]; //Here you change background
-    }
-    
-    [self presentViewController:alertVC animated:YES completion:nil];
-    alertVC.view.tintColor = [UIColor purpleColor];
-    
-    //Change the background color of the UITextField view
-    //http://stackoverflow.com/a/30225592/2895831
-    for (UIView *textfield in alertVC.textFields) {
-        UIView *container = textfield.superview;
-        UIView *effectView = container.superview.subviews[0];
-        
-        if (effectView &amp;amp;&amp;amp; [effectView class] == [UIVisualEffectView class]){
-            container.backgroundColor = [UIColor purpleColor]; //[UIColor clearColor];
-            //[effectView removeFromSuperview];
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://hayageek.com/uialertcontroller-example-ios/"&gt;http://hayageek.com/uialertcontroller-example-ios/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://iosdevcenters.blogspot.com/2016/05/hacking-uialertcontroller-in-swift.html"&gt;https://iosdevcenters.blogspot.com/2016/05/hacking-uialertcontroller-in-swift.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[gallery ids="976,981" type="rectangular"]&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/simulator-screen-shot-25-apr-2017-14-50-06.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/uialertcontroller-2.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;You can change the background colour of the Alert too.&lt;/p&gt;
-&lt;p&gt;Change the colour of added controls like UITextField too!&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Links&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Hacking UIAlertController in Swift. &lt;a href="https://iosdevcenters.blogspot.com/2016/05/hacking-uialertcontroller-in-swift.html"&gt;https://iosdevcenters.blogspot.com/2016/05/hacking-uialertcontroller-in-swift.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;UIAlertController custom font, size, color &lt;a href="http://stackoverflow.com/a/26530577/2895831"&gt;http://stackoverflow.com/a/26530577/2895831&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Custom UIAlertController in Objc&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/xlform</id>
-		<title>XLForm</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/xlform" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/xl_appicon_152.png" />
-		<updated>2017-04-06T00:00:00Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;XLForm is the most flexible and powerful iOS library to create dynamic table-view forms. The goal of the library is to get the same power of hand-made forms but spending 1/10 of the time.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/xmartlabs/XLForm"&gt;https://github.com/xmartlabs/XLForm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Image&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Add an image to the left of a form input&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;row = [XLFormRowDescriptor formRowDescriptorWithTag:@"fullname" rowType:XLFormRowDescriptorTypeText];
-[row.cellConfigAtConfigure setObject:@"Full Name" forKey:@"textField.placeholder"];
-[row.cellConfigAtConfigure setObject:[UIImage imageNamed:@"User"] forKey:@"imageView.image"];
-[section addFormRow:row];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Buttons&lt;/em&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;XLFormRowDescriptor *buttonRow = [XLFormRowDescriptor formRowDescriptorWithTag:kButton rowType:XLFormRowDescriptorTypeButton title:@"A 6 digit verification code has been sent via SMS"];
-[buttonRow.cellConfig setObject:[UIColor purpleColor] forKey:@"textLabel.color"];
-[buttonRow.cellConfig setObject:[UIFont fontWithName:kFont size:10] forKey:@"textLabel.font"];
-buttonRow.cellStyle = UITableViewCellStyleValue1;
-buttonRow.value = @"Enter Code";
-buttonRow.action.formSelector = @selector(didTouchButton:);
-[section addFormRow:buttonRow];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Screenshot&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.files.wordpress.com/2017/03/register.png?w=175" alt="Register"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Switch&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/xmartlabs/XLForm/blob/master/Examples/Objective-C/Examples/PredicateExamples/PredicateFormViewController.m"&gt;PredicateFormViewController&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To turn the switch on&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;row = [XLFormRowDescriptor formRowDescriptorWithTag:@"switch" rowType:XLFormRowDescriptorTypeBooleanSwitch title:@"Boolean"];
-row.value = @1;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;p&gt;Issues&lt;/p&gt;
-&lt;p&gt;I raised an issue about the Floating Label covering the Image.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/xmartlabs/XLForm/issues/940https://github.com/xmartlabs/XLForm/issues/940"&gt;https://github.com/xmartlabs/XLForm/issues/940&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/register-jvfloatlabeledtextfield-2.png" alt="Register - JVFloatLabeledTextField (2)"&gt;&lt;/p&gt;
-&lt;p&gt;A very quick reply to update&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (NSArray *)layoutConstraints
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I added the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;const static CGFloat kHMargin = 50.0f;
-
-NSDictionary \*metrics = @{@"vMargin":@(kVMargin), @"hMargin":@(kHMargin)};
-
-[result addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(hMargin)-[floatLabeledTextField]-|" options:0 metrics:metrics views:views]];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/register-jvfloatlabeledtextfield-4.png" alt="Register - JVFloatLabeledTextField (4)"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Cell Separator&lt;/p&gt;
-&lt;p&gt;Add in 'viewDidLoad'&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;self.tableView.separatorColor = [UIColor redColor];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/xmartlabs/XLForm/issues/943"&gt;https://github.com/xmartlabs/XLForm/issues/943&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/register-jvfloatlabeledtextfield-5.png" alt="Register - JVFloatLabeledTextField (5)"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Section Background Colour&lt;/p&gt;
-&lt;p&gt;I wished to change the Header/Footer background colour.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Code&lt;/em&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (void)viewDidLoad {
-    [[self tableView] registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"headerFooterReuseIdentifier"];
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Header&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UITableViewHeaderFooterView *headerFooterView = [[self tableView] dequeueReusableHeaderFooterViewWithIdentifier:@"headerFooterReuseIdentifier"];
-    headerFooterView.contentView.backgroundColor = kBackgroundColor;
-
-    return headerFooterView;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Footer&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    UITableViewHeaderFooterView *headerFooterView = [[self tableView] dequeueReusableHeaderFooterViewWithIdentifier:@"headerFooterReuseIdentifier"];
-    headerFooterView.contentView.backgroundColor = kBackgroundColor;
-
-    return headerFooterView;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/43180133/custom-xlform-section-background-color/43232745#43232745"&gt;http://stackoverflow.com/questions/43180133/custom-xlform-section-background-color/43232745#43232745&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/xmartlabs/XLForm/issues/335"&gt;https://github.com/xmartlabs/XLForm/issues/335&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;FloatLabeledTextFieldCell&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/xmartlabs/XLForm/tree/master/Examples/Objective-C/Examples/CustomRows/FloatLabeledTextField"&gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Floating Label&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;There is a property on the TextField you can set to change the colour of the Floating Label&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;floatingLabelActiveTextColor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[row.cellConfig setObject:[UIColor redColor] forKey:@"floatLabeledTextField.floatingLabelActiveTextColor"];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;TextField&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;If you want to change the TextField text colour:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[row.cellConfig setObject:[UIColor whiteColor] forKey:@"floatLabeledTextField.textColor"];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/register-jvfloatlabeledtextfield-5.png" alt="Register - JVFloatLabeledTextField (5)"&gt;&lt;/p&gt;
-&lt;p&gt;Didn't change anything:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[row.cellConfig setObject:[UIColor greenColor] forKey:@"textLabel.highlightedTextColor"];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Or&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[row.cellConfig setObject:[UIColor redColor] forKey:@"floatLabeledTextField.floatingLabel.textColor"];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Image&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Set the "imageView.tintColor"&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[row.cellConfigAtConfigure setObject:[UIColor whiteColor] forKey:@"imageView.tintColor"];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/register-jvfloatlabeledtextfield-6.png" alt="Register - JVFloatLabeledTextField (6)"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Accessory&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/xmartlabs/XLForm#how-to-change-input-accessory-view-navigation-view"&gt;https://github.com/xmartlabs/XLForm#how-to-change-input-accessory-view-navigation-view&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (UIView *)inputAccessoryViewForRowDescriptor:(XLFormRowDescriptor *)rowDescriptor
-{
-      return nil; //will hide it completely
-      // You can use the rowDescriptor parameter to hide/customize the accessory view for a particular rowDescriptor type.
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;Without reading the documentation!!&lt;/p&gt;
-&lt;p&gt;Adding a Checkmark&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;XLFormRowDescriptor *row = [XLFormRowDescriptor formRowDescriptorWithTag:@"Check" rowType:XLFormRowDescriptorTypeBooleanCheck title:NSLocalizedString(@"Check", nil)];
-[newSection addFormRow:row];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Swap to a different image&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Circle"]];
-imageView.tintColor = [UIColor redColor];
-[row.cellConfig setObject:imageView forKey:@"accessoryView"];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now to handle the toggling...&lt;/p&gt;
-&lt;p&gt;This method isn't being called.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
-&amp;nbsp; &amp;nbsp; NSLog(@"Tapped");
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;p&gt;Dynamically Adding Rows&lt;/p&gt;
-&lt;p&gt;I'm using segues to move between views.&lt;/p&gt;
-&lt;p&gt;I'm setting a property - an array of items in the 'prepareForSegue'.&lt;/p&gt;
-&lt;p&gt;But 'initWithCoder' doesn't have these values set yet.&lt;/p&gt;
-&lt;p&gt;'viewDidLoad' does so call a method there.&lt;/p&gt;
-&lt;p&gt;Create your Form, Section(s) and Row(s) in the interface and use them:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[section addFormRow:row beforeRow:buttonRow];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;p&gt;Selected Row Label colour&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/xmartlabs/XLForm/issues/574"&gt;https://github.com/xmartlabs/XLForm/issues/574&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Tried a couple of options:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[row.cellConfig setObject:[UIColor redColor] forKey:@"textLabel.highlightedTextColor"];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[row.cellConfig setObject:[UIColor redColor] forKey:@"textLabel.tintColor"];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;p&gt;Change the cursor colour&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;textField.tintColor&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[row.cellConfig setObject:[UIColor greenColor] forKey:@"textField.tintColor"];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/register-jvfloatlabeledtextfield-7.png" alt="Register - JVFloatLabeledTextField (7)"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;p&gt;Alternatives&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/nicklockwood/FXForms"&gt;https://github.com/nicklockwood/FXForms&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/hyperoslo/Form"&gt;https://github.com/hyperoslo/Form&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/04/06/xlform/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;XLForm is the most flexible and powerful iOS library to create dynamic table-view forms. The goal of the library is to get the same power of hand-made forms but spending 1/10 of the time.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/uiswitch</id>
-		<title>UISwitch</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/uiswitch" />
-		<updated>2017-04-03T00:00:00Z</updated>
-		<content>&lt;p&gt;Changing the colour of a &lt;a href="https://developer.apple.com/reference/uikit/uiswitch?language=objc"&gt;UISwitch&lt;/a&gt; control.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#define kSwitchOnColor [UIColor colorWithRed:0.647 green:0.757 blue:0.463 alpha:1] // /*#A5C176*/ Green
-#define kSwitchOffColor [UIColor colorWithRed:0.29 green:0.29 blue:0.525 alpha:1]; // /*#4A4A86*/ Purple
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;UISwitch *switchview = [[UISwitch alloc] initWithFrame:CGRectZero];
-[switchview setOn:TRUE animated:YES\];
-switchview.onTintColor = kSwitchOnColor;
-switchview.tintColor = kSwitchOffColor;
-//tintColor just does outline
-switchview.backgroundColor = kSwitchOffColor;
-switchview.layer.cornerRadius = 16.0f;
-
-tintColor changes the background when sliding but when off just has the outline, if you change the background then it is square so add a corner radius.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;[gallery ids="917,918,916,915" type="rectangular"]&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/uiswitch-ontintcolor.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/uiswitch-tintcolor.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/uiswitch-background.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/uiswitch-background-with-radius.png" alt=""&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://stackoverflow.com/a/22830039/2895831"&gt;http://stackoverflow.com/a/22830039/2895831&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://stackoverflow.com/a/19123019/2895831"&gt;http://stackoverflow.com/a/19123019/2895831&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[gist https://gist.github.com/AlexHedley/41485d2b11f6f03a4734e350ee7dac3f /]&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/04/03/uiswitch/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Changing the colour of a &lt;a href="https://developer.apple.com/reference/uikit/uiswitch?language=objc"&gt;UISwitch&lt;/a&gt; control.&lt;/p&gt;</summary>
 	</entry>
 </feed>
