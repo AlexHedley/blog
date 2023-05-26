@@ -4,7 +4,406 @@
 	<title />
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-05-26T12:45:57Z</updated>
+	<updated>2023-05-26T12:55:53Z</updated>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest-solutions-architect</id>
+		<title>AWS Cloud Quest Solutions Architect</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/aws-cloud-quest-solutions-architect" />
+		<updated>2023-05-10T00:00:00Z</updated>
+		<content>&lt;!-- # AWS Cloud Quest Solutions Architect --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/cloud-quest.png" alt="AWS Cloud Quest Cloud Practitioner" title="AWS Cloud Quest"&gt;&lt;/p&gt;
+&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Solutions Architect&lt;/strong&gt; training 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-solutions-architect.png" alt="AWS Cloud Quest Solutions Architect Badge" title="AWS Cloud Quest Solutions Architect Badge"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/19d085e9-4a52-40b1-8d7c-2ff7eba1bd33/public_url"&gt;Credly Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
+$29.00 / month + VAT&lt;br&gt;
+&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dive into a broad set of AWS services and build secure, fault-tolerant, and highly available AWS solutions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/cc</id>
+		<title>Certified in Cybersecurity℠ - CC</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/cc" />
+		<updated>2023-05-05T00:00:00Z</updated>
+		<content>&lt;!-- # Certified in Cybersecurity℠ - CC --&gt;
+&lt;p&gt;Today I passed the &lt;strong&gt;Certified in Cybersecurity℠ - CC&lt;/strong&gt; exam 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/isc2/CC-Square.png" alt="Certified in Cybersecurity℠ - CC" title="Certified in Cybersecurity℠ - CC"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/6762c76b-8896-423d-819b-bbaa45041471"&gt;Credly Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The pass mark is 700 / 1000 and I achieved: &lt;strong&gt;?&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Unfortunately Pearson Vue only give (ISC)² the result of pass or fail.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: Can I get my exam score?&lt;/p&gt;
+&lt;p&gt;A: For those who passed an examination, scores are not provided. For those who failed an examination, a breakdown of the domains in proficiency levels will be provided.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://www.isc2.org/Frequently-Asked-Questions"&gt;Examination section of FAQs&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.isc2.org/certified-in-cybersecurity"&gt;https://www.isc2.org/certified-in-cybersecurity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are 5 main subject areas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Security Principles&lt;/li&gt;
+&lt;li&gt;Incident Response, Business Continuity (BC) and Disaster Recovery (DR) Concepts&lt;/li&gt;
+&lt;li&gt;Access Controls Concepts&lt;/li&gt;
+&lt;li&gt;Network Security&lt;/li&gt;
+&lt;li&gt;Security Operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With an offer running at the moment you can get the exam and self-paced online training material for free: &lt;a href="https://www.isc2.org/100k"&gt;https://www.isc2.org/100k&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Just pay the $50 for the &lt;em&gt;Annual Maintenance Fee (AMF)&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I took the exam at a center, it lasts 2 hours, is made up of 100 multiple choice questions.&lt;/p&gt;
+&lt;p&gt;You can't mark the questions for review like in other exams I have taken, unless I missed that option.&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.pluralsight.com/paths/ccsm-certified-in-cybersecurity"&gt;CC℠ (Certified in Cybersecurity)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;by Kevin Henry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/aws-certified-cloud-practitioner</id>
+		<title>AWS Certified Cloud Practitioner</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/aws-certified-cloud-practitioner" />
+		<updated>2023-04-06T00:00:00Z</updated>
+		<content>&lt;!-- # AWS Certified Cloud Practitioner --&gt;
+&lt;p&gt;Today I passed the &lt;strong&gt;AWS Certified Cloud Practitioner&lt;/strong&gt; exam 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-ccp/AWS-Certified-Cloud-Practitioner_badge.png" alt="AWS Certified Cloud Practitioner Badge" title="AWS Certified Cloud Practitioner"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/a3c0cb2e-612c-4463-a7f0-7da98f8343e8"&gt;Credly Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The pass mark is 700 / 1000 and I achieved: &lt;strong&gt;780&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The AWS Certified Cloud Practitioner offers a foundational understanding of AWS Cloud concepts, services, and terminology. This is a good starting point for individuals in non-technical roles with no prior IT or cloud experience or for those with on-premises IT experience looking for basic AWS Cloud fluency. This certification can give candidates the confidence to tackle role-based AWS Certifications.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I took this in a Pearson VUE testing center instead of an online proctored exam. Don't need to worry about the internet dropping out etc.&lt;/p&gt;
+&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
+&lt;p&gt;Saw a post on &lt;a href="https://www.linkedin.com/feed/update/urn:li:activity:7019288272430333952"&gt;LinkedIn&lt;/a&gt; for an all day training event.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AWS Cloud Practitioner Essentials&lt;br&gt;
+Tuesday, 31 January 2023 09:00 (GMT)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/e/aws-cloud-practitioner-essentials-tickets-488693313857"&gt;Event Link&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://techtalentengine.co.uk/"&gt;Tech Talent Engine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-ccp/Event-AWS-Cloud-Practitioner-Essentials.jpeg" alt="Event - AWS Cloud Practitioner Essentials" title="Event - AWS Cloud Practitioner Essentials"&gt;&lt;/p&gt;
+&lt;p&gt;This was an excellent all day training session from &lt;em&gt;Stefania Gelpi&lt;/em&gt; - AWS Partner Trainer.&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/certification/certified-cloud-practitioner/"&gt;Site&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Links&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf"&gt;AWS Certified Cloud Practitioner Exam Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Sample-Questions.pdf"&gt;AWS Certified Cloud Practitioner Sample Questions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/12483/aws-certified-cloud-practitioner-practice-question-set-clf-c01-english"&gt;AWS Certified Cloud Practitioner Official Practice Question Set&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/9449/exam-prep-aws-certified-cloud-practitioner-foundations"&gt;Exam Prep: AWS Certified Cloud Practitioner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/events/?get-certified-vilt-courses-cards.sort-by=item.additionalFields.startDateSort&amp;amp;get-certified-vilt-courses-cards.sort-order=asc&amp;amp;awsf.get-certified-vilt-courses-type=*all&amp;amp;awsf.get-certified-vilt-courses-series=series%23aws-certification-exam-readiness&amp;amp;awsf.get-certified-vilt-audience=*all&amp;amp;awsf.get-certified-vilt-locations=*all&amp;amp;awsf.get-certified-vilt-countries=*all&amp;amp;awsf.get-certified-vilt-languages=*all&amp;amp;awsf.get-certified-vilt-courses-level=level%23100&amp;amp;awsf.get-certified-vilt-courses-tech-category=*all&amp;amp;cp=sec&amp;amp;sec=prep"&gt;Exam Readiness: AWS Certified Cloud Practitioner&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cloud Quest&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pages.awscloud.com/global_traincert_twitch-cloud-quest-CP.html"&gt;AWS Cloud Quest: Cloud Practitioner&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="exam-overview"&gt;Exam overview&lt;/h2&gt;
+&lt;p&gt;Level: Foundational&lt;br&gt;
+Length: 90 minutes to complete the exam&lt;br&gt;
+Cost: 100 USD (+VAT)&lt;/p&gt;
+&lt;p&gt;Format: 65 questions; either multiple choice or multiple response&lt;br&gt;
+Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
+&lt;h2 id="options"&gt;Options&lt;/h2&gt;
+&lt;p&gt;There are other certifications available, I'll prob start on the &lt;strong&gt;Associate Developer&lt;/strong&gt; one next.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-ccp/AWS-certification.png" alt="AWS certification" title="AWS certification"&gt;&lt;/p&gt;
+&lt;p&gt;FOUNDATIONAL&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cloud Practitioner&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Knowledge-based certification for foundational understanding of AWS Cloud.&lt;br&gt;
+&lt;strong&gt;No prior experience needed.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ASSOCIATE&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Solutions Architect&lt;/li&gt;
+&lt;li&gt;Developer&lt;/li&gt;
+&lt;li&gt;SysOps Administrator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Role-based certifications that showcase your knowledge and skills on AWS and build your credibility as an AWS Cloud professional.&lt;br&gt;
+&lt;strong&gt;Prior cloud and/or strong on-premises IT experience recommended.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;PROFESSIONAL&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Solutions Architect&lt;/li&gt;
+&lt;li&gt;DevOps Engineer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Role-based certifications that validate advanced skills and knowledge required to design secure, optimized, and modernized applications and to automate processes on AWS.&lt;br&gt;
+&lt;strong&gt;2 years of prior AWS Cloud experience recommended.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;SPECIALTY&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Advanced Networking&lt;/li&gt;
+&lt;li&gt;Data Analytics&lt;/li&gt;
+&lt;li&gt;Database&lt;/li&gt;
+&lt;li&gt;Machine Learning&lt;/li&gt;
+&lt;li&gt;Security&lt;/li&gt;
+&lt;li&gt;SAP on AWS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dive deeper and position yourself as a trusted advisor to your stakeholders and/or customers in these strategic areas.&lt;br&gt;
+&lt;strong&gt;Refer to the exam guides on the exam pages for recommended experience.&lt;/strong&gt;&lt;/p&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest-serverless-developer</id>
+		<title>AWS Cloud Quest Serverless Developer</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/aws-cloud-quest-serverless-developer" />
+		<updated>2023-03-15T00:00:00Z</updated>
+		<content>&lt;!-- # AWS Cloud Quest Serverless Developer --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/cloud-quest.png" alt="AWS Cloud Quest Cloud Practitioner" title="AWS Cloud Quest"&gt;&lt;/p&gt;
+&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud QuestServerless Developer&lt;/strong&gt; training 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-serverless-developer.png" alt="AWS Cloud Quest Serverless Developer Badge" title="AWS Cloud Quest Serverless Developer Badge"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/5dc86ddb-b5b4-448f-a57b-c49f13857810/public_url"&gt;Credly Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
+$29.00 / month + VAT&lt;br&gt;
+&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Build multi-tiered serverless applications and get hands-on experience building modern applications using AWS serverless technology.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/deploy-tech-docs</id>
+		<title>Deploy Tech Docs</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/deploy-tech-docs" />
+		<updated>2023-01-30T00:00:00Z</updated>
+		<content>&lt;p&gt;In this article I'll show how to deploy the GOV.UK &lt;a href="https://github.com/alphagov/tech-docs-template"&gt;Tech Docs Template&lt;/a&gt; to &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Tech Docs Template is a &lt;a href="https://middlemanapp.com/advanced/project_templates/"&gt;Middleman template&lt;/a&gt; that you can use to build technical documentation using a GOV.UK style.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To learn more about the template you can view the &lt;a href="https://tdt-documentation.london.cloudapps.digital/"&gt;Documentation Site&lt;/a&gt; (&lt;a href="https://github.com/alphagov/tdt-documentation"&gt;Code&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;There's a section in the docs for &lt;a href="https://tdt-documentation.london.cloudapps.digital/publish_project/deploy/#github-pages"&gt;GitHub Pages&lt;/a&gt; which mentions how MoJ achieve this, see &lt;a href="https://github.com/ministryofjustice/cloud-platform-user-guide/blob/main/.github/workflows/publish.yml"&gt;publish.yml&lt;/a&gt; from their &lt;strong&gt;Cloud Platform User Guide&lt;/strong&gt;, there is also another example &lt;a href="https://github.com/ministryofjustice/hmpps-tech-docs/blob/main/.github/workflows/publish.yml"&gt;publish.yml&lt;/a&gt; from &lt;strong&gt;hmpps-tech-docs&lt;/strong&gt; which uses some scripts (&lt;a href="https://github.com/ministryofjustice/hmpps-tech-docs/tree/main/bin"&gt;bin&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;As an alternative I created my own &lt;a href="https://docs.github.com/en/actions/using-workflows"&gt;GitHub Action Workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="config"&gt;Config&lt;/h2&gt;
+&lt;p&gt;Firstly you need to add some config to your existing project. As GitHub Pages deploys to the repo name links won't work, i.e. &lt;code&gt;username.github.io/projectname&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Update the &lt;code&gt;config.rb&lt;/code&gt; file with the below settings.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-ruby"&gt;# https://github.com/edgecase/middleman-gh-pages#project-page-path-issues
+
+# Project Page Path Issues
+# Since project pages deploy to a subdirectory, assets and page paths are relative to the organization or user that owns the repo. If you're treating the project pages as a standalone site, you can tell Middleman to generate relative paths for assets and links with these settings in the build configuration in config.rb
+# NOTE This only affects sites being accessed at the username.github.io/projectname URL, not when accessed at a custom CNAME.
+
+activate :relative_assets
+set :relative_links, true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Thanks to the &lt;a href="https://github.com/edgecase/middleman-gh-pages#project-page-path-issues"&gt;Middleman Github Pages&lt;/a&gt; project for this.&lt;/p&gt;
+&lt;p&gt;You can also add a &lt;code&gt;CNAME&lt;/code&gt; file with your url &lt;code&gt;https://[USERNAME].github.io/[REPO_NAME]&lt;/code&gt;. This will be copied by the workflow later.&lt;/p&gt;
+&lt;h2 id="workflow"&gt;Workflow&lt;/h2&gt;
+&lt;p&gt;The WF only runs when there has been a change in the &lt;code&gt;source/&lt;/code&gt; folder. You may wish to update this to your own needs. I've also added a &lt;code&gt;workflow_dispatch&lt;/code&gt; trigger so you can run this manually.&lt;/p&gt;
+&lt;p&gt;Next add some &lt;strong&gt;write&lt;/strong&gt; permissions for &lt;code&gt;contents&lt;/code&gt; and &lt;code&gt;pages&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now for the main &lt;code&gt;job&lt;/code&gt; which is built up of a number of &lt;code&gt;steps&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First you'll want to &lt;strong&gt;&lt;a href="https://github.com/actions/checkout"&gt;checkout&lt;/a&gt;&lt;/strong&gt; (&lt;code&gt;actions/checkout&amp;#64;v2&lt;/code&gt;) your code.&lt;/p&gt;
+&lt;p&gt;Next as this is a &lt;a href="https://www.ruby-lang.org/en/"&gt;Ruby&lt;/a&gt; project &lt;strong&gt;&lt;a href="https://github.com/ruby/setup-ruby"&gt;Setup&lt;/a&gt;&lt;/strong&gt; (&lt;code&gt;ruby/setup-ruby&amp;#64;v1&lt;/code&gt;) and choose the correct version.&lt;/p&gt;
+&lt;p&gt;Next install your bundle. This can just be a simple &lt;code&gt;run&lt;/code&gt; script. You can also check that &lt;code&gt;middleman&lt;/code&gt; is available.&lt;/p&gt;
+&lt;p&gt;Next build your website using &lt;code&gt;bundle exec middleman build&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Once this is built you can optionally copy over a &lt;code&gt;CNAME&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next deploy your project to GitHub Pages using another action &lt;a href="https://github.com/peaceiris/actions-gh-pages"&gt;peaceiris/actions-gh-pages&amp;#64;v3.9.2&lt;/a&gt;.
+If you are outputting your build to a different folder make sure to update this &lt;code&gt;publish_dir: build&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finally in your Repo settings configure GHP.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.github.com/en/pages/quickstart"&gt;Quickstart for GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Yaml file for reference:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;name: Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - &amp;quot;source/**&amp;quot;
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build_and_deploy:
+    name: Build &amp;amp; Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout&amp;#64;v2
+        
+      - name: Set up 💎 Ruby 3.2.0
+        uses: ruby/setup-ruby&amp;#64;v1
+        with:
+          ruby-version: 3.2.0
+#           bundler-cache: true
+        
+      - name: Install Dependencies
+        run: |
+          echo 'Installing bundles...'
+          gem install bundler
+          bundle install
+          bundle list | grep &amp;quot;middleman (&amp;quot;
+        
+      - name: Build
+        run: bundle exec middleman build
+      
+      - name: Copy CNAME
+        run: |
+          echo &amp;quot;Copying cname across too&amp;quot;
+          cp -a CNAME build
+      
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages&amp;#64;v3.9.2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="alternatives"&gt;Alternatives&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/edgecase/middleman-gh-pages"&gt;Middleman Github Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/yurikoval/middleman-gh-pages-action"&gt;middleman-gh-pages-action&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/marketplace/actions/middleman-github-pages-action"&gt;Marketplace&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I found an &lt;a href="https://github.com/yurikoval/middleman-gh-pages-action/issues/3"&gt;issue&lt;/a&gt; with the GHA which was referencing &lt;code&gt;master&lt;/code&gt; not &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest-cloud-practitioner</id>
+		<title>AWS Cloud Quest Cloud Practitioner</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/aws-cloud-quest-cloud-practitioner" />
+		<updated>2023-01-25T00:00:00Z</updated>
+		<content>&lt;!-- # AWS Cloud Quest Cloud Practitioner --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/logo_wide_practitioner.png" alt="AWS Cloud Quest Cloud Practitioner" title="AWS Cloud Quest Cloud Practitioner"&gt;&lt;/p&gt;
+&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Cloud Practitioner&lt;/strong&gt; training 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-cloud-practitioner.png" alt="AWS Cloud Quest Cloud Practitioner Badge" title="AWS Cloud Quest Cloud Practitioner Badge"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/8056f265-da5b-4518-9c7c-9768dc379721/public_url"&gt;Credly Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a free course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How does it work?&lt;/p&gt;
+&lt;p&gt;You will solve problems throughout the virtual Cloud Quest city by completing learning exercises like labs, quizzes, and puzzles.&lt;/p&gt;
+&lt;p&gt;Through hands-on learning in a live AWS environment, you will learn and apply cloud concepts to real business problems while earning rewards and transforming the city. Ready to begin? Enroll to start your quest.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/11458/aws-cloud-quest-cloud-practitioner"&gt;Skill Builder Course&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pages.awscloud.com/global_traincert_twitch-cloud-quest-CP.html"&gt;AWS Cloud Quest: Cloud Practitioner&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/github-contributions</id>
+		<title>GitHub Contributions Chart Generator</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/github-contributions" />
+		<updated>2023-01-01T00:00:00Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;All your contributions in one image!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github-contributions.vercel.app/"&gt;GitHub Contributions Chart Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
+&lt;p&gt;![alexhedley]({{ site.baseurl }}/images/contributions-alexhedley.png "Contributions alexhedley")&lt;/p&gt;
+&lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://alexhedley.github.io/blog/#alex-hedley-1"&gt;alex-hedley&lt;/a&gt;({{ site.baseurl }}/images/contributions-alex-hedley.png "Contributions alex-hedley")&lt;/p&gt;
+&lt;h2 id="skyline"&gt;Skyline&lt;/h2&gt;
+&lt;p&gt;Linked with &lt;a href="https://skyline.github.com/"&gt;skyline&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="section"&gt;2022&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://skyline.github.com/alexhedley/2022"&gt;alexhedley&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://skyline.github.com/alex-hedley/2022"&gt;alex-hedley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/github-actions-branches</id>
 		<title>GitHub Actions Branches</title>
@@ -193,321 +592,5 @@ jobs:
             })
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/welcome3</id>
-		<title>Welcome</title>
-		<author>
-			<name>alex-hedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/welcome3" />
-		<updated>2021-11-01T00:00:00Z</updated>
-		<content>&lt;p&gt;Welcome to my new Blog!&lt;/p&gt;
-</content>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/convert-heic</id>
-		<title>Convert heic</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/convert-heic" />
-		<updated>2021-08-20T00:00:00Z</updated>
-		<content>&lt;p&gt;Got an image from you iPhone?&lt;/p&gt;
-&lt;p&gt;Saved as &lt;code&gt;.heic&lt;/code&gt;?&lt;/p&gt;
-&lt;p&gt;Download &lt;a href="https://imagemagick.org/"&gt;ImageMagick&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Then run &lt;code&gt;magick rose.jpg rose.png&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://imagemagick.org/script/convert.php"&gt;Convert Between Image Formats&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;Got an image from you iPhone?&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/md-to-pdf</id>
-		<title>Markdown to PDF via GitHub Actions and Pandoc</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/md-to-pdf" />
-		<updated>2021-02-20T00:00:00Z</updated>
-		<content>&lt;p&gt;In this post I'll run through converting a &lt;code&gt;md&lt;/code&gt; file to a PDF using &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt; and &lt;a href="https://github.com/actions/"&gt;GitHub Actions&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;If you need to convert files from one markup format into another, pandoc is your swiss-army knife. Pandoc can convert between the following formats:&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This is useful if you're writing up documentation and want to output to different file formats.&lt;/p&gt;
-&lt;p&gt;I found a useful &lt;a href="https://github.com/pandoc/pandoc-action-example"&gt;example&lt;/a&gt; on a GitHub &lt;a href="https://github.com/pandoc"&gt;profile&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Create a new file called &lt;code&gt;book.md&lt;/code&gt; and a folder called &lt;code&gt;images&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Add you content.&lt;/p&gt;
-&lt;p&gt;Create a GitHub workflow:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;name: Create PDF
-
-on: push
-
-jobs:
-  convert_via_pandoc:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout&amp;#64;v2
-      - run: |
-          mkdir output  # create output dir
-          # this will also include README.md
-          echo &amp;quot;FILELIST=$(printf '&amp;quot;%s&amp;quot; ' *.md)&amp;quot; &amp;gt;&amp;gt; $GITHUB_ENV
-      - uses: docker://pandoc/latex:2.9
-        with:
-          args: --output=output/result.pdf ${ env.FILELIST }
-      - uses: actions/upload-artifact&amp;#64;v2
-        with:
-          name: output
-          path: output
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note: &lt;code&gt;${ var }&lt;/code&gt; needs double &lt;code&gt;{&lt;/code&gt; &lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;As well as creating an &lt;a href="https://github.com/actions/upload-artifact"&gt;artifact&lt;/a&gt; you could also &lt;a href="https://github.com/actions/create-release"&gt;create&lt;/a&gt; a release and &lt;a href="https://github.com/actions/upload-release-asset"&gt;upload&lt;/a&gt; that.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;name: Create PDF
-
-on: push
-
-jobs:
-  convert_via_pandoc:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout&amp;#64;v2
-      - run: |
-          mkdir output # create output dir
-          # this will also include README.md
-          echo &amp;quot;FILELIST=$(printf '&amp;quot;%s&amp;quot; ' *.md)&amp;quot; &amp;gt;&amp;gt; $GITHUB_ENV
-      - uses: docker://pandoc/latex:2.9
-        with:
-          args: --output=output/result.pdf ${ env.FILELIST }
-      - uses: actions/upload-artifact&amp;#64;v2
-        with:
-          name: output
-          path: output
-      
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release&amp;#64;v1
-        env:
-          GITHUB_TOKEN: ${ secrets.GITHUB_TOKEN }
-        with:
-          tag_name: v0.1 #${ github.ref }
-          release_name: Release v0.1 #${ github.ref }
-          draft: true
-          prerelease: false
-
-      - name: Upload Release Asset
-        id: upload-release-asset 
-        uses: actions/upload-release-asset&amp;#64;v1
-        env:
-          GITHUB_TOKEN: ${ secrets.GITHUB_TOKEN }
-        with:
-          upload_url: ${ steps.create_release.outputs.upload_url }
-          asset_path: output/result.pdf
-          asset_name: Handbook.pdf
-          asset_content_type: application/pdf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note: &lt;code&gt;${ var }&lt;/code&gt; needs double &lt;code&gt;{&lt;/code&gt; &lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Note: There is a problem with the &lt;code&gt;set-env&lt;/code&gt; &lt;a href="https://github.com/pandoc/pandoc-action-example/issues/12"&gt;Issue&lt;/a&gt; and &lt;a href="https://github.com/pandoc/pandoc-action-example/pull/14"&gt;PR&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;One workaround is:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;      - run: |
-          echo &amp;quot;::set-env name=FILELIST::$(printf '&amp;quot;%s&amp;quot; ' *.md)&amp;quot;
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="html"&gt;HTML&lt;/h2&gt;
-&lt;p&gt;You might also want to create it as HTML:&lt;/p&gt;
-&lt;p&gt;Sample:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;name: Create HTML
-
-on: push
-
-jobs:
-  convert_via_pandoc:
-    runs-on: ubuntu-18.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout&amp;#64;v2
-        
-      - name: Create output directory
-        run: |
-          mkdir output  # create output dir
-          echo &amp;quot;FILELIST=book.md&amp;quot; &amp;gt;&amp;gt; $GITHUB_ENV
-      
-      - name: Pandoc
-        uses: docker://pandoc/latex:2.9
-        with:
-          args: --output=output/index.html ${{ env.FILELIST }} -s
-      
-      # copy the images from the repo to the output folder for inclusion in the artifact
-      - name: Copy images dir to output dir
-        run: cp -r images/ output/
-      
-      - name: Upload Artifact
-        uses: actions/upload-artifact&amp;#64;v2
-        with:
-          name: Handbook
-          path: output
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Another option would be to add an extra arg (&lt;a href="https://pandoc.org/MANUAL.html#option--extract-media"&gt;&lt;code&gt;--extract-media&lt;/code&gt;&lt;/a&gt;)  which takes a DIRECTORY: &lt;code&gt;--extract-media=DIR&lt;/code&gt;, just set the folder to &lt;strong&gt;images&lt;/strong&gt;: &lt;code&gt;--extract-media=images&lt;/code&gt; and you will get the necessary files.&lt;/p&gt;
-&lt;p&gt;The file names do become random strings.&lt;/p&gt;
-&lt;p&gt;But then the path doesn't work with the HTML.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;In this post I'll run through converting a &lt;code&gt;md&lt;/code&gt; file to a PDF using &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt; and &lt;a href="https://github.com/actions/"&gt;GitHub Actions&lt;/a&gt;.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/utility-blazor</id>
-		<title>Utility Blazor</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/utility-blazor" />
-		<updated>2020-09-28T00:00:00Z</updated>
-		<content>&lt;p&gt;To add to my increasing collection of Utility apps I've decided to produce a &lt;a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"&gt;Blazor&lt;/a&gt; version.&lt;/p&gt;
-&lt;p&gt;I love the idea of writing the web app in C#, with minimal js, and being able to host it anywhere.&lt;/p&gt;
-&lt;p&gt;Azure Static Web Apps look like a nice option too.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-ca/azure/static-web-apps/deploy-blazor"&gt;Tutorial: Building a static web app with Blazor in Azure Static Web Apps&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.hanselman.com/blog/BlazorWebAssemblyonAzureStaticWebApps.aspx"&gt;Blazor WebAssembly on Azure Static Web Apps&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The initial site has been configured and is deploying:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/Utility-Blazor/"&gt;Site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/Utility-Blazor"&gt;Utility-Blazor Code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I'm looking forward to trying out &lt;a href="https://github.com/egil/bUnit"&gt;bUnit&lt;/a&gt; for Unit Testing.&lt;/p&gt;
-&lt;p&gt;I found a GitHub Action to deploy it to GitHub Pages, just a couple of tasks to modify the ouptut so it runs correctly.&lt;/p&gt;
-&lt;p&gt;Much like an AngularJS app you need to set the base href so the app loads properly.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;- name: Change base-tag in index.html from / to blazor-test
-  run: sed -i 's/&amp;lt;base href=&amp;quot;\/&amp;quot; \/&amp;gt;/&amp;lt;base href=&amp;quot;\/blazor-test\/&amp;quot; \/&amp;gt;/g' release/wwwroot/index.html
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To help with routing make the &lt;em&gt;404&lt;/em&gt; the same as the &lt;em&gt;index&lt;/em&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;- name: copy index.html to 404.html
-  run: cp release/wwwroot/index.html release/wwwroot/404.html
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As GHP uses jekyll add the following file so it doesnt use those settings.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;- name: Add .nojekyll file
-  run: touch release/wwwroot/.nojekyll
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next I just need to port the original feature set to this application.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;p&gt;Thanks to &lt;a href="https://github.com/Swimburger"&gt;&amp;#64;Swimburger&lt;/a&gt; for the GitHub Action for deploying the app to GitHub Pages&lt;/p&gt;
-&lt;p&gt;How to deploy ASP.NET Blazor WebAssembly to GitHub Pages&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages"&gt;https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;BlazorGitHubPagesDemo (&lt;a href="https://github.com/Swimburger/BlazorGitHubPagesDemo"&gt;https://github.com/Swimburger/BlazorGitHubPagesDemo&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;To add to my increasing collection of Utility apps I've decided to produce a &lt;a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"&gt;Blazor&lt;/a&gt; version.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/jeffgoldblum</id>
-		<title>Jeff Goldblum StreamDeck Action</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/jeffgoldblum" />
-		<updated>2020-09-28T00:00:00Z</updated>
-		<content>&lt;p&gt;In a previous &lt;a href="https://alexhedley.github.io/blog/post/StreamDeckToolkit"&gt;post&lt;/a&gt; I discussed the &lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;StreamDeck&lt;/a&gt; and adding docs to the .NET toolkit.&lt;/p&gt;
-&lt;p&gt;Whilst watching a stream from &lt;a href="https://www.twitch.tv/jamesmontemagno/"&gt;JM&lt;/a&gt; Aden &lt;a href="https://github.com/jamesmontemagno/MyStreamTimer/issues/36"&gt;suggested&lt;/a&gt; he add a StreamDeck Plugin to &lt;a href="https://www.mystreamtimer.com/"&gt;MyStreamTimer&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Stream Deck Extension for My Stream Timer | C# | @JamesMontemagno
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.twitch.tv/videos/744833142"&gt;https://www.twitch.tv/videos/744833142&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;TODO: Add YouTube link since Twitch expires.&lt;/p&gt;
-&lt;p&gt;A couple of weeks later James did a stream for a presentation he was preparing for:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Preparing a Presentation! #OBS #StreamDeck #PowerPoint | @JamesMontemagno
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.twitch.tv/videos/758464643"&gt;https://www.twitch.tv/videos/758464643&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A project &lt;a href="https://github.com/jamesmontemagno/streamdeck-treecount/"&gt;Tree Count&lt;/a&gt; was created for this.&lt;/p&gt;
-&lt;p&gt;Roll forward a couple of hours and &lt;a href="https://twitter.com/mkristensen"&gt;Mads&lt;/a&gt; is on stream, with James producing: &lt;a href="https://www.youtube.com/watch?v=y_nTdXzterM&amp;amp;list=PLReL099Y5nRdG2n1PrY_tbCsUznoYvqkS"&gt;Writing Visual Studio Extensions with Mads - Controlling the clipboard&lt;/a&gt; and he needed some lorem ipsum text. Of course there's only one place you should get filler text and this is &lt;a href="https://jeffsum.com/"&gt;Jeffsum&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This gave me a thought! Why not create an OBS/StreamDeck plugin using &lt;a href="https://github.com/jamesmontemagno/Jeffsum.NET"&gt;Jeffsum.NET&lt;/a&gt; to grab JG quotes.&lt;/p&gt;
-&lt;p&gt;![Stream Deck Jeff Goldblum]({{ site.baseurl }}/images/jg/StreamDeck-JeffGoldblum.png "Stream Deck Jeff Goldblum")&lt;/p&gt;
-&lt;p&gt;Code: &lt;a href="https://github.com/AlexHedley/JeffGoldblum"&gt;GitHub&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;In a previous &lt;a href="https://alexhedley.github.io/blog/post/StreamDeckToolkit"&gt;post&lt;/a&gt; I discussed the &lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;StreamDeck&lt;/a&gt; and adding docs to the .NET toolkit.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/gha-vse</id>
-		<title>Publish a Visual Studio Extension from GitHub Actions</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/gha-vse" />
-		<updated>2020-07-11T00:00:00Z</updated>
-		<content>&lt;p&gt;In a previous &lt;a href="https://alexhedley.github.io/blog/post/VisualStudioExtension"&gt;post&lt;/a&gt; I discussed starting to create a Visual Studio Extension for &lt;a href="https://alexhedley.github.io/blog/post/BuildLight"&gt;BuildLight&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It would be nice to automate new versions to the marketplace.&lt;/p&gt;
-&lt;p&gt;There are a number or articles on-line showing how to do this with &lt;a href="https://azure.microsoft.com/en-gb/services/devops/"&gt;ADO&lt;/a&gt; but I wanted to keep all the code and CI/CD in the same GitHub Repo of &lt;a href="https://github.com/praeclarum/BuildLight"&gt;BuildLight&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I started looking into how to deploy a VSIX to the &lt;a href="https://marketplace.visualstudio.com/"&gt;Marketplace&lt;/a&gt; and came across a very recent blog post &lt;a href="https://david.gardiner.net.au/2020/07/vs-extension-cicd-with-github-actions.html"&gt;CI/CD for Visual Studio extensions with GitHub Actions&lt;/a&gt; from &lt;a href="https://twitter.com/DavidRGardiner"&gt;David Gardiner&lt;/a&gt; which I'm looking forward to reading when more are released but kindly the &lt;a href="https://github.com/flcdrg/VsShowMissing/blob/master/.github/workflows/publish.yml"&gt;GH Action&lt;/a&gt; is already available in a repo &lt;a href="https://github.com/flcdrg/VsShowMissing"&gt;VsShowMissing&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;So my journey began.&lt;/p&gt;
-&lt;p&gt;I created an account on the marketplace and added the necessary details:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/publishers/alexhedley"&gt;AlexHedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Then I created a simple VSIX and uploaded it to my own repo and added David's &lt;code&gt;publish.yml&lt;/code&gt;. There's a GHA &lt;code&gt;main.yml&lt;/code&gt; in &lt;code&gt;.github\workflows&lt;/code&gt; for pushing a new build to GH Releases but I'll look at that later. For now I'm happy to just manually building the vsix locally and when I upload to GH Releases the GHA can trigger and publish on the marketplace.&lt;/p&gt;
-&lt;p&gt;Looking through the &lt;code&gt;publish.yml&lt;/code&gt; a few places would need to be updated for filenames and paths. I added an &lt;code&gt;Overview.md&lt;/code&gt; and the &lt;code&gt;build\extension-manifest.json&lt;/code&gt; file, with updates.&lt;/p&gt;
-&lt;p&gt;During my testing it doesn't seem like any updates to the &lt;code&gt;Overview.md&lt;/code&gt; are being reflected on the marketplace listing. The image didn't upload either. But new versions of the vsix did get uploaded.&lt;/p&gt;
-&lt;p&gt;One thing you need to create is a PAT or Personal Access Token. But where do you create this?&lt;/p&gt;
-&lt;p&gt;I couldn't find anything specific to a Visual Studio Marketplace extension but there are other articles for &lt;a href="https://code.visualstudio.com/api/working-with-extensions/publishing-extension"&gt;VSCode&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Make sure when you create one:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;make it accessible to every organization&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Click on "Show all scopes" and scroll down to the &lt;strong&gt;Marketplace&lt;/strong&gt; section and tick all:&lt;/p&gt;
-&lt;p&gt;[✔] Read [✔] Acquire [✔] Publish [✔] Manage&lt;/p&gt;
-&lt;p&gt;Save this token.&lt;/p&gt;
-&lt;p&gt;In the Repo create a new &lt;a href="https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets"&gt;Secret&lt;/a&gt; on the Settings tab, Secrets section, click "New secret" and call it &lt;code&gt;PERSONAL_ACCESS_TOKEN &lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;This matches the example from the &lt;a href="https://github.com/marketplace/actions/download-assets"&gt;Download Assets&lt;/a&gt; (&lt;a href="https://github.com/i3h/download-release-asset"&gt;Code&lt;/a&gt;) Action.&lt;/p&gt;
-&lt;p&gt;Make sure this is the same name in your &lt;code&gt;publish.yml&lt;/code&gt;: &lt;code&gt;${ secrets.PersonalAccessToken }&lt;/code&gt; (This will be double &lt;code&gt;{&lt;/code&gt; and &lt;code&gt;}&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Now just create a new release and watch the GHA run and upload your extension to the marketplace.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;In a previous &lt;a href="https://alexhedley.github.io/blog/post/VisualStudioExtension"&gt;post&lt;/a&gt; I discussed starting to create a Visual Studio Extension for &lt;a href="https://alexhedley.github.io/blog/post/BuildLight"&gt;BuildLight&lt;/a&gt;.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/xamarincommunitytoolkit</id>
-		<title>Xamarin CommunityToolkit</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/xamarincommunitytoolkit" />
-		<updated>2020-07-10T00:00:00Z</updated>
-		<content>&lt;p&gt;The &lt;a href="https://github.com/xamarin/XamarinCommunityToolkit"&gt;Xamarin CommunityToolkit&lt;/a&gt; is a reboot of an old set of helpful additions to Xamarin for example&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Behaviors&lt;/li&gt;
-&lt;li&gt;Controls&lt;/li&gt;
-&lt;li&gt;Converters&lt;/li&gt;
-&lt;li&gt;Effects&lt;/li&gt;
-&lt;li&gt;Extensions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I'd raised an &lt;a href="https://github.com/xamarin/XamarinCommunityToolkit/issues/121"&gt;Issue #121&lt;/a&gt; to suggest using &lt;a href="https://alexhedley.github.io/blog/post/DocFX"&gt;DocFX&lt;/a&gt; to build the docs within the repo and started on a &lt;a href="https://github.com/xamarin/XamarinCommunityToolkit/pull/135/files"&gt;PR !135&lt;/a&gt; with some of the structure laid out.&lt;/p&gt;
-&lt;p&gt;A comment was made saying &lt;a href="https://docs.microsoft.com/xamarin/"&gt;MS Docs&lt;/a&gt; would be making a repo and to hold off for a little bit.&lt;/p&gt;
-&lt;p&gt;Checking back a few weeks later I found the &lt;a href="https://github.com/MicrosoftDocs/xamarin-communitytoolkit"&gt;Xamarin Community Toolkit Documentation&lt;/a&gt; repo had been made.&lt;/p&gt;
-&lt;p&gt;I made a start on porting over some of the work and opened &lt;a href="https://github.com/MicrosoftDocs/xamarin-communitytoolkit/pull/4"&gt;PR !4&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I received some really helpful comments from &lt;a href="https://github.com/davidbritch"&gt;David Britch&lt;/a&gt;, as I'd copied some of the base files from &lt;a href="https://docs.microsoft.com/en-gb/xamarin/essentials/"&gt;Xamarin.Essentials&lt;/a&gt; and not checked they matched the &lt;a href="https://github.com/MicrosoftDocs/xamarin-communitytoolkit/blob/master/CONTRIBUTING.md"&gt;Contributing Guidelines&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;It's just a start to get the shell of the structure there, to make it easier for others to get to the meat of the work but every little bit helps.&lt;/p&gt;
-&lt;p&gt;I'm hoping to start on the list above soon, the easier it is to get people started with the Toolkit, hopefully the more contributions will be made towards growing the functionality.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Original info about the Toolkit.&lt;/p&gt;
-&lt;p&gt;Profile:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.nuget.org/profiles/FormsCommunityToolkit"&gt;https://www.nuget.org/profiles/FormsCommunityToolkit&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Packages:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Effects/1.0.0.110-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Effects/1.0.0.110-beta&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Converters/1.0.0.66-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Converters/1.0.0.66-beta&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Behaviors/1.0.0.66-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Behaviors/1.0.0.66-beta&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Controls/1.0.0.66-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Controls/1.0.0.66-beta&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;The &lt;a href="https://github.com/xamarin/XamarinCommunityToolkit"&gt;Xamarin CommunityToolkit&lt;/a&gt; is a reboot of an old set of helpful additions to Xamarin for example&lt;/p&gt;</summary>
 	</entry>
 </feed>
