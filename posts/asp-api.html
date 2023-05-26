@@ -5,10 +5,11 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AlexHedley">
 
-  <title>Alex Hedley - Paged Archive (Page 31)</title>
+  <title>Alex Hedley - ASP API</title>
 
-  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/paged-archive/31'>
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/asp-api'>
 
       <link type="application/rss+xml" rel="alternate" href="/blog/feed.rss" />
       <link type="application/atom+xml" rel="alternate" href="/blog/feed.atom" />
@@ -17,9 +18,9 @@
   <meta name="msapplication-tooltip" content='Alex Hedley' />
   <meta name="msapplication-starturl" content='/blog/' />
 
-  <meta property="og:title" content='Alex Hedley - Paged Archive (Page 31)' />
+  <meta property="og:title" content='Alex Hedley - ASP API' />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/paged-archive/31' />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/asp-api' />
 
   <link rel="icon" href='/blog/favicon.ico'>
 
@@ -75,11 +76,11 @@
   <div class="container position-relative">
     <div class="row">
       <div class="col-md-12">
-        <div class='site-heading'>
+        <div class='post-heading'>
           <h1>
-            Paged Archive (Page 31)
-              <small>(Page 31)</small>
+            ASP API
           </h1>
+            <div class="meta">Published on Monday, 2 September 2013</div>
         </div>
       </div>
     </div>
@@ -91,20 +92,25 @@
   <div class="container">
     <div class="row">
       <div id="content" class="col-md-12">
-        <p>
-    This is a paged archive that lists all the documents from the <code>posts</code> folder in pages of 4 items without any sorting.
-    Note that the <code>Title</code> setting is needed to populate the titles for each page. Alternativly, you can set <code>ArchiveTitle</code> to have full control over the page title.
-<p>
+        <p>API</p>
+<p><a href="http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api">http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api</a></p>
+<p>CRUD API</p>
+<p><a href="http://www.asp.net/web-api/overview/creating-web-apis/creating-a-web-api-that-supports-crud-operations">http://www.asp.net/web-api/overview/creating-web-apis/creating-a-web-api-that-supports-crud-operations</a></p>
+<hr />
+<p><a href="http://scottdesapio.com/VBScriptOAuth/">http://scottdesapio.com/VBScriptOAuth/</a></p>
+<hr />
+<p><a href="http://www.timacheson.com/Blog/2013/jun/asptwitter">http://www.timacheson.com/Blog/2013/jun/asptwitter</a></p>
+<hr />
+<p><a href="http://stackoverflow.com/questions/2883444/making-a-http-request-to-api-possible-with-vb-asp-classic">http://stackoverflow.com/questions/2883444/making-a-http-request-to-api-possible-with-vb-asp-classic</a></p>
+<pre><code class="language-vbscript">Dim req
+Set req = Server.CreateObject(&quot;MSXML2.ServerXMLHTTP&quot;)
 
-<p class="font-weight-bold">Page 31</p>
+req.open &quot;GET&quot;, &quot;http://blabla.com&quot;, False
+req.send()
 
-    <h5><a href="/blog/posts/welcome2">Welcome</a></h5>
-<p>Welcome to my new Blog!</p>    <h5><a href="/blog/posts/adding-a-settings-bundle">Adding A Settings Bundle</a></h5>
-<p>I'd like to add a Settings section to my app to show Licenses and other info.</p>    <h5><a href="/blog/posts/vimeo-api">Vimeo API</a></h5>
-<p>Vimeo API</p>    <h5><a href="/blog/posts/ios-app-film-blog-part-3">iOS App - Film Blog (Part 3)</a></h5>
-<p>So I've added a toolbar.</p>
-    <div class="mb-2"><a class="btn btn-primary" href="/blog/posts/paged-archive/30" role="button"><i class="fas fa-angle-double-left"></i> Previous Page</a></div>
-    <div><a class="btn btn-primary" href="/blog/posts/paged-archive/32" role="button">Next Page <i class="fas fa-angle-double-right"></i></a></div>
+Response.Write(req.responseText)
+</code></pre>
+
 
         
 

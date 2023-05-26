@@ -4,7 +4,7 @@
 	<title />
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-05-26T12:55:53Z</updated>
+	<updated>2023-05-26T15:42:04Z</updated>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest-solutions-architect</id>
 		<title>AWS Cloud Quest Solutions Architect</title>
@@ -391,9 +391,9 @@ jobs:
 &lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
-&lt;p&gt;![alexhedley]({{ site.baseurl }}/images/contributions-alexhedley.png "Contributions alexhedley")&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/contributions-alexhedley.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
 &lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.github.io/blog/#alex-hedley-1"&gt;alex-hedley&lt;/a&gt;({{ site.baseurl }}/images/contributions-alex-hedley.png "Contributions alex-hedley")&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/contributions-alex-hedley.png" alt="alex-hedley" title="Contributions alex-hedley"&gt;&lt;/p&gt;
 &lt;h2 id="skyline"&gt;Skyline&lt;/h2&gt;
 &lt;p&gt;Linked with &lt;a href="https://skyline.github.com/"&gt;skyline&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="section"&gt;2022&lt;/h3&gt;
@@ -516,6 +516,7 @@ jobs:
 &lt;li&gt;&lt;a href="https://thekevinwang.com/2021/09/19/github-actions-dynamic-matrix/"&gt;Dynamic Matrices in GitHub Actions&lt;/a&gt; by &lt;a href="https://thekevinwang.com/me/"&gt;Kevin Wang&lt;/a&gt; - September 19, 2021&lt;/li&gt;
 &lt;/ul&gt;
 </content>
+		<summary>&lt;p&gt;How to get a list of branches from a current repo.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/github-actions-request</id>
@@ -532,6 +533,7 @@ jobs:
 &lt;li&gt;&lt;a href="https://github.com/actions/github-script#download-data-from-a-url"&gt;Download data from a URL&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
+		<summary>&lt;p&gt;The &lt;a href="https://github.com/actions/github-script"&gt;actions/github-script&lt;/a&gt; has an option to send a request, that is already authenticated with the GitHub API.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/github-actions-comment</id>
@@ -592,5 +594,6 @@ jobs:
             })
 &lt;/code&gt;&lt;/pre&gt;
 </content>
+		<summary>&lt;p&gt;Have you ever needed to add a comment to your PR after your Jobs(s) have completed?&lt;/p&gt;</summary>
 	</entry>
 </feed>

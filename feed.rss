@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description />
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Fri, 26 May 2023 12:55:53 GMT</pubDate>
-		<lastBuildDate>Fri, 26 May 2023 12:55:53 GMT</lastBuildDate>
+		<pubDate>Fri, 26 May 2023 15:42:04 GMT</pubDate>
+		<lastBuildDate>Fri, 26 May 2023 15:42:04 GMT</lastBuildDate>
 		<item>
 			<title>AWS Cloud Quest Solutions Architect</title>
 			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-solutions-architect</link>
@@ -386,9 +386,9 @@ jobs:
 &lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
-&lt;p&gt;![alexhedley]({{ site.baseurl }}/images/contributions-alexhedley.png "Contributions alexhedley")&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/contributions-alexhedley.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
 &lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.github.io/blog/#alex-hedley-1"&gt;alex-hedley&lt;/a&gt;({{ site.baseurl }}/images/contributions-alex-hedley.png "Contributions alex-hedley")&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/contributions-alex-hedley.png" alt="alex-hedley" title="Contributions alex-hedley"&gt;&lt;/p&gt;
 &lt;h2 id="skyline"&gt;Skyline&lt;/h2&gt;
 &lt;p&gt;Linked with &lt;a href="https://skyline.github.com/"&gt;skyline&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="section"&gt;2022&lt;/h3&gt;
@@ -402,6 +402,7 @@ jobs:
 		<item>
 			<title>GitHub Actions Branches</title>
 			<link>https://alexhedley.github.io/blog/posts/github-actions-branches</link>
+			<description>&lt;p&gt;How to get a list of branches from a current repo.&lt;/p&gt;</description>
 			<author>alex-hedley</author>
 			<guid>https://alexhedley.github.io/blog/posts/github-actions-branches</guid>
 			<pubDate>Fri, 24 Dec 2021 00:00:00 GMT</pubDate>
@@ -514,6 +515,7 @@ jobs:
 		<item>
 			<title>GitHub Actions Request</title>
 			<link>https://alexhedley.github.io/blog/posts/github-actions-request</link>
+			<description>&lt;p&gt;The &lt;a href="https://github.com/actions/github-script"&gt;actions/github-script&lt;/a&gt; has an option to send a request, that is already authenticated with the GitHub API.&lt;/p&gt;</description>
 			<author>alex-hedley</author>
 			<guid>https://alexhedley.github.io/blog/posts/github-actions-request</guid>
 			<pubDate>Fri, 24 Dec 2021 00:00:00 GMT</pubDate>
@@ -529,6 +531,7 @@ jobs:
 		<item>
 			<title>GitHub Actions Comment</title>
 			<link>https://alexhedley.github.io/blog/posts/github-actions-comment</link>
+			<description>&lt;p&gt;Have you ever needed to add a comment to your PR after your Jobs(s) have completed?&lt;/p&gt;</description>
 			<author>alex-hedley</author>
 			<guid>https://alexhedley.github.io/blog/posts/github-actions-comment</guid>
 			<pubDate>Fri, 12 Nov 2021 00:00:00 GMT</pubDate>
