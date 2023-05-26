@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description />
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Fri, 26 May 2023 12:41:21 GMT</pubDate>
-		<lastBuildDate>Fri, 26 May 2023 12:41:21 GMT</lastBuildDate>
+		<pubDate>Fri, 26 May 2023 12:42:41 GMT</pubDate>
+		<lastBuildDate>Fri, 26 May 2023 12:42:41 GMT</lastBuildDate>
 		<item>
 			<title>GitHub Actions Branches</title>
 			<link>https://alexhedley.github.io/blog/posts/github-actions-branches</link>
@@ -115,6 +115,21 @@ jobs:
 &lt;h2 id="links"&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://thekevinwang.com/2021/09/19/github-actions-dynamic-matrix/"&gt;Dynamic Matrices in GitHub Actions&lt;/a&gt; by &lt;a href="https://thekevinwang.com/me/"&gt;Kevin Wang&lt;/a&gt; - September 19, 2021&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>GitHub Actions Request</title>
+			<link>https://alexhedley.github.io/blog/posts/github-actions-request</link>
+			<author>alex-hedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/github-actions-request</guid>
+			<pubDate>Fri, 24 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;The &lt;a href="https://github.com/actions/github-script"&gt;actions/github-script&lt;/a&gt; has an option to send a request, that is already authenticated with the GitHub API.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;const diff_url = context.payload.pull_request.diff_url&lt;/code&gt;
+&lt;code&gt;const result = await github.request(diff_url)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/actions/github-script#download-data-from-a-url"&gt;Download data from a URL&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -491,56 +506,6 @@ jobs:
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=zuzmH5K6su8"&gt;Fixing Issue 2004: Prism's New Project Wizard Deletes Everything&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Watch this space for more info after I've had some time to look into it more.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Twitch</title>
-			<link>https://alexhedley.github.io/blog/posts/twitch</link>
-			<description>&lt;p&gt;I've finally jumped on the Twitch Streaming bandwagon.&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/twitch</guid>
-			<pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;I've finally jumped on the Twitch Streaming bandwagon.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.twitch.tv/alexhedley8"&gt;alexhedley8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/playlist?list=PL_HSdprUDuLykPAunhmNNq7CFoclCsqs-"&gt;YouTube Archive&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I've been watching a few people for the last year including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://twitch.tv/JamesMontemagno"&gt;JamesMontemagno&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://twitch.tv/FrankKrueger"&gt;FrankKrueger&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://twitch.tv/BrianLagunas"&gt;BrianLagunas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://twitch.tv/csharpfritz"&gt;csharpfritz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://twitch.tv/dansiegel"&gt;dansiegel&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I decided it might be good to start streaming some stuff I work on.&lt;/p&gt;
-&lt;p&gt;I used to record &lt;a href="https://www.youtube.com/user/599CDTechHelp"&gt;videos&lt;/a&gt; for &lt;a href="http://www.599cd.com/"&gt;599CD&lt;/a&gt; a fews years back when I had more time on my hands but planning them out. Running through the content then recording and sometimes editing. This could take a while. I was always hoping to do it more often so I'd get better at it and it would take less time with more practice.&lt;/p&gt;
-&lt;p&gt;Setting up the office properly I started putting a list together of equipment I'd need and the purchasing began.&lt;/p&gt;
-&lt;p&gt;I took advice from a few of the above and started making a &lt;a href="https://gist.github.com/AlexHedley/67ae90dcab192a20ef51209242f7928e"&gt;list&lt;/a&gt; and sourcing the equipment.&lt;/p&gt;
-&lt;p&gt;Not being the best time to get stock during a global pandemic, being everyone was buying webcams etc for their own home setup.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-solo"&gt;Focusrite Scarlett Solo 3rd Gen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://eu.audio-technica.com/AT2020"&gt;Audio Technica AT2020&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.razer.com/gaming-broadcaster/razer-kiyo"&gt;Razer Kiyo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;Stream Deck&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Mic arm&lt;/li&gt;
-&lt;li&gt;Pop Filter&lt;/li&gt;
-&lt;li&gt;peripherals - cables etc&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Then I needed some artwork for scenes etc.&lt;/p&gt;
-&lt;p&gt;I'm no artist so I took some inspiration for other streamers for layout and positioning of elements and then grabbed some logos from my &lt;a href="http://alexhedley.com/"&gt;website&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Next up was the software.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://obsproject.com/"&gt;Obs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://streamlabs.com/"&gt;Streamlabs&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;Add the extensions for followers, alerts etc&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.mystreamtimer.com/"&gt;My Stream Timer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://carnackeys.com/"&gt;Carnac&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
