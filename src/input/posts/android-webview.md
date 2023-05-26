@@ -72,4 +72,4 @@ button.setOnClickListener(listener);
 
 > https://gist.github.com/anonymous/30f18702e450f0cdf0fe
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/23/android-webview/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/23/android-webview/)

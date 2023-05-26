@@ -9,6 +9,6 @@ published: 2011-08-12
 
 Anyone else getting this?
 
-![](images/6034789500_052b7ed484.jpg "iTunes")
+![iTunes](images/6034789500_052b7ed484.jpg "iTunes")
 
-[Original Link](https://alexhedley.wordpress.com/2011/08/12/itunes-will-expire-in/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/08/12/itunes-will-expire-in/)

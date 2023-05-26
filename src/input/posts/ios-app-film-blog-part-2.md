@@ -22,4 +22,4 @@ for each one, changed all the numbers from 1 to 2 to 3 etc but forget to change 
 
 Oh well, lets learn and move on.
 
-[Original Link](https://alexhedley.wordpress.com/2013/06/29/ios-film-app-cont/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2013/06/29/ios-film-app-cont/)

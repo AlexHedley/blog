@@ -25,4 +25,4 @@ Had to manually draw them but it worked, maybe on the small side so might have t
 
 Didn't seem to have the symbols in the Preview tho.
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/25/font-maker/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/25/font-maker/)

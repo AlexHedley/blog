@@ -276,6 +276,6 @@ _Games_
 
 [http://unity3d.com/](http://www.facebook.com/l.php?u=http%3A%2F%2Funity3d.com%2F&h=PAQGPTooh&s=1)
 
-\[https://www.facebook.com/groups/164031216987291/doc/180376772019402/\]
+[https://www.facebook.com/groups/164031216987291/doc/180376772019402/]
 
-[Original Link](https://alexhedley.wordpress.com/2013/06/30/links-treehouse/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2013/06/30/links-treehouse/)

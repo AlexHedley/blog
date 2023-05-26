@@ -46,4 +46,4 @@ http://www.idev101.com/code/Objective-C/custom\_url\_schemes.html
 }
 ```
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/20/custom-url-schemes/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/20/custom-url-schemes/)

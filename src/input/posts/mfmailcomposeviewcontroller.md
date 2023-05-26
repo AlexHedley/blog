@@ -80,4 +80,4 @@ The issue i then came across was it didn't have the white theme I needed.
 
 I now would like the first responder to be the Body so you can start typing from the get go.
 
-[Original Link](https://alexhedley.wordpress.com/2014/10/14/mfmailcomposeviewcontroller/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/10/14/mfmailcomposeviewcontroller/)

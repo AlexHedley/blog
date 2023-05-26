@@ -14,4 +14,4 @@ So I was working through a chapter and needed to add a Framework to the project.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yd1SpwFue8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/06/xcode4-adding-a-framework/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/06/xcode4-adding-a-framework/)

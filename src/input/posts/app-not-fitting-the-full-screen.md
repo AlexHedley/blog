@@ -13,4 +13,4 @@ I added an Default image for the splash screen and used an Image Catalog instead
 
 Default-586h@2x (640 × 1136) Default@2x (640 × 960)
 
-[Original Link](https://alexhedley.wordpress.com/2014/10/02/app-not-fitting-the-full-screen/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/10/02/app-not-fitting-the-full-screen/)

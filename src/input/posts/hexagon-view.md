@@ -17,4 +17,4 @@ NSCookBook [http://nscookbook.com/2013/02/ios-programming-recipe-14-implementing
 
 Apple [https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/CreatingCustomLayouts/CreatingCustomLayouts.html](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/CreatingCustomLayouts/CreatingCustomLayouts.html)
 
-[Original Link](https://alexhedley.wordpress.com/2014/09/21/hexagon-view/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/09/21/hexagon-view/)

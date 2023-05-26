@@ -17,4 +17,4 @@ Slowly getting there :)
 
 The Handling Data chapter is next ...
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/10/finished-chapter-7-of-iphone-programming/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/10/finished-chapter-7-of-iphone-programming/)

@@ -35,4 +35,4 @@ NSString *url = [mediathumbnail objectForKey:@"url"];
 NSLog(@"%@", url);
 ```
 
-[Original Link](https://alexhedley.wordpress.com/2014/10/01/first-element-of-dictionary/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/10/01/first-element-of-dictionary/)

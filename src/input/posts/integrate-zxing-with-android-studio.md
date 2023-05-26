@@ -85,4 +85,4 @@ public void onActivityResult(int requestCode, int resultCode, Intent intent) {
 }
 ```
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/28/integrate-zxing-with-android-studio/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/28/integrate-zxing-with-android-studio/)

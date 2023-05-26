@@ -1,8 +1,8 @@
 ---
 title: CSS3
-tags:
+# tags:
 author: AlexHedley
-description: 
+# description: 
 published: 2010-11-09
 ---
 

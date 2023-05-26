@@ -1,8 +1,8 @@
 ---
 title: Project List
-tags:
+# tags:
 author: AlexHedley
-description: 
+# description: 
 published: 2011-01-02
 ---
 

@@ -24,4 +24,4 @@ Get it here:
 
 ![Add_to_Passbook_Badge](images/add_to_passbook_badge.png)
 
-[Original Link](https://alexhedley.wordpress.com/2014/12/29/passbook/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/12/29/passbook/)

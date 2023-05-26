@@ -13,7 +13,7 @@ Just been surfing the net and came across this handy little tool, **fTerminal**,
 
 One problem, I downloaded, unzipped and had the
 
-[![](images/screen-shot-2012-04-06-at-19-19-18.png "Error")](http://alexhedley.files.wordpress.com/2012/04/screen-shot-2012-04-06-at-19-19-18.png)
+![Error](images/screen-shot-2012-04-06-at-19-19-18.png "Error")
 
 and when I tried to run it
 
@@ -21,7 +21,7 @@ and when I tried to run it
 
 So let's create a new Automator Application.
 
-[![](images/screen-shot-2012-04-06-at-19-20-55.png "Automator")](http://alexhedley.files.wordpress.com/2012/04/screen-shot-2012-04-06-at-19-20-55.png)
+![Automator](images/screen-shot-2012-04-06-at-19-20-55.png "Automator")
 
 Search for **Automator** and choose **Run AppleScript**
 
@@ -51,6 +51,6 @@ Can be done with a service:
 
 Enable     **New Terminal at Folder**     **New Terminal Tab at Folder**
 
-[![](http://alexhedley.files.wordpress.com/2012/04/screen-shot-2012-04-06-at-19-42-19.png?w=300 "Keyboard Shortcuts - Services")](http://alexhedley.files.wordpress.com/2012/04/screen-shot-2012-04-06-at-19-42-19.png)
+![Keyboard Shortcuts - Services](images/screen-shot-2012-04-06-at-19-42-19.png?w=300 "Keyboard Shortcuts - Services")
 
-[Original Link](https://alexhedley.wordpress.com/2012/04/06/fterminal/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2012/04/06/fterminal/)

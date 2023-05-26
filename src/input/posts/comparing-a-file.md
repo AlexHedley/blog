@@ -37,4 +37,4 @@ Serves me right for copying the initial \[playerElement addChild:nameElement\]; 
 
 Well this lesson has taught me a few new things in different programs so has had some use.
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/14/comparing-a-file/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/14/comparing-a-file/)

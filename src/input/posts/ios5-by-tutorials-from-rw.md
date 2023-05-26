@@ -20,4 +20,4 @@ Edit: Finished the Calander Chapter. Can add events to a custom calendar just fo
 
 Next: AddressBook API, works well, nice and easy to do, when you link with the actual AddressBook library, d'oh!
 
-[Original Link](https://alexhedley.wordpress.com/2012/02/18/ios5-by-tutorials-from-rw/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2012/02/18/ios5-by-tutorials-from-rw/)

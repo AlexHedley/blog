@@ -19,4 +19,4 @@ I cheated a little as I've used [http://www.appmakr.com/](http://www.appmakr.com
 
 Once I'm better at Obj-C I'll make one myself but might as well get use out of the Developer Licence.
 
-[Original Link](https://alexhedley.wordpress.com/2011/08/12/78/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/08/12/78/)

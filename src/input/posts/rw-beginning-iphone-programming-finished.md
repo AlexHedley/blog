@@ -21,4 +21,4 @@ I voted for the A\* search tut which I though would be a good one to create a So
 
 There are many solvers out there, even suppling their source code, might be worth a look
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/14/rw-beginning-iphone-programming-finished/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/14/rw-beginning-iphone-programming-finished/)

@@ -11,7 +11,7 @@ published: 2014-10-01
 
 SetDateFormat
 
-\[gist https://gist.github.com/1f916f41ef31e334f5b7 /\]
+[gist https://gist.github.com/1f916f41ef31e334f5b7 /]
 
 ```objectivec
 //Parsing a date in the following format '//2014-07-13T20:35:47.000Z'
@@ -26,8 +26,8 @@ SetDateFormat
 }
 ```
 
-\[gist id=1f916f41ef31e334f5b7\]
+[gist id=1f916f41ef31e334f5b7]
 
-\[gist\]https://gist.github.com/AlexHedley/1f916f41ef31e334f5b7\[/gist\]
+[gist]https://gist.github.com/AlexHedley/1f916f41ef31e334f5b7[gist]
 
-[Original Link](https://alexhedley.wordpress.com/2014/10/01/parse-date/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/10/01/parse-date/)

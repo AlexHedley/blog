@@ -60,6 +60,6 @@ FREE https://www.udemy.com/swift-learn-apples-new-programming-language-by-exampl
 
 *YouTube*
 
-https://m.youtube.com/playlist?list=PL\_4rJ\_acBNMHa\_RGZigG2nQI3aL1kTa4r
+https://m.youtube.com/playlist?list=PL_4rJ_acBNMHa_RGZigG2nQI3aL1kTa4r
 
-[Original Link](https://alexhedley.wordpress.com/2014/06/05/swift/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/06/05/swift/)

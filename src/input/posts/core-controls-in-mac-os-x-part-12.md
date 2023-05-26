@@ -23,4 +23,4 @@ Video Killed the Radio…Button — NSMatrix
 
 _This tutorial is written by Tutorial Team member [Ernesto García](http://www.raywenderlich.com/about#ernestogarcia), a Mac and iOS developer and founder of [CocoaWithChurros](http://www.cocoawithchurros.com/)._
 
-[Original Link](https://alexhedley.wordpress.com/2013/02/08/core-controls-in-mac-os-x-part-12/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2013/02/08/core-controls-in-mac-os-x-part-12/)

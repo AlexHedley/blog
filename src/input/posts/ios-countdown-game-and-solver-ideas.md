@@ -31,4 +31,4 @@ T-SQL
 
 [https://github.com/wharris/countdown](https://github.com/wharris/countdown)
 
-[Original Link](https://alexhedley.wordpress.com/2013/09/02/ios-countdown-game-and-solver-ideas/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2013/09/02/ios-countdown-game-and-solver-ideas/)

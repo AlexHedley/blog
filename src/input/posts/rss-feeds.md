@@ -1,8 +1,8 @@
 ---
 title: RSS Feeds
-tags:
+# tags:
 author: AlexHedley
-description: 
+# description: 
 published: 2010-11-08
 ---
 

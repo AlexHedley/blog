@@ -30,4 +30,4 @@ I'm no artist as you can probably tell from my site!
 
 Do I use one of those logo sites to get one made, don't really need one but wouldn't mind paying someone to do something I clearly can't.
 
-[Original Link](https://alexhedley.wordpress.com/2013/07/09/logo-icon/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2013/07/09/logo-icon/)

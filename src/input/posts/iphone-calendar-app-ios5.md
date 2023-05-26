@@ -20,4 +20,4 @@ Checked with the [Tame Geek](http://www.tame-geek.co.uk/author/geek/) and the w
 
 Of the 200 features in [iOS5](http://www.apple.com/ios/ios5/) that's one down, 199 to go!
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/19/iphone-calendar-app-ios5/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/19/iphone-calendar-app-ios5/)

@@ -12,4 +12,4 @@ Settings > General > AutoLock
 
 Change this and it stops.
 
-[Original Link](https://alexhedley.wordpress.com/2014/12/28/stop-ibooks-from-dimming/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/12/28/stop-ibooks-from-dimming/)

@@ -17,4 +17,4 @@ Would like the labels I've set next to the name for same contact multiple number
 
 I like the idea that they have split everything into separate apps, notes on its on not in Mail etc.
 
-[Original Link](https://alexhedley.wordpress.com/2012/02/16/mountain-lion/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2012/02/16/mountain-lion/)

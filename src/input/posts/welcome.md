@@ -1,5 +1,9 @@
 ---
 title: My First Post
+tags:
+    - general
+author: alex-hedley
+# description: 
 published: 2010-11-08
 ---
 

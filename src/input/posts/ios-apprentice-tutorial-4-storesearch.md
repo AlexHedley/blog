@@ -34,4 +34,4 @@ Part 2 is complete.
 
 No silly mistakes this time, everything (seems to be) working. Looks really cool. So happy with it so far.
 
-[Original Link](https://alexhedley.wordpress.com/2012/03/25/ios-apprentice-tutorial-4-storesearch/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2012/03/25/ios-apprentice-tutorial-4-storesearch/)

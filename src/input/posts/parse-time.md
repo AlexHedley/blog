@@ -32,4 +32,4 @@ Parse time from seconds to hours:minutes:seconds
 }
 ```
 
-[Original Link](https://alexhedley.wordpress.com/2014/10/01/parse-time/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/10/01/parse-time/)

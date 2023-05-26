@@ -15,4 +15,4 @@ http://stackoverflow.com/questions/21749425/android-webview-addjavascriptinterfa
 
 http://ganeshtiwaridotcomdotnp.blogspot.in/2011/10/calling-javascript-function-from.html
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/29/android-javascriptinterface/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/29/android-javascriptinterface/)

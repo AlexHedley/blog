@@ -24,4 +24,4 @@ By the end I'll have hopefully made
 
 [http://itunes.apple.com/gb/app/space-viking/id400657526?mt=8](http://itunes.apple.com/gb/app/space-viking/id400657526?mt=8 "Space Viking")
 
-[Original Link](https://alexhedley.wordpress.com/2012/04/02/learning-cocos2d/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2012/04/02/learning-cocos2d/)

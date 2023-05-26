@@ -17,4 +17,4 @@ Made a silly mistake and copied a few lines of code, forgot to re-name a few var
 
 Links: [http://www.raywenderlich.com/](http://www.raywenderlich.com/) [http://www.raywenderlich.com/1845/how-to-create-a-simple-iphone-app-tutorial-part-2](http://www.raywenderlich.com/1845/how-to-create-a-simple-iphone-app-tutorial-part-2)
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/12/ray-wenderlich-scary-bug-part-23-completed/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/12/ray-wenderlich-scary-bug-part-23-completed/)

@@ -27,4 +27,4 @@ In the Terminal:
 
 javac -version
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/21/android-woes/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/21/android-woes/)

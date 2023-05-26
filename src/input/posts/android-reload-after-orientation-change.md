@@ -34,4 +34,4 @@ I don't want this to happen
 
 http://stackoverflow.com/questions/5913130/dont-reload-application-when-orientation-changes
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/28/android-reload-after-orientation-change/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/28/android-reload-after-orientation-change/)

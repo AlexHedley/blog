@@ -22,4 +22,4 @@ imm.hideSoftInputFromWindow(EDITTEXT.getWindowToken(), 0);
 
 http://stackoverflow.com/questions/3553779/android-dismiss-keyboard
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/28/android-dismiss-keyboard/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/28/android-dismiss-keyboard/)

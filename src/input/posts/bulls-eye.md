@@ -16,4 +16,4 @@ Had some ideas for changes etc and see what I can come up with.
 
 Happy coding :)
 
-[Original Link](https://alexhedley.wordpress.com/2011/10/22/bulls-eye/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/10/22/bulls-eye/)

@@ -20,4 +20,4 @@ Updated:
 
 See previous posts for parsing tips.
 
-[Original Link](https://alexhedley.wordpress.com/2014/10/02/youtube-unplugged/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/10/02/youtube-unplugged/)

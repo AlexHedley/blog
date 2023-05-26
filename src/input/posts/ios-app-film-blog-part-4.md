@@ -24,6 +24,6 @@ Reachability was made in 2010 so isn't ARC complient.
 
 Go to **Targets** -> **Build Phases** -> **Compile Sources** and add
 
-\-fno-objc-arc
+`-fno-objc-arc`
 
-[Original Link](https://alexhedley.wordpress.com/2013/07/09/ios-app-film-blog-part-4/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2013/07/09/ios-app-film-blog-part-4/)

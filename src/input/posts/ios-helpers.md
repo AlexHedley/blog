@@ -52,4 +52,4 @@ for (UILabel *lbl in self.view.subviews) {
 }
 ```
 
-[Original Link](https://alexhedley.wordpress.com/2014/09/21/ios-helpers/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/09/21/ios-helpers/)

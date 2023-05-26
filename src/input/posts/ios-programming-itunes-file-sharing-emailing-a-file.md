@@ -21,4 +21,4 @@ Links:
 - [http://www.raywenderlich.com/1948/how-integrate-itunes-file-sharing-with-your-ios-app](http://www.raywenderlich.com/1948/how-integrate-itunes-file-sharing-with-your-ios-app)
 - [http://www.raywenderlich.com/1980/how-to-import-and-export-app-data-via-email-in-your-ios-app](http://www.raywenderlich.com/1980/how-to-import-and-export-app-data-via-email-in-your-ios-app)
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/13/ios-programming-itunes-file-sharing-emailing-a-file/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/13/ios-programming-itunes-file-sharing-emailing-a-file/)

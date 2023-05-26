@@ -18,6 +18,6 @@ http://alexhedley.com/films/
 
 Just changing the pic depending on the Cinema I went to, gotta work on the Stars next, think I might use the idea from http://www.raywenderlich.com/1797/how-to-create-a-simple-iphone-app-tutorial-part-1 for showing the stars.
 
-[![Image](images/screen-shot-2013-06-28-at-19-25-14.png)](images/screen-shot-2013-06-28-at-19-25-14.png)
+![Image](images/screen-shot-2013-06-28-at-19-25-14.png "")
 
-[Original Link](https://alexhedley.wordpress.com/2013/06/28/ios-app-film-blog/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2013/06/28/ios-app-film-blog/)

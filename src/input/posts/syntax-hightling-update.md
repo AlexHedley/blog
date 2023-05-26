@@ -1,8 +1,8 @@
 ---
 title: Syntax Hightling Update
-tags:
+# tags:
 author: AlexHedley
-description: 
+# description: 
 published: 2011-02-16
 ---
 

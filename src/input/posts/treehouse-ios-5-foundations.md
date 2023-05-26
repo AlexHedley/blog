@@ -29,4 +29,4 @@ There's a great community on the [fb group](https://www.facebook.com/groups/1640
 
 Just working on a pun app atm.
 
-[Original Link](https://alexhedley.wordpress.com/2012/04/08/treehouse-ios-5-foundations/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2012/04/08/treehouse-ios-5-foundations/)

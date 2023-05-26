@@ -39,4 +39,4 @@ Change it's colour:
 
 http://stackoverflow.com/questions/3024983/how-do-i-change-the-tint-of-an-imagebutton-on-focus-press
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/28/set-image-button-image/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/28/set-image-button-image/)

@@ -22,4 +22,4 @@ Links:
 - [http://www.raywenderlich.com/](http://www.raywenderlich.com/)
 - [http://www.raywenderlich.com/1888/how-to-create-a-simple-iphone-app-tutorial-part-33](http://www.raywenderlich.com/1888/how-to-create-a-simple-iphone-app-tutorial-part-33)
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/12/scary-bugs-part-33-completed/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/12/scary-bugs-part-33-completed/)

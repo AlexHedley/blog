@@ -17,4 +17,4 @@ Here's an excerpt:
 
 [Click here to see the complete report.](http://alexhedley.wordpress.com/2013/annual-report/)
 
-[Original Link](https://alexhedley.wordpress.com/2014/01/01/2013-in-review/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/01/01/2013-in-review/)

@@ -21,4 +21,4 @@ Here is an Icon, WIP, I'm no designer so found the useful background from Vicki 
 
 [http://www.vickiwenderlich.com/2012/04/5-free-app-background-images-starburst/](http://www.vickiwenderlich.com/2012/04/5-free-app-background-images-starburst/)
 
-[Original Link](https://alexhedley.wordpress.com/2013/09/02/gauntlet-icon/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2013/09/02/gauntlet-icon/)

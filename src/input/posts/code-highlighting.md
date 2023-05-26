@@ -1,8 +1,8 @@
 ---
 title: Code Highlighting
-tags:
+# tags:
 author: AlexHedley
-description: 
+# description: 
 published: 2011-02-14
 ---
 

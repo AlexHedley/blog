@@ -40,4 +40,4 @@ Change the highlighted colour
 
 `navigationBar.barStyle = UIBarStyleBlackOpaque;`
 
-[Original Link](https://alexhedley.wordpress.com/2014/10/03/navigation-bar-status-bar-colours/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2014/10/03/navigation-bar-status-bar-colours/)

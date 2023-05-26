@@ -17,4 +17,4 @@ var error: NSError? = nil
 
 [http://nshipster.com/xcode-snippets/](http://nshipster.com/xcode-snippets/)
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/17/xcode-shortcuts/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/17/xcode-shortcuts/)

@@ -18,4 +18,4 @@ Links:
 - [http://www.raywenderlich.com/](http://www.raywenderlich.com/)
 - [http://www.raywenderlich.com/1914/how-to-save-your-app-data-with-nscoding-and-nsfilemanager](http://www.raywenderlich.com/1914/how-to-save-your-app-data-with-nscoding-and-nsfilemanager)
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/12/ios-programming-saving-data-with-nscoding-and-nsfilemanager/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/12/ios-programming-saving-data-with-nscoding-and-nsfilemanager/)

@@ -25,4 +25,4 @@ Links:
 - http://www.sqlite.org/version3.html
 - http://www.python.org/
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/16/sqlite3-and-ios/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/16/sqlite3-and-ios/)

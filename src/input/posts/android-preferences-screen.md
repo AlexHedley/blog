@@ -159,4 +159,4 @@ http://stackoverflow.com/questions/14756457/android-deprecated-method-warning-re
 
 http://stackoverflow.com/questions/15126290/adding-settings-to-android-app
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/30/android-preferences-screen/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/30/android-preferences-screen/)

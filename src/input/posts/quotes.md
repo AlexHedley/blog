@@ -1,8 +1,8 @@
 ---
 title: Quotes
-tags:
+# tags:
 author: AlexHedley
-description: 
+# description: 
 published: 2010-11-19
 ---
 

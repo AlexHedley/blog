@@ -27,4 +27,4 @@ _Part 1_ [http://www.raywenderlich.com/12735/how-to-make-a-simple-playing-card-g
 
 Part 2 [http://www.raywenderlich.com/12865/how-to-make-a-simple-playing-card-game-with-multiplayer-and-bluetooth-part-2](http://www.raywenderlich.com/12865/how-to-make-a-simple-playing-card-game-with-multiplayer-and-bluetooth-part-2)
 
-[Original Link](https://alexhedley.wordpress.com/2012/06/30/ios-snap-game-ray-wenderlich/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2012/06/30/ios-snap-game-ray-wenderlich/)

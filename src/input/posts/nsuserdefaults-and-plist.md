@@ -35,4 +35,4 @@ NSDictionary *defaultPrefs = [NSDictionary dictionaryWithContentsOfURL:defaultPr
 [[NSUserDefaults standardUserDefaults] registerDefaults:defaultPrefs];
 ```
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/20/nsuserdefaults-and-plist/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/20/nsuserdefaults-and-plist/)

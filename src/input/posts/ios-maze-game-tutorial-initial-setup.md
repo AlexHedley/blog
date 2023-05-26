@@ -46,4 +46,4 @@ It was a good mistake as I should learn to not do it again.
 
 Anyway let the game development continue.
 
-[Original Link](https://alexhedley.wordpress.com/2015/01/25/ios-maze-game-tutorial-initial-setup/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/25/ios-maze-game-tutorial-initial-setup/)

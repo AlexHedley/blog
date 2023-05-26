@@ -17,4 +17,4 @@ Can't wait to work on more of them.
 
 Links: [http://www.raywenderlich.com/](http://www.raywenderlich.com/) [http://www.raywenderlich.com/1797/how-to-create-a-simple-iphone-app-tutorial-part-1](http://www.raywenderlich.com/1797/how-to-create-a-simple-iphone-app-tutorial-part-1)
 
-[Original Link](https://alexhedley.wordpress.com/2011/06/12/first-ray-wenderlich-tutorial-completed/)
+![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2011/06/12/first-ray-wenderlich-tutorial-completed/)
