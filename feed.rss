@@ -5,8 +5,319 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description />
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Fri, 26 May 2023 12:33:50 GMT</pubDate>
-		<lastBuildDate>Fri, 26 May 2023 12:33:50 GMT</lastBuildDate>
+		<pubDate>Fri, 26 May 2023 12:41:21 GMT</pubDate>
+		<lastBuildDate>Fri, 26 May 2023 12:41:21 GMT</lastBuildDate>
+		<item>
+			<title>GitHub Actions Branches</title>
+			<link>https://alexhedley.github.io/blog/posts/github-actions-branches</link>
+			<author>alex-hedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/github-actions-branches</guid>
+			<pubDate>Fri, 24 Dec 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;How to get a list of branches from a current repo.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/actions/github-script"&gt;actions/github-script&lt;/a&gt; is a good place to start as it has access to the Repo info.
+To see what you can get run the script and output the complete context:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;      - name: View context attributes
+        uses: actions/github-script&amp;#64;v5
+        with:
+          script: console.log(context)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Be careful though, as when this is ran manually it gets different values to when ran on a schedule.&lt;/p&gt;
+&lt;p&gt;Looking at the &lt;em&gt;Repository&lt;/em&gt; info the &lt;code&gt;branches_url&lt;/code&gt; might be useful:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-json"&gt;Context {
+  payload: {
+    repository: {
+      branches_url: 'https://api.github.com/repos/alex-hedley/[REPONAME]/branches{/branch}',
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;context.payload.repository.branches_url&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We don't need the &lt;code&gt;{{/branch}}&lt;/code&gt; though. So lets remove that.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;const branches_url = context.payload.repository.branches_url
+const branches_url_new = branches_url.replace(&amp;quot;{/branch}&amp;quot;, &amp;quot;&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With this &lt;em&gt;url&lt;/em&gt; we can now get the data using the &lt;a href="https://github.com/actions/github-script#download-data-from-a-url"&gt;github.request()&lt;/a&gt; method.
+Map just the names of the branches to an Array.
+And log the data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;const result = await github.request(branches_url_new)
+const names = result.data.map(branch =&amp;gt; branch.name)
+console.log(names)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-json"&gt;{
+    ...
+    data: [
+        { name: 'dev', commit: [Object], protected: false },
+        { name: 'main', commit: [Object], protected: false }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-json"&gt;[ 'dev', 'main' ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depending on the type of event you could&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;on:
+  push:
+    branches:    
+      - '*'         # matches every branch that doesn't contain a '/'
+      - '*/*'       # matches every branch containing a single '/'
+      - '**'        # matches every branch
+      - '!master'   # excludes master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But this isn't available for &lt;code&gt;workflow_dispatch:&lt;/code&gt; as of yet.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;name: Get Branches
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  print-context:
+    runs-on: ubuntu-latest
+    outputs:
+      branches: ${{ steps.branch-output.outputs.branches }}
+    steps:
+      - name: Branches
+        id: branches-list
+        uses: actions/github-script&amp;#64;v5
+        with:
+          script: |
+            const branches_url = context.payload.repository.branches_url
+            const branches_url_new = branches_url.replace(&amp;quot;{/branch}&amp;quot;, &amp;quot;&amp;quot;)
+            const result = await github.request(branches_url_new)
+            const names = result.data.map(branch =&amp;gt; branch.name)
+            
+            const index = names.indexOf('main');
+            if (index &amp;gt; -1) {
+              names.splice(index, 1);
+            }
+            console.log(names)
+
+            return names
+      
+      - name: Branches
+        id: branch-output
+        run: |
+          BRANCHES='${{ steps.branches-list.outputs.result }}'
+          echo ::set-output name=branches::$BRANCHES
+      
+  my_matrix:
+    runs-on: ubuntu-latest
+    needs:
+      - print-context
+    strategy:
+      matrix:
+        branches: ${{ fromJSON(needs.print-context.outputs.branches) }}
+    steps:
+      - name: Branches
+        run: |
+          echo ${{ matrix.branches }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://thekevinwang.com/2021/09/19/github-actions-dynamic-matrix/"&gt;Dynamic Matrices in GitHub Actions&lt;/a&gt; by &lt;a href="https://thekevinwang.com/me/"&gt;Kevin Wang&lt;/a&gt; - September 19, 2021&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>GitHub Actions Comment</title>
+			<link>https://alexhedley.github.io/blog/posts/github-actions-comment</link>
+			<author>alex-hedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/github-actions-comment</guid>
+			<pubDate>Fri, 12 Nov 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Have you ever needed to add a comment to your PR after your Jobs(s) have completed?&lt;/p&gt;
+&lt;p&gt;Scrolling through the logs can be long winded, why not add a nice comment?&lt;/p&gt;
+&lt;p&gt;Want to add some some cool emojis too?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md"&gt;emoji-cheat-sheet&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🔗 &lt;code&gt;:link:&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;📘 &lt;code&gt;:blue_book:&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Start with the &lt;a href="https://github.com/actions/github-script"&gt;actions/github-script&lt;/a&gt; action.&lt;/p&gt;
+&lt;p&gt;It has various features, one of which is to &lt;code&gt;createComment&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Add the various inputs you need to configure:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;github.issues.createComment({})&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;body&lt;/code&gt; is the piece you want to update with your info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;body: ':link: MY LINK'&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;With an output of&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 MY LINK&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then you can set your trigger to run on a &lt;em&gt;PR&lt;/em&gt; and it'll add the necessary info.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-actions-comment.png" alt="Actions Comment" title="Actions Comment"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="workflow"&gt;Workflow&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;name: Add Comment
+
+on:
+  # workflow_dispatch:
+  pull_request:
+    branches: [main]
+
+jobs:
+  PR-Comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR Comment
+        if: github.base_ref == 'main'
+        uses: actions/github-script@v2
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.issues.createComment({
+              issue_number: ${{ github.event.number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: ':link: MY LINK'
+            })
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Welcome</title>
+			<link>https://alexhedley.github.io/blog/posts/welcome3</link>
+			<author>alex-hedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/welcome3</guid>
+			<pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Welcome to my new Blog!&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Markdown to PDF via GitHub Actions and Pandoc</title>
+			<link>https://alexhedley.github.io/blog/posts/md-to-pdf</link>
+			<description>&lt;p&gt;In this post I'll run through converting a &lt;code&gt;md&lt;/code&gt; file to a PDF using &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt; and &lt;a href="https://github.com/actions/"&gt;GitHub Actions&lt;/a&gt;.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/md-to-pdf</guid>
+			<pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In this post I'll run through converting a &lt;code&gt;md&lt;/code&gt; file to a PDF using &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt; and &lt;a href="https://github.com/actions/"&gt;GitHub Actions&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you need to convert files from one markup format into another, pandoc is your swiss-army knife. Pandoc can convert between the following formats:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is useful if you're writing up documentation and want to output to different file formats.&lt;/p&gt;
+&lt;p&gt;I found a useful &lt;a href="https://github.com/pandoc/pandoc-action-example"&gt;example&lt;/a&gt; on a GitHub &lt;a href="https://github.com/pandoc"&gt;profile&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Create a new file called &lt;code&gt;book.md&lt;/code&gt; and a folder called &lt;code&gt;images&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Add you content.&lt;/p&gt;
+&lt;p&gt;Create a GitHub workflow:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;name: Create PDF
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout&amp;#64;v2
+      - run: |
+          mkdir output  # create output dir
+          # this will also include README.md
+          echo &amp;quot;FILELIST=$(printf '&amp;quot;%s&amp;quot; ' *.md)&amp;quot; &amp;gt;&amp;gt; $GITHUB_ENV
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/result.pdf ${ env.FILELIST }
+      - uses: actions/upload-artifact&amp;#64;v2
+        with:
+          name: output
+          path: output
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note: &lt;code&gt;${ var }&lt;/code&gt; needs double &lt;code&gt;{&lt;/code&gt; &lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As well as creating an &lt;a href="https://github.com/actions/upload-artifact"&gt;artifact&lt;/a&gt; you could also &lt;a href="https://github.com/actions/create-release"&gt;create&lt;/a&gt; a release and &lt;a href="https://github.com/actions/upload-release-asset"&gt;upload&lt;/a&gt; that.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;name: Create PDF
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout&amp;#64;v2
+      - run: |
+          mkdir output # create output dir
+          # this will also include README.md
+          echo &amp;quot;FILELIST=$(printf '&amp;quot;%s&amp;quot; ' *.md)&amp;quot; &amp;gt;&amp;gt; $GITHUB_ENV
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/result.pdf ${ env.FILELIST }
+      - uses: actions/upload-artifact&amp;#64;v2
+        with:
+          name: output
+          path: output
+      
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release&amp;#64;v1
+        env:
+          GITHUB_TOKEN: ${ secrets.GITHUB_TOKEN }
+        with:
+          tag_name: v0.1 #${ github.ref }
+          release_name: Release v0.1 #${ github.ref }
+          draft: true
+          prerelease: false
+
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset&amp;#64;v1
+        env:
+          GITHUB_TOKEN: ${ secrets.GITHUB_TOKEN }
+        with:
+          upload_url: ${ steps.create_release.outputs.upload_url }
+          asset_path: output/result.pdf
+          asset_name: Handbook.pdf
+          asset_content_type: application/pdf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note: &lt;code&gt;${ var }&lt;/code&gt; needs double &lt;code&gt;{&lt;/code&gt; &lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Note: There is a problem with the &lt;code&gt;set-env&lt;/code&gt; &lt;a href="https://github.com/pandoc/pandoc-action-example/issues/12"&gt;Issue&lt;/a&gt; and &lt;a href="https://github.com/pandoc/pandoc-action-example/pull/14"&gt;PR&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One workaround is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;      - run: |
+          echo &amp;quot;::set-env name=FILELIST::$(printf '&amp;quot;%s&amp;quot; ' *.md)&amp;quot;
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="html"&gt;HTML&lt;/h2&gt;
+&lt;p&gt;You might also want to create it as HTML:&lt;/p&gt;
+&lt;p&gt;Sample:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;name: Create HTML
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout&amp;#64;v2
+        
+      - name: Create output directory
+        run: |
+          mkdir output  # create output dir
+          echo &amp;quot;FILELIST=book.md&amp;quot; &amp;gt;&amp;gt; $GITHUB_ENV
+      
+      - name: Pandoc
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/index.html ${{ env.FILELIST }} -s
+      
+      # copy the images from the repo to the output folder for inclusion in the artifact
+      - name: Copy images dir to output dir
+        run: cp -r images/ output/
+      
+      - name: Upload Artifact
+        uses: actions/upload-artifact&amp;#64;v2
+        with:
+          name: Handbook
+          path: output
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Another option would be to add an extra arg (&lt;a href="https://pandoc.org/MANUAL.html#option--extract-media"&gt;&lt;code&gt;--extract-media&lt;/code&gt;&lt;/a&gt;)  which takes a DIRECTORY: &lt;code&gt;--extract-media=DIR&lt;/code&gt;, just set the folder to &lt;strong&gt;images&lt;/strong&gt;: &lt;code&gt;--extract-media=images&lt;/code&gt; and you will get the necessary files.&lt;/p&gt;
+&lt;p&gt;The file names do become random strings.&lt;/p&gt;
+&lt;p&gt;But then the path doesn't work with the HTML.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Utility Blazor</title>
 			<link>https://alexhedley.github.io/blog/posts/utility-blazor</link>
@@ -230,299 +541,6 @@
 &lt;li&gt;&lt;a href="http://www.mystreamtimer.com/"&gt;My Stream Timer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://carnackeys.com/"&gt;Carnac&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Build Light</title>
-			<link>https://alexhedley.github.io/blog/posts/buildlight</link>
-			<description>&lt;p&gt;&lt;a href="https://github.com/praeclarum/BuildLight"&gt;Build Light&lt;/a&gt; is a way to &lt;em&gt;display your IDE's build status using RGB LEDs and IoT devices!&lt;/em&gt;&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/buildlight</guid>
-			<pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;a href="https://github.com/praeclarum/BuildLight"&gt;Build Light&lt;/a&gt; is a way to &lt;em&gt;display your IDE's build status using RGB LEDs and IoT devices!&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;It's being built by &lt;a href="http://twitter.com/praeclarum"&gt;&amp;#64;praeclarum&lt;/a&gt; on his &lt;a href="https://twitch.tv/FrankKrueger"&gt;Twitch&lt;/a&gt; channel the last few sunday nights.&lt;/p&gt;
-&lt;p&gt;It's an ESP32 device running a mini web server that when connected to a set of RGB lights will toggle the colour from red (for a failed build) to green (for a successful build) in Visual Studio for Mac.&lt;/p&gt;
-&lt;p&gt;It even has support in Alexa so you can turn it on and off.&lt;/p&gt;
-&lt;p&gt;For my first Twitch stream (&lt;a href="https://www.youtube.com/watch?v=It13T8YBX8g"&gt;YouTube Archive&lt;/a&gt;) I built the Windows version of the Build Light Extension. See &lt;a href="https://github.com/praeclarum/BuildLight/pull/7"&gt;PR !7&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This was a fun new challenge having never worked in the &lt;a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/visual-studio-sdk?view=vs-2019"&gt;VS SDK&lt;/a&gt; before.&lt;/p&gt;
-&lt;p&gt;I'm hoping to spend some mode time in this SDK for both Mac and Win and write up what I find.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>StreamDeck Toolkit</title>
-			<link>https://alexhedley.github.io/blog/posts/streamdecktoolkit</link>
-			<description>&lt;p&gt;The &lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;Stream Deck&lt;/a&gt; is an awesome gadget to use whilst streaming. It allows you to configure buttons to perform any number of actions. This could be changing scene whilst streaming, playing some sounds, opening an app, running a set of actions, the list is endless.&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/streamdecktoolkit</guid>
-			<pubDate>Sun, 07 Jun 2020 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;The &lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;Stream Deck&lt;/a&gt; is an awesome gadget to use whilst streaming. It allows you to configure buttons to perform any number of actions. This could be changing scene whilst streaming, playing some sounds, opening an app, running a set of actions, the list is endless.&lt;/p&gt;
-&lt;p&gt;![Stream Deck]({{ site.baseurl }}/images/sdt/streamdeck.png "Stream Deck")&lt;/p&gt;
-&lt;p&gt;Whilst watching &lt;a href="https://www.twitch.tv/csharpfritz"&gt;csharpfritz&lt;/a&gt; om twitch I checked the archives and found the following playlist for the &lt;a href="https://www.youtube.com/playlist?list=PLVMqA0_8O85xhVTS3OkTOKhe6IIYj7Tna"&gt;StreamDeck Toolkit&lt;/a&gt; where a plugin system written in .NET was built to make it easy to make your own button actions.&lt;/p&gt;
-&lt;p&gt;With my new love of using &lt;a href="https://alexhedley.github.io/blog/post/DocFX"&gt;DocFX&lt;/a&gt; I thought I'd help out and contribute to the documentation for the toolkit.&lt;/p&gt;
-&lt;p&gt;It didn't take long to spin up a site, move some of the existing documentation over and start adding new items, it was merged on stream on 7th June 2020 (adding YouTube link when published)&lt;/p&gt;
-&lt;p&gt;You can see the &lt;a href="https://github.com/FritzAndFriends/StreamDeckToolkit/pull/150"&gt;PR !150&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;What's great is there's a workflow with GH Actions to auto build when new content is added.&lt;/p&gt;
-&lt;p&gt;You can find the &lt;a href="https://fritzandfriends.github.io/StreamDeckToolkit/articles/intro.html"&gt;Docs&lt;/a&gt; and start building your own today.&lt;/p&gt;
-&lt;p&gt;I may add one for &lt;a href="https://alexhedley.github.io/blog/post/BuildLight"&gt;BuildLight&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>DocFX</title>
-			<link>https://alexhedley.github.io/blog/posts/docfx</link>
-			<description>&lt;p&gt;There are a number of options to build static sites these days.&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/docfx</guid>
-			<pubDate>Tue, 19 May 2020 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;There are a number of options to build static sites these days.&lt;/p&gt;
-&lt;p&gt;My current blog is built using &lt;a href="https://github.com/barryclark/jekyll-now"&gt;Jekyll Now&lt;/a&gt; which is great static site which uses &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Another tool I've used is &lt;a href="https://www.mkdocs.org/"&gt;MkDocs&lt;/a&gt;, this has been helpful as it allowed me to quickly contribute to &lt;a href="https://alexhedley.github.io/MFractor-Documentation"&gt;MFractor&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;But with me working with .NET predominantly it makes sense to use the tooling MS use. This is &lt;a href="https://dotnet.github.io/docfx/"&gt;DocFX&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For a great customised version of this see &lt;a href="https://prismlibrary.com/docs/"&gt;Prism Library Docs&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;One thing I love about the jekyll based sites is you can use them with GitHub Pages. Just push and it auto builds.&lt;/p&gt;
-&lt;p&gt;For MkDocs this allows a command to push &lt;code&gt;mkdocs gh-deploy&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;I'd like the same for DocFX but this doesn't currently exist out of the box.&lt;/p&gt;
-&lt;p&gt;Time to use &lt;a href="https://github.com/features/actions"&gt;GitHub Actions&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Researching first to see if anyone had got it working yet I found:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/docfx/issues/3284"&gt;3284&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.community/t5/GitHub-Actions/Github-action-not-triggering-gh-pages-upon-push/td-p/26869/highlight/true/page/3"&gt;Community&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;From here I tried a few ideas:&lt;/p&gt;
-&lt;p&gt;Create a new file under the following folder:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;.github/workflows/&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;main.yml&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Add the following:&lt;/p&gt;
-&lt;p&gt;Setup which branch will trigger the action to run:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;on:
-  push:
-    branches:
-      - master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then we need to run a job on an OS:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;jobs:
-  deploy:
-    runs-on: ubuntu-latest 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next we need to build the DocFX site, this is done locally running the following command:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;docfx docfx.json&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This will build the site the chosen path from the above &lt;code&gt;.json&lt;/code&gt; file.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-json"&gt;"dest": "_site",
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Luckily this GitHub Action has already been built:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/marketplace/actions/docfx-action"&gt;docfx-action&lt;/a&gt;&lt;/strong&gt; from &lt;a href="https://github.com/nikeee"&gt;nikeee&lt;/a&gt; Niklas Mollenhauer&lt;/p&gt;
-&lt;p&gt;Just add the following &lt;strong&gt;step&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;      - name: docfx-action
-        uses: nikeee/docfx-action@v0.1.0
-        with:
-          args: docfx.json
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If your &lt;code&gt;docfx.json&lt;/code&gt; is in another location update the &lt;code&gt;args&lt;/code&gt; input accordingly.&lt;/p&gt;
-&lt;p&gt;One thing to note is we can't use &lt;code&gt;windows-latest&lt;/code&gt; as we get an error with the "docfx-action".&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;##[error]Container action is only supported on Linux&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Now that the site is built we want to publish it to GitHub Pages:&lt;/p&gt;
-&lt;p&gt;Again there's an Action already built for this:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/peaceiris/actions-gh-pages"&gt;GitHub Actions for GitHub Pages&lt;/a&gt;&lt;/strong&gt; from &lt;a href="https://github.com/peaceiris"&gt;peaceiris&lt;/a&gt; Shohei Ueda&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.6.1
-        with:
-          github_token: ${ secrets.GITHUB_TOKEN }
-          publish_dir: ./_site
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note: use double "{" and "}" around the &lt;code&gt;github_token&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;If you have changed your &lt;code&gt;dest&lt;/code&gt; to another folder name update the &lt;code&gt;publish_dir&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;All GHA have a &lt;code&gt;GITHUB_TOKEN&lt;/code&gt; automatically generated when they run so you can use this in your action.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-github_token"&gt;github_token&lt;/a&gt; for more info.&lt;/p&gt;
-&lt;p&gt;Push this &lt;code&gt;yml&lt;/code&gt; file to your repo and push to your trigger branch, then click on the "Actions" tab and see it run.&lt;/p&gt;
-&lt;p&gt;This now means you don't have to build it locally, then push to the &lt;code&gt;gh-pages&lt;/code&gt; branch manually to deploy it online.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="code"&gt;Code&lt;/h2&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;name: github pages
-
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: docfx-action
-        uses: nikeee/docfx-action@v0.1.0
-        with:
-          args: docfx.json
-      
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.6.1
-        with:
-          github_token: ${ secrets.GITHUB_TOKEN }
-          publish_dir: ./_site
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note: use double "{" and "}" around the &lt;code&gt;github_token&lt;/code&gt;.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Poor Mans TSql Formatter</title>
-			<link>https://alexhedley.github.io/blog/posts/poormanstsqlformatter</link>
-			<description>&lt;p&gt;&lt;a href="http://architectshack.com/PoorMansTSqlFormatter.ashx"&gt;PoorMansTSqlFormatter&lt;/a&gt; is&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/poormanstsqlformatter</guid>
-			<pubDate>Sun, 17 May 2020 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;a href="http://architectshack.com/PoorMansTSqlFormatter.ashx"&gt;PoorMansTSqlFormatter&lt;/a&gt; is&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a free and open-source SQL (T-SQL) formatter&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It's a fantasic tool with plugins for SSMS, VS Code, there's a website &lt;a href="http://poorsql.com/"&gt;Poor SQL&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you want to use this in a .NET app you can pull the &lt;a href="https://www.nuget.org/packages/PoorMansTSQLFormatter/"&gt;NuGet&lt;/a&gt; which is currently at version 1.4.3.1, but the current &lt;a href="https://github.com/TaoK/PoorMansTSqlFormatter/releases"&gt;release&lt;/a&gt; is 1.6.13.&lt;/p&gt;
-&lt;p&gt;To try it out I downloaded the WinForms App to see what options there are.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;WinForms App (simple exe): SqlFormatterWinforms.1.6.13.zip (1644 downloads this version, about 32000 for previous versions)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I then decompiled the &lt;em&gt;SqlFormatterWinforms.exe&lt;/em&gt; to see how to setup the formatter.&lt;/p&gt;
-&lt;p&gt;Another way would be to look at the &lt;a href="https://github.com/TaoK/PoorMansTSqlFormatter/tree/master/PoorMansTSqlFormatterDemo"&gt;Demo&lt;/a&gt; code on GitHub.&lt;/p&gt;
-&lt;p&gt;Then look into the &lt;a href="https://github.com/TaoK/PoorMansTSqlFormatter/blob/master/PoorMansTSqlFormatterDemo/MainForm.cs"&gt;MainForm.cs&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If you wish to run the app you will need to build the &lt;a href="https://github.com/TaoK/PoorMansTSqlFormatter/tree/master/PoorMansTSqlFormatterLib"&gt;Lib&lt;/a&gt; so the app can use the DLL.&lt;/p&gt;
-&lt;p&gt;![PoorMansTSqlFormatter]({{ site.baseurl }}/images/pmtf/pmtf_1.png &amp;quot;PoorMansTSqlFormatter Demo App&amp;quot;)&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;DoFormatting()&lt;/code&gt; is the method which converts your SQL string into the formatted code so this contains a number of items we need to get the basics working.&lt;/p&gt;
-&lt;p&gt;I created a Console App, added the NuGet and started my journey.&lt;/p&gt;
-&lt;p&gt;First we need a &lt;code&gt;tokenizer&lt;/code&gt;, a &lt;code&gt;parser&lt;/code&gt; and &lt;code&gt;formatter&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;private static ISqlTokenizer _tokenizer;
-private static ISqlTokenParser _parser;
-private static ISqlTreeFormatter _formatter;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We can set the defaults for these&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;_tokenizer = (ISqlTokenizer)new TSqlStandardTokenizer();
-_parser = (ISqlTokenParser)new TSqlStandardParser();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The formatter needs a few options.
-Unfortunately &lt;code&gt;TSqlStandardFormatterOptions&lt;/code&gt; isn't in this version of the NuGet.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;string indentString = &amp;quot;\t&amp;quot;;
-int spacesPerTab = 4;
-int maxLineWidth = 999;
-bool expandCommaLists = true;
-bool trailingCommas = false;
-bool spaceAfterExpandedComma = false;
-bool expandBooleanExpressions = true;
-bool expandCaseStatements = true;
-bool expandBetweenConditions = true;
-bool breakJoinOnSections = false;
-bool uppercaseKeywords = true;
-bool htmlColoring = true;
-bool keywordStandardization = false;
-
-ISqlTreeFormatter underlyingFormatter = new TSqlStandardFormatter(indentString, spacesPerTab, maxLineWidth, expandCommaLists, trailingCommas, spaceAfterExpandedComma, expandBooleanExpressions, expandCaseStatements, expandBetweenConditions, breakJoinOnSections, uppercaseKeywords, htmlColoring, keywordStandardization);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next we can create the &lt;code&gt;formatter&lt;/code&gt; using the options above from the &lt;code&gt;underlyingFormatter&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;_formatter = (ISqlTreeFormatter)new HtmlPageWrapper(underlyingFormatter);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next create a sample piece of sql:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-sql"&gt;Select * from table
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;var sqlString = &amp;quot;Select * from table&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And pass it to the tokenizer:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;ITokenList tokenList = _tokenizer.TokenizeSQL(sqlString);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;With a token list available we can parse this sql:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;XmlDocument sql = _parser.ParseSQL(tokenList);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You may notice the &lt;code&gt;Node&lt;/code&gt; type in the code.&lt;/p&gt;
-&lt;p&gt;Now that the SQL is in an &lt;code&gt;XMLDocument&lt;/code&gt; we can format it:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-csharp"&gt;string formattedSql = _formatter.FormatSQLTree(sql);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will produce a HTML doc which you can display in a browser control.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;!DOCTYPE html &amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;
-.SQLCode {
-	font-size: 13px;
-	font-weight: bold;
-	font-family: monospace;;
-	white-space: pre;
-    -o-tab-size: 4;
-    -moz-tab-size: 4;
-    -webkit-tab-size: 4;
-}
-.SQLComment {
-	color: #00AA00;
-}
-.SQLString {
-	color: #AA0000;
-}
-.SQLFunction {
-	color: #AA00AA;
-}
-.SQLKeyword {
-	color: #0000AA;
-}
-.SQLOperator {
-	color: #777777;
-}
-.SQLErrorHighlight {
-	background-color: #FFFF00;
-}
-
-
-&amp;lt;/style&amp;gt;
-&amp;lt;pre class=&amp;quot;SQLCode&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;SQLKeyword&amp;quot;&amp;gt;SELECT&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;SQLOperator&amp;quot;&amp;gt;*&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;SQLKeyword&amp;quot;&amp;gt;FROM&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;SQLKeyword&amp;quot;&amp;gt;TABLE&amp;lt;/span&amp;gt;
-&amp;lt;/pre&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As this is in &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; tags the newline characters matter for formatting.&lt;/p&gt;
-&lt;p&gt;Ouput:&lt;/p&gt;
-&lt;!DOCTYPE html &gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;style type="text/css"&gt;
-    .SQLCode {
-        font-size: 13px;
-        font-weight: bold;
-        font-family: monospace;;
-        white-space: pre;
-        -o-tab-size: 4;
-        -moz-tab-size: 4;
-        -webkit-tab-size: 4;
-    }
-    .SQLComment {
-        color: #00AA00;
-    }
-    .SQLString {
-        color: #AA0000;
-    }
-    .SQLFunction {
-        color: #AA00AA;
-    }
-    .SQLKeyword {
-        color: #0000AA;
-    }
-    .SQLOperator {
-        color: #777777;
-    }
-    .SQLErrorHighlight {
-        background-color: #FFFF00;
-    }
-&lt;/style&gt;
-&lt;pre class="SQLCode"&gt;&lt;span class="SQLKeyword"&gt;SELECT&lt;/span&gt; &lt;span class="SQLOperator"&gt;*&lt;/span&gt;
-&lt;span class="SQLKeyword"&gt;FROM&lt;/span&gt; &lt;span class="SQLKeyword"&gt;TABLE&lt;/span&gt;
-&lt;/pre&gt;
-&lt;/body&gt;
-&lt;/html&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
