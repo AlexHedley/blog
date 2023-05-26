@@ -10,7 +10,7 @@ published: 2020-06-07
 
 The [Stream Deck](https://www.elgato.com/en/gaming/stream-deck) is an awesome gadget to use whilst streaming. It allows you to configure buttons to perform any number of actions. This could be changing scene whilst streaming, playing some sounds, opening an app, running a set of actions, the list is endless.
 
-![Stream Deck]({{ site.baseurl }}/images/sdt/streamdeck.png "Stream Deck")
+![Stream Deck](images/sdt/streamdeck.png "Stream Deck")
 
 Whilst watching [csharpfritz](https://www.twitch.tv/csharpfritz) om twitch I checked the archives and found the following playlist for the [StreamDeck Toolkit](https://www.youtube.com/playlist?list=PLVMqA0_8O85xhVTS3OkTOKhe6IIYj7Tna) where a plugin system written in .NET was built to make it easy to make your own button actions.
 

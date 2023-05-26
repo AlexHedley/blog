@@ -11,7 +11,7 @@ published: 2020-03-14
 
 As a .NET developer you probably use [NuGet](https://www.nuget.org/) everyday, or something from it.
 
-![NuGet]({{ site.baseurl }}/images/nuget-logo-footer-184x57.png)
+![NuGet](images/nuget-logo-footer-184x57.png)
 
 > What is NuGet?
 > 

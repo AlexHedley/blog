@@ -30,7 +30,7 @@ Then look into the [MainForm.cs](https://github.com/TaoK/PoorMansTSqlFormatter/b
 
 If you wish to run the app you will need to build the [Lib](https://github.com/TaoK/PoorMansTSqlFormatter/tree/master/PoorMansTSqlFormatterLib) so the app can use the DLL.
 
-![PoorMansTSqlFormatter]({{ site.baseurl }}/images/pmtf/pmtf_1.png "PoorMansTSqlFormatter Demo App")
+![PoorMansTSqlFormatter](images/pmtf/pmtf_1.png "PoorMansTSqlFormatter Demo App")
 
 `DoFormatting()` is the method which converts your SQL string into the formatted code so this contains a number of items we need to get the basics working.
 

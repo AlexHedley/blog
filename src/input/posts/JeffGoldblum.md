@@ -28,6 +28,6 @@ Roll forward a couple of hours and [Mads](https://twitter.com/mkristensen) is on
 
 This gave me a thought! Why not create an OBS/StreamDeck plugin using [Jeffsum.NET](https://github.com/jamesmontemagno/Jeffsum.NET) to grab JG quotes.
 
-![Stream Deck Jeff Goldblum]({{ site.baseurl }}/images/jg/StreamDeck-JeffGoldblum.png "Stream Deck Jeff Goldblum")
+![Stream Deck Jeff Goldblum](images/jg/StreamDeck-JeffGoldblum.png "Stream Deck Jeff Goldblum")
 
 Code: [GitHub](https://github.com/AlexHedley/JeffGoldblum)
