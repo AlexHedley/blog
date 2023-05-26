@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description />
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Fri, 26 May 2023 12:42:41 GMT</pubDate>
-		<lastBuildDate>Fri, 26 May 2023 12:42:41 GMT</lastBuildDate>
+		<pubDate>Fri, 26 May 2023 12:45:57 GMT</pubDate>
+		<lastBuildDate>Fri, 26 May 2023 12:45:57 GMT</lastBuildDate>
 		<item>
 			<title>GitHub Actions Branches</title>
 			<link>https://alexhedley.github.io/blog/posts/github-actions-branches</link>
@@ -200,6 +200,23 @@ jobs:
 			<guid>https://alexhedley.github.io/blog/posts/welcome3</guid>
 			<pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Welcome to my new Blog!&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Convert heic</title>
+			<link>https://alexhedley.github.io/blog/posts/convert-heic</link>
+			<description>&lt;p&gt;Got an image from you iPhone?&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/convert-heic</guid>
+			<pubDate>Fri, 20 Aug 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Got an image from you iPhone?&lt;/p&gt;
+&lt;p&gt;Saved as &lt;code&gt;.heic&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;Download &lt;a href="https://imagemagick.org/"&gt;ImageMagick&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then run &lt;code&gt;magick rose.jpg rose.png&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://imagemagick.org/script/convert.php"&gt;Convert Between Image Formats&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -482,30 +499,6 @@ jobs:
 &lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Behaviors/1.0.0.66-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Behaviors/1.0.0.66-beta&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Controls/1.0.0.66-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Controls/1.0.0.66-beta&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Visual Studio Extensions</title>
-			<link>https://alexhedley.github.io/blog/posts/visualstudioextension</link>
-			<description>&lt;p&gt;Visual Studio Extensions are a fantastic way to add extra functionality to the &lt;a href="https://visualstudio.microsoft.com/"&gt;IDE&lt;/a&gt;.&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/visualstudioextension</guid>
-			<pubDate>Sun, 21 Jun 2020 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Visual Studio Extensions are a fantastic way to add extra functionality to the &lt;a href="https://visualstudio.microsoft.com/"&gt;IDE&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;There is a whole &lt;a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/visual-studio-sdk?view=vs-2019"&gt;SDK&lt;/a&gt; to play around with.&lt;/p&gt;
-&lt;p&gt;Then the &lt;a href="https://marketplace.visualstudio.com/"&gt;Marketplace&lt;/a&gt; for Windows and &lt;a href="https://addins.monodevelop.com/"&gt;Add-Ins&lt;/a&gt; for Mac.&lt;/p&gt;
-&lt;p&gt;I've gotten a peak with the &lt;a href="https://alexhedley.github.io/blog/post/BuildLight"&gt;Build Light&lt;/a&gt; extension I've help build to see it from both sides.&lt;/p&gt;
-&lt;p&gt;I've also watched &lt;a href="https://twitter.com/brianlagunas"&gt;@BrianLagunas&lt;/a&gt; show off some of the code needed for the &lt;a href="https://marketplace.visualstudio.com/items?itemName=BrianLagunas.PrismTemplatePack"&gt;Prism Template Pack&lt;/a&gt; wizard on his streams:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=AtDFiYFuYjY"&gt;Adding Solution Folders and Moving Projects with a Custom IWizard&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Ht70QlGt7bU"&gt;Using a .NET Core Template as a Visual Studio Project Template&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=WhbG9i8-X9o"&gt;Finishing the Project Template IWizard&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=a5vJ7O00WoQ"&gt;We Found a Bug in the Visual Studio Extensibility APIs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Ht70QlGt7bU"&gt;Using a .NET Core Template as a Visual Studio Project Template&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=zuzmH5K6su8"&gt;Fixing Issue 2004: Prism's New Project Wizard Deletes Everything&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Watch this space for more info after I've had some time to look into it more.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
