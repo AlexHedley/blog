@@ -1,0 +1,146 @@
+<p><a href="http://architectshack.com/PoorMansTSqlFormatter.ashx">PoorMansTSqlFormatter</a> is</p>
+<blockquote>
+<p>This is a free and open-source SQL (T-SQL) formatter</p>
+</blockquote>
+<p>It's a fantasic tool with plugins for SSMS, VS Code, there's a website <a href="http://poorsql.com/">Poor SQL</a>.</p>
+<p>If you want to use this in a .NET app you can pull the <a href="https://www.nuget.org/packages/PoorMansTSQLFormatter/">NuGet</a> which is currently at version 1.4.3.1, but the current <a href="https://github.com/TaoK/PoorMansTSqlFormatter/releases">release</a> is 1.6.13.</p>
+<p>To try it out I downloaded the WinForms App to see what options there are.</p>
+<blockquote>
+<p>WinForms App (simple exe): SqlFormatterWinforms.1.6.13.zip (1644 downloads this version, about 32000 for previous versions)</p>
+</blockquote>
+<p>I then decompiled the <em>SqlFormatterWinforms.exe</em> to see how to setup the formatter.</p>
+<p>Another way would be to look at the <a href="https://github.com/TaoK/PoorMansTSqlFormatter/tree/master/PoorMansTSqlFormatterDemo">Demo</a> code on GitHub.</p>
+<p>Then look into the <a href="https://github.com/TaoK/PoorMansTSqlFormatter/blob/master/PoorMansTSqlFormatterDemo/MainForm.cs">MainForm.cs</a></p>
+<p>If you wish to run the app you will need to build the <a href="https://github.com/TaoK/PoorMansTSqlFormatter/tree/master/PoorMansTSqlFormatterLib">Lib</a> so the app can use the DLL.</p>
+<p>![PoorMansTSqlFormatter]({{ site.baseurl }}/images/pmtf/pmtf_1.png &quot;PoorMansTSqlFormatter Demo App&quot;)</p>
+<p><code>DoFormatting()</code> is the method which converts your SQL string into the formatted code so this contains a number of items we need to get the basics working.</p>
+<p>I created a Console App, added the NuGet and started my journey.</p>
+<p>First we need a <code>tokenizer</code>, a <code>parser</code> and <code>formatter</code>.</p>
+<pre><code class="language-csharp">private static ISqlTokenizer _tokenizer;
+private static ISqlTokenParser _parser;
+private static ISqlTreeFormatter _formatter;
+</code></pre>
+<p>We can set the defaults for these</p>
+<pre><code class="language-csharp">_tokenizer = (ISqlTokenizer)new TSqlStandardTokenizer();
+_parser = (ISqlTokenParser)new TSqlStandardParser();
+</code></pre>
+<p>The formatter needs a few options.
+Unfortunately <code>TSqlStandardFormatterOptions</code> isn't in this version of the NuGet.</p>
+<pre><code class="language-csharp">string indentString = &quot;\t&quot;;
+int spacesPerTab = 4;
+int maxLineWidth = 999;
+bool expandCommaLists = true;
+bool trailingCommas = false;
+bool spaceAfterExpandedComma = false;
+bool expandBooleanExpressions = true;
+bool expandCaseStatements = true;
+bool expandBetweenConditions = true;
+bool breakJoinOnSections = false;
+bool uppercaseKeywords = true;
+bool htmlColoring = true;
+bool keywordStandardization = false;
+
+ISqlTreeFormatter underlyingFormatter = new TSqlStandardFormatter(indentString, spacesPerTab, maxLineWidth, expandCommaLists, trailingCommas, spaceAfterExpandedComma, expandBooleanExpressions, expandCaseStatements, expandBetweenConditions, breakJoinOnSections, uppercaseKeywords, htmlColoring, keywordStandardization);
+</code></pre>
+<p>Next we can create the <code>formatter</code> using the options above from the <code>underlyingFormatter</code>.</p>
+<pre><code class="language-csharp">_formatter = (ISqlTreeFormatter)new HtmlPageWrapper(underlyingFormatter);
+</code></pre>
+<p>Next create a sample piece of sql:</p>
+<pre><code class="language-sql">Select * from table
+</code></pre>
+<pre><code class="language-csharp">var sqlString = &quot;Select * from table&quot;;
+</code></pre>
+<p>And pass it to the tokenizer:</p>
+<pre><code class="language-csharp">ITokenList tokenList = _tokenizer.TokenizeSQL(sqlString);
+</code></pre>
+<p>With a token list available we can parse this sql:</p>
+<pre><code class="language-csharp">XmlDocument sql = _parser.ParseSQL(tokenList);
+</code></pre>
+<p>You may notice the <code>Node</code> type in the code.</p>
+<p>Now that the SQL is in an <code>XMLDocument</code> we can format it:</p>
+<pre><code class="language-csharp">string formattedSql = _formatter.FormatSQLTree(sql);
+</code></pre>
+<p>This will produce a HTML doc which you can display in a browser control.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html &gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+.SQLCode {
+	font-size: 13px;
+	font-weight: bold;
+	font-family: monospace;;
+	white-space: pre;
+    -o-tab-size: 4;
+    -moz-tab-size: 4;
+    -webkit-tab-size: 4;
+}
+.SQLComment {
+	color: #00AA00;
+}
+.SQLString {
+	color: #AA0000;
+}
+.SQLFunction {
+	color: #AA00AA;
+}
+.SQLKeyword {
+	color: #0000AA;
+}
+.SQLOperator {
+	color: #777777;
+}
+.SQLErrorHighlight {
+	background-color: #FFFF00;
+}
+
+
+&lt;/style&gt;
+&lt;pre class=&quot;SQLCode&quot;&gt;&lt;span class=&quot;SQLKeyword&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;SQLOperator&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;SQLKeyword&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;SQLKeyword&quot;&gt;TABLE&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>As this is in <code>&lt;pre&gt;</code> tags the newline characters matter for formatting.</p>
+<p>Ouput:</p>
+<!DOCTYPE html >
+<html>
+<head>
+</head>
+<body>
+<style type="text/css">
+    .SQLCode {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: monospace;;
+        white-space: pre;
+        -o-tab-size: 4;
+        -moz-tab-size: 4;
+        -webkit-tab-size: 4;
+    }
+    .SQLComment {
+        color: #00AA00;
+    }
+    .SQLString {
+        color: #AA0000;
+    }
+    .SQLFunction {
+        color: #AA00AA;
+    }
+    .SQLKeyword {
+        color: #0000AA;
+    }
+    .SQLOperator {
+        color: #777777;
+    }
+    .SQLErrorHighlight {
+        background-color: #FFFF00;
+    }
+</style>
+<pre class="SQLCode"><span class="SQLKeyword">SELECT</span> <span class="SQLOperator">*</span>
+<span class="SQLKeyword">FROM</span> <span class="SQLKeyword">TABLE</span>
+</pre>
+</body>
+</html>

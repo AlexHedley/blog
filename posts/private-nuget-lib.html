@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AlexHedley">
+
+  <title>Alex Hedley - Private NuGet Library</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/private-nuget-lib'>
+
+      <link type="application/rss+xml" rel="alternate" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - Private NuGet Library' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/private-nuget-lib' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead no-image">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            Private NuGet Library
+          </h1>
+            <div class="meta">Published on Saturday, 14 March 2020</div>
+              <div class="mt-3">
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <p>In a previous post I explained how to create a <a href="/post/Private-NuGet-Feed">Private NuGet Feed</a>.</p>
+<p>In this post I want to explain how to create a Private NuGet Library which we can publish to a feed.</p>
+<p>Firstly we need something to publish so we can create a .NET Class Library project and add some code. There are many tutorials online for this so I'll let you find this yourself.</p>
+<p>Push it to a Repo in your Project.</p>
+<p>Now that it's in a Repo we will want to create a Pipeline to manage the lib.</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&amp;tabs=net%2Cyaml%2Cbrowser%2Ctfs-2018-2">Create your first pipeline</a></li>
+</ul>
+<p>Then you need to add some necessary settings.</p>
+<p>One big question is how to version your Library. Do you handle it yourself, or do you let the build tool handle it?</p>
+<ul>
+<li><a href="https://semver.org/">Semantic Versioning 2.0.0</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/standard/assembly/versioning">Assembly versioning</a></li>
+<li><a href="https://github.com/Ruhrpottpatriot/SemanticVersion">SemanticVersion.NET</a></li>
+</ul>
+<p>This is in the format:</p>
+<p><code>&lt;major version&gt;.&lt;minor version&gt;.&lt;build number&gt;.&lt;revision&gt;</code></p>
+<blockquote>
+<p>For example, version <strong>1.5.1254.0</strong> indicates <strong>1</strong> as the major version, <strong>5</strong> as the minor version, <strong>1254</strong> as the build number, and <strong>0</strong> as the revision number.</p>
+</blockquote>
+<p>When using this I like to define a few variables, in the pipeline, I can control.</p>
+<ul>
+<li><p><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&amp;tabs=yaml%2Cbatch">Define variables</a></p>
+</li>
+<li><p><code>version.major</code> : 1</p>
+</li>
+<li><p><code>version.minor</code> : 0</p>
+</li>
+<li><p><code>version.patch</code> : 0</p>
+</li>
+</ul>
+<p>Then I let the pipeline increment a value each time I push and it builds, using <code>$(Rev:.r)</code>.</p>
+<p>Example: <code>.1</code>.</p>
+<p>This will prefix with a &quot;.&quot;. Don't add your own or you will get &quot;..&quot; in your library.</p>
+<p>If you change a variable, i.e. update the Major version to &quot;2&quot; this will reset. See below for more detail.</p>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Example replacement value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$(Rev:r)</code></td>
+<td>2 (The third run on this day will be 3, and so on.)<br /><br /> Use <strong>(Rev:r)</strong> to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional <strong>'r'</strong> characters. For example, specify <strong>$(Rev:rr)</strong> if you want the Rev number to begin with 01, 02, and so on.</td>
+</tr>
+</tbody>
+</table>
+<p>As we now have a plan we need a way to implement this, so you're thinking, how do I update the <code>AssemblyInfo</code> during the build pipeline? Well luckily Bleddyn has you covered, use their plugin to update the Assembly Info:</p>
+<p>Visual Studio marketplace:</p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=bleddynrichards.Assembly-Info-Task">Assembly Info</a> from <a href="https://marketplace.visualstudio.com/publishers/bleddynrichards">Bleddyn Richards</a>.</li>
+</ul>
+<p>Example Name:</p>
+<pre><code class="language-yml">name: $(version.major).$(version.minor).$(version.patch)$(rev:.r)
+</code></pre>
+<p>Some people like to add the date:</p>
+<pre><code class="language-yml">name: $(Build.DefinitionName)_$(Date:yyyyMMdd))
+</code></pre>
+<h2 id="links">Links</h2>
+<ul>
+<li><p><a href="https://docs.microsoft.com/en-us/dotnet/standard/assembly/versioning">Assembly versioning</a></p>
+</li>
+<li><p><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&amp;tabs=classic%2Cbatch">Define variables</a></p>
+</li>
+<li><p><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&amp;tabs=yaml">Use predefined variables</a></p>
+</li>
+<li><p><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/run-number?view=azure-devops&amp;tabs=yaml">Configure run or build numbers</a></p>
+</li>
+</ul>
+<h2 id="sample-code">Sample Code</h2>
+<pre><code class="language-yml">name: $(version.major).$(version.minor).$(version.patch)$(rev:.r)
+
+# the build will trigger on any changes to the master branch
+trigger:
+- master
+
+# the build will run on a Microsoft hosted agent, using the lastest Windows VM Image
+pool:
+  vmImage: 'windows-latest'
+
+# these variables are available throughout the build file
+# just the build configuration is defined, in this case we are building Release packages
+variables:
+  buildConfiguration: 'Release'
+
+#The build has # seperate tasks run under 1 step
+steps:
+
+- task: NuGetCommand&#64;2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+    feedsToUse: 'config'
+
+- task: Assembly-Info-NetFramework&#64;2
+  inputs:
+    Path: '$(Build.SourcesDirectory)'
+    FileNames: '**\AssemblyInfo.cs'
+    InsertAttributes: false
+    FileEncoding: 'auto'
+    WriteBOM: false
+    Product: 'NuGet2'
+    Company: '[CompanyName]'
+    Copyright: 'Copyright &amp;copy; yyyy [CompanyName]'
+    VersionNumber: '$(Build.BuildNumber)'
+    FileVersionNumber: '$(Build.BuildNumber)'
+    InformationalVersion: '$(Build.BuildNumber)'
+
+- task: VSBuild&#64;1
+  displayName: 'Build solution **\*.sln'
+  inputs:
+    solution: '**\*.sln'
+    configuration: '$(buildConfiguration)'
+
+- task: NuGetCommand&#64;2
+  displayName: 'NuGet pack'
+  inputs:
+    command: pack
+    packagesToPack: '**\*.csproj;!**\*.Tests.csproj'
+    versioningScheme: byBuildNumber
+
+# The last task is a nuget command, nuget push
+# This will push any .nupkg files to the '[FEEDNAME]' artifact feed
+# allowPackageConflicts allows us to build the same version and not throw an error when trying to push
+# instead it just ingores the latest package unless the version changes
+- task: NuGetCommand&#64;2
+  displayName: 'nuget push'
+  inputs:
+    command: 'push'
+    feedsToUse: 'select'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: '[FEEDNAME]'
+    versioningScheme: 'off'
+    allowPackageConflicts: true
+</code></pre>
+
+
+        
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2023</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+  
+
+  
+
+</body>
+
+</html>

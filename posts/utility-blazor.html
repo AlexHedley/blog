@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AlexHedley">
+
+  <title>Alex Hedley - Utility Blazor</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/utility-blazor'>
+
+      <link type="application/rss+xml" rel="alternate" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - Utility Blazor' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/utility-blazor' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead no-image">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            Utility Blazor
+          </h1>
+            <div class="meta">Published on Monday, 28 September 2020</div>
+              <div class="mt-3">
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <p>To add to my increasing collection of Utility apps I've decided to produce a <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a> version.</p>
+<p>I love the idea of writing the web app in C#, with minimal js, and being able to host it anywhere.</p>
+<p>Azure Static Web Apps look like a nice option too.</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-ca/azure/static-web-apps/deploy-blazor">Tutorial: Building a static web app with Blazor in Azure Static Web Apps</a></li>
+<li><a href="https://www.hanselman.com/blog/BlazorWebAssemblyonAzureStaticWebApps.aspx">Blazor WebAssembly on Azure Static Web Apps</a></li>
+</ul>
+<p>The initial site has been configured and is deploying:</p>
+<ul>
+<li><a href="https://alexhedley.github.io/Utility-Blazor/">Site</a></li>
+<li><a href="https://github.com/AlexHedley/Utility-Blazor">Utility-Blazor Code</a></li>
+</ul>
+<p>I'm looking forward to trying out <a href="https://github.com/egil/bUnit">bUnit</a> for Unit Testing.</p>
+<p>I found a GitHub Action to deploy it to GitHub Pages, just a couple of tasks to modify the ouptut so it runs correctly.</p>
+<p>Much like an AngularJS app you need to set the base href so the app loads properly.</p>
+<pre><code class="language-yml">- name: Change base-tag in index.html from / to blazor-test
+  run: sed -i 's/&lt;base href=&quot;\/&quot; \/&gt;/&lt;base href=&quot;\/blazor-test\/&quot; \/&gt;/g' release/wwwroot/index.html
+</code></pre>
+<p>To help with routing make the <em>404</em> the same as the <em>index</em>.</p>
+<pre><code class="language-yml">- name: copy index.html to 404.html
+  run: cp release/wwwroot/index.html release/wwwroot/404.html
+</code></pre>
+<p>As GHP uses jekyll add the following file so it doesnt use those settings.</p>
+<pre><code class="language-yml">- name: Add .nojekyll file
+  run: touch release/wwwroot/.nojekyll
+</code></pre>
+<p>Next I just need to port the original feature set to this application.</p>
+<h2 id="references">References</h2>
+<p>Thanks to <a href="https://github.com/Swimburger">&#64;Swimburger</a> for the GitHub Action for deploying the app to GitHub Pages</p>
+<p>How to deploy ASP.NET Blazor WebAssembly to GitHub Pages</p>
+<ul>
+<li><p><a href="https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages">https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages</a></p>
+</li>
+<li><p>BlazorGitHubPagesDemo (<a href="https://github.com/Swimburger/BlazorGitHubPagesDemo">https://github.com/Swimburger/BlazorGitHubPagesDemo</a>)</p>
+</li>
+</ul>
+
+
+        
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2023</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+  
+
+  
+
+</body>
+
+</html>

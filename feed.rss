@@ -5,1579 +5,524 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description />
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Thu, 25 May 2023 16:45:26 GMT</pubDate>
-		<lastBuildDate>Thu, 25 May 2023 16:45:26 GMT</lastBuildDate>
+		<pubDate>Fri, 26 May 2023 12:33:50 GMT</pubDate>
+		<lastBuildDate>Fri, 26 May 2023 12:33:50 GMT</lastBuildDate>
 		<item>
-			<title>Symantec Connect - 100 Solutions</title>
-			<link>https://alexhedley.github.io/blog/posts/symantec-connect-100-solutions</link>
-			<description>&lt;p&gt;After 6 years and 23 weeks I've hit 100 solutions from 1,028 comments.&lt;/p&gt;</description>
+			<title>Utility Blazor</title>
+			<link>https://alexhedley.github.io/blog/posts/utility-blazor</link>
+			<description>&lt;p&gt;To add to my increasing collection of Utility apps I've decided to produce a &lt;a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"&gt;Blazor&lt;/a&gt; version.&lt;/p&gt;</description>
 			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/img_1318.jpg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/symantec-connect-100-solutions</guid>
-			<pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;After 6 years and 23 weeks I've hit 100 solutions from 1,028 comments.&lt;/p&gt;
-&lt;p&gt;Not sure if that's a good ratio in comparison to others but it is a milestone I thought I'd document.&lt;/p&gt;
-&lt;p&gt;You can find my profile here:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.symantec.com/connect/user/alexhedley"&gt;https://www.symantec.com/connect/user/alexhedley&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_1318.jpg" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;I've made a lot of Articles over the years, mostly for Symantec Workflow / ServiceDesk / SMP.&lt;/p&gt;
-&lt;p&gt;Let's see when I hit 200!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2019/12/23/symantec-connect-100-solutions/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>JSQMessagesViewController - Messages UI</title>
-			<link>https://alexhedley.github.io/blog/posts/jsqmessagesviewcontroller-messages-ui</link>
-			<description>&lt;p&gt;On the app I'm currently working on I've got a messaging portion.&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/jsq_messages_banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/jsqmessagesviewcontroller-messages-ui</guid>
-			<pubDate>Sat, 03 Feb 2018 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;On the app I'm currently working on I've got a messaging portion.&lt;/p&gt;
-&lt;p&gt;Originally I implemented a basic TableView with a TextField to add a message.&lt;/p&gt;
-&lt;p&gt;Then I searched for Messages UI frameworks and came across&amp;nbsp;&lt;strong&gt;JSQMessagesViewController&lt;/strong&gt;&lt;/p&gt;
+			<guid>https://alexhedley.github.io/blog/posts/utility-blazor</guid>
+			<pubDate>Mon, 28 Sep 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;To add to my increasing collection of Utility apps I've decided to produce a &lt;a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"&gt;Blazor&lt;/a&gt; version.&lt;/p&gt;
+&lt;p&gt;I love the idea of writing the web app in C#, with minimal js, and being able to host it anywhere.&lt;/p&gt;
+&lt;p&gt;Azure Static Web Apps look like a nice option too.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.jessesquires.com/JSQMessagesViewController/"&gt;http://www.jessesquires.com/JSQMessagesViewController/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/jessesquires/JSQMessagesViewController"&gt;https://github.com/jessesquires/JSQMessagesViewController&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-ca/azure/static-web-apps/deploy-blazor"&gt;Tutorial: Building a static web app with Blazor in Azure Static Web Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.hanselman.com/blog/BlazorWebAssemblyonAzureStaticWebApps.aspx"&gt;Blazor WebAssembly on Azure Static Web Apps&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;There's a Sample project you can look into - JSQMessagesDemo.&lt;/p&gt;
-&lt;p&gt;It comes as a Cocoapod:&lt;/p&gt;
+&lt;p&gt;The initial site has been configured and is deploying:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://cocoapods.org/pods/JSQMessagesViewController"&gt;https://cocoapods.org/pods/JSQMessagesViewController&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/Utility-Blazor/"&gt;Site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/Utility-Blazor"&gt;Utility-Blazor Code&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I'm using 7.3.4.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Create a new Xcode project.&lt;/p&gt;
-&lt;p&gt;Open terminal at that folder&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;pod init&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;add&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;pod 'JSQMessagesViewController'&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;then&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;pod install&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Open the Xcode '#App.xcworkspace'&lt;/p&gt;
-&lt;p&gt;Create a View Controller that inherits&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;: JSQMessagesViewController&amp;lt;UIActionSheetDelegate, JSQMessagesComposerTextViewPasteDelegate&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#import &amp;lt;JSQMessagesViewController/JSQMessagesViewController.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#import "DemoData.h"&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@class MessageViewController;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@protocol MessageViewControllerDelegate &amp;lt;NSObject&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;- (void)didDismissMessagesViewController:(MessageViewController *)vc;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@end&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Add some properties and methods&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@property (weak, nonatomic) id&amp;lt;MessageViewControllerDelegate&amp;gt; delegateModal;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) DemoData *data;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;- (void)receiveMessagePressed:(UIBarButtonItem *)sender;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;- (void)closePressed:(UIBarButtonItem *)sender;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;I didn't bother with any of the settings so commented these checks out.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;I couldn't find the Accessory Button Delegate to add to my View Controller.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#import "JSQMessagesViewAccessoryButtonDelegate.h"&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;JSQMessagesViewAccessoryButtonDelegate&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;For testing create a new class for your demo data.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;DemoData.h&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@interface DemoData : NSObject&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) NSMutableArray *messages;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) NSDictionary *users;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) JSQMessagesBubbleImage *outgoingBubbleImageData;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;@property (strong, nonatomic) JSQMessagesBubbleImage *incomingBubbleImageData;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;@end&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;DemoData.m&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Create some test Users.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (instancetype)init
-{
-&amp;nbsp; &amp;nbsp; self = [super init];
-&amp;nbsp; &amp;nbsp; if (self) { &amp;nbsp;
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [self loadFakeMessages];
-
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.users = @{ @"1" : @"Alex",
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; @"2" : @"Sam",
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; @"3" : @"Kev",
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; @"4" : @"Ray" };
-
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; JSQMessagesBubbleImageFactory *bubbleFactory = [[JSQMessagesBubbleImageFactory alloc] init];&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.outgoingBubbleImageData = [bubbleFactory outgoingMessagesBubbleImageWithColor:[UIColor jsq_messageBubbleLightGrayColor]];
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.incomingBubbleImageData = [bubbleFactory incomingMessagesBubbleImageWithColor:[UIColor jsq_messageBubbleGreenColor]];
-&amp;nbsp; &amp;nbsp; }
-&amp;nbsp; &amp;nbsp; return self;
-}
+&lt;p&gt;I'm looking forward to trying out &lt;a href="https://github.com/egil/bUnit"&gt;bUnit&lt;/a&gt; for Unit Testing.&lt;/p&gt;
+&lt;p&gt;I found a GitHub Action to deploy it to GitHub Pages, just a couple of tasks to modify the ouptut so it runs correctly.&lt;/p&gt;
+&lt;p&gt;Much like an AngularJS app you need to set the base href so the app loads properly.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;- name: Change base-tag in index.html from / to blazor-test
+  run: sed -i 's/&amp;lt;base href=&amp;quot;\/&amp;quot; \/&amp;gt;/&amp;lt;base href=&amp;quot;\/blazor-test\/&amp;quot; \/&amp;gt;/g' release/wwwroot/index.html
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Create the Fake Messages&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;- (void)loadFakeMessages { ... }&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;We can use this back in our&amp;nbsp;&lt;code&gt;MessageViewController.m&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - View lifecycle&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To help with routing make the &lt;em&gt;404&lt;/em&gt; the same as the &lt;em&gt;index&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;- name: copy index.html to 404.html
+  run: cp release/wwwroot/index.html release/wwwroot/404.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As GHP uses jekyll add the following file so it doesnt use those settings.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;- name: Add .nojekyll file
+  run: touch release/wwwroot/.nojekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next I just need to port the original feature set to this application.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;p&gt;Thanks to &lt;a href="https://github.com/Swimburger"&gt;&amp;#64;Swimburger&lt;/a&gt; for the GitHub Action for deploying the app to GitHub Pages&lt;/p&gt;
+&lt;p&gt;How to deploy ASP.NET Blazor WebAssembly to GitHub Pages&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;viewDidLoad&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;viewWillAppear&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;viewDidAppear&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Since I'm not using Avatars add this to &lt;code&gt;viewDidLoad&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;&amp;nbsp;self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Also return nil in 'avatarImageDataForItemAtIndexPath'&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (id&amp;lt;JSQMessageAvatarImageDataSource&amp;gt;)collectionView:(JSQMessagesCollectionView \*)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath \*)indexPath {
-    ...
-    return nil;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Implement these other methods.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - Custom menu actions for cells&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - Actions&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessagesViewController method overrides&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessages CollectionView DataSource&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Choose a user here&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;senderId&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;senderId&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - UICollectionView DataSource&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - UICollectionView Delegate&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - Custom menu items&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessages collection view flow layout delegate&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - Adjusting cell label heights&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - Responding to collection view tap events&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessagesComposerTextViewPasteDelegate methods&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#pragma mark - JSQMessagesViewAccessoryDelegate methods&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Changing some settings&lt;/p&gt;
-&lt;p&gt;I didn't want the Add Attachments button.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;viewDidLoad&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;self.inputToolbar.contentView.leftBarButtonItem = nil;&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/jessesquires/JSQMessagesViewController/issues/338"&gt;https://github.com/jessesquires/JSQMessagesViewController/issues/338&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/jessesquires/JSQMessagesViewController/issues/280"&gt;https://github.com/jessesquires/JSQMessagesViewController/issues/280&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;Now just to swap out the messages to my XMPP Server...&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2018/02/03/jsqmessagesviewcontroller-messages-ui/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>XMPPFramework</title>
-			<link>https://alexhedley.github.io/blog/posts/xmppframework</link>
-			<description>&lt;p&gt;XMPPFramework&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/xmppframework2.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/xmppframework</guid>
-			<pubDate>Sat, 03 Feb 2018 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;XMPPFramework&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/robbiehanson/XMPPFramework"&gt;https://github.com/robbiehanson/XMPPFramework&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Create an Xcode project.&lt;/p&gt;
-&lt;p&gt;Open terminal at that folder location.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;pod init&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;pod 'XMPPFramework', :git =&amp;gt; "https://github.com/robbiehanson/XMPPFramework.git", :branch =&amp;gt; 'master'&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;@import XMPPFramework;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Getting Started&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/robbiehanson/XMPPFramework/wiki/GettingStarted_iOS"&gt;https://github.com/robbiehanson/XMPPFramework/wiki/GettingStarted_iOS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;Tutorials&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://code.tutsplus.com/series/building-a-jabber-client-for-ios--mobile-22620"&gt;https://code.tutsplus.com/series/building-a-jabber-client-for-ios--mobile-22620&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-server-setup--mobile-6958"&gt;https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-server-setup--mobile-6958&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-interface-setup--mobile-7188"&gt;https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-interface-setup--mobile-7188&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-xmpp-setup--mobile-7190"&gt;https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-xmpp-setup--mobile-7190&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-custom-chat-view-and-emoticons--mobile-7728"&gt;https://code.tutsplus.com/tutorials/building-a-jabber-client-for-ios-custom-chat-view-and-emoticons--mobile-7728&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Had issues setting up&amp;nbsp;&lt;a href="https://www.ejabberd.im/"&gt;Ejabbered&lt;/a&gt; on the mac.&lt;/p&gt;
-&lt;p&gt;I'm using an&amp;nbsp;&lt;a href="https://www.igniterealtime.org/projects/openfire/"&gt;OpenFire&lt;/a&gt;&amp;nbsp;server I setup&amp;nbsp;so used that instead, with a couple of clients connected to there instead.&lt;/p&gt;
-&lt;p&gt;Clients&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.igniterealtime.org/downloads/index.jsp"&gt;Spark 2.8.2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://adium.im/"&gt;Adium&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://xchat.org/"&gt;XChat&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Stack Overflow&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/9091767/up-to-date-instructions-on-how-to-install-xmppframework-manually/30543948#30543948"&gt;http://stackoverflow.com/questions/9091767/up-to-date-instructions-on-how-to-install-xmppframework-manually/30543948#30543948&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Setting the Server&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;set the server url&lt;/p&gt;
-&lt;p&gt;set the port&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Delivery Receipts&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Read Receipts&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Group Chat&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2018/02/03/xmppframework/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>MapKit</title>
-			<link>https://alexhedley.github.io/blog/posts/mapkit</link>
-			<description>&lt;p&gt;So I've been learning &lt;a href="https://developer.apple.com/maps/"&gt;MapKit&lt;/a&gt; this week.&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/maps_ios-128x128_2x.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/mapkit</guid>
-			<pubDate>Sat, 03 Feb 2018 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;So I've been learning &lt;a href="https://developer.apple.com/maps/"&gt;MapKit&lt;/a&gt; this week.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://developer.apple.com/reference/mapkit"&gt;Developer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It's been a fun new framework to look into.&lt;/p&gt;
-&lt;p&gt;Create an Annotation so you can have custom properties.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;@interface Annotation : NSObject&amp;lt;MKAnnotation&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Add a category to it so you have a way of telling what it is.&lt;/p&gt;
-&lt;p&gt;This could be an enum.&lt;/p&gt;
-&lt;p&gt;In the Delegate method&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id &amp;lt;MKAnnotation&amp;gt;)annotation
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can use the category to set up some properties like a button and the pin colour.&lt;/p&gt;
-&lt;p&gt;I'm wondering if the&amp;nbsp;"reuseIdentifier" should be unique here too?&lt;/p&gt;
-&lt;p&gt;You've added a button, now how to call it?&lt;/p&gt;
-&lt;p&gt;You could add a target and action&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[rightButton addTarget:## action:## forControlEvents:UIControlEventTouchUpInside];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;but instead you can use the "calloutAccessoryControlTapped" delegate method.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As this isn't a &amp;nbsp;"MKAnnotation" like "viewForAnnotation" but an "MKAnnotationView" we need to get the annotation from the passed view.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;if ([view.annotation isKindOfClass:[OotAnnotation class]]) { ... }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then call pfs,&lt;/p&gt;
-&lt;p&gt;Then in the "prepareForSegue" you need to get the Annotation when you click on a Pin button, this can be cast from the Sender&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;if ([view.annotation isKindOfClass:[OotAnnotation class]]) { ... }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;Annotation \*annotation = (Annotation *)[(MKAnnotationView *)sender annotation];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You could then pass your custom Location details via the ViewController. (See code)&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Searching for locations to add to the map:&lt;/p&gt;
-&lt;p&gt;MKLocalSearchRequest&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Adding a route, need to investigate this more.&lt;/p&gt;
-&lt;p&gt;MKPolyline&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;All Code&lt;/p&gt;
-&lt;p&gt;[gist 6ac1c60428f6e13692f7f3f11d931f0e]&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Annotation.h&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import &amp;lt;UIKit/UIKit.h&amp;gt;
-#import &amp;lt;Foundation/Foundation.h&amp;gt;
-#import &amp;lt;MapKit/MapKit.h&amp;gt;
-#import "Location.h"
-
-@interface OotAnnotation : NSObject&amp;lt;MKAnnotation&amp;gt; {
-    CLLocationCoordinate2D  coordinate;
-    NSString *title;
-    NSString *subtitle;
-    NSInteger categoryID;
-}
-
-@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *subtitle;
-@property NSInteger categoryID;
-@property (nonatomic, strong) Location *locationDetails;
-
-typedef NS_ENUM(NSInteger, Category) {
-    PinCategoryPlace,
-    PinCategoryUser,
-    PinCategoryPub,
-    PinCategoryNightclub,
-    PinCategoryFood
-};
-
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;Annotation.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import "Annotation.h"
-
-@implementation OotAnnotation
-
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;Location.h&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import &amp;lt;Foundation/Foundation.h&amp;gt;
-
-@interface Location : NSObject
-
-@property (nonatomic, strong) NSString *locationName;
-@property double locationRating;
-@property NSInteger locationNumOfReviews;
-@property (nonatomic, strong) NSString *locationDetails;
-@property (nonatomic, strong) NSString *locationImageUrl;
-@property (nonatomic, strong) NSString *locationEmail;
-@property (nonatomic, strong) NSString *locationPhone;
-@property (nonatomic, strong) NSString *locationRouteDetails;
-@property (nonatomic, strong) NSString *locationNotes;
-@property (nonatomic, strong) NSString *locationDeal;
-
-- (id)initWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal;
-
-+ (id)locationWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal;
-
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;Location.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import "Location.h"
-
-@implementation Location
-
-- (id)initWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal {
-    self = [super init];
-    
-    if (self) {
-        self.locationName = name;
-        self.locationRating = rating;
-        self.locationNumOfReviews = numOfReviews;
-        self.locationDetails = details;
-        self.locationImageUrl = imageUrl;
-        self.locationEmail = email;
-        self.locationPhone = phone;
-        self.locationRouteDetails = routeDetails;
-        self.locationNotes = notes;
-        self.locationDeal = deal;
-    }
-    return self;
-}
-
-+ (id)locationWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal {
-    return [[self alloc] initWithName:name rating:rating numOfReviews:numOfReviews details:details imageUrl:imageUrl email:email phone:phone routeDetails:routeDetails notes:notes deal:deal];
-}
-
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;MapViewController.h&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import &amp;lt;UIKit/UIKit.h&amp;gt;
-#import &amp;lt;MapKit/MapKit.h&amp;gt;
-#import &amp;lt;MapKit/MKAnnotation.h&amp;gt;
-#import &amp;lt;AddressBook/AddressBook.h&amp;gt;
-#import &amp;lt;Contacts/Contacts.h&amp;gt;
-
-@interface MapViewController : UIViewController &amp;lt;MKMapViewDelegate,  CLLocationManagerDelegate&amp;gt;
-
-@property (nonatomic, strong) IBOutlet MKMapView *mapView;
-@property (nonatomic, retain) CLLocationManager *locationManager;
-
-@property (nonatomic, retain) MKPolyline *routeLine;
-@property (nonatomic, retain) MKPolylineView *routeLineView;
-
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;MapViewController.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import "MapViewController.h"
-#import "Annotation.h"
-#import "LocationViewController.h"
-
-@interface MapViewController ()
-
-@end
-
-@implementation MapViewController
-
-#pragma mark - View Methods
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.mapView.delegate = self;
-    
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self;
-    #ifdef __IPHONE_8_0
-    if(IS_OS_8_OR_LATER) {
-        // Use one or the other, not both. Depending on what you put in info.plist
-        [self.locationManager requestWhenInUseAuthorization];
-        [self.locationManager requestAlwaysAuthorization];
-    }
-    #endif
-    [self.locationManager startUpdatingLocation];
-    
-    _mapView.showsUserLocation = YES;
-    [_mapView setMapType:MKMapTypeStandard];
-    [_mapView setZoomEnabled:YES];
-    [_mapView setScrollEnabled:YES];
-}
-
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:YES];
-    
-    self.locationManager.distanceFilter = kCLDistanceFilterNone;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [self.locationManager startUpdatingLocation];
-    NSLog(@"%@", [self deviceLocation]);
-    
-    //View Area
-    MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
-    region.center.latitude = self.locationManager.location.coordinate.latitude;
-    region.center.longitude = self.locationManager.location.coordinate.longitude;
-    region.span.longitudeDelta = 0.005f;
-    region.span.longitudeDelta = 0.005f;
-    [_mapView setRegion:region animated:YES];
-    
-    //[self addLocation:@"Protirus" subTitle:@"Office" lat:54.969617 lon:-1.618393];
-    //[self addLocation:@"Town Wall" subTitle:@"Gastropub" lat:54.9694 lon:-1.6184]; //54.9694° N, 1.6184° W
-    
-    Location *locationDetails = [Location locationWithName:@"Town Wall" rating:4.2 numOfReviews:73 details:@"Gastropub" imageUrl:@"TheTownWall" email:@"hayley@thetownwall.com" phone:@"01912323000" routeDetails:@"Town Wall - 5 minutes away - marked" notes:@"Plan to stay for an hour perhaps" deal:@"DEAL - 2 for 1 Drinks"];
-    
-    [self addPinWithTitle:@"Protirus" subTitle:@"Office" lat:54.969617 lon:-1.618393 category:PinCategoryPlace locationDetails:nil];
-    [self addPinWithTitle:@"Town Wall" subTitle:@"Gastropub" lat:54.9694 lon:-1.6184 category:PinCategoryPub locationDetails:locationDetails];
-    
-    CLLocationCoordinate2D coordinateArray[2];
-    coordinateArray[0] = CLLocationCoordinate2DMake(54.969617, -1.618393);
-    coordinateArray[1] = CLLocationCoordinate2DMake(54.9694, -1.6184);
-    [self addRoute:coordinateArray];
-    
-    [self addFood];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Locations
-
-// http://stackoverflow.com/a/27164326
-- (void)addPinWithTitle:(NSString *)title subTitle:(NSString *)subTitle lat:(double)lat lon:(double)lon category:(int)category locationDetails:(OotLocation *)locationDetails {
-    CLLocationCoordinate2D coordinates = CLLocationCoordinate2DMake(lat, lon);
-    Annotation *annotation = [[Annotation alloc] init];
-    annotation.coordinate = coordinates;
-    annotation.title = title;
-    annotation.subtitle = subTitle;
-    annotation.categoryID = category;
-    annotation.locationDetails = locationDetails;
-    
-    [self.mapView addAnnotation:annotation];
-}
-
-// http://stackoverflow.com/a/14951825
-- (void)addFood {
-    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
-    request.naturalLanguageQuery = @"Restaurants";
-    request.region = self.mapView.region;
-    
-    MKLocalSearch *localSearch = [[MKLocalSearch alloc] initWithRequest:request];
-    [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
-        
-        NSMutableArray *annotations = [NSMutableArray array];
-        
-        [response.mapItems enumerateObjectsUsingBlock:^(MKMapItem *item, NSUInteger idx, BOOL *stop) {
-            Annotation *annotation = [[Annotation alloc] init];
-            annotation.coordinate = item.placemark.location.coordinate;
-            annotation.title = item.name;
-            annotation.subtitle = item.placemark.addressDictionary[@"Street"]; //item.placemark.thoroughfare;
-                //item.placemark.addressDictionary[CNMutablePostalAddress.street]; // kABPersonAddressStreetKey]; //item.phoneNumber;
-            annotation.categoryID = PinCategoryFood;
-            annotation.locationDetails = nil;
-            
-            [annotations addObject:annotation];
-        }];
-        
-        [self.mapView addAnnotations:annotations];
-    }];
-}
-
-// http://stackoverflow.com/a/10598646
-- (void)addRoute:(CLLocationCoordinate2D [])coordinateArray {
-    self.routeLine = [MKPolyline polylineWithCoordinates:coordinateArray count:2];
-    [self.mapView setVisibleMapRect:[self.routeLine boundingMapRect]]; //If you want the route to be visible
-    
-    [self.mapView addOverlay:self.routeLine];
-}  
-
-#pragma mark - Helper Methods
-
-- (NSString *)deviceLocation {
-    return [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
-}
-
-#pragma mark - Segue
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showLocation"]) {
-        //LocationViewController *lvc = (LocationViewController *)[segue destinationViewController];
-        UINavigationController *navController = [segue destinationViewController];
-        LocationViewController *lvc = (LocationViewController *)([navController viewControllers][0]);
-        
-        //http://stackoverflow.com/a/25483130
-        Annotation *annotation = (Annotation *)[(MKAnnotationView *)sender annotation];
-        lvc.location = annotation.locationDetails;
-    }
-}
-
-#pragma mark - MapView Delegate
-
-//https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/AnnotatingMaps/AnnotatingMaps.html#//apple_ref/doc/uid/TP40009497-CH6-SW1
-- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id &amp;lt;MKAnnotation&amp;gt;)annotation {
-    // Try to dequeue an existing pin view first (code not shown).
-    
-    // If no pin view already exists, create a new one.
-    MKPinAnnotationView *customPinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"anything"];
-    customPinView.pinColor = MKPinAnnotationColorPurple;
-    customPinView.animatesDrop = YES;
-    customPinView.canShowCallout = YES;
-    
-    // Because this is an iOS app, add the detail disclosure button to display details about the annotation in another view.
-    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    //[rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
-    //customPinView.rightCalloutAccessoryView = rightButton;
-    
-    NSString* imageName = @"Pin";
-    
-    if ([annotation isKindOfClass:[Annotation class]]) {
-        long categoryId = [(Annotation *)annotation categoryID];
-        
-        switch (categoryId) {
-            case PinCategoryUser:
-                imageName = @"User";
-                //customPinView.pinTintColor = MKPinAnnotationColorRed;
-                break;
-            case PinCategoryPub:
-                imageName = @"Beer";
-                customPinView.pinTintColor = [UIColor orangeColor];
-                customPinView.rightCalloutAccessoryView = rightButton;
-                break;
-            case PinCategoryNightclub:
-                imageName = @"Nightclub";
-                //customPinView.pinTintColor = MKPinAnnotationColorPurple;
-                break;
-            case PinCategoryFood:
-                imageName = @"Food";
-                //customPinView.pinTintColor = MKPinAnnotationColorPurple;
-                customPinView.pinTintColor = [UIColor redColor];
-                break;
-            default:
-                imageName = @"Pin";
-                //customPinView.pinTintColor = MKPinAnnotationColorRed;
-                break;
-        }
-        //if([(OotAnnotation *)annotation categoryID] == PinCategoryUser) {
-            // Add a custom image to the left side of the callout.
-        //}
-    }
-        
-    // Add a custom image to the left side of the callout.
-    UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
-    customPinView.leftCalloutAccessoryView = myCustomImage;
-    
-    return customPinView;
-}
-
-// http://stackoverflow.com/a/6941743
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-    if ([view.annotation isKindOfClass:[Annotation class]]) {
-        [self performSegueWithIdentifier:@"showLocation" sender:view];
-    }
-}
-
--(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id&amp;lt;MKOverlay&amp;gt;)overlay {
-    if(overlay == self.routeLine) {
-        if(nil == self.routeLineView) {
-            self.routeLineView = [[MKPolylineView alloc] initWithPolyline:self.routeLine];
-            self.routeLineView.fillColor = [UIColor yellowColor];
-            self.routeLineView.strokeColor = [UIColor yellowColor];
-            self.routeLineView.lineWidth = 10;
-        }
-        return self.routeLineView;
-    }
-    return nil;
-}
-
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2018/02/03/mapkit/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Goals for 2018</title>
-			<link>https://alexhedley.github.io/blog/posts/goals-for-2018</link>
-			<description>&lt;p&gt;&lt;strong&gt;Xamarin&lt;/strong&gt;&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/goals-for-2018</guid>
-			<pubDate>Wed, 27 Dec 2017 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;strong&gt;Xamarin&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I'd started some training last year but didn't make any useful apps, I'd like to progress this to a production one in 2018.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;.NET&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I'd like to make progress in either or both of my Tracking app ideas.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;599CD&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Actually release it, I've been holding off hoping the API will be re-written, maybe I should just release, then update when it is.&lt;/p&gt;
-&lt;p&gt;Although releasing the Android at the same time would be nice.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Certs&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;MS: Programming in HTML5 with JavaScript and CSS3&lt;/p&gt;
-&lt;p&gt;MCSA: Web Applications&lt;/p&gt;
-&lt;p&gt;MCPS: Developing ASP.NET MVC Web Applications&lt;/p&gt;
-&lt;p&gt;Microsoft Certified Solution Developer: App Builder&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/12/27/goals-for-2018/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Goals for 2017 – Review</title>
-			<link>https://alexhedley.github.io/blog/posts/goals-for-2017-review</link>
-			<description>&lt;p&gt;&lt;strong&gt;599CD&lt;/strong&gt;&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/goals-for-2017-review</guid>
-			<pubDate>Wed, 27 Dec 2017 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;strong&gt;599CD&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;iOS
-&lt;ul&gt;
-&lt;li&gt;Re-wrote API interaction using the Facade pattern&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages"&gt;https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;Android
+&lt;li&gt;&lt;p&gt;BlazorGitHubPagesDemo (&lt;a href="https://github.com/Swimburger/BlazorGitHubPagesDemo"&gt;https://github.com/Swimburger/BlazorGitHubPagesDemo&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Jeff Goldblum StreamDeck Action</title>
+			<link>https://alexhedley.github.io/blog/posts/jeffgoldblum</link>
+			<description>&lt;p&gt;In a previous &lt;a href="https://alexhedley.github.io/blog/post/StreamDeckToolkit"&gt;post&lt;/a&gt; I discussed the &lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;StreamDeck&lt;/a&gt; and adding docs to the .NET toolkit.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/jeffgoldblum</guid>
+			<pubDate>Mon, 28 Sep 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In a previous &lt;a href="https://alexhedley.github.io/blog/post/StreamDeckToolkit"&gt;post&lt;/a&gt; I discussed the &lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;StreamDeck&lt;/a&gt; and adding docs to the .NET toolkit.&lt;/p&gt;
+&lt;p&gt;Whilst watching a stream from &lt;a href="https://www.twitch.tv/jamesmontemagno/"&gt;JM&lt;/a&gt; Aden &lt;a href="https://github.com/jamesmontemagno/MyStreamTimer/issues/36"&gt;suggested&lt;/a&gt; he add a StreamDeck Plugin to &lt;a href="https://www.mystreamtimer.com/"&gt;MyStreamTimer&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Asked a friend to help write this&lt;/li&gt;
+&lt;li&gt;Stream Deck Extension for My Stream Timer | C# | @JamesMontemagno
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.twitch.tv/videos/744833142"&gt;https://www.twitch.tv/videos/744833142&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Still waiting on Rich to make a proper API.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Jam Jar&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Worked with PassSlot and have a local iOS app that creates them, with images&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.wordpress.com/2017/05/20/jam-jar-cinema-wallet-passes/"&gt;https://alexhedley.wordpress.com/2017/05/20/jam-jar-cinema-wallet-passes/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;.NET Apps&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I worked a little on a GNVQ tracking app for Learning Objectives, the back end is mostly there, still working on the UI.&lt;/p&gt;
-&lt;p&gt;In general I was working on a major iOS project at work so didn't have a massive amount of spare time, learned lots of new APIs and techniques in ObjC and iOS dev which was great.&lt;/p&gt;
-&lt;p&gt;Previous&lt;/p&gt;
+&lt;p&gt;TODO: Add YouTube link since Twitch expires.&lt;/p&gt;
+&lt;p&gt;A couple of weeks later James did a stream for a presentation he was preparing for:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.wordpress.com/2017/01/02/goals-for-2017/"&gt;https://alexhedley.wordpress.com/2017/01/02/goals-for-2017/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.wordpress.com/2017/01/02/goals-for-2016-review/"&gt;https://alexhedley.wordpress.com/2017/01/02/goals-for-2016-review/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.wordpress.com/2016/01/01/goals-for-2016/"&gt;https://alexhedley.wordpress.com/2016/01/01/goals-for-2016/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Preparing a Presentation! #OBS #StreamDeck #PowerPoint | @JamesMontemagno
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.twitch.tv/videos/758464643"&gt;https://www.twitch.tv/videos/758464643&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/12/27/goals-for-2017-review/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A project &lt;a href="https://github.com/jamesmontemagno/streamdeck-treecount/"&gt;Tree Count&lt;/a&gt; was created for this.&lt;/p&gt;
+&lt;p&gt;Roll forward a couple of hours and &lt;a href="https://twitter.com/mkristensen"&gt;Mads&lt;/a&gt; is on stream, with James producing: &lt;a href="https://www.youtube.com/watch?v=y_nTdXzterM&amp;amp;list=PLReL099Y5nRdG2n1PrY_tbCsUznoYvqkS"&gt;Writing Visual Studio Extensions with Mads - Controlling the clipboard&lt;/a&gt; and he needed some lorem ipsum text. Of course there's only one place you should get filler text and this is &lt;a href="https://jeffsum.com/"&gt;Jeffsum&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This gave me a thought! Why not create an OBS/StreamDeck plugin using &lt;a href="https://github.com/jamesmontemagno/Jeffsum.NET"&gt;Jeffsum.NET&lt;/a&gt; to grab JG quotes.&lt;/p&gt;
+&lt;p&gt;![Stream Deck Jeff Goldblum]({{ site.baseurl }}/images/jg/StreamDeck-JeffGoldblum.png "Stream Deck Jeff Goldblum")&lt;/p&gt;
+&lt;p&gt;Code: &lt;a href="https://github.com/AlexHedley/JeffGoldblum"&gt;GitHub&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>UIBarButtonItem Image and Text</title>
-			<link>https://alexhedley.github.io/blog/posts/uibarbuttonitem-image-and-text</link>
-			<description>&lt;p&gt;I want to add an image and text to a BarButtonItem but can't in IB.&lt;/p&gt;</description>
+			<title>Publish a Visual Studio Extension from GitHub Actions</title>
+			<link>https://alexhedley.github.io/blog/posts/gha-vse</link>
+			<description>&lt;p&gt;In a previous &lt;a href="https://alexhedley.github.io/blog/post/VisualStudioExtension"&gt;post&lt;/a&gt; I discussed starting to create a Visual Studio Extension for &lt;a href="https://alexhedley.github.io/blog/post/BuildLight"&gt;BuildLight&lt;/a&gt;.&lt;/p&gt;</description>
 			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/uibarbuttonitem-image-and-text</guid>
-			<pubDate>Thu, 21 Sep 2017 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;I want to add an image and text to a BarButtonItem but can't in IB.&lt;/p&gt;
-&lt;p&gt;I looked into&amp;nbsp;EdgeInsets but couldn't get them to work with the image.&lt;/p&gt;
-&lt;p&gt;I'd also like to shrink the image&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;// https://stackoverflow.com/a/18853240/2895831
-UIView \*rightButtonView = \[\[UIView alloc\]initWithFrame:CGRectMake(0, 0, 110, 50)\];
-
-UIImage \*buttonImage = \[UIImage imageNamed:@"LocationArrow"\];
-//UIEdgeInsets edgeInsets = UIEdgeInsetsMake(50, 50, 50, 50);
-//UIImage \*buttonImage = \[\[UIImage imageNamed:@"LocationArrow"\] resizableImageWithCapInsets:edgeInsets\];
-//UIImage(CGImage: originalImage!.CGImage!, scale: 5, orientation: originalImage!.imageOrientation)
-// https://stackoverflow.com/a/38523085/2895831
-buttonImage = \[UIImage imageWithCGImage:buttonImage.CGImage
- scale:4//CGImageGetHeight(buttonImage.CGImage)/2
- orientation:UIImageOrientationUp\];
-
-UIButton \*rightButton = \[UIButton buttonWithType:UIButtonTypeSystem\];
-rightButton.backgroundColor = \[UIColor clearColor\];
-rightButton.frame = rightButtonView.frame;
-\[rightButton setImage:buttonImage forState:UIControlStateNormal\];
-\[rightButton setTitle:NSLocalizedString(@"My Location", nil) forState:UIControlStateNormal\];
-rightButton.tintColor = \[UIColor whiteColor\];
-rightButton.autoresizesSubviews = YES;
-rightButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin;
-rightButton.semanticContentAttribute = UISemanticContentAttributeForceRightToLeft;
-\[rightButton addTarget:self action:@selector(myLocationAction:) forControlEvents:UIControlEventTouchUpInside\];
-
-CGFloat padding = 10.0f;
-\[rightButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, padding)\];
-//\[rightButton setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 0, padding)\];
-//\[rightButton setContentEdgeInsets:UIEdgeInsetsMake(padding, padding, padding, padding)\];
-//\[rightButton setImageEdgeInsets:UIEdgeInsetsMake(padding, 0, padding, 0)\]; //0, padding, 0, padding
-//\[rightButton setImageEdgeInsets:UIEdgeInsetsMake(padding, padding, padding, padding)\];
-
-\[rightButtonView addSubview:rightButton\];
-
-UIBarButtonItem \*rightBarButton = \[\[UIBarButtonItem alloc\] initWithCustomView:rightButtonView\];
-self.navigationItem.rightBarButtonItem = rightBarButton;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Image&lt;/p&gt;
+			<guid>https://alexhedley.github.io/blog/posts/gha-vse</guid>
+			<pubDate>Sat, 11 Jul 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In a previous &lt;a href="https://alexhedley.github.io/blog/post/VisualStudioExtension"&gt;post&lt;/a&gt; I discussed starting to create a Visual Studio Extension for &lt;a href="https://alexhedley.github.io/blog/post/BuildLight"&gt;BuildLight&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It would be nice to automate new versions to the marketplace.&lt;/p&gt;
+&lt;p&gt;There are a number or articles on-line showing how to do this with &lt;a href="https://azure.microsoft.com/en-gb/services/devops/"&gt;ADO&lt;/a&gt; but I wanted to keep all the code and CI/CD in the same GitHub Repo of &lt;a href="https://github.com/praeclarum/BuildLight"&gt;BuildLight&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I started looking into how to deploy a VSIX to the &lt;a href="https://marketplace.visualstudio.com/"&gt;Marketplace&lt;/a&gt; and came across a very recent blog post &lt;a href="https://david.gardiner.net.au/2020/07/vs-extension-cicd-with-github-actions.html"&gt;CI/CD for Visual Studio extensions with GitHub Actions&lt;/a&gt; from &lt;a href="https://twitter.com/DavidRGardiner"&gt;David Gardiner&lt;/a&gt; which I'm looking forward to reading when more are released but kindly the &lt;a href="https://github.com/flcdrg/VsShowMissing/blob/master/.github/workflows/publish.yml"&gt;GH Action&lt;/a&gt; is already available in a repo &lt;a href="https://github.com/flcdrg/VsShowMissing"&gt;VsShowMissing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So my journey began.&lt;/p&gt;
+&lt;p&gt;I created an account on the marketplace and added the necessary details:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/a/38523085/2895831"&gt;https://stackoverflow.com/a/38523085/2895831&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/publishers/alexhedley"&gt;AlexHedley&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;[UIImage imageWithCGImage:buttonImage.CGImage&amp;nbsp;scale:4&amp;nbsp;orientation:UIImageOrientationUp];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Pick your method to scale&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;CGImageGetHeight(buttonImage.CGImage)/2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Or&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;CGImageGetWidth(...)/DESIREDWIDTH
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;IB&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;There is the handy&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Bar Item&lt;/li&gt;
-&lt;li&gt;Image Inset&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/09/21/uibarbuttonitem-image-and-text/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>UIButton VerticalLayout</title>
-			<link>https://alexhedley.github.io/blog/posts/uibutton-verticallayout</link>
-			<description>&lt;p&gt;&lt;a href="https://stackoverflow.com/a/22621613/2895831"&gt;https://stackoverflow.com/a/22621613/2895831&lt;/a&gt;&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/uibutton-verticallayout</guid>
-			<pubDate>Fri, 04 Aug 2017 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;a href="https://stackoverflow.com/a/22621613/2895831"&gt;https://stackoverflow.com/a/22621613/2895831&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[gist 87d1917da7745da9cd77033508e69243 /]&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;UIButton+VerticalLayout.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;//https://stackoverflow.com/a/22621613/2895831
-
-@interface UIButton (VerticalLayout)  
-
-- (void)centerVerticallyWithPadding:(float)padding;  
-- (void)centerVertically;  
-
-@end  
-
-@implementation UIButton (VerticalLayout)  
-
-- (void)centerVerticallyWithPadding:(float)padding {      
-    CGSize imageSize = self.imageView.frame.size;  
-    CGSize titleSize = self.titleLabel.frame.size;  
-    CGFloat totalHeight = (imageSize.height + titleSize.height + padding);  
-    self.imageEdgeInsets = UIEdgeInsetsMake(- (totalHeight - imageSize.height),
-                                            0.0f,
-                                            0.0f,
-                                            - titleSize.width);
-    self.titleEdgeInsets = UIEdgeInsetsMake(0.0f,
-                                            - imageSize.width,
-                                            - (totalHeight - titleSize.height),
-                                            0.0f);
-//     self.contentEdgeInsets = UIEdgeInsetsMake(0.0f,
-//                                             0.0f,
-//                                             titleSize.height,
-//                                             0.0f);
-    CGFloat inset = (self.frame.size.height - totalHeight)/2;
-    self.contentEdgeInsets = UIEdgeInsetsMake(inset, 0.0f, inset, 0.0f);
-}
-
-- (void)centerVertically {  
-    const CGFloat kDefaultPadding = 6.0f;
-    [self centerVerticallyWithPadding:kDefaultPadding];  
-}
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I added some buttons into a UIStackView but the image overlaps the button.&lt;/p&gt;
-&lt;p&gt;[gallery ids="1046,1047" type="rectangular"]&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/verticalbutton-1.png" alt=""&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/verticalbutton-2.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;I modified the &lt;em&gt;contentEdgeInsets&lt;/em&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;CGFloat inset = (self.frame.size.height - totalHeight)/2;
-self.contentEdgeInsets = UIEdgeInsetsMake(inset, 0.0f, inset, 0.0f);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/08/04/uibutton-verticallayout/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Pollen Today Widget</title>
-			<link>https://alexhedley.github.io/blog/posts/pollen-today-widget</link>
-			<description>&lt;p&gt;I want a today Widget to show pollen count.&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/pollen-today-widget</guid>
-			<pubDate>Sun, 09 Jul 2017 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;I want a today Widget to show pollen count.&lt;/p&gt;
-&lt;p&gt;I downloaded:&lt;/p&gt;
-&lt;p&gt;Clarityn’s Pollen Forecast UK by Bayer HealthCare AG&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://appsto.re/gb/tPFfw.i"&gt;https://appsto.re/gb/tPFfw.i&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;They have a website&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.claritynallergy.co.uk/allergyforecast/?zip=X"&gt;http://www.claritynallergy.co.uk/allergyforecast/?zip=X&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;It doesn't have the Widget I wanted so I started looking for an API.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;POST&lt;/strong&gt;&amp;nbsp;http://www.claritynallergy.co.uk/webservice/allergyforecast.php&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Header&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Accept: application/json&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Body&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Form URL-Encoded&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;zip=NE11EE&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Response&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;"{\\"Durham &amp;amp; Newcastle\\":{\\"1499515201\\":{\\"precipitation\\":8,\\"maxTemp\\":21,\\"minTemp\\":16,\\"pollenLevel\\":\\"H\\",\\"humidity\\":83,\\"windSpeed\\":7,\\"weatherCode\\":7,\\"uvIndex\\":5,\\"pollenType\\":\\"Grass\\"},\\"1499601600\\":{\\"precipitation\\":18,\\"maxTemp\\":18,\\"minTemp\\":15,\\"pollenLevel\\":\\"H\\",\\"humidity\\":80,\\"windSpeed\\":18,\\"weatherCode\\":7,\\"uvIndex\\":4,\\"pollenType\\":\\"Grass\\"},\\"1499688000\\":{\\"precipitation\\":23,\\"maxTemp\\":18,\\"minTemp\\":14,\\"pollenLevel\\":\\"M\\",\\"humidity\\":69,\\"windSpeed\\":11,\\"weatherCode\\":3,\\"uvIndex\\":7,\\"pollenType\\":\\"Grass\\"}}}"&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Images&lt;/p&gt;
-&lt;p&gt;"http://www.claritynallergy.co.uk/static/media/images/claritynallergy/7-trans.png" :&lt;img src="https://alexhedley.github.io/blog/images/3-trans.png" alt=""&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;I found Benadryl has one.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.benadryl.co.uk/social-pollen-count"&gt;https://www.benadryl.co.uk/social-pollen-count&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;GET&lt;/strong&gt; &lt;a href="https://socialpollencount.co.uk/api/forecast?location=%5C%5B**LAT**,**LON**%5C%5D"&gt;https://socialpollencount.co.uk/api/forecast?location=\[**LAT**,**LON**\]&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Response&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;{"status\_code":"200 OK","date":"2017-07-02T07:13:47+00:00","forecast":\[{"date":"2017-06-29T08:00:01+00:00","pollen\_count":"Low"},{"date":"2017-06-30T08:00:01+00:00","pollen\_count":"Low"},{"date":"2017-07-01T08:00:01+00:00","pollen\_count":"High"},{"date":"2017-07-02T08:00:01+00:00","pollen\_count":"High","temperature":"18","weather\_code":"01","weather":"Sunny"},{"date":"2017-07-03T08:00:01+00:00","pollen\_count":"High","temperature":"18","weather\_code":"07","weather":"Medium-level cloud"},{"date":"2017-07-04T08:00:01+00:00","pollen\_count":"Moderate","temperature":"14","weather\_code":"12","weather":"Light rain"}\]}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Images&lt;/p&gt;
-&lt;p&gt;"https://socialpollencount.co.uk/images/content/weather/07.pnp" :&lt;img src="https://alexhedley.github.io/blog/images/07.png" alt=""&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;App: &lt;a href="https://itunes.apple.com/gb/app/benadryl-social-pollen-count/id638068252?mt=8"&gt;https://itunes.apple.com/gb/app/benadryl-social-pollen-count/id638068252?mt=8&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;App doesn't exist.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Progress I've started building my own&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_4314.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_4315-1.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/img_4317.jpg" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;The Widget needs a lot of work but the basis is there, I've built a framework that gets all the data. Now to finish the UI...&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/07/09/pollen-today-widget/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Carousel View</title>
-			<link>https://alexhedley.github.io/blog/posts/carousel-view</link>
-			<description>&lt;p&gt;&lt;strong&gt;iCarousel&lt;/strong&gt;&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/carousel-view</guid>
-			<pubDate>Mon, 22 May 2017 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;strong&gt;iCarousel&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/nicklockwood/iCarousel"&gt;https://github.com/nicklockwood/iCarousel&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I wanted to add an animation when dismissing, a button at the top and bottom of the view, one to dismiss, one to save, and move off in that direction.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://gist.github.com/AlexHedley/c551b417c3e02820a1eae04124003ee6"&gt;https://gist.github.com/AlexHedley/c551b417c3e02820a1eae04124003ee6&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;iCarousel.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;- (void)removeItemAtIndex:(NSInteger)index animated:(BOOL)animated {
-  //Amended method below to slide Up/Down
-}
-
-- (void)saveItemAtIndex:(NSInteger)index animated:(BOOL)animated {
-    index = [self clampedIndex:index];
-    UIView *itemView = [self itemViewAtIndex:index];
-
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.0];
-    [UIView setAnimationDelegate:itemView.superview];
-    [UIView setAnimationDidStopSelector:@selector(removeFromSuperview)];
-    [self performSelector:@selector(queueItemView:) withObject:itemView afterDelay:0.1];
-    itemView.superview.layer.opacity = 0.0;
-    itemView.frame = CGRectOffset(itemView.frame, 0, 250); //Swap to -250 to change direction
-    [UIView commitAnimations];
-
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDelay:0.1];
-    [UIView setAnimationDuration:INSERT_DURATION];
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(depthSortViews)];
-    [self removeViewAtIndex:index];
-    _numberOfItems --;
-    _wrapEnabled = !![self valueForOption:iCarouselOptionWrap withDefault:_wrapEnabled];
-    [self updateNumberOfVisibleItems];
-    _scrollOffset = self.currentItemIndex;
-    [self didScroll];
-    [UIView commitAnimations];
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;a href="https://gist.github.com/AlexHedley/528148bf47b634fda5fb007e4a5d9638"&gt;https://gist.github.com/AlexHedley/528148bf47b634fda5fb007e4a5d9638&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;TinderSimpleSwipeCards - &lt;a href="https://github.com/cwRichardKim/TinderSimpleSwipeCards/issues/12"&gt;https://github.com/cwRichardKim/TinderSimpleSwipeCards/issues/12&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;CardView.h&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import &amp;lt;UIKit/UIKit.h&amp;gt;
-
-
-@protocol CardDelegate;
-
-typedef NS_ENUM(NSUInteger, kCardState) {
-    kCardStateIdle = 0,
-    kCardStateMoving = 1,
-    kCardStateGone = 2
-};
-
-// The Position of the Card
-typedef NS_ENUM(NSInteger, kCardPosition) {
-    kCardPositionTop = 0,
-    kCardPositionBack = 1
-};
-
-/*!
- *    Implements the Views inside the Cards
- */
-@interface CardView : UIView
-
-#pragma mark - Properties
-
-/*!
- *    Defines the current state of the card
- */
-@property (nonatomic) kCardState state;
-
-/*!
- *    The Weight of the Card indicates its position in the stack
- */
-@property (nonatomic) kCardPosition position;
-
-/*!
- * The delegate that will listen to the notifications
- * on created on pan gesture recognizers
- */
-@property (nonatomic, weak) id &amp;lt;CardDelegate&amp;gt; delegate;
-
-/*!
- *    Where in the array is located the  view
- */
-@property (nonatomic) NSInteger index;
-
-#pragma mark - Methods
-
-#pragma mark Init
-
-/*!
- * Designated Initializer
- *
- * This method inits the view
- * and set the  to fetch
- * also renders the view with 's data
- *
- * @param CGRect frame for view's bounds
- * @param ViewDelegate delegate to send events
- * @param  *  to render the view info
- */
-- (void) setFrame:(CGRect)frame delegate:(id&amp;lt;CardDelegate&amp;gt;) delegate;
-
-#pragma mark Instance
-
-/*!
- * Swipes the view to the left
- * programatically
- */
-- (void) swipeLeft;
-
-/*!
- * Swipes the view to the right
- * programatically
- */
-- (void) swipeRight;
-
-/*!
- * Swipes the view up
- * programatically
- */
-- (void) swipeUp;
-
-/*!
- * Swipes the view down
- * programatically
- */
-- (void) swipeDown;
-
-/*!
- *    Cancels a Swipe
- */
-- (void) cancelSwipe;
-
-@end
-
-
-@protocol CardDelegate &amp;lt;NSObject&amp;gt;
-
-#pragma mark - Delegate Methods
-
-/*!
- * Method called when the view will begin pan gesture
- * @param Card * Card
- */
-- (void) willBeginSwipeInCard : (CardView *) card;
-
-/*!
- * Method called when the view did end pan gesture
- * @param Card * Card
- */
-- (void) didEndSwipeInCard : (CardView *) card;
-
-/*!
- * Method called when the view did not reach a detected position
- * @param Card * Card
- */
-- (void) didCancelSwipeInCard : (CardView *) card;
-
-/*!
- * Method called when the view was swiped left
- * @param Card * Card
- */
-- (void) swipedLeftInCard : (CardView *) card;
-
-/*!
- * Method called when the view was swiped right
- * @param Card * Card
- */
-- (void) swipedRightInCard : (CardView *) card;
-
-/*!
- * Method called when the view was swiped up
- * @param Card * Card
- */
-- (void) swipedUpInCard : (CardView *) card;
-
-/*!
- * Method called when the view was swiped down
- * @param Card * Card
- */
-- (void) swipedDownInCard : (CardView *) card;
-
-/*!
- * Method called when the view button was pressed
- * @param Card * Card;
- */
-- (void) wasTouchedDownInCard : (CardView *) card;
-
-/*!
- *    Method called when the state was changed
- *
- *    @param  Card * Card;
- */
-- (void) didChangeStateInCard: (CardView *) card;
-
-/*!
- *    Ask the delegate if the card should move
- *
- *    @param Card the card
- *
- *    @return YES if the card should move
- */
-- (BOOL) shouldMoveCard: (CardView *) card;
-
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;CardView.m&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-objectivec"&gt;#import "CardView.h"
-
-// Constants Declaration
-
-// This constant represent the distance from the center
-// where the action applies. A higher value means that
-// the user needs to draw the view further in order for
-// the action to be executed.
-
-#define ACTION_MARGIN 120
-
-// This constant is the distance from the center. But vertically
-
-#define Y_ACTION_MARGIN 100
-
-
-// This constant represent how quickly the view shrinks.
-// The view will shrink when is beign moved out the visible
-// area.
-// A Higher value means slower shrinking
-
-#define SCALE_QUICKNESS 4
-
-// This constant represent how much the view shrinks.
-// A Higher value means less shrinking
-
-#define SCALE_MAX .93
-
-// This constant represent the rotation angle
-
-#define ROTATION_ANGLE M_PI / 8
-
-// This constant represent the maximum rotation angle
-// allowed in radiands.
-// A higher value enables more rotation for the view
-
-#define ROTATION_MAX 1
-
-// This constant defines how fast
-// the rotation should be.
-// A higher values means a faster rotation.
-
-#define ROTATION_QUICKNESS 320
-
-@interface CardView()
-
-// Internal Variables
-@property (nonatomic) CGFloat xFromCenter;
-
-@property (nonatomic) CGFloat yFromCenter;
-
-@property (nonatomic) CGPoint originalPoint;
-
-@end
-
-@implementation CardView
-
-@synthesize state = _state;
-
-- (kCardState) state {
-    if (!_state) {
-        _state = kCardStateIdle;
-    }
-
-    return _state;
-}
-
-- (void) setState:(kCardState) state {
-
-    if (_state != state) {
-        _state = state;
-        [self.delegate didChangeStateInCard:self];
-    }
-}
-
-- (kCardPosition) position {
-    if (!_position) {
-        _position = kCardPositionTop;
-    }
-
-    return _position;
-}
-
-#pragma mark - Init
-
-/*!
- * Designated Initializer
- *
- * This method inits the view
- * and set the feed to fetch
- * also renders the view with feed's data
- *
- * @param CGRect frame for view's bounds
- * @param CardDelegate delegate to send events
- */
-
-- (void) setFrame:(CGRect)frame delegate:(id&amp;lt;CardDelegate&amp;gt;) delegate {
-
-    self.frame = frame;
-
-    self.delegate = delegate;
-
-    [self setupView];
-    [self registerSwipeGestures];
-}
-
-#pragma mark Init Helper Methods
-
-/*!
- * Round corners of the view
- * and draw a shadow
- * Do another view related
- * actions required on init
- */
-- (void) setupView {
-
-    // Draw Shadow
-    // And round the view
-    self.layer.cornerRadius = 10;
-    self.layer.shadowRadius = 3;
-    self.layer.shadowOpacity = 0.2;
-    self.layer.shadowOffset = CGSizeMake(1,1);
-
-}
-
-/*!
- * Register Pan Gesture
- * and delegates
- */
-- (void) registerSwipeGestures {
-
-    UIPanGestureRecognizer * panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
-
-    [self addGestureRecognizer:panRecognizer];
-
-}
-
-
-#pragma mark Pan Gesture Recognizer Handlers
-
-/*!
- * This is the main method for motion detection
- * its called several times a second when the
- * fingers are moved across the screen.
- */
-- (void) handlePanGesture: (UIPanGestureRecognizer *) panRecognizer {
-
-    // This extracts the coordinate data from the swipe movement.
-    // how much did fingers move.
-
-    // We need to know the X position.
-    // A positive value means movement to the right.
-    // A negative value means movement to the left.
-
-    self.xFromCenter = [panRecognizer translationInView:self].x;
-
-    // We need to know the Y position.
-    // A positive value means up movement.
-    // A negative value means down movement.
-
-    self.yFromCenter = [panRecognizer translationInView:self].y;
-
-    // Now we check on wich state our swipe is
-    // if is its starting, in the middle or ended
-    // the swiping.
-
-    switch (panRecognizer.state) {
-
-            // Swiping just started
-        case UIGestureRecognizerStateBegan: {
-
-            // We will save the original point
-            // when we started
-            self.originalPoint = self.center;
-
-            if (self.delegate) {
-
-                if ([self.delegate shouldMoveCard:self]) {
-
-                    // And tell the delegate
-                    // that the movement just started
-                    [self.delegate willBeginSwipeInCard:self];
-
-                }
-
-            }
-
-
-            break;
-        }
-
-            // Swiping is in course
-        case UIGestureRecognizerStateChanged: {
-
-            // Animate the view
-
-            if (self.delegate) {
-
-                // If delegate is present
-                // ask if it should move the card
-                if ([self.delegate shouldMoveCard:self]) {
-
-                    [self animateView];
-                }
-
-            } else {
-                [self animateView];
-            }
-
-            break;
-        }
-
-        // Swiping ended
-        case UIGestureRecognizerStateEnded: {
-
-            if (self.delegate) {
-
-                if ([self.delegate shouldMoveCard:self]) {
-
-                    [self detectSwipeDirection];
-                }
-
-            } else {
-                [self detectSwipeDirection];
-            }
-
-            break;
-        }
-
-        default:
-            break;
-    }
-}
-
-
-#pragma mark Helper Methods
-
-/*!
- * Rotates the view
- * and changes its scale and position
- */
-- (void) animateView {
-
-    // Do some black magic math
-    // for rotating and scale
-
-    // Gets the rotation quickness
-    // see constants.
-
-    CGFloat rotationQuickness = MIN(self.xFromCenter / ROTATION_QUICKNESS, ROTATION_MAX);
-
-    // Change the rotation in radians
-    CGFloat rotationAngle = (CGFloat) (ROTATION_ANGLE * rotationQuickness);
-
-    // the height will change when the view reaches certain point
-    CGFloat scale = MAX(1 - fabsf(rotationQuickness) / SCALE_QUICKNESS, SCALE_MAX);
-
-    // move the object center depending on the coordinate
-    self.center = CGPointMake(self.originalPoint.x + self.xFromCenter,
-                                   self.originalPoint.y + self.yFromCenter);
-
-
-    // rotate by the angle
-    CGAffineTransform rotateTransform = CGAffineTransformMakeRotation(rotationAngle);
-
-    // scale depending on the rotation
-    CGAffineTransform scaleTransform = CGAffineTransformScale(rotateTransform, scale, scale);
-
-    // apply transformations
-    self.transform = scaleTransform;
-
-    // Change state
-    [self changeStateToMoving];
-}
-
-/*!
- * With all the values fetched
- * from the pan gesture
- * gets the direction of the swipe
- * when the swipe is done
- */
-- (void) detectSwipeDirection {
-
-    if (self.xFromCenter &amp;gt; ACTION_MARGIN) {
-
-        [self performRightAnimation];
-
-    } else if (self.xFromCenter &amp;lt; - ACTION_MARGIN) {
-
-        [self performLeftAnimation];
-
-    } else if(self.yFromCenter &amp;lt; - Y_ACTION_MARGIN) {
-
-        [self performUpAnimation];
-
-    } else if(self.yFromCenter &amp;gt;  Y_ACTION_MARGIN) {
-
-        [self performDownAnimation];
-
-    } else {
-
-        [self performCenterAnimation];
-
-    }
-
-    // And tell the delegate
-    // that the swipe just finished
-    [self.delegate didEndSwipeInCard:self];
-}
-
-- (void) changeStateToIdle {
-
-    // Idle state indicates that the card
-    // is showing in the view, but not moving.
-    self.state = kJMPTFeedCardStateIdle;
-}
-
-- (void) changeStateToGone {
-
-    // Gone state indicates that the card
-    // was removed from the view
-    self.state = kJMPTFeedCardStateGone;
-}
-
-- (void) changeStateToMoving {
-
-    self.state = kJMPTFeedCardStateMoving;
-
-    // Cancel Swipe if Moving but not should
-    if (self.delegate &amp;amp;&amp;amp; ![self.delegate shouldMoveCard:self]) {
-        [self performCenterAnimation];
-    }
-}
-
-#pragma mark Animation Methods
-
-/*!
- * The view will go to the right
- */
-- (void) performRightAnimation {
-
-    CGPoint finishPoint = CGPointMake(500, 2 * self.yFromCenter + self.originalPoint.y);
-
-    [UIView animateWithDuration:0.3  delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-
-        self.center = finishPoint;
-
-    } completion:^(BOOL finished) {
-
-        [self removeFromSuperview];
-
-        [self changeStateToGone];
-
-        [self.delegate swipedRightInCard:self];
-    }];
-
-}
-
-/*!
- * The view will got to the left
- */
-- (void) performLeftAnimation {
-
-    CGPoint finishPoint = CGPointMake(-500, 2 * self.yFromCenter + self.originalPoint.y);
-
-    [UIView animateWithDuration:0.3  delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-
-        self.center = finishPoint;
-
-    } completion:^(BOOL finished) {
-
-        [self removeFromSuperview];
-
-        [self changeStateToGone];
-
-        [self.delegate swipedLeftInCard:self];
-    }];
-
-}
-
-/*!
- * The view will go up
- * do not remove from view
- * just perfom some goofy moves
- */
-- (void) performUpAnimation {
-
-    [UIView animateWithDuration:0.7
-                          delay:0
-         usingSpringWithDamping:0.56
-          initialSpringVelocity:0.0
-                        options:UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
-
-                         self.center = self.originalPoint;
-
-                         self.transform = CGAffineTransformMakeRotation(0);
-
-                     } completion:^(BOOL finished) {
-                         [self changeStateToIdle];
-
-                         [self.delegate swipedUpInCard:self];
-                     }];
-}
-
-/*!
- * The view will go down
- * do not remove from view
- * just perfom some goofy moves
- */
-- (void) performDownAnimation {
-
-    [UIView animateWithDuration:0.7
-                          delay:0
-         usingSpringWithDamping:0.56
-          initialSpringVelocity:0.0
-                        options:UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
-
-                         self.center = self.originalPoint;
-
-                         self.transform = CGAffineTransformMakeRotation(0);
-
-                     } completion:^(BOOL finished) {
-                         [self changeStateToIdle];
-                         [self.delegate swipedDownInCard:self];
-                     }];
-
-}
-
-/*!
- * The view will go to the center
- * (cancel swipe) and reset the values
- */
-- (void) performCenterAnimation {
-
-    [UIView animateWithDuration:0.7
-                          delay:0
-         usingSpringWithDamping:0.56
-          initialSpringVelocity:0.0
-                        options:UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
-
-                         self.center = self.originalPoint;
-
-                         self.transform = CGAffineTransformMakeRotation(0);
-
-                     } completion:^(BOOL finished) {
-
-                         [self changeStateToIdle];
-                         [self.delegate didCancelSwipeInCard:self];
-                     }];
-}
-
-#pragma mark - Programatically Swipe Methods
-
-- (void) swipeLeft {
-
-    // The same animation but with a delay
-    CGPoint finishPoint = CGPointMake(-500, 2 * self.yFromCenter + self.originalPoint.y);
-
-    [self changeStateToMoving];
-
-    [UIView animateWithDuration:0.3  delay:0.3 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-
-        self.center = finishPoint;
-
-    } completion:^(BOOL finished) {
-
-        if (finished) {
-            [self removeFromSuperview];
-            [self changeStateToGone];
-            [self.delegate swipedLeftInCard:self];
-        }
-
-    }];
-}
-
-- (void) swipeRight {
-
-    // The same animation, but with a delay
-    CGPoint finishPoint = CGPointMake(500, 2 * self.yFromCenter + self.originalPoint.y);
-
-    [self changeStateToMoving];
-
-    [UIView animateWithDuration:0.3  delay:0.3 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-
-        self.center = finishPoint;
-
-    } completion:^(BOOL finished) {
-
-        if (finished) {
-            [self removeFromSuperview];
-            [self changeStateToGone];
-            [self.delegate swipedRightInCard:self];
-        }
-    }];
-}
-
-- (void) swipeUp {
-    //TODO: Implement this
-}
-
-- (void) swipeDown {
-    //TODO: Implement this
-}
-
-
-- (void) cancelSwipe {
-    [self performCenterAnimation];
-}
-
-#pragma mark - IBActions
-
-- (IBAction) cardButton: (id)sender {
-    [self.delegate wasTouchedDownInCard:self];
-}
-
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
+&lt;p&gt;Then I created a simple VSIX and uploaded it to my own repo and added David's &lt;code&gt;publish.yml&lt;/code&gt;. There's a GHA &lt;code&gt;main.yml&lt;/code&gt; in &lt;code&gt;.github\workflows&lt;/code&gt; for pushing a new build to GH Releases but I'll look at that later. For now I'm happy to just manually building the vsix locally and when I upload to GH Releases the GHA can trigger and publish on the marketplace.&lt;/p&gt;
+&lt;p&gt;Looking through the &lt;code&gt;publish.yml&lt;/code&gt; a few places would need to be updated for filenames and paths. I added an &lt;code&gt;Overview.md&lt;/code&gt; and the &lt;code&gt;build\extension-manifest.json&lt;/code&gt; file, with updates.&lt;/p&gt;
+&lt;p&gt;During my testing it doesn't seem like any updates to the &lt;code&gt;Overview.md&lt;/code&gt; are being reflected on the marketplace listing. The image didn't upload either. But new versions of the vsix did get uploaded.&lt;/p&gt;
+&lt;p&gt;One thing you need to create is a PAT or Personal Access Token. But where do you create this?&lt;/p&gt;
+&lt;p&gt;I couldn't find anything specific to a Visual Studio Marketplace extension but there are other articles for &lt;a href="https://code.visualstudio.com/api/working-with-extensions/publishing-extension"&gt;VSCode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Make sure when you create one:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;I needed a Carousel like control but swipe up/down actions.&lt;/p&gt;
+&lt;p&gt;make it accessible to every organization&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="https://github.com/nicklockwood/iCarousel"&gt;https://github.com/nicklockwood/iCarousel&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;MDCSwipeToChoose&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Click on "Show all scopes" and scroll down to the &lt;strong&gt;Marketplace&lt;/strong&gt; section and tick all:&lt;/p&gt;
+&lt;p&gt;[✔] Read [✔] Acquire [✔] Publish [✔] Manage&lt;/p&gt;
+&lt;p&gt;Save this token.&lt;/p&gt;
+&lt;p&gt;In the Repo create a new &lt;a href="https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets"&gt;Secret&lt;/a&gt; on the Settings tab, Secrets section, click "New secret" and call it &lt;code&gt;PERSONAL_ACCESS_TOKEN &lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This matches the example from the &lt;a href="https://github.com/marketplace/actions/download-assets"&gt;Download Assets&lt;/a&gt; (&lt;a href="https://github.com/i3h/download-release-asset"&gt;Code&lt;/a&gt;) Action.&lt;/p&gt;
+&lt;p&gt;Make sure this is the same name in your &lt;code&gt;publish.yml&lt;/code&gt;: &lt;code&gt;${ secrets.PersonalAccessToken }&lt;/code&gt; (This will be double &lt;code&gt;{&lt;/code&gt; and &lt;code&gt;}&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Now just create a new release and watch the GHA run and upload your extension to the marketplace.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Xamarin CommunityToolkit</title>
+			<link>https://alexhedley.github.io/blog/posts/xamarincommunitytoolkit</link>
+			<description>&lt;p&gt;The &lt;a href="https://github.com/xamarin/XamarinCommunityToolkit"&gt;Xamarin CommunityToolkit&lt;/a&gt; is a reboot of an old set of helpful additions to Xamarin for example&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/xamarincommunitytoolkit</guid>
+			<pubDate>Fri, 10 Jul 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;The &lt;a href="https://github.com/xamarin/XamarinCommunityToolkit"&gt;Xamarin CommunityToolkit&lt;/a&gt; is a reboot of an old set of helpful additions to Xamarin for example&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/modocache/MDCSwipeToChoose"&gt;https://github.com/modocache/MDCSwipeToChoose&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Behaviors&lt;/li&gt;
+&lt;li&gt;Controls&lt;/li&gt;
+&lt;li&gt;Converters&lt;/li&gt;
+&lt;li&gt;Effects&lt;/li&gt;
+&lt;li&gt;Extensions&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;TinderSimpleSwipeCards&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I'd raised an &lt;a href="https://github.com/xamarin/XamarinCommunityToolkit/issues/121"&gt;Issue #121&lt;/a&gt; to suggest using &lt;a href="https://alexhedley.github.io/blog/post/DocFX"&gt;DocFX&lt;/a&gt; to build the docs within the repo and started on a &lt;a href="https://github.com/xamarin/XamarinCommunityToolkit/pull/135/files"&gt;PR !135&lt;/a&gt; with some of the structure laid out.&lt;/p&gt;
+&lt;p&gt;A comment was made saying &lt;a href="https://docs.microsoft.com/xamarin/"&gt;MS Docs&lt;/a&gt; would be making a repo and to hold off for a little bit.&lt;/p&gt;
+&lt;p&gt;Checking back a few weeks later I found the &lt;a href="https://github.com/MicrosoftDocs/xamarin-communitytoolkit"&gt;Xamarin Community Toolkit Documentation&lt;/a&gt; repo had been made.&lt;/p&gt;
+&lt;p&gt;I made a start on porting over some of the work and opened &lt;a href="https://github.com/MicrosoftDocs/xamarin-communitytoolkit/pull/4"&gt;PR !4&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I received some really helpful comments from &lt;a href="https://github.com/davidbritch"&gt;David Britch&lt;/a&gt;, as I'd copied some of the base files from &lt;a href="https://docs.microsoft.com/en-gb/xamarin/essentials/"&gt;Xamarin.Essentials&lt;/a&gt; and not checked they matched the &lt;a href="https://github.com/MicrosoftDocs/xamarin-communitytoolkit/blob/master/CONTRIBUTING.md"&gt;Contributing Guidelines&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It's just a start to get the shell of the structure there, to make it easier for others to get to the meat of the work but every little bit helps.&lt;/p&gt;
+&lt;p&gt;I'm hoping to start on the list above soon, the easier it is to get people started with the Toolkit, hopefully the more contributions will be made towards growing the functionality.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Original info about the Toolkit.&lt;/p&gt;
+&lt;p&gt;Profile:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/cwRichardKim/TinderSimpleSwipeCards"&gt;https://github.com/cwRichardKim/TinderSimpleSwipeCards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/profiles/FormsCommunityToolkit"&gt;https://www.nuget.org/profiles/FormsCommunityToolkit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;@&lt;a href="https://github.com/clsource"&gt;clsource&lt;/a&gt;&amp;nbsp;added other directions&lt;/p&gt;
+&lt;p&gt;Packages:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/cwRichardKim/TinderSimpleSwipeCards/issues/12"&gt;https://github.com/cwRichardKim/TinderSimpleSwipeCards/issues/12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Effects/1.0.0.110-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Effects/1.0.0.110-beta&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Converters/1.0.0.66-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Converters/1.0.0.66-beta&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Behaviors/1.0.0.66-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Behaviors/1.0.0.66-beta&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/FormsCommunityToolkit.Controls/1.0.0.66-beta"&gt;https://www.nuget.org/packages/FormsCommunityToolkit.Controls/1.0.0.66-beta&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Directions&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://gist.github.com/AlexHedley/528148bf47b634fda5fb007e4a5d9638"&gt;https://gist.github.com/AlexHedley/528148bf47b634fda5fb007e4a5d9638&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; &lt;a href="https://alexhedley.wordpress.com/2017/05/22/carousel-view/"&gt;Original Link&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Visual Studio Extensions</title>
+			<link>https://alexhedley.github.io/blog/posts/visualstudioextension</link>
+			<description>&lt;p&gt;Visual Studio Extensions are a fantastic way to add extra functionality to the &lt;a href="https://visualstudio.microsoft.com/"&gt;IDE&lt;/a&gt;.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/visualstudioextension</guid>
+			<pubDate>Sun, 21 Jun 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Visual Studio Extensions are a fantastic way to add extra functionality to the &lt;a href="https://visualstudio.microsoft.com/"&gt;IDE&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There is a whole &lt;a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/visual-studio-sdk?view=vs-2019"&gt;SDK&lt;/a&gt; to play around with.&lt;/p&gt;
+&lt;p&gt;Then the &lt;a href="https://marketplace.visualstudio.com/"&gt;Marketplace&lt;/a&gt; for Windows and &lt;a href="https://addins.monodevelop.com/"&gt;Add-Ins&lt;/a&gt; for Mac.&lt;/p&gt;
+&lt;p&gt;I've gotten a peak with the &lt;a href="https://alexhedley.github.io/blog/post/BuildLight"&gt;Build Light&lt;/a&gt; extension I've help build to see it from both sides.&lt;/p&gt;
+&lt;p&gt;I've also watched &lt;a href="https://twitter.com/brianlagunas"&gt;@BrianLagunas&lt;/a&gt; show off some of the code needed for the &lt;a href="https://marketplace.visualstudio.com/items?itemName=BrianLagunas.PrismTemplatePack"&gt;Prism Template Pack&lt;/a&gt; wizard on his streams:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=AtDFiYFuYjY"&gt;Adding Solution Folders and Moving Projects with a Custom IWizard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Ht70QlGt7bU"&gt;Using a .NET Core Template as a Visual Studio Project Template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=WhbG9i8-X9o"&gt;Finishing the Project Template IWizard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=a5vJ7O00WoQ"&gt;We Found a Bug in the Visual Studio Extensibility APIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Ht70QlGt7bU"&gt;Using a .NET Core Template as a Visual Studio Project Template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=zuzmH5K6su8"&gt;Fixing Issue 2004: Prism's New Project Wizard Deletes Everything&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Watch this space for more info after I've had some time to look into it more.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Twitch</title>
+			<link>https://alexhedley.github.io/blog/posts/twitch</link>
+			<description>&lt;p&gt;I've finally jumped on the Twitch Streaming bandwagon.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/twitch</guid>
+			<pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;I've finally jumped on the Twitch Streaming bandwagon.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.twitch.tv/alexhedley8"&gt;alexhedley8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/playlist?list=PL_HSdprUDuLykPAunhmNNq7CFoclCsqs-"&gt;YouTube Archive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I've been watching a few people for the last year including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://twitch.tv/JamesMontemagno"&gt;JamesMontemagno&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitch.tv/FrankKrueger"&gt;FrankKrueger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitch.tv/BrianLagunas"&gt;BrianLagunas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitch.tv/csharpfritz"&gt;csharpfritz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitch.tv/dansiegel"&gt;dansiegel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I decided it might be good to start streaming some stuff I work on.&lt;/p&gt;
+&lt;p&gt;I used to record &lt;a href="https://www.youtube.com/user/599CDTechHelp"&gt;videos&lt;/a&gt; for &lt;a href="http://www.599cd.com/"&gt;599CD&lt;/a&gt; a fews years back when I had more time on my hands but planning them out. Running through the content then recording and sometimes editing. This could take a while. I was always hoping to do it more often so I'd get better at it and it would take less time with more practice.&lt;/p&gt;
+&lt;p&gt;Setting up the office properly I started putting a list together of equipment I'd need and the purchasing began.&lt;/p&gt;
+&lt;p&gt;I took advice from a few of the above and started making a &lt;a href="https://gist.github.com/AlexHedley/67ae90dcab192a20ef51209242f7928e"&gt;list&lt;/a&gt; and sourcing the equipment.&lt;/p&gt;
+&lt;p&gt;Not being the best time to get stock during a global pandemic, being everyone was buying webcams etc for their own home setup.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-solo"&gt;Focusrite Scarlett Solo 3rd Gen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eu.audio-technica.com/AT2020"&gt;Audio Technica AT2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.razer.com/gaming-broadcaster/razer-kiyo"&gt;Razer Kiyo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;Stream Deck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mic arm&lt;/li&gt;
+&lt;li&gt;Pop Filter&lt;/li&gt;
+&lt;li&gt;peripherals - cables etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then I needed some artwork for scenes etc.&lt;/p&gt;
+&lt;p&gt;I'm no artist so I took some inspiration for other streamers for layout and positioning of elements and then grabbed some logos from my &lt;a href="http://alexhedley.com/"&gt;website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next up was the software.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://obsproject.com/"&gt;Obs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://streamlabs.com/"&gt;Streamlabs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Add the extensions for followers, alerts etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.mystreamtimer.com/"&gt;My Stream Timer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://carnackeys.com/"&gt;Carnac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Build Light</title>
+			<link>https://alexhedley.github.io/blog/posts/buildlight</link>
+			<description>&lt;p&gt;&lt;a href="https://github.com/praeclarum/BuildLight"&gt;Build Light&lt;/a&gt; is a way to &lt;em&gt;display your IDE's build status using RGB LEDs and IoT devices!&lt;/em&gt;&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/buildlight</guid>
+			<pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;&lt;a href="https://github.com/praeclarum/BuildLight"&gt;Build Light&lt;/a&gt; is a way to &lt;em&gt;display your IDE's build status using RGB LEDs and IoT devices!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It's being built by &lt;a href="http://twitter.com/praeclarum"&gt;&amp;#64;praeclarum&lt;/a&gt; on his &lt;a href="https://twitch.tv/FrankKrueger"&gt;Twitch&lt;/a&gt; channel the last few sunday nights.&lt;/p&gt;
+&lt;p&gt;It's an ESP32 device running a mini web server that when connected to a set of RGB lights will toggle the colour from red (for a failed build) to green (for a successful build) in Visual Studio for Mac.&lt;/p&gt;
+&lt;p&gt;It even has support in Alexa so you can turn it on and off.&lt;/p&gt;
+&lt;p&gt;For my first Twitch stream (&lt;a href="https://www.youtube.com/watch?v=It13T8YBX8g"&gt;YouTube Archive&lt;/a&gt;) I built the Windows version of the Build Light Extension. See &lt;a href="https://github.com/praeclarum/BuildLight/pull/7"&gt;PR !7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This was a fun new challenge having never worked in the &lt;a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/visual-studio-sdk?view=vs-2019"&gt;VS SDK&lt;/a&gt; before.&lt;/p&gt;
+&lt;p&gt;I'm hoping to spend some mode time in this SDK for both Mac and Win and write up what I find.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>StreamDeck Toolkit</title>
+			<link>https://alexhedley.github.io/blog/posts/streamdecktoolkit</link>
+			<description>&lt;p&gt;The &lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;Stream Deck&lt;/a&gt; is an awesome gadget to use whilst streaming. It allows you to configure buttons to perform any number of actions. This could be changing scene whilst streaming, playing some sounds, opening an app, running a set of actions, the list is endless.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/streamdecktoolkit</guid>
+			<pubDate>Sun, 07 Jun 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;The &lt;a href="https://www.elgato.com/en/gaming/stream-deck"&gt;Stream Deck&lt;/a&gt; is an awesome gadget to use whilst streaming. It allows you to configure buttons to perform any number of actions. This could be changing scene whilst streaming, playing some sounds, opening an app, running a set of actions, the list is endless.&lt;/p&gt;
+&lt;p&gt;![Stream Deck]({{ site.baseurl }}/images/sdt/streamdeck.png "Stream Deck")&lt;/p&gt;
+&lt;p&gt;Whilst watching &lt;a href="https://www.twitch.tv/csharpfritz"&gt;csharpfritz&lt;/a&gt; om twitch I checked the archives and found the following playlist for the &lt;a href="https://www.youtube.com/playlist?list=PLVMqA0_8O85xhVTS3OkTOKhe6IIYj7Tna"&gt;StreamDeck Toolkit&lt;/a&gt; where a plugin system written in .NET was built to make it easy to make your own button actions.&lt;/p&gt;
+&lt;p&gt;With my new love of using &lt;a href="https://alexhedley.github.io/blog/post/DocFX"&gt;DocFX&lt;/a&gt; I thought I'd help out and contribute to the documentation for the toolkit.&lt;/p&gt;
+&lt;p&gt;It didn't take long to spin up a site, move some of the existing documentation over and start adding new items, it was merged on stream on 7th June 2020 (adding YouTube link when published)&lt;/p&gt;
+&lt;p&gt;You can see the &lt;a href="https://github.com/FritzAndFriends/StreamDeckToolkit/pull/150"&gt;PR !150&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What's great is there's a workflow with GH Actions to auto build when new content is added.&lt;/p&gt;
+&lt;p&gt;You can find the &lt;a href="https://fritzandfriends.github.io/StreamDeckToolkit/articles/intro.html"&gt;Docs&lt;/a&gt; and start building your own today.&lt;/p&gt;
+&lt;p&gt;I may add one for &lt;a href="https://alexhedley.github.io/blog/post/BuildLight"&gt;BuildLight&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>DocFX</title>
+			<link>https://alexhedley.github.io/blog/posts/docfx</link>
+			<description>&lt;p&gt;There are a number of options to build static sites these days.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/docfx</guid>
+			<pubDate>Tue, 19 May 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;There are a number of options to build static sites these days.&lt;/p&gt;
+&lt;p&gt;My current blog is built using &lt;a href="https://github.com/barryclark/jekyll-now"&gt;Jekyll Now&lt;/a&gt; which is great static site which uses &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Another tool I've used is &lt;a href="https://www.mkdocs.org/"&gt;MkDocs&lt;/a&gt;, this has been helpful as it allowed me to quickly contribute to &lt;a href="https://alexhedley.github.io/MFractor-Documentation"&gt;MFractor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But with me working with .NET predominantly it makes sense to use the tooling MS use. This is &lt;a href="https://dotnet.github.io/docfx/"&gt;DocFX&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For a great customised version of this see &lt;a href="https://prismlibrary.com/docs/"&gt;Prism Library Docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One thing I love about the jekyll based sites is you can use them with GitHub Pages. Just push and it auto builds.&lt;/p&gt;
+&lt;p&gt;For MkDocs this allows a command to push &lt;code&gt;mkdocs gh-deploy&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I'd like the same for DocFX but this doesn't currently exist out of the box.&lt;/p&gt;
+&lt;p&gt;Time to use &lt;a href="https://github.com/features/actions"&gt;GitHub Actions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Researching first to see if anyone had got it working yet I found:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/docfx/issues/3284"&gt;3284&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.community/t5/GitHub-Actions/Github-action-not-triggering-gh-pages-upon-push/td-p/26869/highlight/true/page/3"&gt;Community&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From here I tried a few ideas:&lt;/p&gt;
+&lt;p&gt;Create a new file under the following folder:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.github/workflows/&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;main.yml&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Add the following:&lt;/p&gt;
+&lt;p&gt;Setup which branch will trigger the action to run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;on:
+  push:
+    branches:
+      - master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we need to run a job on an OS:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;jobs:
+  deploy:
+    runs-on: ubuntu-latest 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we need to build the DocFX site, this is done locally running the following command:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docfx docfx.json&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This will build the site the chosen path from the above &lt;code&gt;.json&lt;/code&gt; file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-json"&gt;"dest": "_site",
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Luckily this GitHub Action has already been built:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/marketplace/actions/docfx-action"&gt;docfx-action&lt;/a&gt;&lt;/strong&gt; from &lt;a href="https://github.com/nikeee"&gt;nikeee&lt;/a&gt; Niklas Mollenhauer&lt;/p&gt;
+&lt;p&gt;Just add the following &lt;strong&gt;step&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;      - name: docfx-action
+        uses: nikeee/docfx-action@v0.1.0
+        with:
+          args: docfx.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If your &lt;code&gt;docfx.json&lt;/code&gt; is in another location update the &lt;code&gt;args&lt;/code&gt; input accordingly.&lt;/p&gt;
+&lt;p&gt;One thing to note is we can't use &lt;code&gt;windows-latest&lt;/code&gt; as we get an error with the "docfx-action".&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;##[error]Container action is only supported on Linux&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now that the site is built we want to publish it to GitHub Pages:&lt;/p&gt;
+&lt;p&gt;Again there's an Action already built for this:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/peaceiris/actions-gh-pages"&gt;GitHub Actions for GitHub Pages&lt;/a&gt;&lt;/strong&gt; from &lt;a href="https://github.com/peaceiris"&gt;peaceiris&lt;/a&gt; Shohei Ueda&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        with:
+          github_token: ${ secrets.GITHUB_TOKEN }
+          publish_dir: ./_site
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note: use double "{" and "}" around the &lt;code&gt;github_token&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you have changed your &lt;code&gt;dest&lt;/code&gt; to another folder name update the &lt;code&gt;publish_dir&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;All GHA have a &lt;code&gt;GITHUB_TOKEN&lt;/code&gt; automatically generated when they run so you can use this in your action.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-github_token"&gt;github_token&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;p&gt;Push this &lt;code&gt;yml&lt;/code&gt; file to your repo and push to your trigger branch, then click on the "Actions" tab and see it run.&lt;/p&gt;
+&lt;p&gt;This now means you don't have to build it locally, then push to the &lt;code&gt;gh-pages&lt;/code&gt; branch manually to deploy it online.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="code"&gt;Code&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;name: github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: docfx-action
+        uses: nikeee/docfx-action@v0.1.0
+        with:
+          args: docfx.json
+      
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        with:
+          github_token: ${ secrets.GITHUB_TOKEN }
+          publish_dir: ./_site
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note: use double "{" and "}" around the &lt;code&gt;github_token&lt;/code&gt;.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Poor Mans TSql Formatter</title>
+			<link>https://alexhedley.github.io/blog/posts/poormanstsqlformatter</link>
+			<description>&lt;p&gt;&lt;a href="http://architectshack.com/PoorMansTSqlFormatter.ashx"&gt;PoorMansTSqlFormatter&lt;/a&gt; is&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<guid>https://alexhedley.github.io/blog/posts/poormanstsqlformatter</guid>
+			<pubDate>Sun, 17 May 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;&lt;a href="http://architectshack.com/PoorMansTSqlFormatter.ashx"&gt;PoorMansTSqlFormatter&lt;/a&gt; is&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a free and open-source SQL (T-SQL) formatter&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It's a fantasic tool with plugins for SSMS, VS Code, there's a website &lt;a href="http://poorsql.com/"&gt;Poor SQL&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to use this in a .NET app you can pull the &lt;a href="https://www.nuget.org/packages/PoorMansTSQLFormatter/"&gt;NuGet&lt;/a&gt; which is currently at version 1.4.3.1, but the current &lt;a href="https://github.com/TaoK/PoorMansTSqlFormatter/releases"&gt;release&lt;/a&gt; is 1.6.13.&lt;/p&gt;
+&lt;p&gt;To try it out I downloaded the WinForms App to see what options there are.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;WinForms App (simple exe): SqlFormatterWinforms.1.6.13.zip (1644 downloads this version, about 32000 for previous versions)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I then decompiled the &lt;em&gt;SqlFormatterWinforms.exe&lt;/em&gt; to see how to setup the formatter.&lt;/p&gt;
+&lt;p&gt;Another way would be to look at the &lt;a href="https://github.com/TaoK/PoorMansTSqlFormatter/tree/master/PoorMansTSqlFormatterDemo"&gt;Demo&lt;/a&gt; code on GitHub.&lt;/p&gt;
+&lt;p&gt;Then look into the &lt;a href="https://github.com/TaoK/PoorMansTSqlFormatter/blob/master/PoorMansTSqlFormatterDemo/MainForm.cs"&gt;MainForm.cs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you wish to run the app you will need to build the &lt;a href="https://github.com/TaoK/PoorMansTSqlFormatter/tree/master/PoorMansTSqlFormatterLib"&gt;Lib&lt;/a&gt; so the app can use the DLL.&lt;/p&gt;
+&lt;p&gt;![PoorMansTSqlFormatter]({{ site.baseurl }}/images/pmtf/pmtf_1.png &amp;quot;PoorMansTSqlFormatter Demo App&amp;quot;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;DoFormatting()&lt;/code&gt; is the method which converts your SQL string into the formatted code so this contains a number of items we need to get the basics working.&lt;/p&gt;
+&lt;p&gt;I created a Console App, added the NuGet and started my journey.&lt;/p&gt;
+&lt;p&gt;First we need a &lt;code&gt;tokenizer&lt;/code&gt;, a &lt;code&gt;parser&lt;/code&gt; and &lt;code&gt;formatter&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;private static ISqlTokenizer _tokenizer;
+private static ISqlTokenParser _parser;
+private static ISqlTreeFormatter _formatter;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can set the defaults for these&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;_tokenizer = (ISqlTokenizer)new TSqlStandardTokenizer();
+_parser = (ISqlTokenParser)new TSqlStandardParser();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The formatter needs a few options.
+Unfortunately &lt;code&gt;TSqlStandardFormatterOptions&lt;/code&gt; isn't in this version of the NuGet.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;string indentString = &amp;quot;\t&amp;quot;;
+int spacesPerTab = 4;
+int maxLineWidth = 999;
+bool expandCommaLists = true;
+bool trailingCommas = false;
+bool spaceAfterExpandedComma = false;
+bool expandBooleanExpressions = true;
+bool expandCaseStatements = true;
+bool expandBetweenConditions = true;
+bool breakJoinOnSections = false;
+bool uppercaseKeywords = true;
+bool htmlColoring = true;
+bool keywordStandardization = false;
+
+ISqlTreeFormatter underlyingFormatter = new TSqlStandardFormatter(indentString, spacesPerTab, maxLineWidth, expandCommaLists, trailingCommas, spaceAfterExpandedComma, expandBooleanExpressions, expandCaseStatements, expandBetweenConditions, breakJoinOnSections, uppercaseKeywords, htmlColoring, keywordStandardization);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we can create the &lt;code&gt;formatter&lt;/code&gt; using the options above from the &lt;code&gt;underlyingFormatter&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;_formatter = (ISqlTreeFormatter)new HtmlPageWrapper(underlyingFormatter);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next create a sample piece of sql:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sql"&gt;Select * from table
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var sqlString = &amp;quot;Select * from table&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And pass it to the tokenizer:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;ITokenList tokenList = _tokenizer.TokenizeSQL(sqlString);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With a token list available we can parse this sql:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;XmlDocument sql = _parser.ParseSQL(tokenList);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You may notice the &lt;code&gt;Node&lt;/code&gt; type in the code.&lt;/p&gt;
+&lt;p&gt;Now that the SQL is in an &lt;code&gt;XMLDocument&lt;/code&gt; we can format it:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;string formattedSql = _formatter.FormatSQLTree(sql);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will produce a HTML doc which you can display in a browser control.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;!DOCTYPE html &amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;
+.SQLCode {
+	font-size: 13px;
+	font-weight: bold;
+	font-family: monospace;;
+	white-space: pre;
+    -o-tab-size: 4;
+    -moz-tab-size: 4;
+    -webkit-tab-size: 4;
+}
+.SQLComment {
+	color: #00AA00;
+}
+.SQLString {
+	color: #AA0000;
+}
+.SQLFunction {
+	color: #AA00AA;
+}
+.SQLKeyword {
+	color: #0000AA;
+}
+.SQLOperator {
+	color: #777777;
+}
+.SQLErrorHighlight {
+	background-color: #FFFF00;
+}
+
+
+&amp;lt;/style&amp;gt;
+&amp;lt;pre class=&amp;quot;SQLCode&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;SQLKeyword&amp;quot;&amp;gt;SELECT&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;SQLOperator&amp;quot;&amp;gt;*&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;SQLKeyword&amp;quot;&amp;gt;FROM&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;SQLKeyword&amp;quot;&amp;gt;TABLE&amp;lt;/span&amp;gt;
+&amp;lt;/pre&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As this is in &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; tags the newline characters matter for formatting.&lt;/p&gt;
+&lt;p&gt;Ouput:&lt;/p&gt;
+&lt;!DOCTYPE html &gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;style type="text/css"&gt;
+    .SQLCode {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: monospace;;
+        white-space: pre;
+        -o-tab-size: 4;
+        -moz-tab-size: 4;
+        -webkit-tab-size: 4;
+    }
+    .SQLComment {
+        color: #00AA00;
+    }
+    .SQLString {
+        color: #AA0000;
+    }
+    .SQLFunction {
+        color: #AA00AA;
+    }
+    .SQLKeyword {
+        color: #0000AA;
+    }
+    .SQLOperator {
+        color: #777777;
+    }
+    .SQLErrorHighlight {
+        background-color: #FFFF00;
+    }
+&lt;/style&gt;
+&lt;pre class="SQLCode"&gt;&lt;span class="SQLKeyword"&gt;SELECT&lt;/span&gt; &lt;span class="SQLOperator"&gt;*&lt;/span&gt;
+&lt;span class="SQLKeyword"&gt;FROM&lt;/span&gt; &lt;span class="SQLKeyword"&gt;TABLE&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
