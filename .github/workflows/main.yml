@@ -3,7 +3,7 @@ name: 🚀 Deploy to GitHub Pages
 on:
   workflow_dispatch:
   push:
-    branches: [ main, dev ]
+    branches: [ main ]
     paths: src/**
   pull_request:
     branches: [ main ]
