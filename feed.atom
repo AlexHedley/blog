@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://alexhedley.github.io/blog</id>
-	<title />
+	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-06-16T21:27:24Z</updated>
+	<updated>2023-06-16T22:25:36Z</updated>
+	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/terminal-build-output</id>
 		<title>Terminal Build Output</title>

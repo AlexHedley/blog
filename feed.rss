@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
-		<title />
+		<title>Alex Hedley</title>
 		<link>https://alexhedley.github.io/blog</link>
-		<description />
+		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Fri, 16 Jun 2023 21:27:24 GMT</pubDate>
-		<lastBuildDate>Fri, 16 Jun 2023 21:27:24 GMT</lastBuildDate>
+		<pubDate>Fri, 16 Jun 2023 22:25:36 GMT</pubDate>
+		<lastBuildDate>Fri, 16 Jun 2023 22:25:36 GMT</lastBuildDate>
 		<item>
 			<title>Terminal Build Output</title>
 			<link>https://alexhedley.github.io/blog/posts/terminal-build-output</link>
