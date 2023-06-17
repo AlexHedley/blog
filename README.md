@@ -12,6 +12,16 @@
 
 - [docs](docs/README.md)
 
+## Run
+
+`cd src`
+
+`dotnet run`
+
+`dotnet run -- preview`
+
+- http://localhost:5080
+
 ---
 
 Started in 2010 as a Classic ASP site, taken from my [Wordpress](https://www.wordpress.com/), used [jekyll-now](https://github.com/barryclark/jekyll-now) and then and migrated to [Statiq.Web](https://www.statiq.dev/web).
