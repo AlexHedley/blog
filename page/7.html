@@ -19,6 +19,7 @@
   <meta name="msapplication-starturl" content='/blog/' />
 
   <meta property="og:title" content='Alex Hedley' />
+    <meta property="og:image" content='/blog/images/banner.png' />
   <meta property="og:type" content="website" />
   <meta property="og:url" content='https://alexhedley.github.io/blog/page/7' />
 
@@ -72,7 +73,7 @@
 
 
   <!-- Page Header -->
-  <header class="masthead no-image">
+  <header class="masthead" style="background-image: url(&quot;/blog/images/banner.png&quot;)">
   <div class="container position-relative">
     <div class="row">
       <div class="col-md-12">
@@ -100,6 +101,13 @@
 
 
 <div class="post-preview">
+  <h2 class="post-title"><a href="/blog/posts/gha-vse">Publish a Visual Studio Extension from GitHub Actions</a></h2>
+  <p class="post-meta">Published on Saturday, 11 July 2020</p>
+<p>In a previous <a href="/post/VisualStudioExtension">post</a> I discussed starting to create a Visual Studio Extension for <a href="/post/BuildLight">BuildLight</a>.</p>    <p class="small"><a href="/blog/posts/gha-vse">Read more...</a></p>
+</div>
+
+
+<div class="post-preview">
   <h2 class="post-title"><a href="/blog/posts/xamarincommunitytoolkit">Xamarin CommunityToolkit</a></h2>
   <p class="post-meta">Published on Friday, 10 July 2020</p>
 <p>The <a href="https://github.com/xamarin/XamarinCommunityToolkit">Xamarin CommunityToolkit</a> is a reboot of an old set of helpful additions to Xamarin for example</p>    <p class="small"><a href="/blog/posts/xamarincommunitytoolkit">Read more...</a></p>
@@ -110,13 +118,6 @@
   <h2 class="post-title"><a href="/blog/posts/visualstudioextension">Visual Studio Extensions</a></h2>
   <p class="post-meta">Published on Sunday, 21 June 2020</p>
 <p>Visual Studio Extensions are a fantastic way to add extra functionality to the <a href="https://visualstudio.microsoft.com/">IDE</a>.</p>    <p class="small"><a href="/blog/posts/visualstudioextension">Read more...</a></p>
-</div>
-
-
-<div class="post-preview">
-  <h2 class="post-title"><a href="/blog/posts/twitch">Twitch</a></h2>
-  <p class="post-meta">Published on Saturday, 20 June 2020</p>
-<p>I've finally jumped on the Twitch Streaming bandwagon.</p>    <p class="small"><a href="/blog/posts/twitch">Read more...</a></p>
 </div>
 
   <div>
@@ -200,6 +201,9 @@
       gtag('js', new Date());
       gtag('config', 'G-CQV2ZWNX32');
     </script>
+
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js" integrity="sha384-nVmn6yKHyUktDHdQfBgpn1YPgEu8gDXTYI5qccfkF1j6oxBHjKEafySIuNs3UhEW" crossorigin="anonymous"></script>
   
 
 </body>

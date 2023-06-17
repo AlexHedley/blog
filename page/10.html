@@ -19,6 +19,7 @@
   <meta name="msapplication-starturl" content='/blog/' />
 
   <meta property="og:title" content='Alex Hedley' />
+    <meta property="og:image" content='/blog/images/banner.png' />
   <meta property="og:type" content="website" />
   <meta property="og:url" content='https://alexhedley.github.io/blog/page/10' />
 
@@ -72,7 +73,7 @@
 
 
   <!-- Page Header -->
-  <header class="masthead no-image">
+  <header class="masthead" style="background-image: url(&quot;/blog/images/banner.png&quot;)">
   <div class="container position-relative">
     <div class="row">
       <div class="col-md-12">
@@ -100,6 +101,13 @@
 
 
 <div class="post-preview">
+  <h2 class="post-title"><a href="/blog/posts/private-nuget-feed">Private NuGet Feed</a></h2>
+  <p class="post-meta">Published on Saturday, 14 March 2020</p>
+<p>As a .NET developer you probably use <a href="https://www.nuget.org/">NuGet</a> everyday, or something from it.</p>    <p class="small"><a href="/blog/posts/private-nuget-feed">Read more...</a></p>
+</div>
+
+
+<div class="post-preview">
   <h2 class="post-title"><a href="/blog/posts/mfractor-documentation">MFractor Documentation</a></h2>
   <p class="post-meta">Published on Thursday, 12 March 2020</p>
 <p>Whilst in the #mfractor channel of the <a href="https://xamarinchat.slack.com/">xamarinchat</a> <a href="https://slack.com/">slack</a> I offered some help to add/update the documentation for MFractor.</p>    <p class="small"><a href="/blog/posts/mfractor-documentation">Read more...</a></p>
@@ -110,13 +118,6 @@
   <h2 class="post-title"><a href="/blog/posts/blog">Blog</a></h2>
   <p class="post-meta">Published on Monday, 2 March 2020</p>
 <p>When I knew I wanted to blog again I had to decide where, and how, I've rolled my own, I've used Wordpress but now as I love using markdown, and GitHub has the ability to host webpages it made sense to use those.</p>    <p class="small"><a href="/blog/posts/blog">Read more...</a></p>
-</div>
-
-
-<div class="post-preview">
-  <h2 class="post-title"><a href="/blog/posts/welcome2">Welcome</a></h2>
-  <p class="post-meta">Published on Sunday, 1 March 2020</p>
-<p>Welcome to my new Blog!</p>    <p class="small"><a href="/blog/posts/welcome2">Read more...</a></p>
 </div>
 
   <div>
@@ -200,6 +201,9 @@
       gtag('js', new Date());
       gtag('config', 'G-CQV2ZWNX32');
     </script>
+
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js" integrity="sha384-nVmn6yKHyUktDHdQfBgpn1YPgEu8gDXTYI5qccfkF1j6oxBHjKEafySIuNs3UhEW" crossorigin="anonymous"></script>
   
 
 </body>

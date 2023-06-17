@@ -5,13 +5,14 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Fri, 16 Jun 2023 22:25:36 GMT</pubDate>
-		<lastBuildDate>Fri, 16 Jun 2023 22:25:36 GMT</lastBuildDate>
+		<pubDate>Sat, 17 Jun 2023 11:55:46 GMT</pubDate>
+		<lastBuildDate>Sat, 17 Jun 2023 11:55:46 GMT</lastBuildDate>
 		<item>
 			<title>Terminal Build Output</title>
 			<link>https://alexhedley.github.io/blog/posts/terminal-build-output</link>
 			<description>&lt;p&gt;&lt;code&gt;dotnet build /tl&lt;/code&gt;&lt;/p&gt;</description>
 			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/terminal-build-output</guid>
 			<pubDate>Fri, 09 Jun 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;&lt;code&gt;dotnet build /tl&lt;/code&gt;&lt;/p&gt;
@@ -36,6 +37,7 @@ From Steven Giesel
 			<title>giscus</title>
 			<link>https://alexhedley.github.io/blog/posts/giscus</link>
 			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/giscus</guid>
 			<pubDate>Wed, 31 May 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;What's the best way to allow commenting on your blog? What better way than to have it contained in the system the blog lives in, &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt;. I've seen other solutions in the past which used &lt;a href="https://github.com/features/issues"&gt;GitHub Issues&lt;/a&gt; but this doesn't seem the right place for it.&lt;/p&gt;
@@ -74,9 +76,55 @@ From Steven Giesel
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>Mermaid</title>
+			<link>https://alexhedley.github.io/blog/posts/mermaid</link>
+			<description>How to add mermaid diagrams in statiq</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/mermaid</guid>
+			<pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Add a file &lt;code&gt;_scripts.cshtml&lt;/code&gt;&lt;/p&gt;
+&lt;?# IncludeCode "./../_scripts.cshtml" /?&gt;
+&lt;div class="mermaid"&gt;flowchart LR
+    subgraph azureprod [Azure fa:fa-cloud]
+        AppProduction(App Service fa:fa-globe) --&gt; api-production[APIM fa:fa-sitemap&amp;lt;br&gt;api-production]
+        AppProduction --&gt; vnetprd[vnet-prd]
+    end
+    subgraph onpremprod [On-premises fa:fa-home]
+        vnetprd ----&gt; SQLProd[SQL Prod fa:fa-server ] --&gt; DBProd[(DBProd)]
+    end
+&lt;/div&gt;
+&lt;h2 id="devlead"&gt;[Devlead]&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead/Devlead.Statiq/blob/main/src/Devlead.Statiq.TestWeb/input/_scripts.cshtml"&gt;scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead/Devlead.Statiq/blob/main/src/Devlead.Statiq.TestWeb/input/posts/Tabs.md"&gt;Tabs.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other"&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.dpvreony.com/articles/mermaid-with-statiq/"&gt;Using Mermaid diagrams with Statiq.&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dpvreony/article-statiq-mermaid"&gt;repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://blog.beckshome.com/2022/09/mermaid-in-statiq"&gt;Mermaid Diagrams in Statiq&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/thbst16/dotnet-statiq-beckshome-blog/blob/main/input/posts/mermaid-in-statiq.md"&gt;code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/ociaw/StatiqMermaid"&gt;StatiqMermaid Repo&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/Ociaw.StatiqMermaid/0.1.0-beta.2"&gt;nuget&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>AWS Cloud Quest Solutions Architect</title>
 			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-solutions-architect</link>
 			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/aws-cloud-quest-solutions-architect</guid>
 			<pubDate>Wed, 10 May 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;!-- # AWS Cloud Quest Solutions Architect --&gt;
@@ -115,6 +163,7 @@ $29.00 / month + VAT&lt;br&gt;
 			<title>Certified in Cybersecurity℠ - CC</title>
 			<link>https://alexhedley.github.io/blog/posts/cc</link>
 			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/cc</guid>
 			<pubDate>Fri, 05 May 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;!-- # Certified in Cybersecurity℠ - CC --&gt;
@@ -164,6 +213,7 @@ $29.00 / month + VAT&lt;br&gt;
 			<title>AWS Certified Cloud Practitioner</title>
 			<link>https://alexhedley.github.io/blog/posts/aws-certified-cloud-practitioner</link>
 			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/aws-certified-cloud-practitioner</guid>
 			<pubDate>Thu, 06 Apr 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;!-- # AWS Certified Cloud Practitioner --&gt;
@@ -261,6 +311,7 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 			<title>AWS Cloud Quest Serverless Developer</title>
 			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-serverless-developer</link>
 			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/aws-cloud-quest-serverless-developer</guid>
 			<pubDate>Wed, 15 Mar 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;!-- # AWS Cloud Quest Serverless Developer --&gt;
@@ -299,6 +350,7 @@ $29.00 / month + VAT&lt;br&gt;
 			<title>Deploy Tech Docs</title>
 			<link>https://alexhedley.github.io/blog/posts/deploy-tech-docs</link>
 			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/deploy-tech-docs</guid>
 			<pubDate>Mon, 30 Jan 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;In this article I'll show how to deploy the GOV.UK &lt;a href="https://github.com/alphagov/tech-docs-template"&gt;Tech Docs Template&lt;/a&gt; to &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
@@ -405,6 +457,7 @@ jobs:
 			<title>AWS Cloud Quest Cloud Practitioner</title>
 			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-cloud-practitioner</link>
 			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/aws-cloud-quest-cloud-practitioner</guid>
 			<pubDate>Wed, 25 Jan 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;!-- # AWS Cloud Quest Cloud Practitioner --&gt;
@@ -442,6 +495,7 @@ jobs:
 			<link>https://alexhedley.github.io/blog/posts/github-contributions</link>
 			<description>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</description>
 			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/github-contributions</guid>
 			<pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;blockquote&gt;
@@ -461,119 +515,6 @@ jobs:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://skyline.github.com/alexhedley/2022"&gt;alexhedley&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://skyline.github.com/alex-hedley/2022"&gt;alex-hedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>GitHub Actions Branches</title>
-			<link>https://alexhedley.github.io/blog/posts/github-actions-branches</link>
-			<description>&lt;p&gt;How to get a list of branches from a current repo.&lt;/p&gt;</description>
-			<author>alex-hedley</author>
-			<guid>https://alexhedley.github.io/blog/posts/github-actions-branches</guid>
-			<pubDate>Fri, 24 Dec 2021 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;How to get a list of branches from a current repo.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://github.com/actions/github-script"&gt;actions/github-script&lt;/a&gt; is a good place to start as it has access to the Repo info.
-To see what you can get run the script and output the complete context:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;      - name: View context attributes
-        uses: actions/github-script&amp;#64;v5
-        with:
-          script: console.log(context)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Be careful though, as when this is ran manually it gets different values to when ran on a schedule.&lt;/p&gt;
-&lt;p&gt;Looking at the &lt;em&gt;Repository&lt;/em&gt; info the &lt;code&gt;branches_url&lt;/code&gt; might be useful:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-json"&gt;Context {
-  payload: {
-    repository: {
-      branches_url: 'https://api.github.com/repos/alex-hedley/[REPONAME]/branches{/branch}',
-    }
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;context.payload.repository.branches_url&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We don't need the &lt;code&gt;{{/branch}}&lt;/code&gt; though. So lets remove that.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-js"&gt;const branches_url = context.payload.repository.branches_url
-const branches_url_new = branches_url.replace(&amp;quot;{/branch}&amp;quot;, &amp;quot;&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;With this &lt;em&gt;url&lt;/em&gt; we can now get the data using the &lt;a href="https://github.com/actions/github-script#download-data-from-a-url"&gt;github.request()&lt;/a&gt; method.
-Map just the names of the branches to an Array.
-And log the data.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-js"&gt;const result = await github.request(branches_url_new)
-const names = result.data.map(branch =&amp;gt; branch.name)
-console.log(names)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-json"&gt;{
-    ...
-    data: [
-        { name: 'dev', commit: [Object], protected: false },
-        { name: 'main', commit: [Object], protected: false }
-    ]
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-json"&gt;[ 'dev', 'main' ]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Depending on the type of event you could&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;on:
-  push:
-    branches:    
-      - '*'         # matches every branch that doesn't contain a '/'
-      - '*/*'       # matches every branch containing a single '/'
-      - '**'        # matches every branch
-      - '!master'   # excludes master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;But this isn't available for &lt;code&gt;workflow_dispatch:&lt;/code&gt; as of yet.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;name: Get Branches
-
-on:
-  workflow_dispatch:
-    
-jobs:
-  print-context:
-    runs-on: ubuntu-latest
-    outputs:
-      branches: ${{ steps.branch-output.outputs.branches }}
-    steps:
-      - name: Branches
-        id: branches-list
-        uses: actions/github-script&amp;#64;v5
-        with:
-          script: |
-            const branches_url = context.payload.repository.branches_url
-            const branches_url_new = branches_url.replace(&amp;quot;{/branch}&amp;quot;, &amp;quot;&amp;quot;)
-            const result = await github.request(branches_url_new)
-            const names = result.data.map(branch =&amp;gt; branch.name)
-            
-            const index = names.indexOf('main');
-            if (index &amp;gt; -1) {
-              names.splice(index, 1);
-            }
-            console.log(names)
-
-            return names
-      
-      - name: Branches
-        id: branch-output
-        run: |
-          BRANCHES='${{ steps.branches-list.outputs.result }}'
-          echo ::set-output name=branches::$BRANCHES
-      
-  my_matrix:
-    runs-on: ubuntu-latest
-    needs:
-      - print-context
-    strategy:
-      matrix:
-        branches: ${{ fromJSON(needs.print-context.outputs.branches) }}
-    steps:
-      - name: Branches
-        run: |
-          echo ${{ matrix.branches }}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://thekevinwang.com/2021/09/19/github-actions-dynamic-matrix/"&gt;Dynamic Matrices in GitHub Actions&lt;/a&gt; by &lt;a href="https://thekevinwang.com/me/"&gt;Kevin Wang&lt;/a&gt; - September 19, 2021&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
