@@ -5,8 +5,164 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Sat, 17 Jun 2023 11:55:46 GMT</pubDate>
-		<lastBuildDate>Sat, 17 Jun 2023 11:55:46 GMT</lastBuildDate>
+		<pubDate>Thu, 22 Jun 2023 08:37:21 GMT</pubDate>
+		<lastBuildDate>Thu, 22 Jun 2023 08:37:21 GMT</lastBuildDate>
+		<item>
+			<title>Migrated Blog</title>
+			<link>https://alexhedley.github.io/blog/posts/migrated-blog</link>
+			<description>The journey to a new blog platform.</description>
+			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/statiq-web.svg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/migrated-blog</guid>
+			<pubDate>Fri, 09 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;A couple of weeks ago I finally decided to migrate my Blog to &lt;a href="https://www.statiq.dev/web"&gt;Statiq Web&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Statiq Web is a powerful static web site generation toolkit suitable for most use cases. It's built on top of &lt;a href="https://www.statiq.dev/framework"&gt;Statiq Framework&lt;/a&gt; so you can always extend or customize it beyond those base capabilities as well.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It's predecessor was &lt;a href="https://wyam.io/"&gt;Wyam&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I wanted to use a .NET tool to create my blog as you know my passion for .NET, so the journey began.&lt;/p&gt;
+&lt;p&gt;My blog(s) have existed in a number of formats. The first one was made in about 2010 using Classic ASP and a &lt;a href="https://www.microsoft.com/en-gb/microsoft-365/access"&gt;Microsoft Access&lt;/a&gt;. I'd been learning this on &lt;a href="https://www.599cd.com/"&gt;599CD&lt;/a&gt; so was putting it into practice. A few years later I started a &lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; Wordpress blog at &lt;a href="https://alexhedley.wordpress.com/"&gt;https://alexhedley.wordpress.com/&lt;/a&gt;. This contained a majority of my iOS and Android journey. I used &lt;a href="https://gist.github.com/alexhedley"&gt;gist&lt;/a&gt; to host a lot of the code as it has support for that. Then I moved over to &lt;a href="https://github.com/barryclark/jekyll-now"&gt;Jekyll Now&lt;/a&gt; as I started hosting on GitHub. As these were already in &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt; it was just a couple of attribute changes and they were ready. Next I tackled my original blog. I'd exported the data from the db as &lt;code&gt;json&lt;/code&gt; and was hosting it as a simple &lt;a href="https://angularjs.org/"&gt;AngularJS&lt;/a&gt; app just so it wasn't lost, hadn't really put any effort into styling and as there were only a few posts I manually converted the posts needed to md. Next was the fun one! &lt;img src="https://alexhedley.github.io/images/wordpress.png" alt="Wordpress" title="Wordpress"&gt; Wordpress. I exported my existing data following the steps on &lt;a href="https://wordpress.com/support/export/"&gt;Export Your WordPress.com Site&lt;/a&gt;. I then needed a way to convert this output to Markdown. I tried this a few years back and couldn't get it working but when I looked again I found: &lt;a href="https://github.com/lonekorean/wordpress-export-to-markdown"&gt;wordpress-export-to-markdown&lt;/a&gt;. It has a nice little guided tour of steps and then I got my output. The images were also included so this meant just moving them over to the new repo. Some of the attributes were different so an update to those and I was good to go.&lt;/p&gt;
+&lt;p&gt;I've got all the data now I need to setup the &lt;strong&gt;Statiq.Web&lt;/strong&gt; project. There's a &lt;a href="https://www.statiq.dev/web"&gt;Quick Start&lt;/a&gt; on the main page.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dotnet new console --name MySite&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd MySite&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dotnet add package Statiq.Web --version 1.0.0-beta.57&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Check for the latest version: &lt;a href="https://www.nuget.org/packages/Statiq.Web/1.0.0-beta.57"&gt;nuget - Statiq.Web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Update &lt;a href="https://alexhedley.github.io/src/Program.cs"&gt;Program.cs&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;using System.Threading.Tasks;
+using Statiq.App;
+using Statiq.Web;
+
+return await Bootstrapper
+  .Factory
+  .CreateWeb(args)
+  .RunAsync();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;mkdir input&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;touch index.md&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-md"&gt;Title: My First Statiq page
+---
+# Hello World!
+
+Hello from my first Statiq page.
+
+Testing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;dotnet run&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dotnet run -- preview&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;http://localhost:5080&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Theme&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd src&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git submodule add https://github.com/statiqdev/CleanBlog.git theme&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you want to make any changes to the theme you might want to copy this locally.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Settings&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;appsettings.json&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Update the &lt;code&gt;"LinkRoot": "/blog",&lt;/code&gt; if you're not hosting on your &lt;em&gt;github.io&lt;/em&gt; root.&lt;/p&gt;
+&lt;p&gt;Next step was adding extra functionality. I ❤ &lt;a href="https://mermaid.js.org/"&gt;Mermaid&lt;/a&gt; and wanted a way to support this. Now came the issue, I found another blog generating it from a separate md file and converting it to a picture, this was all done as a build step. As it's a static site this really should be the way I do it, but then when you link it to your page you have to know the filename before it's generated and it won't preview before hand. I instead opted for adding the js and doing it dynamically, see &lt;a href="https://alexhedley.github.io/blog/mermaid"&gt;Mermaid&lt;/a&gt; for more info on how.&lt;/p&gt;
+&lt;p&gt;In other SSG I've used a tab group to display information, for example in &lt;a href="https://www.mfractor.com/"&gt;MFractor&lt;/a&gt;, see &lt;a href="https://docs.mfractor.com/android/tools/open-android-manifest/"&gt;Open Android Manifest&lt;/a&gt; (&lt;a href="https://github.com/mfractor/mfractor.github.io/blob/docs/docs/android/tools/open-android-manifest.md"&gt;Source&lt;/a&gt;). It uses the &lt;a href="https://squidfunk.github.io/mkdocs-material/reference/content-tabs/"&gt;Content tabs&lt;/a&gt; feature of &lt;a href="https://squidfunk.github.io/mkdocs-material/"&gt;Material for MkDocs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To use this just add the &lt;a href="https://www.nuget.org/packages/Devlead.Statiq"&gt;nuget&lt;/a&gt; then in the page you wish to add the &lt;code&gt;tabs&lt;/code&gt; syntax.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;?# TabGroup ?&amp;gt;
+&amp;lt;?*
+tabs:
+  - name: Tab One
+    content: |
+    ...
+  - name: Tab Two
+    content: |
+    ...
+?&amp;gt;
+&amp;lt;?#/ TabGroup ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I prefer this over others as it's really easy to see what is happening.
+&lt;a href="https://dotnet.github.io/docfx/"&gt;docfx&lt;/a&gt; uses a &lt;code&gt;md&lt;/code&gt; syntax which keeps it consistent but then previewers have a hard time with this.&lt;/p&gt;
+&lt;p&gt;Another really handy plugin is &lt;code&gt;IncludeCode&lt;/code&gt;. This could be used instead of hosting as a &lt;a href="https://gist.github.com/alexhedley"&gt;gist&lt;/a&gt; or including large amounts of code in the post. You could also reference code from a single place and only have to update it once.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;?# IncludeCode "./../_head.cshtml" /?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;src/input/_head.cshtml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I was getting decent analytics on my WP site and prob had it on others so I've added that here too. Just a few lines of code in your &lt;code&gt;src/input/_scripts.cshtml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Another thing I wanted to do was keep the commit history of when I wrote the posts, so I did this manually with:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;GIT_COMMITTER_DATE="Mon 20 Aug 2018 20:19:19 BST" git commit --amend --no-edit --date "Mon 20 Aug 2018 20:19:19 BST"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Finally as usual I needed a way to build and deploy so I used GitHub Actions and GitHub Pages, there are links below and you can see the source of this blog for exact steps.&lt;/p&gt;
+&lt;p&gt;There are other updates I'm planning on adding like Search, a Header image etc, so check those out in the future.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="mermaid"&gt;Mermaid&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://alexhedley.github.io/blog/mermaid"&gt;Mermaid&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.dpvreony.com/articles/mermaid-with-statiq/"&gt;Using Mermaid diagrams with Statiq.&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dpvreony/article-statiq-mermaid"&gt;repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://blog.beckshome.com/2022/09/mermaid-in-statiq"&gt;Mermaid Diagrams in Statiq&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/thbst16/dotnet-statiq-beckshome-blog/blob/main/input/posts/mermaid-in-statiq.md"&gt;code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/ociaw/StatiqMermaid"&gt;StatiqMermaid Repo&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/Ociaw.StatiqMermaid/0.1.0-beta.2"&gt;nuget&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="plugins"&gt;Plugins&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.nuget.org/packages/Devlead.Statiq"&gt;nuget - Devlead.Statiq&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.devlead.se/posts/2021/2021-04-09-devlead-statiq-part1-tabs"&gt;Devlead.Statiq - Part 1 - Tabs&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.devlead.se/posts/2021/2021-04-10-devlead-statiq-part2-theme-from-uri"&gt;Devlead.Statiq - Part 2 - Theme from external web resource&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.devlead.se/posts/2021/2021-04-11-devlead-statiq-part3-includecode"&gt;Devlead.Statiq - Part 3 - IncludeCode 🤺&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.devlead.se/"&gt;devlead&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead/devlead.se"&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.devlead.se/posts/2021/2021-04-09-devlead-statiq-part1-tabs"&gt;Devlead.Statiq - Part 1 - Tabs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.techwatching.dev/"&gt;Alexandre Nédélec&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/TechWatching/techwatching.dev"&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://beckshome.com/"&gt;Thomas Beck&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/thbst16/dotnet-statiq-beckshome-blog"&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://beckshome.com/2022/09/beckshome-on-statiq"&gt;Beckshome on Statiq&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://thefreezeteam.com/"&gt;The Freeze Team&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/TheFreezeTeam/TheFreezeTeamBlog/tree/master/Source/TheFreezeTeamBlog"&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="config"&gt;Config&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.statiq.dev/guide/configuration/settings"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.statiq.dev/guide/configuration/web-settings"&gt;Web Settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="deploy"&gt;Deploy&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.statiq.dev/guide/deployment/github-pages"&gt;GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forloop.co.uk/blog/deploying-statiq-web-to-github-pages"&gt;Deploying Statiq Web to GitHub Pages&lt;/a&gt; 15 September 2022 by Russ Cam&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thefreezeteam.com/posts/steven-t-cramer/2022/09/23/statiq-github-pages"&gt;Build and deploy a Statiq site to Github Pages in 5 min&lt;/a&gt; FRIDAY, 23 SEPTEMBER 2022 Steven T. Cramer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="legacy"&gt;Legacy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/blog_legacy"&gt;https://github.com/AlexHedley/blog_legacy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/wordpress"&gt;https://github.com/AlexHedley/wordpress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/blog_2020"&gt;https://github.com/AlexHedley/blog_2020&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Terminal Build Output</title>
 			<link>https://alexhedley.github.io/blog/posts/terminal-build-output</link>
@@ -486,35 +642,6 @@ jobs:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://pages.awscloud.com/global_traincert_twitch-cloud-quest-CP.html"&gt;AWS Cloud Quest: Cloud Practitioner&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>GitHub Contributions Chart Generator</title>
-			<link>https://alexhedley.github.io/blog/posts/github-contributions</link>
-			<description>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/github-contributions</guid>
-			<pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;blockquote&gt;
-&lt;p&gt;All your contributions in one image!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github-contributions.vercel.app/"&gt;GitHub Contributions Chart Generator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/contributions-alexhedley.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
-&lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/contributions-alex-hedley.png" alt="alex-hedley" title="Contributions alex-hedley"&gt;&lt;/p&gt;
-&lt;h2 id="skyline"&gt;Skyline&lt;/h2&gt;
-&lt;p&gt;Linked with &lt;a href="https://skyline.github.com/"&gt;skyline&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="section"&gt;2022&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://skyline.github.com/alexhedley/2022"&gt;alexhedley&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://skyline.github.com/alex-hedley/2022"&gt;alex-hedley&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
