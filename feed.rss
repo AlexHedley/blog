@@ -5,8 +5,27 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Thu, 22 Jun 2023 08:37:21 GMT</pubDate>
-		<lastBuildDate>Thu, 22 Jun 2023 08:37:21 GMT</lastBuildDate>
+		<pubDate>Thu, 22 Jun 2023 09:05:07 GMT</pubDate>
+		<lastBuildDate>Thu, 22 Jun 2023 09:05:07 GMT</lastBuildDate>
+		<item>
+			<title>Blog Banner</title>
+			<link>https://alexhedley.github.io/blog/posts/blog-banner</link>
+			<description>Adding a custom banner image to the blog.</description>
+			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/blog-banner</guid>
+			<pubDate>Sat, 17 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Create a new banner image.&lt;/p&gt;
+&lt;p&gt;Add a new property &lt;code&gt;"Image": "images/banner.png",&lt;/code&gt; to the &lt;code&gt;appsettings.json&lt;/code&gt;&lt;/p&gt;
+&lt;!--?# IncludeCode "./../../appsettings.json" /?--&gt;
+&lt;p&gt;The publish.&lt;/p&gt;
+&lt;p&gt;I took the banner from my website: &lt;a href="https://www.alexhedley.com/"&gt;https://www.alexhedley.com/&lt;/a&gt;, might need to create a new one to handle positioning of the text better, but it's not the default anymore.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blog_banner.png" alt="Original Blog Banner" title="Original Blog Banner"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blog_banner_new.png" alt="Updated Blog Banner" title="Updated Blog Banner"&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Migrated Blog</title>
 			<link>https://alexhedley.github.io/blog/posts/migrated-blog</link>
@@ -606,43 +625,6 @@ jobs:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I found an &lt;a href="https://github.com/yurikoval/middleman-gh-pages-action/issues/3"&gt;issue&lt;/a&gt; with the GHA which was referencing &lt;code&gt;master&lt;/code&gt; not &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>AWS Cloud Quest Cloud Practitioner</title>
-			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-cloud-practitioner</link>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/aws-cloud-quest-cloud-practitioner</guid>
-			<pubDate>Wed, 25 Jan 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # AWS Cloud Quest Cloud Practitioner --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/logo_wide_practitioner.png" alt="AWS Cloud Quest Cloud Practitioner" title="AWS Cloud Quest Cloud Practitioner"&gt;&lt;/p&gt;
-&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Cloud Practitioner&lt;/strong&gt; training 🎉!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-cloud-practitioner.png" alt="AWS Cloud Quest Cloud Practitioner Badge" title="AWS Cloud Quest Cloud Practitioner Badge"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/badges/8056f265-da5b-4518-9c7c-9768dc379721/public_url"&gt;Credly Badge&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This is a free course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;How does it work?&lt;/p&gt;
-&lt;p&gt;You will solve problems throughout the virtual Cloud Quest city by completing learning exercises like labs, quizzes, and puzzles.&lt;/p&gt;
-&lt;p&gt;Through hands-on learning in a live AWS environment, you will learn and apply cloud concepts to real business problems while earning rewards and transforming the city. Ready to begin? Enroll to start your quest.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/11458/aws-cloud-quest-cloud-practitioner"&gt;Skill Builder Course&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://pages.awscloud.com/global_traincert_twitch-cloud-quest-CP.html"&gt;AWS Cloud Quest: Cloud Practitioner&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
