@@ -4,9 +4,49 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-06-22T09:05:07Z</updated>
+	<updated>2023-06-22T12:31:45Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest-data-analytics</id>
+		<title>AWS Cloud Quest Data Analytics</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/aws-cloud-quest-data-analytics" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-06-21T00:00:00Z</updated>
+		<content>&lt;!-- # AWS Cloud Quest Data Analytics --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/cloud-quest.png" alt="AWS Cloud Quest Cloud Practitioner" title="AWS Cloud Quest"&gt;&lt;/p&gt;
+&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Data Analytics&lt;/strong&gt; training 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-data-analytics.png" alt="AWS Cloud Quest Data Analytics Badge" title="AWS Cloud Quest Data Analytics Badge"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/ab563fd2-39db-4490-9629-5b01728a8a70/public_url"&gt;Credly Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
+$29.00 / month + VAT&lt;br&gt;
+&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Work with scalable data lakes, data warehousing, big data analytics, and more in this role focused on modern data architecture and AWS analytics services.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/blog-banner</id>
 		<title>Blog Banner</title>
@@ -528,114 +568,6 @@ $29.00 / month + VAT&lt;br&gt;
 &lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/deploy-tech-docs</id>
-		<title>Deploy Tech Docs</title>
-		<author>
-			<name>alex-hedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/deploy-tech-docs" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-01-30T00:00:00Z</updated>
-		<content>&lt;p&gt;In this article I'll show how to deploy the GOV.UK &lt;a href="https://github.com/alphagov/tech-docs-template"&gt;Tech Docs Template&lt;/a&gt; to &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The Tech Docs Template is a &lt;a href="https://middlemanapp.com/advanced/project_templates/"&gt;Middleman template&lt;/a&gt; that you can use to build technical documentation using a GOV.UK style.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;To learn more about the template you can view the &lt;a href="https://tdt-documentation.london.cloudapps.digital/"&gt;Documentation Site&lt;/a&gt; (&lt;a href="https://github.com/alphagov/tdt-documentation"&gt;Code&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;There's a section in the docs for &lt;a href="https://tdt-documentation.london.cloudapps.digital/publish_project/deploy/#github-pages"&gt;GitHub Pages&lt;/a&gt; which mentions how MoJ achieve this, see &lt;a href="https://github.com/ministryofjustice/cloud-platform-user-guide/blob/main/.github/workflows/publish.yml"&gt;publish.yml&lt;/a&gt; from their &lt;strong&gt;Cloud Platform User Guide&lt;/strong&gt;, there is also another example &lt;a href="https://github.com/ministryofjustice/hmpps-tech-docs/blob/main/.github/workflows/publish.yml"&gt;publish.yml&lt;/a&gt; from &lt;strong&gt;hmpps-tech-docs&lt;/strong&gt; which uses some scripts (&lt;a href="https://github.com/ministryofjustice/hmpps-tech-docs/tree/main/bin"&gt;bin&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;As an alternative I created my own &lt;a href="https://docs.github.com/en/actions/using-workflows"&gt;GitHub Action Workflow&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="config"&gt;Config&lt;/h2&gt;
-&lt;p&gt;Firstly you need to add some config to your existing project. As GitHub Pages deploys to the repo name links won't work, i.e. &lt;code&gt;username.github.io/projectname&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Update the &lt;code&gt;config.rb&lt;/code&gt; file with the below settings.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-ruby"&gt;# https://github.com/edgecase/middleman-gh-pages#project-page-path-issues
-
-# Project Page Path Issues
-# Since project pages deploy to a subdirectory, assets and page paths are relative to the organization or user that owns the repo. If you're treating the project pages as a standalone site, you can tell Middleman to generate relative paths for assets and links with these settings in the build configuration in config.rb
-# NOTE This only affects sites being accessed at the username.github.io/projectname URL, not when accessed at a custom CNAME.
-
-activate :relative_assets
-set :relative_links, true
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Thanks to the &lt;a href="https://github.com/edgecase/middleman-gh-pages#project-page-path-issues"&gt;Middleman Github Pages&lt;/a&gt; project for this.&lt;/p&gt;
-&lt;p&gt;You can also add a &lt;code&gt;CNAME&lt;/code&gt; file with your url &lt;code&gt;https://[USERNAME].github.io/[REPO_NAME]&lt;/code&gt;. This will be copied by the workflow later.&lt;/p&gt;
-&lt;h2 id="workflow"&gt;Workflow&lt;/h2&gt;
-&lt;p&gt;The WF only runs when there has been a change in the &lt;code&gt;source/&lt;/code&gt; folder. You may wish to update this to your own needs. I've also added a &lt;code&gt;workflow_dispatch&lt;/code&gt; trigger so you can run this manually.&lt;/p&gt;
-&lt;p&gt;Next add some &lt;strong&gt;write&lt;/strong&gt; permissions for &lt;code&gt;contents&lt;/code&gt; and &lt;code&gt;pages&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Now for the main &lt;code&gt;job&lt;/code&gt; which is built up of a number of &lt;code&gt;steps&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;First you'll want to &lt;strong&gt;&lt;a href="https://github.com/actions/checkout"&gt;checkout&lt;/a&gt;&lt;/strong&gt; (&lt;code&gt;actions/checkout&amp;#64;v2&lt;/code&gt;) your code.&lt;/p&gt;
-&lt;p&gt;Next as this is a &lt;a href="https://www.ruby-lang.org/en/"&gt;Ruby&lt;/a&gt; project &lt;strong&gt;&lt;a href="https://github.com/ruby/setup-ruby"&gt;Setup&lt;/a&gt;&lt;/strong&gt; (&lt;code&gt;ruby/setup-ruby&amp;#64;v1&lt;/code&gt;) and choose the correct version.&lt;/p&gt;
-&lt;p&gt;Next install your bundle. This can just be a simple &lt;code&gt;run&lt;/code&gt; script. You can also check that &lt;code&gt;middleman&lt;/code&gt; is available.&lt;/p&gt;
-&lt;p&gt;Next build your website using &lt;code&gt;bundle exec middleman build&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Once this is built you can optionally copy over a &lt;code&gt;CNAME&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Next deploy your project to GitHub Pages using another action &lt;a href="https://github.com/peaceiris/actions-gh-pages"&gt;peaceiris/actions-gh-pages&amp;#64;v3.9.2&lt;/a&gt;.
-If you are outputting your build to a different folder make sure to update this &lt;code&gt;publish_dir: build&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Finally in your Repo settings configure GHP.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.github.com/en/pages/quickstart"&gt;Quickstart for GitHub Pages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Yaml file for reference:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;name: Deploy
-
-on:
-  workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - &amp;quot;source/**&amp;quot;
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-jobs:
-  build_and_deploy:
-    name: Build &amp;amp; Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout&amp;#64;v2
-        
-      - name: Set up 💎 Ruby 3.2.0
-        uses: ruby/setup-ruby&amp;#64;v1
-        with:
-          ruby-version: 3.2.0
-#           bundler-cache: true
-        
-      - name: Install Dependencies
-        run: |
-          echo 'Installing bundles...'
-          gem install bundler
-          bundle install
-          bundle list | grep &amp;quot;middleman (&amp;quot;
-        
-      - name: Build
-        run: bundle exec middleman build
-      
-      - name: Copy CNAME
-        run: |
-          echo &amp;quot;Copying cname across too&amp;quot;
-          cp -a CNAME build
-      
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages&amp;#64;v3.9.2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="alternatives"&gt;Alternatives&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/edgecase/middleman-gh-pages"&gt;Middleman Github Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/yurikoval/middleman-gh-pages-action"&gt;middleman-gh-pages-action&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/marketplace/actions/middleman-github-pages-action"&gt;Marketplace&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I found an &lt;a href="https://github.com/yurikoval/middleman-gh-pages-action/issues/3"&gt;issue&lt;/a&gt; with the GHA which was referencing &lt;code&gt;master&lt;/code&gt; not &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
