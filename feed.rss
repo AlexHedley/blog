@@ -5,8 +5,48 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Thu, 22 Jun 2023 12:31:45 GMT</pubDate>
-		<lastBuildDate>Thu, 22 Jun 2023 12:31:45 GMT</lastBuildDate>
+		<pubDate>Sun, 25 Jun 2023 06:33:55 GMT</pubDate>
+		<lastBuildDate>Sun, 25 Jun 2023 06:33:55 GMT</lastBuildDate>
+		<item>
+			<title>The Beginning of Blashing</title>
+			<link>https://alexhedley.github.io/blog/posts/the-beginning-of-blashing</link>
+			<description>Build a beautiful dashboard</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/the-beginning-of-blashing</guid>
+			<pubDate>Fri, 23 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Having worked with a &lt;a href="https://github.com/Shopify/dashing"&gt;Dashing&lt;/a&gt; / &lt;a href="https://github.com/Smashing/smashing"&gt;Smashing&lt;/a&gt; meant having to setup 💎 &lt;a href="https://www.ruby-lang.org/en/"&gt;Ruby&lt;/a&gt;, as this isn't a language I'm not familiar with there was a little bit of a barrier to entry. I've used in the past with some iOS projects but only in little bursts.&lt;/p&gt;
+&lt;p&gt;Having a discussion with a colleague they had a similar experience, now as we're both .NET enthusiasts the obvious choice was to port it to &lt;a href="https://dotnet.microsoft.com/"&gt;.NET&lt;/a&gt; and since &lt;a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"&gt;Blazor&lt;/a&gt; is the hot stuff atm why not use that.&lt;/p&gt;
+&lt;p&gt;Before we start, we need a name...&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Blashing&lt;/strong&gt; &lt;img src="https://alexhedley.github.io/blog/images/blashing/bowtie_blazor_logo.png" alt="Blashing" title="Blashing"&gt;&lt;/p&gt;
+&lt;p&gt;I know, clever! I don't know how I come up with such great names.&lt;/p&gt;
+&lt;p&gt;Next is create a &lt;a href="https://github.com/AlexHedley/blashing"&gt;repo&lt;/a&gt; and the journey begins.&lt;/p&gt;
+&lt;p&gt;I've already made a start creating the original list of &lt;a href="https://github.com/Smashing/smashing/tree/master/templates/project/widgets"&gt;widgets&lt;/a&gt;: &lt;em&gt;clock&lt;/em&gt;, &lt;em&gt;comments&lt;/em&gt;, &lt;em&gt;graph&lt;/em&gt;, &lt;em&gt;iframe&lt;/em&gt;, &lt;em&gt;image&lt;/em&gt;, &lt;em&gt;list&lt;/em&gt;, &lt;em&gt;meter&lt;/em&gt;, &lt;em&gt;number&lt;/em&gt;, &lt;em&gt;text&lt;/em&gt;. There is also a community of &lt;a href="https://github.com/Smashing/smashing/wiki/Additional-Widgets"&gt;Additional Widgets&lt;/a&gt; that could be fun to port over too.&lt;/p&gt;
+&lt;p&gt;There's the grid system to think about, drag &amp;amp; drop capabilities, &lt;a href="https://fontawesome.com/"&gt;Font Awesome&lt;/a&gt; icons and much, much more.&lt;/p&gt;
+&lt;p&gt;You can follow along with the progress using the GitHub &lt;a href="https://github.com/users/AlexHedley/projects/2/views/2"&gt;Project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I'd like to use a Blazor WASM project to host a demo and documentation site showing the features.&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/AlexHedley/blashing"&gt;Blashing&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/users/AlexHedley/projects/2/views/2"&gt;Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Website - WIP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="http://dashing.io/"&gt;Dashing Website&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Shopify/dashing"&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://smashing.github.io/"&gt;Smashing Website&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Smashing/smashing"&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>AWS Cloud Quest Data Analytics</title>
 			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-data-analytics</link>
@@ -518,45 +558,6 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Dive deeper and position yourself as a trusted advisor to your stakeholders and/or customers in these strategic areas.&lt;br&gt;
 &lt;strong&gt;Refer to the exam guides on the exam pages for recommended experience.&lt;/strong&gt;&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>AWS Cloud Quest Serverless Developer</title>
-			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-serverless-developer</link>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/aws-cloud-quest-serverless-developer</guid>
-			<pubDate>Wed, 15 Mar 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # AWS Cloud Quest Serverless Developer --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/cloud-quest.png" alt="AWS Cloud Quest Cloud Practitioner" title="AWS Cloud Quest"&gt;&lt;/p&gt;
-&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud QuestServerless Developer&lt;/strong&gt; training 🎉!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-serverless-developer.png" alt="AWS Cloud Quest Serverless Developer Badge" title="AWS Cloud Quest Serverless Developer Badge"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/badges/5dc86ddb-b5b4-448f-a57b-c49f13857810/public_url"&gt;Credly Badge&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
-$29.00 / month + VAT&lt;br&gt;
-&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Build multi-tiered serverless applications and get hands-on experience building modern applications using AWS serverless technology.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
