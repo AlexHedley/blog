@@ -160,6 +160,12 @@ There are other updates I'm planning on adding like Search, a Header image etc, 
 - [The Freeze Team](https://thefreezeteam.com/)
   - [Source](https://github.com/TheFreezeTeam/TheFreezeTeamBlog/tree/master/Source/TheFreezeTeamBlog)
 
+- [Structed](https://blog.structed.me/)
+  - [https://github.com/structed](https://github.com/structed)
+
+- [C# Tutorials Blog](https://wellsb.com/csharp/)
+  - [Source](https://github.com/bradwellsb/statiq-blog-boilerplate)
+
 ### Config
 
 - [Settings](https://www.statiq.dev/guide/configuration/settings)
