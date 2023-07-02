@@ -12,6 +12,8 @@ image: /posts/images/statiq-web.svg
 imageattribution: https://www.statiq.dev/assets/statiq-web.svg
 ---
 
+<?! Raw ?><?# Raw ?>
+
 In another project ([Symantec Connect Articles](https://alexhedley.com/symantec-connect-articles/)) I've got a Table of Contents (toc) for many sets of Articles. This can sometimes be a lot of information and is duplicated in each article, at the top and bottom. This isn't ideal if I need to update anything.
 
 Seeing an `Include` option in [Devlead.Statiq - Part 1 - Tabs](https://www.devlead.se/posts/2021/2021-04-09-devlead-statiq-part1-tabs) I wondered if there was similar functionality already built in.
@@ -63,3 +65,5 @@ Now all I need to do is update all my articles to use this...
 - [ ] Link
 - [ ] Figure
 - [ ] Table
+
+<?#/ Raw ?><?!/ Raw ?>
