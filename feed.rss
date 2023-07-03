@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Sun, 02 Jul 2023 19:36:09 GMT</pubDate>
-		<lastBuildDate>Sun, 02 Jul 2023 19:36:09 GMT</lastBuildDate>
+		<pubDate>Mon, 03 Jul 2023 07:37:54 GMT</pubDate>
+		<lastBuildDate>Mon, 03 Jul 2023 07:37:54 GMT</lastBuildDate>
 		<item>
 			<title>Statiq.Web - Shortcodes - Include</title>
 			<link>https://alexhedley.github.io/blog/posts/statiq-web-shortcodes-include</link>
@@ -221,6 +221,31 @@ $29.00 / month + VAT&lt;br&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blog_banner.png" alt="Original Blog Banner" title="Original Blog Banner"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blog_banner_new.png" alt="Updated Blog Banner" title="Updated Blog Banner"&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>🎙️ Beginners Guide to API Specs - Part 1</title>
+			<link>https://alexhedley.github.io/blog/posts/talk-beginners-guide-to-api-specs</link>
+			<description>How to read and use an API spec.</description>
+			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/talk-beginners-guide-to-api-specs</guid>
+			<pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- Beginners Guide to API Specs - Part 1 --&gt;
+&lt;p&gt;I work in cross discipline teams and the Product Delivery members keep us Developers on track, writing up User Stories, managing our ceremonies etc. We often talk a lot about APIs and it's prob not something they are interested in :p.
+This talk was to demystify a &lt;a href="http://swagger.io/"&gt;swagger&lt;/a&gt; spec, break it down into what it is, what it does, and how we use them in our day to day jobs.&lt;/p&gt;
+&lt;p&gt;🗓️ June 15, 2023&lt;/p&gt;
+&lt;!-- 📼  --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talk-beginners-guide-to-api-specs/"&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talk-beginners-guide-to-api-specs"&gt;Presentation Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talks/"&gt;Talks Site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talks"&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -499,45 +524,6 @@ From Steven Giesel
 &lt;li&gt;&lt;a href="https://www.nuget.org/packages/Ociaw.StatiqMermaid/0.1.0-beta.2"&gt;nuget&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>AWS Cloud Quest Solutions Architect</title>
-			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-solutions-architect</link>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/aws-cloud-quest-solutions-architect</guid>
-			<pubDate>Wed, 10 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # AWS Cloud Quest Solutions Architect --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/cloud-quest.png" alt="AWS Cloud Quest Cloud Practitioner" title="AWS Cloud Quest"&gt;&lt;/p&gt;
-&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Solutions Architect&lt;/strong&gt; training 🎉!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-solutions-architect.png" alt="AWS Cloud Quest Solutions Architect Badge" title="AWS Cloud Quest Solutions Architect Badge"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/badges/19d085e9-4a52-40b1-8d7c-2ff7eba1bd33/public_url"&gt;Credly Badge&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
-$29.00 / month + VAT&lt;br&gt;
-&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Dive into a broad set of AWS services and build secure, fault-tolerant, and highly available AWS solutions.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
