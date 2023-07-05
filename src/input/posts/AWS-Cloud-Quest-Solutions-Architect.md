@@ -6,11 +6,11 @@ tags:
 author: alex-hedley
 description: 
 published: 2023-05-10
+image: /posts/images/aws-cq/cloud-quest.png
+imageattribution: https://aws.amazon.com/training/learn-about/cloud-practitioner/
 ---
 
 <!-- # AWS Cloud Quest Solutions Architect -->
-
-![AWS Cloud Quest Cloud Practitioner](images/aws-cq/cloud-quest.png "AWS Cloud Quest")
 
 Today I completed the **AWS Cloud Quest Solutions Architect** training 🎉!
 

@@ -1,22 +1,23 @@
 ---
-title: AWS Cloud Quest Data Analytics
+title: AWS Cloud Quest Machine Learning
 tags:
     - programming
     - aws
+    - cloud quest
 author: alex-hedley
 description: 
-published: 2023-06-21
+published: 2023-07-05
 image: /posts/images/aws-cq/cloud-quest.png
 imageattribution: https://aws.amazon.com/training/learn-about/cloud-practitioner/
 ---
 
-<!-- # AWS Cloud Quest Data Analytics -->
+<!-- # AWS Cloud Quest Machine Learning -->
 
-Today I completed the **AWS Cloud Quest Data Analytics** training 🎉!
+Today I completed the **AWS Cloud Quest Machine Learnings** training 🎉!
 
-![AWS Cloud Quest Data Analytics Badge](images/aws-cq/aws-cloud-quest-data-analytics.png "AWS Cloud Quest Data Analytics Badge")
+![AWS Cloud Quest Data Analytics Badge](images/aws-cq/aws-cloud-quest-machine-learning.jpeg "AWS Cloud Quest Machine Learning Badge")
 
-- [Credly Badge](https://www.credly.com/badges/ab563fd2-39db-4490-9629-5b01728a8a70/public_url)
+- [Credly Badge](https://www.credly.com/badges/0b283f21-b9cd-408e-9b54-f01cab2d3aa1/public_url)
   - [Credly Profile](https://www.credly.com/users/alexhedley/badges)
 
 This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.
@@ -25,7 +26,7 @@ This is a paid course from AWS that uses gamification and hands on labs to reinf
 > $29.00 / month + VAT  
 > https://explore.skillbuilder.aws/learn/signin  
 
-> Work with scalable data lakes, data warehousing, big data analytics, and more in this role focused on modern data architecture and AWS analytics services. 
+> As the Machine Learning specialist, you will implement solutions using AWS AI services and trained models. You will build, train, and deploy Machine Learning models, as well as integrate AWS AI services into solutions. You will gain hands on experience with AI/ML topics like reinforcement learning, anomaly detection, text to speech, transcription and computer vision.
 
 ## Training Material
 
@@ -35,3 +36,5 @@ This is a paid course from AWS that uses gamification and hands on labs to reinf
 
 - [AWS Cloud Quest](https://aws.amazon.com/training/digital/aws-cloud-quest/)
 - [Cloud Quest](https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest)
+
+<!-- ## Resources Used -->
