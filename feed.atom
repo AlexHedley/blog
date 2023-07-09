@@ -4,9 +4,35 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-07-03T07:37:54Z</updated>
+	<updated>2023-07-09T17:13:11Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/talk-beginners-guide-to-api-specs-part2</id>
+		<title>🎙️ Beginners Guide to API Specs - Part 2</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/talk-beginners-guide-to-api-specs-part2" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-07-06T00:00:00Z</updated>
+		<content>&lt;!-- Beginners Guide to API Specs - Part 2 --&gt;
+&lt;p&gt;In &lt;a href="https://alexhedley.github.io/blog/talk-beginners-guide-to-api-specs"&gt;Part 1&lt;/a&gt; I ran through what an API Specification is, showed the underlying JSON (or YAML) and how it looked as a Swagger website.
+In this presentation I showed you how to interrogate and visualise your data with a tool called &lt;a href="https://www.postman.com/"&gt;Postman&lt;/a&gt;, how to annotate your code  with a Kotlin example (&lt;a href="https://github.com/alex-hedley/demo-lego-api"&gt;LEGO API Demo&lt;/a&gt;) and discussed the Editor and Generator for helping with the API.&lt;/p&gt;
+&lt;p&gt;🗓️ July 06, 2023&lt;/p&gt;
+&lt;!-- 📼  --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talk-beginners-guide-to-api-specs/#/part-2"&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talk-beginners-guide-to-api-specs"&gt;Presentation Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talks/"&gt;Talks Site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talks"&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>How to to test an API.</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/statiq-web-shortcodes-include</id>
 		<title>Statiq.Web - Shortcodes - Include</title>
@@ -256,6 +282,33 @@ This talk was to demystify a &lt;a href="http://swagger.io/"&gt;swagger&lt;/a&gt
 		<summary>How to read and use an API spec.</summary>
 	</entry>
 	<entry>
+		<id>https://alexhedley.github.io/blog/posts/terminal-build-output</id>
+		<title>Terminal Build Output</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/terminal-build-output" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-06-09T00:00:00Z</updated>
+		<content>&lt;p&gt;&lt;code&gt;dotnet build /tl&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-4/#msbuild-new-modern-terminal-build-output"&gt;MSBuild: New, modern terminal build output&lt;/a&gt;
+&lt;a href="https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-4/"&gt;Announcing .NET 8 Preview 4&lt;/a&gt; Jon Douglas - May 16th, 2023&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/msbuild/issues/8370"&gt;MSBuild LiveLogger keeps users informed about their build and delights new users #8370&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="others"&gt;Others&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;New Terminal logger for .NET 8
+From Steven Giesel
+&lt;a href="https://steven-giesel.com/blogPost/f6e0accf-9493-4cc4-8992-e8300e6b0cbc"&gt;https://steven-giesel.com/blogPost/f6e0accf-9493-4cc4-8992-e8300e6b0cbc&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;dotnet build --tl&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+		<summary>&lt;p&gt;&lt;code&gt;dotnet build /tl&lt;/code&gt;&lt;/p&gt;</summary>
+	</entry>
+	<entry>
 		<id>https://alexhedley.github.io/blog/posts/migrated-blog</id>
 		<title>Migrated Blog</title>
 		<author>
@@ -423,33 +476,6 @@ tabs:
 		<summary>The journey to a new blog platform.</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/terminal-build-output</id>
-		<title>Terminal Build Output</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/terminal-build-output" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-06-09T00:00:00Z</updated>
-		<content>&lt;p&gt;&lt;code&gt;dotnet build /tl&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-4/#msbuild-new-modern-terminal-build-output"&gt;MSBuild: New, modern terminal build output&lt;/a&gt;
-&lt;a href="https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-4/"&gt;Announcing .NET 8 Preview 4&lt;/a&gt; Jon Douglas - May 16th, 2023&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/msbuild/issues/8370"&gt;MSBuild LiveLogger keeps users informed about their build and delights new users #8370&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="others"&gt;Others&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;New Terminal logger for .NET 8
-From Steven Giesel
-&lt;a href="https://steven-giesel.com/blogPost/f6e0accf-9493-4cc4-8992-e8300e6b0cbc"&gt;https://steven-giesel.com/blogPost/f6e0accf-9493-4cc4-8992-e8300e6b0cbc&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;dotnet build --tl&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-		<summary>&lt;p&gt;&lt;code&gt;dotnet build /tl&lt;/code&gt;&lt;/p&gt;</summary>
-	</entry>
-	<entry>
 		<id>https://alexhedley.github.io/blog/posts/giscus</id>
 		<title>giscus</title>
 		<author>
@@ -491,51 +517,5 @@ From Steven Giesel
 &lt;p&gt;Blog Post: &lt;a href="https://beckshome.com/2022/09/beckshome-on-statiq"&gt;https://beckshome.com/2022/09/beckshome-on-statiq&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Example: &lt;a href="https://github.com/thbst16/dotnet-statiq-beckshome-blog/blob/main/theme/input/_post-footer.cshtml"&gt;https://github.com/thbst16/dotnet-statiq-beckshome-blog/blob/main/theme/input/_post-footer.cshtml&lt;/a&gt;&lt;/p&gt;
 </content>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/mermaid</id>
-		<title>Mermaid</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/mermaid" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-05-16T00:00:00Z</updated>
-		<content>&lt;p&gt;Add a file &lt;code&gt;_scripts.cshtml&lt;/code&gt;&lt;/p&gt;
-&lt;?# IncludeCode "./../_scripts.cshtml" /?&gt;
-&lt;div class="mermaid"&gt;flowchart LR
-    subgraph azureprod [Azure fa:fa-cloud]
-        AppProduction(App Service fa:fa-globe) --&gt; api-production[APIM fa:fa-sitemap&amp;lt;br&gt;api-production]
-        AppProduction --&gt; vnetprd[vnet-prd]
-    end
-    subgraph onpremprod [On-premises fa:fa-home]
-        vnetprd ----&gt; SQLProd[SQL Prod fa:fa-server ] --&gt; DBProd[(DBProd)]
-    end
-&lt;/div&gt;
-&lt;h2 id="devlead"&gt;[Devlead]&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/devlead/Devlead.Statiq/blob/main/src/Devlead.Statiq.TestWeb/input/_scripts.cshtml"&gt;scripts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/devlead/Devlead.Statiq/blob/main/src/Devlead.Statiq.TestWeb/input/posts/Tabs.md"&gt;Tabs.md&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="other"&gt;Other&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.dpvreony.com/articles/mermaid-with-statiq/"&gt;Using Mermaid diagrams with Statiq.&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dpvreony/article-statiq-mermaid"&gt;repo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://blog.beckshome.com/2022/09/mermaid-in-statiq"&gt;Mermaid Diagrams in Statiq&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/thbst16/dotnet-statiq-beckshome-blog/blob/main/input/posts/mermaid-in-statiq.md"&gt;code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/ociaw/StatiqMermaid"&gt;StatiqMermaid Repo&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.nuget.org/packages/Ociaw.StatiqMermaid/0.1.0-beta.2"&gt;nuget&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>How to add mermaid diagrams in statiq</summary>
 	</entry>
 </feed>
