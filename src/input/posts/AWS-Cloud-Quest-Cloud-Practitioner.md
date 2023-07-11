@@ -4,10 +4,10 @@ tags:
     - programming
     - aws
 author: alex-hedley
-description: 
+# description: 
 published: 2023-01-25
 image: /posts/images/aws-cq/logo_wide_practitioner.png
-imageattribution: https://aws.amazon.com/training/learn-about/cloud-practitioner/
+imageattribution: https://aws.amazon.com/training/digital/aws-cloud-quest/
 ---
 
 <!-- # AWS Cloud Quest Cloud Practitioner -->

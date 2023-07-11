@@ -5,8 +5,10 @@ tags:
     - aws
     - exam
 author: alex-hedley
-description: 
+# description: 
 published: 2023-04-06
+# image: /posts/images/aws-cq/logo_wide_practitioner.png
+# imageattribution: https://aws.amazon.com/training/learn-about/cloud-practitioner/
 ---
 
 <!-- # AWS Certified Cloud Practitioner -->
