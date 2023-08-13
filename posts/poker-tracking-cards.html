@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How to know what cards are currently in play.">
+    <meta name="author" content="alexhedley">
+
+  <title>Alex Hedley - Poker - Tracking cards</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/poker-tracking-cards'>
+
+      <link type="application/rss+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - Poker - Tracking cards' />
+    <meta property="og:image" content='/blog/images/banner.png' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/poker-tracking-cards' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(&quot;/blog/images/banner.png&quot;)">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            Poker - Tracking cards
+          </h1>
+            <span class="subheading">How to know what cards are currently in play.</span>
+            <div class="meta">Published on Friday, 11 August 2023</div>
+              <div class="mt-3">
+                  <a href="/blog/tags/poker" class="badge text-bg-light"> poker</a>
+                  <a href="/blog/tags/rfid" class="badge text-bg-light"> rfid</a>
+                  <a href="/blog/tags/nfc" class="badge text-bg-light"> nfc</a>
+                  <a href="/blog/tags/ntag215" class="badge text-bg-light"> NTAG215</a>
+                  <a href="/blog/tags/iso15693" class="badge text-bg-light"> ISO15693</a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <p>This is Part 2 of the Poker series, see <a href="/posts/recording-poker-games">Recording Poker Games</a> for the initial setup.</p>
+<p>What would be the best way to track the cards being played?</p>
+<p>I could train a machine learning model or use an existing one? See <a href="https://github.com/awrd2019/Playing-Cards-Computer-Vision">Playing-Cards-Computer-Vision</a> from <a href="https://github.com/awrd2019/">&#64;awrd2019</a>. Not sure how much work this would be and how accurate the results are.</p>
+<p>The next idea was RFID Playing cards, I got a link for <a href="https://www.saturnmagic.co.uk/saturn-magic-shop/luna-nfcrfid-cards-by-andras-barthazi.html">Luna NFC/RFID Cards by Andras Barthazi</a> and thought £21.99 for a pack isn't bad, but I'd miss read:</p>
+<ul>
+<li>Blank face (6 cards): £21.99</li>
+<li>Poker face (52 + 2 cards): £104.99</li>
+<li>Blank face (54 cards): £104.99</li>
+</ul>
+<p>Checking other sites I found one a little cheaper in <a href="https://illuminati-magic.com/products/rfid-deck-iso15693">RFID PLAYING CARD DECK, ISO15693</a> £93.00 GBP.</p>
+<p>So why don't I just buy some NFC / RFID stickers and put them on an existing pack of playing cards?
+It might make them harder to shuffle and easier to see a marked card but for an inital POC it'll be cheaper.</p>
+<blockquote>
+<p>50pcs NFC Tags, BetterJonny NFC Cards, NFC Stickers Ntag 215 NFC Tag NFC Coin Cards Compatible with TagMo &amp; Amiibo, NFC Enabled Mobile Phones and Devices, Round, White</p>
+</blockquote>
+<ul>
+<li><a href="https://www.amazon.co.uk/gp/product/B0C786FJ82/">https://www.amazon.co.uk/gp/product/B0C786FJ82/</a></li>
+</ul>
+<p>Only £8.99 for 50, that's much better, albeit I need 52 and I'll have to stick them all on and program them all, but that's the fun part!</p>
+<p><img src="images/poker/NTAG215.jpg" alt="NTAG215" title="NTAG215" /></p>
+<p>Next I need a reader/writer, which I'm sure I saw in the <a href="https://inventr.io/product/adventure-kit-2-pre-order/">ADVENTURE KIT 2</a> $197.00 I'd bought.</p>
+<blockquote>
+<p>1x RFID reader and Keychain</p>
+<p>Create your own unique ID card and be able to read the data from it. Allowing just those with access keys in.</p>
+</blockquote>
+<p><img src="images/poker/ar054-rfid-mfrc522.png" alt="MFRC522" title="MFRC522" /></p>
+<p>There's a video and board layout on the course:</p>
+<ul>
+<li><a href="https://inventr.io/lessons/nfc-badges/">https://inventr.io/lessons/nfc-badges/</a></li>
+<li><a href="https://inventr.io/lessons/rfid-reader-badge/">https://inventr.io/lessons/rfid-reader-badge/</a></li>
+</ul>
+<p>Next problem is I'll need a board to connect to them, so that then adds more wires, there doesn't seem to be a nice compact way like with the camera.</p>
+<p>I also need to test what the pickup area is, will I only need one per pocket? Will The Board only need one too? Once I've tested I'll feed back with the results.</p>
+<p>I can then create a local API that I can post the cards too, which in turn will update the screen.</p>
+<p><img src="images/poker/HoleCards.png" alt="Hole Cards" title="Hole Cards" /></p>
+<p>Having access to what cards are available I can also calculate rudimentary pot odds. Add them to the screen too.</p>
+<p>The actual pot will be harder - mic with voice recognition? Weigh the table? RFID on each chip? Let's solve one problem at a time.</p>
+<p>All this hardware setup it starting to get messy, my thoughts here are to create my own custom table, I can then hide all the parts in custom fitting areas. If the wood is thin enough the devices should be able to pick up the cards. Plus then I have an excuse to do some woodwork :).</p>
+
+
+        
+
+      </div>
+    </div>
+  <div id="comments-container" class="row">
+    <script src="https://giscus.app/client.js"
+        data-repo='alexhedley/blog'
+        data-repo-id='R_kgDOJjXJmQ'
+        data-category-id='DIC_kwDOJjXJmc4CXRaX'
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2023</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQV2ZWNX32"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CQV2ZWNX32');
+    </script>
+
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js" integrity="sha384-nVmn6yKHyUktDHdQfBgpn1YPgEu8gDXTYI5qccfkF1j6oxBHjKEafySIuNs3UhEW" crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>
