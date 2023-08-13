@@ -8,7 +8,7 @@ tags:
   - ISO15693
 author: alexhedley
 description: How to know what cards are currently in play.
-published: 2023-08-11
+published: 2023-08-13
 # image: /posts/images/###.png
 # imageattribution:
 ---
@@ -41,7 +41,7 @@ Only £8.99 for 50, that's much better, albeit I need 52 and I'll have to stick 
 Next I need a reader/writer, which I'm sure I saw in the [ADVENTURE KIT 2](https://inventr.io/product/adventure-kit-2-pre-order/) $197.00 I'd bought.
 
 > 1x RFID reader and Keychain
-> 
+>
 > Create your own unique ID card and be able to read the data from it. Allowing just those with access keys in.
 
 ![MFRC522](images/poker/ar054-rfid-mfrc522.png "MFRC522")
@@ -64,3 +64,77 @@ Having access to what cards are available I can also calculate rudimentary pot o
 The actual pot will be harder - mic with voice recognition? Weigh the table? RFID on each chip? Let's solve one problem at a time.
 
 All this hardware setup it starting to get messy, my thoughts here are to create my own custom table, I can then hide all the parts in custom fitting areas. If the wood is thin enough the devices should be able to pick up the cards. Plus then I have an excuse to do some woodwork :).
+
+## Scanning
+
+Add https://github.com/miguelbalboa/rfid/releases
+
+![RFID](images/Poker/RFID.jpg "RFID")
+
+https://circuitdigest.com/microcontroller-projects/interfacing-rfid-reader-module-with-arduino
+
+![Circuit](images/poker/Circuit.jpg "Circuit")
+
+```bash
+18:28:27.715 -> Firmware Version: 0xFF = (unknown)
+18:28:27.715 -> WARNING: Communication failure, is the MFRC522 properly connected?
+18:28:27.761 -> Scan PICC to see UID, SAK, type, and data blocks...
+18:29:01.755 -> Firmware Version: 0x92 = v2.0
+18:30:42.657 -> Bad read (was card removed too quickly?)
+```
+
+---
+
+## Hardware
+
+| Item          | Price  |
+| ------------- | ------ |
+| RFID Reader   | £.     |
+| Board         | £.     |
+| RFID Stickers | £8.99  |
+| Cable         | £2.66  |
+| Plug          | £2.25  |
+|               | ------ |
+| **Total**     | **£.** |
+
+**RFID Stickers**
+
+> 50pcs NFC Tags, BetterJonny NFC Cards, NFC Stickers Ntag 215 NFC Tag NFC Coin Cards Compatible with TagMo & Amiibo, NFC Enabled Mobile Phones and Devices, Round, White
+>
+> £8.99
+
+- https://www.amazon.co.uk/gp/product/B0C786FJ82/
+
+**Plug**
+
+> 4-Pack USB Plug for iPhone 14 13 12 11 XS Max XS XR X 8 7 6 6S Plus 5 Plus SE Samsung Galaxy, LG, Android, Cell Phone, 2.1A/5V Dual Port Power Adapter Wall Charging UK Mains Charger
+>
+> £8.99
+
+- https://www.amazon.co.uk/gp/product/B0BPB6HB3V/
+
+![Plug - double](images/poker/plug-double.jpg "Plug - double")
+
+> 2 Pack USB Plug Charger,Rekavin 4 Port Multi USB Plug Adapter UK 25W/5A Wall Charger Mains with Smart IC Fast Charging for iPhone 11 pro Max XS XR X SE2020 10 8 7 6 ipad,Samsung S10 S9 S8 S7,Huawei
+>
+> 12.78
+
+- https://www.amazon.co.uk/dp/B08M8ZY9J4
+
+![Plug - quadruple](images/poker/plug-quadruple.jpg "Plug - quadruple")
+
+**Mirco USB Cable**
+
+- https://www.amazon.co.uk/dp/B07WNX1B8C
+
+£7.99 / 3 = £2.66
+
+![Cable](images/poker/cable.jpg "Cable")
+
+**RFID Reader**
+
+- TBC
+
+**Board**
+
+- TBC
