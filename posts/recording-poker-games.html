@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A home setup to record a poker game.">
+    <meta name="author" content="alexhedley">
+
+  <title>Alex Hedley - Recording Poker Games</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/recording-poker-games'>
+
+      <link type="application/rss+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - Recording Poker Games' />
+    <meta property="og:image" content='/blog/images/banner.png' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/recording-poker-games' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(&quot;/blog/images/banner.png&quot;)">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            Recording Poker Games
+          </h1>
+            <span class="subheading">A home setup to record a poker game.</span>
+            <div class="meta">Published on Friday, 11 August 2023</div>
+              <div class="mt-3">
+                  <a href="/blog/tags/poker" class="badge text-bg-light"> poker</a>
+                  <a href="/blog/tags/esp32" class="badge text-bg-light"> esp32</a>
+                  <a href="/blog/tags/esp32-cam" class="badge text-bg-light"> esp32-cam</a>
+                  <a href="/blog/tags/esp32-cam-mb" class="badge text-bg-light"> esp32-cam-mb</a>
+                  <a href="/blog/tags/ov2640" class="badge text-bg-light"> ov2640</a>
+                  <a href="/blog/tags/obs" class="badge text-bg-light"> obs</a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <p>Watching the poker on <a href="https://www.worldpokertour.com/">WPT</a> I thought wouldn't it be cool if I could have the same setup at my home games? Where would I even begin?</p>
+<p>So I need a camera to point at the players hole cards (multiple by the number of players), one camera over the table to see the flop, turn and river. Then would I need any more?</p>
+<p>So how to I get the camera feeds to my computer?</p>
+<p>I could use WebCams, and connect them via a cable - issue with that is my computer isn't in the same room as where I want to play. Is there a wireless one? But won't these be very expensive.</p>
+<p>logitech C270 HD Webcam RRP £34.99</p>
+<p><img src="images/poker/logitech-c270.png" alt="logitech C270 HD Webcam" title="logitech C270 HD Webcam" /></p>
+<p>Found them on eBay for ~£15.</p>
+<p>Is there an Arduino alternative, yes! You can use a combination of ESP32-CAM, ESP32-CAM-MB, OV2640.</p>
+<p><img src="images/poker/ESP32-CAM--ESP32-CAM-MB--OV2640.jpg" alt="ESP32-CAM, ESP32-CAM-MB, OV2640" title="ESP32-CAM, ESP32-CAM-MB, OV2640" /></p>
+<p>~£11 on Amazon but then I also need a micro USB cable and USB plug. (Multiply by the number of devices.)</p>
+<h2 id="arduino">Arduino</h2>
+<p>Install the board</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json">https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json</a></li>
+</ul>
+<p>Change it in the app to</p>
+<ul>
+<li>AI Thinker ESP-32 CAM</li>
+</ul>
+<p>Examples | ESP32 | Camera | CameraWebServer</p>
+<ul>
+<li><a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Camera/CameraWebServer">GitHub</a></li>
+</ul>
+<p>Update the SSID and password - put this in a conf file?</p>
+<ul>
+<li><a href="https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L38-L39">https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L38-L39</a></li>
+</ul>
+<pre><code class="language-c">#include &quot;Secrets.h&quot;
+const char* ssid = SECRET_SSID;
+const char* password = SECRET_PASSWORD;
+</code></pre>
+<p><code>touch &quot;Secrets.h&quot;</code></p>
+<pre><code class="language-c">#define SECRET_SSID &quot;foo&quot;
+#define SECRET_PASS &quot;bar&quot;
+</code></pre>
+<p>Update the CAMERA to <code>#define CAMERA_MODEL_AI_THINKER // Has PSRAM</code></p>
+<ul>
+<li><a href="https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L24C2-L24C2">https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L24C2-L24C2</a></li>
+</ul>
+<p>Upload</p>
+<p>Reset (RST)</p>
+<p><img src="images/poker/ESP32-CAM.jpg" alt="ESP32-CAM" title="ESP32-CAM" />
+<img src="images/poker/ESP32-CAM-Reset.jpg" alt="Reset" title="Reset" /></p>
+<p>Check the output for the IP Address, then navigate to it in a browser.</p>
+<p>Click on &quot;Start Stream&quot;</p>
+<p><img src="images/poker/CameraWebServer.png" alt="Camera Web Server" title="Camera Web Server" /></p>
+<p>Click &quot;Stop Stream&quot;.</p>
+<p>I then used <a href="https://learn.microsoft.com/en-us/windows/powertoys/fancyzones">FancyZones</a> in <a href="https://learn.microsoft.com/en-us/windows/powertoys/">PowerToys</a> to show all the screens together.</p>
+<p><img src="images/poker/CameraSetup.png" alt="Camera Setup" title="Camera Setup" /></p>
+<p>As this part is working I can move onto trying it in a piece of screen recording software.</p>
+<p>Download/Install/Start <a href="https://obsproject.com/">OBS</a> and in the Scene click <strong>+</strong> and navigate to <strong>Browser</strong>,</p>
+<p><img src="images/poker/obs-sources-browser.png" alt="OBS Sources Browser" title="OBS Sources Browser" /></p>
+<p>Update the URL to the one above.</p>
+<p><img src="images/poker/Browser-Properties.png" alt="Browser - Properties" title="Browser - Properties" /></p>
+<p>Then in the Browser Options bar click on &quot;Interact&quot;, this will open up a new window, hopefully load the same as the above browser did, then scroll down and click &quot;Start Stream&quot;, once you see a video feed you can re-position this in your Scene.</p>
+<p><img src="images/poker/Browser-options.png" alt="Browser - Options" title="Browser - Options" /></p>
+<p>Once the video feeds are on the scene I tried to make a quick mockup of the screen - any designers about and want to help...please :p.</p>
+<p><img src="images/poker/SceneSetup.png" alt="Scene Setup" title="Scene Setup" /></p>
+<p>I looked for an ole time font and found one called <a href="https://fonts.google.com/specimen/Rye">Rye</a> (from Google Fonts).</p>
+<ul>
+<li><a href="https://fonts.google.com/specimen/Rye?preview.text=HEDLEY%20CASINO&amp;preview.text_type=custom">Preview - Hedley Casino</a></li>
+</ul>
+<p>The card backs are taken from the excellent SVG web lib from <a href="https://cardmeister.github.io/">CardMeister</a></p>
+<p>Then I found a set of individual <a href="https://www.improvemagic.com/all-playing-cards-names-with-pictures/">cards</a> on <a href="https://www.improvemagic.com/">Improve Magic</a></p>
+<p>These should come in handy later...</p>
+<p>I created an image with a green background which I cut out 4 transparent windows to fit the camera items, a few text widgets for the names.</p>
+<p>TODO: Pot Total, Individual Total, % Outs etc.</p>
+<p>See a 📼 video of it in action:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wJCgOoJmJX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>I need some wood to build a crane to hang a camera over the table to show the rest of the action.</p>
+<h2 id="live-stream">Live Stream</h2>
+<p>I may live stream them on my <a href="https://www.twitch.tv/">Twitch</a> <a href="https://www.twitch.tv/alexhedley8">&#64;alexhedley8</a> one day.</p>
+<h2 id="case-attempt">Case Attempt</h2>
+<p>Found some lollipop sticks and some masking tape and got to work making a temporary case...</p>
+<p><img src="images/poker/ESP32-CAM-Case.jpg" alt="Camera Case" title="Camera Case" /></p>
+<p>I then bought one instead.</p>
+<blockquote>
+<p>Note to self: configure your 3d Printer and print one yourself!</p>
+</blockquote>
+<h2 id="hardware">Hardware</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camera</td>
+<td>£10.99</td>
+</tr>
+<tr>
+<td>Cable</td>
+<td>£2.66</td>
+</tr>
+<tr>
+<td>Plug</td>
+<td>£2.49</td>
+</tr>
+<tr>
+<td>Case</td>
+<td>£6.20</td>
+</tr>
+<tr>
+<td></td>
+<td>------</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>£22.34</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Camera</strong></p>
+<p>XTVTX ESP-32-CAM WiFi Bluetooth Board ESP-32-CAM-MB Micro USB to Serial Port with OV2640 2MP Camera Module Dual Mode compatible with Arduino</p>
+<ul>
+<li><a href="https://www.amazon.co.uk/dp/B093GSCBWJ">https://www.amazon.co.uk/dp/B093GSCBWJ</a></li>
+</ul>
+<p>£10.99</p>
+<p><img src="images/poker/ESP32-CAM--ESP32-CAM-MB--OV2640.jpg" alt="ESP32-CAM, ESP32-CAM-MB, OV2640" title="ESP32-CAM, ESP32-CAM-MB, OV2640" /></p>
+<p><strong>Mirco USB Cable</strong></p>
+<ul>
+<li><a href="https://www.amazon.co.uk/dp/B07WNX1B8C">https://www.amazon.co.uk/dp/B07WNX1B8C</a></li>
+</ul>
+<p>£7.99 / 3 = £2.66</p>
+<p><img src="images/poker/cable.jpg" alt="Cable" title="Cable" /></p>
+<p><strong>USB Plug</strong></p>
+<ul>
+<li><a href="https://www.amazon.co.uk/dp/B09X2Z6V5W">https://www.amazon.co.uk/dp/B09X2Z6V5W</a></li>
+</ul>
+<p>£9.99 / 4 = £2.49</p>
+<p><img src="images/poker/plug.jpg" alt="Plug" title="Plug" /></p>
+<p><strong>Magnetic Case</strong></p>
+<ul>
+<li><a href="https://www.ebay.co.uk/itm/275204804237">https://www.ebay.co.uk/itm/275204804237</a></li>
+</ul>
+<p>£5.90 + (£2.70 P&amp;P)</p>
+<p><img src="images/poker/compact-case.jpg" alt="Magnetic Case" title="Magnetic Case" /></p>
+<h3 id="alternatives">Alternatives</h3>
+<ul>
+<li><a href="https://www.logitech.com/en-gb/products/webcams/c270-hd-webcam.960-001063.html">Logitech - C270 HD Webcam</a> RRP £34.99
+<ul>
+<li><a href="https://www.amazon.co.uk/Logitech-Widescreen-Noise-Reducing-Automatic-Correction/dp/B01BGBJ8Y0/">Amazon</a> £17.99</li>
+</ul>
+</li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://www.arduino.cc/">Arduino</a></li>
+<li><a href="https://obsproject.com/">OBS</a></li>
+</ul>
+<h3 id="tutorials">Tutorials</h3>
+<p><strong>Random Nerd Tutorials</strong></p>
+<ul>
+<li><a href="https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/">Installing the ESP32 Board in Arduino IDE (Windows, Mac OS X, Linux)</a></li>
+<li><a href="https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/">Upload Code to ESP32-CAM AI-Thinker using ESP32-CAM-MB USB Programmer (easiest way)</a></li>
+<li><a href="https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/">ESP32-CAM Video Streaming and Face Recognition with Arduino IDE</a></li>
+<li><a href="https://randomnerdtutorials.com/esp32-cam-ov2640-camera-settings/">Change ESP32-CAM OV2640 Camera Settings: Brightness, Resolution, Quality, Contrast, and More</a></li>
+</ul>
+<p><strong>ArduCAM</strong></p>
+<ul>
+<li><a href="https://www.arducam.com/knowledge-base/mini-tutorial/">ArduCAM Mini Cameras Tutorial</a></li>
+</ul>
+
+
+        
+
+      </div>
+    </div>
+  <div id="comments-container" class="row">
+    <script src="https://giscus.app/client.js"
+        data-repo='alexhedley/blog'
+        data-repo-id='R_kgDOJjXJmQ'
+        data-category-id='DIC_kwDOJjXJmc4CXRaX'
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2023</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQV2ZWNX32"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CQV2ZWNX32');
+    </script>
+
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js" integrity="sha384-nVmn6yKHyUktDHdQfBgpn1YPgEu8gDXTYI5qccfkF1j6oxBHjKEafySIuNs3UhEW" crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>

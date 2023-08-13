@@ -4,78 +4,184 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-07-11T13:04:28Z</updated>
+	<updated>2023-08-13T09:34:12Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest-security</id>
-		<title>AWS Cloud Quest Security</title>
+		<id>https://alexhedley.github.io/blog/posts/recording-poker-games</id>
+		<title>Recording Poker Games</title>
 		<author>
-			<name>alex-hedley</name>
+			<name>alexhedley</name>
 		</author>
-		<link href="https://alexhedley.github.io/blog/posts/aws-cloud-quest-security" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/aws-cq/cloud-quest.png" />
-		<updated>2023-07-11T00:00:00Z</updated>
-		<content>&lt;!-- # AWS Cloud Quest Machine Learning --&gt;
-&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-security.jpeg" alt="AWS Cloud Quest Security Badge" title="AWS Cloud Quest Security Badge"&gt;&lt;/p&gt;
+		<link href="https://alexhedley.github.io/blog/posts/recording-poker-games" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-08-11T00:00:00Z</updated>
+		<content>&lt;p&gt;Watching the poker on &lt;a href="https://www.worldpokertour.com/"&gt;WPT&lt;/a&gt; I thought wouldn't it be cool if I could have the same setup at my home games? Where would I even begin?&lt;/p&gt;
+&lt;p&gt;So I need a camera to point at the players hole cards (multiple by the number of players), one camera over the table to see the flop, turn and river. Then would I need any more?&lt;/p&gt;
+&lt;p&gt;So how to I get the camera feeds to my computer?&lt;/p&gt;
+&lt;p&gt;I could use WebCams, and connect them via a cable - issue with that is my computer isn't in the same room as where I want to play. Is there a wireless one? But won't these be very expensive.&lt;/p&gt;
+&lt;p&gt;logitech C270 HD Webcam RRP £34.99&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/logitech-c270.png" alt="logitech C270 HD Webcam" title="logitech C270 HD Webcam"&gt;&lt;/p&gt;
+&lt;p&gt;Found them on eBay for ~£15.&lt;/p&gt;
+&lt;p&gt;Is there an Arduino alternative, yes! You can use a combination of ESP32-CAM, ESP32-CAM-MB, OV2640.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM--ESP32-CAM-MB--OV2640.jpg" alt="ESP32-CAM, ESP32-CAM-MB, OV2640" title="ESP32-CAM, ESP32-CAM-MB, OV2640"&gt;&lt;/p&gt;
+&lt;p&gt;~£11 on Amazon but then I also need a micro USB cable and USB plug. (Multiply by the number of devices.)&lt;/p&gt;
+&lt;h2 id="arduino"&gt;Arduino&lt;/h2&gt;
+&lt;p&gt;Install the board&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/badges/e53bb657-c1ca-4b8a-a8a0-d14935c52717/public_url"&gt;Credly Badge&lt;/a&gt;
+&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json"&gt;https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Change it in the app to&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AI Thinker ESP-32 CAM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Examples | ESP32 | Camera | CameraWebServer&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Camera/CameraWebServer"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Update the SSID and password - put this in a conf file?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L38-L39"&gt;https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L38-L39&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-c"&gt;#include "Secrets.h"
+const char* ssid = SECRET_SSID;
+const char* password = SECRET_PASSWORD;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;touch "Secrets.h"&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-c"&gt;#define SECRET_SSID "foo"
+#define SECRET_PASS "bar"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Update the CAMERA to &lt;code&gt;#define CAMERA_MODEL_AI_THINKER // Has PSRAM&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L24C2-L24C2"&gt;https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L24C2-L24C2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Upload&lt;/p&gt;
+&lt;p&gt;Reset (RST)&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM.jpg" alt="ESP32-CAM" title="ESP32-CAM"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM-Reset.jpg" alt="Reset" title="Reset"&gt;&lt;/p&gt;
+&lt;p&gt;Check the output for the IP Address, then navigate to it in a browser.&lt;/p&gt;
+&lt;p&gt;Click on "Start Stream"&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/CameraWebServer.png" alt="Camera Web Server" title="Camera Web Server"&gt;&lt;/p&gt;
+&lt;p&gt;Click "Stop Stream".&lt;/p&gt;
+&lt;p&gt;I then used &lt;a href="https://learn.microsoft.com/en-us/windows/powertoys/fancyzones"&gt;FancyZones&lt;/a&gt; in &lt;a href="https://learn.microsoft.com/en-us/windows/powertoys/"&gt;PowerToys&lt;/a&gt; to show all the screens together.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/CameraSetup.png" alt="Camera Setup" title="Camera Setup"&gt;&lt;/p&gt;
+&lt;p&gt;As this part is working I can move onto trying it in a piece of screen recording software.&lt;/p&gt;
+&lt;p&gt;Download/Install/Start &lt;a href="https://obsproject.com/"&gt;OBS&lt;/a&gt; and in the Scene click &lt;strong&gt;+&lt;/strong&gt; and navigate to &lt;strong&gt;Browser&lt;/strong&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/obs-sources-browser.png" alt="OBS Sources Browser" title="OBS Sources Browser"&gt;&lt;/p&gt;
+&lt;p&gt;Update the URL to the one above.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/Browser-Properties.png" alt="Browser - Properties" title="Browser - Properties"&gt;&lt;/p&gt;
+&lt;p&gt;Then in the Browser Options bar click on "Interact", this will open up a new window, hopefully load the same as the above browser did, then scroll down and click "Start Stream", once you see a video feed you can re-position this in your Scene.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/Browser-options.png" alt="Browser - Options" title="Browser - Options"&gt;&lt;/p&gt;
+&lt;p&gt;Once the video feeds are on the scene I tried to make a quick mockup of the screen - any designers about and want to help...please :p.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/SceneSetup.png" alt="Scene Setup" title="Scene Setup"&gt;&lt;/p&gt;
+&lt;p&gt;I looked for an ole time font and found one called &lt;a href="https://fonts.google.com/specimen/Rye"&gt;Rye&lt;/a&gt; (from Google Fonts).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://fonts.google.com/specimen/Rye?preview.text=HEDLEY%20CASINO&amp;amp;preview.text_type=custom"&gt;Preview - Hedley Casino&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The card backs are taken from the excellent SVG web lib from &lt;a href="https://cardmeister.github.io/"&gt;CardMeister&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then I found a set of individual &lt;a href="https://www.improvemagic.com/all-playing-cards-names-with-pictures/"&gt;cards&lt;/a&gt; on &lt;a href="https://www.improvemagic.com/"&gt;Improve Magic&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;These should come in handy later...&lt;/p&gt;
+&lt;p&gt;I created an image with a green background which I cut out 4 transparent windows to fit the camera items, a few text widgets for the names.&lt;/p&gt;
+&lt;p&gt;TODO: Pot Total, Individual Total, % Outs etc.&lt;/p&gt;
+&lt;p&gt;See a 📼 video of it in action:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wJCgOoJmJX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;p&gt;I need some wood to build a crane to hang a camera over the table to show the rest of the action.&lt;/p&gt;
+&lt;h2 id="live-stream"&gt;Live Stream&lt;/h2&gt;
+&lt;p&gt;I may live stream them on my &lt;a href="https://www.twitch.tv/"&gt;Twitch&lt;/a&gt; &lt;a href="https://www.twitch.tv/alexhedley8"&gt;@alexhedley8&lt;/a&gt; one day.&lt;/p&gt;
+&lt;h2 id="case-attempt"&gt;Case Attempt&lt;/h2&gt;
+&lt;p&gt;Found some lollipop sticks and some masking tape and got to work making a temporary case...&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM-Case.jpg" alt="Camera Case" title="Camera Case"&gt;&lt;/p&gt;
+&lt;p&gt;I then bought one instead.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note to self: configure your 3d Printer and print one yourself!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="hardware"&gt;Hardware&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Camera&lt;/td&gt;
+&lt;td&gt;£10.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cable&lt;/td&gt;
+&lt;td&gt;£2.66&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Plug&lt;/td&gt;
+&lt;td&gt;£2.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Case&lt;/td&gt;
+&lt;td&gt;£6.20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;------&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;£22.34&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Camera&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;XTVTX ESP-32-CAM WiFi Bluetooth Board ESP-32-CAM-MB Micro USB to Serial Port with OV2640 2MP Camera Module Dual Mode compatible with Arduino&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/B093GSCBWJ"&gt;https://www.amazon.co.uk/dp/B093GSCBWJ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;£10.99&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM--ESP32-CAM-MB--OV2640.jpg" alt="ESP32-CAM, ESP32-CAM-MB, OV2640" title="ESP32-CAM, ESP32-CAM-MB, OV2640"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mirco USB Cable&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/B07WNX1B8C"&gt;https://www.amazon.co.uk/dp/B07WNX1B8C&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;£7.99 / 3 = £2.66&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/cable.jpg" alt="Cable" title="Cable"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;USB Plug&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/B09X2Z6V5W"&gt;https://www.amazon.co.uk/dp/B09X2Z6V5W&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;£9.99 / 4 = £2.49&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/plug.jpg" alt="Plug" title="Plug"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Magnetic Case&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.ebay.co.uk/itm/275204804237"&gt;https://www.ebay.co.uk/itm/275204804237&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;£5.90 + (£2.70 P&amp;amp;P)&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/compact-case.jpg" alt="Magnetic Case" title="Magnetic Case"&gt;&lt;/p&gt;
+&lt;h3 id="alternatives"&gt;Alternatives&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.logitech.com/en-gb/products/webcams/c270-hd-webcam.960-001063.html"&gt;Logitech - C270 HD Webcam&lt;/a&gt; RRP £34.99
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/Logitech-Widescreen-Noise-Reducing-Automatic-Correction/dp/B01BGBJ8Y0/"&gt;Amazon&lt;/a&gt; £17.99&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
-$29.00 / month + VAT&lt;br&gt;
-&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Use AWS security services to build solutions that respond to incidents, remediate quickly, detect vulnerabilities, and prevent data loss.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id="links"&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.arduino.cc/"&gt;Arduino&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://obsproject.com/"&gt;OBS&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="resources-used"&gt;Resources Used&lt;/h2&gt;
+&lt;h3 id="tutorials"&gt;Tutorials&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Random Nerd Tutorials&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Amazon API Gateway&lt;/li&gt;
-&lt;li&gt;Amazon Athena&lt;/li&gt;
-&lt;li&gt;Amazon CloudFront&lt;/li&gt;
-&lt;li&gt;Amazon CloudWatch&lt;/li&gt;
-&lt;li&gt;Amazon Cognito&lt;/li&gt;
-&lt;li&gt;Amazon DynamoDB&lt;/li&gt;
-&lt;li&gt;Amazon EC2&lt;/li&gt;
-&lt;li&gt;Amazon EC2 Auto Scaling&lt;/li&gt;
-&lt;li&gt;Amazon EventBridge&lt;/li&gt;
-&lt;li&gt;Amazon Kinesis&lt;/li&gt;
-&lt;li&gt;Amazon Lambda&lt;/li&gt;
-&lt;li&gt;Amazon Relational Database Service (RDS)&lt;/li&gt;
-&lt;li&gt;Amazon S3&lt;/li&gt;
-&lt;li&gt;Amazon SNS&lt;/li&gt;
-&lt;li&gt;Amazon VPC&lt;/li&gt;
-&lt;li&gt;Amazon WAF&lt;/li&gt;
-&lt;li&gt;AWS Amplify&lt;/li&gt;
-&lt;li&gt;AWS CloudFormation&lt;/li&gt;
-&lt;li&gt;AWS Cognito&lt;/li&gt;
-&lt;li&gt;AWS Config&lt;/li&gt;
-&lt;li&gt;AWS Glue&lt;/li&gt;
-&lt;li&gt;AWS Identity and Access Management (IAM)&lt;/li&gt;
-&lt;li&gt;AWS Key Management Service (KMS)&lt;/li&gt;
-&lt;li&gt;AWS Lambda&lt;/li&gt;
-&lt;li&gt;AWS Secrets Manager&lt;/li&gt;
-&lt;li&gt;AWS Service Catalog&lt;/li&gt;
-&lt;li&gt;AWS Systems Manager&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/"&gt;Installing the ESP32 Board in Arduino IDE (Windows, Mac OS X, Linux)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/"&gt;Upload Code to ESP32-CAM AI-Thinker using ESP32-CAM-MB USB Programmer (easiest way)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/"&gt;ESP32-CAM Video Streaming and Face Recognition with Arduino IDE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://randomnerdtutorials.com/esp32-cam-ov2640-camera-settings/"&gt;Change ESP32-CAM OV2640 Camera Settings: Brightness, Resolution, Quality, Contrast, and More&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ArduCAM&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.arducam.com/knowledge-base/mini-tutorial/"&gt;ArduCAM Mini Cameras Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-		<summary>&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;</summary>
+		<summary>A home setup to record a poker game.</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest</id>
@@ -228,6 +334,76 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=docsmsf
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>Change the background colour in preview.</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest-security</id>
+		<title>AWS Cloud Quest Security</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/aws-cloud-quest-security" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/aws-cq/cloud-quest.png" />
+		<updated>2023-07-11T00:00:00Z</updated>
+		<content>&lt;!-- # AWS Cloud Quest Machine Learning --&gt;
+&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-security.jpeg" alt="AWS Cloud Quest Security Badge" title="AWS Cloud Quest Security Badge"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/e53bb657-c1ca-4b8a-a8a0-d14935c52717/public_url"&gt;Credly Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
+$29.00 / month + VAT&lt;br&gt;
+&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Use AWS security services to build solutions that respond to incidents, remediate quickly, detect vulnerabilities, and prevent data loss.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources-used"&gt;Resources Used&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Amazon API Gateway&lt;/li&gt;
+&lt;li&gt;Amazon Athena&lt;/li&gt;
+&lt;li&gt;Amazon CloudFront&lt;/li&gt;
+&lt;li&gt;Amazon CloudWatch&lt;/li&gt;
+&lt;li&gt;Amazon Cognito&lt;/li&gt;
+&lt;li&gt;Amazon DynamoDB&lt;/li&gt;
+&lt;li&gt;Amazon EC2&lt;/li&gt;
+&lt;li&gt;Amazon EC2 Auto Scaling&lt;/li&gt;
+&lt;li&gt;Amazon EventBridge&lt;/li&gt;
+&lt;li&gt;Amazon Kinesis&lt;/li&gt;
+&lt;li&gt;Amazon Lambda&lt;/li&gt;
+&lt;li&gt;Amazon Relational Database Service (RDS)&lt;/li&gt;
+&lt;li&gt;Amazon S3&lt;/li&gt;
+&lt;li&gt;Amazon SNS&lt;/li&gt;
+&lt;li&gt;Amazon VPC&lt;/li&gt;
+&lt;li&gt;Amazon WAF&lt;/li&gt;
+&lt;li&gt;AWS Amplify&lt;/li&gt;
+&lt;li&gt;AWS CloudFormation&lt;/li&gt;
+&lt;li&gt;AWS Cognito&lt;/li&gt;
+&lt;li&gt;AWS Config&lt;/li&gt;
+&lt;li&gt;AWS Glue&lt;/li&gt;
+&lt;li&gt;AWS Identity and Access Management (IAM)&lt;/li&gt;
+&lt;li&gt;AWS Key Management Service (KMS)&lt;/li&gt;
+&lt;li&gt;AWS Lambda&lt;/li&gt;
+&lt;li&gt;AWS Secrets Manager&lt;/li&gt;
+&lt;li&gt;AWS Service Catalog&lt;/li&gt;
+&lt;li&gt;AWS Systems Manager&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/talk-beginners-guide-to-api-specs-part2</id>
@@ -624,43 +800,5 @@ Just published a video: an update on WASI support in .NET 8, and some prototypes
 &lt;/ul&gt;
 </content>
 		<summary>Build a beautiful dashboard</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/symantec-connect-articles</id>
-		<title>Symantec Connect Articles</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/symantec-connect-articles" />
-		<link rel="enclosure" type="image" href="https://raw.githubusercontent.com/AlexHedley/symantec-connect-articles/main/src/input/images/header.png" />
-		<updated>2023-06-22T00:00:00Z</updated>
-		<content>&lt;!-- # Symantec Connect Articles --&gt;
-&lt;!-- In my previous job I was a Symantec Workflow Developer and used to write up anything I found whilst building applications. This used their Community site. --&gt;
-&lt;p&gt;I've put all my Symantec Connect Articles into a Blog - &lt;a href="https://alexhedley.com/symantec-connect-articles/"&gt;Symantec Connect Articles&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It's using &lt;a href="https://www.statiq.dev/web"&gt;Statiq.Web&lt;/a&gt; just like this one.&lt;/p&gt;
-&lt;p&gt;The content was originally hosted on &lt;a href="https://www.symantec.com/connect/"&gt;Symantec Connect&lt;/a&gt; then migrated to the &lt;a href="https://community.broadcom.com/"&gt;Broadcom Community&lt;/a&gt; when they acquired Symantec.&lt;/p&gt;
-&lt;p&gt;In my previous post "&lt;a href="https://alexhedley.github.io/blog/symantec-connect-100-solutions"&gt;Symantec Connect - 100 Solutions&lt;/a&gt;" I shared a milestone I made back in 2019. I'm not sure why at the time I didn't keep a copy of this content on my own blog but that has now been fixed.&lt;/p&gt;
-&lt;p&gt;I built an XML parsing tool (&lt;a href="https://github.com/AlexHedley/broadcom-community-parser"&gt;Broadcom Community Parser&lt;/a&gt;) that took the export of my content and converted it to &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt; and also downloaded the accompanying images. This is now hosted at &lt;a href="https://alexhedley.com/symantec-connect-articles/"&gt;https://alexhedley.com/symantec-connect-articles/&lt;/a&gt;. It still needs a little tidying up, some images are missing which I'm unlikely to find but the majority is looking good.&lt;/p&gt;
-&lt;p&gt;I might also grab a copy of my colleagues posts for historic purposes too.&lt;/p&gt;
-&lt;p&gt;Another great resource is Andrew's site: &lt;a href="https://atmaworkflow.wordpress.com/"&gt;atmaworkflow&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://community.broadcom.com/"&gt;Broadcom Community&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://community.broadcom.com/symantecenterprise/network/members/profile?UserKey=eaa683c3-ee4a-4f8c-aa6b-20e545ad1ef8"&gt;Broadcom Community Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.symantec.com/connect/"&gt;Symantec Connect&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.symantec.com/connect/user/alexhedley"&gt;Symantec Connect Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://atmaworkflow.wordpress.com/"&gt;atmaworkflow&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.symantec.com/connect/user/africo"&gt;Symantec Connect Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
 	</entry>
 </feed>
