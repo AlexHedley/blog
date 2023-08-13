@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-08-13T09:34:12Z</updated>
+	<updated>2023-08-13T09:39:05Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -182,6 +182,237 @@ const char* password = SECRET_PASSWORD;
 &lt;/ul&gt;
 </content>
 		<summary>A home setup to record a poker game.</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/dependencycheck-dotnet</id>
+		<title>DependencyCheck .NET</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/dependencycheck-dotnet" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/dependency-check/dependencycheck.svg" />
+		<updated>2023-08-08T00:00:00Z</updated>
+		<content>&lt;!-- DependencyCheck .NET --&gt;
+&lt;p&gt;In this article I will run through setting up the awesome &lt;a href="https://jeremylong.github.io/DependencyCheck/index.html"&gt;DependencyCheck&lt;/a&gt; from &lt;a href="https://github.com/jeremylong"&gt;Jeremy Long&lt;/a&gt; for a .NET application.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dependency-check can currently be used to scan software to identify the use of known vulnerable components.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I've used this on some Kotlin/Java projects and wanted to see how easy it was to setup for .NET.&lt;/p&gt;
+&lt;p&gt;There are a number of plugins listed for Gradle etc but for .NET I'm going to use the &lt;a href="https://jeremylong.github.io/DependencyCheck/dependency-check-cli/index.html"&gt;CLI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can run this locally, first install with &lt;code&gt;brew install dependency-check&lt;/code&gt; then for *&lt;strong&gt;nix&lt;/strong&gt; systems run &lt;code&gt;dependency-check.sh --project "My App Name" --scan "/java/application/lib"&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Since I'm wanting to also try this out in CI/CD it's straight to GitHub to create a sample repo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/dotnet-dependencycheck"&gt;dotnet-dependencycheck&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I created a simple .NET Console Application then looked at what was needed to run the tooling locally.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dependency-check --project "DependencyCheckExample" --scan "src/DependencyCheckExample/bin/Debug/net7.0/*.dll"&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[NOTE] Update the &lt;code&gt;net7.0&lt;/code&gt; version to whichever you are working with.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Depending where you are running the tool from determines the output location of the report. See the &lt;a href="https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html"&gt;Command Line Agruments&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Short&lt;/th&gt;
+&lt;th&gt;Argument Name&lt;/th&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Requirement&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-o&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--out&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The folder to write reports to. This defaults to the current directory. If the format is not set to ALL one could specify a specific file name.&lt;/td&gt;
+&lt;td&gt;Optional&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Make sure you are in the working directory of your project before running, unless you want it adding to your &lt;em&gt;usr&lt;/em&gt; folder.&lt;/p&gt;
+&lt;p&gt;I also updated it to output to a subfolder of &lt;em&gt;reports&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dependency-check --project "DependencyCheckExample" --scan "DependencyCheckExample/bin/Debug/net7.0/*.dll" --out "reports"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This produces a &lt;code&gt;dependency-check-report.html&lt;/code&gt; file, self contained with the results.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dependency-check/dependency-check-report.png" alt="Sample Report" title="Sample Report"&gt;&lt;/p&gt;
+&lt;p&gt;Not very interesting as there are no dependencies, but at least the flow is working.&lt;/p&gt;
+&lt;p&gt;Next is how to replicate this in &lt;a href="https://github.com/features/actions"&gt;GitHub Actions&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;Could I run &lt;code&gt;brew install&lt;/code&gt; and run &lt;code&gt;dependency-check.sh&lt;/code&gt;, maybe but I'm sure someone has already created a GitHub Action for this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dependency-check/Dependency-Check_Action"&gt;Dependency-Check Action&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;      - name: Depcheck
+        uses: dependency-check/Dependency-Check_Action@main
+        id: Depcheck
+        with:
+          project: 'test'
+          path: '.'
+          format: 'HTML'
+          out: 'reports' # this is the default, no need to specify unless you wish to override it
+          args: &amp;gt;
+            --failOnCVSS 7
+            --enableRetired
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This has a lot of options to override so check the docs if you want to tweak anything.&lt;/p&gt;
+&lt;p&gt;There's an ADO one too (&lt;a href="https://github.com/dependency-check/azuredevops"&gt;azuredevops&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;I created a Workflow (&lt;a href="https://github.com/alex-hedley/dotnet-dependencycheck/blob/main/.github/workflows/depcheck.yml"&gt;depcheck.yml&lt;/a&gt;) to get the &lt;em&gt;src&lt;/em&gt;, &lt;em&gt;restore&lt;/em&gt; any dependencies, &lt;em&gt;build&lt;/em&gt;, (&lt;em&gt;test&lt;/em&gt;) and then run the &lt;strong&gt;Dependency-Check action&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We now have an artifact so might as well upload that and since it's a website we can use GitHub Pages to host the output too.&lt;/p&gt;
+&lt;p&gt;I manually created an &lt;code&gt;index.html&lt;/code&gt; on the &lt;code&gt;gh-pages&lt;/code&gt; branch to point to the file, you could do with this how you wish.&lt;/p&gt;
+&lt;p&gt;I've used &lt;a href="https://github.com/JamesIves/github-pages-deploy-action"&gt;JamesIves/github-pages-deploy-action&lt;/a&gt; but you could swap to &lt;a href="https://github.com/peaceiris/actions-gh-pages"&gt;peaceiris/actions-gh-pages&lt;/a&gt; or even the GH one through the new Beta options which includes &lt;code&gt;actions/configure-pages&lt;/code&gt;, &lt;code&gt;actions/upload-pages-artifact&lt;/code&gt; and &lt;code&gt;actions/deploy-pages&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next up is adding some vulnerable code to the sample Console App to see what DC finds...&lt;/p&gt;
+&lt;h2 id="vulnerabilities"&gt;Vulnerabilities&lt;/h2&gt;
+&lt;p&gt;First thing to do is find some...&lt;/p&gt;
+&lt;p&gt;I could take a look through the CVEs on &lt;a href="https://cve.mitre.org/"&gt;https://cve.mitre.org&lt;/a&gt; but it would help to know the CVE #. Another option is to filter the &lt;a href="https://github.com/advisories"&gt;GitHub Advisory Database&lt;/a&gt; for &lt;a href="https://www.nuget.org/"&gt;NuGet&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anuget"&gt;https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anuget&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I can then filter by Severity to get an example of each kind.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🟥 Critical - &lt;a href="https://github.com/advisories/GHSA-g3wc-xv93-445q"&gt;CVE-2021-4248&lt;/a&gt; - DNS NuGet package uses insufficiently random values (DNS (6.1.0))&lt;/li&gt;
+&lt;li&gt;🟧 High - &lt;a href="https://github.com/advisories/GHSA-5pm2-9mr2-3frq"&gt;CVE-2023-21893&lt;/a&gt; - Component takeover in Oracle Data Provider for .NET (Oracle.ManagedDataAccess (21.4.0) / Oracle.ManagedDataAccess.Core (3.21.1))&lt;/li&gt;
+&lt;li&gt;🟨 Moderate - &lt;a href="https://github.com/advisories/GHSA-8g2p-5pqh-5jmc"&gt;CVE-2022-41064&lt;/a&gt; - .NET Information Disclosure Vulnerability (System.Data.SqlClient (4.8.3))&lt;/li&gt;
+&lt;li&gt;⬜️ Low - &lt;a href="https://github.com/advisories/GHSA-j9m2-h2pv-wvph"&gt;CVE-2021-43306&lt;/a&gt; - Regular expression denial of service in jquery-validation (jQuery.Validation (1.19.3))&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Add these to my &lt;code&gt;.csproj&lt;/code&gt;, rebuild and then re-run the DC tool.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dependency-check/dependency-check-report-summary.png" alt="Dependency-Check Report - Summary" title="Dependency-Check Report - Summary"&gt;&lt;/p&gt;
+&lt;p&gt;Comparing this to GitHub's check you can also see the same list from the Security tab (Dependabot):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/dotnet-dependencycheck/security"&gt;https://github.com/alex-hedley/dotnet-dependencycheck/security&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dependency-check/GitHub-Dependabot-alerts.png" alt="GitHub - Dependabot alerts" title="GitHub - Dependabot alerts"&gt;&lt;/p&gt;
+&lt;h2 id="suppressions"&gt;Suppressions&lt;/h2&gt;
+&lt;p&gt;As with everything we want a way to ignore things, these being false positive vulnerabilities or ones we've chosen to ignore for whatever reason. There is an option to do this with a supplementary file.&lt;/p&gt;
+&lt;p&gt;Create a new xml file, e.g. &lt;code&gt;dependency-suppression.xml&lt;/code&gt; and add the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;
+&amp;lt;suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd"&amp;gt;
+&amp;lt;/suppressions&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then in the Dependency Check Report there is a &lt;em&gt;suppress&lt;/em&gt; button containing the XML you need to add, click, copy and add e.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;    &amp;lt;suppress&amp;gt;
+        &amp;lt;notes&amp;gt;&amp;lt;![CDATA[
+        file name: Microsoft.Win32.SystemEvents.dll
+        ]]&amp;gt;&amp;lt;/notes&amp;gt;
+        &amp;lt;packageUrl regex="true"&amp;gt;^pkg:generic/Microsoft\.Win32\.SystemEvents@.*$&amp;lt;/packageUrl&amp;gt;
+        &amp;lt;cpe&amp;gt;cpe:/a:microsoft:.net_core&amp;lt;/cpe&amp;gt;
+    &amp;lt;/suppress&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Re-run the report and this will have gone.&lt;/p&gt;
+&lt;h2 id="fail"&gt;Fail&lt;/h2&gt;
+&lt;p&gt;From the sample there was an added arg of &lt;code&gt;failOnCVSS&lt;/code&gt; set to &lt;strong&gt;7&lt;/strong&gt; so this was failing the CI/CD, as expected:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;Error:
+
+One or more dependencies were identified with vulnerabilities that have a CVSS score greater than or equal to '7.0': 
+
+DependencyCheckExample.csproj: CVE-2021-4248(9.8)
+DependencyCheckExample.csproj: CVE-2023-21893(7.5)
+DependencyCheckExample.csproj: CVE-2023-21893(7.5)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Removing this didn't stop the build failing and I couldn't see a default value in the code. Looking at the check &lt;a href="https://github.com/jeremylong/DependencyCheck/blob/6a85d0ffa28d6e625f3ef23db766f651614ad505/cli/src/main/java/org/owasp/dependencycheck/CliParser.java#L906"&gt;CliParser - getFailOnCVSS&lt;/a&gt; I found it defaulted to &lt;strong&gt;11&lt;/strong&gt; so just overrode it for the time being as I wanted the build to pass and produce the report - in a real world situation it would be good to set this to the required limit.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yml"&gt;        args: &amp;gt;
+            --failOnCVSS 11
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html"&gt;Command Line Arguments&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Short&lt;/th&gt;
+&lt;th&gt;Argument Name&lt;/th&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Requirement&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--failOnCVSS&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;score&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;If the score set between 0 and 10 the exit code from dependency-check will indicate if a vulnerability with a CVSS score equal to or higher was identified.&lt;/td&gt;
+&lt;td&gt;Optional&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="inconsistencies"&gt;Inconsistencies&lt;/h2&gt;
+&lt;p&gt;Running the app locally doesn't produce the same output as on GitHub Actions...&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dependency-check --v&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dependency-Check Core version 8.3.1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The &lt;a href="https://github.com/dependency-check/Dependency-Check_Action"&gt;Dependency-Check Action&lt;/a&gt; uses the &lt;a href="https://github.com/dependency-check/DependencyCheck_Builder/"&gt;DependencyCheck Builder&lt;/a&gt; which has a &lt;a href="https://github.com/dependency-check/DependencyCheck_Builder/blob/main/Dockerfile"&gt;Dockerfile&lt;/a&gt; which uses the &lt;a href="https://hub.docker.com/r/owasp/dependency-check"&gt;Docker Hub image&lt;/a&gt; which is currently the same version.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;--enableRetired&lt;/code&gt; is being used in the GHA but I'm not locally.&lt;/p&gt;
+&lt;p&gt;I need to check if any other args are being set to a default value.&lt;/p&gt;
+</content>
+		<summary>How to use DependencyCheck with .NET.</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest-networking</id>
+		<title>AWS Cloud Quest Networking</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/aws-cloud-quest-networking" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/aws-cq/cloud-quest.png" />
+		<updated>2023-07-28T00:00:00Z</updated>
+		<content>&lt;!-- # AWS Cloud Quest Networking --&gt;
+&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Networking&lt;/strong&gt; training 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-networking.png" alt="AWS Cloud Quest Networking Badge" title="AWS Cloud Quest Networking Badge"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/8f0220d0-0704-4ce2-8650-4ffbf090bf4b/public_url"&gt;Credly Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="notes"&gt;Notes&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;AWS Step Functions&lt;/em&gt; took me back to my Symantec Workflow days. It was a nice UI to work with and interesting to see the JSON output.
+A new resource I got to try was &lt;em&gt;Amazon QuickSight&lt;/em&gt;, seems very handy when linked with &lt;em&gt;Amazon Athena&lt;/em&gt; to build some very useful dashboards.&lt;/p&gt;
+&lt;h2 id="info"&gt;Info&lt;/h2&gt;
+&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
+$29.00 / month + VAT&lt;br&gt;
+&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As the city’s Networking specialist, you will leverage AWS services to scale network connectivity, connect to on-premisses networks, protect applications, analyze network traffic and identify suspicious activity. As you build real solutions, you will explore concepts such as network tunneling, peering, cross region routing and log analysis.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources-used"&gt;Resources Used&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Amazon Athena&lt;/li&gt;
+&lt;li&gt;Amazon CloudFront&lt;/li&gt;
+&lt;li&gt;Amazon CloudWatch&lt;/li&gt;
+&lt;li&gt;Amazon EC2&lt;/li&gt;
+&lt;li&gt;Amazon EC2 Auto Scaling&lt;/li&gt;
+&lt;li&gt;Amazon QuickSight&lt;/li&gt;
+&lt;li&gt;Amazon Relational Database Service (RDS)&lt;/li&gt;
+&lt;li&gt;Amazon Route 53&lt;/li&gt;
+&lt;li&gt;Amazon S3&lt;/li&gt;
+&lt;li&gt;Amazon SNS&lt;/li&gt;
+&lt;li&gt;Amazon VPC&lt;/li&gt;
+&lt;li&gt;AWS&lt;/li&gt;
+&lt;li&gt;AWS Cloud Trail&lt;/li&gt;
+&lt;li&gt;AWS CloudFormation&lt;/li&gt;
+&lt;li&gt;AWS CloudWatch&lt;/li&gt;
+&lt;li&gt;AWS Glue&lt;/li&gt;
+&lt;li&gt;AWS Lambda&lt;/li&gt;
+&lt;li&gt;AWS Network Firewall&lt;/li&gt;
+&lt;li&gt;AWS Private Link&lt;/li&gt;
+&lt;li&gt;AWS Site-to-Site VPN&lt;/li&gt;
+&lt;li&gt;AWS Step Functions&lt;/li&gt;
+&lt;li&gt;AWS Systems Manager&lt;/li&gt;
+&lt;li&gt;AWS Transit Gateway&lt;/li&gt;
+&lt;li&gt;AWS WAF&lt;/li&gt;
+&lt;li&gt;Elastic Load Balancing (ELB)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Networking&lt;/strong&gt; training 🎉!&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest</id>
@@ -695,110 +926,5 @@ Independent Technical Coach • Sudbery Software Engineering Ltd&lt;/p&gt;
 &lt;/details&gt;
 </content>
 		<summary>&lt;p&gt;This week I had the absolute pleasure of going to &lt;a href="https://leaddev.com/leaddev-london-2023"&gt;LeadDev London 2023&lt;/a&gt; thanks to my employer Opencast.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/dotnet-blazor-interactive</id>
-		<title>.NET Blazor Interactive</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/dotnet-blazor-interactive" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-06-25T00:00:00Z</updated>
-		<content>&lt;p&gt;With the help of some friends we've build a &lt;a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"&gt;Blazor&lt;/a&gt; WASM site that can compile &lt;a href="https://learn.microsoft.com/dotnet/csharp/"&gt;C#&lt;/a&gt; in the browser.&lt;/p&gt;
-&lt;p&gt;Meet &lt;strong&gt;&lt;a href="https://alex-hedley.github.io/BlazorInteractive/"&gt;BlazorInteractive&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/alex-hedley/BlazorInteractive/main/docs/images/progress.png" alt="BlazorInteractive Progress" /&gt;&lt;/p&gt;
-&lt;p&gt;Looking to add &lt;a href="https://fsharp.org/"&gt;F#&lt;/a&gt; and &lt;a href="https://learn.microsoft.com/dotnet/visual-basic/"&gt;VB.NET&lt;/a&gt; support soon.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;.NET Interactive&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Steve Sanderson&lt;br /&gt;
-&amp;#64;stevensanderson&lt;br /&gt;
-Just published a video: an update on WASI support in .NET 8, and some prototypes that push the boundaries of what you can do with .NET + WebAssembly&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="https://twitter.com/stevensanderson/status/1658845798212202496?s=20"&gt;https://twitter.com/stevensanderson/status/1658845798212202496?s=20&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Just published a video: an update on WASI support in .NET 8, and some prototypes that push the boundaries of what you can do with .NET + WebAssembly &lt;a href="https://t.co/bq9YzlYJCo"&gt;https://t.co/bq9YzlYJCo&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steve Sanderson (&amp;#64;stevensanderson) &lt;a href="https://twitter.com/stevensanderson/status/1658845798212202496?ref_src=twsrc%5Etfw"&gt;May 17, 2023&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;p&gt;Experiments with the new WASI workload in .NET 8 Preview 4&lt;br /&gt;
-📼 &lt;a href="https://www.youtube.com/watch?v=gKX-cdqnb8I"&gt;https://www.youtube.com/watch?v=gKX-cdqnb8I&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;stevensandersonuk"&gt;stevensandersonuk&lt;/a&gt;
-17 May 2023&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;.NET 8 adds a new &amp;quot;wasi-experimental&amp;quot; workload, replacing the earlier Wasi.Sdk. This is a step towards giving .NET native, built-in support for server-side WebAssembly scenarios.&lt;/p&gt;
-&lt;p&gt;This video shows how to get started, then demonstrates how .NET+WASI creates possibilities for new kinds of apps and new ways to use .NET.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://try.dot.net/"&gt;Try .NET&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://dotnet.microsoft.com/en-us/platform/try-dotnet"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/try"&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://devblogs.microsoft.com/dotnet/net-interactive-is-here-net-notebooks-preview-2/"&gt;.NET Interactive is here! | .NET Notebooks Preview 2&lt;/a&gt; 📅 February 6th, 2020&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/interactive"&gt;Code&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/interactive/issues/800"&gt;[QUESTION]: Can .NET interactive be embedded in a Web Application?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/BlazorInteractive"&gt;BlazorInteractive&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alex-hedley.github.io/BlazorInteractive/"&gt;Site&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/dotnet-interactive-experiments"&gt;.NET Interactive Experiments&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/dotnet-interactive-blazor-wasm"&gt;.NET Interactive Blazor (WASM)&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/SteveSandersonMS/dotnet-wasi-sdk"&gt;Experimental WASI SDK for .NET Core&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;With the help of some friends we've build a &lt;a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"&gt;Blazor&lt;/a&gt; WASM site that can compile &lt;a href="https://learn.microsoft.com/dotnet/csharp/"&gt;C#&lt;/a&gt; in the browser.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/the-beginning-of-blashing</id>
-		<title>The Beginning of Blashing</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/the-beginning-of-blashing" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-06-23T00:00:00Z</updated>
-		<content>&lt;p&gt;Having worked with a &lt;a href="https://github.com/Shopify/dashing"&gt;Dashing&lt;/a&gt; / &lt;a href="https://github.com/Smashing/smashing"&gt;Smashing&lt;/a&gt; meant having to setup 💎 &lt;a href="https://www.ruby-lang.org/en/"&gt;Ruby&lt;/a&gt;, as this isn't a language I'm not familiar with there was a little bit of a barrier to entry. I've used in the past with some iOS projects but only in little bursts.&lt;/p&gt;
-&lt;p&gt;Having a discussion with a colleague they had a similar experience, now as we're both .NET enthusiasts the obvious choice was to port it to &lt;a href="https://dotnet.microsoft.com/"&gt;.NET&lt;/a&gt; and since &lt;a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"&gt;Blazor&lt;/a&gt; is the hot stuff atm why not use that.&lt;/p&gt;
-&lt;p&gt;Before we start, we need a name...&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Blashing&lt;/strong&gt; &lt;img src="https://alexhedley.github.io/blog/images/blashing/bowtie_blazor_logo.png" alt="Blashing" title="Blashing"&gt;&lt;/p&gt;
-&lt;p&gt;I know, clever! I don't know how I come up with such great names.&lt;/p&gt;
-&lt;p&gt;Next is create a &lt;a href="https://github.com/AlexHedley/blashing"&gt;repo&lt;/a&gt; and the journey begins.&lt;/p&gt;
-&lt;p&gt;I've already made a start creating the original list of &lt;a href="https://github.com/Smashing/smashing/tree/master/templates/project/widgets"&gt;widgets&lt;/a&gt;: &lt;em&gt;clock&lt;/em&gt;, &lt;em&gt;comments&lt;/em&gt;, &lt;em&gt;graph&lt;/em&gt;, &lt;em&gt;iframe&lt;/em&gt;, &lt;em&gt;image&lt;/em&gt;, &lt;em&gt;list&lt;/em&gt;, &lt;em&gt;meter&lt;/em&gt;, &lt;em&gt;number&lt;/em&gt;, &lt;em&gt;text&lt;/em&gt;. There is also a community of &lt;a href="https://github.com/Smashing/smashing/wiki/Additional-Widgets"&gt;Additional Widgets&lt;/a&gt; that could be fun to port over too.&lt;/p&gt;
-&lt;p&gt;There's the grid system to think about, drag &amp;amp; drop capabilities, &lt;a href="https://fontawesome.com/"&gt;Font Awesome&lt;/a&gt; icons and much, much more.&lt;/p&gt;
-&lt;p&gt;You can follow along with the progress using the GitHub &lt;a href="https://github.com/users/AlexHedley/projects/2/views/2"&gt;Project&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I'd like to use a Blazor WASM project to host a demo and documentation site showing the features.&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/AlexHedley/blashing"&gt;Blashing&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/users/AlexHedley/projects/2/views/2"&gt;Project&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Website - WIP&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://dashing.io/"&gt;Dashing Website&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Shopify/dashing"&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://smashing.github.io/"&gt;Smashing Website&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Smashing/smashing"&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Build a beautiful dashboard</summary>
 	</entry>
 </feed>
