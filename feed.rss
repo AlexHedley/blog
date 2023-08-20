@@ -5,15 +5,180 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Sun, 13 Aug 2023 10:19:16 GMT</pubDate>
-		<lastBuildDate>Sun, 13 Aug 2023 10:19:16 GMT</lastBuildDate>
+		<pubDate>Sun, 20 Aug 2023 12:57:59 GMT</pubDate>
+		<lastBuildDate>Sun, 20 Aug 2023 12:57:59 GMT</lastBuildDate>
+		<item>
+			<title>Poker - Table top</title>
+			<link>https://alexhedley.github.io/blog/posts/poker-table-top</link>
+			<description>Building a table top to house all the tech.</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/poker-table-top</guid>
+			<pubDate>Sat, 19 Aug 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Poker Table Top --&gt;
+&lt;p&gt;I have a Cardinal Poker Table top that folds in 4 and opens to 35".&lt;/p&gt;
+&lt;p&gt;It's a little shy of that but close enough.&lt;/p&gt;
+&lt;p&gt;I bought a piece of 6mm MDF cut to 38" square.&lt;/p&gt;
+&lt;p&gt;Drew corner to corner to get the center, then measured in 1.5" from each edge to draw a square.&lt;/p&gt;
+&lt;p&gt;Next i measured 8.75" from the center each way, and joined the dots to draw a hexagon.&lt;/p&gt;
+&lt;p&gt;I placed the folded out table in the center and drew around it.&lt;/p&gt;
+&lt;p&gt;I'll get to cutting off the corners and sanding at a later date.&lt;/p&gt;
+&lt;p&gt;I've placed the 4 cameras around the table, in a rough position.&lt;/p&gt;
+&lt;p&gt;I will need to drill a gap from edge to edge to allow for the charging cable to fit, deciding on length is a job for a later day.&lt;/p&gt;
+&lt;p&gt;I will also be making a stand (|‾) &lt;!-- Г ◸ --&gt; to hang the top camera from.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-1.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-2.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-3.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
+&lt;!-- ## Links --&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Poker - Tracking cards</title>
+			<link>https://alexhedley.github.io/blog/posts/poker-tracking-cards</link>
+			<description>How to know what cards are currently in play.</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/poker-tracking-cards</guid>
+			<pubDate>Sun, 13 Aug 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This is Part 2 of the Poker series, see &lt;a href="https://alexhedley.github.io/blog/posts/recording-poker-games"&gt;Recording Poker Games&lt;/a&gt; for the initial setup.&lt;/p&gt;
+&lt;p&gt;What would be the best way to track the cards being played?&lt;/p&gt;
+&lt;p&gt;I could train a machine learning model or use an existing one? See &lt;a href="https://github.com/awrd2019/Playing-Cards-Computer-Vision"&gt;Playing-Cards-Computer-Vision&lt;/a&gt; from &lt;a href="https://github.com/awrd2019/"&gt;@awrd2019&lt;/a&gt;. Not sure how much work this would be and how accurate the results are.&lt;/p&gt;
+&lt;p&gt;The next idea was RFID Playing cards, I got a link for &lt;a href="https://www.saturnmagic.co.uk/saturn-magic-shop/luna-nfcrfid-cards-by-andras-barthazi.html"&gt;Luna NFC/RFID Cards by Andras Barthazi&lt;/a&gt; and thought £21.99 for a pack isn't bad, but I'd miss read:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blank face (6 cards): £21.99&lt;/li&gt;
+&lt;li&gt;Poker face (52 + 2 cards): £104.99&lt;/li&gt;
+&lt;li&gt;Blank face (54 cards): £104.99&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Checking other sites I found one a little cheaper in &lt;a href="https://illuminati-magic.com/products/rfid-deck-iso15693"&gt;RFID PLAYING CARD DECK, ISO15693&lt;/a&gt; £93.00 GBP.&lt;/p&gt;
+&lt;p&gt;So why don't I just buy some NFC / RFID stickers and put them on an existing pack of playing cards?
+It might make them harder to shuffle and easier to see a marked card but for an inital POC it'll be cheaper.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;50pcs NFC Tags, BetterJonny NFC Cards, NFC Stickers Ntag 215 NFC Tag NFC Coin Cards Compatible with TagMo &amp;amp; Amiibo, NFC Enabled Mobile Phones and Devices, Round, White&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/gp/product/B0C786FJ82/"&gt;https://www.amazon.co.uk/gp/product/B0C786FJ82/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Only £8.99 for 50, that's much better, albeit I need 52 and I'll have to stick them all on and program them all, but that's the fun part!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/NTAG215.jpg" alt="NTAG215" title="NTAG215"&gt;&lt;/p&gt;
+&lt;p&gt;Next I need a reader/writer, which I'm sure I saw in the &lt;a href="https://inventr.io/product/adventure-kit-2-pre-order/"&gt;ADVENTURE KIT 2&lt;/a&gt; $197.00 I'd bought.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1x RFID reader and Keychain&lt;/p&gt;
+&lt;p&gt;Create your own unique ID card and be able to read the data from it. Allowing just those with access keys in.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ar054-rfid-mfrc522.png" alt="MFRC522" title="MFRC522"&gt;&lt;/p&gt;
+&lt;p&gt;There's a video and board layout on the course:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/nfc-badges/"&gt;https://inventr.io/lessons/nfc-badges/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/rfid-reader-badge/"&gt;https://inventr.io/lessons/rfid-reader-badge/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next problem is I'll need a board to connect to them, so that then adds more wires, there doesn't seem to be a nice compact way like with the camera.&lt;/p&gt;
+&lt;p&gt;I also need to test what the pickup area is, will I only need one per pocket? Will The Board only need one too? Once I've tested I'll feed back with the results.&lt;/p&gt;
+&lt;p&gt;I can then create a local API that I can post the cards too, which in turn will update the screen.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/HoleCards.png" alt="Hole Cards" title="Hole Cards"&gt;&lt;/p&gt;
+&lt;p&gt;Having access to what cards are available I can also calculate rudimentary pot odds. Add them to the screen too.&lt;/p&gt;
+&lt;p&gt;The actual pot will be harder - mic with voice recognition? Weigh the table? RFID on each chip? Let's solve one problem at a time.&lt;/p&gt;
+&lt;p&gt;All this hardware setup it starting to get messy, my thoughts here are to create my own custom table, I can then hide all the parts in custom fitting areas. If the wood is thin enough the devices should be able to pick up the cards. Plus then I have an excuse to do some woodwork :).&lt;/p&gt;
+&lt;h2 id="scanning"&gt;Scanning&lt;/h2&gt;
+&lt;p&gt;Add &lt;a href="https://github.com/miguelbalboa/rfid/releases"&gt;https://github.com/miguelbalboa/rfid/releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/Poker/RFID.jpg" alt="RFID" title="RFID"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://circuitdigest.com/microcontroller-projects/interfacing-rfid-reader-module-with-arduino"&gt;https://circuitdigest.com/microcontroller-projects/interfacing-rfid-reader-module-with-arduino&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/Circuit.jpg" alt="Circuit" title="Circuit"&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;18:28:27.715 -&amp;gt; Firmware Version: 0xFF = (unknown)
+18:28:27.715 -&amp;gt; WARNING: Communication failure, is the MFRC522 properly connected?
+18:28:27.761 -&amp;gt; Scan PICC to see UID, SAK, type, and data blocks...
+18:29:01.755 -&amp;gt; Firmware Version: 0x92 = v2.0
+18:30:42.657 -&amp;gt; Bad read (was card removed too quickly?)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id="hardware"&gt;Hardware&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;RFID Reader&lt;/td&gt;
+&lt;td&gt;£.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Board&lt;/td&gt;
+&lt;td&gt;£.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RFID Stickers&lt;/td&gt;
+&lt;td&gt;£8.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cable&lt;/td&gt;
+&lt;td&gt;£2.66&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Plug&lt;/td&gt;
+&lt;td&gt;£2.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;------&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;£.&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;RFID Stickers&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;50pcs NFC Tags, BetterJonny NFC Cards, NFC Stickers Ntag 215 NFC Tag NFC Coin Cards Compatible with TagMo &amp;amp; Amiibo, NFC Enabled Mobile Phones and Devices, Round, White&lt;/p&gt;
+&lt;p&gt;£8.99&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/gp/product/B0C786FJ82/"&gt;https://www.amazon.co.uk/gp/product/B0C786FJ82/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Plug&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;4-Pack USB Plug for iPhone 14 13 12 11 XS Max XS XR X 8 7 6 6S Plus 5 Plus SE Samsung Galaxy, LG, Android, Cell Phone, 2.1A/5V Dual Port Power Adapter Wall Charging UK Mains Charger&lt;/p&gt;
+&lt;p&gt;£8.99&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/gp/product/B0BPB6HB3V/"&gt;https://www.amazon.co.uk/gp/product/B0BPB6HB3V/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/plug-double.jpg" alt="Plug - double" title="Plug - double"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2 Pack USB Plug Charger,Rekavin 4 Port Multi USB Plug Adapter UK 25W/5A Wall Charger Mains with Smart IC Fast Charging for iPhone 11 pro Max XS XR X SE2020 10 8 7 6 ipad,Samsung S10 S9 S8 S7,Huawei&lt;/p&gt;
+&lt;p&gt;12.78&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/B08M8ZY9J4"&gt;https://www.amazon.co.uk/dp/B08M8ZY9J4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/plug-quadruple.jpg" alt="Plug - quadruple" title="Plug - quadruple"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mirco USB Cable&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/B07WNX1B8C"&gt;https://www.amazon.co.uk/dp/B07WNX1B8C&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;£7.99 / 3 = £2.66&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/cable.jpg" alt="Cable" title="Cable"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RFID Reader&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TBC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Board&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TBC&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Recording Poker Games</title>
-			<link>https://alexhedley.github.io/blog/posts/recording-poker-games</link>
+			<link>https://alexhedley.github.io/blog/posts/poker-recording-games</link>
 			<description>A home setup to record a poker game.</description>
 			<author>alexhedley</author>
 			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/recording-poker-games</guid>
+			<guid>https://alexhedley.github.io/blog/posts/poker-recording-games</guid>
 			<pubDate>Fri, 11 Aug 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Watching the poker on &lt;a href="https://www.worldpokertour.com/"&gt;WPT&lt;/a&gt; I thought wouldn't it be cool if I could have the same setup at my home games? Where would I even begin?&lt;/p&gt;
 &lt;p&gt;So I need a camera to point at the players hole cards (multiple by the number of players), one camera over the table to see the flop, turn and river. Then would I need any more?&lt;/p&gt;
@@ -179,55 +344,6 @@ const char* password = SECRET_PASSWORD;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.arducam.com/knowledge-base/mini-tutorial/"&gt;ArduCAM Mini Cameras Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Poker - Tracking cards</title>
-			<link>https://alexhedley.github.io/blog/posts/poker-tracking-cards</link>
-			<description>How to know what cards are currently in play.</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/poker-tracking-cards</guid>
-			<pubDate>Fri, 11 Aug 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This is Part 2 of the Poker series, see &lt;a href="https://alexhedley.github.io/blog/posts/recording-poker-games"&gt;Recording Poker Games&lt;/a&gt; for the initial setup.&lt;/p&gt;
-&lt;p&gt;What would be the best way to track the cards being played?&lt;/p&gt;
-&lt;p&gt;I could train a machine learning model or use an existing one? See &lt;a href="https://github.com/awrd2019/Playing-Cards-Computer-Vision"&gt;Playing-Cards-Computer-Vision&lt;/a&gt; from &lt;a href="https://github.com/awrd2019/"&gt;@awrd2019&lt;/a&gt;. Not sure how much work this would be and how accurate the results are.&lt;/p&gt;
-&lt;p&gt;The next idea was RFID Playing cards, I got a link for &lt;a href="https://www.saturnmagic.co.uk/saturn-magic-shop/luna-nfcrfid-cards-by-andras-barthazi.html"&gt;Luna NFC/RFID Cards by Andras Barthazi&lt;/a&gt; and thought £21.99 for a pack isn't bad, but I'd miss read:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Blank face (6 cards): £21.99&lt;/li&gt;
-&lt;li&gt;Poker face (52 + 2 cards): £104.99&lt;/li&gt;
-&lt;li&gt;Blank face (54 cards): £104.99&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Checking other sites I found one a little cheaper in &lt;a href="https://illuminati-magic.com/products/rfid-deck-iso15693"&gt;RFID PLAYING CARD DECK, ISO15693&lt;/a&gt; £93.00 GBP.&lt;/p&gt;
-&lt;p&gt;So why don't I just buy some NFC / RFID stickers and put them on an existing pack of playing cards?
-It might make them harder to shuffle and easier to see a marked card but for an inital POC it'll be cheaper.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;50pcs NFC Tags, BetterJonny NFC Cards, NFC Stickers Ntag 215 NFC Tag NFC Coin Cards Compatible with TagMo &amp;amp; Amiibo, NFC Enabled Mobile Phones and Devices, Round, White&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/gp/product/B0C786FJ82/"&gt;https://www.amazon.co.uk/gp/product/B0C786FJ82/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Only £8.99 for 50, that's much better, albeit I need 52 and I'll have to stick them all on and program them all, but that's the fun part!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/NTAG215.jpg" alt="NTAG215" title="NTAG215"&gt;&lt;/p&gt;
-&lt;p&gt;Next I need a reader/writer, which I'm sure I saw in the &lt;a href="https://inventr.io/product/adventure-kit-2-pre-order/"&gt;ADVENTURE KIT 2&lt;/a&gt; $197.00 I'd bought.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1x RFID reader and Keychain&lt;/p&gt;
-&lt;p&gt;Create your own unique ID card and be able to read the data from it. Allowing just those with access keys in.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ar054-rfid-mfrc522.png" alt="MFRC522" title="MFRC522"&gt;&lt;/p&gt;
-&lt;p&gt;There's a video and board layout on the course:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/nfc-badges/"&gt;https://inventr.io/lessons/nfc-badges/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/rfid-reader-badge/"&gt;https://inventr.io/lessons/rfid-reader-badge/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Next problem is I'll need a board to connect to them, so that then adds more wires, there doesn't seem to be a nice compact way like with the camera.&lt;/p&gt;
-&lt;p&gt;I also need to test what the pickup area is, will I only need one per pocket? Will The Board only need one too? Once I've tested I'll feed back with the results.&lt;/p&gt;
-&lt;p&gt;I can then create a local API that I can post the cards too, which in turn will update the screen.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/HoleCards.png" alt="Hole Cards" title="Hole Cards"&gt;&lt;/p&gt;
-&lt;p&gt;Having access to what cards are available I can also calculate rudimentary pot odds. Add them to the screen too.&lt;/p&gt;
-&lt;p&gt;The actual pot will be harder - mic with voice recognition? Weigh the table? RFID on each chip? Let's solve one problem at a time.&lt;/p&gt;
-&lt;p&gt;All this hardware setup it starting to get messy, my thoughts here are to create my own custom table, I can then hide all the parts in custom fitting areas. If the wood is thin enough the devices should be able to pick up the cards. Plus then I have an excuse to do some woodwork :).&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -741,62 +857,6 @@ $29.00 / month + VAT&lt;br&gt;
 &lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- ## Resources Used --&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Statiq.Web - Shortcodes - Include</title>
-			<link>https://alexhedley.github.io/blog/posts/statiq-web-shortcodes-include</link>
-			<description>How to reuse content.</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/statiq-web.svg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/statiq-web-shortcodes-include</guid>
-			<pubDate>Sun, 02 Jul 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;?# Raw ?&gt;
-&lt;p&gt;In another project (&lt;a href="https://alexhedley.com/symantec-connect-articles/"&gt;Symantec Connect Articles&lt;/a&gt;) I've got a Table of Contents (toc) for many sets of Articles. This can sometimes be a lot of information and is duplicated in each article, at the top and bottom. This isn't ideal if I need to update anything.&lt;/p&gt;
-&lt;p&gt;Seeing an &lt;code&gt;Include&lt;/code&gt; option in &lt;a href="https://www.devlead.se/posts/2021/2021-04-09-devlead-statiq-part1-tabs"&gt;Devlead.Statiq - Part 1 - Tabs&lt;/a&gt; I wondered if there was similar functionality already built in.&lt;/p&gt;
-&lt;p&gt;When I originally tried it, looking at other &lt;code&gt;Shortcodes&lt;/code&gt;, it didn't work. It was showing it as plain text and not converting to markdown.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;?# Include &amp;quot;./../includes/posts/toc.md&amp;quot; /?&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This can't be the only option? To the docs. &lt;a href="https://www.statiq.dev/guide/content-and-data/shortcodes#processing-phases"&gt;Processing Phases&lt;/a&gt; explained what was going on.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pre-rendering: &lt;code&gt;&amp;lt;?! ShortcodeName /?&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Intermediate: &lt;code&gt;&amp;lt;?^ ShortcodeName /?&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Post-rendering: &lt;code&gt;&amp;lt;?# ShortcodeName /?&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I'd been using Post-rendering &lt;code&gt;&amp;lt;?#&lt;/code&gt; since this is what was used on a code example. Swapping it to &lt;em&gt;Intermediate&lt;/em&gt; worked a treat.&lt;/p&gt;
-&lt;p&gt;Looking for other examples I also found the &lt;strong&gt;Markdown&lt;/strong&gt; &lt;code&gt;Shortcode&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;?# Markdown ?&amp;gt;
-&amp;lt;?!^ &amp;quot;./../includes/posts/toc.md&amp;quot; /?&amp;gt;
-&amp;lt;?#/ Markdown ?&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I prefer this as the intention is very clear.&lt;/p&gt;
-&lt;p&gt;Now all I need to do is update all my articles to use this...&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.statiq.dev/guide/content-and-data/shortcodes"&gt;Shortcodes&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.statiq.dev/guide/content-and-data/shortcodes#processing-phases"&gt;Processing Phases&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://wyam.io/docs/concepts/shortcodes"&gt;wyam&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="options"&gt;Options&lt;/h2&gt;
-&lt;ul class="contains-task-list"&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" checked="checked" /&gt; Include&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" checked="checked" /&gt; Markdown&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" /&gt; Raw&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" /&gt; Embed&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" /&gt; Giphy&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" /&gt; Gist&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" /&gt; Twitter&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" /&gt; YouTube&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" /&gt; Link&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" /&gt; Figure&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input disabled="disabled" type="checkbox" /&gt; Table&lt;/li&gt;
-&lt;/ul&gt;
-&lt;?#/ Raw ?&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
