@@ -14,6 +14,12 @@ published: 2023-08-11
 # imageattribution:
 ---
 
+<!-- # Recording Poker Games -->
+
+<?# Markdown ?>
+<?!^ "./../includes/posts/poker.md" /?>
+<?#/ Markdown ?>
+
 Watching the poker on [WPT](https://www.worldpokertour.com/) I thought wouldn't it be cool if I could have the same setup at my home games? Where would I even begin?
 
 So I need a camera to point at the players hole cards (multiple by the number of players), one camera over the table to see the flop, turn and river. Then would I need any more?
