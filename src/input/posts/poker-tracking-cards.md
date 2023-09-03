@@ -89,6 +89,12 @@ https://circuitdigest.com/microcontroller-projects/interfacing-rfid-reader-modul
 18:30:42.657 -> Bad read (was card removed too quickly?)
 ```
 
+## Links
+
+[Using an RFID module with an ESP8266](https://www.aranacorp.com/en/using-an-rfid-module-with-an-esp8266/) by Xukyo | 3 May 2021
+
+![](images/poker/nodemcu-esp8266-rfid-rc522_bb.png)
+
 ---
 
 ## Hardware
