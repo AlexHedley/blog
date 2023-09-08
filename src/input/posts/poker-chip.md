@@ -24,7 +24,7 @@ Thought as a little momento I'd create a poker chip for each of the players. Gav
 
 ![Poker Chip](images/poker/poker-chip-1.jpg "Poker Chip")
 
-![NEJE - Laser engraver](images/poker/neje.jpg "Laser engraver")
+![NEJE - Laser engraver](images/poker/NEJE.jpg "Laser engraver")
 
 Managed to pick one up on ebay for ~£45 in 2021, just before they went up in price.
 
