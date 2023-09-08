@@ -4,9 +4,58 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-09-03T10:27:43Z</updated>
+	<updated>2023-09-08T17:54:18Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/talk-blazorinteractive</id>
+		<title>Blazor Interactive (Talk)</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/talk-blazorinteractive" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-09-08T00:00:00Z</updated>
+		<content>&lt;!-- # Blazor Interactive (Talk) --&gt;
+&lt;p&gt;On Wednesday the 6th of Sept 2023 I stood on "stage" at the Hainton .NET meetup in &lt;a href="https://www.tuspark.co.uk/our-science-parks/tuspark-newcastle/"&gt;Tuspark&lt;/a&gt; Newcastle.&lt;/p&gt;
+&lt;p&gt;I presented on an application I built called Blazor Interactive, which is a website that allows you to compile and run code in the browser. See more at &lt;a href="https://alexhedley.github.io/blog/dotnet-blazor-interactive"&gt;.NET Blazor Interactive&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks &lt;a href="https://www.linkedin.com/in/qasim-asghar-hainton/"&gt;Qasim&lt;/a&gt; and &lt;a href="https://www.linkedin.com/in/tomhainton/"&gt;Tom&lt;/a&gt; from &lt;a href="https://www.hainton.com/"&gt;Hainton&lt;/a&gt; for giving me the opportunity, it was great to push myself and try something I've wanted to do for a long time.
+I've given many talks at work, over the years, either in person or recently via Teams but this was something more public.&lt;/p&gt;
+&lt;p&gt;I think I may have been a little nervous as I rushed through the talk in about 15 minutes where it had usually been taking about 25, when practicing at home, talking to the cat :p. Lots of great questions afterwards though so hopefully it was interesting.&lt;/p&gt;
+&lt;p&gt;I'm undecided if I'll watch the recording back but I'll be sure to link it below when it's published.&lt;/p&gt;
+&lt;p&gt;Thinking about doing another one already!&lt;/p&gt;
+&lt;p&gt;Thanks also to Umar for his excellent talk on CI/CD/CD. Make sure to check that out too.&lt;/p&gt;
+&lt;h2 id="photos"&gt;Photos&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/talk/talk-blazorinteractive.jpeg" alt="Me presenting" title="Me presenting"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/talk/talk-blazorinteractive-2.jpeg" alt="Hainton Meetup" title="Hainton Meetup"&gt;&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;🗓️ Sept 6, 2023&lt;br&gt;
+🕰 17:15 - 20:00&lt;br&gt;
+📍 Tuspark, Newcastle&lt;br&gt;
+🔗 &lt;a href="https://www.meetup.com/haintonsdotnetmeetup/events/295218917"&gt;[In Person] Newcastle .NET Event - September 6th - 2 Talks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/talk/talk-blazorinteractive-3.jpeg" alt="Hainton Meetup Talks" title="Hainton Meetup Talks"&gt;&lt;/p&gt;
+&lt;!-- ![](images/talk/talk-blazorinteractive-3.png "") --&gt;
+&lt;h2 id="video"&gt;Video&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📼 [Will add the link when it's released.]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See previous Hainton talks on YouTube: &lt;a href="https://www.youtube.com/watch?v=FbluYhmSW88&amp;amp;list=PLw02H-P5Q7FeiRF6nbLz55m-IofeSVAkM"&gt;.NET Events&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Original blog post &lt;a href="https://alexhedley.github.io/blog/dotnet-blazor-interactive"&gt;.NET Blazor Interactive&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://alex-hedley.github.io/talk-blazorinteractive/"&gt;Presentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/talk-blazorinteractive"&gt;Presentation Code&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://alex-hedley.github.io/BlazorInteractive/"&gt;App&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/BlazorInteractive"&gt;App Code&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Delivering a talk on Building a clone of Try.NET in Blazor WASM.</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/poker-chip</id>
 		<title>Poker - Chip</title>
@@ -28,7 +77,7 @@
 &lt;p&gt;Thought as a little momento I'd create a poker chip for each of the players. Gave me an excuse to use the laser engraver again. I found the surround The Noun Project from Anton Gajdosik, the just reused the Rye font from the OBS scene to add some text. A few trial and error prints and got it looking decent. It kept moving about the board so a bit of greentac fixed the problem.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-chip-2.jpg" alt="Poker Chip" title="Poker Chip"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-chip-1.jpg" alt="Poker Chip" title="Poker Chip"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/neje.jpg" alt="NEJE - Laser engraver" title="Laser engraver"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/NEJE.jpg" alt="NEJE - Laser engraver" title="Laser engraver"&gt;&lt;/p&gt;
 &lt;p&gt;Managed to pick one up on ebay for ~£45 in 2021, just before they went up in price.&lt;/p&gt;
 &lt;h2 id="links"&gt;Links&lt;/h2&gt;
 &lt;p&gt;Poker Chip - Anton Gajdosik&lt;/p&gt;
@@ -875,31 +924,5 @@ $29.00 / month + VAT&lt;br&gt;
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/talk-beginners-guide-to-api-specs-part2</id>
-		<title>🎙️ Beginners Guide to API Specs - Part 2</title>
-		<author>
-			<name>alex-hedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/talk-beginners-guide-to-api-specs-part2" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-07-06T00:00:00Z</updated>
-		<content>&lt;!-- Beginners Guide to API Specs - Part 2 --&gt;
-&lt;p&gt;In &lt;a href="https://alexhedley.github.io/blog/talk-beginners-guide-to-api-specs"&gt;Part 1&lt;/a&gt; I ran through what an API Specification is, showed the underlying JSON (or YAML) and how it looked as a Swagger website.
-In this presentation I showed you how to interrogate and visualise your data with a tool called &lt;a href="https://www.postman.com/"&gt;Postman&lt;/a&gt;, how to annotate your code  with a Kotlin example (&lt;a href="https://github.com/alex-hedley/demo-lego-api"&gt;LEGO API Demo&lt;/a&gt;) and discussed the Editor and Generator for helping with the API.&lt;/p&gt;
-&lt;p&gt;🗓️ July 06, 2023&lt;/p&gt;
-&lt;!-- 📼  --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talk-beginners-guide-to-api-specs/#/part-2"&gt;Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talk-beginners-guide-to-api-specs"&gt;Presentation Code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talks/"&gt;Talks Site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talks"&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>How to to test an API.</summary>
 	</entry>
 </feed>
