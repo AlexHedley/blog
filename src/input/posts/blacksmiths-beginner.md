@@ -2,7 +2,7 @@
 title: Blacksmithing The Beginners Course
 # lead: Peat Oberon's School of Blacksmithing
 tags:
-  - stained glass
+  - blacksmith
   - beginner
   - experience
 author: alexhedley
