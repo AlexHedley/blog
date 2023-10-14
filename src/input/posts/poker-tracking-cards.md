@@ -73,6 +73,8 @@ All this hardware setup it starting to get messy, my thoughts here are to create
 
 ## Scanning
 
+Set the board to **NodeMCU 1.0 (ESP-12E Module)**
+
 Add https://github.com/miguelbalboa/rfid/releases
 
 ![RFID](images/Poker/RFID.jpg "RFID")
