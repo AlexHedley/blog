@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Sat, 14 Oct 2023 15:52:41 GMT</pubDate>
-		<lastBuildDate>Sat, 14 Oct 2023 15:52:41 GMT</lastBuildDate>
+		<pubDate>Sat, 14 Oct 2023 16:10:12 GMT</pubDate>
+		<lastBuildDate>Sat, 14 Oct 2023 16:10:12 GMT</lastBuildDate>
 		<item>
 			<title>Blazor Interactive (Talk)</title>
 			<link>https://alexhedley.github.io/blog/posts/talk-blazorinteractive</link>
@@ -36,9 +36,11 @@ I've given many talks at work, over the years, either in person or recently via 
 &lt;!-- ![](images/talk/talk-blazorinteractive-3.png "") --&gt;
 &lt;h2 id="video"&gt;Video&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;📼 [Will add the link when it's released.]&lt;/li&gt;
+&lt;li&gt;📼 &lt;a href="https://www.youtube.com/watch?v=hfMHdYciadM"&gt;Blazor Interactive by Alex Hedley&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See previous Hainton talks on YouTube: &lt;a href="https://www.youtube.com/watch?v=FbluYhmSW88&amp;amp;list=PLw02H-P5Q7FeiRF6nbLz55m-IofeSVAkM"&gt;.NET Events&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See previous Hainton talks on YouTube: &lt;a href="https://www.youtube.com/watch?v=FbluYhmSW88&amp;amp;list=PLw02H-P5Q7FeiRF6nbLz55m-IofeSVAkM"&gt;.NET Events&lt;/a&gt;
+See previous Qudos talks on YouTube: &lt;a href="https://www.youtube.com/@QudosRecruitment"&gt;@QudosRecruitment&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hfMHdYciadM?si=8UC76RlwZ2ZJQeZu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""&gt;&lt;/iframe&gt;
 &lt;h2 id="links"&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Original blog post &lt;a href="https://alexhedley.github.io/blog/dotnet-blazor-interactive"&gt;.NET Blazor Interactive&lt;/a&gt;&lt;/p&gt;
@@ -188,6 +190,7 @@ It might make them harder to shuffle and easier to see a marked card but for an 
 &lt;p&gt;The actual pot will be harder - mic with voice recognition? Weigh the table? RFID on each chip? Let's solve one problem at a time.&lt;/p&gt;
 &lt;p&gt;All this hardware setup it starting to get messy, my thoughts here are to create my own custom table, I can then hide all the parts in custom fitting areas. If the wood is thin enough the devices should be able to pick up the cards. Plus then I have an excuse to do some woodwork :).&lt;/p&gt;
 &lt;h2 id="scanning"&gt;Scanning&lt;/h2&gt;
+&lt;p&gt;Set the board to &lt;strong&gt;NodeMCU 1.0 (ESP-12E Module)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Add &lt;a href="https://github.com/miguelbalboa/rfid/releases"&gt;https://github.com/miguelbalboa/rfid/releases&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/Poker/RFID.jpg" alt="RFID" title="RFID"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://circuitdigest.com/microcontroller-projects/interfacing-rfid-reader-module-with-arduino"&gt;https://circuitdigest.com/microcontroller-projects/interfacing-rfid-reader-module-with-arduino&lt;/a&gt;&lt;/p&gt;
