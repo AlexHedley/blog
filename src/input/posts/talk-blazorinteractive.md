@@ -46,9 +46,12 @@ Thanks also to Umar for his excellent talk on CI/CD/CD. Make sure to check that 
 
 ## Video
 
-- 📼 [Will add the link when it's released.]
+- 📼 [Blazor Interactive by Alex Hedley](https://www.youtube.com/watch?v=hfMHdYciadM)
 
 See previous Hainton talks on YouTube: [.NET Events](https://www.youtube.com/watch?v=FbluYhmSW88&list=PLw02H-P5Q7FeiRF6nbLz55m-IofeSVAkM)
+See previous Qudos talks on YouTube: [@QudosRecruitment](https://www.youtube.com/@QudosRecruitment)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hfMHdYciadM?si=8UC76RlwZ2ZJQeZu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Links
 
