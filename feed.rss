@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Sat, 14 Oct 2023 16:10:12 GMT</pubDate>
-		<lastBuildDate>Sat, 14 Oct 2023 16:10:12 GMT</lastBuildDate>
+		<pubDate>Mon, 06 Nov 2023 21:17:15 GMT</pubDate>
+		<lastBuildDate>Mon, 06 Nov 2023 21:17:15 GMT</lastBuildDate>
 		<item>
 			<title>Blazor Interactive (Talk)</title>
 			<link>https://alexhedley.github.io/blog/posts/talk-blazorinteractive</link>
@@ -700,6 +700,75 @@ $29.00 / month + VAT&lt;br&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>AWS Cloud Quest Security</title>
+			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-security</link>
+			<description>&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;</description>
+			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/aws-cq/cloud-quest.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/aws-cloud-quest-security</guid>
+			<pubDate>Tue, 11 Jul 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # AWS Cloud Quest Machine Learning --&gt;
+&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-security.jpeg" alt="AWS Cloud Quest Security Badge" title="AWS Cloud Quest Security Badge"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/e53bb657-c1ca-4b8a-a8a0-d14935c52717/public_url"&gt;Credly Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
+$29.00 / month + VAT&lt;br&gt;
+&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Use AWS security services to build solutions that respond to incidents, remediate quickly, detect vulnerabilities, and prevent data loss.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources-used"&gt;Resources Used&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Amazon API Gateway&lt;/li&gt;
+&lt;li&gt;Amazon Athena&lt;/li&gt;
+&lt;li&gt;Amazon CloudFront&lt;/li&gt;
+&lt;li&gt;Amazon CloudWatch&lt;/li&gt;
+&lt;li&gt;Amazon Cognito&lt;/li&gt;
+&lt;li&gt;Amazon DynamoDB&lt;/li&gt;
+&lt;li&gt;Amazon EC2&lt;/li&gt;
+&lt;li&gt;Amazon EC2 Auto Scaling&lt;/li&gt;
+&lt;li&gt;Amazon EventBridge&lt;/li&gt;
+&lt;li&gt;Amazon Kinesis&lt;/li&gt;
+&lt;li&gt;Amazon Lambda&lt;/li&gt;
+&lt;li&gt;Amazon Relational Database Service (RDS)&lt;/li&gt;
+&lt;li&gt;Amazon S3&lt;/li&gt;
+&lt;li&gt;Amazon SNS&lt;/li&gt;
+&lt;li&gt;Amazon VPC&lt;/li&gt;
+&lt;li&gt;Amazon WAF&lt;/li&gt;
+&lt;li&gt;AWS Amplify&lt;/li&gt;
+&lt;li&gt;AWS CloudFormation&lt;/li&gt;
+&lt;li&gt;AWS Cognito&lt;/li&gt;
+&lt;li&gt;AWS Config&lt;/li&gt;
+&lt;li&gt;AWS Glue&lt;/li&gt;
+&lt;li&gt;AWS Identity and Access Management (IAM)&lt;/li&gt;
+&lt;li&gt;AWS Key Management Service (KMS)&lt;/li&gt;
+&lt;li&gt;AWS Lambda&lt;/li&gt;
+&lt;li&gt;AWS Secrets Manager&lt;/li&gt;
+&lt;li&gt;AWS Service Catalog&lt;/li&gt;
+&lt;li&gt;AWS Systems Manager&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>VSCode - Blockquote - Preview</title>
 			<link>https://alexhedley.github.io/blog/posts/vscode-blockquote-preview</link>
 			<description>Change the background colour in preview.</description>
@@ -846,75 +915,6 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=docsmsf
 &lt;p&gt;Also whilst working through Cloud Quest I studied for and passed the &lt;a href="https://alexhedley.github.io/blog/aws-certified-cloud-practitioner"&gt;AWS Certified Cloud Practitioner&lt;/a&gt; exam on 🗓️ Thursday, 6 April 2023.&lt;/p&gt;
 &lt;!-- ![AWS Certified Cloud Practitioner](images/aws-ccp/AWS-Certified-Cloud-Practitioner_badge.png "AWS Certified Cloud Practitioner") --&gt;
 &lt;img src="images/aws-ccp/AWS-Certified-Cloud-Practitioner_badge.png" alt="AWS Certified Cloud Practitioner" width="100"&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>AWS Cloud Quest Security</title>
-			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-security</link>
-			<description>&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/aws-cq/cloud-quest.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/aws-cloud-quest-security</guid>
-			<pubDate>Tue, 11 Jul 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # AWS Cloud Quest Machine Learning --&gt;
-&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-security.jpeg" alt="AWS Cloud Quest Security Badge" title="AWS Cloud Quest Security Badge"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/badges/e53bb657-c1ca-4b8a-a8a0-d14935c52717/public_url"&gt;Credly Badge&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
-$29.00 / month + VAT&lt;br&gt;
-&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Use AWS security services to build solutions that respond to incidents, remediate quickly, detect vulnerabilities, and prevent data loss.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="resources-used"&gt;Resources Used&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Amazon API Gateway&lt;/li&gt;
-&lt;li&gt;Amazon Athena&lt;/li&gt;
-&lt;li&gt;Amazon CloudFront&lt;/li&gt;
-&lt;li&gt;Amazon CloudWatch&lt;/li&gt;
-&lt;li&gt;Amazon Cognito&lt;/li&gt;
-&lt;li&gt;Amazon DynamoDB&lt;/li&gt;
-&lt;li&gt;Amazon EC2&lt;/li&gt;
-&lt;li&gt;Amazon EC2 Auto Scaling&lt;/li&gt;
-&lt;li&gt;Amazon EventBridge&lt;/li&gt;
-&lt;li&gt;Amazon Kinesis&lt;/li&gt;
-&lt;li&gt;Amazon Lambda&lt;/li&gt;
-&lt;li&gt;Amazon Relational Database Service (RDS)&lt;/li&gt;
-&lt;li&gt;Amazon S3&lt;/li&gt;
-&lt;li&gt;Amazon SNS&lt;/li&gt;
-&lt;li&gt;Amazon VPC&lt;/li&gt;
-&lt;li&gt;Amazon WAF&lt;/li&gt;
-&lt;li&gt;AWS Amplify&lt;/li&gt;
-&lt;li&gt;AWS CloudFormation&lt;/li&gt;
-&lt;li&gt;AWS Cognito&lt;/li&gt;
-&lt;li&gt;AWS Config&lt;/li&gt;
-&lt;li&gt;AWS Glue&lt;/li&gt;
-&lt;li&gt;AWS Identity and Access Management (IAM)&lt;/li&gt;
-&lt;li&gt;AWS Key Management Service (KMS)&lt;/li&gt;
-&lt;li&gt;AWS Lambda&lt;/li&gt;
-&lt;li&gt;AWS Secrets Manager&lt;/li&gt;
-&lt;li&gt;AWS Service Catalog&lt;/li&gt;
-&lt;li&gt;AWS Systems Manager&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
