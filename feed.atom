@@ -4,9 +4,62 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-11-06T21:17:15Z</updated>
+	<updated>2023-11-07T21:08:32Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2023</id>
+		<title>ISC2 North East England Chapter 10th Anniversary Event</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2023" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/isc2/isc2chapternortheastengland.jpeg" />
+		<updated>2023-11-07T00:00:00Z</updated>
+		<content>&lt;!-- # ISC2 North East England Chapter November 2023 Meeting - 10 Year Anniversary --&gt;
+&lt;p&gt;This evening I went along to my first in person ISC2 North East England Chapter meetup. It was their 10th Anniversary Event which and a rebrand from (ISC)² to ISC2 meant new swag, who doesn't want a pin badge, pen and cap?&lt;/p&gt;
+&lt;p&gt;The usual pizza and drinks were kindly provided by the sponsor, alongside a tonne of sweets and muffins!&lt;/p&gt;
+&lt;p&gt;It was a packed night with 4 speakers, see the agenda below for more details. An interesting mix covering different topics. Lots to take home and think about.&lt;/p&gt;
+&lt;p&gt;Lovely to meet some new people and keep the North East scene active.&lt;/p&gt;
+&lt;h2 id="agenda"&gt;Agenda&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Introductions, ISC2 rebrand, certifications overview and event sponsors&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;18:00 - 18:10&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Steve Gilray, Chapter President&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Session 1 - Infoblox, Getting ahead of threats with DNS.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;18:10 - 18:35&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Simon Nicholson and Jason Nolan&lt;/p&gt;
+&lt;p&gt;Getting ahead of Threats with DNS based Threat Intelligence. 92% of malware is eventually associated with DNS based infrastructure. Some threats are only detectable by analysing DNS data. The speaker will discuss innovations and challenges with developing reliable threat intel, using DNS. This talk will highlight new reputation scoring, suspicious classifications, and the tracking of DNS threat actors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Session 2 - An overview of the Cyber Insurance Market&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;18:35 - 19:00&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Robert Scott, Virgin Money&lt;/p&gt;
+&lt;p&gt;The cyber insurance market has experienced severe volatility and pricing pressure during recent years. The speaker will give an overview of the current market conditions and key challenges faced by organisations when looking to purchase cover. Discussion of the latest position on coverage and claims will also take place, along with some tips for a successful cyber insurance renewal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Session 3 - Darktrace, How do we engage the next generation of cyber pros?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;19:00 - 19:25&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Suzanna Beanland&lt;/p&gt;
+&lt;p&gt;How do we engage the next generation of cyber professionals?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Session 4 - How to grow and retain staff in Cybersecurity in the North East&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;19:25 - 19:35&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Stuart Smiles&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;📅 Tue, 7 Nov 2023 ⏲ 17:30 - 20:00 GMT&lt;/p&gt;
+&lt;p&gt;📍 Tuspark, Newcastle&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-november-2023-meeting-10-year-anniversary-tickets-740713222187"&gt;https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-november-2023-meeting-10-year-anniversary-tickets-740713222187&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/company/isc-2-north-east-england/"&gt;https://www.linkedin.com/company/isc-2-north-east-england/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.isc2.org/"&gt;https://www.isc2.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7120412069262159874-D6Hc/"&gt;https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7120412069262159874-D6Hc/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7125540228051656704-yxgY/"&gt;https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7125540228051656704-yxgY/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>ISC2 Chapter Meetup</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/talk-blazorinteractive</id>
 		<title>Blazor Interactive (Talk)</title>
@@ -813,119 +866,5 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=docsmsf
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>Change the background colour in preview.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest</id>
-		<title>AWS Cloud Quest</title>
-		<author>
-			<name>alex-hedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/aws-cloud-quest" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/aws-cq/cloud-quest.png" />
-		<updated>2023-07-11T00:00:00Z</updated>
-		<content>&lt;!-- AWS Cloud Quest --&gt;
-&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest&lt;/strong&gt; training 🎉, all 6 sections are now complete!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;, Develop in-demand cloud skills in this fun, interactive role-playing game.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/cloud-quest-badges.png" alt="Cloud Quest Badges" title="Cloud Quest Badges"&gt;&lt;/p&gt;
-&lt;p&gt;I'd set myself a target of doing one a month, which I think I achieved, given I also did a couple of other certs in that time.&lt;/p&gt;
-&lt;p&gt;The idea of gamification in learning really appeals to me. Who doesn't like collecting things? Another great thing about this training is it is hand-ons, you get to work with the actual AWS resources in a lab environment, just how you would with the real thing. The DIY section makes sure you've followed and understood what was required in the original ask and you can't complete the course if you don't configure your environment correctly. This has benefits over the &lt;a href="https://aws.amazon.com/certification/"&gt;Certification&lt;/a&gt; exams as it's less about memory retrieval and more about understanding, although both have their merits.&lt;/p&gt;
-&lt;p&gt;I really enjoyed getting to learn some new Resources. I've been wanting to look at some &lt;em&gt;Machine Learning&lt;/em&gt; for quite a while, it was a lot of waiting around but it gave me an appreciation of what is possible. I might get my Bowling Scores analyser written one day. SageMaker could be key here. Also, who doesn't love some &lt;em&gt;Data Analytics&lt;/em&gt;! This gave me an opportunity to try Kinesis and Lake Formation.&lt;/p&gt;
-&lt;p&gt;If you haven't already, I'd suggest trying the &lt;em&gt;Cloud Practitioner&lt;/em&gt; for free and there are offers to get some months free with the &lt;a href="https://skillbuilder.aws/"&gt;AWS Skill Builder&lt;/a&gt; platform, so keep an eye out for that.&lt;/p&gt;
-&lt;h2 id="stats"&gt;Stats&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;Cloud Practitioner&lt;/th&gt;
-&lt;th&gt;Solutions Architect&lt;/th&gt;
-&lt;th&gt;Serverless Developer&lt;/th&gt;
-&lt;th&gt;Machine Learning&lt;/th&gt;
-&lt;th&gt;Security&lt;/th&gt;
-&lt;th&gt;Data Analytics&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Gems&lt;/td&gt;
-&lt;td&gt;685&lt;/td&gt;
-&lt;td&gt;2380&lt;/td&gt;
-&lt;td&gt;1780&lt;/td&gt;
-&lt;td&gt;3540&lt;/td&gt;
-&lt;td&gt;4355&lt;/td&gt;
-&lt;td&gt;2940&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Pets&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Services&lt;/td&gt;
-&lt;td&gt;10&lt;/td&gt;
-&lt;td&gt;34&lt;/td&gt;
-&lt;td&gt;25&lt;/td&gt;
-&lt;td&gt;44&lt;/td&gt;
-&lt;td&gt;53&lt;/td&gt;
-&lt;td&gt;40&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Cards&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Rep. Points&lt;/td&gt;
-&lt;td&gt;237&lt;/td&gt;
-&lt;td&gt;981&lt;/td&gt;
-&lt;td&gt;726&lt;/td&gt;
-&lt;td&gt;1460&lt;/td&gt;
-&lt;td&gt;1909&lt;/td&gt;
-&lt;td&gt;1335&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Challenges&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Got to Level &lt;strong&gt;99&lt;/strong&gt;... need to top that off with some other questions.&lt;/p&gt;
-&lt;p&gt;I'd missed the opportunity for the Drone Challenges until near the end, so could finish those off too.&lt;/p&gt;
-&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
-&lt;p&gt;A number of AWS Resources (54+) were included in the training. This gave a great coverage of the popular items and things you are most likely to encounter in your cloud journey.&lt;/p&gt;
-&lt;p&gt;(I didn't keep a list from &lt;em&gt;Cloud Practitioner&lt;/em&gt; but I'd assume they were covered in the others.)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Amazon API Gateway, Amazon Athena, Amazon Cloud Formation, Amazon CloudFront, Amazon CloudWatch, Amazon Cognito, Amazon Comprehend, Amazon DynamoDB, Amazon EC2, Amazon EC2 Auto Scaling, Amazon Elastic Container Registry, Amazon Elastic Container Service, Amazon EMR, Amazon EventBridge, Amazon Kinesis, Amazon Lambda, Amazon Polly, Amazon Redshift, Amazon Rekognition, Amazon Relational Database Service (RDS), Amazon Route 53, Amazon S3, Amazon SageMaker, Amazon SNS, Amazon SQS, Amazon Textract, Amazon Transcribe, Amazon VPC, Amazon WAF, AWS, AWS Amplify, AWS Backup, AWS Cloud9, AWS CloudFormation, AWS CodeBuild, AWS CodeCommit, AWS CodeDeploy, AWS CodeFormation, AWS CodePipeline, AWS Cognito, AWS Comprehend, AWS Config, AWS DynamoDB, AWS Glue, AWS Identity and Access Management (IAM), AWS Key Management Service (KMS), AWS Lake Formation, AWS Lambda, AWS Rekognition, AWS Secrets Manager, AWS Service Catalog, AWS Step Functions, AWS Systems Manager, SAM&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aws-cloud-quest-cloud-practitioner"&gt;Cloud Practitioner&lt;/a&gt; 🗓️ Wednesday, 25 January 2023&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aws-cloud-quest-solutions-architect"&gt;Solutions Architect&lt;/a&gt; 🗓️ Wednesday, 10 May 2023&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aws-cloud-quest-serverless-developer"&gt;Serverless Developer&lt;/a&gt; 🗓️ Wednesday, 15 March 2023&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aws-cloud-quest-machine-learning"&gt;Machine Learning&lt;/a&gt; 🗓️ Wednesday, 5 July 2023&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aws-cloud-quest-security"&gt;Security&lt;/a&gt; 🗓️ Tuesday, 11 July 2023&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aws-cloud-quest-data-analytics"&gt;Data Analytics&lt;/a&gt; 🗓️ Wednesday, 21 June 2023&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="aws-certified-cloud-practitioner"&gt;AWS Certified Cloud Practitioner&lt;/h2&gt;
-&lt;p&gt;Also whilst working through Cloud Quest I studied for and passed the &lt;a href="https://alexhedley.github.io/blog/aws-certified-cloud-practitioner"&gt;AWS Certified Cloud Practitioner&lt;/a&gt; exam on 🗓️ Thursday, 6 April 2023.&lt;/p&gt;
-&lt;!-- ![AWS Certified Cloud Practitioner](images/aws-ccp/AWS-Certified-Cloud-Practitioner_badge.png "AWS Certified Cloud Practitioner") --&gt;
-&lt;img src="images/aws-ccp/AWS-Certified-Cloud-Practitioner_badge.png" alt="AWS Certified Cloud Practitioner" width="100"&gt;
-</content>
-		<summary>A summary of the whole course.</summary>
 	</entry>
 </feed>
