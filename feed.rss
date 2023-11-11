@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Tue, 07 Nov 2023 21:08:32 GMT</pubDate>
-		<lastBuildDate>Tue, 07 Nov 2023 21:08:32 GMT</lastBuildDate>
+		<pubDate>Sat, 11 Nov 2023 12:17:53 GMT</pubDate>
+		<lastBuildDate>Sat, 11 Nov 2023 12:17:53 GMT</lastBuildDate>
 		<item>
 			<title>ISC2 North East England Chapter 10th Anniversary Event</title>
 			<link>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2023</link>
@@ -55,6 +55,39 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7125540228051656704-yxgY/"&gt;https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7125540228051656704-yxgY/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Green Software for Practitioners (LFC131)</title>
+			<link>https://alexhedley.github.io/blog/posts/lfc131</link>
+			<description>Cert</description>
+			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/lfc131</guid>
+			<pubDate>Tue, 31 Oct 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Linux Foundation Green Software for Practitioners (LFC131) --&gt;
+&lt;p&gt;Today I passed the &lt;strong&gt;Linux Foundation Green Software for Practitioners (LFC131)&lt;/strong&gt; exam 🎉!&lt;/p&gt;
+&lt;h2 id="badge"&gt;Badge&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/linuxfoundation/lfc131.png" alt="Linux Foundation Green Software for Practitioners (LFC131" title="Linux Foundation Green Software for Practitioners (LFC131"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/badges/8581920c-e67f-40f2-9ba0-67f2b067d2ca"&gt;https://www.credly.com/badges/8581920c-e67f-40f2-9ba0-67f2b067d2ca&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="topics"&gt;Topics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Carbon Efficiency&lt;/li&gt;
+&lt;li&gt;Energy Efficiency&lt;/li&gt;
+&lt;li&gt;Carbon Awareness&lt;/li&gt;
+&lt;li&gt;Hardware Efficiency&lt;/li&gt;
+&lt;li&gt;Measurement&lt;/li&gt;
+&lt;li&gt;Climate Commitments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="exam"&gt;Exam&lt;/h1&gt;
+&lt;p&gt;20 questions, repeat as often as you like.&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/"&gt;https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -817,43 +850,6 @@ $29.00 / month + VAT&lt;br&gt;
 &lt;li&gt;AWS Service Catalog&lt;/li&gt;
 &lt;li&gt;AWS Systems Manager&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>VSCode - Blockquote - Preview</title>
-			<link>https://alexhedley.github.io/blog/posts/vscode-blockquote-preview</link>
-			<description>Change the background colour in preview.</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/vscode-blockquote-preview</guid>
-			<pubDate>Tue, 11 Jul 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- VSCode - Blockquote --&gt;
-&lt;p&gt;I use the &lt;a href="https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview"&gt;learn-preview&lt;/a&gt; VSCode extension to show markdown in a side by side fashion.&lt;/p&gt;
-&lt;p&gt;Not sure when this stopped working since the colours changed but now it's unreadable:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/vscode/blockquote_1.png" alt="BlockQuote" title="BlockQuote"&gt;&lt;/p&gt;
-&lt;p&gt;Highlighting the text helps but this shouldn't be necessary.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/vscode/blockquote_2.png" alt="BlockQuote" title="BlockQuote"&gt;&lt;/p&gt;
-&lt;p&gt;Update the &lt;code&gt;settings.json&lt;/code&gt; with the following.&lt;/p&gt;
-&lt;p&gt;(You can pick whichever colour you prefer.)&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-json"&gt;"workbench.colorCustomizations": {
-    "textBlockQuote.background":"#95e0d6"
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a BlockQuote&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;As an image:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/vscode/blockquote_3.png" alt="BlockQuote" title="BlockQuote"&gt;&lt;/p&gt;
-&lt;h2 id="info"&gt;Info&lt;/h2&gt;
-&lt;p&gt;Extension:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;Name: learn-preview
-Id: docsmsft.docs-preview
-Description: Learn Markdown Preview Extension
-Version: 1.0.2
-Publisher: Microsoft
-VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview
-&lt;/code&gt;&lt;/pre&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
