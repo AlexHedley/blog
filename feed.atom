@@ -4,9 +4,81 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-11-11T12:17:53Z</updated>
+	<updated>2023-11-11T12:40:12Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/hacktoberfest-2023</id>
+		<title>Hacktoberfest 2023</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/hacktoberfest-2023" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/hacktoberfest/hacktoberfest-2023.jpg" />
+		<updated>2023-11-11T00:00:00Z</updated>
+		<content>&lt;!-- # Hacktoberfest 2023 --&gt;
+&lt;p&gt;This year I participated in &lt;a href="https://hacktoberfest.com/"&gt;Hacktoberfest&lt;/a&gt; 2023. I worked on some documentation issues for &lt;a href="https://www.wildernesslabs.co/"&gt;Wilderness Labs&lt;/a&gt;. These are usually the last things people help out with, as most people don't like to do documentation, is that a fair thing to say?&lt;/p&gt;
+&lt;p&gt;Wilderness Labs is an Enterprise-Grade IoT, Full .NET, Real Embedded, Secure &amp;amp; Scalable solution. They produce the Meadow board which allows IoT via .NET. I've yet to get myself a board as I'm still hacking on ESP32s etc, see my other posts for more about what I'm doing with those. They've just released &lt;a href="https://developer.wildernesslabs.co/Meadow/Meadow.Cloud/"&gt;Meadow.Cloud&lt;/a&gt;, see their blog post &lt;a href="https://blog.wildernesslabs.co/meadow-makes-monitoring-your-devices-health-easier/"&gt;MONITOR YOUR DEVICE AND APP HEALTH PAINLESSLY WITH MEADOW.CLOUD.&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;h2 id="prs"&gt;PRs&lt;/h2&gt;
+&lt;p&gt;Still waiting on one to be approved but you can see them here:&lt;/p&gt;
+&lt;p&gt;TITLE: AC CHARACTERISTICS LABEL FOR PERIOD LEADER POINTING WRONG DIRECTION (ISSUE #311)
+PR/MR: WildernessLabs/Documentation#553&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Documentation/pull/553"&gt;https://github.com/WildernessLabs/Documentation/pull/553&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Documentation/issues/311"&gt;https://github.com/WildernessLabs/Documentation/issues/311&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TITLE: WINDOWS DEPLOYMENT DOCS UNCLEAR ABOUT BOOTLOADER MODE (ISSUE #394)
+PR/MR: WildernessLabs/Documentation#552&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Documentation/pull/552"&gt;https://github.com/WildernessLabs/Documentation/pull/552&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Documentation/issues/394"&gt;https://github.com/WildernessLabs/Documentation/issues/394&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TITLE: HELLOPULSY DOCS INACCURATE FOR F7FEATHERV1 (ISSUE #480)
+PR/MR: WildernessLabs/Documentation#551&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Documentation/pull/551"&gt;https://github.com/WildernessLabs/Documentation/pull/551&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Documentation/issues/480"&gt;https://github.com/WildernessLabs/Documentation/issues/480&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TITLE: CHANGE URL TO THE MEADOW VS EXTENSION IN HELLO WORLD (ISSUE #548)
+PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Documentation/pull/550"&gt;https://github.com/WildernessLabs/Documentation/pull/550&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Documentation/issues/548"&gt;https://github.com/WildernessLabs/Documentation/issues/548&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="badges"&gt;Badges&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://holopin.io/&amp;#64;alexhedley"&gt;&lt;img src="https://holopin.me/alexhedley" alt="An image of &amp;#64;alexhedley's Holopin badges, which is a link to view their full Holopin profile" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="hacktoberfest-lore"&gt;HACKTOBERFEST LORE&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hacktoberfest is DigitalOcean’s annual event that encourages people to contribute to open source throughout October. Much of modern tech infrastructure—including some of DigitalOcean’s own products—relies on open-source projects built and maintained by passionate people who often don’t have the staff or budgets to do much more than keep the project alive. Hacktoberfest is all about giving back to those projects, sharpening skills, and celebrating all things open source, especially the people that make open source so special.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For the past 10 years, thousands of people—coders and non-coders alike—have participated in Hacktoberfest to support the projects they use and love, learn and practice skills that will enhance their careers, and meet new people who love open source as much as they do.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hacktoberfest.com/"&gt;https://hacktoberfest.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.holopin.io/&amp;#64;alexhedley#"&gt;https://www.holopin.io/&amp;#64;alexhedley#&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/"&gt;https://github.com/WildernessLabs/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/.github/tree/c82f0ba0b3c8787a2c09e95d840d0bacffbc80e6/profile"&gt;https://github.com/WildernessLabs/.github/tree/c82f0ba0b3c8787a2c09e95d840d0bacffbc80e6/profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Hacktoberfest is DigitalOcean’s annual event that encourages people to contribute to open source throughout October.</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2023</id>
 		<title>ISC2 North East England Chapter 10th Anniversary Event</title>
@@ -792,75 +864,5 @@ $29.00 / month + VAT&lt;br&gt;
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Networking&lt;/strong&gt; training 🎉!&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/aws-cloud-quest-security</id>
-		<title>AWS Cloud Quest Security</title>
-		<author>
-			<name>alex-hedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/aws-cloud-quest-security" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/aws-cq/cloud-quest.png" />
-		<updated>2023-07-11T00:00:00Z</updated>
-		<content>&lt;!-- # AWS Cloud Quest Machine Learning --&gt;
-&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-security.jpeg" alt="AWS Cloud Quest Security Badge" title="AWS Cloud Quest Security Badge"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/badges/e53bb657-c1ca-4b8a-a8a0-d14935c52717/public_url"&gt;Credly Badge&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
-$29.00 / month + VAT&lt;br&gt;
-&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Use AWS security services to build solutions that respond to incidents, remediate quickly, detect vulnerabilities, and prevent data loss.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/learn-about/cloud-practitioner/"&gt;Training Material&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="resources-used"&gt;Resources Used&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Amazon API Gateway&lt;/li&gt;
-&lt;li&gt;Amazon Athena&lt;/li&gt;
-&lt;li&gt;Amazon CloudFront&lt;/li&gt;
-&lt;li&gt;Amazon CloudWatch&lt;/li&gt;
-&lt;li&gt;Amazon Cognito&lt;/li&gt;
-&lt;li&gt;Amazon DynamoDB&lt;/li&gt;
-&lt;li&gt;Amazon EC2&lt;/li&gt;
-&lt;li&gt;Amazon EC2 Auto Scaling&lt;/li&gt;
-&lt;li&gt;Amazon EventBridge&lt;/li&gt;
-&lt;li&gt;Amazon Kinesis&lt;/li&gt;
-&lt;li&gt;Amazon Lambda&lt;/li&gt;
-&lt;li&gt;Amazon Relational Database Service (RDS)&lt;/li&gt;
-&lt;li&gt;Amazon S3&lt;/li&gt;
-&lt;li&gt;Amazon SNS&lt;/li&gt;
-&lt;li&gt;Amazon VPC&lt;/li&gt;
-&lt;li&gt;Amazon WAF&lt;/li&gt;
-&lt;li&gt;AWS Amplify&lt;/li&gt;
-&lt;li&gt;AWS CloudFormation&lt;/li&gt;
-&lt;li&gt;AWS Cognito&lt;/li&gt;
-&lt;li&gt;AWS Config&lt;/li&gt;
-&lt;li&gt;AWS Glue&lt;/li&gt;
-&lt;li&gt;AWS Identity and Access Management (IAM)&lt;/li&gt;
-&lt;li&gt;AWS Key Management Service (KMS)&lt;/li&gt;
-&lt;li&gt;AWS Lambda&lt;/li&gt;
-&lt;li&gt;AWS Secrets Manager&lt;/li&gt;
-&lt;li&gt;AWS Service Catalog&lt;/li&gt;
-&lt;li&gt;AWS Systems Manager&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Security&lt;/strong&gt; training 🎉!&lt;/p&gt;</summary>
 	</entry>
 </feed>
