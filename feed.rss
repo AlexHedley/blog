@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Sat, 11 Nov 2023 12:40:12 GMT</pubDate>
-		<lastBuildDate>Sat, 11 Nov 2023 12:40:12 GMT</lastBuildDate>
+		<pubDate>Sun, 12 Nov 2023 14:59:23 GMT</pubDate>
+		<lastBuildDate>Sun, 12 Nov 2023 14:59:23 GMT</lastBuildDate>
 		<item>
 			<title>Hacktoberfest 2023</title>
 			<link>https://alexhedley.github.io/blog/posts/hacktoberfest-2023</link>
@@ -131,6 +131,43 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>Poker - App</title>
+			<link>https://alexhedley.github.io/blog/posts/poker-app</link>
+			<description>A visual representation of the current on-goings.</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/poker-app</guid>
+			<pubDate>Sat, 04 Nov 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Poker - App --&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+&lt;p&gt;Aside to the API the ultimate goal would be to have a website that I can use to track the game information and visualise it, alongside the OBS scene. I've made a start on replicating the scene but as a webpage.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/SceneSetup.png" alt="OBS Scene Setup" title="OBS Scene Setup"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/poker/testing-table.png" alt="Web App table" title="Web App table"&gt;&lt;/p&gt;
+&lt;p&gt;I'm looking to create custom components for the player setup and the board, but as a POC I'm getting the information reading from the local text files for name and stats, as well as the current cards each player has, alongside the board.&lt;/p&gt;
+&lt;p&gt;If I choose to add a db in the future I could keep track of the movements and then have a replay button to simulate the game, but let's get the current functionality working first.&lt;/p&gt;
+&lt;p&gt;What's useful is the camera has a stream endpoint so it's much easier to display the current feed. This saves parsing the dom for it in the previous display.&lt;/p&gt;
+&lt;h2 id="source"&gt;Source&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/main/src/Poker"&gt;Poker&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/app/src/Poker"&gt;App (branch)&lt;/a&gt; WIP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Green Software for Practitioners (LFC131)</title>
 			<link>https://alexhedley.github.io/blog/posts/lfc131</link>
 			<description>Cert</description>
@@ -159,6 +196,109 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 &lt;h2 id="links"&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/"&gt;https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Poker - Stats</title>
+			<link>https://alexhedley.github.io/blog/posts/poker-stats</link>
+			<description>Displaying stats for the given game.</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/poker-stats</guid>
+			<pubDate>Mon, 18 Sep 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Poker - Stats --&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+&lt;p&gt;Whilst working on the tracking of the cards I thought it might be also useful to see certain stats, luckily I don't have to do the calculations myself and have found 2 projects written in C# I can repurpose. The first is &lt;strong&gt;PokerOddsPro&lt;/strong&gt; from &lt;em&gt;@dyh1213&lt;/em&gt; and the other is &lt;strong&gt;Poker-Hand-Evaluator&lt;/strong&gt; from &lt;em&gt;@danielpaz6&lt;/em&gt;.&lt;/p&gt;
+&lt;!--?# YouTube YEwy2yhG9P4 /?--&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/AlexHedley/Poker-Hand-Evaluator/master/images/webdemo.png" alt="Evaluator Demo" title="Evaluator Demo"&gt;&lt;/p&gt;
+&lt;p&gt;I'm forked them to keep a copy and am moving them into the &lt;a href="https://github.com/AlexHedley/poker-recording/tree/app/src/Poker"&gt;Poker&lt;/a&gt; source for the main repo.&lt;/p&gt;
+&lt;p&gt;There is still some work to combine the stats together and I'm looking to deploy them as a Blazor WASM app so you can try them out yourself. I also need to add in the capability to burn cards.&lt;/p&gt;
+&lt;p&gt;You can try out &lt;em&gt;@dyh1213&lt;/em&gt;'s here: &lt;a href="https://dyh1213.github.io/PokerOddsPro.io/"&gt;https://dyh1213.github.io/PokerOddsPro.io/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/dyh1213/PokerOddsPro"&gt;https://github.com/dyh1213/PokerOddsPro&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fork - &lt;a href="https://github.com/AlexHedley/PokerOddsPro/tree/dev"&gt;https://github.com/AlexHedley/PokerOddsPro/tree/dev&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/dyh1213/PokerOddsPro.io"&gt;https://github.com/dyh1213/PokerOddsPro.io&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dyh1213.github.io/PokerOddsPro.io/"&gt;https://dyh1213.github.io/PokerOddsPro.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;📼 &lt;a href="https://www.youtube.com/watch?v=YEwy2yhG9P4"&gt;https://www.youtube.com/watch?v=YEwy2yhG9P4&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/danielpaz6/Poker-Hand-Evaluator"&gt;https://github.com/danielpaz6/Poker-Hand-Evaluator&lt;/a&gt; Thanks Daniel Paz (danielpaz6)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Site ❌ &lt;a href="https://jspoker.net/"&gt;https://jspoker.net/&lt;/a&gt; (&lt;a href="https://danielpaz.me/"&gt;https://danielpaz.me/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fork &lt;a href="https://github.com/AlexHedley/Poker-Hand-Evaluator"&gt;https://github.com/AlexHedley/Poker-Hand-Evaluator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Poker - API</title>
+			<link>https://alexhedley.github.io/blog/posts/poker-api</link>
+			<description>Building an API to control the game.</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/poker-api</guid>
+			<pubDate>Sun, 17 Sep 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Poker - API --&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+&lt;div class="mermaid"&gt;flowchart LR
+    RFID --&amp;gt;|ID| API
+    Camera --&amp;gt;|Stream| Device
+
+    subgraph API
+        A[Update Card]
+        B[Clear Cards]
+    end
+
+    subgraph RFID
+        C[RC522] --&amp;gt; D
+        D[ESP8266]
+    end
+
+    subgraph Camera
+        E[OV2640] --&amp;gt; F
+        F[ESP32-CAM]
+    end
+&lt;/div&gt;
+&lt;p&gt;The main idea behind the API is to have an RFID sticker on a playing card, that gets scanned by an RC522 RFID Reader that then calls an endpoint via an ESP8266 (This could also have been an ESP32). A simple first solution is to pass the id and the player number. This then finds the corresponding playing card and copies it to given location. The reason for this is OBS is configured to show these cards in a scene. In the future I might be saving all this information to a local db to track everything to be able to replay the scenarios, but for now this will do.&lt;/p&gt;
+&lt;p&gt;Alongisde the API there is also an OV2640 camera connected to an ESP32-CAM which sends a stream to a given IP address. This can then be embedded in an OBS scene or shown via a webbrowser or &lt;code&gt;img&lt;/code&gt; control.&lt;/p&gt;
+&lt;h2 id="source"&gt;Source&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/main/src/Poker"&gt;Source&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/main/src/Poker"&gt;Poker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/main/src/Poker/Poker.API"&gt;Poker.API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -224,10 +364,13 @@ See previous Qudos talks on YouTube: &lt;a href="https://www.youtube.com/@QudosR
 			<content:encoded>&lt;!-- # Poker - Chip --&gt;
 &lt;!--?# Markdown ?--&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/recording-poker-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;p&gt;Thought as a little momento I'd create a poker chip for each of the players. Gave me an excuse to use the laser engraver again. I found the surround The Noun Project from Anton Gajdosik, the just reused the Rye font from the OBS scene to add some text. A few trial and error prints and got it looking decent. It kept moving about the board so a bit of greentac fixed the problem.&lt;/p&gt;
@@ -253,10 +396,13 @@ See previous Qudos talks on YouTube: &lt;a href="https://www.youtube.com/@QudosR
 			<content:encoded>&lt;!-- # Poker Table Top --&gt;
 &lt;!--?# Markdown ?--&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/recording-poker-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;p&gt;I have a Cardinal Poker Table top that folds in 4 and opens to 35".&lt;/p&gt;
@@ -301,10 +447,13 @@ See previous Qudos talks on YouTube: &lt;a href="https://www.youtube.com/@QudosR
 			<content:encoded>&lt;!-- # Poker - Tracking cards --&gt;
 &lt;!--?# Markdown ?--&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/recording-poker-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;p&gt;This is Part 2 of the Poker series, see &lt;a href="https://alexhedley.github.io/blog/posts/recording-poker-games"&gt;Recording Poker Games&lt;/a&gt; for the initial setup.&lt;/p&gt;
@@ -438,419 +587,6 @@ It might make them harder to shuffle and easier to see a marked card but for an 
 &lt;p&gt;&lt;strong&gt;Board&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;TBC&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Recording Poker Games</title>
-			<link>https://alexhedley.github.io/blog/posts/poker-recording-games</link>
-			<description>A home setup to record a poker game.</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/poker-recording-games</guid>
-			<pubDate>Fri, 11 Aug 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Recording Poker Games --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/recording-poker-games"&gt;Recording Poker Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;p&gt;Watching the poker on &lt;a href="https://www.worldpokertour.com/"&gt;WPT&lt;/a&gt; I thought wouldn't it be cool if I could have the same setup at my home games? Where would I even begin?&lt;/p&gt;
-&lt;p&gt;So I need a camera to point at the players hole cards (multiple by the number of players), one camera over the table to see the flop, turn and river. Then would I need any more?&lt;/p&gt;
-&lt;p&gt;So how to I get the camera feeds to my computer?&lt;/p&gt;
-&lt;p&gt;I could use WebCams, and connect them via a cable - issue with that is my computer isn't in the same room as where I want to play. Is there a wireless one? But won't these be very expensive.&lt;/p&gt;
-&lt;p&gt;logitech C270 HD Webcam RRP £34.99&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/logitech-c270.png" alt="logitech C270 HD Webcam" title="logitech C270 HD Webcam"&gt;&lt;/p&gt;
-&lt;p&gt;Found them on eBay for ~£15.&lt;/p&gt;
-&lt;p&gt;Is there an Arduino alternative, yes! You can use a combination of ESP32-CAM, ESP32-CAM-MB, OV2640.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM--ESP32-CAM-MB--OV2640.jpg" alt="ESP32-CAM, ESP32-CAM-MB, OV2640" title="ESP32-CAM, ESP32-CAM-MB, OV2640"&gt;&lt;/p&gt;
-&lt;p&gt;~£11 on Amazon but then I also need a micro USB cable and USB plug. (Multiply by the number of devices.)&lt;/p&gt;
-&lt;h2 id="arduino"&gt;Arduino&lt;/h2&gt;
-&lt;p&gt;Install the board&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json"&gt;https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Change it in the app to&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;AI Thinker ESP-32 CAM&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Examples | ESP32 | Camera | CameraWebServer&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Camera/CameraWebServer"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Update the SSID and password - put this in a conf file?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L38-L39"&gt;https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L38-L39&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class="language-c"&gt;#include "Secrets.h"
-const char* ssid = SECRET_SSID;
-const char* password = SECRET_PASSWORD;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;touch "Secrets.h"&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-c"&gt;#define SECRET_SSID "foo"
-#define SECRET_PASS "bar"
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Update the CAMERA to &lt;code&gt;#define CAMERA_MODEL_AI_THINKER // Has PSRAM&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L24C2-L24C2"&gt;https://github.com/espressif/arduino-esp32/blob/e1f14331f173a00a9062f616bc9a62c358b9076f/libraries/ESP32/examples/Camera/CameraWebServer/CameraWebServer.ino#L24C2-L24C2&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Upload&lt;/p&gt;
-&lt;p&gt;Reset (RST)&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM.jpg" alt="ESP32-CAM" title="ESP32-CAM"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM-Reset.jpg" alt="Reset" title="Reset"&gt;&lt;/p&gt;
-&lt;p&gt;Check the output for the IP Address, then navigate to it in a browser.&lt;/p&gt;
-&lt;p&gt;Click on "Start Stream"&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/CameraWebServer.png" alt="Camera Web Server" title="Camera Web Server"&gt;&lt;/p&gt;
-&lt;p&gt;Click "Stop Stream".&lt;/p&gt;
-&lt;p&gt;I then used &lt;a href="https://learn.microsoft.com/en-us/windows/powertoys/fancyzones"&gt;FancyZones&lt;/a&gt; in &lt;a href="https://learn.microsoft.com/en-us/windows/powertoys/"&gt;PowerToys&lt;/a&gt; to show all the screens together.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/CameraSetup.png" alt="Camera Setup" title="Camera Setup"&gt;&lt;/p&gt;
-&lt;p&gt;As this part is working I can move onto trying it in a piece of screen recording software.&lt;/p&gt;
-&lt;p&gt;Download/Install/Start &lt;a href="https://obsproject.com/"&gt;OBS&lt;/a&gt; and in the Scene click &lt;strong&gt;+&lt;/strong&gt; and navigate to &lt;strong&gt;Browser&lt;/strong&gt;,&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/obs-sources-browser.png" alt="OBS Sources Browser" title="OBS Sources Browser"&gt;&lt;/p&gt;
-&lt;p&gt;Update the URL to the one above.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/Browser-Properties.png" alt="Browser - Properties" title="Browser - Properties"&gt;&lt;/p&gt;
-&lt;p&gt;Then in the Browser Options bar click on "Interact", this will open up a new window, hopefully load the same as the above browser did, then scroll down and click "Start Stream", once you see a video feed you can re-position this in your Scene.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/Browser-options.png" alt="Browser - Options" title="Browser - Options"&gt;&lt;/p&gt;
-&lt;p&gt;Once the video feeds are on the scene I tried to make a quick mockup of the screen - any designers about and want to help...please :p.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/SceneSetup.png" alt="Scene Setup" title="Scene Setup"&gt;&lt;/p&gt;
-&lt;p&gt;I looked for an ole time font and found one called &lt;a href="https://fonts.google.com/specimen/Rye"&gt;Rye&lt;/a&gt; (from Google Fonts).&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://fonts.google.com/specimen/Rye?preview.text=HEDLEY%20CASINO&amp;amp;preview.text_type=custom"&gt;Preview - Hedley Casino&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The card backs are taken from the excellent SVG web lib from &lt;a href="https://cardmeister.github.io/"&gt;CardMeister&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Then I found a set of individual &lt;a href="https://www.improvemagic.com/all-playing-cards-names-with-pictures/"&gt;cards&lt;/a&gt; on &lt;a href="https://www.improvemagic.com/"&gt;Improve Magic&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;These should come in handy later...&lt;/p&gt;
-&lt;p&gt;I created an image with a green background which I cut out 4 transparent windows to fit the camera items, a few text widgets for the names.&lt;/p&gt;
-&lt;p&gt;TODO: Pot Total, Individual Total, % Outs etc.&lt;/p&gt;
-&lt;p&gt;See a 📼 video of it in action:&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wJCgOoJmJX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""&gt;&lt;/iframe&gt;
-&lt;p&gt;I need some wood to build a crane to hang a camera over the table to show the rest of the action.&lt;/p&gt;
-&lt;h2 id="live-stream"&gt;Live Stream&lt;/h2&gt;
-&lt;p&gt;I may live stream them on my &lt;a href="https://www.twitch.tv/"&gt;Twitch&lt;/a&gt; &lt;a href="https://www.twitch.tv/alexhedley8"&gt;@alexhedley8&lt;/a&gt; one day.&lt;/p&gt;
-&lt;h2 id="case-attempt"&gt;Case Attempt&lt;/h2&gt;
-&lt;p&gt;Found some lollipop sticks and some masking tape and got to work making a temporary case...&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM-Case.jpg" alt="Camera Case" title="Camera Case"&gt;&lt;/p&gt;
-&lt;p&gt;I then bought one instead.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Note to self: configure your 3d Printer and print one yourself!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="hardware"&gt;Hardware&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Item&lt;/th&gt;
-&lt;th&gt;Price&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Camera&lt;/td&gt;
-&lt;td&gt;£10.99&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Cable&lt;/td&gt;
-&lt;td&gt;£2.66&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Plug&lt;/td&gt;
-&lt;td&gt;£2.49&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Case&lt;/td&gt;
-&lt;td&gt;£6.20&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;------&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Total&lt;/td&gt;
-&lt;td&gt;£22.34&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Camera&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;XTVTX ESP-32-CAM WiFi Bluetooth Board ESP-32-CAM-MB Micro USB to Serial Port with OV2640 2MP Camera Module Dual Mode compatible with Arduino&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/B093GSCBWJ"&gt;https://www.amazon.co.uk/dp/B093GSCBWJ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;£10.99&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/ESP32-CAM--ESP32-CAM-MB--OV2640.jpg" alt="ESP32-CAM, ESP32-CAM-MB, OV2640" title="ESP32-CAM, ESP32-CAM-MB, OV2640"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Mirco USB Cable&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/B07WNX1B8C"&gt;https://www.amazon.co.uk/dp/B07WNX1B8C&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;£7.99 / 3 = £2.66&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/cable.jpg" alt="Cable" title="Cable"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;USB Plug&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/B09X2Z6V5W"&gt;https://www.amazon.co.uk/dp/B09X2Z6V5W&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;£9.99 / 4 = £2.49&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/plug.jpg" alt="Plug" title="Plug"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Magnetic Case&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.ebay.co.uk/itm/275204804237"&gt;https://www.ebay.co.uk/itm/275204804237&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;£5.90 + (£2.70 P&amp;amp;P)&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/compact-case.jpg" alt="Magnetic Case" title="Magnetic Case"&gt;&lt;/p&gt;
-&lt;h3 id="alternatives"&gt;Alternatives&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.logitech.com/en-gb/products/webcams/c270-hd-webcam.960-001063.html"&gt;Logitech - C270 HD Webcam&lt;/a&gt; RRP £34.99
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/Logitech-Widescreen-Noise-Reducing-Automatic-Correction/dp/B01BGBJ8Y0/"&gt;Amazon&lt;/a&gt; £17.99&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.arduino.cc/"&gt;Arduino&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://obsproject.com/"&gt;OBS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="tutorials"&gt;Tutorials&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Random Nerd Tutorials&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/"&gt;Installing the ESP32 Board in Arduino IDE (Windows, Mac OS X, Linux)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://randomnerdtutorials.com/upload-code-esp32-cam-mb-usb/"&gt;Upload Code to ESP32-CAM AI-Thinker using ESP32-CAM-MB USB Programmer (easiest way)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/"&gt;ESP32-CAM Video Streaming and Face Recognition with Arduino IDE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://randomnerdtutorials.com/esp32-cam-ov2640-camera-settings/"&gt;Change ESP32-CAM OV2640 Camera Settings: Brightness, Resolution, Quality, Contrast, and More&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;ArduCAM&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.arducam.com/knowledge-base/mini-tutorial/"&gt;ArduCAM Mini Cameras Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>DependencyCheck .NET</title>
-			<link>https://alexhedley.github.io/blog/posts/dependencycheck-dotnet</link>
-			<description>How to use DependencyCheck with .NET.</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/dependency-check/dependencycheck.svg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/dependencycheck-dotnet</guid>
-			<pubDate>Tue, 08 Aug 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- DependencyCheck .NET --&gt;
-&lt;p&gt;In this article I will run through setting up the awesome &lt;a href="https://jeremylong.github.io/DependencyCheck/index.html"&gt;DependencyCheck&lt;/a&gt; from &lt;a href="https://github.com/jeremylong"&gt;Jeremy Long&lt;/a&gt; for a .NET application.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Dependency-check can currently be used to scan software to identify the use of known vulnerable components.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I've used this on some Kotlin/Java projects and wanted to see how easy it was to setup for .NET.&lt;/p&gt;
-&lt;p&gt;There are a number of plugins listed for Gradle etc but for .NET I'm going to use the &lt;a href="https://jeremylong.github.io/DependencyCheck/dependency-check-cli/index.html"&gt;CLI&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can run this locally, first install with &lt;code&gt;brew install dependency-check&lt;/code&gt; then for *&lt;strong&gt;nix&lt;/strong&gt; systems run &lt;code&gt;dependency-check.sh --project "My App Name" --scan "/java/application/lib"&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Since I'm wanting to also try this out in CI/CD it's straight to GitHub to create a sample repo.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/dotnet-dependencycheck"&gt;dotnet-dependencycheck&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I created a simple .NET Console Application then looked at what was needed to run the tooling locally.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;dependency-check --project "DependencyCheckExample" --scan "src/DependencyCheckExample/bin/Debug/net7.0/*.dll"&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[NOTE] Update the &lt;code&gt;net7.0&lt;/code&gt; version to whichever you are working with.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Depending where you are running the tool from determines the output location of the report. See the &lt;a href="https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html"&gt;Command Line Agruments&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Short&lt;/th&gt;
-&lt;th&gt;Argument Name&lt;/th&gt;
-&lt;th&gt;Parameter&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;th&gt;Requirement&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;-o&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;--out&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The folder to write reports to. This defaults to the current directory. If the format is not set to ALL one could specify a specific file name.&lt;/td&gt;
-&lt;td&gt;Optional&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Make sure you are in the working directory of your project before running, unless you want it adding to your &lt;em&gt;usr&lt;/em&gt; folder.&lt;/p&gt;
-&lt;p&gt;I also updated it to output to a subfolder of &lt;em&gt;reports&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;dependency-check --project "DependencyCheckExample" --scan "DependencyCheckExample/bin/Debug/net7.0/*.dll" --out "reports"&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This produces a &lt;code&gt;dependency-check-report.html&lt;/code&gt; file, self contained with the results.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dependency-check/dependency-check-report.png" alt="Sample Report" title="Sample Report"&gt;&lt;/p&gt;
-&lt;p&gt;Not very interesting as there are no dependencies, but at least the flow is working.&lt;/p&gt;
-&lt;p&gt;Next is how to replicate this in &lt;a href="https://github.com/features/actions"&gt;GitHub Actions&lt;/a&gt;?&lt;/p&gt;
-&lt;p&gt;Could I run &lt;code&gt;brew install&lt;/code&gt; and run &lt;code&gt;dependency-check.sh&lt;/code&gt;, maybe but I'm sure someone has already created a GitHub Action for this.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dependency-check/Dependency-Check_Action"&gt;Dependency-Check Action&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;      - name: Depcheck
-        uses: dependency-check/Dependency-Check_Action@main
-        id: Depcheck
-        with:
-          project: 'test'
-          path: '.'
-          format: 'HTML'
-          out: 'reports' # this is the default, no need to specify unless you wish to override it
-          args: &amp;gt;
-            --failOnCVSS 7
-            --enableRetired
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This has a lot of options to override so check the docs if you want to tweak anything.&lt;/p&gt;
-&lt;p&gt;There's an ADO one too (&lt;a href="https://github.com/dependency-check/azuredevops"&gt;azuredevops&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;I created a Workflow (&lt;a href="https://github.com/alex-hedley/dotnet-dependencycheck/blob/main/.github/workflows/depcheck.yml"&gt;depcheck.yml&lt;/a&gt;) to get the &lt;em&gt;src&lt;/em&gt;, &lt;em&gt;restore&lt;/em&gt; any dependencies, &lt;em&gt;build&lt;/em&gt;, (&lt;em&gt;test&lt;/em&gt;) and then run the &lt;strong&gt;Dependency-Check action&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;We now have an artifact so might as well upload that and since it's a website we can use GitHub Pages to host the output too.&lt;/p&gt;
-&lt;p&gt;I manually created an &lt;code&gt;index.html&lt;/code&gt; on the &lt;code&gt;gh-pages&lt;/code&gt; branch to point to the file, you could do with this how you wish.&lt;/p&gt;
-&lt;p&gt;I've used &lt;a href="https://github.com/JamesIves/github-pages-deploy-action"&gt;JamesIves/github-pages-deploy-action&lt;/a&gt; but you could swap to &lt;a href="https://github.com/peaceiris/actions-gh-pages"&gt;peaceiris/actions-gh-pages&lt;/a&gt; or even the GH one through the new Beta options which includes &lt;code&gt;actions/configure-pages&lt;/code&gt;, &lt;code&gt;actions/upload-pages-artifact&lt;/code&gt; and &lt;code&gt;actions/deploy-pages&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Next up is adding some vulnerable code to the sample Console App to see what DC finds...&lt;/p&gt;
-&lt;h2 id="vulnerabilities"&gt;Vulnerabilities&lt;/h2&gt;
-&lt;p&gt;First thing to do is find some...&lt;/p&gt;
-&lt;p&gt;I could take a look through the CVEs on &lt;a href="https://cve.mitre.org/"&gt;https://cve.mitre.org&lt;/a&gt; but it would help to know the CVE #. Another option is to filter the &lt;a href="https://github.com/advisories"&gt;GitHub Advisory Database&lt;/a&gt; for &lt;a href="https://www.nuget.org/"&gt;NuGet&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anuget"&gt;https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anuget&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I can then filter by Severity to get an example of each kind.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;🟥 Critical - &lt;a href="https://github.com/advisories/GHSA-g3wc-xv93-445q"&gt;CVE-2021-4248&lt;/a&gt; - DNS NuGet package uses insufficiently random values (DNS (6.1.0))&lt;/li&gt;
-&lt;li&gt;🟧 High - &lt;a href="https://github.com/advisories/GHSA-5pm2-9mr2-3frq"&gt;CVE-2023-21893&lt;/a&gt; - Component takeover in Oracle Data Provider for .NET (Oracle.ManagedDataAccess (21.4.0) / Oracle.ManagedDataAccess.Core (3.21.1))&lt;/li&gt;
-&lt;li&gt;🟨 Moderate - &lt;a href="https://github.com/advisories/GHSA-8g2p-5pqh-5jmc"&gt;CVE-2022-41064&lt;/a&gt; - .NET Information Disclosure Vulnerability (System.Data.SqlClient (4.8.3))&lt;/li&gt;
-&lt;li&gt;⬜️ Low - &lt;a href="https://github.com/advisories/GHSA-j9m2-h2pv-wvph"&gt;CVE-2021-43306&lt;/a&gt; - Regular expression denial of service in jquery-validation (jQuery.Validation (1.19.3))&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Add these to my &lt;code&gt;.csproj&lt;/code&gt;, rebuild and then re-run the DC tool.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dependency-check/dependency-check-report-summary.png" alt="Dependency-Check Report - Summary" title="Dependency-Check Report - Summary"&gt;&lt;/p&gt;
-&lt;p&gt;Comparing this to GitHub's check you can also see the same list from the Security tab (Dependabot):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/dotnet-dependencycheck/security"&gt;https://github.com/alex-hedley/dotnet-dependencycheck/security&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dependency-check/GitHub-Dependabot-alerts.png" alt="GitHub - Dependabot alerts" title="GitHub - Dependabot alerts"&gt;&lt;/p&gt;
-&lt;h2 id="suppressions"&gt;Suppressions&lt;/h2&gt;
-&lt;p&gt;As with everything we want a way to ignore things, these being false positive vulnerabilities or ones we've chosen to ignore for whatever reason. There is an option to do this with a supplementary file.&lt;/p&gt;
-&lt;p&gt;Create a new xml file, e.g. &lt;code&gt;dependency-suppression.xml&lt;/code&gt; and add the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-xml"&gt;&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;
-&amp;lt;suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd"&amp;gt;
-&amp;lt;/suppressions&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then in the Dependency Check Report there is a &lt;em&gt;suppress&lt;/em&gt; button containing the XML you need to add, click, copy and add e.g.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-xml"&gt;    &amp;lt;suppress&amp;gt;
-        &amp;lt;notes&amp;gt;&amp;lt;![CDATA[
-        file name: Microsoft.Win32.SystemEvents.dll
-        ]]&amp;gt;&amp;lt;/notes&amp;gt;
-        &amp;lt;packageUrl regex="true"&amp;gt;^pkg:generic/Microsoft\.Win32\.SystemEvents@.*$&amp;lt;/packageUrl&amp;gt;
-        &amp;lt;cpe&amp;gt;cpe:/a:microsoft:.net_core&amp;lt;/cpe&amp;gt;
-    &amp;lt;/suppress&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Re-run the report and this will have gone.&lt;/p&gt;
-&lt;h2 id="fail"&gt;Fail&lt;/h2&gt;
-&lt;p&gt;From the sample there was an added arg of &lt;code&gt;failOnCVSS&lt;/code&gt; set to &lt;strong&gt;7&lt;/strong&gt; so this was failing the CI/CD, as expected:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;Error:
-
-One or more dependencies were identified with vulnerabilities that have a CVSS score greater than or equal to '7.0': 
-
-DependencyCheckExample.csproj: CVE-2021-4248(9.8)
-DependencyCheckExample.csproj: CVE-2023-21893(7.5)
-DependencyCheckExample.csproj: CVE-2023-21893(7.5)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Removing this didn't stop the build failing and I couldn't see a default value in the code. Looking at the check &lt;a href="https://github.com/jeremylong/DependencyCheck/blob/6a85d0ffa28d6e625f3ef23db766f651614ad505/cli/src/main/java/org/owasp/dependencycheck/CliParser.java#L906"&gt;CliParser - getFailOnCVSS&lt;/a&gt; I found it defaulted to &lt;strong&gt;11&lt;/strong&gt; so just overrode it for the time being as I wanted the build to pass and produce the report - in a real world situation it would be good to set this to the required limit.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yml"&gt;        args: &amp;gt;
-            --failOnCVSS 11
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html"&gt;Command Line Arguments&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Short&lt;/th&gt;
-&lt;th&gt;Argument Name&lt;/th&gt;
-&lt;th&gt;Parameter&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;th&gt;Requirement&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;--failOnCVSS&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;lt;score&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;If the score set between 0 and 10 the exit code from dependency-check will indicate if a vulnerability with a CVSS score equal to or higher was identified.&lt;/td&gt;
-&lt;td&gt;Optional&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="inconsistencies"&gt;Inconsistencies&lt;/h2&gt;
-&lt;p&gt;Running the app locally doesn't produce the same output as on GitHub Actions...&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;dependency-check --v&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Dependency-Check Core version 8.3.1&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The &lt;a href="https://github.com/dependency-check/Dependency-Check_Action"&gt;Dependency-Check Action&lt;/a&gt; uses the &lt;a href="https://github.com/dependency-check/DependencyCheck_Builder/"&gt;DependencyCheck Builder&lt;/a&gt; which has a &lt;a href="https://github.com/dependency-check/DependencyCheck_Builder/blob/main/Dockerfile"&gt;Dockerfile&lt;/a&gt; which uses the &lt;a href="https://hub.docker.com/r/owasp/dependency-check"&gt;Docker Hub image&lt;/a&gt; which is currently the same version.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;--enableRetired&lt;/code&gt; is being used in the GHA but I'm not locally.&lt;/p&gt;
-&lt;p&gt;I need to check if any other args are being set to a default value.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>AWS Cloud Quest Networking</title>
-			<link>https://alexhedley.github.io/blog/posts/aws-cloud-quest-networking</link>
-			<description>&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Networking&lt;/strong&gt; training 🎉!&lt;/p&gt;</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/aws-cq/cloud-quest.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/aws-cloud-quest-networking</guid>
-			<pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # AWS Cloud Quest Networking --&gt;
-&lt;p&gt;Today I completed the &lt;strong&gt;AWS Cloud Quest Networking&lt;/strong&gt; training 🎉!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aws-cq/aws-cloud-quest-networking.png" alt="AWS Cloud Quest Networking Badge" title="AWS Cloud Quest Networking Badge"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/badges/8f0220d0-0704-4ce2-8650-4ffbf090bf4b/public_url"&gt;Credly Badge&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="notes"&gt;Notes&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;AWS Step Functions&lt;/em&gt; took me back to my Symantec Workflow days. It was a nice UI to work with and interesting to see the JSON output.
-A new resource I got to try was &lt;em&gt;Amazon QuickSight&lt;/em&gt;, seems very handy when linked with &lt;em&gt;Amazon Athena&lt;/em&gt; to build some very useful dashboards.&lt;/p&gt;
-&lt;h2 id="info"&gt;Info&lt;/h2&gt;
-&lt;p&gt;This is a paid course from AWS that uses gamification and hands on labs to reinforce learnings.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.&lt;br&gt;
-$29.00 / month + VAT&lt;br&gt;
-&lt;a href="https://explore.skillbuilder.aws/learn/signin"&gt;https://explore.skillbuilder.aws/learn/signin&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;As the city’s Networking specialist, you will leverage AWS services to scale network connectivity, connect to on-premisses networks, protect applications, analyze network traffic and identify suspicious activity. As you build real solutions, you will explore concepts such as network tunneling, peering, cross region routing and log analysis.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/training/digital/aws-cloud-quest/"&gt;AWS Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/7636/cloud-quest"&gt;Cloud Quest&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="resources-used"&gt;Resources Used&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Amazon Athena&lt;/li&gt;
-&lt;li&gt;Amazon CloudFront&lt;/li&gt;
-&lt;li&gt;Amazon CloudWatch&lt;/li&gt;
-&lt;li&gt;Amazon EC2&lt;/li&gt;
-&lt;li&gt;Amazon EC2 Auto Scaling&lt;/li&gt;
-&lt;li&gt;Amazon QuickSight&lt;/li&gt;
-&lt;li&gt;Amazon Relational Database Service (RDS)&lt;/li&gt;
-&lt;li&gt;Amazon Route 53&lt;/li&gt;
-&lt;li&gt;Amazon S3&lt;/li&gt;
-&lt;li&gt;Amazon SNS&lt;/li&gt;
-&lt;li&gt;Amazon VPC&lt;/li&gt;
-&lt;li&gt;AWS&lt;/li&gt;
-&lt;li&gt;AWS Cloud Trail&lt;/li&gt;
-&lt;li&gt;AWS CloudFormation&lt;/li&gt;
-&lt;li&gt;AWS CloudWatch&lt;/li&gt;
-&lt;li&gt;AWS Glue&lt;/li&gt;
-&lt;li&gt;AWS Lambda&lt;/li&gt;
-&lt;li&gt;AWS Network Firewall&lt;/li&gt;
-&lt;li&gt;AWS Private Link&lt;/li&gt;
-&lt;li&gt;AWS Site-to-Site VPN&lt;/li&gt;
-&lt;li&gt;AWS Step Functions&lt;/li&gt;
-&lt;li&gt;AWS Systems Manager&lt;/li&gt;
-&lt;li&gt;AWS Transit Gateway&lt;/li&gt;
-&lt;li&gt;AWS WAF&lt;/li&gt;
-&lt;li&gt;Elastic Load Balancing (ELB)&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
