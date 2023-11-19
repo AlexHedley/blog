@@ -77,7 +77,7 @@ Set the board to **NodeMCU 1.0 (ESP-12E Module)**
 
 Add https://github.com/miguelbalboa/rfid/releases
 
-![RFID](images/Poker/RFID.jpg "RFID")
+![RFID](images/poker/RFID.jpg "RFID")
 
 https://circuitdigest.com/microcontroller-projects/interfacing-rfid-reader-module-with-arduino
 
