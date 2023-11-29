@@ -5,8 +5,98 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Sun, 19 Nov 2023 17:45:04 GMT</pubDate>
-		<lastBuildDate>Sun, 19 Nov 2023 17:45:04 GMT</lastBuildDate>
+		<pubDate>Wed, 29 Nov 2023 18:00:58 GMT</pubDate>
+		<lastBuildDate>Wed, 29 Nov 2023 18:00:58 GMT</lastBuildDate>
+		<item>
+			<title>AoC</title>
+			<link>https://alexhedley.github.io/blog/posts/aoc</link>
+			<description>Advent of Code</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/aoc</guid>
+			<pubDate>Wed, 29 Nov 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc"&gt;AoC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2022"&gt;AoC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2021"&gt;AoC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2015"&gt;AoC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+&lt;p&gt;Home page for all the AoCs.&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode"&gt;https://github.com/AlexHedley/adventofcode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>1st Parkrun</title>
+			<link>https://alexhedley.github.io/blog/posts/parkrun-whitleybay-nov2023</link>
+			<description>Whitley Bay November 2023</description>
+			<author>alexhedley</author>
+			<enclosure url="https://images.parkrun.com/website/uk/prlogoC.svg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/parkrun-whitleybay-nov2023</guid>
+			<pubDate>Sat, 25 Nov 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # 1st Parkrun --&gt;
+&lt;p&gt;Today I completed my first Parkrun in Whitley Bay!&lt;/p&gt;
+&lt;p&gt;Thanks for the encourage and support from Mr Lish! I would never have gotten out and ran it if you hadn't organised coming over to the Bay and persuading me to get my pristine running shoes on.&lt;/p&gt;
+&lt;p&gt;The sun was shining, there was a rainbow 🌈 as we started, with what looked like it might be snow, but was just a mild shower.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/parkrun_whitleybay_nov2023.jpg" alt="Parkrun Whitley Bay Nov 2023" title="Parkrun Whitley Bay Nov 2023"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.parkrun.org.uk/whitleybay/"&gt;Whitley Bay parkrun&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="result"&gt;Result&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Event&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;Run Date&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;Gender Pos&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;Overall Position&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;Time&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;Age Grade&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;Whitley Bay parkrun&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;25/11/2023&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;227&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;363&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;37:57&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;34.96%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: center;"&gt;Event&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;parkruns&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;Best Gender Position&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;Best Position Overall&lt;/th&gt;
+&lt;th style="text-align: center;"&gt;Best Time&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;Whitley Bay parkrun&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;1&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;227&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;363&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;00:37:57&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.parkrun.org.uk/parkrunner/3492522/"&gt;https://www.parkrun.org.uk/parkrunner/3492522/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.parkrun.org.uk/parkrunner/3492522/all/"&gt;https://www.parkrun.org.uk/parkrunner/3492522/all/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Poker - Docs</title>
 			<link>https://alexhedley.github.io/blog/posts/poker-docs</link>
@@ -244,6 +334,30 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>🎙️ GitHub Actions</title>
+			<link>https://alexhedley.github.io/blog/posts/talk-github-actions</link>
+			<description>Beginners guide to GitHub Actions.</description>
+			<author>alex-hedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/talk-github-actions</guid>
+			<pubDate>Sun, 05 Nov 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- GitHub Actions --&gt;
+&lt;p&gt;Another community talk at work, this time for the Software Delivery Community. We are starting a series to run through a few of the providers like GitHub and GitLab. I did a very beginner one, looking to expand in the future and hopefully show one of the GitHub Actions I've built.&lt;/p&gt;
+&lt;p&gt;🗓️ November 5, 2023&lt;/p&gt;
+&lt;!-- 📼  --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talk-githubactions/"&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talk-githubactions"&gt;Presentation Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talks/"&gt;Talks Site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talks"&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Poker - App</title>
 			<link>https://alexhedley.github.io/blog/posts/poker-app</link>
 			<description>A visual representation of the current on-goings.</description>
@@ -315,6 +429,62 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>DevHubNorth - Oct 2023</title>
+			<link>https://alexhedley.github.io/blog/posts/devhubnorth-oct2023</link>
+			<author>alexhedley</author>
+			<enclosure url="https://www.devhubnorth.com/wp-content/uploads/2019/11/I-have-a-surprise-4.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/devhubnorth-oct2023</guid>
+			<pubDate>Tue, 10 Oct 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # DevHubNorth - Oct 2023 --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/devhubnorth-oct2023-1.jpeg" alt="DevHubNorth - Oct 2023" title="DevHubNorth - Oct 2023"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/devhubnorth-oct2023.jpeg" alt="DevHubNorth - Oct 2023" title="DevHubNorth - Oct 2023"&gt;&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;We are so excited to announce our next in-person event &amp;amp; welcome back all developers, tech professionals, students &amp;amp; anyone else who has an interest in tech, at our regular venue - TusPark on Grainger Street!&lt;/p&gt;
+&lt;p&gt;Devhub North is a great opportunity for you to network with like-minded tech professionals and enjoy some great pizzas and beers while hearing from two inspiring speakers discussing hot topics within the tech industry! 🍕&lt;/p&gt;
+&lt;p&gt;The doors open at 5:30pm which gives you time to grab a drink, settle in, and network before our first talk at 6pm!&lt;/p&gt;
+&lt;p&gt;What's in it for you?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Hear from some industry experts&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Network with like-minded professionals &amp;amp; build some great friendships&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Free pizza &amp;amp; beers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Knowledge sharing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Lanyards for easier networking&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Make sure you sign up early to secure your spot &amp;amp; we will have your lanyard ready for you on the day 👊&lt;/p&gt;
+&lt;p&gt;SPEAKERS &amp;amp; TOPICS:&lt;/p&gt;
+&lt;p&gt;🌟 Speaker: Peter Bull at Bede Gaming 🌟&lt;/p&gt;
+&lt;p&gt;Peter Bull is a Software Engineer for Bede Gaming and is also an experienced speaker, creates and shares tutorials and workshops along with writing articles and hosting his own podcast! Peter has been a .NET developer for over twenty years since it was first released and has used it to create many things over the years from content generation to web services. Peter also has a passion for Microsoft in general including their obsolete devices such as Zune and Windows Phone along with developing with experiences such as Spotify.&lt;/p&gt;
+&lt;p&gt;TOPIC: Blazor a trail with .NET 8&lt;/p&gt;
+&lt;p&gt;In this talk, you will get an introduction to .NET which is Microsoft's platform for developing apps and services along with seeing what will be coming in the latest version .NET 8. There will also be a focus on Blazor for developing web applications using .NET and you'll get to see a demo which will show off many upcoming and existing features of .NET 8!&lt;/p&gt;
+&lt;p&gt;🌟 Speaker: Gary Brown at AND Digital 🌟&lt;/p&gt;
+&lt;p&gt;Gary Brown is an experienced Cloud Architect at AND Digital, with over 17 years of IT experience. He spent most of his career in the NHS as a Java developer and transitioned to architecture six years ago. Previously, Gary worked as an NHS/Gov.UK technical assessor, which gave him a deep understanding of the unique challenges faced by government agencies and healthcare providers when it comes to IT systems. With a passion for development and cloud architecture, Gary has led development teams and engaged with businesses at all levels to deliver high-quality services. He has a deep understanding of general architecture principles and is security-minded, ensuring that all systems he designs are secure and compliant with industry standards. With his wealth of experience and expertise, Gary is committed to delivering innovative solutions that meet the unique needs of his clients.&lt;/p&gt;
+&lt;p&gt;TOPIC: "Agile IT Architecture Design: Building Efficient and Effective Systems for AWS and Beyond"&lt;/p&gt;
+&lt;p&gt;Agile IT architecture design is a methodology that can significantly benefit developers when building IT systems, including those deployed on AWS or other platforms. By adopting an agile approach, developers can break down complex systems into smaller, more manageable components that can be developed and tested independently. This allows for greater collaboration and flexibility within development teams, which can help accelerate the delivery of new features and improvements to end users. Additionally, an agile approach can help developers respond quickly to changes in user requirements or market conditions, enabling them to iterate and improve on their systems more rapidly. Overall, embracing agile IT architecture design can help developers create more efficient, effective, and adaptable IT systems that meet the needs of their customers.&lt;/p&gt;
+&lt;p&gt;We look forward to seeing you all there!👋&lt;/p&gt;
+&lt;p&gt;Your Devhub North Team&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.eventbrite.co.uk/e/devhub-north-october-meetup-tickets-728285029127"&gt;https://www.eventbrite.co.uk/e/devhub-north-october-meetup-tickets-728285029127&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/o/ronald-james-group-28239187209"&gt;https://www.eventbrite.co.uk/o/ronald-james-group-28239187209&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/posts/lucy-kay-514641174_tech-event-networking-ugcPost-7117802381978832898-cOCW/"&gt;https://www.linkedin.com/posts/lucy-kay-514641174_tech-event-networking-ugcPost-7117802381978832898-cOCW/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.devhubnorth.com/"&gt;https://www.devhubnorth.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/company/devhubnorth/"&gt;https://www.linkedin.com/company/devhubnorth/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Poker - Stats</title>
 			<link>https://alexhedley.github.io/blog/posts/poker-stats</link>
 			<description>Displaying stats for the given game.</description>
@@ -361,195 +531,6 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 &lt;li&gt;Fork &lt;a href="https://github.com/AlexHedley/Poker-Hand-Evaluator"&gt;https://github.com/AlexHedley/Poker-Hand-Evaluator&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Poker - API</title>
-			<link>https://alexhedley.github.io/blog/posts/poker-api</link>
-			<description>Building an API to control the game.</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/poker-api</guid>
-			<pubDate>Sun, 17 Sep 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Poker - API --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Poker - Recording Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-docs"&gt;Poker - Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;div class="mermaid"&gt;flowchart LR
-    RFID --&amp;gt;|ID| API
-    Camera --&amp;gt;|Stream| Device
-
-    subgraph API
-        A[Update Card]
-        B[Clear Cards]
-    end
-
-    subgraph RFID
-        C[RC522] --&amp;gt; D
-        D[ESP8266]
-    end
-
-    subgraph Camera
-        E[OV2640] --&amp;gt; F
-        F[ESP32-CAM]
-    end
-&lt;/div&gt;
-&lt;p&gt;The main idea behind the API is to have an RFID sticker on a playing card, that gets scanned by an RC522 RFID Reader that then calls an endpoint via an ESP8266 (This could also have been an ESP32). A simple first solution is to pass the id and the player number. This then finds the corresponding playing card and copies it to given location. The reason for this is OBS is configured to show these cards in a scene. In the future I might be saving all this information to a local db to track everything to be able to replay the scenarios, but for now this will do.&lt;/p&gt;
-&lt;p&gt;Alongisde the API there is also an OV2640 camera connected to an ESP32-CAM which sends a stream to a given IP address. This can then be embedded in an OBS scene or shown via a webbrowser or &lt;code&gt;img&lt;/code&gt; control.&lt;/p&gt;
-&lt;h2 id="source"&gt;Source&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/main/src/Poker"&gt;Source&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/main/src/Poker"&gt;Poker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/main/src/Poker/Poker.API"&gt;Poker.API&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Blazor Interactive (Talk)</title>
-			<link>https://alexhedley.github.io/blog/posts/talk-blazorinteractive</link>
-			<description>Delivering a talk on Building a clone of Try.NET in Blazor WASM.</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/talk-blazorinteractive</guid>
-			<pubDate>Fri, 08 Sep 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Blazor Interactive (Talk) --&gt;
-&lt;p&gt;On Wednesday the 6th of Sept 2023 I stood on "stage" at the Hainton .NET meetup in &lt;a href="https://www.tuspark.co.uk/our-science-parks/tuspark-newcastle/"&gt;Tuspark&lt;/a&gt; Newcastle.&lt;/p&gt;
-&lt;p&gt;I presented on an application I built called Blazor Interactive, which is a website that allows you to compile and run code in the browser. See more at &lt;a href="https://alexhedley.github.io/blog/dotnet-blazor-interactive"&gt;.NET Blazor Interactive&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Thanks &lt;a href="https://www.linkedin.com/in/qasim-asghar-hainton/"&gt;Qasim&lt;/a&gt; and &lt;a href="https://www.linkedin.com/in/tomhainton/"&gt;Tom&lt;/a&gt; from &lt;a href="https://www.hainton.com/"&gt;Hainton&lt;/a&gt; for giving me the opportunity, it was great to push myself and try something I've wanted to do for a long time.
-I've given many talks at work, over the years, either in person or recently via Teams but this was something more public.&lt;/p&gt;
-&lt;p&gt;I think I may have been a little nervous as I rushed through the talk in about 15 minutes where it had usually been taking about 25, when practicing at home, talking to the cat :p. Lots of great questions afterwards though so hopefully it was interesting.&lt;/p&gt;
-&lt;p&gt;I'm undecided if I'll watch the recording back but I'll be sure to link it below when it's published.&lt;/p&gt;
-&lt;p&gt;Thinking about doing another one already!&lt;/p&gt;
-&lt;p&gt;Thanks also to Umar for his excellent talk on CI/CD/CD. Make sure to check that out too.&lt;/p&gt;
-&lt;h2 id="photos"&gt;Photos&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/talk/talk-blazorinteractive.jpeg" alt="Me presenting" title="Me presenting"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/talk/talk-blazorinteractive-2.jpeg" alt="Hainton Meetup" title="Hainton Meetup"&gt;&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;p&gt;🗓️ Sept 6, 2023&lt;br&gt;
-🕰 17:15 - 20:00&lt;br&gt;
-📍 Tuspark, Newcastle&lt;br&gt;
-🔗 &lt;a href="https://www.meetup.com/haintonsdotnetmeetup/events/295218917"&gt;[In Person] Newcastle .NET Event - September 6th - 2 Talks&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/talk/talk-blazorinteractive-3.jpeg" alt="Hainton Meetup Talks" title="Hainton Meetup Talks"&gt;&lt;/p&gt;
-&lt;!-- ![](images/talk/talk-blazorinteractive-3.png "") --&gt;
-&lt;h2 id="video"&gt;Video&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;📼 &lt;a href="https://www.youtube.com/watch?v=hfMHdYciadM"&gt;Blazor Interactive by Alex Hedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See previous Hainton talks on YouTube: &lt;a href="https://www.youtube.com/watch?v=FbluYhmSW88&amp;amp;list=PLw02H-P5Q7FeiRF6nbLz55m-IofeSVAkM"&gt;.NET Events&lt;/a&gt;
-See previous Qudos talks on YouTube: &lt;a href="https://www.youtube.com/@QudosRecruitment"&gt;@QudosRecruitment&lt;/a&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hfMHdYciadM?si=8UC76RlwZ2ZJQeZu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""&gt;&lt;/iframe&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Original blog post &lt;a href="https://alexhedley.github.io/blog/dotnet-blazor-interactive"&gt;.NET Blazor Interactive&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://alex-hedley.github.io/talk-blazorinteractive/"&gt;Presentation&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/talk-blazorinteractive"&gt;Presentation Code&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://alex-hedley.github.io/BlazorInteractive/"&gt;App&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/BlazorInteractive"&gt;App Code&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Poker - Chip</title>
-			<link>https://alexhedley.github.io/blog/posts/poker-chip</link>
-			<description>Engraving my own poker chip.</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/poker-chip</guid>
-			<pubDate>Mon, 28 Aug 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Poker - Chip --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Poker - Recording Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-docs"&gt;Poker - Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;p&gt;Thought as a little momento I'd create a poker chip for each of the players. Gave me an excuse to use the laser engraver again. I found the surround The Noun Project from Anton Gajdosik, the just reused the Rye font from the OBS scene to add some text. A few trial and error prints and got it looking decent. It kept moving about the board so a bit of greentac fixed the problem.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-chip-2.jpg" alt="Poker Chip" title="Poker Chip"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-chip-1.jpg" alt="Poker Chip" title="Poker Chip"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/NEJE.jpg" alt="NEJE - Laser engraver" title="Laser engraver"&gt;&lt;/p&gt;
-&lt;p&gt;Managed to pick one up on ebay for ~£45 in 2021, just before they went up in price.&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;p&gt;Poker Chip - Anton Gajdosik&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://thenounproject.com/icon/poker-chip-170742/"&gt;https://thenounproject.com/icon/poker-chip-170742/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Poker Chip by Anton Gajdosik from &lt;a href="https://thenounproject.com/browse/icons/term/poker-chip/" target="_blank" title="Poker Chip Icons"&gt;Noun Project&lt;/a&gt; (CC BY 3.0)&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Poker - Table top</title>
-			<link>https://alexhedley.github.io/blog/posts/poker-table-top</link>
-			<description>Building a table top to house all the tech.</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/poker-table-top</guid>
-			<pubDate>Sat, 19 Aug 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Poker Table Top --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Poker - Recording Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-docs"&gt;Poker - Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;p&gt;I have a Cardinal Poker Table top that folds in 4 and opens to 35".&lt;/p&gt;
-&lt;p&gt;It's a little shy of that but close enough.&lt;/p&gt;
-&lt;p&gt;I bought a piece of 6mm MDF cut to 38" square.&lt;/p&gt;
-&lt;p&gt;Drew corner to corner to get the center, then measured in 1.5" from each edge to draw a square.&lt;/p&gt;
-&lt;p&gt;Next I measured 8.75" from the center each way, and joined the dots to draw a hexagon.&lt;/p&gt;
-&lt;p&gt;I placed the folded out table in the center and drew around it.&lt;/p&gt;
-&lt;p&gt;I've placed the 4 cameras around the table, in a rough position.&lt;/p&gt;
-&lt;p&gt;I cut the excess corners and did a rough sanding.&lt;/p&gt;
-&lt;p&gt;Next was painting it with Constance Moss (Al Fresco) from Frenchic paint to give it a baize feel. This came out really well.&lt;/p&gt;
-&lt;p&gt;I needed to cut out some holes for the cables of the cameras, for this I used a Dremel Router, practiced on some off cuts first then just took the plunge (:p), with varying outcomes, but it's all trial and error. Filled in some of the miss cuts with wood filler and repainted.&lt;/p&gt;
-&lt;p&gt;I've got some edging which I cut at 22.5° and painted in Blackjack (Al Fresco) from Frenchic paint, I thought it was rather apt. I'll be fun to try and glue all this round and make it hold. I've got a couple of rope clamps and another jig I can use. I think I'll wait until I've done the bottom before attempting this.&lt;/p&gt;
-&lt;p&gt;I'm adding strips of metal on the edging so the cameras connect here. Had some tin snips but I've bent the metal and now need to re-flatten it.&lt;/p&gt;
-&lt;p&gt;I need a way to holding the camera for the board, so I cut a piece at 30", which gives a good angle over the cards. I need some way to hold this to the board, but I want to be able to dismantle this. I've glued some off cuts of the mdf together and I'll see how that works. Cut another piece to glue a piece of metal on, as the camera has magnets so it can easily be removed.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-1.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-2.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-3.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-4.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-5.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-6.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-7.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/poker-table-top-8.jpg" alt="Table Top" title="Table Top"&gt;&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://frenchicpaint.co.uk/collections/paint-al-fresco/products/constance-moss-al-fresco"&gt;Frenchic paint - Constance Moss (Al Fresco)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://frenchicpaint.co.uk/collections/paint-al-fresco/products/blackjack-al-fresco"&gt;Frenchic paint - Blackjack (Al Fresco)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.dremel.com/gb/en/p/dremel-plunge-router-attachment-26150335ja"&gt;DREMEL® Plunge Router Attachment (335)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.dremel.com/gb/en/p/dremel-multipurpose-router-bit-set-26150660ja"&gt;DREMEL® Multipurpose Router Bit Set (660)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
