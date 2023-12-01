@@ -1,4 +1,5 @@
 - [AoC](aoc)
-- [AoC](aoc-2022)
-- [AoC](aoc-2021)
-- [AoC](aoc-2015)
+- [AoC 2023](aoc-2023)
+- [AoC 2022](aoc-2022)
+- [AoC 2021](aoc-2021)
+- [AoC 2015](aoc-2015)
