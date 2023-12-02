@@ -4,9 +4,30 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-11-29T18:00:58Z</updated>
+	<updated>2023-12-02T10:33:14Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/aoc-2023</id>
+		<title>AoC - 2023</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/aoc-2023" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-12-01T00:00:00Z</updated>
+		<content>&lt;!-- # Advent of Code - 2023 --&gt;
+&lt;p&gt;AoC 2023, C# this year again. Let's see how far I get.&lt;/p&gt;
+&lt;p&gt;❄ Snowflake's on the merch and Day 1 mentions a trebuchet, can't wait to see what the full day picture turns out to be.&lt;/p&gt;
+&lt;!-- ![2023](images/aoc/aoc_2023.png "2023") --&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode"&gt;https://github.com/AlexHedley/adventofcode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode2023"&gt;https://github.com/AlexHedley/adventofcode2023&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Advent of Code</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/aoc</id>
 		<title>AoC</title>
@@ -19,9 +40,10 @@
 		<content>&lt;!--?# Markdown ?--&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc"&gt;AoC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2022"&gt;AoC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2021"&gt;AoC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2015"&gt;AoC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2023"&gt;AoC 2023&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2022"&gt;AoC 2022&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2021"&gt;AoC 2021&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2015"&gt;AoC 2015&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;p&gt;Home page for all the AoCs.&lt;/p&gt;
@@ -492,57 +514,5 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/poker-stats</id>
-		<title>Poker - Stats</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/poker-stats" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-09-18T00:00:00Z</updated>
-		<content>&lt;!-- # Poker - Stats --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Poker - Recording Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-docs"&gt;Poker - Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;p&gt;Whilst working on the tracking of the cards I thought it might be also useful to see certain stats, luckily I don't have to do the calculations myself and have found 2 projects written in C# I can repurpose. The first is &lt;strong&gt;PokerOddsPro&lt;/strong&gt; from &lt;em&gt;@dyh1213&lt;/em&gt; and the other is &lt;strong&gt;Poker-Hand-Evaluator&lt;/strong&gt; from &lt;em&gt;@danielpaz6&lt;/em&gt;.&lt;/p&gt;
-&lt;!--?# YouTube YEwy2yhG9P4 /?--&gt;
-&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/AlexHedley/Poker-Hand-Evaluator/master/images/webdemo.png" alt="Evaluator Demo" title="Evaluator Demo"&gt;&lt;/p&gt;
-&lt;p&gt;I'm forked them to keep a copy and am moving them into the &lt;a href="https://github.com/AlexHedley/poker-recording/tree/app/src/Poker"&gt;Poker&lt;/a&gt; source for the main repo.&lt;/p&gt;
-&lt;p&gt;There is still some work to combine the stats together and I'm looking to deploy them as a Blazor WASM app so you can try them out yourself. I also need to add in the capability to burn cards.&lt;/p&gt;
-&lt;p&gt;You can try out &lt;em&gt;@dyh1213&lt;/em&gt;'s here: &lt;a href="https://dyh1213.github.io/PokerOddsPro.io/"&gt;https://dyh1213.github.io/PokerOddsPro.io/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/dyh1213/PokerOddsPro"&gt;https://github.com/dyh1213/PokerOddsPro&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Fork - &lt;a href="https://github.com/AlexHedley/PokerOddsPro/tree/dev"&gt;https://github.com/AlexHedley/PokerOddsPro/tree/dev&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/dyh1213/PokerOddsPro.io"&gt;https://github.com/dyh1213/PokerOddsPro.io&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://dyh1213.github.io/PokerOddsPro.io/"&gt;https://dyh1213.github.io/PokerOddsPro.io/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;📼 &lt;a href="https://www.youtube.com/watch?v=YEwy2yhG9P4"&gt;https://www.youtube.com/watch?v=YEwy2yhG9P4&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/danielpaz6/Poker-Hand-Evaluator"&gt;https://github.com/danielpaz6/Poker-Hand-Evaluator&lt;/a&gt; Thanks Daniel Paz (danielpaz6)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Site ❌ &lt;a href="https://jspoker.net/"&gt;https://jspoker.net/&lt;/a&gt; (&lt;a href="https://danielpaz.me/"&gt;https://danielpaz.me/&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Fork &lt;a href="https://github.com/AlexHedley/Poker-Hand-Evaluator"&gt;https://github.com/AlexHedley/Poker-Hand-Evaluator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Displaying stats for the given game.</summary>
 	</entry>
 </feed>
