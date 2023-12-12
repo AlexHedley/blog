@@ -4,9 +4,99 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-12-11T18:05:11Z</updated>
+	<updated>2023-12-12T12:03:21Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/badger2040w</id>
+		<title>Badger 2040 W from Pimoroni</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/badger2040w" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/electronics/pimoroni-logo.png" />
+		<updated>2023-12-12T00:00:00Z</updated>
+		<content>&lt;!-- # Badger 2040 W from Pimoroni --&gt;
+&lt;p&gt;After seeing a post about &lt;a href="https://githubuniverse.com/"&gt;GitHub Universe 2023&lt;/a&gt; badges I did some research and found a GitHub &lt;a href="https://github.com/orgs/community/discussions/77583"&gt;discussion&lt;/a&gt; and a repo &lt;a href="https://github.com/badger2040/home"&gt;badger2040&lt;/a&gt; which led me to &lt;a href="https://pimoroni.com/"&gt;Pimoroni&lt;/a&gt; which of course meant I was buying my own!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/badger2040w.png" alt="Badger 2040 W Kit" title="Badger 2040 W"&gt;&lt;/p&gt;
+&lt;p&gt;Look for an upcoming blog post soon showing how I get on.&lt;/p&gt;
+&lt;h2 id="tutorial"&gt;Tutorial&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.pimoroni.com/article/getting-started-with-badger-2040"&gt;Getting Started with Badger 2040&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
+&lt;p&gt;How to hack your conference badge - Universe 2022 - GitHub&lt;/p&gt;
+&lt;!--?# YouTube ilpC7E69jOU /?--&gt;
+&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ilpC7E69jOU" title="How to hack your conference badge - Universe 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
+&lt;h2 id="products"&gt;Products&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Badger 2040 W (Pico W Aboard) × 1&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;£32.50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Galleon 400mAh Hard Case LiPo Battery × 1&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;£6.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LiPo Amigo (LiPo/LiIon Battery Charger) × 1&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;£5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;P &amp;amp; P&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;£7.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;strong&gt;£62.09&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/Badger2040Wkit.png" alt="Badger 2040 W Kit" title="Badger 2040 W Kit"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/electronics/galleon_400mah.png" alt="Galleon 400mAh Hard Case LiPo Battery" title="Galleon 400mAh Hard Case LiPo Battery"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/electronics/lipo-amigo.png" alt="LiPo Amigo (LiPo/LiIon Battery Charger)" title="LiPo Amigo (LiPo/LiIon Battery Charger)"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://shop.pimoroni.com/products/badger-2040-w?variant=40514062221395"&gt;https://shop.pimoroni.com/products/badger-2040-w?variant=40514062221395&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://shop.pimoroni.com/products/galleon-400mah-battery?variant=40061068673107"&gt;https://shop.pimoroni.com/products/galleon-400mah-battery?variant=40061068673107&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://shop.pimoroni.com/products/lipo-amigo?variant=39779302506579"&gt;https://shop.pimoroni.com/products/lipo-amigo?variant=39779302506579&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;👩🏻‍💻 &lt;a href="https://github.com/badger2040/home"&gt;https://github.com/badger2040/home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🗣 &lt;a href="https://github.com/orgs/community/discussions/77583"&gt;Badge Scanner Hardware and Software used at GitHub Universe 2023&lt;/a&gt; GitHub community discussions #77583&lt;/li&gt;
+&lt;li&gt;📼 &lt;a href="https://www.youtube.com/watch?v=ilpC7E69jOU"&gt;How to hack your conference badge - Universe 2022&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Electronic Kit</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/roulettewheel</id>
+		<title>LED Digital Roulette Wheel</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/roulettewheel" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-12-08T00:00:00Z</updated>
+		<content>&lt;p&gt;My twin got me an LED Digital Roulette Wheel Electronic Kit for my birthday 🥳. I'll add it to my backlog of tinkering...&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/roulette_wheel_kit.png" alt="Roulette Wheel Kit" title="Roulette Wheel Kit"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/roulette_wheel_kit_parts.png" alt="Roulette Wheel Kit Parts" title="Roulette Wheel Kit Parts"&gt;&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.etsy.com/uk/listing/1514850555/electronic-kit-led-digital-roulette"&gt;https://www.etsy.com/uk/listing/1514850555/electronic-kit-led-digital-roulette&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.etsy.com/uk/shop/ElectronicsKits"&gt;https://www.etsy.com/uk/shop/ElectronicsKits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.electronicskitshop.com/"&gt;https://www.electronicskitshop.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Electronic Kit</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/aoc-2023</id>
 		<title>AoC - 2023</title>
@@ -423,96 +513,5 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>A visual representation of the current on-goings.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/lfc131</id>
-		<title>Green Software for Practitioners (LFC131)</title>
-		<author>
-			<name>alex-hedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/lfc131" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-10-31T00:00:00Z</updated>
-		<content>&lt;!-- # Linux Foundation Green Software for Practitioners (LFC131) --&gt;
-&lt;p&gt;Today I passed the &lt;strong&gt;Linux Foundation Green Software for Practitioners (LFC131)&lt;/strong&gt; exam 🎉!&lt;/p&gt;
-&lt;h2 id="badge"&gt;Badge&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/linuxfoundation/lfc131.png" alt="Linux Foundation Green Software for Practitioners (LFC131" title="Linux Foundation Green Software for Practitioners (LFC131"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/badges/8581920c-e67f-40f2-9ba0-67f2b067d2ca"&gt;https://www.credly.com/badges/8581920c-e67f-40f2-9ba0-67f2b067d2ca&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="topics"&gt;Topics&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Carbon Efficiency&lt;/li&gt;
-&lt;li&gt;Energy Efficiency&lt;/li&gt;
-&lt;li&gt;Carbon Awareness&lt;/li&gt;
-&lt;li&gt;Hardware Efficiency&lt;/li&gt;
-&lt;li&gt;Measurement&lt;/li&gt;
-&lt;li&gt;Climate Commitments&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="exam"&gt;Exam&lt;/h1&gt;
-&lt;p&gt;20 questions, repeat as often as you like.&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/"&gt;https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Cert</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/devhubnorth-oct2023</id>
-		<title>DevHubNorth - Oct 2023</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/devhubnorth-oct2023" />
-		<link rel="enclosure" type="image" href="https://www.devhubnorth.com/wp-content/uploads/2019/11/I-have-a-surprise-4.png" />
-		<updated>2023-10-10T00:00:00Z</updated>
-		<content>&lt;!-- # DevHubNorth - Oct 2023 --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/devhubnorth-oct2023-1.jpeg" alt="DevHubNorth - Oct 2023" title="DevHubNorth - Oct 2023"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/devhubnorth-oct2023.jpeg" alt="DevHubNorth - Oct 2023" title="DevHubNorth - Oct 2023"&gt;&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;p&gt;We are so excited to announce our next in-person event &amp;amp; welcome back all developers, tech professionals, students &amp;amp; anyone else who has an interest in tech, at our regular venue - TusPark on Grainger Street!&lt;/p&gt;
-&lt;p&gt;Devhub North is a great opportunity for you to network with like-minded tech professionals and enjoy some great pizzas and beers while hearing from two inspiring speakers discussing hot topics within the tech industry! 🍕&lt;/p&gt;
-&lt;p&gt;The doors open at 5:30pm which gives you time to grab a drink, settle in, and network before our first talk at 6pm!&lt;/p&gt;
-&lt;p&gt;What's in it for you?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Hear from some industry experts&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Network with like-minded professionals &amp;amp; build some great friendships&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Free pizza &amp;amp; beers&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Knowledge sharing&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Lanyards for easier networking&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Make sure you sign up early to secure your spot &amp;amp; we will have your lanyard ready for you on the day 👊&lt;/p&gt;
-&lt;p&gt;SPEAKERS &amp;amp; TOPICS:&lt;/p&gt;
-&lt;p&gt;🌟 Speaker: Peter Bull at Bede Gaming 🌟&lt;/p&gt;
-&lt;p&gt;Peter Bull is a Software Engineer for Bede Gaming and is also an experienced speaker, creates and shares tutorials and workshops along with writing articles and hosting his own podcast! Peter has been a .NET developer for over twenty years since it was first released and has used it to create many things over the years from content generation to web services. Peter also has a passion for Microsoft in general including their obsolete devices such as Zune and Windows Phone along with developing with experiences such as Spotify.&lt;/p&gt;
-&lt;p&gt;TOPIC: Blazor a trail with .NET 8&lt;/p&gt;
-&lt;p&gt;In this talk, you will get an introduction to .NET which is Microsoft's platform for developing apps and services along with seeing what will be coming in the latest version .NET 8. There will also be a focus on Blazor for developing web applications using .NET and you'll get to see a demo which will show off many upcoming and existing features of .NET 8!&lt;/p&gt;
-&lt;p&gt;🌟 Speaker: Gary Brown at AND Digital 🌟&lt;/p&gt;
-&lt;p&gt;Gary Brown is an experienced Cloud Architect at AND Digital, with over 17 years of IT experience. He spent most of his career in the NHS as a Java developer and transitioned to architecture six years ago. Previously, Gary worked as an NHS/Gov.UK technical assessor, which gave him a deep understanding of the unique challenges faced by government agencies and healthcare providers when it comes to IT systems. With a passion for development and cloud architecture, Gary has led development teams and engaged with businesses at all levels to deliver high-quality services. He has a deep understanding of general architecture principles and is security-minded, ensuring that all systems he designs are secure and compliant with industry standards. With his wealth of experience and expertise, Gary is committed to delivering innovative solutions that meet the unique needs of his clients.&lt;/p&gt;
-&lt;p&gt;TOPIC: "Agile IT Architecture Design: Building Efficient and Effective Systems for AWS and Beyond"&lt;/p&gt;
-&lt;p&gt;Agile IT architecture design is a methodology that can significantly benefit developers when building IT systems, including those deployed on AWS or other platforms. By adopting an agile approach, developers can break down complex systems into smaller, more manageable components that can be developed and tested independently. This allows for greater collaboration and flexibility within development teams, which can help accelerate the delivery of new features and improvements to end users. Additionally, an agile approach can help developers respond quickly to changes in user requirements or market conditions, enabling them to iterate and improve on their systems more rapidly. Overall, embracing agile IT architecture design can help developers create more efficient, effective, and adaptable IT systems that meet the needs of their customers.&lt;/p&gt;
-&lt;p&gt;We look forward to seeing you all there!👋&lt;/p&gt;
-&lt;p&gt;Your Devhub North Team&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.eventbrite.co.uk/e/devhub-north-october-meetup-tickets-728285029127"&gt;https://www.eventbrite.co.uk/e/devhub-north-october-meetup-tickets-728285029127&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/o/ronald-james-group-28239187209"&gt;https://www.eventbrite.co.uk/o/ronald-james-group-28239187209&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/posts/lucy-kay-514641174_tech-event-networking-ugcPost-7117802381978832898-cOCW/"&gt;https://www.linkedin.com/posts/lucy-kay-514641174_tech-event-networking-ugcPost-7117802381978832898-cOCW/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.devhubnorth.com/"&gt;https://www.devhubnorth.com/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/company/devhubnorth/"&gt;https://www.linkedin.com/company/devhubnorth/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
 	</entry>
 </feed>
