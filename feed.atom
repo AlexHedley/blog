@@ -4,9 +4,73 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-12-12T12:03:21Z</updated>
+	<updated>2023-12-13T11:05:41Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day7</id>
+		<title>Day 7 - 30 Days Lost in Space</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day7" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-12-13T00:00:00Z</updated>
+		<content>&lt;!-- # Day 7 - 30 Days Lost in Space - Inventr --&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+&lt;h2 id="lesson-7"&gt;Lesson 7&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Day 7: We still need to keep an eye on this&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-7/"&gt;Original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-7-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Day 7 built upon &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt; and checks the battery level.&lt;/p&gt;
+&lt;p&gt;Shining a light on the Photoresistor or covering it changed the speed at which the % increased in the logs.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;10:56:48.834 -&amp;gt; 200 ms    charge at 0.17%
+...
+10:58:16.851 -&amp;gt; 14364 ms    charge at 99.34%
+10:58:16.945 -&amp;gt; 14464 ms     FULLY CHARGED
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day7.jpg" alt="&amp;quot;Day 7&amp;quot;" title="Day 7"&gt;&lt;/p&gt;
+&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero Board&lt;/li&gt;
+&lt;li&gt;Type B USB Cable&lt;/li&gt;
+&lt;li&gt;Breadboard&lt;/li&gt;
+&lt;li&gt;220 Ω (Ohm) resistor&lt;/li&gt;
+&lt;li&gt;3 cables&lt;/li&gt;
+&lt;li&gt;Photoresistor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day07-We_Still_Need_To_Keep_An_Eye_On_This"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day07-We_Still_Need_To_Keep_An_Eye_On_This&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="videos"&gt;Videos&lt;/h2&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/" title="30 Days Lost in Space - Day 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Inventr - Adventure Kit 1</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/badger2040w</id>
 		<title>Badger 2040 W from Pimoroni</title>
@@ -474,44 +538,5 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>Beginners guide to GitHub Actions.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/poker-app</id>
-		<title>Poker - App</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/poker-app" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-11-04T00:00:00Z</updated>
-		<content>&lt;!-- # Poker - App --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Poker - Recording Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-docs"&gt;Poker - Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;p&gt;Aside to the API the ultimate goal would be to have a website that I can use to track the game information and visualise it, alongside the OBS scene. I've made a start on replicating the scene but as a webpage.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/SceneSetup.png" alt="OBS Scene Setup" title="OBS Scene Setup"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/poker/testing-table.png" alt="Web App table" title="Web App table"&gt;&lt;/p&gt;
-&lt;p&gt;I'm looking to create custom components for the player setup and the board, but as a POC I'm getting the information reading from the local text files for name and stats, as well as the current cards each player has, alongside the board.&lt;/p&gt;
-&lt;p&gt;If I choose to add a db in the future I could keep track of the movements and then have a replay button to simulate the game, but let's get the current functionality working first.&lt;/p&gt;
-&lt;p&gt;What's useful is the camera has a stream endpoint so it's much easier to display the current feed. This saves parsing the dom for it in the previous display.&lt;/p&gt;
-&lt;h2 id="source"&gt;Source&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/main/src/Poker"&gt;Poker&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/tree/app/src/Poker"&gt;App (branch)&lt;/a&gt; WIP&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>A visual representation of the current on-goings.</summary>
 	</entry>
 </feed>
