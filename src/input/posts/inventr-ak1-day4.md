@@ -22,7 +22,7 @@ published: 2023-03-19
   - [Original](https://inventr.io/lessons/day-4/)
   - [Remake](https://inventr.io/lessons/day-4-2/)
 
-Day 4 built upon [Day 4](inventr-ak1-day3) but with 2 new coloured LED bulbs.
+Day 4 built upon [Day 3](inventr-ak1-day3) but with 2 new coloured LED bulbs.
 
 !["Day 4"](images/inventr/ak1/Day4.jpg "Day 4")
 
