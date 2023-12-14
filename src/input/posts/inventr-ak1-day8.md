@@ -20,7 +20,7 @@ published: 2023-12-14
 - Day 8: Adding some color to this dark place
 
   - [Original](https://inventr.io/lessons/day-8/)
-  - [Remake](https://inventr.io/lessons/day-7-8/)
+  - [Remake](https://inventr.io/lessons/day-8-2/)
 
 Back to LEDs today but this time it's an RGB LED. 🔴🟢🔵. Using some Pulse-width modulation (PWM) this time round. Who doesn't love a bit of a colour change, and very festive for this time of year.
 
@@ -41,8 +41,6 @@ Back to LEDs today but this time it's an RGB LED. 🔴🟢🔵. Using some Pulse
 - https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day08-Adding_Some_Color_To_This_Dark_Place
 
 ## Videos
-
-N/A
 
 <?# YouTube yh15KHNu74o /?>
 
