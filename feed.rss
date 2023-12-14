@@ -5,8 +5,69 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Wed, 13 Dec 2023 12:14:14 GMT</pubDate>
-		<lastBuildDate>Wed, 13 Dec 2023 12:14:14 GMT</lastBuildDate>
+		<pubDate>Thu, 14 Dec 2023 14:33:17 GMT</pubDate>
+		<lastBuildDate>Thu, 14 Dec 2023 14:33:17 GMT</lastBuildDate>
+		<item>
+			<title>Day 8 - 30 Days Lost in Space</title>
+			<link>https://alexhedley.github.io/blog/posts/inventr-ak1-day8</link>
+			<description>Inventr - Adventure Kit 1</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/inventr-ak1-day8</guid>
+			<pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Day 8 - 30 Days Lost in Space - Inventr --&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+&lt;h2 id="lesson-8"&gt;Lesson 8&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Day 8: Adding some color to this dark place&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-8/"&gt;Original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-7-8/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Back to LEDs today but this time it's an RGB LED. 🔴🟢🔵. Using some Pulse-width modulation (PWM) this time round. Who doesn't love a bit of a colour change, and very festive for this time of year.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day8_2.jpg" alt="&amp;quot;Day 8&amp;quot;" title="Day 8"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day8_1.jpg" alt="&amp;quot;Day 8&amp;quot;" title="Day 8"&gt;&lt;/p&gt;
+&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero Board&lt;/li&gt;
+&lt;li&gt;Type B USB Cable&lt;/li&gt;
+&lt;li&gt;Breadboard&lt;/li&gt;
+&lt;li&gt;3 220 Ω (Ohm) resistor&lt;/li&gt;
+&lt;li&gt;5 cables&lt;/li&gt;
+&lt;li&gt;3 colour LED or RGB LED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day08-Adding_Some_Color_To_This_Dark_Place"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day08-Adding_Some_Color_To_This_Dark_Place&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="videos"&gt;Videos&lt;/h2&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;!--?# YouTube yh15KHNu74o /?--&gt;
+&lt;!--?# YouTube hN5Sr7tciqQ /?--&gt;
+&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/" title="30 Days Lost in Space - Day " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Day 7 - 30 Days Lost in Space</title>
 			<link>https://alexhedley.github.io/blog/posts/inventr-ak1-day7</link>
@@ -26,6 +87,7 @@
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;h2 id="lesson-7"&gt;Lesson 7&lt;/h2&gt;
@@ -501,30 +563,6 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7125540228051656704-yxgY/"&gt;https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7125540228051656704-yxgY/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>🎙️ GitHub Actions</title>
-			<link>https://alexhedley.github.io/blog/posts/talk-github-actions</link>
-			<description>Beginners guide to GitHub Actions.</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/talk-github-actions</guid>
-			<pubDate>Sun, 05 Nov 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- GitHub Actions --&gt;
-&lt;p&gt;Another community talk at work, this time for the Software Delivery Community. We are starting a series to run through a few of the providers like GitHub and GitLab. I did a very beginner one, looking to expand in the future and hopefully show one of the GitHub Actions I've built.&lt;/p&gt;
-&lt;p&gt;🗓️ November 5, 2023&lt;/p&gt;
-&lt;!-- 📼  --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talk-githubactions/"&gt;Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talk-githubactions"&gt;Presentation Code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alex-hedley.github.io/talks/"&gt;Talks Site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/talks"&gt;Code&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
