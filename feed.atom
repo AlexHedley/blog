@@ -4,9 +4,70 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-12-14T20:31:13Z</updated>
+	<updated>2023-12-15T12:54:38Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day9</id>
+		<title>Day 9 - 30 Days Lost in Space</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day9" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" />
+		<updated>2023-12-15T00:00:00Z</updated>
+		<content>&lt;!-- # Day 9 - 30 Days Lost in Space - Inventr --&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+&lt;h2 id="lesson-9"&gt;🏫 Lesson 9&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Day 9: A better way to do things&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-9/"&gt;Original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-9-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Day 9 built upon &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt; and we joined a few days together, cleaned up some code, added some comments, this now completes the battery charging utility!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day9.jpg" alt="&amp;quot;Day 9&amp;quot;" title="Day 9"&gt;&lt;/p&gt;
+&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero Board&lt;/li&gt;
+&lt;li&gt;Type B USB Cable&lt;/li&gt;
+&lt;li&gt;Breadboard&lt;/li&gt;
+&lt;li&gt;4 220 Ω (Ohm) resistor&lt;/li&gt;
+&lt;li&gt;8 cables&lt;/li&gt;
+&lt;li&gt;3 colour LED or RGB LED&lt;/li&gt;
+&lt;li&gt;Photoresistor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day09-A_Better_Way_To_Do_Things"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day09-A_Better_Way_To_Do_Things&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
+&lt;!--?# YouTube 09j5iKF_EBw /?--&gt;
+&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/09j5iKF_EBw" title="30 Days Lost in Space - Day " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Inventr - Adventure Kit 1</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day8</id>
 		<title>Day 8 - 30 Days Lost in Space</title>
@@ -28,6 +89,7 @@
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;h2 id="lesson-8"&gt;Lesson 8&lt;/h2&gt;
@@ -89,6 +151,7 @@
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;h2 id="lesson-7"&gt;Lesson 7&lt;/h2&gt;
@@ -522,58 +585,5 @@ PR/MR: WildernessLabs/Documentation#550&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>Hacktoberfest is DigitalOcean’s annual event that encourages people to contribute to open source throughout October.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2023</id>
-		<title>ISC2 North East England Chapter 10th Anniversary Event</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2023" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/isc2/isc2chapternortheastengland.jpeg" />
-		<updated>2023-11-07T00:00:00Z</updated>
-		<content>&lt;!-- # ISC2 North East England Chapter November 2023 Meeting - 10 Year Anniversary --&gt;
-&lt;p&gt;This evening I went along to my first in person ISC2 North East England Chapter meetup. It was their 10th Anniversary Event which and a rebrand from (ISC)² to ISC2 meant new swag, who doesn't want a pin badge, pen and cap?&lt;/p&gt;
-&lt;p&gt;The usual pizza and drinks were kindly provided by the sponsor, alongside a tonne of sweets and muffins!&lt;/p&gt;
-&lt;p&gt;It was a packed night with 4 speakers, see the agenda below for more details. An interesting mix covering different topics. Lots to take home and think about.&lt;/p&gt;
-&lt;p&gt;Lovely to meet some new people and keep the North East scene active.&lt;/p&gt;
-&lt;h2 id="agenda"&gt;Agenda&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Introductions, ISC2 rebrand, certifications overview and event sponsors&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;18:00 - 18:10&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Steve Gilray, Chapter President&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Session 1 - Infoblox, Getting ahead of threats with DNS.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;18:10 - 18:35&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Simon Nicholson and Jason Nolan&lt;/p&gt;
-&lt;p&gt;Getting ahead of Threats with DNS based Threat Intelligence. 92% of malware is eventually associated with DNS based infrastructure. Some threats are only detectable by analysing DNS data. The speaker will discuss innovations and challenges with developing reliable threat intel, using DNS. This talk will highlight new reputation scoring, suspicious classifications, and the tracking of DNS threat actors.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Session 2 - An overview of the Cyber Insurance Market&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;18:35 - 19:00&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Robert Scott, Virgin Money&lt;/p&gt;
-&lt;p&gt;The cyber insurance market has experienced severe volatility and pricing pressure during recent years. The speaker will give an overview of the current market conditions and key challenges faced by organisations when looking to purchase cover. Discussion of the latest position on coverage and claims will also take place, along with some tips for a successful cyber insurance renewal.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Session 3 - Darktrace, How do we engage the next generation of cyber pros?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;19:00 - 19:25&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Suzanna Beanland&lt;/p&gt;
-&lt;p&gt;How do we engage the next generation of cyber professionals?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Session 4 - How to grow and retain staff in Cybersecurity in the North East&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;19:25 - 19:35&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Stuart Smiles&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;p&gt;📅 Tue, 7 Nov 2023 ⏲ 17:30 - 20:00 GMT&lt;/p&gt;
-&lt;p&gt;📍 Tuspark, Newcastle&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-november-2023-meeting-10-year-anniversary-tickets-740713222187"&gt;https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-november-2023-meeting-10-year-anniversary-tickets-740713222187&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/company/isc-2-north-east-england/"&gt;https://www.linkedin.com/company/isc-2-north-east-england/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.isc2.org/"&gt;https://www.isc2.org/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7120412069262159874-D6Hc/"&gt;https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7120412069262159874-D6Hc/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7125540228051656704-yxgY/"&gt;https://www.linkedin.com/posts/isc-2-north-east-england_isc2-north-east-england-chapter-november-activity-7125540228051656704-yxgY/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>ISC2 Chapter Meetup</summary>
 	</entry>
 </feed>
