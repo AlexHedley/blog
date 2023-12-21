@@ -20,9 +20,6 @@ imageattribution: https://inventr.io/
 
 Day 10 was another creative day where you could try anything you wanted, I didn't! Just like [Day 5](inventr-ak1-day5).
 
-
-<!-- !["Day 10"](images/inventr/ak1/Day10.jpg "Day 10") -->
-
 ### Parts
 
 N/A
@@ -34,10 +31,6 @@ N/A
 ## 📼 Videos
 
 N/A
-
-<!-- <?# YouTube  /?> -->
-
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/09j5iKF_EBw" title="30 Days Lost in Space - Day " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 ## 🔗 Links
 
