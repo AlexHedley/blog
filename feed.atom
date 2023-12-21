@@ -4,9 +4,137 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-12-15T18:32:38Z</updated>
+	<updated>2023-12-21T19:59:18Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/owasp-newcastle-december-2023</id>
+		<title>OWASP Newcastle December 2023</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/owasp-newcastle-december-2023" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/owasp_newcastle.png" />
+		<updated>2023-12-21T00:00:00Z</updated>
+		<content>&lt;!-- OWASP Newcastle December 2023 --&gt;
+&lt;p&gt;Details&lt;/p&gt;
+&lt;p&gt;We're back with a virtual event to round out the year with a bang!&lt;/p&gt;
+&lt;p&gt;Rough schedule:&lt;/p&gt;
+&lt;p&gt;1830 - 1835 OWASP Newcastle Welcome
+1835 - 1920 Talk one
+1930 - 2030 Talk two&lt;/p&gt;
+&lt;p&gt;Talk overviews:&lt;/p&gt;
+&lt;h3 id="talk-1"&gt;Talk 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: Running the Microsoft Cyber Defence Operations Centre (CDOC)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Speaker: John Dellinger&lt;/p&gt;
+&lt;p&gt;Speaker Bio: John is a Chief Security Advisor working within the Microsoft Cyber Defence Operations Center. John has extensive multi-national experience in both the public and private sectors. Expertise across a variety of functions and disciplines including policy formulation and implementation, training, operations, strategic planning, risk management and cyber security.
+He is a dual U.S. and Australian citizen with twenty years of military experience as an officer, first in the United States Marine Corps and later in the Royal Australian Navy.&lt;/p&gt;
+&lt;p&gt;Talk Synopsis: The Cyber Defense Operations Center brings together security response experts from across the company to help protect, detect, and respond to threats in real-time. Staffed with dedicated teams 24x7, the Center has direct access to thousands of security professionals, data scientists, and product engineers throughout Microsoft to ensure rapid response and resolution to security threats.
+Informed by trillions of data points across an extensive network of sensors, devices, authentications, and communications, the Center employs automated software, machine learning, behavioral analysis, and forensics to create an intelligent security graph. This threat intelligence insight helps our teams connect the dots, then counter with strong containment and coordinated remediation.&lt;/p&gt;
+&lt;h3 id="talk-2"&gt;Talk 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Title: Cybersecurity in the Space Industry: Safeguarding the Final Frontier&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Speaker: Ros Grindrod&lt;/p&gt;
+&lt;p&gt;Speaker Bio: Ros is currently Head of Security Services at Opencast Software and has over 6 years of experience working within information security including experience delivering cyber transformation work across a variety of industries. Ros's previous experience includes ethical hacking, social engineering, incident response preparedness, OSINT/threat modelling and all things GRC.
+Talk Synopsis: TBC&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Live Stream Info: We're hoping to be able to live stream the event on our playeur channel if not, the talks will be recorded and uploaded there.&lt;/p&gt;
+&lt;p&gt;You can also join our Google Group which is how we'll be sending out emails to events and is also going to be used as a forum for discussion.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://groups.google.com/a/owasp.org/forum/#!forum/newcastle-chapter"&gt;https://groups.google.com/a/owasp.org/forum/#!forum/newcastle-chapter&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;📅 Thursday, December 21, 2023 at 6:30 PM to Thursday, December 21, 2023 at 8:30 PM GMT&lt;/p&gt;
+&lt;p&gt;📍 Online&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/owasp-newcastle-chapter/events/297903170/"&gt;https://www.meetup.com/owasp-newcastle-chapter/events/297903170/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/owasp-newcastle-chapter/events/297903170/"&gt;https://www.meetup.com/owasp-newcastle-chapter/events/297903170/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/owasp-newcastle-chapter/"&gt;https://www.meetup.com/owasp-newcastle-chapter/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>OWASP Newcastle Meetup December 2023</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day10</id>
+		<title>Day 10 - 30 Days Lost in Space</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day10" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" />
+		<updated>2023-12-16T00:00:00Z</updated>
+		<content>&lt;!-- # Day 10 - 30 Days Lost in Space - Inventr --&gt;
+&lt;h2 id="lesson-10"&gt;🏫 Lesson 10&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Day 10: Creative Day #2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-10/"&gt;Original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-10-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Day 10 was another creative day where you could try anything you wanted, I didn't! Just like &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day10-Creative_Day_%232"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day10-Creative_Day_%232&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other-lessons"&gt;Other Lessons&lt;/h2&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+</content>
+		<summary>Inventr - Adventure Kit 1</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/shagged-married-annoyed</id>
+		<title>Shagged, Married, Annoyed Live 2023</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/shagged-married-annoyed" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/SMA_2023_1.jpg" />
+		<updated>2023-12-16T00:00:00Z</updated>
+		<content>&lt;!-- # Shagged, Married, Annoyed Live --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/SMA_2023.jpg" alt="Shagged, Married, Annoyed Live" title="Shagged, Married, Annoyed Live"&gt;&lt;/p&gt;
+&lt;!-- ![Shagged, Married, Annoyed Live](images/SMA_2023_1.jpg "Shagged, Married, Annoyed Live") --&gt;
+&lt;p&gt;&lt;a href="https://www.ticketmaster.co.uk/event/1F005CB7F7E5A27F"&gt;https://www.ticketmaster.co.uk/event/1F005CB7F7E5A27F&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Shagged, Married, Annoyed Live with Chris and Rosie Ramsey
+Sat, 16 Dec 2023, 19:30Sat, 16 Dec 2023, 19:30 | Utilita Arena Newcastle, Newcastle Upon Tyne
+Information for Shagged, Married, Annoyed Live with Chris and Rosie Ramsey&lt;/p&gt;
+&lt;p&gt;Email: shaggedmarriedannoyed@gmail.com&lt;/p&gt;
+&lt;p&gt;Podcast&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/SMA-podcast.jpg" alt="Shagged, Married, Annoyed" title="Shagged, Married, Annoyed"&gt;&lt;/p&gt;
+&lt;p&gt;TV Show&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/C&amp;amp;RR_Show.jpg" alt="The Chris and Rosie Ramsey Show" title="The Chris and Rosie Ramsey Show"&gt;&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.shaggedmarriedannoyed.com/"&gt;https://www.shaggedmarriedannoyed.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.shaggedmarriedannoyed.com/podcast"&gt;https://www.shaggedmarriedannoyed.com/podcast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>with Chris and Rosie Ramsey</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day9</id>
 		<title>Day 9 - 30 Days Lost in Space</title>
@@ -322,212 +450,5 @@
 &lt;/ul&gt;
 </content>
 		<summary>Advent of Code</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/aoc</id>
-		<title>AoC</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/aoc" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-11-29T00:00:00Z</updated>
-		<content>&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc"&gt;AoC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2023"&gt;AoC 2023&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2022"&gt;AoC 2022&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2021"&gt;AoC 2021&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/aoc-2015"&gt;AoC 2015&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;p&gt;Home page for all the AoCs.&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode"&gt;https://github.com/AlexHedley/adventofcode&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Advent of Code</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/parkrun-whitleybay-nov2023</id>
-		<title>1st Parkrun</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/parkrun-whitleybay-nov2023" />
-		<link rel="enclosure" type="image" href="https://images.parkrun.com/website/uk/prlogoC.svg" />
-		<updated>2023-11-25T00:00:00Z</updated>
-		<content>&lt;!-- # 1st Parkrun --&gt;
-&lt;p&gt;Today I completed my first Parkrun in Whitley Bay!&lt;/p&gt;
-&lt;p&gt;Thanks for the encourage and support from Mr Lish! I would never have gotten out and ran it if you hadn't organised coming over to the Bay and persuading me to get my pristine running shoes on.&lt;/p&gt;
-&lt;p&gt;The sun was shining, there was a rainbow 🌈 as we started, with what looked like it might be snow, but was just a mild shower.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/parkrun_whitleybay_nov2023.jpg" alt="Parkrun Whitley Bay Nov 2023" title="Parkrun Whitley Bay Nov 2023"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.parkrun.org.uk/whitleybay/"&gt;Whitley Bay parkrun&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="result"&gt;Result&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: center;"&gt;Event&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;Run Date&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;Gender Pos&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;Overall Position&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;Time&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;Age Grade&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: center;"&gt;Whitley Bay parkrun&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;25/11/2023&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;227&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;363&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;37:57&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;34.96%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style="text-align: center;"&gt;Event&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;parkruns&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;Best Gender Position&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;Best Position Overall&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;Best Time&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align: center;"&gt;Whitley Bay parkrun&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;1&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;227&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;363&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;00:37:57&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.parkrun.org.uk/parkrunner/3492522/"&gt;https://www.parkrun.org.uk/parkrunner/3492522/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.parkrun.org.uk/parkrunner/3492522/all/"&gt;https://www.parkrun.org.uk/parkrunner/3492522/all/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Whitley Bay November 2023</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/poker-docs</id>
-		<title>Poker - Docs</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/poker-docs" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-11-19T00:00:00Z</updated>
-		<content>&lt;!-- # Poker - Docs --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Poker - Recording Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-docs"&gt;Poker - Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;p&gt;As with everything I do, I add documentation. The first thing I like to do is generate the API documentation for any code I've written. With the Arduino code (C++) I'm using &lt;a href="https://www.doxygen.nl/"&gt;Doxygen&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Download the required version you need:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.doxygen.nl/download.html"&gt;https://www.doxygen.nl/download.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Run the following terminal command to check it installed correctly.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;doxygen -v&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1.9.8&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I also the install location to my &lt;code&gt;PATH&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Generate a config file with:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;doxygen -g&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Update the necessary settings.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;PROJECT_NAME           = "..."
-PROJECT_NUMBER         = "0.0.1"
-PROJECT_BRIEF          = "..."
-PROJECT_LOGO           = "icon.png"
-EXTENSION_MAPPING      = ino=C++
-EXTRACT_ALL            = YES
-INPUT                  = "&amp;lt;filename&amp;gt;.ino"
-FILE_PATTERNS          = ...
-                         *.ino
-GENERATE_LATEX         = NO
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I also added docs/comments to my &lt;code&gt;.ino&lt;/code&gt; file. If you are familiar to javadoc this should be fine.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/blob/app/src/RFIDReader/ESP8266/ESP8266.ino"&gt;ESP8266.ino&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Generate the header file to update and add a &lt;em&gt;favicon&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;doxygen -w html headerFile&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;error: option "-w html" does not have enough arguments&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Ran this instead and just deleted the &lt;code&gt;footerFile&lt;/code&gt; &lt;code&gt;styleSheetFile&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;doxygen -w html headerFile footerFile styleSheetFile&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;doxygen -w html headerFile footerFile styleSheetFile [configFile]&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Updated the &lt;code&gt;headerFile&lt;/code&gt; with:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;link rel="icon" href="$relpath^favicon.ico" type="image/x-icon" /&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Update the config file with&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;HTML_HEADER            = headerFile
-HTML_EXTRA_FILES       += favicon.ico
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Not sure I like these files in the root, may need to move them, everything can be relative paths.&lt;/p&gt;
-&lt;p&gt;Finally I updated some parts of the code so it didn't output my secrets.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-cpp"&gt;#ifndef DOXYGEN_SHOULD_SKIP_THIS
-
-&amp;lt;SECRETS&amp;gt;
-
-#endif /* DOXYGEN_SHOULD_SKIP_THIS */
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Updated the config:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;PREDEFINED             = DOXYGEN_SHOULD_SKIP_THIS
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I tried adding it to the &lt;code&gt;EXCLUDE&lt;/code&gt; but it still pulled in the macros and displayed the variables.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;EXCLUDE                = "secrets.h"
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Finally run&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;doxygen&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;A number of things will output in the terminal and hopefully it should end with:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;finished...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You should then have a folder called "html" with the full output, including your &lt;code&gt;icon.png&lt;/code&gt; and &lt;code&gt;favicon.ico&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Open the &lt;code&gt;index.html&lt;/code&gt; to view the generated webpage.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/doxygen_output.png" alt="Poker Docs" title="Poker Docs"&gt;&lt;/p&gt;
-&lt;p&gt;You may wish to add that folder to your &lt;code&gt;.gitignore&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Now to get GitHub to build and deploy the docs.&lt;/p&gt;
-&lt;p&gt;I used &lt;a href="https://github.com/mattnotmitt/doxygen-action"&gt;doxygen-action&lt;/a&gt; from @mattnotmitt.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/poker-recording/blob/app/.github/workflows/build-docs.yml"&gt;build-docs.yml&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.doxygen.nl/"&gt;https://www.doxygen.nl/&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.doxygen.nl/manual/index.html"&gt;https://www.doxygen.nl/manual/index.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.woolseyworkshop.com/2020/03/20/documenting-arduino-sketches-with-doxygen/"&gt;https://www.woolseyworkshop.com/2020/03/20/documenting-arduino-sketches-with-doxygen/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/18215463/how-to-set-a-favicon-for-doxygen-output"&gt;https://stackoverflow.com/questions/18215463/how-to-set-a-favicon-for-doxygen-output&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://the78mole.de/doxygen-tips-and-tricks/"&gt;https://the78mole.de/doxygen-tips-and-tricks/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/mattnotmitt/doxygen-action"&gt;https://github.com/mattnotmitt/doxygen-action&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/marketplace/actions/doxygen-action"&gt;https://github.com/marketplace/actions/doxygen-action&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Build docs for the project</summary>
 	</entry>
 </feed>
