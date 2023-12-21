@@ -21,3 +21,9 @@ For my first Twitch stream ([YouTube Archive](https://www.youtube.com/watch?v=It
 This was a fun new challenge having never worked in the [VS SDK](https://docs.microsoft.com/en-us/visualstudio/extensibility/visual-studio-sdk?view=vs-2019) before.
 
 I'm hoping to spend some mode time in this SDK for both Mac and Win and write up what I find.
+
+## 📼 Videos
+
+<?# YouTube It13T8YBX8g /?>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/It13T8YBX8g" title="Build Light - Visual Studio Extension for Windows" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->

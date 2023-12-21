@@ -4,7 +4,7 @@ tags:
   - devhubnorth
   - meetup
 author: alexhedley
-description: 
+description: DevHubNorth October Meetup
 published: 2023-10-10
 image: https://www.devhubnorth.com/wp-content/uploads/2019/11/I-have-a-surprise-4.png
 imageattribution: https://www.devhubnorth.com/

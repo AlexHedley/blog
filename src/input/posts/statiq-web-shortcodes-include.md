@@ -46,6 +46,8 @@ Now all I need to do is update all my articles to use this...
 
 ## Links
 
+- https://www.statiq.dev/api/statiq.web.shortcodes/
+  - https://www.statiq.dev/api/statiq.web.shortcodes/youtubeshortcode/
 - [Shortcodes](https://www.statiq.dev/guide/content-and-data/shortcodes)
   - [Processing Phases](https://www.statiq.dev/guide/content-and-data/shortcodes#processing-phases)
   - [wyam](https://wyam.io/docs/concepts/shortcodes)
