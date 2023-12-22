@@ -19,7 +19,7 @@ published: 2023-08-13
 <?!^ "./../includes/posts/poker.md" /?>
 <?#/ Markdown ?>
 
-This is Part 2 of the Poker series, see [Recording Poker Games](/posts/recording-poker-games) for the initial setup.
+This is Part 2 of the Poker series, see [Recording Poker Games](poker-recording-games) for the initial setup.
 
 What would be the best way to track the cards being played?
 
