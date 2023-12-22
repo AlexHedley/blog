@@ -69,6 +69,14 @@
     <a class="nav-link" href="/blog/about">About</a>
   </li>
 
+          <li class="nav-item">
+            <span class="nav-link">
+              <form class="form-inline my-2 my-lg-0" action="/blog/search" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
+                <input type="submit" hidden />
+              </form>
+            </span>
+          </li>
       </ul>
     </div>
   </div>
@@ -111,6 +119,7 @@
     &quot;Image&quot;: &quot;images/banner.png&quot;,
     &quot;DateTimeInputCulture&quot;: &quot;en-GB&quot;,
     &quot;LinkRoot&quot;: &quot;/blog&quot;,
+    &quot;GenerateSearchIndex&quot;: true,
     &quot;GitHubOwner&quot;: &quot;alexhedley&quot;,
     &quot;GitHubName&quot;: &quot;alexhedley.github.io&quot;,
     &quot;GitHubToken&quot;: &quot;=&gt; Config.FromSetting&lt;string&gt;(\&quot;GITHUB_TOKEN\&quot;)&quot;,
