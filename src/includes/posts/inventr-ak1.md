@@ -8,3 +8,5 @@
 - [Day 7](inventr-ak1-day7)
 - [Day 8](inventr-ak1-day8)
 - [Day 9](inventr-ak1-day9)
+- [Day 10](inventr-ak1-day10)
+- [Day 11](inventr-ak1-day11)
