@@ -4,9 +4,91 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-12-23T17:29:39Z</updated>
+	<updated>2023-12-23T17:57:51Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day11</id>
+		<title>Day 11 - 30 Days Lost in Space</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day11" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" />
+		<updated>2023-12-23T00:00:00Z</updated>
+		<content>&lt;!-- # Day 11 - 30 Days Lost in Space - Inventr --&gt;
+&lt;h2 id="lesson-11"&gt;🏫 Lesson 11&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Day 11: Starting your control panel&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-11/"&gt;Original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-11-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Today I got to use a new device, the keypad, which meant a new library was needed &lt;a href="https://github.com/Chris--A/Keypad"&gt;Keypad&lt;/a&gt; from &lt;a href="https://github.com/Chris--A/"&gt;Chris--A&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day11.jpg" alt="&amp;quot;Day 11&amp;quot;" title="Day 11"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/keypad.png" alt="Keypad" title="Keypad"&gt;&lt;/p&gt;
+&lt;p&gt;Clicking each button from S1 to S16 outputs the following to the Serial Monitor.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;17:49:58.714 -&amp;gt; 3
+17:49:59.197 -&amp;gt; A
+17:50:00.024 -&amp;gt; 4
+17:50:00.539 -&amp;gt; 5
+17:50:01.087 -&amp;gt; 6
+17:50:02.942 -&amp;gt; B
+17:50:03.881 -&amp;gt; 7
+17:50:04.424 -&amp;gt; 8
+17:50:04.842 -&amp;gt; 9
+17:50:05.264 -&amp;gt; C
+17:50:05.860 -&amp;gt; *
+17:50:06.424 -&amp;gt; 0
+17:50:06.878 -&amp;gt; #
+17:50:07.458 -&amp;gt; D
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero Board&lt;/li&gt;
+&lt;li&gt;Type B USB Cable&lt;/li&gt;
+&lt;li&gt;8 cables (M-F)&lt;/li&gt;
+&lt;li&gt;Keypad&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day11-Starting_Your_Control_Panel"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day11-Starting_Your_Control_Panel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="libraries"&gt;Libraries&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Chris--A/Keypad"&gt;https://github.com/Chris--A/Keypad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.arduinolibraries.info/libraries/keypad"&gt;https://www.arduinolibraries.info/libraries/keypad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other-lessons"&gt;Other Lessons&lt;/h2&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+</content>
+		<summary>Inventr - Adventure Kit 1</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/flipo-kickstarter</id>
 		<title>Flipo - Kickstarter</title>
@@ -241,6 +323,8 @@ Informed by trillions of data points across an extensive network of sensors, dev
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 </content>
@@ -297,6 +381,8 @@ Information for Shagged, Married, Annoyed Live with Chris and Rosie Ramsey&lt;/p
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;h2 id="lesson-9"&gt;🏫 Lesson 9&lt;/h2&gt;
@@ -358,6 +444,8 @@ Information for Shagged, Married, Annoyed Live with Chris and Rosie Ramsey&lt;/p
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;h2 id="lesson-8"&gt;Lesson 8&lt;/h2&gt;
@@ -420,6 +508,8 @@ Information for Shagged, Married, Annoyed Live with Chris and Rosie Ramsey&lt;/p
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 &lt;h2 id="lesson-7"&gt;Lesson 7&lt;/h2&gt;
@@ -532,21 +622,5 @@ Information for Shagged, Married, Annoyed Live with Chris and Rosie Ramsey&lt;/p
 &lt;/ul&gt;
 </content>
 		<summary>Electronic Kit</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/twitch-recap-2023</id>
-		<title>Twitch Recap 2023</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/twitch-recap-2023" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-12-11T00:00:00Z</updated>
-		<content>&lt;p&gt;Can't remember is they did one for 2022, but here's 2023:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/twitch-recap-2023.png" alt="Twitch Recap 2023" title="Twitch Recap 2023"&gt;&lt;/p&gt;
-&lt;p&gt;No surprise it's &lt;a href="https://www.twitch.tv/frankkrueger"&gt;Frank Krueger&lt;/a&gt; with &lt;strong&gt;The Frank Show&lt;/strong&gt;, usually on a Sunday evening, just a chilled chat, with lovely people and always learning something new.&lt;/p&gt;
-&lt;p&gt;Also watched my first &lt;a href="https://www.twitch.tv/wildernesslabs"&gt;Wilderness Labs&lt;/a&gt; stream and can't wait for my Meadow board to arrive.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Can't remember is they did one for 2022, but here's 2023:&lt;/p&gt;</summary>
 	</entry>
 </feed>
