@@ -5,8 +5,39 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Fri, 22 Dec 2023 18:04:39 GMT</pubDate>
-		<lastBuildDate>Fri, 22 Dec 2023 18:04:39 GMT</lastBuildDate>
+		<pubDate>Sat, 23 Dec 2023 12:22:25 GMT</pubDate>
+		<lastBuildDate>Sat, 23 Dec 2023 12:22:25 GMT</lastBuildDate>
+		<item>
+			<title>Flipo - Kickstarter</title>
+			<link>https://alexhedley.github.io/blog/posts/flipo-kickstarter</link>
+			<description>From Marcin Saj</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/electronics/flipo/FLIPO-MAIN-LOGO.svg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/flipo-kickstarter</guid>
+			<pubDate>Sat, 23 Dec 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Flipo - Kickstarter --&gt;
+&lt;p&gt;I've been after a flip-disc setup for quite a while and now there's finally been one released at a reasonable price on Kickstarter - &lt;a href="https://www.kickstarter.com/projects/marcinsaj/flip-disc-displays-arduino-based"&gt;Flip-disc Displays - Arduino Based&lt;/a&gt; from &lt;a href="https://www.kickstarter.com/profile/marcinsaj"&gt;Marcin Saj&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/flipo/flipo-displays.jpg" alt="Flipo Displays" title="Flipo Displays"&gt;&lt;/p&gt;
+&lt;p&gt;There's a number of reward options in the campaign, I've gone for the FLIP-DISC CLOCK but I can see me getting others later, would be awesome to build a bigger display.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/flipo/flipdisc-clock.jpg" alt="Flip-Disc Clock" title="Flip-Disc Clock"&gt;&lt;/p&gt;
+&lt;p&gt;The timeline is looking good at Feb/Mar 2024 but it's becoming popular so that might delay things, but this will give me time to finish tinkering with all the other projects I haven't started yet!&lt;/p&gt;
+&lt;!--?# YouTube n9leTz-2cQg /?--&gt;
+&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/n9leTz-2cQg" title="Words - Flip-disc Clock 4 x 7-Segment Display" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
+&lt;h2 id="code"&gt;Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/marcinsaj/FlipDisc"&gt;https://github.com/marcinsaj/FlipDisc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/marcinsaj"&gt;https://github.com/marcinsaj&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://flipo.io/"&gt;https://flipo.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nixietester.com/"&gt;https://nixietester.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.kickstarter.com/projects/marcinsaj/flip-disc-displays-arduino-based"&gt;https://www.kickstarter.com/projects/marcinsaj/flip-disc-displays-arduino-based&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/@MarcinSaj"&gt;https://www.youtube.com/@MarcinSaj&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>OWASP Newcastle December 2023</title>
 			<link>https://alexhedley.github.io/blog/posts/owasp-newcastle-december-2023</link>
@@ -417,26 +448,6 @@ Information for Shagged, Married, Annoyed Live with Chris and Rosie Ramsey&lt;/p
 &lt;li&gt;&lt;a href="https://www.etsy.com/uk/listing/1514850555/electronic-kit-led-digital-roulette"&gt;https://www.etsy.com/uk/listing/1514850555/electronic-kit-led-digital-roulette&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.etsy.com/uk/shop/ElectronicsKits"&gt;https://www.etsy.com/uk/shop/ElectronicsKits&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.electronicskitshop.com/"&gt;https://www.electronicskitshop.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>AoC - 2023</title>
-			<link>https://alexhedley.github.io/blog/posts/aoc-2023</link>
-			<description>Advent of Code</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/aoc-2023</guid>
-			<pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Advent of Code - 2023 --&gt;
-&lt;p&gt;AoC 2023, C# this year again. Let's see how far I get.&lt;/p&gt;
-&lt;p&gt;❄ Snowflake's on the merch and Day 1 mentions a trebuchet, can't wait to see what the full day picture turns out to be.&lt;/p&gt;
-&lt;!-- ![2023](images/aoc/aoc_2023.png "2023") --&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode"&gt;https://github.com/AlexHedley/adventofcode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode2023"&gt;https://github.com/AlexHedley/adventofcode2023&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
