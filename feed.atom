@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-12-23T12:22:25Z</updated>
+	<updated>2023-12-23T17:29:39Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -38,6 +38,114 @@
 &lt;/ul&gt;
 </content>
 		<summary>From Marcin Saj</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/meadow-project-lab</id>
+		<title>Meadow Project Lab</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/meadow-project-lab" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/electronics/wl/wilderness-labs-banner.jpg" />
+		<updated>2023-12-23T00:00:00Z</updated>
+		<content>&lt;!-- # Meadow Project Lab --&gt;
+&lt;p&gt;Meadow Project Lab v3 - .NET IoT prototyping platform by Wilderness Labs&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/wl/Project_Lab_v3_Carbon_Edition.jpg" alt="Project Lab v3" title="Project Lab v3"&gt;&lt;/p&gt;
+&lt;p&gt;Having helped in &lt;a href="https://alexhedley.github.io/blog/hacktoberfest-2023.md"&gt;Hacktoberfest 2023&lt;/a&gt; and then having watched a Twitch stream I finally purchased a board late in November so it's taken about a month to arrive. I'm thinking of using it for a POC for my &lt;a href="https://alexhedley.github.io/blog/tags/poker"&gt;poker&lt;/a&gt; setup, so I can use the screen and draw on the chip numbers via some .NET code, and inform the game about the current bets. We'll see how that goes, plus I can play about with all the other options available.&lt;/p&gt;
+&lt;h2 id="product"&gt;Product&lt;/h2&gt;
+&lt;p&gt;Project Lab v3 - RRP £200.00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://store.wildernesslabs.co/collections/iot-kits/products/project-lab-board"&gt;https://store.wildernesslabs.co/collections/iot-kits/products/project-lab-board&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;
+&lt;summary&gt;About&lt;/summary&gt;
+Cut your time to production in half. Project Lab is created by Wilderness Labs, runs entirely on .NET, and makes hardware less hard to create. With Project Lab, every software developer is an IoT developer. Design your hardware using Project Lab's open-source design. Connect to Thousands of Plug &amp;amp; Play Peripherals Project Lab includes two microBUS and three Grove/Qwiic/StemmaQT Connectors. No breadboard, no complicated wiring, and no tedious soldering. Enjoy rapid prototyping and exploring thousands of plug &amp;amp; play peripherals. Two mikroBUS connectors unlock thousands of official MikroElektronika click boards and tons of 3rd party boards that are mikroBUS compatible. Three Grove/Qwiic/StemmaQT connectors provide access to a massive ecosystem of pluggable peripherals from SeeedStudio, Adafruit, and SparkFun. Accelerometer and Gyroscope Project Lab includes the small, lower power, and optimized for wearables, BMI270 Inertial Measurement Unit (IMU). The 6-axis sensor combines a 16-bit tri-axial gyroscope and a 16-bit tri-axial accelerometer featuring Bosch’s automotive-proven gyroscope technology. While you may not want to wear Project Lab, the lab is perfect to start your wearable design. Environmental sensing with Artificial Intelligence The BME688 is the first gas sensor with Artificial Intelligence (AI) and integrated high-linearity and high-accuracy pressure, humidity, and temperature sensors. Use Project Lab to start building your mobile &amp;amp; connected applications where size, low power consumption, and environmental awareness are critical requirements. The Standard for Light Sensors The Rohm BH1760 Digital Ambient Light sensor is the go-to for engineers. It's low power, used in a wide variety of applications, and it can accurately measure from 1 to 65535 lux. TFT LCD with 65k colors The ILI9341 is a 2.8” 320x240 IPS full view TFT LCD with 65k colors. Project Lab's onboard ILI9341 allows you to directly display information from your peripherals or create a complete navigation system using the directional push buttons. RS-485, I/O, and Power Terminals Through easy-to-use screw terminals, Project Lab enables RS-485 communication directly with industrial sensors, a 5v and 3v3 power connection with the ground, and additional digital and analog I/O. Onboard Audio Project Lab includes an onboard CMT-7525-80-SMT Magnetic Buzzer Transducer when you need more than visuals. Meadow F7v2 Core Compute Module is now onboard For Project Lab v3 we included the Meadow F7 Core Compute Module right on board to get your projects/ideas even closer to production. Explore thousands of plug-and-play peripherals and build endless solutions with Project Lab. Designs, documents, and other resources can be found on GitHub.
+&lt;/details&gt;
+&lt;table&gt;
+    &lt;tbody&gt;&lt;tr&gt;
+        &lt;th&gt;Onboard Peripherals&lt;/th&gt;
+        &lt;th&gt;Connectivity&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;ILI9341&lt;/strong&gt; - SPI 320x240 color display&lt;/td&gt;
+        &lt;td&gt;&lt;strong&gt;MikroBUS&lt;/strong&gt; - Two sets of MikroBUS pin headers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;BMI270&lt;/strong&gt; - I2C motion and acceleration sensor&lt;/td&gt;
+        &lt;td&gt;&lt;strong&gt;Qwiic&lt;/strong&gt; - Stemma QT I2C connector&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;BH1750&lt;/strong&gt; - I2C light sensor&lt;/td&gt;
+        &lt;td&gt;&lt;strong&gt;Grove&lt;/strong&gt; - Analog header&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;BME688&lt;/strong&gt; - I2C atmospheric sensor&lt;/td&gt;
+        &lt;td&gt;&lt;strong&gt;Grove&lt;/strong&gt; - GPIO/serial header&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Push Button&lt;/strong&gt; - 4 momentary buttons&lt;/td&gt;
+        &lt;td&gt;&lt;strong&gt;RS-485&lt;/strong&gt; - Serial&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Magnetic Audio Transducer&lt;/strong&gt; - High quality piezo speaker&lt;/td&gt;
+        &lt;td&gt;&lt;strong&gt;Ports&lt;/strong&gt; - 3.3V, 5V, ground, one analog and two GPIO ports&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id="price"&gt;Price&lt;/h3&gt;
+&lt;p&gt;Be careful about import fees as it comes from the US.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Project Lab v3&lt;/td&gt;
+&lt;td&gt;£202.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Discount&lt;/td&gt;
+&lt;td&gt;-£40.27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shipping&lt;/td&gt;
+&lt;td&gt;£16.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Import fees&lt;/td&gt;
+&lt;td&gt;£49.48&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;£227.21&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="docs"&gt;Docs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developer.wildernesslabs.co/Meadow/Getting_Started/"&gt;https://developer.wildernesslabs.co/Meadow/Getting_Started/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Meadow.ProjectLab"&gt;https://github.com/WildernessLabs/Meadow.ProjectLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Meadow.ProjectLab.Samples"&gt;https://github.com/WildernessLabs/Meadow.ProjectLab.Samples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wildernesslabs"&gt;https://github.com/wildernesslabs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.wildernesslabs.co/"&gt;https://www.wildernesslabs.co/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://store.wildernesslabs.co/collections/iot-kits/products/project-lab-board"&gt;https://store.wildernesslabs.co/collections/iot-kits/products/project-lab-board&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.wildernesslabs.co/Meadow/Getting_Started/"&gt;https://developer.wildernesslabs.co/Meadow/Getting_Started/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Meadow.ProjectLab"&gt;https://github.com/WildernessLabs/Meadow.ProjectLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Meadow.ProjectLab.Samples"&gt;https://github.com/WildernessLabs/Meadow.ProjectLab.Samples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wildernesslabs"&gt;https://github.com/wildernesslabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/WildernessLabs"&gt;https://www.youtube.com/WildernessLabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.twitch.tv/wildernesslabs"&gt;https://www.twitch.tv/wildernesslabs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>from Wilderness Labs</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/owasp-newcastle-december-2023</id>
@@ -440,26 +548,5 @@ Information for Shagged, Married, Annoyed Live with Chris and Rosie Ramsey&lt;/p
 &lt;p&gt;Also watched my first &lt;a href="https://www.twitch.tv/wildernesslabs"&gt;Wilderness Labs&lt;/a&gt; stream and can't wait for my Meadow board to arrive.&lt;/p&gt;
 </content>
 		<summary>&lt;p&gt;Can't remember is they did one for 2022, but here's 2023:&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/roulettewheel</id>
-		<title>LED Digital Roulette Wheel</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/roulettewheel" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-12-08T00:00:00Z</updated>
-		<content>&lt;p&gt;My twin got me an LED Digital Roulette Wheel Electronic Kit for my birthday 🥳. I'll add it to my backlog of tinkering...&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/roulette_wheel_kit.png" alt="Roulette Wheel Kit" title="Roulette Wheel Kit"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/roulette_wheel_kit_parts.png" alt="Roulette Wheel Kit Parts" title="Roulette Wheel Kit Parts"&gt;&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.etsy.com/uk/listing/1514850555/electronic-kit-led-digital-roulette"&gt;https://www.etsy.com/uk/listing/1514850555/electronic-kit-led-digital-roulette&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.etsy.com/uk/shop/ElectronicsKits"&gt;https://www.etsy.com/uk/shop/ElectronicsKits&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.electronicskitshop.com/"&gt;https://www.electronicskitshop.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Electronic Kit</summary>
 	</entry>
 </feed>
