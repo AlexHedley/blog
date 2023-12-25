@@ -2,6 +2,7 @@
 title: LED Digital Roulette Wheel
 tags:
   - electronics
+  - iot
 author: alexhedley
 description: Electronic Kit
 published: 2023-12-08

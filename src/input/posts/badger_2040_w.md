@@ -3,6 +3,7 @@ title: Badger 2040 W from Pimoroni
 tags:
   - electronics
   - pimoroni
+  - iot
 author: alexhedley
 description: Electronic Kit
 published: 2023-12-12
