@@ -4,9 +4,98 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-12-25T10:47:30Z</updated>
+	<updated>2023-12-26T18:08:32Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/custom-funkopop</id>
+		<title>Custom Funko Pop</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/custom-funkopop" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-12-26T00:00:00Z</updated>
+		<content>&lt;!-- # Custom Funko Pop --&gt;
+&lt;p&gt;You may not already know but I have an obsession with collecting things, one of which is &lt;a href="https://funko.com/"&gt;Funko&lt;/a&gt; Pops, as you can see from my &lt;a href="https://alexhedley.com/funkopop/"&gt;website&lt;/a&gt;. I'm hoping to complete my LotR collection, but there's a few rare ones left to get.&lt;/p&gt;
+&lt;p&gt;Whilst on X (Twitter) I saw a post showing people making themselves using &lt;a href="https://designer.microsoft.com/"&gt;Microsoft Designer&lt;/a&gt; using the following prompt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://designer.microsoft.com/image-creator?p=Funko+figure+of+a+%5Bmale%5D%2C+smiling%2C+called%5B+STEPHEN+REID%5D%2C+wearing+a+%5Bblack+henley+t-shirt%5D%2C+a+%5Bcanary+yellow+hoodie%5D%2C+a+%5Bblack+leather+jacket%5D%2C+%5Bblack+ripped+jeans%5D+and+%5Bwhite+adidas+trainers+with+black+stripes%5D%2C+%5Bshaved+head%5D+and+%5Bshaved+beard%5D.+The+Funko+is+displayed+inside+and+outside+a+limited+edition+%5Bgreen+and+yellow%5D+Funko+box+with+%5BDIGITAL+DRUID%5D+text%2C+allowing+visibility+of+the+figure%2C+typography%2C+3D+render.+%5BWhite%5D+background"&gt;https://designer.microsoft.com/image-creator?p=Funko+figure+of+a+%5Bmale%5D%2C+smiling%2C+called%5B+STEPHEN+REID%5D%2C+wearing+a+%5Bblack+henley+t-shirt%5D%2C+a+%5Bcanary+yellow+hoodie%5D%2C+a+%5Bblack+leather+jacket%5D%2C+%5Bblack+ripped+jeans%5D+and+%5Bwhite+adidas+trainers+with+black+stripes%5D%2C+%5Bshaved+head%5D+and+%5Bshaved+beard%5D.+The+Funko+is+displayed+inside+and+outside+a+limited+edition+%5Bgreen+and+yellow%5D+Funko+box+with+%5BDIGITAL+DRUID%5D+text%2C+allowing+visibility+of+the+figure%2C+typography%2C+3D+render.+%5BWhite%5D+background&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I ameneded this a little to&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Funko figure of a male, smiling, called Alex Hedley, wearing a oxford shirt, blue jeans and chelsea boots with a red sole, short brown hair and slight ginger beard, with glasses. The Funko is displayed inside and outside a limited edition red and black Funko box with Wizard text sticker and a single number 8, allowing visibility of the figure, typography, 3D render. white background&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;and after a few re-generates I came to the following:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/custom-funkopop.jpeg" alt="Custom Funko Pop" title="Custom Funko Pop"&gt;&lt;/p&gt;
+&lt;p&gt;Even with a jazzy shirt!&lt;/p&gt;
+&lt;p&gt;I now need to find someone to actually make it.&lt;/p&gt;
+&lt;p&gt;How about you try your own?!&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.com/funkopop/"&gt;https://alexhedley.com/funkopop/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/funkopop"&gt;https://github.com/AlexHedley/funkopop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://designer.microsoft.com/"&gt;https://designer.microsoft.com/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://designer.microsoft.com/image-creator"&gt;https://designer.microsoft.com/image-creator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Create your own custom Funko Pop using AI.</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/github-worth</id>
+		<title>GitHub Worth</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/github-worth" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/github_worth_1500x500.jpeg" />
+		<updated>2023-12-26T00:00:00Z</updated>
+		<content>&lt;!-- # GitHub Worth --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Estimate Github Worth Generator&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github-worth.vercel.app/"&gt;https://github-worth.vercel.app/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-worth-alexhedley.jpg" alt="Alex Hedley" title="Alex Hedley"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-worth-alex-hedley.jpg" alt="Alex-Hedley" title="Alex-Hedley"&gt;&lt;/p&gt;
+&lt;p&gt;From &lt;a href="https://twitter.com/shyam_tawli"&gt;@shyam_tawli&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github-worth.vercel.app/"&gt;https://github-worth.vercel.app/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/shyam_tawli"&gt;https://twitter.com/shyam_tawli&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/shyamtawli"&gt;https://github.com/shyamtawli&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Estimate Github Worth Generator.</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/saxophone-presents</id>
+		<title>🎷 Saxophone - Presents</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/saxophone-presents" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2023-12-25T00:00:00Z</updated>
+		<content>&lt;!-- 🎷 Saxophone - Presents --&gt;
+&lt;p&gt;Some fantastic saxophone related presents for Christmas, can't wait to learn "Concerning Hobbits and all the others". 🎷&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Lord of the Rings Instrumental Solos: Alto Sax (book and CD): Howard Shore&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/Saxophone_LotR_Instrumental.jpg" alt="The Lord of the Rings Instrumental Solos: Alto Sax (book and CD): Howard Shore" title="The Lord of the Rings Instrumental Solos: Alto Sax (book and CD): Howard Shore"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HW Alto Sax Pad-Saver Set&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/alto-sax-padsaver-set.png" alt="HW Alto Sax Pad-Saver Set" title="HW Alto Sax Pad-Saver Set"&gt;&lt;/p&gt;
+&lt;p&gt;This set includes savers for the mouthpiece, neck, body, and bell.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/0757916597"&gt;https://www.amazon.co.uk/dp/0757916597&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sax.co.uk/collections/sax-care-products/products/complete-alto-sax-padsaver-set"&gt;https://sax.co.uk/collections/sax-care-products/products/complete-alto-sax-padsaver-set&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>More stuff for my saxophone.</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day11</id>
 		<title>Day 11 - 30 Days Lost in Space</title>
@@ -421,206 +510,5 @@ Information for Shagged, Married, Annoyed Live with Chris and Rosie Ramsey&lt;/p
 &lt;/ul&gt;
 </content>
 		<summary>Inventr - Adventure Kit 1</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day8</id>
-		<title>Day 8 - 30 Days Lost in Space</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day8" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-12-14T00:00:00Z</updated>
-		<content>&lt;!-- # Day 8 - 30 Days Lost in Space - Inventr --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;h2 id="lesson-8"&gt;Lesson 8&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Day 8: Adding some color to this dark place&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-8/"&gt;Original&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-8-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Back to LEDs today but this time it's an RGB LED. 🔴🟢🔵. Using some Pulse-width modulation (PWM) this time round. Who doesn't love a bit of a colour change, and very festive for this time of year.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day8_2.jpg" alt="&amp;quot;Day 8&amp;quot;" title="Day 8"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day8_1.jpg" alt="&amp;quot;Day 8&amp;quot;" title="Day 8"&gt;&lt;/p&gt;
-&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Hero Board&lt;/li&gt;
-&lt;li&gt;Type B USB Cable&lt;/li&gt;
-&lt;li&gt;Breadboard&lt;/li&gt;
-&lt;li&gt;3 220 Ω (Ohm) resistor&lt;/li&gt;
-&lt;li&gt;5 cables&lt;/li&gt;
-&lt;li&gt;3 colour LED or RGB LED&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day08-Adding_Some_Color_To_This_Dark_Place"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day08-Adding_Some_Color_To_This_Dark_Place&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="videos"&gt;Videos&lt;/h2&gt;
-&lt;!--?# YouTube yh15KHNu74o /?--&gt;
-&lt;!--?# YouTube hN5Sr7tciqQ /?--&gt;
-&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/" title="30 Days Lost in Space - Day " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Inventr - Adventure Kit 1</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day7</id>
-		<title>Day 7 - 30 Days Lost in Space</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day7" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-12-13T00:00:00Z</updated>
-		<content>&lt;!-- # Day 7 - 30 Days Lost in Space - Inventr --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;h2 id="lesson-7"&gt;Lesson 7&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Day 7: We still need to keep an eye on this&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-7/"&gt;Original&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-7-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Day 7 built upon &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt; and checks the battery level.&lt;/p&gt;
-&lt;p&gt;Shining a light on the Photoresistor or covering it changed the speed at which the % increased in the logs.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;10:56:48.834 -&amp;gt; 200 ms    charge at 0.17%
-...
-10:58:16.851 -&amp;gt; 14364 ms    charge at 99.34%
-10:58:16.945 -&amp;gt; 14464 ms     FULLY CHARGED
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day7.jpg" alt="&amp;quot;Day 7&amp;quot;" title="Day 7"&gt;&lt;/p&gt;
-&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Hero Board&lt;/li&gt;
-&lt;li&gt;Type B USB Cable&lt;/li&gt;
-&lt;li&gt;Breadboard&lt;/li&gt;
-&lt;li&gt;220 Ω (Ohm) resistor&lt;/li&gt;
-&lt;li&gt;3 cables&lt;/li&gt;
-&lt;li&gt;Photoresistor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day07-We_Still_Need_To_Keep_An_Eye_On_This"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day07-We_Still_Need_To_Keep_An_Eye_On_This&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="videos"&gt;Videos&lt;/h2&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/" title="30 Days Lost in Space - Day 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Inventr - Adventure Kit 1</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/badger2040w</id>
-		<title>Badger 2040 W from Pimoroni</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/badger2040w" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/electronics/pimoroni-logo.png" />
-		<updated>2023-12-12T00:00:00Z</updated>
-		<content>&lt;!-- # Badger 2040 W from Pimoroni --&gt;
-&lt;p&gt;After seeing a post about &lt;a href="https://githubuniverse.com/"&gt;GitHub Universe 2023&lt;/a&gt; badges I did some research and found a GitHub &lt;a href="https://github.com/orgs/community/discussions/77583"&gt;discussion&lt;/a&gt; and a repo &lt;a href="https://github.com/badger2040/home"&gt;badger2040&lt;/a&gt; which led me to &lt;a href="https://pimoroni.com/"&gt;Pimoroni&lt;/a&gt; which of course meant I was buying my own!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/badger2040w.png" alt="Badger 2040 W Kit" title="Badger 2040 W"&gt;&lt;/p&gt;
-&lt;p&gt;Look for an upcoming blog post soon showing how I get on.&lt;/p&gt;
-&lt;h2 id="tutorial"&gt;Tutorial&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learn.pimoroni.com/article/getting-started-with-badger-2040"&gt;Getting Started with Badger 2040&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
-&lt;p&gt;How to hack your conference badge - Universe 2022 - GitHub&lt;/p&gt;
-&lt;!--?# YouTube ilpC7E69jOU /?--&gt;
-&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ilpC7E69jOU" title="How to hack your conference badge - Universe 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
-&lt;h2 id="products"&gt;Products&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th style="text-align: right;"&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Badger 2040 W (Pico W Aboard) × 1&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;£32.50&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Galleon 400mAh Hard Case LiPo Battery × 1&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;£6.25&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;LiPo Amigo (LiPo/LiIon Battery Charger) × 1&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;£5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;P &amp;amp; P&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;£7.99&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;&lt;strong&gt;£62.09&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/Badger2040Wkit.png" alt="Badger 2040 W Kit" title="Badger 2040 W Kit"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/electronics/galleon_400mah.png" alt="Galleon 400mAh Hard Case LiPo Battery" title="Galleon 400mAh Hard Case LiPo Battery"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/electronics/lipo-amigo.png" alt="LiPo Amigo (LiPo/LiIon Battery Charger)" title="LiPo Amigo (LiPo/LiIon Battery Charger)"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://shop.pimoroni.com/products/badger-2040-w?variant=40514062221395"&gt;https://shop.pimoroni.com/products/badger-2040-w?variant=40514062221395&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://shop.pimoroni.com/products/galleon-400mah-battery?variant=40061068673107"&gt;https://shop.pimoroni.com/products/galleon-400mah-battery?variant=40061068673107&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://shop.pimoroni.com/products/lipo-amigo?variant=39779302506579"&gt;https://shop.pimoroni.com/products/lipo-amigo?variant=39779302506579&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;👩🏻‍💻 &lt;a href="https://github.com/badger2040/home"&gt;https://github.com/badger2040/home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🗣 &lt;a href="https://github.com/orgs/community/discussions/77583"&gt;Badge Scanner Hardware and Software used at GitHub Universe 2023&lt;/a&gt; GitHub community discussions #77583&lt;/li&gt;
-&lt;li&gt;📼 &lt;a href="https://www.youtube.com/watch?v=ilpC7E69jOU"&gt;How to hack your conference badge - Universe 2022&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Electronic Kit</summary>
 	</entry>
 </feed>
