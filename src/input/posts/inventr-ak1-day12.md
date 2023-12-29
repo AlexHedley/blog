@@ -61,6 +61,7 @@ Clicking each button from S1 to S16 outputs the following to the Serial Monitor,
 ## 👩🏻‍💻 Code
 
 - https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us
+- https://github.com/robsoncouto/arduino-songs
 
 ### Libraries
 
@@ -72,6 +73,12 @@ Clicking each button from S1 to S16 outputs the following to the Serial Monitor,
 <?# YouTube _rdKZPZRF_w /?>
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/_rdKZPZRF_w" title="30 Days Lost in Space - Day 12" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+**Side Quest**
+
+<?# YouTube nHFPzxAgY3Y /?>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/nHFPzxAgY3Y" title="30 Days Lost in Space - Day 12 - Side Quest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 ## 🔗 Links
 
