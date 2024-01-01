@@ -22,7 +22,7 @@ Today was an extension of [Day 11](inventr-ak1-day11), I got to use a new device
 
 !["Day 12"](images/inventr/ak1/Day12.jpg "Day 12")
 
-![Keypad](images/inventr/ak1/passive-buzzer.png "Keypad")
+![Passive Buzzer](images/inventr/ak1/passive-buzzer.png "Passive Buzzer")
 
 We are still using the keypad:
 
