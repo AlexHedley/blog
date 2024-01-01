@@ -4,9 +4,95 @@
 		<title>Alex Hedley</title>
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
-		<copyright>Copyright © 2023</copyright>
-		<pubDate>Fri, 29 Dec 2023 11:32:44 GMT</pubDate>
-		<lastBuildDate>Fri, 29 Dec 2023 11:32:44 GMT</lastBuildDate>
+		<copyright>Copyright © 2024</copyright>
+		<pubDate>Mon, 01 Jan 2024 11:40:55 GMT</pubDate>
+		<lastBuildDate>Mon, 01 Jan 2024 11:40:55 GMT</lastBuildDate>
+		<item>
+			<title>Day 13 - 30 Days Lost in Space</title>
+			<link>https://alexhedley.github.io/blog/posts/inventr-ak1-day13</link>
+			<description>Inventr - Adventure Kit 1</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/inventr-ak1-day13</guid>
+			<pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Day 13 - 30 Days Lost in Space - Inventr --&gt;
+&lt;h2 id="lesson-13"&gt;🏫 Lesson 13&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Day 13: HERO Security 101&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-13/"&gt;Original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-13-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Today was a continuation of &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt; and &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt; but more coding and logic, using the same wiring and setup. This time we need to type in a password to get access to the system. We can also change the password.&lt;/p&gt;
+&lt;!-- !["Day 13"](images/inventr/ak1/Day13.jpg "Day 13") --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/keypad.png" alt="Keypad" title="Keypad"&gt;&lt;/p&gt;
+&lt;p&gt;Trying out the different options.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;11:33:10.390 -&amp;gt; Press * to set a new password.
+11:33:10.432 -&amp;gt; Press # to access the system with the existing one.
+11:33:22.330 -&amp;gt; Unlock Mode: Type Password to continue
+11:33:28.558 -&amp;gt; WRONG PASSWORD
+11:33:28.558 -&amp;gt; 1
+11:33:28.558 -&amp;gt; Password error. Access Denied.
+11:33:33.847 -&amp;gt; Unlock Mode: Type Password to continue
+11:33:37.950 -&amp;gt; ****
+11:33:40.255 -&amp;gt; Device Successfully Unlocked!
+11:33:40.301 -&amp;gt; Welcome, authorized user. You may now begin using the system.
+11:33:55.889 -&amp;gt; Unlock Mode: Type Password to continue
+11:34:08.394 -&amp;gt; WRONG PASSWORD
+11:34:08.394 -&amp;gt; 1
+11:34:08.394 -&amp;gt; Access Denied. Cannot change password without knowing the previous or default.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero Board&lt;/li&gt;
+&lt;li&gt;Type B USB Cable&lt;/li&gt;
+&lt;li&gt;8 cables (M-F)&lt;/li&gt;
+&lt;li&gt;8 cables (M-M)&lt;/li&gt;
+&lt;li&gt;Keypad&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Passive Buzzer&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/robsoncouto/arduino-songs"&gt;https://github.com/robsoncouto/arduino-songs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="libraries"&gt;Libraries&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Chris--A/Keypad"&gt;https://github.com/Chris--A/Keypad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.arduinolibraries.info/libraries/keypad"&gt;https://www.arduinolibraries.info/libraries/keypad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other-lessons"&gt;Other Lessons&lt;/h2&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Day 12 - 30 Days Lost in Space</title>
 			<link>https://alexhedley.github.io/blog/posts/inventr-ak1-day12</link>
@@ -27,7 +113,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Today was an extension of &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;, I got to use a new device, the passive buzzer, let's make some noise.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day12.jpg" alt="&amp;quot;Day 12&amp;quot;" title="Day 12"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/passive-buzzer.png" alt="Keypad" title="Keypad"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/passive-buzzer.png" alt="Passive Buzzer" title="Passive Buzzer"&gt;&lt;/p&gt;
 &lt;p&gt;We are still using the keypad:&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/keypad.png" alt="Keypad" title="Keypad"&gt;&lt;/p&gt;
 &lt;p&gt;Clicking each button from S1 to S16 outputs the following to the Serial Monitor, with differing tones 🎶, "the tones Kevin".&lt;/p&gt;
@@ -60,6 +146,7 @@
 &lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/robsoncouto/arduino-songs"&gt;https://github.com/robsoncouto/arduino-songs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="libraries"&gt;Libraries&lt;/h3&gt;
 &lt;ul&gt;
@@ -69,6 +156,9 @@
 &lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
 &lt;!--?# YouTube _rdKZPZRF_w /?--&gt;
 &lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_rdKZPZRF_w" title="30 Days Lost in Space - Day 12" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
+&lt;p&gt;&lt;strong&gt;Side Quest&lt;/strong&gt;&lt;/p&gt;
+&lt;!--?# YouTube nHFPzxAgY3Y /?--&gt;
+&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nHFPzxAgY3Y" title="30 Days Lost in Space - Day 12 - Side Quest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
 &lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
@@ -91,6 +181,7 @@
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 </content:encoded>
@@ -259,6 +350,7 @@
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 </content:encoded>
@@ -463,60 +555,6 @@ Informed by trillions of data points across an extensive network of sensors, dev
 &lt;li&gt;&lt;a href="https://www.meetup.com/owasp-newcastle-chapter/events/297903170/"&gt;https://www.meetup.com/owasp-newcastle-chapter/events/297903170/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.meetup.com/owasp-newcastle-chapter/"&gt;https://www.meetup.com/owasp-newcastle-chapter/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Day 10 - 30 Days Lost in Space</title>
-			<link>https://alexhedley.github.io/blog/posts/inventr-ak1-day10</link>
-			<description>Inventr - Adventure Kit 1</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/inventr-ak1-day10</guid>
-			<pubDate>Sat, 16 Dec 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Day 10 - 30 Days Lost in Space - Inventr --&gt;
-&lt;h2 id="lesson-10"&gt;🏫 Lesson 10&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Day 10: Creative Day #2&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-10/"&gt;Original&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-10-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Day 10 was another creative day where you could try anything you wanted, I didn't! Just like &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day10-Creative_Day_%232"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day10-Creative_Day_%232&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="other-lessons"&gt;Other Lessons&lt;/h2&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
