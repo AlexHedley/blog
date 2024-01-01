@@ -15,11 +15,11 @@ published: 2023-01-01
 
 ## Alex Hedley
 
-![alexhedley](images/contributions-alexhedley.png "Contributions alexhedley")
+![alexhedley](images/gh/contributions-alexhedley.png "Contributions alexhedley")
 
 ## alex-hedley
 
-![alex-hedley](images/contributions-alex-hedley.png "Contributions alex-hedley")
+![alex-hedley](images/gh/contributions-alex-hedley.png "Contributions alex-hedley")
 
 ## Skyline
 
