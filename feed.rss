@@ -5,8 +5,37 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Mon, 01 Jan 2024 12:06:23 GMT</pubDate>
-		<lastBuildDate>Mon, 01 Jan 2024 12:06:23 GMT</lastBuildDate>
+		<pubDate>Tue, 02 Jan 2024 16:59:22 GMT</pubDate>
+		<lastBuildDate>Tue, 02 Jan 2024 16:59:22 GMT</lastBuildDate>
+		<item>
+			<title>2023 In Review</title>
+			<link>https://alexhedley.github.io/blog/posts/2023-in-review</link>
+			<description>A Year in review</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/2023-in-review</guid>
+			<pubDate>Tue, 02 Jan 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # 2023 in review --&gt;
+&lt;p&gt;A few years back I used to write up a review of my year, not sure why I stopped but thought it would be a good time to start it up again so here's 2023:&lt;/p&gt;
+&lt;p&gt;Looking back I've achieved a lot, both professionally and personally.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Professional Achievements&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I finally took the time to invest in obtaining some certifications. This began in &lt;strong&gt;April&lt;/strong&gt; with achieving my &lt;a href="https://alexhedley.github.io/blog/aws-certified-cloud-practitioner"&gt;AWS Certified Cloud Practitioner&lt;/a&gt;, alongside that I was running through the hands on &lt;a href="https://alexhedley.github.io/blog/aws-cloud-quest"&gt;AWS Cloud Quest&lt;/a&gt; which is my much preferred way of learning! Keeping up to date with the various changes in AWS is key, especially when I might not be working with these resources day to day.&lt;/p&gt;
+&lt;p&gt;The following month I achieved my &lt;a href="https://alexhedley.github.io/blog/cc"&gt;Certified in Cybersecurity℠ - CC&lt;/a&gt; from &lt;a href="https://www.isc2.org/"&gt;ISC2&lt;/a&gt; and have been working on my CPEs for the rest of the year.&lt;/p&gt;
+&lt;p&gt;In &lt;strong&gt;June&lt;/strong&gt; I had the opportunity to travel to the Barbican for the &lt;a href="https://alexhedley.github.io/blog/leaddev-london-2023"&gt;LeadDev London 2023&lt;/a&gt; with only a select number of colleagues. This was a fantastic event.&lt;/p&gt;
+&lt;p&gt;In &lt;strong&gt;October&lt;/strong&gt; I completed the &lt;a href="https://alexhedley.github.io/blog/lfc131"&gt;Green Software for Practitioners (LFC131)&lt;/a&gt; from &lt;a href="https://www.linuxfoundation.org/"&gt;The Linux Foundation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Another goal of mine was to work with .NET, this being Blazor. When I built a tool in Blazor Web Assembly (WASM) - &lt;a href="https://alexhedley.github.io/blog/dotnet-blazor-interactive"&gt;Blazor Interactive&lt;/a&gt; which gave me the opportunity to give a talk on the subject at my local &lt;a href="https://alexhedley.github.io/blog/tags/meetup"&gt;meetup&lt;/a&gt; - &lt;a href="https://alexhedley.github.io/blog/talk-blazorinteractive"&gt;Blazor Interactive (Talk)&lt;/a&gt;. This was a fantastic experience to be able to stand up in front of my peers and talk about something I am passionate about. I'd been giving various &lt;a href="https://alexhedley.github.io/blog/tags/talk"&gt;talks&lt;/a&gt; internally at work but these were via an online meeting.&lt;/p&gt;
+&lt;p&gt;In &lt;strong&gt;October&lt;/strong&gt; I contributed to &lt;a href="https://alexhedley.github.io/blog/hacktoberfest-2023"&gt;Hacktoberfest 2023&lt;/a&gt;. Open Source is key in our industry and I urge anyone to help, no matter how small the piece of work, I tend to do documentation as that's the last thing most people like to do and it's just as important.&lt;/p&gt;
+&lt;p&gt;Finally, &lt;strong&gt;December&lt;/strong&gt; can mean only one thing - &lt;a href="https://alexhedley.github.io/blog/aoc-2023"&gt;⭐ AoC 2023&lt;/a&gt;. I had fun in C# again, got quite a few days done at the start then couldn't really get back into after having a week off. The good thing is I can go back whenever I want and I also got my sticker from the competition at work.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Personal Achievements&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In &lt;strong&gt;March&lt;/strong&gt; I began my official journey learning the &lt;a href="https://alexhedley.github.io/blog/saxophone"&gt;🎷 Saxophone&lt;/a&gt;. This is something I've wanted to do since being at school, just never got round to it. It's been quite a challenge. Learning to read music has been rather difficult and at times I've lost motivation but I've kept it going and thoroughly enjoying it. One day, I may share my private YouTube playlist of my progression.&lt;/p&gt;
+&lt;p&gt;Fitness has been lacking this year, I've not done as many &lt;a href="https://alexhedley.github.io/blog/tags/the-conqueror"&gt;The Conqueror&lt;/a&gt; challenges, but I did complete &lt;a href="https://alexhedley.github.io/blog/the-conqueror-2023"&gt;The Conqueror 2023&lt;/a&gt; completing over 1700km for the year. I also completed my &lt;a href="https://alexhedley.github.io/blog/parkrun-whitleybay-nov2023"&gt;1st Parkrun&lt;/a&gt;, many thanks to a dear school friend who drove over and ran it with me, knacked my knee as I hadn't done any running at all this year, but it hasn't put me off doing another, just need to train a bit more first, 5km as my first go probably wasn't the best idea!&lt;/p&gt;
+&lt;p&gt;Having dabbled with &lt;a href="https://alexhedley.github.io/blog/tags/electronics"&gt;electronics&lt;/a&gt; over the last couple of years I worked more on my &lt;a href="https://alexhedley.github.io/blog/tags/inventr"&gt;inventr.io&lt;/a&gt; &lt;strong&gt;30 Days Lost in Space&lt;/strong&gt; and started building my own "Smart" &lt;a href="https://alexhedley.github.io/blog/tags/poker"&gt;🃏 Poker&lt;/a&gt; table, it's still a WIP but has been a lot of fun bringing various disciplines together, especially the fact I got to do some woodwork in my workshop (aka the garage).&lt;/p&gt;
+&lt;p&gt;I've continued my &lt;a href="https://alexhedley.com/bowling/"&gt;🎳 Bowling&lt;/a&gt; with the local league I joined last year. I've stayed consistent and still having lots of fun with an average score of &lt;strong&gt;119&lt;/strong&gt; which isn't bad!&lt;/p&gt;
+&lt;p&gt;About 18 months after my first beginners course I completed the second in the series: &lt;a href="https://alexhedley.github.io/blog/blacksmiths-tools"&gt;Blacksmith Tools&lt;/a&gt;. This had me forging many of my own tools ready for my own workshop, one day... This was much more difficult than the first course and I maybe won't leave it as long between the next, more so because I don't have my own forge to practice, so took a while to get back into the swing of things. Very happy with what I produced, and a tough but rewarding 3 days of great work.&lt;/p&gt;
+&lt;!-- Another thing I've been looking to get back into was recording some video training tutorials. I bought a lot of gear a few years back (see [twitch](twitch)) and seems a shame not to use it. I've had the opportunity to record three courses so far: [git Beginner Level 1](https://599cd.com/blog/display-article.asp?ID=2970), [Rubberduck VBA Intro](https://599cd.com/blog/display-article.asp?ID=2972) and [VB.NET Beginner 1](https://599cd.com/blog/display-article.asp?ID=2951) with the intention of re-recording the original [VB6](https://599cd.com/site/courselist/vb/) courses [Rich](https://599cd.com/richardrost) did way back when then adding more content going forward. Still lots to improve on but practice makes perfect. --&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>GitHub Contributions Chart Generator</title>
 			<link>https://alexhedley.github.io/blog/posts/github-contributions-2023</link>
@@ -522,24 +551,6 @@ Cut your time to production in half. Project Lab is created by Wilderness Labs, 
 &lt;li&gt;&lt;a href="https://github.com/wildernesslabs"&gt;https://github.com/wildernesslabs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/WildernessLabs"&gt;https://www.youtube.com/WildernessLabs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.twitch.tv/wildernesslabs"&gt;https://www.twitch.tv/wildernesslabs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>The Conqueror 2023</title>
-			<link>https://alexhedley.github.io/blog/posts/the-conqueror-2023</link>
-			<description>Virtual Challenges</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/the-conqueror-2023</guid>
-			<pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Originally I'd set my goal to be 2023km just because it matched the year, I adjusted it to 1700km in December, as I'd slowed down in the latter part of the year and was unlikely to reach it.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/conqueror/conqueror-2023.jpg" alt="The Conqueror 2023" title="The Conqueror 2023"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/conqueror/conqueror2023.jpg" alt="The Conqueror 2023 Medal" title="The Conqueror 2023 Medal"&gt;&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.theconqueror.events/"&gt;https://www.theconqueror.events/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
