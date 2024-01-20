@@ -4,9 +4,140 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2024</rights>
-	<updated>2024-01-16T13:03:41Z</updated>
+	<updated>2024-01-20T11:54:37Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/github-certifications-foundations</id>
+		<title>GitHub Foundations</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/github-certifications-foundations" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/foundations.png" />
+		<updated>2024-01-20T00:00:00Z</updated>
+		<content>&lt;!-- # GitHub Foundations - Certification --&gt;
+&lt;p&gt;Today I passed the &lt;strong&gt;GitHub Foundations&lt;/strong&gt; exam 🎉!&lt;/p&gt;
+&lt;!-- ![GitHub Foundations](images/gh/foundations.png "GitHub Foundations") --&gt;
+&lt;!-- - [Credly Badge](https://www.credly.com/badges/###) --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The pass mark is ~70% and I achieved: &lt;strong&gt;45/60&lt;/strong&gt; (75%).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Highlight your understanding of the foundational topics and concepts of collaborating, contributing, and working on GitHub. This exam covers collaboration, GitHub products, Git basics, and working within GitHub repositories.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1.0  Introduction to Git and GitHub&lt;/td&gt;
+&lt;td&gt;61%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2.0  Working with GitHub Repositories&lt;/td&gt;
+&lt;td&gt;80%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3.0  Collaboration Features&lt;/td&gt;
+&lt;td&gt;77%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4.0  Modern Development&lt;/td&gt;
+&lt;td&gt;87%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5.0  Project Management&lt;/td&gt;
+&lt;td&gt;100%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6.0  Privacy, Security, and Administration&lt;/td&gt;
+&lt;td&gt;33%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7.0  Benefits of the GitHub Community&lt;/td&gt;
+&lt;td&gt;100%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;I took this in a Pearson VUE testing center instead of an online proctored exam. Don't need to worry about the internet dropping out etc.&lt;/p&gt;
+&lt;p&gt;I Took about 30 minutes in total, you do have the option to review answers, which is beneficial, but I didn't want to second guess myself so just submitted.&lt;/p&gt;
+&lt;p&gt;There was a nice screen at the end, clearly coloured green and let me know I'd passed, with the above breakdown of %.&lt;/p&gt;
+&lt;p&gt;I've linked a discussion below which I agree with, there seemed to be some quite specific questions that were less foundation and probably better suite to the further exams. Having weights against each section would be good to know what things need more concentration.&lt;/p&gt;
+&lt;p&gt;I clearly don't know enough around &amp;quot;Privacy, Security, and Administration&amp;quot;, this was prob due to the extensive questions on GitHub Enterprise which I've not worked with at all so only had fleeting knowledge from the training material. But who knows, would be interesting to see my actual answers but that'll never happen.&lt;/p&gt;
+&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"&gt;GitHub Foundations&lt;/a&gt; Microsoft Learn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/FidelusAleksander/ghcertified"&gt;ghcertified&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ghcertified.com/"&gt;https://ghcertified.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Links&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://examregistration.github.com/"&gt;GitHub Certifications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href="https://github.blog/2024-01-08-github-certifications-are-generally-available/"&gt;GitHub Certifications are generally available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/orgs/community/discussions/87415"&gt;GitHub Certifications Feedback #87415&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="exam-overview"&gt;Exam overview&lt;/h2&gt;
+&lt;p&gt;Level: Foundational&lt;br /&gt;
+Length: 120 minutes&lt;br /&gt;
+Cost: $49.50 (50% + 50% - $200 down to 99 USD)&lt;/p&gt;
+&lt;p&gt;Format: Our current exams are: multiple-choice, have 60 scored items, and around 10-15 pretest items depending on the exam.&lt;br /&gt;
+Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
+&lt;h2 id="options"&gt;Options&lt;/h2&gt;
+&lt;p&gt;There are other certifications available, I'll probably start on the &lt;strong&gt;Actions&lt;/strong&gt; one next.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub Actions&lt;/li&gt;
+&lt;li&gt;GitHub Advanced Security&lt;/li&gt;
+&lt;li&gt;GitHub Administration&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Certifications</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/pc-updates</id>
+		<title>PC Updates</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/pc-updates" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2024-01-05T00:00:00Z</updated>
+		<content>&lt;!-- # PC Updates --&gt;
+&lt;p&gt;Having a friend build a PC for me a number of years ago I've tweaked a few parts myself since the initial setup.&lt;/p&gt;
+&lt;p&gt;I've been looking to do more &lt;a href="https://alexhedley.github.io/blog/3dprinter"&gt;3D Printing&lt;/a&gt; and there are two ways I can send the models to the machine. One is via a cable connected to the printer directly, or the other is through an SD card.&lt;/p&gt;
+&lt;p&gt;I found an old external SD reader but was having issues getting it to work so I've bought an internal reader instead.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/pc/AllInOne-CardReader.jpg" alt="All In One - Card Reader" title="All In One - Card Reader"&gt;&lt;/p&gt;
+&lt;p&gt;This was a really easy install, just pop the front of the remaining slot and then plug the device into a spare port.&lt;/p&gt;
+&lt;p&gt;The major oversight I had was this is much smaller than the fitting.&lt;/p&gt;
+&lt;p&gt;Back to the shops to by an adapter:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/pc/3.5-device-adapter.jpg" alt="3.5 Device Adapter" title="3.5 Device Adapter"&gt;&lt;/p&gt;
+&lt;p&gt;Hopefully this fits as expected, we shall see when it arrives.&lt;/p&gt;
+&lt;h2 id="products"&gt;Products&lt;/h2&gt;
+&lt;p&gt;DYNAMODE DYNA-USB-ALL-INT USB 2.0 6-Slot 3.5-Inch Internal All-in-One Card Reader - Black&lt;/p&gt;
+&lt;p&gt;£7.99&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/DYNAMODE-DYNA-USB-ALL-INT-6-Slot-3-5-Inch-Internal/dp/B000E9X7WU"&gt;https://www.amazon.co.uk/DYNAMODE-DYNA-USB-ALL-INT-6-Slot-3-5-Inch-Internal/dp/B000E9X7WU&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Akasa 3.5" Device/SSD/HDD Adapter | 5.25" to 3.5" Bay Adapter | 2.5/3.5 Inch Hard Drive Enclosure | SSD Mounting Bracket | for 5.25 inch PC Front Bay | AK-HDA-05&lt;/p&gt;
+&lt;p&gt;£10.50&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/gp/product/B005ZWGEU8/"&gt;https://www.amazon.co.uk/gp/product/B005ZWGEU8/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akasa.co.uk/update.php?tpl=product/product.detail.tpl&amp;amp;model=AK-HDA-05"&gt;https://akasa.co.uk/update.php?tpl=product/product.detail.tpl&amp;amp;model=AK-HDA-05&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Additions</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/2023-in-review</id>
 		<title>2023 In Review</title>
@@ -424,145 +555,5 @@
 &lt;!--?#/ Markdown ?--&gt;
 </content>
 		<summary>Inventr - Adventure Kit 1</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/flipo-kickstarter</id>
-		<title>Flipo - Kickstarter</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/flipo-kickstarter" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/electronics/flipo/FLIPO-MAIN-LOGO.svg" />
-		<updated>2023-12-23T00:00:00Z</updated>
-		<content>&lt;!-- # Flipo - Kickstarter --&gt;
-&lt;p&gt;I've been after a flip-disc setup for quite a while and now there's finally been one released at a reasonable price on Kickstarter - &lt;a href="https://www.kickstarter.com/projects/marcinsaj/flip-disc-displays-arduino-based"&gt;Flip-disc Displays - Arduino Based&lt;/a&gt; from &lt;a href="https://www.kickstarter.com/profile/marcinsaj"&gt;Marcin Saj&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/flipo/flipo-displays.jpg" alt="Flipo Displays" title="Flipo Displays"&gt;&lt;/p&gt;
-&lt;p&gt;There's a number of reward options in the campaign, I've gone for the FLIP-DISC CLOCK but I can see me getting others later, would be awesome to build a bigger display.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/flipo/flipdisc-clock.jpg" alt="Flip-Disc Clock" title="Flip-Disc Clock"&gt;&lt;/p&gt;
-&lt;p&gt;The timeline is looking good at Feb/Mar 2024 but it's becoming popular so that might delay things, but this will give me time to finish tinkering with all the other projects I haven't started yet!&lt;/p&gt;
-&lt;!--?# YouTube n9leTz-2cQg /?--&gt;
-&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/n9leTz-2cQg" title="Words - Flip-disc Clock 4 x 7-Segment Display" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
-&lt;h2 id="code"&gt;Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/marcinsaj/FlipDisc"&gt;https://github.com/marcinsaj/FlipDisc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/marcinsaj"&gt;https://github.com/marcinsaj&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://flipo.io/"&gt;https://flipo.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://nixietester.com/"&gt;https://nixietester.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.kickstarter.com/projects/marcinsaj/flip-disc-displays-arduino-based"&gt;https://www.kickstarter.com/projects/marcinsaj/flip-disc-displays-arduino-based&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/@MarcinSaj"&gt;https://www.youtube.com/@MarcinSaj&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>From Marcin Saj</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/meadow-project-lab</id>
-		<title>Meadow Project Lab</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/meadow-project-lab" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/electronics/wl/wilderness-labs-banner.jpg" />
-		<updated>2023-12-23T00:00:00Z</updated>
-		<content>&lt;!-- # Meadow Project Lab --&gt;
-&lt;p&gt;Meadow Project Lab v3 - .NET IoT prototyping platform by Wilderness Labs&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/electronics/wl/Project_Lab_v3_Carbon_Edition.jpg" alt="Project Lab v3" title="Project Lab v3"&gt;&lt;/p&gt;
-&lt;p&gt;Having helped in &lt;a href="https://alexhedley.github.io/blog/hacktoberfest-2023.md"&gt;Hacktoberfest 2023&lt;/a&gt; and then having watched a Twitch stream I finally purchased a board late in November so it's taken about a month to arrive. I'm thinking of using it for a POC for my &lt;a href="https://alexhedley.github.io/blog/tags/poker"&gt;poker&lt;/a&gt; setup, so I can use the screen and draw on the chip numbers via some .NET code, and inform the game about the current bets. We'll see how that goes, plus I can play about with all the other options available.&lt;/p&gt;
-&lt;h2 id="product"&gt;Product&lt;/h2&gt;
-&lt;p&gt;Project Lab v3 - RRP £200.00&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://store.wildernesslabs.co/collections/iot-kits/products/project-lab-board"&gt;https://store.wildernesslabs.co/collections/iot-kits/products/project-lab-board&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;details&gt;
-&lt;summary&gt;About&lt;/summary&gt;
-Cut your time to production in half. Project Lab is created by Wilderness Labs, runs entirely on .NET, and makes hardware less hard to create. With Project Lab, every software developer is an IoT developer. Design your hardware using Project Lab's open-source design. Connect to Thousands of Plug &amp;amp; Play Peripherals Project Lab includes two microBUS and three Grove/Qwiic/StemmaQT Connectors. No breadboard, no complicated wiring, and no tedious soldering. Enjoy rapid prototyping and exploring thousands of plug &amp;amp; play peripherals. Two mikroBUS connectors unlock thousands of official MikroElektronika click boards and tons of 3rd party boards that are mikroBUS compatible. Three Grove/Qwiic/StemmaQT connectors provide access to a massive ecosystem of pluggable peripherals from SeeedStudio, Adafruit, and SparkFun. Accelerometer and Gyroscope Project Lab includes the small, lower power, and optimized for wearables, BMI270 Inertial Measurement Unit (IMU). The 6-axis sensor combines a 16-bit tri-axial gyroscope and a 16-bit tri-axial accelerometer featuring Bosch’s automotive-proven gyroscope technology. While you may not want to wear Project Lab, the lab is perfect to start your wearable design. Environmental sensing with Artificial Intelligence The BME688 is the first gas sensor with Artificial Intelligence (AI) and integrated high-linearity and high-accuracy pressure, humidity, and temperature sensors. Use Project Lab to start building your mobile &amp;amp; connected applications where size, low power consumption, and environmental awareness are critical requirements. The Standard for Light Sensors The Rohm BH1760 Digital Ambient Light sensor is the go-to for engineers. It's low power, used in a wide variety of applications, and it can accurately measure from 1 to 65535 lux. TFT LCD with 65k colors The ILI9341 is a 2.8” 320x240 IPS full view TFT LCD with 65k colors. Project Lab's onboard ILI9341 allows you to directly display information from your peripherals or create a complete navigation system using the directional push buttons. RS-485, I/O, and Power Terminals Through easy-to-use screw terminals, Project Lab enables RS-485 communication directly with industrial sensors, a 5v and 3v3 power connection with the ground, and additional digital and analog I/O. Onboard Audio Project Lab includes an onboard CMT-7525-80-SMT Magnetic Buzzer Transducer when you need more than visuals. Meadow F7v2 Core Compute Module is now onboard For Project Lab v3 we included the Meadow F7 Core Compute Module right on board to get your projects/ideas even closer to production. Explore thousands of plug-and-play peripherals and build endless solutions with Project Lab. Designs, documents, and other resources can be found on GitHub.
-&lt;/details&gt;
-&lt;table&gt;
-    &lt;tbody&gt;&lt;tr&gt;
-        &lt;th&gt;Onboard Peripherals&lt;/th&gt;
-        &lt;th&gt;Connectivity&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;&lt;strong&gt;ILI9341&lt;/strong&gt; - SPI 320x240 color display&lt;/td&gt;
-        &lt;td&gt;&lt;strong&gt;MikroBUS&lt;/strong&gt; - Two sets of MikroBUS pin headers&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;&lt;strong&gt;BMI270&lt;/strong&gt; - I2C motion and acceleration sensor&lt;/td&gt;
-        &lt;td&gt;&lt;strong&gt;Qwiic&lt;/strong&gt; - Stemma QT I2C connector&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;&lt;strong&gt;BH1750&lt;/strong&gt; - I2C light sensor&lt;/td&gt;
-        &lt;td&gt;&lt;strong&gt;Grove&lt;/strong&gt; - Analog header&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;&lt;strong&gt;BME688&lt;/strong&gt; - I2C atmospheric sensor&lt;/td&gt;
-        &lt;td&gt;&lt;strong&gt;Grove&lt;/strong&gt; - GPIO/serial header&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;&lt;strong&gt;Push Button&lt;/strong&gt; - 4 momentary buttons&lt;/td&gt;
-        &lt;td&gt;&lt;strong&gt;RS-485&lt;/strong&gt; - Serial&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;&lt;strong&gt;Magnetic Audio Transducer&lt;/strong&gt; - High quality piezo speaker&lt;/td&gt;
-        &lt;td&gt;&lt;strong&gt;Ports&lt;/strong&gt; - 3.3V, 5V, ground, one analog and two GPIO ports&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id="price"&gt;Price&lt;/h3&gt;
-&lt;p&gt;Be careful about import fees as it comes from the US.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Project Lab v3&lt;/td&gt;
-&lt;td&gt;£202.00&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Discount&lt;/td&gt;
-&lt;td&gt;-£40.27&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Shipping&lt;/td&gt;
-&lt;td&gt;£16.00&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Import fees&lt;/td&gt;
-&lt;td&gt;£49.48&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;£227.21&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="docs"&gt;Docs&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://developer.wildernesslabs.co/Meadow/Getting_Started/"&gt;https://developer.wildernesslabs.co/Meadow/Getting_Started/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Meadow.ProjectLab"&gt;https://github.com/WildernessLabs/Meadow.ProjectLab&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Meadow.ProjectLab.Samples"&gt;https://github.com/WildernessLabs/Meadow.ProjectLab.Samples&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/wildernesslabs"&gt;https://github.com/wildernesslabs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.wildernesslabs.co/"&gt;https://www.wildernesslabs.co/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://store.wildernesslabs.co/collections/iot-kits/products/project-lab-board"&gt;https://store.wildernesslabs.co/collections/iot-kits/products/project-lab-board&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://developer.wildernesslabs.co/Meadow/Getting_Started/"&gt;https://developer.wildernesslabs.co/Meadow/Getting_Started/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Meadow.ProjectLab"&gt;https://github.com/WildernessLabs/Meadow.ProjectLab&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/WildernessLabs/Meadow.ProjectLab.Samples"&gt;https://github.com/WildernessLabs/Meadow.ProjectLab.Samples&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/wildernesslabs"&gt;https://github.com/wildernesslabs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/WildernessLabs"&gt;https://www.youtube.com/WildernessLabs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.twitch.tv/wildernesslabs"&gt;https://www.twitch.tv/wildernesslabs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>from Wilderness Labs</summary>
 	</entry>
 </feed>
