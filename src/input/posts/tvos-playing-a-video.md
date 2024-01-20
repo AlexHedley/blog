@@ -3,6 +3,7 @@ title: tvOS Playing a Video
 tags:
     - tvOS
     - AVPlayer
+    - 599cd
 author: AlexHedley
 # description: 
 published: 2015-09-12

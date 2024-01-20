@@ -23,7 +23,7 @@ I've been watching a few people for the last year including:
 
 I decided it might be good to start streaming some stuff I work on.
 
-I used to record [videos](https://www.youtube.com/user/599CDTechHelp) for [599CD](http://www.599cd.com/) a fews years back when I had more time on my hands but planning them out. Running through the content then recording and sometimes editing. This could take a while. I was always hoping to do it more often so I'd get better at it and it would take less time with more practice.
+I used to record [videos](https://www.youtube.com/user/599CDTechHelp) for [599CD](http://www.599cd.com/) a few years back when I had more time on my hands but planning them out. Running through the content then recording and sometimes editing. This could take a while. I was always hoping to do it more often so I'd get better at it and it would take less time with more practice.
 
 Setting up the office properly I started putting a list together of equipment I'd need and the purchasing began.
 

@@ -1,7 +1,7 @@
 ---
 title: 599CD Tips
-# tags:
-#     - 
+tags:
+    - 599cd
 author: AlexHedley
 # description: 
 published: 2013-06-30
