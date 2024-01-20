@@ -15,9 +15,9 @@ imageattribution: https://resources.github.com/learn/certifications/
 
 Today I passed the **GitHub Foundations** exam 🎉!
 
-<!-- ![GitHub Foundations](images/gh/foundations.png "GitHub Foundations") -->
+![GitHub Foundations](images/gh/github-foundations.png "GitHub Foundations")
 
-<!-- - [Credly Badge](https://www.credly.com/badges/###) -->
+- [Credly Badge](https://www.credly.com/badges/787ea844-a7c7-4d7e-9441-417708998449)
   - [Credly Profile](https://www.credly.com/users/alexhedley/badges)
 
 The pass mark is ~70% and I achieved: **45/60** (75%).
