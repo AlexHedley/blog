@@ -4,9 +4,82 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2024</rights>
-	<updated>2024-01-20T12:15:23Z</updated>
+	<updated>2024-03-11T19:34:24Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day14</id>
+		<title>Day 14 - 30 Days Lost in Space</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day14" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" />
+		<updated>2024-03-11T00:00:00Z</updated>
+		<content>&lt;!-- # Day 14 - 30 Days Lost in Space - Inventr --&gt;
+&lt;h2 id="lesson-14"&gt;🏫 Lesson 14&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Day 14: Advanced security panel&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.inventr.io/lessons/day-14/"&gt;Original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.inventr.io/lessons/day-14-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Today was an amalgamation of &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt; and &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt; so we can combine &lt;em&gt;sound&lt;/em&gt;, &lt;em&gt;light&lt;/em&gt; and the &lt;em&gt;keypad&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;PWM ~ is key on the board.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day14.jpg" alt="&amp;quot;Day 14&amp;quot;" title="Day 14"&gt;&lt;/p&gt;
+&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero Board&lt;/li&gt;
+&lt;li&gt;Type B USB Cable&lt;/li&gt;
+&lt;li&gt;Breadboard&lt;/li&gt;
+&lt;li&gt;16 cables (M-M)&lt;/li&gt;
+&lt;li&gt;Keypad&lt;/li&gt;
+&lt;li&gt;Passive Buzzer&lt;/li&gt;
+&lt;li&gt;3 220 Ω (Ohm) resistor&lt;/li&gt;
+&lt;li&gt;3 colour LED or RGB LED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day14-Advanced_Security_Panel"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day14-Advanced_Security_Panel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="libraries"&gt;Libraries&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Chris--A/Keypad"&gt;https://github.com/Chris--A/Keypad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.arduinolibraries.info/libraries/keypad"&gt;https://www.arduinolibraries.info/libraries/keypad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
+&lt;p&gt;N/A&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other-lessons"&gt;Other Lessons&lt;/h2&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day14"&gt;Day 14&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+</content>
+		<summary>Inventr - Adventure Kit 1</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/github-certifications-foundations</id>
 		<title>GitHub Foundations</title>
@@ -286,6 +359,7 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day14"&gt;Day 14&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 </content>
@@ -381,10 +455,39 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day14"&gt;Day 14&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--?#/ Markdown ?--&gt;
 </content>
 		<summary>Inventr - Adventure Kit 1</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/github-worth</id>
+		<title>GitHub Worth</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/github-worth" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/github_worth_1500x500.jpeg" />
+		<updated>2023-12-26T00:00:00Z</updated>
+		<content>&lt;!-- # GitHub Worth --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Estimate Github Worth Generator&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github-worth.vercel.app/"&gt;https://github-worth.vercel.app/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-worth-alexhedley.jpg" alt="Alex Hedley" title="Alex Hedley"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-worth-alex-hedley.jpg" alt="Alex-Hedley" title="Alex-Hedley"&gt;&lt;/p&gt;
+&lt;p&gt;From &lt;a href="https://twitter.com/shyam_tawli"&gt;@shyam_tawli&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github-worth.vercel.app/"&gt;https://github-worth.vercel.app/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/shyam_tawli"&gt;https://twitter.com/shyam_tawli&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/shyamtawli"&gt;https://github.com/shyamtawli&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Estimate Github Worth Generator.</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/custom-funkopop</id>
@@ -424,34 +527,6 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 		<summary>Create your own custom Funko Pop using AI.</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/github-worth</id>
-		<title>GitHub Worth</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/github-worth" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/github_worth_1500x500.jpeg" />
-		<updated>2023-12-26T00:00:00Z</updated>
-		<content>&lt;!-- # GitHub Worth --&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Estimate Github Worth Generator&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github-worth.vercel.app/"&gt;https://github-worth.vercel.app/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-worth-alexhedley.jpg" alt="Alex Hedley" title="Alex Hedley"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-worth-alex-hedley.jpg" alt="Alex-Hedley" title="Alex-Hedley"&gt;&lt;/p&gt;
-&lt;p&gt;From &lt;a href="https://twitter.com/shyam_tawli"&gt;@shyam_tawli&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github-worth.vercel.app/"&gt;https://github-worth.vercel.app/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://twitter.com/shyam_tawli"&gt;https://twitter.com/shyam_tawli&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/shyamtawli"&gt;https://github.com/shyamtawli&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Estimate Github Worth Generator.</summary>
-	</entry>
-	<entry>
 		<id>https://alexhedley.github.io/blog/posts/saxophone-presents</id>
 		<title>🎷 Saxophone - Presents</title>
 		<author>
@@ -474,89 +549,5 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>More stuff for my saxophone.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day11</id>
-		<title>Day 11 - 30 Days Lost in Space</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day11" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" />
-		<updated>2023-12-23T00:00:00Z</updated>
-		<content>&lt;!-- # Day 11 - 30 Days Lost in Space - Inventr --&gt;
-&lt;h2 id="lesson-11"&gt;🏫 Lesson 11&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Day 11: Starting your control panel&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-11/"&gt;Original&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-11-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Today I got to use a new device, the keypad, which meant a new library was needed &lt;a href="https://github.com/Chris--A/Keypad"&gt;Keypad&lt;/a&gt; from &lt;a href="https://github.com/Chris--A/"&gt;Chris--A&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day11.jpg" alt="&amp;quot;Day 11&amp;quot;" title="Day 11"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/keypad.png" alt="Keypad" title="Keypad"&gt;&lt;/p&gt;
-&lt;p&gt;Clicking each button from S1 to S16 outputs the following to the Serial Monitor.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;17:49:58.714 -&amp;gt; 3
-17:49:59.197 -&amp;gt; A
-17:50:00.024 -&amp;gt; 4
-17:50:00.539 -&amp;gt; 5
-17:50:01.087 -&amp;gt; 6
-17:50:02.942 -&amp;gt; B
-17:50:03.881 -&amp;gt; 7
-17:50:04.424 -&amp;gt; 8
-17:50:04.842 -&amp;gt; 9
-17:50:05.264 -&amp;gt; C
-17:50:05.860 -&amp;gt; *
-17:50:06.424 -&amp;gt; 0
-17:50:06.878 -&amp;gt; #
-17:50:07.458 -&amp;gt; D
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Hero Board&lt;/li&gt;
-&lt;li&gt;Type B USB Cable&lt;/li&gt;
-&lt;li&gt;8 cables (M-F)&lt;/li&gt;
-&lt;li&gt;Keypad&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day11-Starting_Your_Control_Panel"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day11-Starting_Your_Control_Panel&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="libraries"&gt;Libraries&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Chris--A/Keypad"&gt;https://github.com/Chris--A/Keypad&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.arduinolibraries.info/libraries/keypad"&gt;https://www.arduinolibraries.info/libraries/keypad&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="other-lessons"&gt;Other Lessons&lt;/h2&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-</content>
-		<summary>Inventr - Adventure Kit 1</summary>
 	</entry>
 </feed>
