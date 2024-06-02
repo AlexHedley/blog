@@ -54,8 +54,7 @@ Trying out the different options.
 
 ## 👩🏻‍💻 Code
 
-- https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us
-- https://github.com/robsoncouto/arduino-songs
+- https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day13-HERO_Security_101
 
 ### Libraries
 
