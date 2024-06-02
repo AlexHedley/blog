@@ -3,7 +3,7 @@ name: 🚀 Deploy to GitHub Pages
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [main]
     paths: src/**
 #  pull_request:
 #    branches: [ main ]
@@ -18,22 +18,22 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
-#     defaults:
-#       run:
-#         working-directory: src
-    
+
+    #     defaults:
+    #       run:
+    #         working-directory: src
+
     steps:
       - name: 🚚 Checkout
         uses: actions/checkout@v4
         with:
           submodules: true
-      
-      - name: Setup .NET 8.0
+
+      - name: ⚙ Setup .NET 8.0
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
-#           include-prerelease: true
+          dotnet-version: "8.0.x"
+      #     include-prerelease: true
 
       - name: ⬇️ Restore dependencies
         working-directory: ./src
@@ -42,7 +42,7 @@ jobs:
       - name: 🔨 Build
         working-directory: ./src
         run: dotnet build --no-restore
-      
+
       - name: 📦 Run
         working-directory: ./src
         run: dotnet run
