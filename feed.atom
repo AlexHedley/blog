@@ -4,9 +4,67 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2024</rights>
-	<updated>2024-03-11T19:34:24Z</updated>
+	<updated>2024-06-02T20:14:35Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/poker-hud</id>
+		<title>Poker - HUD</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/poker-hud" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2024-06-02T00:00:00Z</updated>
+		<content>&lt;!-- # Poker - HUD --&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Poker - Recording Games&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-docs"&gt;Poker - Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-hud"&gt;Poker - Hud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Markdown ?--&gt;
+&lt;p&gt;I'm back to working on the &lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker Web App&lt;/a&gt;, as you saw from the original post the UI is lacking somewhat.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/testing-table.png" alt="Web App table" title="Web App table"&gt;&lt;/p&gt;
+&lt;p&gt;I've taken some inspiration from live shows and started working on implementing the styles in the app. I've found a number of variations I can work through, so here's the first attempt.&lt;/p&gt;
+&lt;p&gt;This led me to creating a shared &lt;code&gt;Microsoft.NET.Sdk.Razor&lt;/code&gt; project called &lt;strong&gt;Poker.Components&lt;/strong&gt;. (I should have done this with the original &lt;a href="https://alexhedley.github.io/poker-recording/components"&gt;components&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;I've made a start on the first &lt;strong&gt;Board&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Board.png" alt="Board" title="Board"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Board_1.png" alt="Board" title="Board"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Players&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Player1.png" alt="Player 1" title="Player 1"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Player2.png" alt="Player 2" title="Player 2"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Players_1.png" alt="Player 1" title="Players"&gt;&lt;/p&gt;
+&lt;p&gt;And &lt;strong&gt;Pot&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Pot.png" alt="Pot" title="Pot"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Pot_1.png" alt="Pot" title="Pot"&gt;&lt;/p&gt;
+&lt;!--?# Info ?--&gt;
+&lt;p&gt;Thanks for the card images &lt;a href="https://github.com/danielpaz6"&gt;@danielpaz6&lt;/a&gt; in &lt;a href="https://github.com/danielpaz6/Poker-Hand-Evaluator"&gt;Texas holdem Rank Card Evaluator&lt;/a&gt;&lt;/p&gt;
+&lt;!--?#/ Info ?--&gt;
+&lt;p&gt;With this shared Library it means I can try it out in both my &lt;em&gt;Blazor WASM&lt;/em&gt; app (that I have deployed on GitHub Pages), and my &lt;em&gt;Blazor Server&lt;/em&gt; app which I'll be using as the main app.&lt;/p&gt;
+&lt;p&gt;See the current progress at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.com/poker-recording/hud"&gt;https://alexhedley.com/poker-recording/hud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One very helpful tool I used to layout the &lt;em&gt;Players&lt;/em&gt; was &lt;a href="https://grid.layoutit.com/"&gt;Layoutit!&lt;/a&gt;, which is a &lt;em&gt;CSS Grid Generator&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I copied the initial output to &lt;a href="https://codepen.io/"&gt;codepen&lt;/a&gt; before moving to my Blazor app.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://codepen.io/AlexHedley/pen/KKLWXpO"&gt;https://codepen.io/AlexHedley/pen/KKLWXpO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Track it via&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Issue (40): &lt;a href="https://github.com/AlexHedley/poker-recording/issues/40"&gt;https://github.com/AlexHedley/poker-recording/issues/40&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MR (39): &lt;a href="https://github.com/AlexHedley/poker-recording/pull/39"&gt;https://github.com/AlexHedley/poker-recording/pull/39&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Designing a HUD for the Stats</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day14</id>
 		<title>Day 14 - 30 Days Lost in Space</title>
@@ -245,39 +303,6 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 		<summary>A Year in review</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/github-contributions-2023</id>
-		<title>GitHub Contributions Chart Generator</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/github-contributions-2023" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/topguntocat.png" />
-		<updated>2024-01-01T00:00:00Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;All your contributions in one image!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github-contributions.vercel.app/"&gt;GitHub Contributions Chart Generator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alexhedley-2023.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
-&lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alex-hedley-2023.png" alt="alex-hedley" title="Contributions alex-hedley"&gt;&lt;/p&gt;
-&lt;h2 id="skyline"&gt;Skyline&lt;/h2&gt;
-&lt;p&gt;Linked with &lt;a href="https://skyline.github.com/"&gt;skyline&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/skyline"&gt;Backups&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="section"&gt;2023&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://skyline.github.com/alexhedley/2023"&gt;alexhedley&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://skyline.github.com/alex-hedley/2023"&gt;alex-hedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</summary>
-	</entry>
-	<entry>
 		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day13</id>
 		<title>Day 13 - 30 Days Lost in Space</title>
 		<author>
@@ -326,8 +351,7 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/robsoncouto/arduino-songs"&gt;https://github.com/robsoncouto/arduino-songs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day13-HERO_Security_101"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day13-HERO_Security_101&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="libraries"&gt;Libraries&lt;/h3&gt;
 &lt;ul&gt;
@@ -364,6 +388,39 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;!--?#/ Markdown ?--&gt;
 </content>
 		<summary>Inventr - Adventure Kit 1</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/github-contributions-2023</id>
+		<title>GitHub Contributions Chart Generator</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/github-contributions-2023" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/topguntocat.png" />
+		<updated>2024-01-01T00:00:00Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;All your contributions in one image!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github-contributions.vercel.app/"&gt;GitHub Contributions Chart Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alexhedley-2023.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
+&lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alex-hedley-2023.png" alt="alex-hedley" title="Contributions alex-hedley"&gt;&lt;/p&gt;
+&lt;h2 id="skyline"&gt;Skyline&lt;/h2&gt;
+&lt;p&gt;Linked with &lt;a href="https://skyline.github.com/"&gt;skyline&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/skyline"&gt;Backups&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="section"&gt;2023&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://skyline.github.com/alexhedley/2023"&gt;alexhedley&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://skyline.github.com/alex-hedley/2023"&gt;alex-hedley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day12</id>
@@ -525,29 +582,5 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>Create your own custom Funko Pop using AI.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/saxophone-presents</id>
-		<title>🎷 Saxophone - Presents</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/saxophone-presents" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-12-25T00:00:00Z</updated>
-		<content>&lt;!-- 🎷 Saxophone - Presents --&gt;
-&lt;p&gt;Some fantastic saxophone related presents for Christmas, can't wait to learn "Concerning Hobbits and all the others". 🎷&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The Lord of the Rings Instrumental Solos: Alto Sax (book and CD): Howard Shore&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/Saxophone_LotR_Instrumental.jpg" alt="The Lord of the Rings Instrumental Solos: Alto Sax (book and CD): Howard Shore" title="The Lord of the Rings Instrumental Solos: Alto Sax (book and CD): Howard Shore"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;HW Alto Sax Pad-Saver Set&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/alto-sax-padsaver-set.png" alt="HW Alto Sax Pad-Saver Set" title="HW Alto Sax Pad-Saver Set"&gt;&lt;/p&gt;
-&lt;p&gt;This set includes savers for the mouthpiece, neck, body, and bell.&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/dp/0757916597"&gt;https://www.amazon.co.uk/dp/0757916597&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://sax.co.uk/collections/sax-care-products/products/complete-alto-sax-padsaver-set"&gt;https://sax.co.uk/collections/sax-care-products/products/complete-alto-sax-padsaver-set&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>More stuff for my saxophone.</summary>
 	</entry>
 </feed>
