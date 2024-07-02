@@ -6,7 +6,7 @@ tags:
   - ui
   - blazor
   - blazor wasm
-  - .net
+  - dotnet
   - csharp
 author: alexhedley
 description: Designing a HUD for the Stats
@@ -49,7 +49,9 @@ And **Pot**:
 ![Pot](images/poker/hud/Pot_1.png "Pot")
 
 <?# Info ?>
+
 Thanks for the card images [@danielpaz6](https://github.com/danielpaz6) in [Texas holdem Rank Card Evaluator](https://github.com/danielpaz6/Poker-Hand-Evaluator)
+
 <?#/ Info ?>
 
 With this shared Library it means I can try it out in both my _Blazor WASM_ app (that I have deployed on GitHub Pages), and my _Blazor Server_ app which I'll be using as the main app.
