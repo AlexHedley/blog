@@ -3,7 +3,7 @@ title: Poker - App
 # lead:
 tags:
   - poker
-  - .net
+  - dotnet
   - csharp
 author: alexhedley
 description: A visual representation of the current on-goings.
