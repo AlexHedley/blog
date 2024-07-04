@@ -1,8 +1,10 @@
 ---
 title: AWS Cloud Quest
+# lead:
 tags:
   - aws
   - cloud quest
+  - programming
 author: alex-hedley
 description: A summary of the whole course.
 published: 2023-07-11

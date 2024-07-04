@@ -1,10 +1,14 @@
 ---
 title: Navigation Bar / Tab Bar / Status Bar Colours
+# lead:
 tags:
-    - iOS
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2014-10-03
+# image:
+# imageattribution:
 ---
 
 http://www.appcoda.com/customize-navigation-status-bar-ios-7/
@@ -22,7 +26,7 @@ View controller-based status bar appearance: NO
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch. [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]]; //[[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
-  [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}]; 
+  [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
   [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
   [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; return YES;
 }

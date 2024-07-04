@@ -1,5 +1,6 @@
 ---
 title: Scott Logic - An Evening Of Tech Talks - Nov 2017
+# lead:
 tags:
   - scottlogic
   - newcastle

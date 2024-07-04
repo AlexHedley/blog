@@ -1,20 +1,25 @@
 ---
 title: Using iTMSTransporter to upload Game Centre Achievements
+# lead:
 tags:
-    - iOS
-    - iTMSTransporter
+  - iOS
+  - iTMSTransporter
+  - swift
+  - xml
 author: AlexHedley
-# description: 
+# description:
 published: 2016-04-09
+# image:
+# imageattribution:
 ---
 
 I'm currently creating a game [Movem](https://alexhedley.wordpress.com/category/movem/), and I wanted to add some [Game Center](https://developer.apple.com/game-center/) achievements. I'd done this before in another app I'm making for [Kernowland Quizzes](http://www.jacktrelawny.com/keyquizzes.html) (still in development). There are only a couple of achievements there so wasn't much hassle to create them manually but here I want 1 for each of the 50 levels. This would be a big pain to do.
 
 \[gallery ids="525,524,526" type="rectangular"\]
 
-![](images/add-achievement.png "")
-![](images/add-language.png "")
-![](images/features-game-center-group-achievements.png "")
+![](images/add-achievement.png)
+![](images/add-language.png)
+![](images/features-game-center-group-achievements.png)
 
 So I turned to twitter and asked [@KrauseFx](https://twitter.com/krausefx) as I thought he might know.
 
@@ -68,6 +73,8 @@ Now I just needed to replace the number with \\(i) in all the places necessary a
 
 [gist 06bab62bee6402d97f3eb3c5cf6db9d4/]
 
+<?# Gist 06bab62bee6402d97f3eb3c5cf6db9d4 /?>
+
 `GameCenterAchievements.swift`
 
 ```swift
@@ -117,7 +124,7 @@ I'd originally tried the "lookupMetadata" without the -subitemtype flag but got
 
 > <main> DBG-X: The error code is: 1102
 
-* * *
+---
 
 Learn more about Game Center in Chapters 25 and 26 of [2D iOS & tvOS Games by Tutorials](https://www.raywenderlich.com/store/2d-ios-tvos-games-by-tutorials) from Ray Wenderlich.
 

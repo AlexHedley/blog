@@ -1,5 +1,6 @@
 ---
 title: Badger 2040 W from Pimoroni
+# lead:
 tags:
   - electronics
   - pimoroni

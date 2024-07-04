@@ -1,12 +1,17 @@
 ---
 title: Markdown to PDF via GitHub Actions and Pandoc
+# lead:
 tags:
-    - programming
-    - github
-    - pandoc
+  - programming
+  - markdown
+  - github
+  - github actions
+  - pandoc
 author: AlexHedley
-# description: 
+# description:
 published: 2021-02-20
+# image:
+# imageattribution:
 ---
 
 In this post I'll run through converting a `md` file to a PDF using [Pandoc](https://pandoc.org) and [GitHub Actions](https://github.com/actions/).
@@ -71,7 +76,7 @@ jobs:
         with:
           name: output
           path: output
-      
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -84,7 +89,7 @@ jobs:
           prerelease: false
 
       - name: Upload Release Asset
-        id: upload-release-asset 
+        id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${ secrets.GITHUB_TOKEN }
@@ -102,10 +107,10 @@ Note: There is a problem with the `set-env` [Issue](https://github.com/pandoc/pa
 One workaround is:
 
 ```yml
-      - run: |
-          echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+- run: |
+    echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
+  env:
+    ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
 ```
 
 ## HTML
@@ -125,21 +130,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Create output directory
         run: |
           mkdir output  # create output dir
           echo "FILELIST=book.md" >> $GITHUB_ENV
-      
+
       - name: Pandoc
         uses: docker://pandoc/latex:2.9
         with:
           args: --output=output/index.html ${{ env.FILELIST }} -s
-      
+
       # copy the images from the repo to the output folder for inclusion in the artifact
       - name: Copy images dir to output dir
         run: cp -r images/ output/
-      
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -147,7 +152,7 @@ jobs:
           path: output
 ```
 
-Another option would be to add an extra arg ([`--extract-media`](https://pandoc.org/MANUAL.html#option--extract-media))  which takes a DIRECTORY: `--extract-media=DIR`, just set the folder to **images**: `--extract-media=images` and you will get the necessary files.
+Another option would be to add an extra arg ([`--extract-media`](https://pandoc.org/MANUAL.html#option--extract-media)) which takes a DIRECTORY: `--extract-media=DIR`, just set the folder to **images**: `--extract-media=images` and you will get the necessary files.
 
 The file names do become random strings.
 

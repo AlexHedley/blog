@@ -1,12 +1,16 @@
 ---
 title: Jam Jar Cinema Wallet Passes
+# lead:
 tags:
-    - iOS
-    - PassKit
-    - wallet
+  - iOS
+  - PassKit
+  - wallet
+  - macOS
 author: AlexHedley
-# description: 
+# description:
 published: 2017-05-20
+# image:
+# imageattribution:
 ---
 
 My local cinema is Awesome!
@@ -35,25 +39,25 @@ It uses the iTunes Artwork Finder from Ben Dodson.
 
 [gallery ids="1003,1004,1005,1006,1007,1008,1009,1010" type="rectangular"]
 
-![](images/jjc-passes-1.png "")
-![](images/jjc-passes-2.png "")
-![](images/jjc-passes-3.png "")
-![](images/jjc-passes-4.png "")
-![](images/jjc-passes-5.png "")
-![](images/jjc-passes-6.png "")
-![](images/jjc-passes-7.png "")
-![](images/jjc-passes-8.png "")
+![](images/jjc-passes-1.png)
+![](images/jjc-passes-2.png)
+![](images/jjc-passes-3.png)
+![](images/jjc-passes-4.png)
+![](images/jjc-passes-5.png)
+![](images/jjc-passes-6.png)
+![](images/jjc-passes-7.png)
+![](images/jjc-passes-8.png)
 
 Wallet
 
-![](images/img_4042.png "")
-![](images/img_4043.png "")
-![](images/img_4044.png "")
+![](images/img_4042.png)
+![](images/img_4043.png)
+![](images/img_4044.png)
 
 - [https://developer.apple.com/wallet/](https://developer.apple.com/wallet/)
 - [https://developer.apple.com/reference/passkit](https://developer.apple.com/reference/passkit)
 
-* * *
+---
 
 The PassSlot API is available on 'mashape'
 
@@ -67,7 +71,7 @@ https://market.mashape.com/passslot/passbook
 
 There is a button for open in Paw. I can't get it to work at the moment.
 
-* * *
+---
 
 I'd started making a Mac app to create Wallet Passes.
 

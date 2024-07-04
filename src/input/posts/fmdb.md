@@ -1,11 +1,17 @@
 ---
 title: FMDB
+# lead:
 tags:
-    - iOS
-    - fmdb
+  - iOS
+  - fmdb
+  - database
+  - db
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-15
+# image:
+# imageattribution:
 ---
 
 Useful ways to get data out of FMDB.

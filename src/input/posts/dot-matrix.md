@@ -1,13 +1,16 @@
 ---
 title: Dot Matrix
+# lead:
 tags:
   - iot
   - electronics
+  - ESP8266
+  - arduino
 author: alexhedley
-description: 
+# description:
 published: 2021-03-28
-# image: 
-# imageattribution: 
+# image:
+# imageattribution:
 ---
 
 <!-- # Dot Matrix -->

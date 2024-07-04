@@ -1,10 +1,13 @@
 ---
 title: API Clients - Chaining Requests
+# lead:
 tags:
-    - api
+  - api
 author: AlexHedley
-# description: 
+# description:
 published: 2017-03-20
+# image:
+# imageattribution:
 ---
 
 _POSTMAN_
@@ -23,7 +26,7 @@ Add
 
 `{{token}}`
 
-* * *
+---
 
 _PAW_
 
@@ -31,4 +34,4 @@ _PAW_
 
 https://paw.cloud/docs/environments/environments-from-responses
 
-In the response view, right-click on the field you're interested in and pick _Copy as Response Body Dynamic Value_
+In the response view, right-click on the field you're interested in and pick *Copy as Response Body Dynamic Value*

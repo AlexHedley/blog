@@ -1,11 +1,14 @@
 ---
 title: CloudKit
+# lead:
 tags:
-    - iOS
-    - CloudKit
+  - iOS
+  - CloudKit
 author: AlexHedley
-# description: 
+# description:
 published: 2016-01-04
+# image:
+# imageattribution:
 ---
 
 I've been looking into CloudKit today and it looks really good.

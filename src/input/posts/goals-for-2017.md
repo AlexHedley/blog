@@ -1,10 +1,13 @@
 ---
 title: Goals for 2017
-# tags:
-#     - 
+# lead:
+tags:
+  - goals
 author: AlexHedley
-# description: 
+# description:
 published: 2017-01-02
+# image:
+# imageattribution:
 ---
 
 - 599CD (iOS)

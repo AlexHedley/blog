@@ -1,12 +1,15 @@
 ---
 title: iOS Snap Game - Ray Wenderlich
+# lead:
 tags:
-    - iOS
-    - game
-    - snap
+  - iOS
+  - game
+  - snap
 author: AlexHedley
-# description: 
+# description:
 published: 2012-06-30
+# image:
+# imageattribution:
 ---
 
 The Snap game from [RayWenderlich.com](http://www.RayWenderlich.com) and Matthijs Hollemans is finally out and it's amazing.
@@ -19,7 +22,7 @@ The cool thing about this is they have added a challenge for whoever completes i
 
 Just completed tut 2, all was working ok, hopefully :p, can't wait until next friday.
 
-* * *
+---
 
 _Intro_ [http://www.raywenderlich.com/14618/how-to-make-a-simple-playing-card-game-with-multiplayer-and-bluetooth-intro-and-challenge](http://www.raywenderlich.com/14618/how-to-make-a-simple-playing-card-game-with-multiplayer-and-bluetooth-intro-and-challenge)
 

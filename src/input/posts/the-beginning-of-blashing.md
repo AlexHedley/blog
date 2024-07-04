@@ -1,7 +1,10 @@
 ---
 title: The Beginning of Blashing
+# lead:
 tags:
-    - dashboard
+  - dashboard
+  - dotnet
+  - csharp
 author: alexhedley
 description: Build a beautiful dashboard
 published: 2023-06-23
@@ -21,7 +24,7 @@ I know, clever! I don't know how I come up with such great names.
 
 Next is create a [repo](https://github.com/AlexHedley/blashing) and the journey begins.
 
-I've already made a start creating the original list of [widgets](https://github.com/Smashing/smashing/tree/master/templates/project/widgets): *clock*, *comments*, *graph*, *iframe*, *image*, *list*, *meter*, *number*, *text*. There is also a community of [Additional Widgets](https://github.com/Smashing/smashing/wiki/Additional-Widgets) that could be fun to port over too.
+I've already made a start creating the original list of [widgets](https://github.com/Smashing/smashing/tree/master/templates/project/widgets): _clock_, _comments_, _graph_, _iframe_, _image_, _list_, _meter_, _number_, _text_. There is also a community of [Additional Widgets](https://github.com/Smashing/smashing/wiki/Additional-Widgets) that could be fun to port over too.
 
 There's the grid system to think about, drag & drop capabilities, [Font Awesome](https://fontawesome.com/) icons and much, much more.
 
@@ -32,6 +35,7 @@ I'd like to use a Blazor WASM project to host a demo and documentation site show
 ## Links
 
 - [Blashing](https://github.com/AlexHedley/blashing)
+
   - [Project](https://github.com/users/AlexHedley/projects/2/views/2)
   - Website - WIP
 

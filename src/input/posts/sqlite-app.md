@@ -1,12 +1,16 @@
 ---
 title: SQLite App
+# lead:
 tags:
-    - iOS
-    - csv
-    - sqlite
+  - iOS
+  - csv
+  - sqlite
+  - database
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-04
+# image:
+# imageattribution:
 ---
 
 So I'm finally writing my Bowling Scores app. I'm using [FMDB](https://github.com/ccgus/fmdb).
@@ -19,6 +23,8 @@ Export to CSV http://stackoverflow.com/questions/4656887/how-to-export-sqlite-fi
 
 [gist 4ac103b5018c9d5fa974 /]
 
+<?# Gist 4ac103b5018c9d5fa974 /?>
+
 `Export.m`
 
 ```objectivec
@@ -30,7 +36,7 @@ Export to CSV http://stackoverflow.com/questions/4656887/how-to-export-sqlite-fi
     NSString *documentsDirectory = [paths objectAtIndex:0]; // Get documents folder
     NSString *document = [[NSString alloc] initWithFormat:@"%@/demo.csv", documentsDirectory];
     CHCSVWriter *csvWriter = [[CHCSVWriter alloc] initForWritingToCSVFile:document];
-    
+
     while([results next]) {
         //NSDictionary *resultRow = [results resultDict];
         NSDictionary *resultRow = [results resultDictionary];

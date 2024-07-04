@@ -1,5 +1,6 @@
 ---
 title: Serverless North East Meetup 13 2023
+# lead:
 tags:
   - serverless
   - meetup

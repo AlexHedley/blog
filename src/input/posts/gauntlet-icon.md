@@ -1,10 +1,13 @@
 ---
 title: Gauntlet Icon
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2013-09-02
+# image:
+# imageattribution:
 ---
 
 As you do while eating with your mates you have an idea for an app.

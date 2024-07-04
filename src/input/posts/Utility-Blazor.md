@@ -1,11 +1,17 @@
 ---
 title: Utility Blazor
+# lead:
 tags:
-    - programming
-    - blazor
+  - programming
+  - blazor
+  - blazor wasm
+  - dotnet
+  - csharp
 author: AlexHedley
-# description: 
+# description:
 published: 2020-09-28
+# image:
+# imageattribution:
 ---
 
 To add to my increasing collection of Utility apps I've decided to produce a [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) version.
@@ -33,7 +39,7 @@ Much like an AngularJS app you need to set the base href so the app loads proper
   run: sed -i 's/<base href="\/" \/>/<base href="\/blazor-test\/" \/>/g' release/wwwroot/index.html
 ```
 
-To help with routing make the *404* the same as the *index*.
+To help with routing make the _404_ the same as the _index_.
 
 ```yml
 - name: copy index.html to 404.html
@@ -54,6 +60,7 @@ Next I just need to port the original feature set to this application.
 Thanks to [@Swimburger](https://github.com/Swimburger) for the GitHub Action for deploying the app to GitHub Pages
 
 How to deploy ASP.NET Blazor WebAssembly to GitHub Pages
+
 - https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages
 
- - BlazorGitHubPagesDemo (https://github.com/Swimburger/BlazorGitHubPagesDemo)
+- BlazorGitHubPagesDemo (https://github.com/Swimburger/BlazorGitHubPagesDemo)

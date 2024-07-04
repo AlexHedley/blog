@@ -1,10 +1,14 @@
 ---
 title: fTerminal
-# tags:
-#     - 
+# lead:
+tags:
+  - mac
+  - automator
 author: AlexHedley
-# description: 
+# description:
 published: 2012-04-06
+# image:
+# imageattribution:
 ---
 
 Just been surfing the net and came across this handy little tool, **fTerminal**, for opening the finder window in the terminal
@@ -34,16 +38,16 @@ Maybe you want to add an Icon to the Application: [http://apple.stackexchange.co
 After the script has been created do the following :
 
 1. Find the icon you want
-2. _Get Info_ of the icon file (cmd\-i)
+2. *Get Info* of the icon file (cmd\-i)
 3. Click on the icon inside the info window
 4. Copy it (cmd\-c)
-5. _Get Info_ of the application (cmd\-i)
+5. *Get Info* of the application (cmd\-i)
 6. Click on the icon inside the info window
 7. Paste the icon in the clipboard (cmd\-v)
 
 This method works for every files in Mac OS X.
 
-* * *
+---
 
 Can be done with a service:
 

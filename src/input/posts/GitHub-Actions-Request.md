@@ -1,11 +1,15 @@
 ---
 title: GitHub Actions Request
+# lead:
 tags:
-    - programming
-    - github
+  - programming
+  - github
+  - github-actions
 author: alex-hedley
-# description: 
+# description:
 published: 2021-12-24
+# image:
+# imageattribution:
 ---
 
 The [actions/github-script](https://github.com/actions/github-script) has an option to send a request, that is already authenticated with the GitHub API.

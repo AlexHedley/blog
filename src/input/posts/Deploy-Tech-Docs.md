@@ -1,11 +1,17 @@
 ---
 title: Deploy Tech Docs
+# lead:
 tags:
-    - programming
-    - github
+  - programming
+  - github
+  - govuk
+  - ruby
+  - markdown
 author: alex-hedley
-description: 
+# description:
 published: 2023-01-30
+# image:
+# imageattribution:
 ---
 
 In this article I'll show how to deploy the GOV.UK [Tech Docs Template](https://github.com/alphagov/tech-docs-template) to [GitHub Pages](https://pages.github.com/).
@@ -89,28 +95,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Set up 💎 Ruby 3.2.0
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2.0
-#           bundler-cache: true
-        
+      #           bundler-cache: true
+
       - name: Install Dependencies
         run: |
           echo 'Installing bundles...'
           gem install bundler
           bundle install
           bundle list | grep "middleman ("
-        
+
       - name: Build
         run: bundle exec middleman build
-      
+
       - name: Copy CNAME
         run: |
           echo "Copying cname across too"
           cp -a CNAME build
-      
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.2
         with:

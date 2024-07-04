@@ -1,10 +1,13 @@
 ---
 title: Collection Operators
+# lead:
 tags:
-    - macosx
+  - macosx
 author: AlexHedley
-# description: 
+# description:
 published: 2015-06-13
+# image:
+# imageattribution:
 ---
 
 Reading Chapter 7 - KVC/KVO of Cocoa Programming

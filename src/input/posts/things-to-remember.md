@@ -1,10 +1,13 @@
 ---
 title: Things to remember
-# tags:
-#     - 
+# lead:
+tags:
+  - random
 author: AlexHedley
-# description: 
+# description:
 published: 2013-06-23
+# image:
+# imageattribution:
 ---
 
 Battle Royale Series 7

@@ -1,10 +1,13 @@
 ---
 title: iOS Countdown Game and Solver Ideas
-# tags:
-#     - 
+# lead:
+tags:
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2013-09-02
+# image:
+# imageattribution:
 ---
 
 [http://www.crosswordtools.com/numbers-game/](http://www.crosswordtools.com/numbers-game/)
@@ -25,7 +28,7 @@ T-SQL
 
 [http://incoherency.co.uk/countdown/](http://incoherency.co.uk/countdown/)
 
-  [https://github.com/jes/cntdn/](https://github.com/jes/cntdn/)
+[https://github.com/jes/cntdn/](https://github.com/jes/cntdn/)
 
 [http://thesamovar.net/countdownnumbers](http://thesamovar.net/countdownnumbers)
 

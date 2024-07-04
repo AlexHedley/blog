@@ -1,10 +1,14 @@
 ---
 title: iOS Charts
-# tags:
-#     - 
+# lead:
+tags:
+  - iOS
+  - chart
 author: AlexHedley
-# description: 
+# description:
 published: 2015-06-23
+# image:
+# imageattribution:
 ---
 
 https://github.com/danielgindi/ios-charts/blob/master/README.md

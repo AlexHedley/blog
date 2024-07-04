@@ -1,12 +1,16 @@
 ---
 title: Integrate Zxing with Android Studio
+# lead:
 tags:
-    - android
-    - android-studio
-    - zxing
+  - android
+  - android-studio
+  - zxing
+  - java
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-28
+# image:
+# imageattribution:
 ---
 
 Spent some time trying to integrate [Zxing](https://github.com/zxing/zxing/) into my app and couldn't get the Activity to work.
@@ -30,6 +34,8 @@ https://github.com/journeyapps/zxing-android-embedded
 Tried again and got it working.
 
 [gist e7374ab15ebd3722e904 /]
+
+<?# Gist e7374ab15ebd3722e904 /?>
 
 `build.grade`
 
@@ -72,7 +78,7 @@ public void onClick(View v) {
   IntentIntegrator.initiateScan(this);
 }
 
-// Add the following 
+// Add the following
 public void onActivityResult(int requestCode, int resultCode, Intent intent) {
   IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
   if (scanResult != null) {

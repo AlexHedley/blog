@@ -1,10 +1,14 @@
 ---
 title: SQLite3 and iOS
+# lead:
 tags:
-    - iOS
+  - iOS
+  - sqlite
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-16
+# image:
+# imageattribution:
 ---
 
 So I'm continuing the **Saving and Loading** data of the [RW](http://www.raywenderlich.com/tutorials) tutorials.

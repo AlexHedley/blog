@@ -1,11 +1,14 @@
 ---
 title: Apple Public Beta
+# lead:
 tags:
-    - iOS
-    - beta
+  - iOS
+  - beta
 author: AlexHedley
-# description: 
+# description:
 published: 2016-01-14
+# image:
+# imageattribution:
 ---
 
 Signed up for the Public beta, shouldn't it be this easy for devs or am I just being lazy?
@@ -22,14 +25,14 @@ Then you can install the update over the air (OTA), very simple.
 
 It installs a nice Feedback app:
 
-![](images/img_1885.jpeg "")
+![](images/img_1885.jpeg)
 
-![](images/img_1884.jpeg "")
+![](images/img_1884.jpeg)
 
-![](images/img_1887.png "")
+![](images/img_1887.png)
 
-![](images/img_1886.png "")
+![](images/img_1886.png)
 
-![](images/img_1888.png "")
+![](images/img_1888.png)
 
 ![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2016/01/14/apple-public-beta/)

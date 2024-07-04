@@ -1,10 +1,13 @@
 ---
 title: Goals for 2018
-# tags:
-#   - 
+# lead:
+tags:
+  - goals
 author: AlexHedley
 # description:
 published: 2017-12-27
+# image:
+# imageattribution:
 ---
 
 **Xamarin**

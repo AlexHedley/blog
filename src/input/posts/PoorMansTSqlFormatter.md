@@ -1,13 +1,17 @@
 ---
 title: Poor Mans TSql Formatter
+# lead:
 tags:
-    - programming
-    - sql
-    - nuget
-    - csharp
+  - programming
+  - sql
+  - dotnet
+  - nuget
+  - csharp
 author: AlexHedley
-# description: 
+# description:
 published: 2020-05-17
+# image:
+# imageattribution:
 ---
 
 [PoorMansTSqlFormatter](http://architectshack.com/PoorMansTSqlFormatter.ashx) is
@@ -22,7 +26,7 @@ To try it out I downloaded the WinForms App to see what options there are.
 
 > WinForms App (simple exe): SqlFormatterWinforms.1.6.13.zip (1644 downloads this version, about 32000 for previous versions)
 
-I then decompiled the *SqlFormatterWinforms.exe* to see how to setup the formatter.
+I then decompiled the _SqlFormatterWinforms.exe_ to see how to setup the formatter.
 
 Another way would be to look at the [Demo](https://github.com/TaoK/PoorMansTSqlFormatter/tree/master/PoorMansTSqlFormatterDemo) code on GitHub.
 
@@ -111,46 +115,45 @@ string formattedSql = _formatter.FormatSQLTree(sql);
 This will produce a HTML doc which you can display in a browser control.
 
 ```html
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-<style type="text/css">
-.SQLCode {
-	font-size: 13px;
-	font-weight: bold;
-	font-family: monospace;;
-	white-space: pre;
-    -o-tab-size: 4;
-    -moz-tab-size: 4;
-    -webkit-tab-size: 4;
-}
-.SQLComment {
-	color: #00AA00;
-}
-.SQLString {
-	color: #AA0000;
-}
-.SQLFunction {
-	color: #AA00AA;
-}
-.SQLKeyword {
-	color: #0000AA;
-}
-.SQLOperator {
-	color: #777777;
-}
-.SQLErrorHighlight {
-	background-color: #FFFF00;
-}
-
-
-</style>
-<pre class="SQLCode"><span class="SQLKeyword">SELECT</span> <span class="SQLOperator">*</span>
+  <head> </head>
+  <body>
+    <style type="text/css">
+      .SQLCode {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: monospace;
+        white-space: pre;
+        -o-tab-size: 4;
+        -moz-tab-size: 4;
+        -webkit-tab-size: 4;
+      }
+      .SQLComment {
+        color: #00aa00;
+      }
+      .SQLString {
+        color: #aa0000;
+      }
+      .SQLFunction {
+        color: #aa00aa;
+      }
+      .SQLKeyword {
+        color: #0000aa;
+      }
+      .SQLOperator {
+        color: #777777;
+      }
+      .SQLErrorHighlight {
+        background-color: #ffff00;
+      }
+    </style>
+    <pre
+      class="SQLCode"
+    ><span class="SQLKeyword">SELECT</span> <span class="SQLOperator">*</span>
 <span class="SQLKeyword">FROM</span> <span class="SQLKeyword">TABLE</span>
 </pre>
-</body>
+  </body>
 </html>
 ```
 

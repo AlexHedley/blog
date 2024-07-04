@@ -1,10 +1,13 @@
 ---
 title: Mac - Syntax Highlighting
+# lead:
 tags:
-    - macosx
+  - macosx
 author: AlexHedley
-# description: 
+# description:
 published: 2015-08-20
+# image:
+# imageattribution:
 ---
 
 ACEView https://github.com/faceleg/ACEView

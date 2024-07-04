@@ -2,10 +2,11 @@
 title: GitHub Contributions Chart Generator
 # lead:
 tags:
-    - programming
-    - github
+  - programming
+  - github
+  - 2023
 author: AlexHedley
-# description: 
+# description:
 published: 2024-01-01
 image: /posts/images/gh/topguntocat.png
 imageattribution: https://github-contributions.vercel.app/

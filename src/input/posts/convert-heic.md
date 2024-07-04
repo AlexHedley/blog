@@ -1,10 +1,13 @@
 ---
 title: Convert heic
+# lead:
 tags:
-    - programming
+  - programming
 author: AlexHedley
-# description: 
+# description:
 published: 2021-08-20
+# image:
+# imageattribution:
 ---
 
 Got an image from you iPhone?

@@ -1,10 +1,12 @@
 ---
 title: AWS Cloud Quest Cloud Practitioner
+# lead:
 tags:
-    - programming
-    - aws
+  - programming
+  - aws
+  - cloud quest
 author: alex-hedley
-# description: 
+# description:
 published: 2023-01-25
 image: /posts/images/aws-cq/logo_wide_practitioner.png
 imageattribution: https://aws.amazon.com/training/digital/aws-cloud-quest/
@@ -22,9 +24,9 @@ Today I completed the **AWS Cloud Quest Cloud Practitioner** training 🎉!
 This is a free course from AWS that uses gamification and hands on labs to reinforce learnings.
 
 > How does it work?
-> 
+>
 > You will solve problems throughout the virtual Cloud Quest city by completing learning exercises like labs, quizzes, and puzzles.
-> 
+>
 > Through hands-on learning in a live AWS environment, you will learn and apply cloud concepts to real business problems while earning rewards and transforming the city. Ready to begin? Enroll to start your quest.
 
 ## Training Material

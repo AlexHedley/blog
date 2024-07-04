@@ -1,12 +1,15 @@
 ---
 title: Swift Package Manager Notes
+# lead:
 tags:
-    - Swift
-    - guard
-    - kata
+  - swift
+  - guard
+  - kata
 author: AlexHedley
-# description: 
+# description:
 published: 2017-01-27
+# image:
+# imageattribution:
 ---
 
 I've been running through the excellent tutorials from [NSScreencast](http://nsscreencast.com/episodes) ([@NSScreencast](https://twitter.com/nsscreencast)) on using the swift package manager.
@@ -53,7 +56,7 @@ and got a better error to work with
 
 > :0: error: PCH was compiled with module cache path '/Users/AlexHedley/Documents/NSScreencast/Katas/.build/debug/ModuleCache/Q3KKH3V7UU86', but the path is currently '/Users/AlexHedley/Documents/NSScreencast/Katas/FizzBuzz Updated/.build/debug/ModuleCache/Q3KKH3V7UU86'
 
-Looking around I found that I needed to **delete the _.build_ folder**
+Looking around I found that I needed to **delete the *.build* folder**
 
 [http://stackoverflow.com/a/410...](http://disq.us/url?url=http%3A%2F%2Fstackoverflow.com%2Fa%2F41083189%2F2895831%3A262XMoSfyhOd8GmV-82wUGbVMPY&cuid=1255790)
 
@@ -67,7 +70,7 @@ bundle exec guard
 
 and everything was working.
 
-* * *
+---
 
 Other things I looked at
 
@@ -81,7 +84,7 @@ Would it be worth deleting the ModuleCache folder _/Users/AlexHedley/Library/Dev
 
 [http://stackoverflow.com/a/154...](http://disq.us/url?url=http%3A%2F%2Fstackoverflow.com%2Fa%2F15463219%2F2895831%3Az9MqESact7R9zBRej-VN2cOgXkI&cuid=1255790) Is there a way to do this for what we are using?
 
-* * *
+---
 
 Completed Tutorials
 

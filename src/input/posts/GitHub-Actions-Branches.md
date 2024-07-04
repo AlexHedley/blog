@@ -1,11 +1,15 @@
 ---
 title: GitHub Actions Branches
+# lead:
 tags:
-    - programming
-    - github
+  - programming
+  - github
+  - github-actions
 author: alex-hedley
-# description: 
+# description:
 published: 2021-12-24
+# image:
+# imageattribution:
 ---
 
 How to get a list of branches from a current repo.
@@ -14,15 +18,15 @@ The [actions/github-script](https://github.com/actions/github-script) is a good 
 To see what you can get run the script and output the complete context:
 
 ```yml
-      - name: View context attributes
-        uses: actions/github-script@v5
-        with:
-          script: console.log(context)
+- name: View context attributes
+  uses: actions/github-script@v5
+  with:
+    script: console.log(context)
 ```
 
 Be careful though, as when this is ran manually it gets different values to when ran on a schedule.
 
-Looking at the *Repository* info the `branches_url` might be useful:
+Looking at the _Repository_ info the `branches_url` might be useful:
 
 ```json
 Context {
@@ -39,18 +43,18 @@ Context {
 We don't need the `{{/branch}}` though. So lets remove that.
 
 ```js
-const branches_url = context.payload.repository.branches_url
-const branches_url_new = branches_url.replace("{/branch}", "")
+const branches_url = context.payload.repository.branches_url;
+const branches_url_new = branches_url.replace("{/branch}", "");
 ```
 
-With this *url* we can now get the data using the [github.request()](https://github.com/actions/github-script#download-data-from-a-url) method.
+With this _url_ we can now get the data using the [github.request()](https://github.com/actions/github-script#download-data-from-a-url) method.
 Map just the names of the branches to an Array.
 And log the data.
 
 ```js
-const result = await github.request(branches_url_new)
-const names = result.data.map(branch => branch.name)
-console.log(names)
+const result = await github.request(branches_url_new);
+const names = result.data.map((branch) => branch.name);
+console.log(names);
 ```
 
 ```json
@@ -64,7 +68,7 @@ console.log(names)
 ```
 
 ```json
-[ 'dev', 'main' ]
+["dev", "main"]
 ```
 
 Depending on the type of event you could
@@ -72,11 +76,11 @@ Depending on the type of event you could
 ```yml
 on:
   push:
-    branches:    
-      - '*'         # matches every branch that doesn't contain a '/'
-      - '*/*'       # matches every branch containing a single '/'
-      - '**'        # matches every branch
-      - '!master'   # excludes master
+    branches:
+      - "*" # matches every branch that doesn't contain a '/'
+      - "*/*" # matches every branch containing a single '/'
+      - "**" # matches every branch
+      - "!master" # excludes master
 ```
 
 But this isn't available for `workflow_dispatch:` as of yet.
@@ -86,7 +90,7 @@ name: Get Branches
 
 on:
   workflow_dispatch:
-    
+
 jobs:
   print-context:
     runs-on: ubuntu-latest
@@ -102,7 +106,7 @@ jobs:
             const branches_url_new = branches_url.replace("{/branch}", "")
             const result = await github.request(branches_url_new)
             const names = result.data.map(branch => branch.name)
-            
+
             const index = names.indexOf('main');
             if (index > -1) {
               names.splice(index, 1);
@@ -110,13 +114,13 @@ jobs:
             console.log(names)
 
             return names
-      
+
       - name: Branches
         id: branch-output
         run: |
           BRANCHES='${{ steps.branches-list.outputs.result }}'
           echo ::set-output name=branches::$BRANCHES
-      
+
   my_matrix:
     runs-on: ubuntu-latest
     needs:

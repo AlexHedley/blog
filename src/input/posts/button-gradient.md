@@ -1,15 +1,21 @@
 ---
 title: Programmatic Button Gradient
+# lead:
 tags:
-    - iOS
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2015-04-06
+# image:
+# imageattribution:
 ---
 
 I'm programatically creating buttons and I'm using an image as a background, I'm no designer and got a bit bored of making a new one for each button, I've not even got to the different sizes yet, so thought why not use a gradient.
 
 [gist ce30093516d5cf99ea35 /]
+
+<?# Gist ce30093516d5cf99ea35 /?>
 
 `ButtonGradient.m`
 
@@ -18,7 +24,7 @@ CAGradientLayer* gradientLayer = [[CAGradientLayer alloc] init];
 [gradientLayer setBounds:[buttonTest bounds]];
 [gradientLayer setPosition:
 CGPointMake([buttonTest bounds].size.width/2, [buttonTest bounds].size.height/2)];
-    
+
 [gradientLayer setColors:
 [NSArray arrayWithObjects:
   (id)[[UIColor blueColor] CGColor],

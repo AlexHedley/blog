@@ -1,11 +1,12 @@
 ---
 title: Symantec Connect - 100 Solutions
+# lead:
 tags:
-    - symantec
-    - connect
-    - forum
+  - symantec
+  - connect
+  - forum
 author: AlexHedley
-# description: 
+# description:
 published: 2019-12-23
 image: /posts/images/img_1318.jpg
 imageattribution: https://community.broadcom.com/symantecenterprise/home
@@ -19,7 +20,7 @@ You can find my profile here:
 
 [https://www.symantec.com/connect/user/alexhedley](https://www.symantec.com/connect/user/alexhedley)
 
-![](images/img_1318.jpg "")
+![](images/img_1318.jpg)
 
 I've made a lot of Articles over the years, mostly for Symantec Workflow / ServiceDesk / SMP.
 

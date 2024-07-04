@@ -1,10 +1,13 @@
 ---
 title: Git Immersion
+# lead:
 tags:
-    - git
+  - git
 author: AlexHedley
-# description: 
+# description:
 published: 2012-04-14
+# image:
+# imageattribution:
 ---
 
 Just found [http://gitimmersion.com/](http://gitimmersion.com/)

@@ -1,11 +1,15 @@
 ---
 title: GitHub Actions Comment
+# lead:
 tags:
-    - programming
-    - github
+  - programming
+  - github
+  - github-actions
 author: alex-hedley
-# description: 
+# description:
 published: 2021-11-12
+# image:
+# imageattribution:
 ---
 
 Have you ever needed to add a comment to your PR after your Jobs(s) have completed?
@@ -36,7 +40,7 @@ With an output of
 
 > 🔗 MY LINK
 
-Then you can set your trigger to run on a *PR* and it'll add the necessary info.
+Then you can set your trigger to run on a _PR_ and it'll add the necessary info.
 
 ![Actions Comment](images/gh/github-actions-comment.png "Actions Comment")
 

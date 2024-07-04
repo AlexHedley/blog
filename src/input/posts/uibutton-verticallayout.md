@@ -1,36 +1,42 @@
 ---
 title: UIButton VerticalLayout
+# lead:
 tags:
-    - UIButton
-    - UIStackView
-    - VerticalLayout
+  - objc
+  - UIButton
+  - UIStackView
+  - VerticalLayout
 author: AlexHedley
-# description: 
+# description:
 published: 2017-08-04
+# image:
+# imageattribution:
 ---
 
 https://stackoverflow.com/a/22621613/2895831
 
 [gist 87d1917da7745da9cd77033508e69243 /]
 
+<?# Gist 87d1917da7745da9cd77033508e69243 /?>
+
 `UIButton+VerticalLayout.m`
 
 ```objectivec
 //https://stackoverflow.com/a/22621613/2895831
 
-@interface UIButton (VerticalLayout)  
+@interface UIButton (VerticalLayout)
 
-- (void)centerVerticallyWithPadding:(float)padding;  
-- (void)centerVertically;  
+- (void)centerVerticallyWithPadding:(float)padding;
+- (void)centerVertically;
 
-@end  
+@end
 
-@implementation UIButton (VerticalLayout)  
+@implementation UIButton (VerticalLayout)
 
-- (void)centerVerticallyWithPadding:(float)padding {      
-    CGSize imageSize = self.imageView.frame.size;  
-    CGSize titleSize = self.titleLabel.frame.size;  
-    CGFloat totalHeight = (imageSize.height + titleSize.height + padding);  
+- (void)centerVerticallyWithPadding:(float)padding {
+    CGSize imageSize = self.imageView.frame.size;
+    CGSize titleSize = self.titleLabel.frame.size;
+    CGFloat totalHeight = (imageSize.height + titleSize.height + padding);
     self.imageEdgeInsets = UIEdgeInsetsMake(- (totalHeight - imageSize.height),
                                             0.0f,
                                             0.0f,
@@ -47,9 +53,9 @@ https://stackoverflow.com/a/22621613/2895831
     self.contentEdgeInsets = UIEdgeInsetsMake(inset, 0.0f, inset, 0.0f);
 }
 
-- (void)centerVertically {  
+- (void)centerVertically {
     const CGFloat kDefaultPadding = 6.0f;
-    [self centerVerticallyWithPadding:kDefaultPadding];  
+    [self centerVerticallyWithPadding:kDefaultPadding];
 }
 @end
 ```
@@ -58,8 +64,8 @@ I added some buttons into a UIStackView but the image overlaps the button.
 
 [gallery ids="1046,1047" type="rectangular"]
 
-![](images/verticalbutton-1.png "")
-![](images/verticalbutton-2.png "")
+![](images/verticalbutton-1.png)
+![](images/verticalbutton-2.png)
 
 I modified the _contentEdgeInsets_
 

@@ -1,11 +1,12 @@
 ---
 title: AoC
+# lead:
 tags:
   - aoc
 author: alexhedley
 description: Advent of Code
 published: 2023-11-29
-# image: 
+# image:
 # imageattribution: https://adventofcode.com/
 ---
 

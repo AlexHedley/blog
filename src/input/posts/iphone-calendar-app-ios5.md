@@ -1,13 +1,17 @@
 ---
 title: iPhone Calendar App - iOS5
+# lead:
 tags:
-    - iOS5
-    - app
-    - calendar
-    - landscape
+  - iOS
+  - iOS5
+  - app
+  - calendar
+  - landscape
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-19
+# image:
+# imageattribution:
 ---
 
 So I was just playing about with my iPhone last night and was checking my calendar, I'd turned the phone landscape for whatever reason and the view changed to:

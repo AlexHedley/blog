@@ -1,14 +1,19 @@
 ---
 title: Build Light
+# lead:
 tags:
-    - programming
-    - github
+  - dotnet
+  - programming
+  - github
+  - iot
 author: AlexHedley
-# description: 
+# description:
 published: 2020-06-20
+# image:
+# imageattribution:
 ---
 
-[Build Light](https://github.com/praeclarum/BuildLight) is a way to *display your IDE's build status using RGB LEDs and IoT devices!*
+[Build Light](https://github.com/praeclarum/BuildLight) is a way to _display your IDE's build status using RGB LEDs and IoT devices!_
 
 It's being built by [@praeclarum](http://twitter.com/praeclarum) on his [Twitch](https://twitch.tv/FrankKrueger) channel the last few sunday nights.
 

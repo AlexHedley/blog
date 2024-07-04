@@ -1,11 +1,14 @@
 ---
 title: Learning Cocos2D
+# lead:
 tags:
-    - iOS
-    - apps
+  - iOS
+  - apps
 author: AlexHedley
-# description: 
+# description:
 published: 2012-04-02
+# image:
+# imageattribution:
 ---
 
 Had this book for a number of months and only just got round to starting it.

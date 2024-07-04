@@ -1,11 +1,12 @@
 ---
 title: AWS Cloud Quest Networking
+# lead:
 tags:
-    - programming
-    - aws
-    - cloud quest
+  - programming
+  - aws
+  - cloud quest
 author: alex-hedley
-# description: 
+# description:
 published: 2023-07-28
 image: /posts/images/aws-cq/cloud-quest.png
 imageattribution: https://aws.amazon.com/training/digital/aws-cloud-quest/
@@ -31,7 +32,7 @@ This is a paid course from AWS that uses gamification and hands on labs to reinf
 
 > Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.  
 > $29.00 / month + VAT  
-> https://explore.skillbuilder.aws/learn/signin  
+> https://explore.skillbuilder.aws/learn/signin
 
 > As the city’s Networking specialist, you will leverage AWS services to scale network connectivity, connect to on-premisses networks, protect applications, analyze network traffic and identify suspicious activity. As you build real solutions, you will explore concepts such as network tunneling, peering, cross region routing and log analysis.
 

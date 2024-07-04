@@ -1,11 +1,14 @@
 ---
 title: Twitch Recap 2023
+# lead:
 tags:
-    - twitch
-    - 2023
+  - twitch
+  - 2023
 author: AlexHedley
-# description: 
+# description:
 published: 2023-12-11
+# image:
+# imageattribution:
 ---
 
 Can't remember is they did one for 2022, but here's 2023:

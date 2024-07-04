@@ -1,11 +1,14 @@
 ---
 title: Welcome
+# lead:
 tags:
-    - general
-    - github
+  - general
+  - github
 author: AlexHedley
-# description: 
+# description:
 published: 2020-03-01
+# image:
+# imageattribution:
 ---
 
 Welcome to my new Blog!

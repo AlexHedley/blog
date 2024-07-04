@@ -1,10 +1,11 @@
 ---
 title: DependencyCheck .NET
+# lead:
 tags:
-    - dependencycheck
-    - owasp
-    - dotnet
-    - github
+  - dependencycheck
+  - owasp
+  - dotnet
+  - github
 author: alex-hedley
 description: How to use DependencyCheck with .NET.
 published: 2023-08-08
@@ -22,7 +23,7 @@ I've used this on some Kotlin/Java projects and wanted to see how easy it was to
 
 There are a number of plugins listed for Gradle etc but for .NET I'm going to use the [CLI](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/index.html).
 
-You can run this locally, first install with `brew install dependency-check` then for ***nix** systems run `dependency-check.sh --project "My App Name" --scan "/java/application/lib"`.
+You can run this locally, first install with `brew install dependency-check` then for **\*nix** systems run `dependency-check.sh --project "My App Name" --scan "/java/application/lib"`.
 
 Since I'm wanting to also try this out in CI/CD it's straight to GitHub to create a sample repo.
 
@@ -36,9 +37,9 @@ I created a simple .NET Console Application then looked at what was needed to ru
 
 Depending where you are running the tool from determines the output location of the report. See the [Command Line Agruments](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html) for more details.
 
-| Short | Argument Name | Parameter | Description | Requirement |
-|-|-|-|-|-|
-| `-o` | `--out` | `<path>` | The folder to write reports to. This defaults to the current directory. If the format is not set to ALL one could specify a specific file name. | Optional |
+| Short | Argument Name | Parameter | Description                                                                                                                                     | Requirement |
+| ----- | ------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `-o`  | `--out`       | `<path>`  | The folder to write reports to. This defaults to the current directory. If the format is not set to ALL one could specify a specific file name. | Optional    |
 
 Make sure you are in the working directory of your project before running, unless you want it adding to your _usr_ folder.
 
@@ -59,17 +60,17 @@ Could I run `brew install` and run `dependency-check.sh`, maybe but I'm sure som
 - [Dependency-Check Action](https://github.com/dependency-check/Dependency-Check_Action)
 
 ```yml
-      - name: Depcheck
-        uses: dependency-check/Dependency-Check_Action@main
-        id: Depcheck
-        with:
-          project: 'test'
-          path: '.'
-          format: 'HTML'
-          out: 'reports' # this is the default, no need to specify unless you wish to override it
-          args: >
-            --failOnCVSS 7
-            --enableRetired
+- name: Depcheck
+  uses: dependency-check/Dependency-Check_Action@main
+  id: Depcheck
+  with:
+    project: "test"
+    path: "."
+    format: "HTML"
+    out: "reports" # this is the default, no need to specify unless you wish to override it
+    args: >
+      --failOnCVSS 7
+      --enableRetired
 ```
 
 This has a lot of options to override so check the docs if you want to tweak anything.
@@ -144,7 +145,7 @@ From the sample there was an added arg of `failOnCVSS` set to **7** so this was 
 ```bash
 Error:
 
-One or more dependencies were identified with vulnerabilities that have a CVSS score greater than or equal to '7.0': 
+One or more dependencies were identified with vulnerabilities that have a CVSS score greater than or equal to '7.0':
 
 DependencyCheckExample.csproj: CVE-2021-4248(9.8)
 DependencyCheckExample.csproj: CVE-2023-21893(7.5)
@@ -154,15 +155,15 @@ DependencyCheckExample.csproj: CVE-2023-21893(7.5)
 Removing this didn't stop the build failing and I couldn't see a default value in the code. Looking at the check [CliParser - getFailOnCVSS](https://github.com/jeremylong/DependencyCheck/blob/6a85d0ffa28d6e625f3ef23db766f651614ad505/cli/src/main/java/org/owasp/dependencycheck/CliParser.java#L906) I found it defaulted to **11** so just overrode it for the time being as I wanted the build to pass and produce the report - in a real world situation it would be good to set this to the required limit.
 
 ```yml
-        args: >
-            --failOnCVSS 11
+args: >
+  --failOnCVSS 11
 ```
 
 - [Command Line Arguments](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html)
 
-| Short | Argument Name | Parameter | Description | Requirement |
-|-|-|-|-|-|
-| | `--failOnCVSS` | `<score>` | If the score set between 0 and 10 the exit code from dependency-check will indicate if a vulnerability with a CVSS score equal to or higher was identified. | Optional |
+| Short | Argument Name  | Parameter | Description                                                                                                                                                 | Requirement |
+| ----- | -------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+|       | `--failOnCVSS` | `<score>` | If the score set between 0 and 10 the exit code from dependency-check will indicate if a vulnerability with a CVSS score equal to or higher was identified. | Optional    |
 
 ## Inconsistencies
 

@@ -1,10 +1,12 @@
 ---
 title: XLForm
+# lead:
 tags:
-    - iOS
-    - XLForm
+  - iOS
+  - objc
+  - XLForm
 author: AlexHedley
-# description: 
+# description:
 published: 2017-04-06
 image: /posts/images/xl_appicon_152.png
 imageattribution: https://github.com/xmartlabs/XLForm
@@ -41,7 +43,7 @@ _Screenshot_
 
 ![Register](https://alexhedley.files.wordpress.com/2017/03/register.png?w=175)
 
-* * *
+---
 
 Switch
 
@@ -54,7 +56,7 @@ row = [XLFormRowDescriptor formRowDescriptorWithTag:@"switch" rowType:XLFormRowD
 row.value = @1;
 ```
 
-* * *
+---
 
 Issues
 
@@ -82,7 +84,7 @@ NSDictionary \*metrics = @{@"vMargin":@(kVMargin), @"hMargin":@(kHMargin)};
 
 ![Register - JVFloatLabeledTextField (4)](images/register-jvfloatlabeledtextfield-4.png)
 
-* * *
+---
 
 Cell Separator
 
@@ -96,7 +98,7 @@ self.tableView.separatorColor = [UIColor redColor];
 
 ![Register - JVFloatLabeledTextField (5)](images/register-jvfloatlabeledtextfield-5.png)
 
-* * *
+---
 
 Section Background Colour
 
@@ -135,7 +137,7 @@ _Code_
 - http://stackoverflow.com/questions/43180133/custom-xlform-section-background-color/43232745#43232745
 - https://github.com/xmartlabs/XLForm/issues/335
 
-* * *
+---
 
 FloatLabeledTextFieldCell
 
@@ -183,7 +185,7 @@ Set the "imageView.tintColor"
 
 ![Register - JVFloatLabeledTextField (6)](images/register-jvfloatlabeledtextfield-6.png)
 
-* * *
+---
 
 Accessory
 
@@ -196,7 +198,6 @@ Accessory
       // You can use the rowDescriptor parameter to hide/customize the accessory view for a particular rowDescriptor type.
 }
 ```
- 
 
 Without reading the documentation!!
 
@@ -225,7 +226,7 @@ This method isn't being called.
 }
 ```
 
-* * *
+---
 
 Dynamically Adding Rows
 
@@ -243,7 +244,7 @@ Create your Form, Section(s) and Row(s) in the interface and use them:
 [section addFormRow:row beforeRow:buttonRow];
 ```
 
-* * *
+---
 
 Selected Row Label colour
 
@@ -261,7 +262,7 @@ And
 [row.cellConfig setObject:[UIColor redColor] forKey:@"textLabel.tintColor"];
 ```
 
-* * *
+---
 
 Change the cursor colour
 
@@ -273,9 +274,9 @@ Change the cursor colour
 
 ![Register - JVFloatLabeledTextField (7)](images/register-jvfloatlabeledtextfield-7.png)
 
-* * *
+---
 
-* * *
+---
 
 Alternatives
 

@@ -1,5 +1,6 @@
 ---
 title: Shagged, Married, Annoyed Live 2023
+# lead:
 tags:
   - tour
   - 2023
@@ -13,6 +14,7 @@ imageattribution: https://www.shaggedmarriedannoyed.com/
 <!-- # Shagged, Married, Annoyed Live -->
 
 ![Shagged, Married, Annoyed Live](images/SMA_2023.jpg "Shagged, Married, Annoyed Live")
+
 <!-- ![Shagged, Married, Annoyed Live](images/SMA_2023_1.jpg "Shagged, Married, Annoyed Live") -->
 
 https://www.ticketmaster.co.uk/event/1F005CB7F7E5A27F

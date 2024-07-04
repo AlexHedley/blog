@@ -1,10 +1,13 @@
 ---
 title: PunchClock
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-06
+# image:
+# imageattribution:
 ---
 
 I recently came across a post on the Panic Blog about a Clock In/Out System using iBeacons, iPhones etc.

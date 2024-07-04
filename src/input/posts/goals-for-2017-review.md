@@ -1,10 +1,14 @@
 ---
 title: Goals for 2017 – Review
-# tags:
-#   - 
+# lead:
+tags:
+  - goals
+  - review
 author: AlexHedley
 # description:
 published: 2017-12-27
+# image:
+# imageattribution:
 ---
 
 **599CD**

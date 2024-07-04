@@ -1,10 +1,13 @@
 ---
 title: Safari JSON Viewer
-# tags:
-#     - 
+# lead:
+tags:
+  - safari
 author: AlexHedley
-# description: 
+# description:
 published: 2013-06-23
+# image:
+# imageattribution:
 ---
 
 Starting to use Safari more and need some extensions I'm used to in Chrome.

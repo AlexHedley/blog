@@ -1,13 +1,17 @@
 ---
 title: giscus
+# lead:
 tags:
-    - github
-    - giscus
-    - discussions
-    - comments
+  - github
+  - giscus
+  - discussions
+  - comments
+  - statiq
 author: alex-hedley
-description: 
+description:
 published: 2023-05-31
+# image:
+# imageattribution:
 ---
 
 What's the best way to allow commenting on your blog? What better way than to have it contained in the system the blog lives in, [GitHub](https://github.com/). I've seen other solutions in the past which used [GitHub Issues](https://github.com/features/issues) but this doesn't seem the right place for it.
@@ -20,14 +24,14 @@ In [statiq.web](https://www.statiq.dev/web) there are a couple of ways to achiev
 
 ```json
 {
-    "CommentEngine": "giscus",
-    "GiscusRepoName": "",
-    "GiscusRepoId": "",
-    "GiscusCategoryId": ""
+  "CommentEngine": "giscus",
+  "GiscusRepoName": "",
+  "GiscusRepoId": "",
+  "GiscusCategoryId": ""
 }
 ```
 
-You then need to follow the instructions on [giscus](https://giscus.app) to grab the relevant Ids, but first enable Discussions on your repo. Next select your *Configuration* options then near the end of the page there will be an *Enable giscus* section to grab the above info.
+You then need to follow the instructions on [giscus](https://giscus.app) to grab the relevant Ids, but first enable Discussions on your repo. Next select your _Configuration_ options then near the end of the page there will be an _Enable giscus_ section to grab the above info.
 
 Once you have updated these, just push and wait for the site to redeploy, check on a page and you'll have a option to comment, but first you have to sign in.
 

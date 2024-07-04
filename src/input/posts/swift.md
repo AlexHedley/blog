@@ -1,14 +1,17 @@
 ---
 title: Swift
+# lead:
 tags:
-    - iOS
-    - Swift
+  - iOS
+  - swift
 author: AlexHedley
-# description: 
+# description:
 published: 2014-06-05
+# image:
+# imageattribution:
 ---
 
-*Book*
+_Book_
 
 The Swift Programming Language by Apple Inc. https://itun.es/gb/jEUH0.l
 
@@ -24,7 +27,7 @@ Twitter @SwiftLang https://developer.apple.com/swift/
 
 @SwiftDevs
 
-*Blog*
+_Blog_
 
 New blog post by @mattjgalloway: Swift Language Highlights: An Objective-C Developer's Perspective http://t.co/KrsRWQO7f1
 
@@ -40,25 +43,25 @@ http://practicalswift.com/2014/06/14/the-swift-standard-library-list-of-built-in
 
 http://www.appshocker.com/category/swift-tutorials-for-ios/
 
-*Tutorial*
+_Tutorial_
 
 https://www.bloc.io/tutorials/swiftris-build-your-first-ios-game-with-swift#!/chapters/675
 
 Code Samples https://github.com/fullstackio/FlappySwift
 
-*Videos*
+_Videos_
 
 https://skipcasts.com/
 
 https://www.youtube.com/user/SkipCasts/videos
 
-*Courses*
+_Courses_
 
 **Udemy**
 
 FREE https://www.udemy.com/swift-learn-apples-new-programming-language-by-examples/
 
-*YouTube*
+_YouTube_
 
 https://m.youtube.com/playlist?list=PL_4rJ_acBNMHa_RGZigG2nQI3aL1kTa4r
 

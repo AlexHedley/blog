@@ -1,6 +1,8 @@
 ---
 title: Statiq.Web - Shortcodes - Include
+# lead:
 tags:
+  - statiq
   - statiq.web
   - shortcodes
   - include
@@ -30,7 +32,7 @@ This can't be the only option? To the docs. [Processing Phases](https://www.stat
 - Intermediate: `<?^ ShortcodeName /?>`
 - Post-rendering: `<?# ShortcodeName /?>`
 
-I'd been using Post-rendering `<?#` since this is what was used on a code example. Swapping it to *Intermediate* worked a treat.
+I'd been using Post-rendering `<?#` since this is what was used on a code example. Swapping it to _Intermediate_ worked a treat.
 
 Looking for other examples I also found the **Markdown** `Shortcode`.
 

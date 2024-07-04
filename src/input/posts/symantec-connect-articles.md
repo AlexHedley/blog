@@ -1,13 +1,14 @@
 ---
 title: Symantec Connect Articles
+# lead:
 tags:
-    - symantec
-    - broadcom
-    - connect
-    - articles
-    - community
+  - symantec
+  - broadcom
+  - connect
+  - articles
+  - community
 author: alexhedley
-description: 
+# description:
 published: 2023-06-22
 image: https://raw.githubusercontent.com/AlexHedley/symantec-connect-articles/main/src/input/images/header.png
 imageattribution: https://community.broadcom.com/
@@ -34,9 +35,11 @@ Another great resource is Andrew's site: [atmaworkflow](https://atmaworkflow.wor
 ## Links
 
 - [Broadcom Community](https://community.broadcom.com/)
+
   - [Broadcom Community Profile](https://community.broadcom.com/symantecenterprise/network/members/profile?UserKey=eaa683c3-ee4a-4f8c-aa6b-20e545ad1ef8)
 
 - [Symantec Connect](https://www.symantec.com/connect/)
+
   - [Symantec Connect Profile](https://www.symantec.com/connect/user/alexhedley)
 
 - [atmaworkflow](https://atmaworkflow.wordpress.com/)

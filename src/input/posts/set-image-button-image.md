@@ -1,10 +1,14 @@
 ---
 title: Android - Set Image Button Image
+# lead:
 tags:
-    - android
+  - android
+  - java
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-28
+# image:
+# imageattribution:
 ---
 
 Add the Image to src/res/drawable
@@ -12,6 +16,8 @@ Add the Image to src/res/drawable
 Add the various sizes (-hdpi) etc
 
 [gist 18cd7f5557d5804c02ac/]
+
+<?# Gist 18cd7f5557d5804c02ac /?>
 
 `activity.java`
 
@@ -29,7 +35,7 @@ button.setColorFilter(Color.argb(255, 255, 255, 255)); // White Tint
   android:background="@null"
   android:tint="@android:color/white"
   />
-  
+
   //Transparent Background add "@null"
 ```
 

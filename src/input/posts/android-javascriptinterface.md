@@ -1,10 +1,14 @@
 ---
 title: Android - JavascriptInterface
+# lead:
 tags:
-    - android
+  - android
+  - javascript
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-29
+# image:
+# imageattribution:
 ---
 
 http://www.lewuathe.com/blog/2014/02/21/use-javascriptinterface-on-android/

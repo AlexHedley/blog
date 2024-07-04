@@ -1,10 +1,13 @@
 ---
 title: tvOS Links
+# lead:
 tags:
-    - iOS
+  - tvOS
 author: AlexHedley
-# description: 
+# description:
 published: 2015-09-12
+# image:
+# imageattribution:
 ---
 
 Thought I'd list some tvOS links as and when I find them.

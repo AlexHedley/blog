@@ -1,10 +1,14 @@
 ---
 title: Done button on NumPad
+# lead:
 tags:
-    - iOS
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-10
+# image:
+# imageattribution:
 ---
 
 I've been researching adding a done button to a NumPad and keep getting the same error:
@@ -17,13 +21,15 @@ Another option would be to add a toolbar above the keyboard.
 
 [gist b2311df9ba1c63e910a5 /]
 
+<?# Gist b2311df9ba1c63e910a5 /?>
+
 `ViewController.m`
 
 ```objectivec
 UIToolbar *doneToolbar = [[UIToolbar alloc] initWithFrame:(CGRect){0, 0, 50, 50}]; // Create and init
 doneToolbar.barStyle = UIBarStyleBlackTranslucent; // Specify the preferred barStyle
 doneToolbar.items = @[
-[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil], 
+[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
 [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(doneEditAction)] // Add your target action
 ]; // Define items -- you can add more
 

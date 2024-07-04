@@ -1,10 +1,15 @@
 ---
 title: ASP API
-# tags:
-#     - 
+# lead:
+tags:
+  - classic-asp
+  - asp
+  - api
 author: AlexHedley
-# description: 
+# description:
 published: 2013-09-02
+# image:
+# imageattribution:
 ---
 
 API

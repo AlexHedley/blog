@@ -1,14 +1,15 @@
 ---
 title: Custom Funko Pop
+# lead:
 tags:
-    - funkopop
-    - ai
-    - microsoft designer
+  - funkopop
+  - ai
+  - microsoft designer
 author: alexhedley
 description: Create your own custom Funko Pop using AI.
 published: 2023-12-26
 # image: /posts/images/
-# imageattribution: 
+# imageattribution:
 ---
 
 <!-- # Custom Funko Pop -->

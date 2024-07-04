@@ -1,5 +1,6 @@
 ---
 title: 1st Parkrun
+# lead:
 tags:
   - parkrun
 author: alexhedley
@@ -23,13 +24,13 @@ The sun was shining, there was a rainbow 🌈 as we started, with what looked li
 
 ## Result
 
-|        Event        |  Run Date  | Gender Pos | Overall Position |  Time | Age Grade |
-|:-------------------:|:----------:|:----------:|:----------------:|:-----:|:---------:|
-| Whitley Bay parkrun | 25/11/2023 | 227        | 363              | 37:57 | 34.96%    |
+|        Event        |  Run Date  | Gender Pos | Overall Position | Time  | Age Grade |
+| :-----------------: | :--------: | :--------: | :--------------: | :---: | :-------: |
+| Whitley Bay parkrun | 25/11/2023 |    227     |       363        | 37:57 |  34.96%   |
 
-|        Event        | parkruns | Best Gender Position | Best Position Overall | Best Time   |
-|:-------------------:|:--------:|:--------------------:|:---------------------:|:-----------:|
-| Whitley Bay parkrun | 1        | 227                  | 363                   | 00:37:57    |
+|        Event        | parkruns | Best Gender Position | Best Position Overall | Best Time |
+| :-----------------: | :------: | :------------------: | :-------------------: | :-------: |
+| Whitley Bay parkrun |    1     |         227          |          363          | 00:37:57  |
 
 - https://www.parkrun.org.uk/parkrunner/3492522/
 - https://www.parkrun.org.uk/parkrunner/3492522/all/

@@ -1,11 +1,14 @@
 ---
 title: Twitch
+# lead:
 tags:
-    - programming
-    - twitch
+  - programming
+  - twitch
 author: AlexHedley
-# description: 
+# description:
 published: 2020-06-20
+# image:
+# imageattribution:
 ---
 
 I've finally jumped on the Twitch Streaming bandwagon.

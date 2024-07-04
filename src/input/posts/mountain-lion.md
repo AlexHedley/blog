@@ -1,12 +1,16 @@
 ---
 title: Mountain Lion ...
+# lead:
 tags:
-    - iOS
-    - apps
-    - lion
+  - iOS
+  - apps
+  - lion
+  - mac
 author: AlexHedley
-# description: 
+# description:
 published: 2012-02-16
+# image:
+# imageattribution:
 ---
 
 Not to sure about the name but I'm really liking the new features especially Messages

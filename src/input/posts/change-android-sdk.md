@@ -1,10 +1,13 @@
 ---
 title: Change Android SDK
+# lead:
 tags:
-    - Android
+  - Android
 author: AlexHedley
-# description: 
+# description:
 published: 2015-03-20
+# image:
+# imageattribution:
 ---
 
 In Android Studio
@@ -25,7 +28,7 @@ Build errors for theme, was showing 21 since it was originally built with this.
 
 Change the version here:
 
-* * *
+---
 
 ```java
 dependencies {
@@ -33,6 +36,6 @@ dependencies {
 }
 ```
 
-* * *
+---
 
 ![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/03/20/change-android-sdk/)

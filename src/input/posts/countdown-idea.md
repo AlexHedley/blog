@@ -1,10 +1,13 @@
 ---
 title: Countdown Idea
+# lead:
 # tags:
-#     - 
+#     -
 author: AlexHedley
-# description: 
+# description:
 published: 2013-06-23
+# image:
+# imageattribution:
 ---
 
 http://www.crosswordtools.com/numbers-game/
@@ -24,7 +27,7 @@ http://stackoverflow.com/questions/15293232/how-to-design-an-algorithm-to-calcul
 http://stackoverflow.com/questions/16510634/24-game-countdown-number-game-solver-but-without-parentheses-in-the-answer
 
 http://incoherency.co.uk/countdown/
-  https://github.com/jes/cntdn/
+https://github.com/jes/cntdn/
 
 http://thesamovar.net/countdownnumbers
 

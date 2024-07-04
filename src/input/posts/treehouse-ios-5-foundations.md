@@ -1,10 +1,13 @@
 ---
 title: Treehouse - iOS 5 Foundations
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2012-04-08
+# image:
+# imageattribution:
 ---
 
 ![Treehouse Logo](images/logo-76385d4dcdd1dd0af1b6a04aa4f9a2d3.jpg "Treehouse Logo")

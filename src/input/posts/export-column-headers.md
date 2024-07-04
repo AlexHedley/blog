@@ -1,13 +1,16 @@
 ---
 title: Export Column Headers
+# lead:
 tags:
-    - iOS
-    - chcsvparser
-    - csv
-    - fmdb
+  - iOS
+  - chcsvparser
+  - csv
+  - fmdb
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-04
+# image:
+# imageattribution:
 ---
 
 I'm using [FMDB](https://github.com/ccgus/fmdb) and [CHCSVParser](https://github.com/davedelong/CHCSVParser).

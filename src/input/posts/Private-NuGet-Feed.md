@@ -1,12 +1,16 @@
 ---
 title: Private NuGet Feed
+# lead:
 tags:
-    - programming
-    - nuget
-    - ado
+  - programming
+  - nuget
+  - ado
+  - dotnet
 author: AlexHedley
-# description: 
+# description:
 published: 2020-03-14
+# image:
+# imageattribution:
 ---
 
 As a .NET developer you probably use [NuGet](https://www.nuget.org/) everyday, or something from it.
@@ -14,7 +18,7 @@ As a .NET developer you probably use [NuGet](https://www.nuget.org/) everyday, o
 ![NuGet](images/nuget-logo-footer-184x57.png)
 
 > What is NuGet?
-> 
+>
 > NuGet is the package manager for .NET. The NuGet client tools provide the ability to produce and consume packages. The NuGet Gallery is the central package repository used by all package authors and consumers.
 
 This is great for consuming other peoples libraries, even your own, if they can be public, but there are times you may wish to have a Private feed. Luckily there are options. One is hosting it yourself on your Azure Dev Ops (ADO) instance.
@@ -29,8 +33,8 @@ Then create a new Repo:
 
 Click on the "Artifacts" tab
 
-*old* `https://[TENANT].visualstudio.com/[PROJECT]/_packaging?_a=feed&feed=[FEEDNAME]`
-*new* `https://[TENANT].azure.com/[PROJECT]/_packaging?_a=feed&feed=[FEEDNAME]`
+_old_ `https://[TENANT].visualstudio.com/[PROJECT]/_packaging?_a=feed&feed=[FEEDNAME]`
+_new_ `https://[TENANT].azure.com/[PROJECT]/_packaging?_a=feed&feed=[FEEDNAME]`
 
 Click "+ Create Feed".
 
@@ -69,7 +73,7 @@ Search for "NuGet"
 
 Command: "push"
 
-Path to NuGet package(s) to publish: "$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg"
+Path to NuGet package(s) to publish: "$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/\*_/_.symbols.nupkg"
 
 Target feed location: This organization/collection
 
@@ -78,10 +82,10 @@ Target feed: Choose from a picker.
 ```yml
 - task: NuGetCommand@2
   inputs:
-    command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: '[GUID]'
+    command: "push"
+    packagesToPush: "$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg"
+    nuGetFeedType: "internal"
+    publishVstsFeed: "[GUID]"
 ```
 
 The `publishVstsFeed` can either be a GUID or the name of the feed. When using the GUI it usually adds the underlying Guid.

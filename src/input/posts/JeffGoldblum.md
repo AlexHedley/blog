@@ -1,11 +1,16 @@
 ---
 title: Jeff Goldblum StreamDeck Action
+# lead:
 tags:
-    - programming
-    - github
+  - programming
+  - github
+  - dotnet
+  - csharp
 author: AlexHedley
-# description: 
+# description:
 published: 2020-09-28
+# image:
+# imageattribution:
 ---
 
 In a previous [post](/post/StreamDeckToolkit/) I discussed the [StreamDeck](https://www.elgato.com/en/gaming/stream-deck) and adding docs to the .NET toolkit.

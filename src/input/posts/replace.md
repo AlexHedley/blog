@@ -1,10 +1,14 @@
 ---
 title: Replace
+# lead:
 tags:
-    - iOS
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2014-10-02
+# image:
+# imageattribution:
 ---
 
 `xLabel.text = [STRING stringByReplacingOccurrencesOfString:@" " withString:@""];`

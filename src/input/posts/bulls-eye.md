@@ -1,11 +1,14 @@
 ---
 title: Bull's Eye
+# lead:
 tags:
-    - iOS
-    - dev
+  - iOS
+  - dev
 author: AlexHedley
-# description: 
+# description:
 published: 2011-10-22
+# image:
+# imageattribution:
 ---
 
 So I recently bought the iOS Apprentice series from Ray Wenderlich's [Store](http://www.raywenderlich.com/store).

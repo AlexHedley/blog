@@ -1,10 +1,13 @@
 ---
 title: Android - Preferences Screen
+# lead:
 tags:
-    - android
+  - android
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-30
+# image:
+# imageattribution:
 ---
 
 I've wanted to add Preferences Screen to my app.
@@ -24,6 +27,8 @@ https://androidresearch.wordpress.com/2012/03/09/creating-a-preference-activity-
 Added here in case the site goes.
 
 [gist 9b3d87f19f4a7c3caea6/]
+
+<?# Gist 9b3d87f19f4a7c3caea6 /?>
 
 `AndroidManifest.xml`
 
@@ -47,7 +52,7 @@ Added here in case the site goes.
      <item>Option 2</item>
      <item>Option 3</item>
      </string-array>
- 
+
    <string-array name="listValues">
      <item>1 is selected</item>
      <item>2 is selected</item>
@@ -85,19 +90,19 @@ Toast.makeText(getApplicationContext(), "Default URL Updated", Toast.LENGTH_SHOR
 `PreferenceDemoActivity.java`
 public class PreferenceDemoActivity extends Activity {
 TextView textView;
- 
+
 @Override
 public void onCreate(Bundle savedInstanceState) {
    super.onCreate(savedInstanceState);
    setContentView(R.layout.main);
- 
+
    Button btnPrefs = (Button) findViewById(R.id.btnPrefs);
    Button btnGetPrefs = (Button) findViewById(R.id.btnGetPreferences);
- 
+
    textView = (TextView) findViewById(R.id.txtPrefs);
- 
+
    View.OnClickListener listener = new View.OnClickListener() {
- 
+
    @Override
    public void onClick(View v) {
    switch (v.getId()) {
@@ -106,17 +111,17 @@ public void onCreate(Bundle savedInstanceState) {
         PrefsActivity.class);
         startActivity(intent);
         break;
-   
+
      case R.id.btnGetPreferences:
         displaySharedPreferences();
         break;
-   
+
      default:
        break;
      }
     }
    };
- 
+
    btnPrefs.setOnClickListener(listener);
 }
 ```
@@ -142,7 +147,7 @@ public void onCreate(Bundle savedInstanceState) {
 
 ```java
 public class PrefsActivity extends PreferenceActivity{
- 
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
      super.onCreate(savedInstanceState);

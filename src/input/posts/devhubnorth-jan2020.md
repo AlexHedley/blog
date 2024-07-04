@@ -1,5 +1,6 @@
 ---
 title: DevHubNorth - Jan 2020
+# lead:
 tags:
   - devhubnorth
   - meetup

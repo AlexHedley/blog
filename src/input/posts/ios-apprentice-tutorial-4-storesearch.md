@@ -1,11 +1,14 @@
 ---
 title: "iOS Apprentice Tutorial 4: StoreSearch"
+# lead:
 tags:
-    - iOS
-    - apps
+  - iOS
+  - apps
 author: AlexHedley
-# description: 
+# description:
 published: 2012-03-25
+# image:
+# imageattribution:
 ---
 
 Started "[iOS Apprentice Tutorial 4: StoreSearch](http://www.raywenderlich.com/store/ios-apprentice)" from [RayWenderlich.com](http://www.raywenderlich.com/) by **[Matthijs Hollemans](http://www.hollance.com/)**

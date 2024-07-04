@@ -1,10 +1,15 @@
 ---
 title: Marvel API
-# tags:
-#     - 
+# lead:
+tags:
+  - api
+  - python
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2015-08-16
+# image:
+# imageattribution:
 ---
 
 So I found that Marvel have an API.
@@ -22,6 +27,8 @@ Original
 [https://gist.github.com/oshliaer/eb8d7197e6749475652a](https://gist.github.com/oshliaer/eb8d7197e6749475652a)
 
 [gist 2726b33578720c42b24c /]
+
+<?# Gist 2726b33578720c42b24c /?>
 
 `character_by_name.py`
 
@@ -123,15 +130,15 @@ I created a Mac App to create the Hash and create this URL.
 [http://stackoverflow.com/questions/2018550/how-do-i-create-an-md5-hash-of-a-string-in-cocoa](http://stackoverflow.com/questions/2018550/how-do-i-create-an-md5-hash-of-a-string-in-cocoa)
 
 ```objectivec
-NSTimeInterval timeStamp = \[\[NSDate date\] timeIntervalSince1970\];
+NSTimeInterval timeStamp = [[NSDate date] timeIntervalSince1970];
 // NSTimeInterval is defined as double
-NSNumber \*timeStampObj = \[NSNumber numberWithDouble: timeStamp\];
-txtTimestamp.stringValue = \[timeStampObj stringValue\];
+NSNumber *timeStampObj = [NSNumber numberWithDouble: timeStamp];
+txtTimestamp.stringValue = [timeStampObj stringValue];
 ```
 
 I call this in the app and it doesn't work.
 
-[https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation\_Constants/index.html#//apple\_ref/doc/constant\_group/URL\_Loading\_System\_Error\_Codes](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/index.html#//apple_ref/doc/constant_group/URL_Loading_System_Error_Codes)
+[https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/index.html#//apple_ref/doc/constant_group/URL_Loading_System_Error_Codes](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/index.html#//apple_ref/doc/constant_group/URL_Loading_System_Error_Codes)
 
 ```objectivec
 NSURLErrorUserAuthenticationRequired = -1013

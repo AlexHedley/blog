@@ -1,5 +1,6 @@
 ---
 title: CocoaHeads Newcastle - Sept 2014
+# lead:
 tags:
   - cocoaheads
   - newcastle
@@ -9,6 +10,8 @@ description: iOS/Mac meetup
 published: 2014-09-02
 image: /posts/images/ios/cocoahead_banner.png
 imageattribution: http://cocoaheads.org/
+# image:
+# imageattribution:
 ---
 
 <!-- # CocoaHeads Newcastle - Sept 2014 -->

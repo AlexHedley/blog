@@ -1,10 +1,15 @@
 ---
 title: Custom URL Schemes
-# tags:
-#     - 
+# lead:
+tags:
+  - iOS
+  - objc
+  - url scheme
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-20
+# image:
+# imageattribution:
 ---
 
 An app I'm working on needed a custom URL Scheme, I found a simple tutorial at:
@@ -12,6 +17,8 @@ An app I'm working on needed a custom URL Scheme, I found a simple tutorial at:
 http://www.idev101.com/code/Objective-C/custom\_url\_schemes.html
 
 \[gist 3eb964d2e1a0a77690e9\]
+
+<?# Gist 3eb964d2e1a0a77690e9 /?>
 
 `application:handleOpenURL.m`
 
@@ -34,12 +41,12 @@ http://www.idev101.com/code/Objective-C/custom\_url\_schemes.html
 - (NSDictionary *)parseQueryString:(NSString *)query {
     NSMutableDictionary *dict = [[[NSMutableDictionary alloc] initWithCapacity:6] autorelease];
     NSArray *pairs = [query componentsSeparatedByString:@"&"];
-    
+
     for (NSString *pair in pairs) {
         NSArray *elements = [pair componentsSeparatedByString:@"="];
         NSString *key = [[elements objectAtIndex:0] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         NSString *val = [[elements objectAtIndex:1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        
+
         [dict setObject:val forKey:key];
     }
     return dict;

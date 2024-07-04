@@ -1,5 +1,6 @@
 ---
-title:  ISC2 North East England Chapter 10th Anniversary Event
+title: ISC2 North East England Chapter 10th Anniversary Event
+# lead:
 tags:
   - isc2
   - meetup

@@ -1,10 +1,13 @@
 ---
 title: Batch renaming files
+# lead:
 # tags:
-#     - 
+#     -
 author: AlexHedley
-# description: 
+# description:
 published: 2015-07-11
+# image:
+# imageattribution:
 ---
 
 I needed to batch rename some files

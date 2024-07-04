@@ -1,13 +1,14 @@
 ---
 title: 🐪 OCaml on GitHub
+# lead:
 tags:
-    - ocaml
-    - github
+  - ocaml
+  - github
 author: alex-hedley
 description: Using OCaml in GitHub with Actions/Workflows etc.
 published: 2023-10-12
 # image: /posts/images/
-# imageattribution: 
+# imageattribution:
 ---
 
 <!-- # 🐪 OCaml on GitHub -->
@@ -125,7 +126,7 @@ jobs:
 
       - name: 📄 Build Docs
         run: opam exec -- dune build @doc
-      
+
       - name: Upload API Docs artifact
         uses: actions/upload-artifact@v3.1.3
         with:
@@ -136,8 +137,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
           publish_dir: ./src/helloworld/_build/default/_doc/_html
           destination_dir: docs
           enable_jekyll: true

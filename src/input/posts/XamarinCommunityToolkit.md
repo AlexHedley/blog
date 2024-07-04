@@ -1,14 +1,18 @@
 ---
 title: Xamarin CommunityToolkit
+# lead:
 tags:
-    - programming
-    - xamarin
+  - programming
+  - xamarin
+  - dotnet
 author: AlexHedley
-# description: 
+# description:
 published: 2020-07-10
+# image:
+# imageattribution:
 ---
 
-The [Xamarin CommunityToolkit](https://github.com/xamarin/XamarinCommunityToolkit) is a reboot of an old set of helpful additions to Xamarin for example 
+The [Xamarin CommunityToolkit](https://github.com/xamarin/XamarinCommunityToolkit) is a reboot of an old set of helpful additions to Xamarin for example
 
 - Behaviors
 - Controls
@@ -35,9 +39,11 @@ I'm hoping to start on the list above soon, the easier it is to get people start
 Original info about the Toolkit.
 
 Profile:
+
 - https://www.nuget.org/profiles/FormsCommunityToolkit
 
 Packages:
+
 - https://www.nuget.org/packages/FormsCommunityToolkit.Effects/1.0.0.110-beta
 - https://www.nuget.org/packages/FormsCommunityToolkit.Converters/1.0.0.66-beta
 - https://www.nuget.org/packages/FormsCommunityToolkit.Behaviors/1.0.0.66-beta

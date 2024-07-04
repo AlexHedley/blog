@@ -1,11 +1,12 @@
 ---
 title: AWS Cloud Quest Machine Learning
+# lead:
 tags:
-    - programming
-    - aws
-    - cloud quest
+  - programming
+  - aws
+  - cloud quest
 author: alex-hedley
-# description: 
+# description:
 published: 2023-07-05
 image: /posts/images/aws-cq/cloud-quest.png
 imageattribution: https://aws.amazon.com/training/digital/aws-cloud-quest/
@@ -24,7 +25,7 @@ This is a paid course from AWS that uses gamification and hands on labs to reinf
 
 > Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.  
 > $29.00 / month + VAT  
-> https://explore.skillbuilder.aws/learn/signin  
+> https://explore.skillbuilder.aws/learn/signin
 
 > As the Machine Learning specialist, you will implement solutions using AWS AI services and trained models. You will build, train, and deploy Machine Learning models, as well as integrate AWS AI services into solutions. You will gain hands on experience with AI/ML topics like reinforcement learning, anomaly detection, text to speech, transcription and computer vision.
 

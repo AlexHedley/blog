@@ -5,6 +5,7 @@ description: Certifications
 tags:
   - github
   - exam
+  - certification
 author: alexhedley
 published: 2024-01-20
 image: /posts/images/gh/foundations.png

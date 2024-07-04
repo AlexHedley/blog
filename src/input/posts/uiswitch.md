@@ -1,11 +1,15 @@
 ---
 title: UISwitch
+# lead:
 tags:
-    - iOS
-    - UISwitch
+  - iOS
+  - objc
+  - UISwitch
 author: AlexHedley
-# description: 
+# description:
 published: 2017-04-03
+# image:
+# imageattribution:
 ---
 
 Changing the colour of a [UISwitch](https://developer.apple.com/reference/uikit/uiswitch?language=objc) control.
@@ -29,14 +33,16 @@ tintColor changes the background when sliding but when off just has the outline,
 
 [gallery ids="917,918,916,915" type="rectangular"]
 
-![](images/uiswitch-ontintcolor.png "")
-![](images/uiswitch-tintcolor.png "")
-![](images/uiswitch-background.png "")
-![](images/uiswitch-background-with-radius.png "")
+![](images/uiswitch-ontintcolor.png)
+![](images/uiswitch-tintcolor.png)
+![](images/uiswitch-background.png)
+![](images/uiswitch-background-with-radius.png)
 
 - http://stackoverflow.com/a/22830039/2895831
 - http://stackoverflow.com/a/19123019/2895831
 
 [gist https://gist.github.com/AlexHedley/41485d2b11f6f03a4734e350ee7dac3f /]
+
+<?# Gist 41485d2b11f6f03a4734e350ee7dac3f /?>
 
 ![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2017/04/03/uiswitch/)

@@ -1,12 +1,16 @@
 ---
 title: SQLite Help
+# lead:
 tags:
-    - iOS
-    - date
-    - sqlite
+  - iOS
+  - date
+  - sqlite
+  - database
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-10
+# image:
+# imageattribution:
 ---
 
 Order By Date

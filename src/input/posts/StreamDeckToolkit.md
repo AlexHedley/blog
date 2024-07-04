@@ -1,11 +1,16 @@
 ---
 title: StreamDeck Toolkit
+# lead:
 tags:
-    - programming
-    - github
+  - dotnet
+  - csharp
+  - programming
+  - github
 author: AlexHedley
-# description: 
+# description:
 published: 2020-06-07
+# image:
+# imageattribution:
 ---
 
 The [Stream Deck](https://www.elgato.com/en/gaming/stream-deck) is an awesome gadget to use whilst streaming. It allows you to configure buttons to perform any number of actions. This could be changing scene whilst streaming, playing some sounds, opening an app, running a set of actions, the list is endless.

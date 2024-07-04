@@ -1,11 +1,15 @@
 ---
 title: Certified in Cybersecurity℠ - CC
+# lead:
 tags:
-    - (ISC)²
-    - exam
+  - (ISC)²
+  - exam
+  - certification
 author: alex-hedley
-description: 
+description:
 published: 2023-05-05
+# image:
+# imageattribution:
 ---
 
 <!-- # Certified in Cybersecurity℠ - CC -->

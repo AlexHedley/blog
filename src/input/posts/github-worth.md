@@ -1,7 +1,8 @@
 ---
 title: GitHub Worth
+# lead:
 tags:
-    - github
+  - github
 author: alexhedley
 description: Estimate Github Worth Generator.
 published: 2023-12-26

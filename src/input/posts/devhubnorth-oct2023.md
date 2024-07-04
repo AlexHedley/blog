@@ -1,5 +1,6 @@
 ---
 title: DevHubNorth - Oct 2023
+# lead:
 tags:
   - devhubnorth
   - meetup

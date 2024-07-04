@@ -1,15 +1,20 @@
 ---
 title: Android - Dismiss Keyboard
+# lead:
 tags:
-    - android
+  - android
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-28
+# image:
+# imageattribution:
 ---
 
 How to dismiss a keyboard on a button click
 
 \[gist cd4c31f6557504060ca0/\]
+
+<?# Gist cd4c31f6557504060ca0 /?>
 
 `Activity.java`
 

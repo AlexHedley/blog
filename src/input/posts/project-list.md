@@ -1,9 +1,13 @@
 ---
 title: Project List
-# tags:
+# lead:
+tags:
+  - website
 author: AlexHedley
-# description: 
+# description:
 published: 2011-01-02
+# image:
+# imageattribution:
 ---
 
 Just added a new page with the Web [Projects](http://alexhedley.com/projects/) I'm working on, should be an expanding list :)

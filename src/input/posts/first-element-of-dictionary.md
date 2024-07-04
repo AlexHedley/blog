@@ -1,16 +1,21 @@
 ---
 title: First Element of Dictionary
-# tags:
-#     - 
+# lead:
+tags:
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2014-10-01
+# image:
+# imageattribution:
 ---
 
 Get the first Element of a Dictionary:
 
 \[gist https://gist.github.com/80552a75bfdf071f58cb /\]
 
+<?# Gist 3eb964d2e1a0a77690e9 /?>
 
 URL: http://gdata.youtube.com/feeds/api/users/unpluggedacoustic1/uploads/?alt=json
 

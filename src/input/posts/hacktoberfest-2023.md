@@ -1,7 +1,9 @@
 ---
 title: Hacktoberfest 2023
+# lead:
 tags:
-    - hacktoberfest
+  - hacktoberfest
+  - 2023
 author: alex-hedley
 description: Hacktoberfest is DigitalOcean’s annual event that encourages people to contribute to open source throughout October.
 published: 2023-11-11

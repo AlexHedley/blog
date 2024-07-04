@@ -1,10 +1,14 @@
 ---
 title: Mac OS X - Dev
+# lead:
 tags:
-    - macosx
+  - macosx
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2015-06-09
+# image:
+# imageattribution:
 ---
 
 I bought:
@@ -24,7 +28,7 @@ Probably look back and say why didn't I spot this but it should help it not happ
 Unknown type name 'NSTextField'
 
 ```objectivec
-#import <Cocoa/Cocoa.h> 
+#import <Cocoa/Cocoa.h>
 ```
 
 Could have just added a .pch file

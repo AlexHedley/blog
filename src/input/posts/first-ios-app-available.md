@@ -1,10 +1,15 @@
 ---
 title: First iOS App Available
+# lead:
 tags:
-    - iOS
+  - iOS
+  - appstore
+  - apple
 author: AlexHedley
-# description: 
+# description:
 published: 2011-08-12
+# image:
+# imageattribution:
 ---
 
 Just had my first app published on the App Store

@@ -1,13 +1,14 @@
 ---
 title: 🎙️ Markdown
+# lead:
 tags:
-    - markdown
-    - talk
+  - markdown
+  - talk
 author: alex-hedley
 description: Introduction to Markdown.
 published: 2023-04-04
 # image: /posts/images/
-# imageattribution: 
+# imageattribution:
 ---
 
 <!-- Markdown -->
@@ -18,6 +19,7 @@ The idea is to build up a few key skills in stages, first show markdown, then gi
 Roles are always expecting so much more cross discipline skills and I thought it would be good to to a talk that gave an intro to this.
 
 🗓️ Apr 4, 2023
+
 <!-- 📼  -->
 
 Originally it was done as a PowerPoint presentation but I'm now moving [revealjs](https://revealjs.com).

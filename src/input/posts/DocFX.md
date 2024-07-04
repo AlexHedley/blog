@@ -1,11 +1,17 @@
 ---
 title: DocFX
+# lead:
 tags:
-    - programming
-    - github
+  - programming
+  - github
+  - docfx
+  - microsft
+  - dotnet
 author: AlexHedley
-# description: 
+# description:
 published: 2020-05-19
+# image:
+# imageattribution:
 ---
 
 There are a number of options to build static sites these days.
@@ -18,7 +24,7 @@ But with me working with .NET predominantly it makes sense to use the tooling MS
 
 For a great customised version of this see [Prism Library Docs](https://prismlibrary.com/docs/).
 
-One thing I love about the jekyll based sites is you can use them with GitHub Pages. Just push and it auto builds. 
+One thing I love about the jekyll based sites is you can use them with GitHub Pages. Just push and it auto builds.
 
 For MkDocs this allows a command to push `mkdocs gh-deploy`.
 
@@ -55,7 +61,7 @@ Then we need to run a job on an OS:
 ```yml
 jobs:
   deploy:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 ```
 
 Next we need to build the DocFX site, this is done locally running the following command:
@@ -75,10 +81,10 @@ Luckily this GitHub Action has already been built:
 Just add the following **step**:
 
 ```yml
-      - name: docfx-action
-        uses: nikeee/docfx-action@v0.1.0
-        with:
-          args: docfx.json
+- name: docfx-action
+  uses: nikeee/docfx-action@v0.1.0
+  with:
+    args: docfx.json
 ```
 
 If your `docfx.json` is in another location update the `args` input accordingly.
@@ -94,11 +100,11 @@ Again there's an Action already built for this:
 **[GitHub Actions for GitHub Pages](https://github.com/peaceiris/actions-gh-pages)** from [peaceiris](https://github.com/peaceiris) Shohei Ueda
 
 ```yml
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.6.1
-        with:
-          github_token: ${ secrets.GITHUB_TOKEN }
-          publish_dir: ./_site
+- name: Deploy
+  uses: peaceiris/actions-gh-pages@v3.6.1
+  with:
+    github_token: ${ secrets.GITHUB_TOKEN }
+    publish_dir: ./_site
 ```
 
 Note: use double "{" and "}" around the `github_token`.
@@ -136,7 +142,7 @@ jobs:
         uses: nikeee/docfx-action@v0.1.0
         with:
           args: docfx.json
-      
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:

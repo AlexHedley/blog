@@ -1,11 +1,15 @@
 ---
 title: Visual Studio Extensions
+# lead:
 tags:
-    - programming
-    - vs
+  - programming
+  - vs
+  - dotnet
 author: AlexHedley
-# description: 
+# description:
 published: 2020-06-21
+# image:
+# imageattribution:
 ---
 
 Visual Studio Extensions are a fantastic way to add extra functionality to the [IDE](https://visualstudio.microsoft.com/).

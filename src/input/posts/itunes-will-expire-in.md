@@ -1,10 +1,14 @@
 ---
 title: iTunes will expire in ...
+# lead:
 tags:
-    - lion
+  - itunes
+  - lion
 author: AlexHedley
-# description: 
+# description:
 published: 2011-08-12
+# image:
+# imageattribution:
 ---
 
 Anyone else getting this?

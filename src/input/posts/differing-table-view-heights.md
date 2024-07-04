@@ -1,12 +1,15 @@
 ---
 title: Differing Table View Heights
+# lead:
 tags:
-    - iOS
-    - height
-    - tableview
+  - iOS
+  - height
+  - tableview
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-03
+# image:
+# imageattribution:
 ---
 
 So I'm creating an app which I wanted different themes for the Table View. I've created two Prototype Cells and given them different CellIdentifiers. This is then stored in a plist of DefaultPreferences.
@@ -14,6 +17,8 @@ So I'm creating an app which I wanted different themes for the Table View. I've 
 Even though I'd given them different heights in IB but this wasn't reflected in the app.
 
 [gist 6218ba01a2e8fc3ef0b5 /]
+
+<?# Gist 6218ba01a2e8fc3ef0b5 /?>
 
 `TableViewController.m`
 

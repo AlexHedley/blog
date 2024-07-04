@@ -1,13 +1,17 @@
 ---
 title: Movem Level Editor
+# lead:
 tags:
-    - iOS
-    - mac
-    - movem
-    - game
+  - iOS
+  - swift
+  - mac
+  - movem
+  - game
 author: AlexHedley
-# description: 
+# description:
 published: 2016-03-19
+# image:
+# imageattribution:
 ---
 
 I've been working a little more on my Movem port, and there are over 50 levels, so I thought I'd make a level editor, one to speed up creating the levels, one because it's flipped using the code from boxxle and two because I could then create my own levels.

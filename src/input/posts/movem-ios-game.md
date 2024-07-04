@@ -1,12 +1,16 @@
 ---
 title: Movem iOS game
+# lead:
 tags:
-    - iOS
-    - movem
-    - game
+  - iOS
+  - swift
+  - movem
+  - game
 author: AlexHedley
-# description: 
+# description:
 published: 2016-03-06
+# image:
+# imageattribution:
 ---
 
 So I found an implementation of an iOS Sokoban game
@@ -47,6 +51,8 @@ I found http://www.spritekitlessons.com/tile-a-background-image-with-sprite-kit
 
 [gist id=b5e6ad227d988fe61327 file=TileSprite2.swift /]
 
+<?# Gist b5e6ad227d988fe61327 /?>
+
 `TileSprite2.swift`
 
 ```swift
@@ -66,10 +72,10 @@ func createBackgroundTiled() {
   var backgroundTiles: SKSpriteNode = SKSpriteNode(texture: backgroundTexture)
   backgroundTiles.yScale = -1
   backgroundTiles.position = CGPointMake(0, 0)
-  
+
   backgroundTiles.zPosition = -1
   backgroundTiles.position = CGPointMake(self.size.width/2, self.size.height/2)
-  
+
   self.addChild(backgroundTiles)
 }
 ```

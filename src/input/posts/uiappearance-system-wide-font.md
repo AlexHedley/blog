@@ -1,10 +1,13 @@
 ---
 title: UIAppearance - System Wide Font
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2015-02-25
+# image:
+# imageattribution:
 ---
 
 Set an app wide font `[[UILabel appearance] setFont:[UIFont fontWithName:@"YourFontName" size:17.0]];`

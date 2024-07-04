@@ -1,9 +1,13 @@
 ---
 title: 2014 in review
-# tags:
+# lead: Review
+tags:
+  - review
 author: AlexHedley
-# description: 
+description: A Year in review
 published: 2014-12-31
+# image:
+# imageattribution:
 ---
 
 The WordPress.com stats helper monkeys prepared a 2014 annual report for this blog.

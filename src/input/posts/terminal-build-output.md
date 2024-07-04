@@ -1,11 +1,14 @@
 ---
 title: Terminal Build Output
+# lead:
 tags:
     - .NET 8
     - terminal
 author: AlexHedley
 # description: 
 published: 2023-06-09
+# image:
+# imageattribution:
 ---
 
 `dotnet build /tl`

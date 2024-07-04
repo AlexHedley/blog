@@ -1,11 +1,13 @@
 ---
 title: Poker - Tracking cards
+# lead:
 tags:
   - poker
   - rfid
   - nfc
   - NTAG215
   - ISO15693
+  - arduino
 author: alexhedley
 description: How to know what cards are currently in play.
 published: 2023-08-13

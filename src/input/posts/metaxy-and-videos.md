@@ -1,10 +1,13 @@
 ---
 title: MetaX/Y and Videos
-# tags:
-#     - 
+# lead:
+tags:
+  - macosx
 author: AlexHedley
-# description: 
+# description:
 published: 2013-12-25
+# image:
+# imageattribution:
 ---
 
 I've got some video files I needed to add some meta data to and needed a quick and easy way to do it.

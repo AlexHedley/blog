@@ -1,5 +1,6 @@
 ---
 title: Poker - Chip
+# lead:
 tags:
   - poker
   - chip

@@ -1,10 +1,13 @@
 ---
 title: RSS - Google Reader
-# tags:
-#     - 
+# lead:
+tags:
+  - rss
 author: AlexHedley
-# description: 
+# description:
 published: 2013-06-25
+# image:
+# imageattribution:
 ---
 
 So Google Reader is going on the 1st of July. What are the alternatives?

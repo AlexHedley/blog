@@ -1,14 +1,17 @@
 ---
 title: Pollen Today Widget
+# lead:
 tags:
-    - iOS
-    - api
-    - json
-    - objc
-    - tableview
+  - iOS
+  - api
+  - json
+  - objc
+  - tableview
 author: AlexHedley
-# description: 
+# description:
 published: 2017-07-09
+# image:
+# imageattribution:
 ---
 
 I want a today Widget to show pollen count.
@@ -25,7 +28,7 @@ http://www.claritynallergy.co.uk/allergyforecast/?zip=X
 
 It doesn't have the Widget I wanted so I started looking for an API.
 
-* * *
+---
 
 **POST** http://www.claritynallergy.co.uk/webservice/allergyforecast.php
 
@@ -47,13 +50,13 @@ Images
 
 "http://www.claritynallergy.co.uk/static/media/images/claritynallergy/7-trans.png" :![](images/3-trans.png)
 
-* * *
+---
 
 I found Benadryl has one.
 
 https://www.benadryl.co.uk/social-pollen-count
 
-* * *
+---
 
 **GET** https://socialpollencount.co.uk/api/forecast?location=\[**LAT**,**LON**\]
 
@@ -65,21 +68,21 @@ Images
 
 "https://socialpollencount.co.uk/images/content/weather/07.pnp" :![](images/07.png)
 
-* * *
+---
 
 App: https://itunes.apple.com/gb/app/benadryl-social-pollen-count/id638068252?mt=8
 
 App doesn't exist.
 
-* * *
+---
 
 Progress I've started building my own
 
-![](images/img_4314.png "")
+![](images/img_4314.png)
 
-![](images/img_4315-1.png "")
+![](images/img_4315-1.png)
 
-![](images/img_4317.jpg "")
+![](images/img_4317.jpg)
 
 The Widget needs a lot of work but the basis is there, I've built a framework that gets all the data. Now to finish the UI...
 

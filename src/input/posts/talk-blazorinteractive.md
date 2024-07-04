@@ -1,8 +1,11 @@
 ---
 title: Blazor Interactive (Talk)
+# lead:
 tags:
   - talk
   - blazor
+  - dotnet
+  - csharp
 author: alexhedley
 description: Delivering a talk on Building a clone of Try.NET in Blazor WASM.
 published: 2023-09-08
@@ -38,7 +41,7 @@ Thanks also to Umar for his excellent talk on CI/CD/CD. Make sure to check that 
 🗓️ Sept 6, 2023  
 🕰 17:15 - 20:00  
 📍 Tuspark, Newcastle  
-🔗 [[In Person] Newcastle .NET Event - September 6th - 2 Talks](https://www.meetup.com/haintonsdotnetmeetup/events/295218917)  
+🔗 [[In Person] Newcastle .NET Event - September 6th - 2 Talks](https://www.meetup.com/haintonsdotnetmeetup/events/295218917)
 
 ![Hainton Meetup Talks](images/talk/talk-blazorinteractive-3.jpeg "Hainton Meetup Talks")
 

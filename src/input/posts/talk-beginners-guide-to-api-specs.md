@@ -1,14 +1,15 @@
 ---
 title: 🎙️ Beginners Guide to API Specs - Part 1
+# lead:
 tags:
-    - api
-    - specification
-    - talk
+  - api
+  - specification
+  - talk
 author: alex-hedley
 description: How to read and use an API spec.
 published: 2023-06-15
 # image: /posts/images/
-# imageattribution: 
+# imageattribution:
 ---
 
 <!-- Beginners Guide to API Specs - Part 1 -->
@@ -17,6 +18,7 @@ I work in cross discipline teams and the Product Delivery members keep us Develo
 This talk was to demystify a [swagger](http://swagger.io/) spec, break it down into what it is, what it does, and how we use them in our day to day jobs.
 
 🗓️ June 15, 2023
+
 <!-- 📼  -->
 
 - [Presentation](https://alex-hedley.github.io/talk-beginners-guide-to-api-specs/)

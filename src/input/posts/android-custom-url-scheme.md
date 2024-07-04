@@ -1,10 +1,14 @@
 ---
 title: Android - Custom URL Scheme
+# lead:
 tags:
-    - android
+  - android
+  - java
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-30
+# image:
+# imageattribution:
 ---
 
 So I've implemented a Custom URL Scheme in iOS and want to do the same in Android.
@@ -12,6 +16,8 @@ So I've implemented a Custom URL Scheme in iOS and want to do the same in Androi
 Make sure the android:scheme="" is lowercase.
 
 [gist 7fb8cbea4a69743cb7e2/]
+
+<?# Gist 7fb8cbea4a69743cb7e2 /?>
 
 `Activity.java`
 

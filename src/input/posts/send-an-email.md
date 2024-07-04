@@ -1,13 +1,19 @@
 ---
 title: Send an Email (with Attachment)
+# lead:
 tags:
-    - iOS
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-04
+# image:
+# imageattribution:
 ---
 
 [gist 6e306d13653113d8fcc6 /]
+
+<?# Gist 6e306d13653113d8fcc6 /?>
 
 `ViewController.h`
 
@@ -27,13 +33,13 @@ published: 2015-05-04
     NSString *messageBody = @"\n\nSent from the iOS App";
     // To address
     //NSArray *toRecipents = [NSArray arrayWithObject:kEmail];
-    
+
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;
     [mc setSubject:emailTitle];
     [mc setMessageBody:messageBody isHTML:NO];
     //[mc setToRecipients:toRecipents];
-    
+
     //NSData *pdfData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"X" ofType:@"pdf"]];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];

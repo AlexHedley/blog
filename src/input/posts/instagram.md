@@ -1,9 +1,13 @@
 ---
 title: Instagram
-# tags:
+# lead:
+tags:
+  - social
 author: AlexHedley
-# description: 
+# description:
 published: 2011-04-08
+# image:
+# imageattribution:
 ---
 
 I love [Instagram](http://instagr.am/) :) I need to take more photos tho, just be more creative.

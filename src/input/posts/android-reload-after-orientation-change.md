@@ -1,10 +1,13 @@
 ---
 title: Android - Stop reload after orientation change
+# lead:
 tags:
-    - android
+  - android
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-28
+# image:
+# imageattribution:
 ---
 
 I have added Barcode scanning into my app but after I have scanned it returns to my Activity and reloads the page.
@@ -12,6 +15,8 @@ I have added Barcode scanning into my app but after I have scanned it returns to
 I don't want this to happen
 
 \[gist a128ce976d9d2f0dee92 /\]
+
+<?# Gist a128ce976d9d2f0dee92 /?>
 
 `manifest.xml`
 

@@ -1,10 +1,12 @@
 ---
 title: MapKit
+# lead:
 tags:
-    - iOS
-    - MapKit
+  - iOS
+  - objc
+  - MapKit
 author: AlexHedley
-# description: 
+# description:
 published: 2018-02-03
 image: /posts/images/maps_ios-128x128_2x.png
 imageattribution: https://www.apple.com/uk/maps/
@@ -88,6 +90,8 @@ All Code
 
 [gist 6ac1c60428f6e13692f7f3f11d931f0e]
 
+<?# Gist 6ac1c60428f6e13692f7f3f11d931f0e /?>
+
 `Annotation.h`
 
 ```objectivec
@@ -164,7 +168,7 @@ typedef NS_ENUM(NSInteger, Category) {
 
 - (id)initWithName:(NSString *)name rating:(double)rating numOfReviews:(NSInteger)numOfReviews details:(NSString *)details imageUrl:(NSString *)imageUrl email:(NSString *)email phone:(NSString *)phone routeDetails:(NSString *)routeDetails notes:(NSString *)notes deal:(NSString *)deal {
     self = [super init];
-    
+
     if (self) {
         self.locationName = name;
         self.locationRating = rating;
@@ -226,7 +230,7 @@ typedef NS_ENUM(NSInteger, Category) {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.mapView.delegate = self;
-    
+
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     #ifdef __IPHONE_8_0
@@ -237,7 +241,7 @@ typedef NS_ENUM(NSInteger, Category) {
     }
     #endif
     [self.locationManager startUpdatingLocation];
-    
+
     _mapView.showsUserLocation = YES;
     [_mapView setMapType:MKMapTypeStandard];
     [_mapView setZoomEnabled:YES];
@@ -246,12 +250,12 @@ typedef NS_ENUM(NSInteger, Category) {
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
-    
+
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [self.locationManager startUpdatingLocation];
     NSLog(@"%@", [self deviceLocation]);
-    
+
     //View Area
     MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
     region.center.latitude = self.locationManager.location.coordinate.latitude;
@@ -259,20 +263,20 @@ typedef NS_ENUM(NSInteger, Category) {
     region.span.longitudeDelta = 0.005f;
     region.span.longitudeDelta = 0.005f;
     [_mapView setRegion:region animated:YES];
-    
+
     //[self addLocation:@"Protirus" subTitle:@"Office" lat:54.969617 lon:-1.618393];
     //[self addLocation:@"Town Wall" subTitle:@"Gastropub" lat:54.9694 lon:-1.6184]; //54.9694° N, 1.6184° W
-    
+
     Location *locationDetails = [Location locationWithName:@"Town Wall" rating:4.2 numOfReviews:73 details:@"Gastropub" imageUrl:@"TheTownWall" email:@"hayley@thetownwall.com" phone:@"01912323000" routeDetails:@"Town Wall - 5 minutes away - marked" notes:@"Plan to stay for an hour perhaps" deal:@"DEAL - 2 for 1 Drinks"];
-    
+
     [self addPinWithTitle:@"Protirus" subTitle:@"Office" lat:54.969617 lon:-1.618393 category:PinCategoryPlace locationDetails:nil];
     [self addPinWithTitle:@"Town Wall" subTitle:@"Gastropub" lat:54.9694 lon:-1.6184 category:PinCategoryPub locationDetails:locationDetails];
-    
+
     CLLocationCoordinate2D coordinateArray[2];
     coordinateArray[0] = CLLocationCoordinate2DMake(54.969617, -1.618393);
     coordinateArray[1] = CLLocationCoordinate2DMake(54.9694, -1.6184);
     [self addRoute:coordinateArray];
-    
+
     [self addFood];
 }
 
@@ -292,7 +296,7 @@ typedef NS_ENUM(NSInteger, Category) {
     annotation.subtitle = subTitle;
     annotation.categoryID = category;
     annotation.locationDetails = locationDetails;
-    
+
     [self.mapView addAnnotation:annotation];
 }
 
@@ -301,12 +305,12 @@ typedef NS_ENUM(NSInteger, Category) {
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
     request.naturalLanguageQuery = @"Restaurants";
     request.region = self.mapView.region;
-    
+
     MKLocalSearch *localSearch = [[MKLocalSearch alloc] initWithRequest:request];
     [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
-        
+
         NSMutableArray *annotations = [NSMutableArray array];
-        
+
         [response.mapItems enumerateObjectsUsingBlock:^(MKMapItem *item, NSUInteger idx, BOOL *stop) {
             Annotation *annotation = [[Annotation alloc] init];
             annotation.coordinate = item.placemark.location.coordinate;
@@ -315,10 +319,10 @@ typedef NS_ENUM(NSInteger, Category) {
                 //item.placemark.addressDictionary[CNMutablePostalAddress.street]; // kABPersonAddressStreetKey]; //item.phoneNumber;
             annotation.categoryID = PinCategoryFood;
             annotation.locationDetails = nil;
-            
+
             [annotations addObject:annotation];
         }];
-        
+
         [self.mapView addAnnotations:annotations];
     }];
 }
@@ -327,9 +331,9 @@ typedef NS_ENUM(NSInteger, Category) {
 - (void)addRoute:(CLLocationCoordinate2D [])coordinateArray {
     self.routeLine = [MKPolyline polylineWithCoordinates:coordinateArray count:2];
     [self.mapView setVisibleMapRect:[self.routeLine boundingMapRect]]; //If you want the route to be visible
-    
+
     [self.mapView addOverlay:self.routeLine];
-}  
+}
 
 #pragma mark - Helper Methods
 
@@ -344,7 +348,7 @@ typedef NS_ENUM(NSInteger, Category) {
         //LocationViewController *lvc = (LocationViewController *)[segue destinationViewController];
         UINavigationController *navController = [segue destinationViewController];
         LocationViewController *lvc = (LocationViewController *)([navController viewControllers][0]);
-        
+
         //http://stackoverflow.com/a/25483130
         Annotation *annotation = (Annotation *)[(MKAnnotationView *)sender annotation];
         lvc.location = annotation.locationDetails;
@@ -356,23 +360,23 @@ typedef NS_ENUM(NSInteger, Category) {
 //https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/AnnotatingMaps/AnnotatingMaps.html#//apple_ref/doc/uid/TP40009497-CH6-SW1
 - (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation {
     // Try to dequeue an existing pin view first (code not shown).
-    
+
     // If no pin view already exists, create a new one.
     MKPinAnnotationView *customPinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"anything"];
     customPinView.pinColor = MKPinAnnotationColorPurple;
     customPinView.animatesDrop = YES;
     customPinView.canShowCallout = YES;
-    
+
     // Because this is an iOS app, add the detail disclosure button to display details about the annotation in another view.
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     //[rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
     //customPinView.rightCalloutAccessoryView = rightButton;
-    
+
     NSString* imageName = @"Pin";
-    
+
     if ([annotation isKindOfClass:[Annotation class]]) {
         long categoryId = [(Annotation *)annotation categoryID];
-        
+
         switch (categoryId) {
             case PinCategoryUser:
                 imageName = @"User";
@@ -401,11 +405,11 @@ typedef NS_ENUM(NSInteger, Category) {
             // Add a custom image to the left side of the callout.
         //}
     }
-        
+
     // Add a custom image to the left side of the callout.
     UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
     customPinView.leftCalloutAccessoryView = myCustomImage;
-    
+
     return customPinView;
 }
 

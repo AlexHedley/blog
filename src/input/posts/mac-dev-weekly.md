@@ -1,10 +1,13 @@
 ---
 title: Mac Dev Weekly
+# lead:
 tags:
-    - mac
+  - mac
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-16
+# image:
+# imageattribution:
 ---
 
 So I've started some Mac Dev and I'm looking for useful sites but there aren't many out there.

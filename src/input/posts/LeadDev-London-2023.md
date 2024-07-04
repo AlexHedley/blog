@@ -1,11 +1,12 @@
 ---
 title: LeadDev London 2023
+# lead:
 tags:
-    - conference
-    - leaddev
-    - 2023
+  - conference
+  - leaddev
+  - 2023
 author: alex-hedley
-# description: 
+# description:
 published: 2023-06-30
 image: /posts/images/leaddev/new-london-hero_0.png
 imageattribution: https://leaddev.com/leaddev-london
@@ -24,11 +25,11 @@ I liked the fact that there was just a single track each day, I didn't have to m
 
 - [Agenda](https://leaddev.com/leaddev-london/agenda-2023)
 
-*Key Points*
+_Key Points_
 
-- F**king NASA
+- F\*\*king NASA
 
-- [Code Of Conduct](https://leaddev.com/code-conduct) - Don't be a d**k
+- [Code Of Conduct](https://leaddev.com/code-conduct) - Don't be a d\*\*k
 
 - #LeadDevLondon - Capitalise - helps with screen readers and accessibility
 

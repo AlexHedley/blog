@@ -1,10 +1,12 @@
 ---
 title: AWS Cloud Quest Serverless Developer
+# lead:
 tags:
-    - programming
-    - aws
+  - programming
+  - aws
+  - cloud quest
 author: alex-hedley
-# description: 
+# description:
 published: 2023-03-15
 image: /posts/images/aws-cq/cloud-quest.png
 imageattribution: https://aws.amazon.com/training/digital/aws-cloud-quest/
@@ -23,7 +25,7 @@ This is a paid course from AWS that uses gamification and hands on labs to reinf
 
 > Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.  
 > $29.00 / month + VAT  
-> https://explore.skillbuilder.aws/learn/signin  
+> https://explore.skillbuilder.aws/learn/signin
 
 > Build multi-tiered serverless applications and get hands-on experience building modern applications using AWS serverless technology.
 

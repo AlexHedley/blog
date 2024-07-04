@@ -1,9 +1,13 @@
 ---
 title: PassBook
-# tags:
+# lead:
+tags:
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2014-12-29
+# image:
+# imageattribution:
 ---
 
 Finally got my passbook to work,

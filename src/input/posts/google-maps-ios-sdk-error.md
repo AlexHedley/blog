@@ -1,11 +1,14 @@
 ---
 title: Google Maps iOS SDK - Error
+# lead:
 tags:
-    - iOS
-    - googlemaps
+  - iOS
+  - googlemaps
 author: AlexHedley
-# description: 
+# description:
 published: 2017-01-09
+# image:
+# imageattribution:
 ---
 
 Google Maps iOS SDK
@@ -34,7 +37,7 @@ _Framework Search Paths_
 
 Build and Run.
 
-* * *
+---
 
 Helpful Links
 

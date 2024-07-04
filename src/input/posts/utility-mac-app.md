@@ -1,10 +1,13 @@
 ---
 title: Utility Mac App
+# lead:
 tags:
-    - macosx
+  - macosx
 author: AlexHedley
-# description: 
+# description:
 published: 2015-08-20
+# image:
+# imageattribution:
 ---
 
 I've released my first Mac App today, Utility is a helper app to help in day to day tasks.

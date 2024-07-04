@@ -1,10 +1,13 @@
 ---
 title: Comparing a file
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-14
+# image:
+# imageattribution:
 ---
 
 So I've been hard at work again today going through a some iOS tutorials.

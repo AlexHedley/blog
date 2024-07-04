@@ -1,12 +1,15 @@
 ---
 title: Debugging a TVML tvOS App
+# lead:
 tags:
-    - tvOS
-    - tvml
-    - tvmljs
+  - tvOS
+  - tvml
+  - tvmljs
 author: AlexHedley
-# description: 
+# description:
 published: 2015-09-14
+# image:
+# imageattribution:
 ---
 
 If you download and open the Readme.md of the [TVML Catalog](https://developer.apple.com/library/prerelease/tvos/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505)

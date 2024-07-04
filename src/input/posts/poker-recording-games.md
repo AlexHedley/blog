@@ -1,5 +1,6 @@
 ---
 title: Recording Poker Games
+# lead:
 tags:
   - poker
   - esp32
@@ -7,6 +8,7 @@ tags:
   - esp32-cam-mb
   - ov2640
   - obs
+  - arduino
 author: alexhedley
 description: A home setup to record a poker game.
 published: 2023-08-11

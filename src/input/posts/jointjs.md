@@ -1,10 +1,14 @@
 ---
 title: JointJS
-# tags:
-#     - 
+# lead:
+tags:
+  - js
+  - javascript
 author: AlexHedley
-# description: 
+# description:
 published: 2014-10-18
+# image:
+# imageattribution:
 ---
 
 When writing glossary items for http://www.599cd.com I've been producing my own Function Engine as a image (in word, cough) and loading it.

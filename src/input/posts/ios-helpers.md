@@ -1,10 +1,14 @@
 ---
 title: iOS Helpers
+# lead:
 tags:
-    - iOS
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2014-09-21
+# image:
+# imageattribution:
 ---
 
 Make a Label **Bold** or _Italic_
@@ -30,11 +34,11 @@ Change Colours
 Bowling Scores - Highlight a Strike
 
 ```objectivec
--(void)changeColorToRed { 
-  for (int i = 101; i < 134; i++) { 
-    UILabel * lbl = [self.view viewWithTag: i]; 
-    if ([lbl.text isEqualToString:@"X"]) { 
-      lbl.textColor = [UIColor redColor]; 
+-(void)changeColorToRed {
+  for (int i = 101; i < 134; i++) {
+    UILabel * lbl = [self.view viewWithTag: i];
+    if ([lbl.text isEqualToString:@"X"]) {
+      lbl.textColor = [UIColor redColor];
       lbl.font = [UIFont boldSystemFontOfSize:16.0f];
     }
   }

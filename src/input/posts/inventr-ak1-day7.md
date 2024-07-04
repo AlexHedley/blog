@@ -1,7 +1,9 @@
 ---
-title: Day 7 - 30 Days Lost in Space 
+title: Day 7 - 30 Days Lost in Space
+# lead:
 tags:
   - inventr
+  - arduino
 author: alexhedley
 description: Inventr - Adventure Kit 1
 published: 2023-12-13

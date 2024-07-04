@@ -1,11 +1,14 @@
 ---
 title: Mac App Icon
+# lead:
 tags:
-    - mac
-    - icon
+  - mac
+  - icon
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-08
+# image:
+# imageattribution:
 ---
 
 Add the value to a PList

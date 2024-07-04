@@ -1,11 +1,14 @@
 ---
 title: Camera Access
+# lead:
 tags:
-    - iOS
-    - camera
+  - iOS
+  - camera
 author: AlexHedley
-# description: 
+# description:
 published: 2017-01-08
+# image:
+# imageattribution:
 ---
 
 Info.plist
@@ -25,7 +28,7 @@ Or as XML
 
 [http://useyourloaf.com/blog/privacy-settings-in-ios-10/](http://useyourloaf.com/blog/privacy-settings-in-ios-10/)
 
-* * *
+---
 
 Photo Access
 

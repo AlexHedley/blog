@@ -1,10 +1,13 @@
 ---
 title: 2015 in review
-# tags:
-#     - 
+# lead: Review
+tags:
+  - review
 author: AlexHedley
-# description: 
+description: A Year in review
 published: 2015-12-30
+# image:
+# imageattribution:
 ---
 
 The WordPress.com stats helper monkeys prepared a 2015 annual report for this blog.

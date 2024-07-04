@@ -1,11 +1,16 @@
 ---
 title: MFractor Documentation
+# lead:
 tags:
-    - programming
-    - github
+  - programming
+  - github
+  - dotnet
+  - xamarin
 author: AlexHedley
-# description: 
+# description:
 published: 2020-03-12
+# image:
+# imageattribution:
 ---
 
 Whilst in the #mfractor channel of the [xamarinchat](https://xamarinchat.slack.com/) [slack](https://slack.com/) I offered some help to add/update the documentation for MFractor.
@@ -30,9 +35,9 @@ There is now also a [Contributing](https://docs.mfractor.com/contributing/) sect
 ### MFractor
 
 > Incredible Xamarin Tools
-> 
+>
 > MFractor is a powerful productivity tool for Xamarin developers.
-> 
+>
 > Available for Visual Studio Windows and Mac.
 
 - https://www.mfractor.com/

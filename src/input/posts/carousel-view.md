@@ -1,11 +1,14 @@
 ---
 title: Carousel View
+# lead:
 tags:
-    - iOS
-    - iCarousel
+  - iOS
+  - iCarousel
 author: AlexHedley
-# description: 
+# description:
 published: 2017-05-22
+# image:
+# imageattribution:
 ---
 
 **iCarousel**

@@ -1,13 +1,16 @@
 ---
 title: iOS Maze Game Tutorial - Initial Setup
+# lead:
 tags:
-    - ios
-    - dev
-    - game
-    - maze
+  - iOS
+  - dev
+  - game
+  - maze
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-25
+# image:
+# imageattribution:
 ---
 
 So [Cartoon Smart](http://cartoonsmart.com) have released another Tutorial, this time on how to make a [Maze Game](http://cartoonsmart.com/maze-games-with-swift-and-sprite-kit-video-tutorial/) with [Swift](https://developer.apple.com/swift/) and [Sprite Kit](https://developer.apple.com/library/ios/documentation/GraphicsAnimation/Conceptual/SpriteKit_PG/Introduction/Introduction.html).

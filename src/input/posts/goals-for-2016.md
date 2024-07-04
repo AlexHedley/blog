@@ -1,10 +1,13 @@
 ---
 title: Goals for 2016
-# tags:
-#     - 
+# lead:
+tags:
+  - goals
 author: AlexHedley
-# description: 
+# description:
 published: 2016-01-01
+# image:
+# imageattribution:
 ---
 
 Thought it would be worth setting some goals for the year, then look back next year.

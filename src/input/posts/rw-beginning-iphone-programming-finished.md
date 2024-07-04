@@ -1,10 +1,13 @@
 ---
 title: RW Beginning iPhone Programming Finished
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-14
+# image:
+# imageattribution:
 ---
 
 So I've finished the first set of tutorials on [http://www.raywenderlich.com/tutorials](http://www.raywenderlich.com/tutorials) and it's making sense which is always good.

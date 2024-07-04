@@ -1,11 +1,14 @@
 ---
 title: Apple TV App - Upload Error
+# lead:
 tags:
-    - tvOS
-    - AppleTV
+  - tvOS
+  - AppleTV
 author: AlexHedley
-# description: 
+# description:
 published: 2015-11-28
+# image:
+# imageattribution:
 ---
 
 http://stackoverflow.com/questions/33291394/xcode-7-1-not-authorized-to-use-this-service-error

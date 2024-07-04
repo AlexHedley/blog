@@ -1,16 +1,22 @@
 ---
 title: Multi Select TableView
+# lead:
 tags:
-    - iOS
-    - UITableView
+  - iOS
+  - objc
+  - UITableView
 author: AlexHedley
-# description: 
+# description:
 published: 2015-08-13
+# image:
+# imageattribution:
 ---
 
 Want to select more than one row in a TableView?
 
 [gist 1e4aefb923ee02c652fd /]
+
+<?# Gist 1e4aefb923ee02c652fd /?>
 
 `TableViewController.m`
 

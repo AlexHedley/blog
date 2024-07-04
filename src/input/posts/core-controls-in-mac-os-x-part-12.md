@@ -1,10 +1,13 @@
 ---
 title: Core Controls in Mac OS X
+# lead:
 tags:
-    - Mac OS X
+  - Mac OS X
 author: AlexHedley
-# description: 
+# description:
 published: 2013-02-08
+# image:
+# imageattribution:
 ---
 
 Just finished Part 1 of the Core Controls in Mac OS X from Ray Wenderlich's site, looking decent already.

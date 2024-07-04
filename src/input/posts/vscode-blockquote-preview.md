@@ -1,8 +1,9 @@
 ---
 title: VSCode - Blockquote - Preview
+# lead:
 tags:
-    - vscode
-    - markdown
+  - vscode
+  - markdown
 author: alex-hedley
 description: Change the background colour in preview.
 published: 2023-07-11

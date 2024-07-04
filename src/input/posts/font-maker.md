@@ -1,10 +1,13 @@
 ---
 title: Font Maker
-# tags:
-#     - 
+# lead:
+tags:
+  - font
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-25
+# image:
+# imageattribution:
 ---
 
 So I've got a load of images for a font from a game.

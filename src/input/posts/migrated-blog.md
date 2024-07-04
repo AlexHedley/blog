@@ -1,10 +1,11 @@
 ---
 title: Migrated Blog
+# lead:
 tags:
-    - github
-    - statiq.web
-    - static site generator
-    - markdown
+  - github
+  - statiq.web
+  - static site generator
+  - markdown
 author: alex-hedley
 description: The journey to a new blog platform.
 published: 2023-06-09
@@ -50,8 +51,8 @@ return await Bootstrapper
 `touch index.md`
 
 ```md
-Title: My First Statiq page
----
+## Title: My First Statiq page
+
 # Hello World!
 
 Hello from my first Statiq page.
@@ -127,6 +128,7 @@ There are other updates I'm planning on adding like Search, a Header image etc, 
 - [Using Mermaid diagrams with Statiq.](https://www.dpvreony.com/articles/mermaid-with-statiq/)
   - [repo](https://github.com/dpvreony/article-statiq-mermaid)
 - [Mermaid Diagrams in Statiq](https://blog.beckshome.com/2022/09/mermaid-in-statiq)
+
   - [code](https://github.com/thbst16/dotnet-statiq-beckshome-blog/blob/main/input/posts/mermaid-in-statiq.md)
 
 - [StatiqMermaid Repo](https://github.com/ociaw/StatiqMermaid)
@@ -147,20 +149,25 @@ There are other updates I'm planning on adding like Search, a Header image etc, 
 ## Links
 
 - [devlead](https://www.devlead.se)
+
   - [Source](https://github.com/devlead/devlead.se)
   - [Devlead.Statiq - Part 1 - Tabs](https://www.devlead.se/posts/2021/2021-04-09-devlead-statiq-part1-tabs)
 
 - [Alexandre Nédélec](https://www.techwatching.dev/)
+
   - [Source](https://github.com/TechWatching/techwatching.dev)
 
 - [Thomas Beck](https://beckshome.com/)
+
   - [Source](https://github.com/thbst16/dotnet-statiq-beckshome-blog)
   - [Beckshome on Statiq](https://beckshome.com/2022/09/beckshome-on-statiq)
 
 - [The Freeze Team](https://thefreezeteam.com/)
+
   - [Source](https://github.com/TheFreezeTeam/TheFreezeTeamBlog/tree/master/Source/TheFreezeTeamBlog)
 
 - [Structed](https://blog.structed.me/)
+
   - [https://github.com/structed](https://github.com/structed)
 
 - [C# Tutorials Blog](https://wellsb.com/csharp/)

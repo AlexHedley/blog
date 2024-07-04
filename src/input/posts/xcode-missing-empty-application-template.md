@@ -1,10 +1,13 @@
 ---
 title: Xcode - Missing 'Empty Application' Template
-# tags:
-#     - 
+# lead:
+tags:
+  - Xcode
 author: AlexHedley
-# description: 
+# description:
 published: 2014-10-18
+# image:
+# imageattribution:
 ---
 
 Where has the Empty Application Template gone in Xcode?

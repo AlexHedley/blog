@@ -1,9 +1,12 @@
 ---
 title: XMPPFramework
-# tags:
-#     - 
+# lead:
+tags:
+  - iOS
+  - objc
+  - XMPPFramework
 author: AlexHedley
-# description: 
+# description:
 published: 2018-02-03
 image: /posts/images/xmppframework2.png
 imageattribution: https://github.com/robbiehanson/XMPPFramework
@@ -27,9 +30,9 @@ Open terminal at that folder location.
 
 Getting Started
 
-- [https://github.com/robbiehanson/XMPPFramework/wiki/GettingStarted\_iOS](https://github.com/robbiehanson/XMPPFramework/wiki/GettingStarted_iOS)
+- [https://github.com/robbiehanson/XMPPFramework/wiki/GettingStarted_iOS](https://github.com/robbiehanson/XMPPFramework/wiki/GettingStarted_iOS)
 
-* * *
+---
 
 Tutorials
 
@@ -53,7 +56,7 @@ Stack Overflow
 
 - [http://stackoverflow.com/questions/9091767/up-to-date-instructions-on-how-to-install-xmppframework-manually/30543948#30543948](http://stackoverflow.com/questions/9091767/up-to-date-instructions-on-how-to-install-xmppframework-manually/30543948#30543948)
 
-* * *
+---
 
 _Setting the Server_
 
@@ -61,13 +64,13 @@ set the server url
 
 set the port
 
-* * *
+---
 
 _Delivery Receipts_
 
 _Read Receipts_
 
-* * *
+---
 
 _Group Chat_
 

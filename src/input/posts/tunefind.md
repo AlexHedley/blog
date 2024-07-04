@@ -1,10 +1,13 @@
 ---
 title: Things to remember
-# tags:
-#     - 
+# lead:
+tags:
+  - random
 author: AlexHedley
-# description: 
+# description:
 published: 2014-09-13
+# image:
+# imageattribution:
 ---
 
 I always here songs and TV shows and for one reason or another can't shazam it, sometimes find them online.

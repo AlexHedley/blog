@@ -1,11 +1,14 @@
 ---
 title: Logo / Icon
+# lead:
 tags:
-    - film-app
-    - iOS
+  - film-app
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2013-07-09
+# image:
+# imageattribution:
 ---
 
 I'm needing a logo/icon for my site.
@@ -17,6 +20,8 @@ Do I use this overlayed like the below tweet or left to right, top to bottom, di
 <blockquote class="twitter-tweet"><p>RT <a href="https://twitter.com/RaptorGL">@RaptorGL</a> Help me!! Which design can you read LZA better? Design 1 <a href="https://t.co/ZtJKYE2Pf5">pic.twitter.com/ZtJKYE2Pf5</a> or Design 2 <a href="https://t.co/Ku5dwSnnav">pic.twitter.com/Ku5dwSnnav</a> <a href="https://twitter.com/search?q=%231GAM&amp;src=hash">#1GAM</a>...</p>&mdash; One Game A Month (@OneGameAMonth) <a href="https://twitter.com/OneGameAMonth/statuses/354404563199066112">July 9, 2013</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 \[caption id="" align="alignnone" width="50"\]![](https://pbs.twimg.com/media/BOrwP7OCYAAlkCx.jpg:large) @RaptorGL Logo\[/caption\]
+
+<?# Twitter 354359677083082753 /?>
 
 [http://raptorgl.com/](http://raptorgl.com/)
 

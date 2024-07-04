@@ -1,10 +1,13 @@
 ---
 title: Mac Apps
-# tags:
-#     - 
+# lead:
+tags:
+  - mac
 author: AlexHedley
-# description: 
+# description:
 published: 2014-07-19
+# image:
+# imageattribution:
 ---
 
 RegExRX

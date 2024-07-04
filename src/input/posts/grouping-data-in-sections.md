@@ -1,10 +1,13 @@
 ---
 title: Grouping Data in Sections
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-10
+# image:
+# imageattribution:
 ---
 
 I've been looking round for some tutorials on how to group data in sections.

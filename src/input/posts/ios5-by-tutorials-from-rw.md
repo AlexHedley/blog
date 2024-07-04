@@ -1,11 +1,14 @@
 ---
 title: iOS5 by tutorials from RW
+# lead:
 tags:
-    - iOS
-    - iOS5
+  - iOS
+  - iOS5
 author: AlexHedley
-# description: 
+# description:
 published: 2012-02-18
+# image:
+# imageattribution:
 ---
 
 Finally started the iOS5 by tutorials book from the great collection of teachers on [http://www.raywenderlich.com/](http://www.raywenderlich.com/)

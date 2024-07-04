@@ -1,12 +1,17 @@
 ---
 title: tvOS Playing a Video
+# lead:
 tags:
-    - tvOS
-    - AVPlayer
-    - 599cd
+  - tvOS
+  - AVPlayer
+  - 599cd
+  - javascript
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2015-09-12
+# image:
+# imageattribution:
 ---
 
 So I'd like to play a Video in an Apple TV App.
@@ -25,22 +30,27 @@ https://forums.developer.apple.com/message/53126#53126 I can play a Video using 
 
 [gist dac53c99670daddebd72 /]
 
+<?# Gist dac53c99670daddebd72 /?>
+
 `application.js`
 
 ```javascript
-function launchPlayer() {  
-  var player = new Player();  
-  var playlist = new Playlist();  
-  var mediaItem = new MediaItem("video", "http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov");  
-  player.playlist = playlist;  
-  player.playlist.push(mediaItem);  
-  player.present();  
+function launchPlayer() {
+  var player = new Player();
+  var playlist = new Playlist();
+  var mediaItem = new MediaItem(
+    "video",
+    "http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov"
+  );
+  player.playlist = playlist;
+  player.playlist.push(mediaItem);
+  player.present();
 }
 
-//in application.js  
-App.onLaunch = function(options) {  
-   launchPlayer();  
-}
+//in application.js
+App.onLaunch = function (options) {
+  launchPlayer();
+};
 ```
 
 `PlayerViewController.m`
@@ -72,8 +82,8 @@ If you change the URL to a file on the web it works fine.
 
 http://stackoverflow.com/questions/32518673/setting-up-apple-tv-video-javascript
 
-> I think you're using the Python SimpleHTTPServer for your test, it did not worked for video streaming, but if you use Apache or for example this file directly from apple "[http://trailers.apple.com/movies/focus\_features/9/9-clip\_480p.mov](http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov)" it will work. [user2418630](http://stackoverflow.com/users/2418630/user2418630)
-> 
+> I think you're using the Python SimpleHTTPServer for your test, it did not worked for video streaming, but if you use Apache or for example this file directly from apple "[http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov](http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov)" it will work. [user2418630](http://stackoverflow.com/users/2418630/user2418630)
+>
 > This is correct. I think video playback requires that the server supports, among other things, byte-range requests. –  [lemnar](http://stackoverflow.com/users/196079/lemnar "3326 reputation")
 
 **Blogs**

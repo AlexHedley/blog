@@ -1,11 +1,13 @@
 ---
 title: AWS Certified Cloud Practitioner
+# lead:
 tags:
-    - programming
-    - aws
-    - exam
+  - programming
+  - aws
+  - exam
+  - certification
 author: alex-hedley
-# description: 
+# description:
 published: 2023-04-06
 # image: /posts/images/aws-cq/logo_wide_practitioner.png
 # imageattribution: https://aws.amazon.com/training/learn-about/cloud-practitioner/
@@ -31,7 +33,7 @@ I took this in a Pearson VUE testing center instead of an online proctored exam.
 Saw a post on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7019288272430333952) for an all day training event.
 
 > AWS Cloud Practitioner Essentials  
-> Tuesday, 31 January 2023 09:00 (GMT)  
+> Tuesday, 31 January 2023 09:00 (GMT)
 
 - [Event Link](https://www.eventbrite.co.uk/e/aws-cloud-practitioner-essentials-tickets-488693313857)
   - [Tech Talent Engine](https://techtalentengine.co.uk)
@@ -61,10 +63,10 @@ Cloud Quest
 
 Level: Foundational  
 Length: 90 minutes to complete the exam  
-Cost: 100 USD (+VAT)  
+Cost: 100 USD (+VAT)
 
 Format: 65 questions; either multiple choice or multiple response  
-Delivery method: Pearson VUE testing center or online proctored exam.  
+Delivery method: Pearson VUE testing center or online proctored exam.
 
 ## Options
 

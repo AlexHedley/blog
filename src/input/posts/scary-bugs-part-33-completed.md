@@ -1,10 +1,13 @@
 ---
 title: Scary Bugs Part 3/3 Completed
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-12
+# image:
+# imageattribution:
 ---
 
 So that's part 3 completed.

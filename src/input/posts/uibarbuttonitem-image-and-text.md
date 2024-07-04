@@ -1,13 +1,17 @@
 ---
 title: UIBarButtonItem Image and Text
+# lead:
 tags:
   - iOS
+  - objc
   - UIBarButtonItem
   - UIButton
   - UIImage
 author: AlexHedley
 # description:
 published: 2017-09-21
+# image:
+# imageattribution:
 ---
 
 I want to add an image and text to a BarButtonItem but can't in IB.

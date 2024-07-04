@@ -1,11 +1,14 @@
 ---
 title: Links (Treehouse)
+# lead:
 tags:
-    - film-app
-    - iOS
+  - film-app
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2013-06-30
+# image:
+# imageattribution:
 ---
 
 A while back when there was an official group on fb for Treehouse I started a doc to compile useful links for iOS dev.
@@ -32,7 +35,7 @@ List of useful iOS tutorials/blogs, apps etc
 
 **Google API**
 
- [http://code.google.com/p/google-api-objectivec-client/](http://www.facebook.com/l.php?u=http%3A%2F%2Fcode.google.com%2Fp%2Fgoogle-api-objectivec-client%2F&h=fAQF5mH94&s=1)
+[http://code.google.com/p/google-api-objectivec-client/](http://www.facebook.com/l.php?u=http%3A%2F%2Fcode.google.com%2Fp%2Fgoogle-api-objectivec-client%2F&h=fAQF5mH94&s=1)
 
 \--------
 | VIDEOS |
@@ -42,15 +45,15 @@ List of useful iOS tutorials/blogs, apps etc
 
 [http://www.stanford.edu/class/cs193p/cgi-bin/drupal/](http://www.facebook.com/l.php?u=http%3A%2F%2Fwww.stanford.edu%2Fclass%2Fcs193p%2Fcgi-bin%2Fdrupal%2F&h=lAQEsAwUy&s=1)
 
-_Fall 11_  
+_Fall 11_
 
 _[http://itunes.apple.com/itunes-u/ipad-iphone-application-development/id473757255](http://www.facebook.com/l.php?u=http%3A%2F%2Fitunes.apple.com%2Fitunes-u%2Fipad-iphone-application-development%2Fid473757255&h=pAQHb_7XG&s=1)_
 
-  _Winter 10_
+_Winter 10_
 
 [http://itunes.apple.com/us/itunes-u/iphone-application-development/id384233225](http://www.facebook.com/l.php?u=http%3A%2F%2Fitunes.apple.com%2Fus%2Fitunes-u%2Fiphone-application-development%2Fid384233225&h=QAQG9JgUx&s=1)
 
-  _Fall 10_
+_Fall 10_
 
 [http://itunes.apple.com/us/itunes-u/developing-apps-for-ios-hd/id395605774](http://www.facebook.com/l.php?u=http%3A%2F%2Fitunes.apple.com%2Fus%2Fitunes-u%2Fdeveloping-apps-for-ios-hd%2Fid395605774&h=6AQE41GM4&s=1)
 
@@ -88,7 +91,7 @@ _[http://itunes.apple.com/itunes-u/ipad-iphone-application-development/id4737572
 
 **Mohammad Azam**
 
-[http://www.highoncoding.com/Categories/37\_Mobile\_Development.aspx](http://www.facebook.com/l.php?u=http%3A%2F%2Fwww.highoncoding.com%2FCategories%2F37_Mobile_Development.aspx&h=rAQEJeY6d&s=1)
+[http://www.highoncoding.com/Categories/37_Mobile_Development.aspx](http://www.facebook.com/l.php?u=http%3A%2F%2Fwww.highoncoding.com%2FCategories%2F37_Mobile_Development.aspx&h=rAQEJeY6d&s=1)
 
 They do a Podcast together
 
@@ -138,7 +141,7 @@ _Kickstarter_
 
 **CartoonSmart**
 
-[http://www.cartoonsmart.com/iphone\_index.php5](http://www.facebook.com/l.php?u=http%3A%2F%2Fwww.cartoonsmart.com%2Fiphone_index.php5&h=rAQEJeY6d&s=1)
+[http://www.cartoonsmart.com/iphone_index.php5](http://www.facebook.com/l.php?u=http%3A%2F%2Fwww.cartoonsmart.com%2Fiphone_index.php5&h=rAQEJeY6d&s=1)
 
 \--------
 | BOOKS |
@@ -150,7 +153,7 @@ _Kickstarter_
 
 **Programming in Objective-C 4th Edition**
 
-[http://www.amazon.com/C-Programming-Language-2nd-Edition/dp/0131103628](http://www.amazon.com/C-Programming-Language-2nd-Edition/dp/0131103628) 
+[http://www.amazon.com/C-Programming-Language-2nd-Edition/dp/0131103628](http://www.amazon.com/C-Programming-Language-2nd-Edition/dp/0131103628)
 
 **Beginning iPhone 4 Development: Exploring the iOS SDK**
 

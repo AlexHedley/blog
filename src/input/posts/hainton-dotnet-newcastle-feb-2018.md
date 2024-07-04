@@ -1,5 +1,6 @@
 ---
 title: Hainton .NET Newcastle Meetup - Feb 2018
+# lead:
 tags:
   - dotnet
   - newcastle

@@ -1,13 +1,16 @@
 ---
 title: TVML tvOS 10
+# lead:
 tags:
-    - tvOS
-    - 10
-    - tvml
-    - tvmljs
+  - tvOS
+  - 10
+  - tvml
+  - tvmljs
 author: AlexHedley
-# description: 
+# description:
 published: 2016-06-18
+# image:
+# imageattribution:
 ---
 
 So there's an updated TVML Catalog sample code project out.
@@ -16,7 +19,7 @@ Instead of having js files that make an XML file, it's just a straight XML file 
 
 TVML Catalog: Using TVML Templates
 
-[https://developer.apple.com/library/prerelease/content/samplecode/TVMLCatalog/Introduction/Intro.html#//apple\_ref/doc/uid/TP40016505-Intro-DontLinkElementID\_2](https://developer.apple.com/library/prerelease/content/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505-Intro-DontLinkElementID_2)
+[https://developer.apple.com/library/prerelease/content/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505-Intro-DontLinkElementID_2](https://developer.apple.com/library/prerelease/content/samplecode/TVMLCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016505-Intro-DontLinkElementID_2)
 
 Another thing they've changed is they suggest using Ruby instead of Python.
 
@@ -29,6 +32,8 @@ In most of my previous files I was using template=".xml.js" whereas now they use
 I've also amended a couple of files to get video playback working, the documentcontroller.js was the place to add it.
 
 [gist 1f510cc84ce9968642383aa62b621643]
+
+<?# Gist 1f510cc84ce9968642383aa62b621643 /?>
 
 `Catalog.xml`
 
@@ -77,16 +82,19 @@ WWDC 212 - Developing tvOS Apps Using TVMLKit: Part 1
 
 The video/slides do cover a basic example:
 
-[http://devstreaming.apple.com/videos/wwdc/2016/212s41rh77qgdg26s86/212/212\_developing\_tvos\_apps\_using\_tvmlkit\_part\_1.pdf](http://devstreaming.apple.com/videos/wwdc/2016/212s41rh77qgdg26s86/212/212_developing_tvos_apps_using_tvmlkit_part_1.pdf)
+[http://devstreaming.apple.com/videos/wwdc/2016/212s41rh77qgdg26s86/212/212_developing_tvos_apps_using_tvmlkit_part_1.pdf](http://devstreaming.apple.com/videos/wwdc/2016/212s41rh77qgdg26s86/212/212_developing_tvos_apps_using_tvmlkit_part_1.pdf)
 
 ```javascript
 // Setting up a TVMLKit JS Video Player
 
-var video = new MediaItem('video', '[https://example.com/video.m3u8](https://example.com/video.m3u8)');
+var video = new MediaItem(
+  "video",
+  "[https://example.com/video.m3u8](https://example.com/video.m3u8)"
+);
 
-video.title = 'My Great Movie';
+video.title = "My Great Movie";
 
-video.description = 'An extensive description...';
+video.description = "An extensive description...";
 
 video.resumeTime = 10.0; // seconds
 
@@ -105,12 +113,12 @@ The AudioVideo sample code hasn't been updated yet and there isn't an example of
 
 TVMLAudioVideo: Audio and Video Playback on tvOS
 
-[https://developer.apple.com/library/tvos/samplecode/TVMLAudioVideo/Introduction/Intro.html#//apple\_ref/doc/uid/TP40016506](https://developer.apple.com/library/tvos/samplecode/TVMLAudioVideo/Introduction/Intro.html#//apple_ref/doc/uid/TP40016506)
+[https://developer.apple.com/library/tvos/samplecode/TVMLAudioVideo/Introduction/Intro.html#//apple_ref/doc/uid/TP40016506](https://developer.apple.com/library/tvos/samplecode/TVMLAudioVideo/Introduction/Intro.html#//apple_ref/doc/uid/TP40016506)
 
 Check out the new MediaContent docs:
 
 MediaContent
 
-[https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV\_Template\_Guide/CompoundMultimediaElements.html#//apple\_ref/doc/uid/TP40015064-CH46-SW2](https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/CompoundMultimediaElements.html#//apple_ref/doc/uid/TP40015064-CH46-SW2https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/CompoundMultimediaElements.html#//apple_ref/doc/uid/TP40015064-CH46-SW2)
+[https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/CompoundMultimediaElements.html#//apple_ref/doc/uid/TP40015064-CH46-SW2](https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/CompoundMultimediaElements.html#//apple_ref/doc/uid/TP40015064-CH46-SW2https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/CompoundMultimediaElements.html#//apple_ref/doc/uid/TP40015064-CH46-SW2)
 
 ![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2016/06/18/tvml-tvos-10/)

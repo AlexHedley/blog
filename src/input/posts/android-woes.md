@@ -1,10 +1,13 @@
 ---
 title: Android Woes
+# lead:
 # tags:
-#     - 
+#     -
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-21
+# image:
+# imageattribution:
 ---
 
 Needed to download Android Studio at work work and it didn't work.
@@ -15,7 +18,7 @@ http://stackoverflow.com/questions/27369269/android-studio-was-unable-to-find-a-
 
 Open up Script Editor
 
-```
+```bash
 do shell script "launchctl setenv STUDIO_JDK /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk"
 ```
 
@@ -25,6 +28,6 @@ Change the version to your version:
 
 In the Terminal:
 
-javac -version
+`javac -version`
 
 ![Wordpress](../images/wordpress.png "Wordpress") [Original Link](https://alexhedley.wordpress.com/2015/01/21/android-woes/)

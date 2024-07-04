@@ -1,10 +1,13 @@
 ---
 title: Starting iOS Development
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-05
+# image:
+# imageattribution:
 ---
 
 I'm going through a book called '[Learning iPhone Programming](http://learningiphoneprogramming.com/)' by Alasdair Allan.

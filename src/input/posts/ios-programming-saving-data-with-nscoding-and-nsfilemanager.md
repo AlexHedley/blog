@@ -1,10 +1,13 @@
 ---
 title: iOS Programming - Saving Data with NSCoding and NSFileManager
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-12
+# image:
+# imageattribution:
 ---
 
 So the next chapter in the tutorials by Ray Wenderlich has taught me how to save data to the device so it will be shown next time I open the app.

@@ -1,11 +1,12 @@
 ---
 title: AWS Cloud Quest Security
+# lead:
 tags:
-    - programming
-    - aws
-    - cloud quest
+  - programming
+  - aws
+  - cloud quest
 author: alex-hedley
-# description: 
+# description:
 published: 2023-07-11
 image: /posts/images/aws-cq/cloud-quest.png
 imageattribution: https://aws.amazon.com/training/digital/aws-cloud-quest/
@@ -24,7 +25,7 @@ This is a paid course from AWS that uses gamification and hands on labs to reinf
 
 > Part of AWS Skill Builder Individual subscription. Subscribe to get access to this and other subscriber-only benefits.  
 > $29.00 / month + VAT  
-> https://explore.skillbuilder.aws/learn/signin  
+> https://explore.skillbuilder.aws/learn/signin
 
 > Use AWS security services to build solutions that respond to incidents, remediate quickly, detect vulnerabilities, and prevent data loss.
 

@@ -1,10 +1,14 @@
 ---
 title: Ray Wenderlich Scary Bug Part 2/3 Completed
+# lead:
 tags:
-    - iOS
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-12
+# image:
+# imageattribution:
 ---
 
 Completed Part 2/3 of the Scary Bugs tutorial.

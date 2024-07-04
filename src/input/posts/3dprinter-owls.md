@@ -1,17 +1,18 @@
 ---
 title: 3D Printer - Owls
+# lead:
 tags:
   - 3dprinter
 author: alexhedley
 description: 3D Printer
 published: 2022-03-05
 # image:
-# imageattribution: 
+# imageattribution:
 ---
 
 <!-- # 3D Printer - Owls -->
 
-The 3D Printer came with a model already available 
+The 3D Printer came with a model already available
 
 ![Owls](images/3dprinted-owls.jpg "Owls")
 

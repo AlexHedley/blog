@@ -1,10 +1,13 @@
 ---
 title: Android - Build an Apk
+# lead:
 tags:
-    - android
+  - android
 author: AlexHedley
-# description: 
+# description:
 published: 2015-02-06
+# image:
+# imageattribution:
 ---
 
 Build

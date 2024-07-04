@@ -1,10 +1,13 @@
 ---
 title: 599CD Tips
+# lead:
 tags:
-    - 599cd
+  - 599cd
 author: AlexHedley
-# description: 
+# description:
 published: 2013-06-30
+# image:
+# imageattribution:
 ---
 
 I've added a new section for VB.NET on the [Tips](http://599cd.alexhedley.com/tips/) section of 599CD on my site.

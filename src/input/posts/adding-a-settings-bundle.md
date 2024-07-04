@@ -1,10 +1,14 @@
 ---
 title: Adding A Settings Bundle
+# lead:
 tags:
-    - iOS
+  - iOS
+  - perl
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-24
+# image:
+# imageattribution:
 ---
 
 I'd like to add a Settings section to my app to show Licenses and other info.

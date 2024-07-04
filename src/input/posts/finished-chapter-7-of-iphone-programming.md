@@ -1,10 +1,13 @@
 ---
 title: Finished Chapter 7 of iPhone Programming
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-10
+# image:
+# imageattribution:
 ---
 
 So I finished Chapter 7 yesterday, this one was working with the web browser control (UIWebView), checking for connectivity, sending Email and then getting data from the Internet.

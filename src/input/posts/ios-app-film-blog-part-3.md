@@ -1,11 +1,14 @@
 ---
 title: iOS App - Film Blog (Part 3)
+# lead:
 tags:
-    - film-app
-    - iOS
+  - film-app
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2013-06-30
+# image:
+# imageattribution:
 ---
 
 So I've added a toolbar.

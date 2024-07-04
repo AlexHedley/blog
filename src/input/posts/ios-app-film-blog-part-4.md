@@ -1,11 +1,14 @@
 ---
 title: iOS App – Film Blog (Part 4)
+# lead:
 tags:
-    - film-app
-    - iOS
+  - film-app
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2013-07-09
+# image:
+# imageattribution:
 ---
 
 So I need to test for an internet connection to make sure that I can download the JSON file with all the Film Reviews in it.

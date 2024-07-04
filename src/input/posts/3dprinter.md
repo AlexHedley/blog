@@ -1,12 +1,13 @@
 ---
 title: 3D Printer
+# lead:
 tags:
   - 3dprinter
 author: alexhedley
 description: 3D Printer
 published: 2022-02-25
 # image:
-# imageattribution: 
+# imageattribution:
 ---
 
 <!-- # 3D Printer -->

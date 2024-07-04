@@ -1,15 +1,21 @@
 ---
 title: Pull To Refresh
+# lead:
 tags:
-    - iOS
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2015-02-12
+# image:
+# imageattribution:
 ---
 
 Wanted to add the Pull To Refresh capability.
 
 [gist feef1785d533d3960a22 /]
+
+<?# Gist feef1785d533d3960a22 /?>
 
 `Macro.m`
 
@@ -36,7 +42,7 @@ Wanted to add the Pull To Refresh capability.
 
 - (void)refreshView:(UIRefreshControl *)refresh {
     [self getData];
-    
+
     refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Refreshing data..."];
     // custom refresh logic would be placed here...
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

@@ -1,12 +1,15 @@
 ---
 title: Mermaid
+# lead:
 tags:
-    - mermaid
-    - js
-    - statiq
+  - mermaid
+  - js
+  - statiq
 author: alexhedley
 description: How to add mermaid diagrams in statiq
 published: 2023-05-16
+# image:
+# imageattribution:
 ---
 
 Add a file `_scripts.cshtml`
@@ -34,6 +37,7 @@ flowchart LR
 - [Using Mermaid diagrams with Statiq.](https://www.dpvreony.com/articles/mermaid-with-statiq/)
   - [repo](https://github.com/dpvreony/article-statiq-mermaid)
 - [Mermaid Diagrams in Statiq](https://blog.beckshome.com/2022/09/mermaid-in-statiq)
+
   - [code](https://github.com/thbst16/dotnet-statiq-beckshome-blog/blob/main/input/posts/mermaid-in-statiq.md)
 
 - [StatiqMermaid Repo](https://github.com/ociaw/StatiqMermaid)

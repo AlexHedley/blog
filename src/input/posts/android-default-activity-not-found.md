@@ -1,17 +1,20 @@
 ---
 title: Android - Default Activity Not Found
+# lead:
 tags:
-    - Android
+  - android
 author: AlexHedley
-# description: 
+# description:
 published: 2015-04-13
+# image:
+# imageattribution:
 ---
 
 Check you AndroidManifest.xml has the correct name in the Activity
 
 Another option:
 
-```
+```bash
 File -> Invalidate Caches / Restart...
 ```
 

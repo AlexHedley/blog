@@ -1,11 +1,14 @@
 ---
 title: Vimeo API
+# lead:
 tags:
-    - api
-    - json
+  - api
+  - json
 author: AlexHedley
-# description: 
+# description:
 published: 2014-10-02
+# image:
+# imageattribution:
 ---
 
 Vimeo API

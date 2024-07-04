@@ -1,12 +1,16 @@
 ---
 title: Private NuGet Library
+# lead:
 tags:
-    - programming
-    - nuget
-    - ado
+  - programming
+  - nuget
+  - ado
+  - dotnet
 author: AlexHedley
-# description: 
+# description:
 published: 2020-03-14
+# image:
+# imageattribution:
 ---
 
 In a previous post I explained how to create a [Private NuGet Feed](/post/Private-NuGet-Feed/).
@@ -51,8 +55,8 @@ This will prefix with a ".". Don't add your own or you will get ".." in your lib
 
 If you change a variable, i.e. update the Major version to "2" this will reset. See below for more detail.
 
-| Token | Example replacement value |
-| ----- | ------------------------- |
+| Token      | Example replacement value                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `$(Rev:r)` | 2 (The third run on this day will be 3, and so on.)<br /><br /> Use **\(Rev:r)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **\$(Rev:rr)** if you want the Rev number to begin with 01, 02, and so on. |
 
 As we now have a plan we need a way to implement this, so you're thinking, how do I update the `AssemblyInfo` during the build pipeline? Well luckily Bleddyn has you covered, use their plugin to update the Assembly Info:
@@ -73,7 +77,6 @@ Some people like to add the date:
 name: $(Build.DefinitionName)_$(Date:yyyyMMdd))
 ```
 
-
 ## Links
 
 - [Assembly versioning](https://docs.microsoft.com/en-us/dotnet/standard/assembly/versioning)
@@ -91,65 +94,64 @@ name: $(version.major).$(version.minor).$(version.patch)$(rev:.r)
 
 # the build will trigger on any changes to the master branch
 trigger:
-- master
+  - master
 
 # the build will run on a Microsoft hosted agent, using the lastest Windows VM Image
 pool:
-  vmImage: 'windows-latest'
+  vmImage: "windows-latest"
 
 # these variables are available throughout the build file
 # just the build configuration is defined, in this case we are building Release packages
 variables:
-  buildConfiguration: 'Release'
+  buildConfiguration: "Release"
 
 #The build has # seperate tasks run under 1 step
 steps:
+  - task: NuGetCommand@2
+    inputs:
+      command: "restore"
+      restoreSolution: "**/*.sln"
+      feedsToUse: "config"
 
-- task: NuGetCommand@2
-  inputs:
-    command: 'restore'
-    restoreSolution: '**/*.sln'
-    feedsToUse: 'config'
+  - task: Assembly-Info-NetFramework@2
+    inputs:
+      Path: "$(Build.SourcesDirectory)"
+      FileNames: '**\AssemblyInfo.cs'
+      InsertAttributes: false
+      FileEncoding: "auto"
+      WriteBOM: false
+      Product: "NuGet2"
+      Company: "[CompanyName]"
+      Copyright: "Copyright &copy; yyyy [CompanyName]"
+      VersionNumber: "$(Build.BuildNumber)"
+      FileVersionNumber: "$(Build.BuildNumber)"
+      InformationalVersion: "$(Build.BuildNumber)"
 
-- task: Assembly-Info-NetFramework@2
-  inputs:
-    Path: '$(Build.SourcesDirectory)'
-    FileNames: '**\AssemblyInfo.cs'
-    InsertAttributes: false
-    FileEncoding: 'auto'
-    WriteBOM: false
-    Product: 'NuGet2'
-    Company: '[CompanyName]'
-    Copyright: 'Copyright &copy; yyyy [CompanyName]'
-    VersionNumber: '$(Build.BuildNumber)'
-    FileVersionNumber: '$(Build.BuildNumber)'
-    InformationalVersion: '$(Build.BuildNumber)'
+  - task: VSBuild@1
+    displayName: 'Build solution **\*.sln'
+    inputs:
+      solution: '**\*.sln'
+      configuration: "$(buildConfiguration)"
 
-- task: VSBuild@1
-  displayName: 'Build solution **\*.sln'
-  inputs:
-    solution: '**\*.sln'
-    configuration: '$(buildConfiguration)'
+  - task: NuGetCommand@2
+    displayName: "NuGet pack"
+    inputs:
+      command: pack
+      packagesToPack: '**\*.csproj;!**\*.Tests.csproj'
+      versioningScheme: byBuildNumber
 
-- task: NuGetCommand@2
-  displayName: 'NuGet pack'
-  inputs:
-    command: pack
-    packagesToPack: '**\*.csproj;!**\*.Tests.csproj'
-    versioningScheme: byBuildNumber
-
-# The last task is a nuget command, nuget push
-# This will push any .nupkg files to the '[FEEDNAME]' artifact feed
-# allowPackageConflicts allows us to build the same version and not throw an error when trying to push
-# instead it just ingores the latest package unless the version changes
-- task: NuGetCommand@2
-  displayName: 'nuget push'
-  inputs:
-    command: 'push'
-    feedsToUse: 'select'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: '[FEEDNAME]'
-    versioningScheme: 'off'
-    allowPackageConflicts: true
+  # The last task is a nuget command, nuget push
+  # This will push any .nupkg files to the '[FEEDNAME]' artifact feed
+  # allowPackageConflicts allows us to build the same version and not throw an error when trying to push
+  # instead it just ingores the latest package unless the version changes
+  - task: NuGetCommand@2
+    displayName: "nuget push"
+    inputs:
+      command: "push"
+      feedsToUse: "select"
+      packagesToPush: "$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg"
+      nuGetFeedType: "internal"
+      publishVstsFeed: "[FEEDNAME]"
+      versioningScheme: "off"
+      allowPackageConflicts: true
 ```

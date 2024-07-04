@@ -1,11 +1,14 @@
 ---
 title: Twitch Recap 2021
+# lead:
 tags:
-    - twitch
-    - 2021
+  - twitch
+  - 2021
 author: AlexHedley
-# description: 
+# description:
 published: 2021-12-15
+# image:
+# imageattribution:
 ---
 
 As with Spotify Wrapped there's also a Twitch Recap, here's mine for 2021:

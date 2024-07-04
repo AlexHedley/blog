@@ -1,10 +1,13 @@
 ---
 title: iOS Programming - iTunes File Sharing &amp; Emailing a File
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-13
+# image:
+# imageattribution:
 ---
 
 So I've spent some of the day integrating the iTunes File Sharing and then how to Import/Export that File, also adding that option through an email.

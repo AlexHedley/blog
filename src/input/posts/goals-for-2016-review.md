@@ -1,10 +1,14 @@
 ---
 title: Goals for 2016 - Review
-# tags:
-#     - 
+# lead:
+tags:
+  - goals
+  - review
 author: AlexHedley
-# description: 
+# description:
 published: 2017-01-02
+# image:
+# imageattribution:
 ---
 
 I created a post to motivate me to get things done.

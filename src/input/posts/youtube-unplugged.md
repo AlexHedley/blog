@@ -1,10 +1,13 @@
 ---
 title: YouTube - Unplugged
-# tags:
-#     - 
+# lead:
+tags:
+  - app
 author: AlexHedley
-# description: 
+# description:
 published: 2014-10-02
+# image:
+# imageattribution:
 ---
 
 So I've started parsing the YouTube feed of uploads for a User, the User being Uplugged.

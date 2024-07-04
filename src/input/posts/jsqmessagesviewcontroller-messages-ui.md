@@ -1,9 +1,11 @@
 ---
 title: JSQMessagesViewController - Messages UI
+# lead:
 tags:
-    - iOS
+  - iOS
+  - objc
 author: AlexHedley
-# description: 
+# description:
 published: 2018-02-03
 image: /posts/images/jsq_messages_banner.png
 imageattribution: https://github.com/jessesquires/JSQMessagesViewController
@@ -26,7 +28,7 @@ It comes as a Cocoapod:
 
 I'm using 7.3.4.
 
-* * *
+---
 
 Create a new Xcode project.
 
@@ -72,7 +74,7 @@ Add some properties and methods
 
 I didn't bother with any of the settings so commented these checks out.
 
-* * *
+---
 
 I couldn't find the Accessory Button Delegate to add to my View Controller.
 
@@ -80,7 +82,7 @@ I couldn't find the Accessory Button Delegate to add to my View Controller.
 
 `<JSQMessagesViewAccessoryButtonDelegate>`
 
-* * *
+---
 
 For testing create a new class for your demo data.
 
@@ -98,7 +100,7 @@ For testing create a new class for your demo data.
 
 @end
 
-* * *
+---
 
 **DemoData.m**
 
@@ -180,7 +182,7 @@ Choose a user here
 
 `#pragma mark - JSQMessagesViewAccessoryDelegate methods`
 
-* * *
+---
 
 Changing some settings
 
@@ -193,7 +195,7 @@ I didn't want the Add Attachments button.
 - [https://github.com/jessesquires/JSQMessagesViewController/issues/338](https://github.com/jessesquires/JSQMessagesViewController/issues/338)
 - [https://github.com/jessesquires/JSQMessagesViewController/issues/280](https://github.com/jessesquires/JSQMessagesViewController/issues/280)
 
-* * *
+---
 
 Now just to swap out the messages to my XMPP Server...
 

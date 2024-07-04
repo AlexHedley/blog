@@ -1,10 +1,13 @@
 ---
 title: WatchKit - Xcode - Updating Bundle Identifiers
+# lead:
 tags:
-    - watchOS
+  - watchOS
 author: AlexHedley
-# description: 
+# description:
 published: 2015-05-09
+# image:
+# imageattribution:
 ---
 
 General - Targets

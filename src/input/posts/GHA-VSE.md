@@ -1,11 +1,18 @@
 ---
 title: Publish a Visual Studio Extension from GitHub Actions
+# lead:
 tags:
-    - programming
-    - vs
+  - programming
+  - vs
+  - visual-studio
+  - dotnet
+  - github
+  - github-actions
 author: AlexHedley
-# description: 
+# description:
 published: 2020-07-11
+# image:
+# imageattribution:
 ---
 
 In a previous [post](/post/VisualStudioExtension/) I discussed starting to create a Visual Studio Extension for [BuildLight](/post/BuildLight/).

@@ -1,9 +1,13 @@
 ---
 title: iOS - POST
-# tags:
+# lead:
+tags:
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2014-10-25
+# image:
+# imageattribution:
 ---
 
 Finally managed to get a POST to work in my iOS app.

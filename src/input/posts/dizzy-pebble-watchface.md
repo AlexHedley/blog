@@ -1,10 +1,14 @@
 ---
 title: Dizzy - Pebble Watchface
-# tags:
-#     - 
+# lead:
+tags:
+  - pebble
+  - c
 author: AlexHedley
-# description: 
+# description:
 published: 2015-01-17
+# image:
+# imageattribution:
 ---
 
 Released my first Dizzy Pebble Watchface today.

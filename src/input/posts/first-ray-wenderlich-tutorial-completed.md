@@ -1,10 +1,13 @@
 ---
 title: First Ray Wenderlich Tutorial Completed
+# lead:
 tags:
-    - iOS
+  - iOS
 author: AlexHedley
-# description: 
+# description:
 published: 2011-06-12
+# image:
+# imageattribution:
 ---
 
 Just finished the [first](http://www.raywenderlich.com/1797/how-to-create-a-simple-iphone-app-tutorial-part-1) tutorial on Ray Wenderlich's excellent [website](http://www.raywenderlich.com/).

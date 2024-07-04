@@ -1,10 +1,15 @@
 ---
 title: Brand Colours
-# tags:
-#     - 
+# lead:
+tags:
+  - youtube
+  - facebook
+  - twitter
 author: AlexHedley
-# description: 
+# description:
 published: 2015-07-12
+# image:
+# imageattribution:
 ---
 
 I'm working on an app and using https://fastlane.tools and using **snapshot** and **frameit** and wanted to use the annotation with keyword colours.
@@ -23,13 +28,13 @@ _Facebook_
 
 http://www.color-hex.com/color-palette/185
 
-| Color | Hex | RGB |
-| --- | --- | --- |
-|  | [#3b5998](http://www.color-hex.com/color/3b5998 "#3b5998 color") | (59,89,152) |
-|  | [#8b9dc3](http://www.color-hex.com/color/8b9dc3 "#8b9dc3 color") | (139,157,195) |
-|  | [#dfe3ee](http://www.color-hex.com/color/dfe3ee "#dfe3ee color") | (223,227,238) |
-|  | [#f7f7f7](http://www.color-hex.com/color/f7f7f7 "#f7f7f7 color") | (247,247,247) |
-|  | [#ffffff](http://www.color-hex.com/color/ffffff "#ffffff color") | (255,255,255) |
+| Color | Hex                                                              | RGB           |
+| ----- | ---------------------------------------------------------------- | ------------- |
+|       | [#3b5998](http://www.color-hex.com/color/3b5998 "#3b5998 color") | (59,89,152)   |
+|       | [#8b9dc3](http://www.color-hex.com/color/8b9dc3 "#8b9dc3 color") | (139,157,195) |
+|       | [#dfe3ee](http://www.color-hex.com/color/dfe3ee "#dfe3ee color") | (223,227,238) |
+|       | [#f7f7f7](http://www.color-hex.com/color/f7f7f7 "#f7f7f7 color") | (247,247,247) |
+|       | [#ffffff](http://www.color-hex.com/color/ffffff "#ffffff color") | (255,255,255) |
 
 _Twitter_
 
