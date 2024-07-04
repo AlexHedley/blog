@@ -94,6 +94,7 @@
             <div class="meta">Published on Sunday, 6 March 2016</div>
               <div class="mt-3">
                   <a href="/blog/tags/ios" class="badge text-bg-light"> iOS</a>
+                  <a href="/blog/tags/swift" class="badge text-bg-light"> swift</a>
                   <a href="/blog/tags/movem" class="badge text-bg-light"> movem</a>
                   <a href="/blog/tags/game" class="badge text-bg-light"> game</a>
               </div>
@@ -130,6 +131,7 @@ if !isBoxOnGoal(box)
 <p>Then i wanted to tile a background sprite</p>
 <p>I found <a href="http://www.spritekitlessons.com/tile-a-background-image-with-sprite-kit/">http://www.spritekitlessons.com/tile-a-background-image-with-sprite-kit/</a> then I converted it</p>
 <p>[gist id=b5e6ad227d988fe61327 file=TileSprite2.swift /]</p>
+<script src="//gist.github.com/b5e6ad227d988fe61327.js" type="text/javascript"></script>
 <p><code>TileSprite2.swift</code></p>
 <pre><code class="language-swift">func createBackgroundTiled() {
   //var coverageSize: CGSize = CGSizeMake(2000, 2000)
@@ -147,10 +149,10 @@ if !isBoxOnGoal(box)
   var backgroundTiles: SKSpriteNode = SKSpriteNode(texture: backgroundTexture)
   backgroundTiles.yScale = -1
   backgroundTiles.position = CGPointMake(0, 0)
-  
+
   backgroundTiles.zPosition = -1
   backgroundTiles.position = CGPointMake(self.size.width/2, self.size.height/2)
-  
+
   self.addChild(backgroundTiles)
 }
 </code></pre>

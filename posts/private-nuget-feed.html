@@ -96,6 +96,7 @@
                   <a href="/blog/tags/programming" class="badge text-bg-light"> programming</a>
                   <a href="/blog/tags/nuget" class="badge text-bg-light"> nuget</a>
                   <a href="/blog/tags/ado" class="badge text-bg-light"> ado</a>
+                  <a href="/blog/tags/dotnet" class="badge text-bg-light"> dotnet</a>
               </div>
         </div>
       </div>
@@ -152,15 +153,15 @@ steps:
 <p>Next there is a publish step you can use, on the right hand side of the page there will either be a &quot;Show assistant&quot; button or a column of tasks.</p>
 <p>Search for &quot;NuGet&quot;</p>
 <p>Command: &quot;push&quot;</p>
-<p>Path to NuGet package(s) to publish: &quot;<span class="math">\((Build.ArtifactStagingDirectory)/**/*.nupkg;!\)</span>(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg&quot;</p>
+<p>Path to NuGet package(s) to publish: &quot;<span class="math">\((Build.ArtifactStagingDirectory)/**/*.nupkg;!\)</span>(Build.ArtifactStagingDirectory)/*<em>/</em>.symbols.nupkg&quot;</p>
 <p>Target feed location: This organization/collection</p>
 <p>Target feed: Choose from a picker.</p>
 <pre><code class="language-yml">- task: NuGetCommand&#64;2
   inputs:
-    command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: '[GUID]'
+    command: &quot;push&quot;
+    packagesToPush: &quot;$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg&quot;
+    nuGetFeedType: &quot;internal&quot;
+    publishVstsFeed: &quot;[GUID]&quot;
 </code></pre>
 <p>The <code>publishVstsFeed</code> can either be a GUID or the name of the feed. When using the GUI it usually adds the underlying Guid.</p>
 <p>I've skipped the other tasks needed, your code would need to be Built then packed etc.</p>

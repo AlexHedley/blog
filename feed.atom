@@ -4,9 +4,51 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2024</rights>
-	<updated>2024-06-02T20:14:35Z</updated>
+	<updated>2024-07-04T15:47:34Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-june-2024</id>
+		<title>ISC2 North East England Chapter - June 2024</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/isc2-ne-chapter-june-2024" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/isc2/isc2chapternortheastengland.jpeg" />
+		<updated>2024-06-18T00:00:00Z</updated>
+		<content>&lt;!-- # ISC2 North East England Chapter June 2024 Meetup --&gt;
+&lt;h2 id="agenda"&gt;Agenda&lt;/h2&gt;
+&lt;p&gt;🕰️ &lt;em&gt;17:00 - 17:30&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arrivals / Networking&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🕰️ &lt;em&gt;17:30 - 17:40&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Introductions, Chapter Updates&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Steve Gilray, Chapter Present&lt;/p&gt;
+&lt;p&gt;🕰️ &lt;em&gt;17:40 - 18:00&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arctic Wolf: Observations from Incident Responders from the last 12 months&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Rich Fenton, Senior Systems Engineer, Arctic Wolf&lt;/p&gt;
+&lt;p&gt;Rich will present on some of the most common observed threats that industry faces, calculating the cost of a cyber-incident and what effective measures can be considered to help protect your organisation from an incident. • What are the major causes of incidents in 2023 – as witnessed by Arctic Wolf’s Incident Response team (1000 cases) • What does the impact of a breach look like ? • Is it possible to measure the potential impact beforehand to understand what your risk profile looks like (in the way a cyber-insurer would)&lt;/p&gt;
+&lt;p&gt;🕰️ &lt;em&gt;18:00 - 18:25&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Insider Threats&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stuart G, Cyber Security Specialist, Armour Group&lt;/p&gt;
+&lt;p&gt;🕰️ &lt;em&gt;18:25 - 19:20&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Pizza, refreshments&lt;/p&gt;
+&lt;p&gt;🕰️ &lt;em&gt;19:20 - 20:00&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cyber War &amp;amp; what it actually means in reality for Cyber Security Practitioners&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Andrew Pannell&lt;/p&gt;
+&lt;p&gt;Andrew will scrutinise the widely overused phrase &amp;quot;cyber war&amp;quot; by examining warfare and nation state attacks that have crossed the boundary into offensive cyber operations. Focusing on tactics used by both Hamas and Israel in October 2023 including reverse engineering malware, API security and DDOS attacks in detail. Andrew will offer a view of what future Cyber warfare could look like and what we can do best protect ourselves/ our organisations in such events.&lt;/p&gt;
+&lt;h2 id="date-and-time"&gt;Date and time&lt;/h2&gt;
+&lt;p&gt;🗓️ Tuesday, June 18 · 5 - 8pm GMT+1&lt;/p&gt;
+&lt;h2 id="location"&gt;Location&lt;/h2&gt;
+&lt;p&gt;📍 3rd floor&lt;br /&gt;
+77 Grey St&lt;br /&gt;
+Newcastle upon Tyne NE1&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-june-2024-tickets-906290508307"&gt;https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-june-2024-tickets-906290508307&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>ISC2 Chapter Meetup</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/poker-hud</id>
 		<title>Poker - HUD</title>
@@ -64,6 +106,86 @@
 &lt;/ul&gt;
 </content>
 		<summary>Designing a HUD for the Stats</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/dotnet-newcastle-may-2024</id>
+		<title>Qudos .NET Newcastle Meetup - May 2024</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/dotnet-newcastle-may-2024" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/meetups/dotnet-may-2024.png" />
+		<updated>2024-05-28T00:00:00Z</updated>
+		<content>&lt;!-- # Qudos DotNet Newcastle Meetup - May 2024 --&gt;
+&lt;p&gt;📅 Tuesday, May 28, 2024 · 5:30 - 8pm GMT&lt;/p&gt;
+&lt;p&gt;📍 BJSS Newcastle, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ&lt;/p&gt;
+&lt;!-- 🔗 https://www.meetup.com/dotnetmeetupnorth/events/.../ --&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.linkedin.com/posts/qasim-qudos_meetup-qudos-newcastle-activity-7199702440688988160-8DG7"&gt;https://www.linkedin.com/posts/qasim-qudos_meetup-qudos-newcastle-activity-7199702440688988160-8DG7&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="talks"&gt;Talks&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Michael Stephenson&lt;/em&gt; - &lt;strong&gt;Real World Journey Of Saving Lots Of Money In Azure&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Adam Parker&lt;/em&gt; - &lt;strong&gt;Interoperability In .NET Languages&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="talk-1-real-world-journey-of-saving-lots-of-money-in-azure"&gt;Talk 1: Real World Journey Of Saving Lots Of Money In Azure&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Description&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;In this talk, we will talk about how I worked with a customer last year where we were trying to keep a tight control on our azure costs in our integration team and how we looked at implementing the same approaches in the wider organization.&lt;/p&gt;
+&lt;p&gt;We found a huge amount of waste in the azure spend and we will look at some of the things we found and approaches to optimize and reduce cost. We identified over $1m worth of cost savings.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Speaker Bio&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;Michael Stephenson has worked as an architect on Azure projects for over 10 years developing enterprise solutions with Azure. Many of these solutions involve complex integration scenarios and discussing the advantages and disadvantages for a given use case for technologies like Logic Apps, Functions, Data Factory, Service Bus and others.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Video&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;TBA&lt;/p&gt;
+&lt;h3 id="talk-2-interoperability-in.net-languages"&gt;Talk 2: Interoperability In .NET Languages&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Description&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;Over the course of the talk, we aim to discuss how .NET allows Interoperability between it's languages and how it handles different paradigms in its own ecosystem.&lt;/p&gt;
+&lt;p&gt;Areas include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basics of how interop in .NET works.&lt;/li&gt;
+&lt;li&gt;Demos of interop between two Object-Oriented languages&lt;/li&gt;
+&lt;li&gt;A small look at functional programming in F#&lt;/li&gt;
+&lt;li&gt;Showing how to cross boundaries between functional and non-functional code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Speaker Bio&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;Adam Parker has been a software developer for over 6 years, mainly developing in the dotnet ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Video&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;TBA&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;The good folks over at BJSS in Newcastle will be hosting and sponsoring the event again.&lt;/p&gt;
+&lt;p&gt;We'll be at 12th Floor, Bank House, Pilgrim Street, Newcastle, NE1 6SQ&lt;/p&gt;
+&lt;p&gt;We have a fairly relaxed agenda, but will follow:&lt;/p&gt;
+&lt;p&gt;5:30 - Doors Open&lt;br /&gt;
+5:45 - Pizza arrival&lt;br /&gt;
+6:05 - Introduction / Housekeeping&lt;br /&gt;
+6:10 - Talks begin&lt;br /&gt;
+8:00 - Closing&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;QudosRecruitment"&gt;https://www.youtube.com/&amp;#64;QudosRecruitment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/haintonsdotnetmeetup/"&gt;https://www.meetup.com/haintonsdotnetmeetup/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>.NET meetup</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/dotnet-newcastle-mar-2024</id>
+		<title>Qudos .NET Newcastle Meetup - Mar 2024</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/dotnet-newcastle-mar-2024" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/meetups/dotnet-mar-2024.jpeg" />
+		<updated>2024-03-19T00:00:00Z</updated>
+		<content>&lt;!-- # Qudos DotNet Newcastle Meetup - March 2024 --&gt;
+&lt;p&gt;📅 Tuesday, March 19, 2024 · 5:30 - 8pm GMT&lt;/p&gt;
+&lt;p&gt;📍 BJSS Newcastle, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/299612897/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/299612897/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Dan Oliver&lt;/em&gt; - &lt;strong&gt;An Introduction To Azure Open AI &amp;amp; CoPilot&lt;/strong&gt;&lt;/p&gt;
+&lt;?# YouTube _zm2iq5wmgo /?&gt;
+&lt;p&gt;&lt;em&gt;Peter Shaw&lt;/em&gt; - &lt;strong&gt;Azure IoT Using Dotnet Nano Framework&lt;/strong&gt;&lt;/p&gt;
+&lt;?# YouTube 2f7ZmDgU8-Q /?&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;QudosRecruitment"&gt;https://www.youtube.com/&amp;#64;QudosRecruitment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>.NET meetup</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day14</id>
@@ -137,6 +259,38 @@
 &lt;!--?#/ Markdown ?--&gt;
 </content>
 		<summary>Inventr - Adventure Kit 1</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/govuk-forms</id>
+		<title>Introduction to GOV.UK Forms</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/govuk-forms" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gds-govukforms.jpeg" />
+		<updated>2024-02-01T00:00:00Z</updated>
+		<content>&lt;!-- # Introduction to GOV.UK Forms --&gt;
+&lt;p&gt;Find out just how easy it is to create online forms using the Government Digital Service new forms builder.&lt;/p&gt;
+&lt;!-- ![Event Info](images/gds-govukforms.jpeg "Event Info") --&gt;
+&lt;h2 id="event"&gt;Event&lt;/h2&gt;
+&lt;p&gt;🗓️ Thursday, 1 February 2024&lt;br /&gt;
+🕰️ 12:00 - 13:00 GMT&lt;br /&gt;
+📍Online&lt;br /&gt;
+🔗 &lt;a href="https://www.eventbrite.co.uk/e/hyhubs-hyheroes-awards-2023-tickets-727053124467"&gt;https://www.eventbrite.co.uk/e/hyhubs-hyheroes-awards-2023-tickets-727053124467&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;We’ve launched the early access phase of our new form builder software GOV.UK forms.
+It helps make the switch from document based and printed forms to easy to use, accessible online forms across government. It’s part of our commitment to make it easier for government departments to build digital services.
+We’ve got an array of features already available with more being developed. Join our webinar to find out how simple it is to use and how it's improving the outcomes for the people who complete the forms and the people who process them.&lt;/p&gt;
+&lt;h3 id="agenda"&gt;Agenda&lt;/h3&gt;
+&lt;p&gt;12:00 - 12:10 Introductions&lt;br /&gt;
+12:10 - 12:30 Demonstration and latest features&lt;br /&gt;
+12:30 - 13:00 Questions from the audience&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.forms.service.gov.uk/"&gt;https://www.forms.service.gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>GDS</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/github-certifications-foundations</id>
@@ -388,199 +542,5 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;!--?#/ Markdown ?--&gt;
 </content>
 		<summary>Inventr - Adventure Kit 1</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/github-contributions-2023</id>
-		<title>GitHub Contributions Chart Generator</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/github-contributions-2023" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/topguntocat.png" />
-		<updated>2024-01-01T00:00:00Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;All your contributions in one image!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github-contributions.vercel.app/"&gt;GitHub Contributions Chart Generator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alexhedley-2023.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
-&lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alex-hedley-2023.png" alt="alex-hedley" title="Contributions alex-hedley"&gt;&lt;/p&gt;
-&lt;h2 id="skyline"&gt;Skyline&lt;/h2&gt;
-&lt;p&gt;Linked with &lt;a href="https://skyline.github.com/"&gt;skyline&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/skyline"&gt;Backups&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="section"&gt;2023&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://skyline.github.com/alexhedley/2023"&gt;alexhedley&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://skyline.github.com/alex-hedley/2023"&gt;alex-hedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day12</id>
-		<title>Day 12 - 30 Days Lost in Space</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day12" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" />
-		<updated>2023-12-29T00:00:00Z</updated>
-		<content>&lt;!-- # Day 12 - 30 Days Lost in Space - Inventr --&gt;
-&lt;h2 id="lesson-12"&gt;🏫 Lesson 12&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Day 12: Can you hear us?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-12/"&gt;Original&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-12-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Today was an extension of &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;, I got to use a new device, the passive buzzer, let's make some noise.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day12.jpg" alt="&amp;quot;Day 12&amp;quot;" title="Day 12"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/passive-buzzer.png" alt="Passive Buzzer" title="Passive Buzzer"&gt;&lt;/p&gt;
-&lt;p&gt;We are still using the keypad:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/keypad.png" alt="Keypad" title="Keypad"&gt;&lt;/p&gt;
-&lt;p&gt;Clicking each button from S1 to S16 outputs the following to the Serial Monitor, with differing tones 🎶, "the tones Kevin".&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;11:19:51.087 -&amp;gt; Key: 1   Freq: 31
-11:19:51.925 -&amp;gt; Key: 2   Freq: 93
-11:19:52.837 -&amp;gt; Key: 3   Freq: 147
-11:19:53.650 -&amp;gt; Key: A   Freq: 208
-11:19:54.419 -&amp;gt; Key: 4   Freq: 247
-11:19:55.158 -&amp;gt; Key: 5   Freq: 311
-11:19:55.790 -&amp;gt; Key: 6   Freq: 370
-11:19:56.482 -&amp;gt; Key: B   Freq: 440
-11:19:57.208 -&amp;gt; Key: 7   Freq: 523
-11:19:57.884 -&amp;gt; Key: 8   Freq: 587
-11:19:58.540 -&amp;gt; Key: 9   Freq: 698
-11:19:59.307 -&amp;gt; Key: C   Freq: 880
-11:20:00.045 -&amp;gt; Key: *   Freq: 1397
-11:20:00.738 -&amp;gt; Key: 0   Freq: 2637
-11:20:01.480 -&amp;gt; Key: #   Freq: 3729
-11:20:02.205 -&amp;gt; Key: D   Freq: 4978
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Hero Board&lt;/li&gt;
-&lt;li&gt;Type B USB Cable&lt;/li&gt;
-&lt;li&gt;8 cables (M-F)&lt;/li&gt;
-&lt;li&gt;8 cables (M-M)&lt;/li&gt;
-&lt;li&gt;Keypad&lt;/li&gt;
-&lt;li&gt;Passive Buzzer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day12-Can_You_Hear_Us&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/robsoncouto/arduino-songs"&gt;https://github.com/robsoncouto/arduino-songs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="libraries"&gt;Libraries&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Chris--A/Keypad"&gt;https://github.com/Chris--A/Keypad&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.arduinolibraries.info/libraries/keypad"&gt;https://www.arduinolibraries.info/libraries/keypad&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
-&lt;!--?# YouTube _rdKZPZRF_w /?--&gt;
-&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_rdKZPZRF_w" title="30 Days Lost in Space - Day 12" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
-&lt;p&gt;&lt;strong&gt;Side Quest&lt;/strong&gt;&lt;/p&gt;
-&lt;!--?# YouTube nHFPzxAgY3Y /?--&gt;
-&lt;!-- &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nHFPzxAgY3Y" title="30 Days Lost in Space - Day 12 - Side Quest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="other-lessons"&gt;Other Lessons&lt;/h2&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day14"&gt;Day 14&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-</content>
-		<summary>Inventr - Adventure Kit 1</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/github-worth</id>
-		<title>GitHub Worth</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/github-worth" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/github_worth_1500x500.jpeg" />
-		<updated>2023-12-26T00:00:00Z</updated>
-		<content>&lt;!-- # GitHub Worth --&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Estimate Github Worth Generator&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github-worth.vercel.app/"&gt;https://github-worth.vercel.app/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-worth-alexhedley.jpg" alt="Alex Hedley" title="Alex Hedley"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-worth-alex-hedley.jpg" alt="Alex-Hedley" title="Alex-Hedley"&gt;&lt;/p&gt;
-&lt;p&gt;From &lt;a href="https://twitter.com/shyam_tawli"&gt;@shyam_tawli&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github-worth.vercel.app/"&gt;https://github-worth.vercel.app/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://twitter.com/shyam_tawli"&gt;https://twitter.com/shyam_tawli&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/shyamtawli"&gt;https://github.com/shyamtawli&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Estimate Github Worth Generator.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/custom-funkopop</id>
-		<title>Custom Funko Pop</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/custom-funkopop" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2023-12-26T00:00:00Z</updated>
-		<content>&lt;!-- # Custom Funko Pop --&gt;
-&lt;p&gt;You may not already know but I have an obsession with collecting things, one of which is &lt;a href="https://funko.com/"&gt;Funko&lt;/a&gt; Pops, as you can see from my &lt;a href="https://alexhedley.com/funkopop/"&gt;website&lt;/a&gt;. I'm hoping to complete my LotR collection, but there's a few rare ones left to get.&lt;/p&gt;
-&lt;p&gt;Whilst on X (Twitter) I saw a post showing people making themselves using &lt;a href="https://designer.microsoft.com/"&gt;Microsoft Designer&lt;/a&gt; using the following prompt:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://designer.microsoft.com/image-creator?p=Funko+figure+of+a+%5Bmale%5D%2C+smiling%2C+called%5B+STEPHEN+REID%5D%2C+wearing+a+%5Bblack+henley+t-shirt%5D%2C+a+%5Bcanary+yellow+hoodie%5D%2C+a+%5Bblack+leather+jacket%5D%2C+%5Bblack+ripped+jeans%5D+and+%5Bwhite+adidas+trainers+with+black+stripes%5D%2C+%5Bshaved+head%5D+and+%5Bshaved+beard%5D.+The+Funko+is+displayed+inside+and+outside+a+limited+edition+%5Bgreen+and+yellow%5D+Funko+box+with+%5BDIGITAL+DRUID%5D+text%2C+allowing+visibility+of+the+figure%2C+typography%2C+3D+render.+%5BWhite%5D+background"&gt;https://designer.microsoft.com/image-creator?p=Funko+figure+of+a+%5Bmale%5D%2C+smiling%2C+called%5B+STEPHEN+REID%5D%2C+wearing+a+%5Bblack+henley+t-shirt%5D%2C+a+%5Bcanary+yellow+hoodie%5D%2C+a+%5Bblack+leather+jacket%5D%2C+%5Bblack+ripped+jeans%5D+and+%5Bwhite+adidas+trainers+with+black+stripes%5D%2C+%5Bshaved+head%5D+and+%5Bshaved+beard%5D.+The+Funko+is+displayed+inside+and+outside+a+limited+edition+%5Bgreen+and+yellow%5D+Funko+box+with+%5BDIGITAL+DRUID%5D+text%2C+allowing+visibility+of+the+figure%2C+typography%2C+3D+render.+%5BWhite%5D+background&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I ameneded this a little to&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Funko figure of a male, smiling, called Alex Hedley, wearing a oxford shirt, blue jeans and chelsea boots with a red sole, short brown hair and slight ginger beard, with glasses. The Funko is displayed inside and outside a limited edition red and black Funko box with Wizard text sticker and a single number 8, allowing visibility of the figure, typography, 3D render. white background&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;and after a few re-generates I came to the following:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/custom-funkopop.jpeg" alt="Custom Funko Pop" title="Custom Funko Pop"&gt;&lt;/p&gt;
-&lt;p&gt;Even with a jazzy shirt!&lt;/p&gt;
-&lt;p&gt;I now need to find someone to actually make it.&lt;/p&gt;
-&lt;p&gt;How about you try your own?!&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.com/funkopop/"&gt;https://alexhedley.com/funkopop/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/funkopop"&gt;https://github.com/AlexHedley/funkopop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://designer.microsoft.com/"&gt;https://designer.microsoft.com/&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://designer.microsoft.com/image-creator"&gt;https://designer.microsoft.com/image-creator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Create your own custom Funko Pop using AI.</summary>
 	</entry>
 </feed>

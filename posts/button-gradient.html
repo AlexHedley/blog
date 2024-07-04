@@ -94,6 +94,7 @@
             <div class="meta">Published on Monday, 6 April 2015</div>
               <div class="mt-3">
                   <a href="/blog/tags/ios" class="badge text-bg-light"> iOS</a>
+                  <a href="/blog/tags/objc" class="badge text-bg-light"> objc</a>
               </div>
         </div>
       </div>
@@ -108,12 +109,13 @@
       <div id="content" class="col-md-12">
         <p>I'm programatically creating buttons and I'm using an image as a background, I'm no designer and got a bit bored of making a new one for each button, I've not even got to the different sizes yet, so thought why not use a gradient.</p>
 <p>[gist ce30093516d5cf99ea35 /]</p>
+<script src="//gist.github.com/ce30093516d5cf99ea35.js" type="text/javascript"></script>
 <p><code>ButtonGradient.m</code></p>
 <pre><code class="language-objectivec">CAGradientLayer* gradientLayer = [[CAGradientLayer alloc] init];
 [gradientLayer setBounds:[buttonTest bounds]];
 [gradientLayer setPosition:
 CGPointMake([buttonTest bounds].size.width/2, [buttonTest bounds].size.height/2)];
-    
+
 [gradientLayer setColors:
 [NSArray arrayWithObjects:
   (id)[[UIColor blueColor] CGColor],

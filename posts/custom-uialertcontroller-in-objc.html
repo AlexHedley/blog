@@ -110,19 +110,20 @@
       <div id="content" class="col-md-12">
         <p>Custom UIAlertController in Objc</p>
 <p>[gist 7dbb81c526aa3facceb461ea3a19d83e /]</p>
+<script src="//gist.github.com/7dbb81c526aa3facceb461ea3a19d83e.js" type="text/javascript"></script>
 <p><code>Alert.m</code></p>
 <pre><code class="language-objectivec">//http://hayageek.com/uialertcontroller-example-ios/
 
 - (void)alert {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:&#64;&quot;Info&quot; message:&#64;&quot;You are using UIAlertController&quot; preferredStyle:UIAlertControllerStyleAlert];
-        
+
     UIAlertAction *ok = [UIAlertAction actionWithTitle:&#64;&quot;OK&quot;
                                                  style:UIAlertActionStyleDefault
                                                handler:^(UIAlertAction * action)
                          {
                              [alert dismissViewControllerAnimated:YES completion:nil];
                          }];
-    
+
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:&#64;&quot;Cancel&quot;
                                                      style:UIAlertActionStyleCancel
                                                    handler:^(UIAlertAction * action)
@@ -130,11 +131,11 @@
                                  [alert dismissViewControllerAnimated:YES completion:nil];
                              }];
     [cancel setValue:[UIColor redColor] forKey:&#64;&quot;titleTextColor&quot;];
-    
+
     [alert addAction:cancel];
     [alert addAction:ok];
     [alert setPreferredAction:ok];
-        
+
     [self presentViewController:alert animated:YES completion:nil];
 }
 </code></pre>
@@ -146,23 +147,23 @@
     [hogan addAttribute:NSFontAttributeName
                   value:[UIFont systemFontOfSize:50.0]
                   range:NSMakeRange(24, 11)];
-    
-    
+
+
     //[[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:kFont size:17.0f], NSFontAttributeName, titleColor, NSForegroundColorAttributeName, nil]];
     [hogan addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(24, 11)];
-    
+
     [alertVC setValue:hogan forKey:&#64;&quot;attributedTitle&quot;];
-    
+
     NSMutableAttributedString *hogan2 = [[NSMutableAttributedString alloc] initWithString:&#64;&quot;Super Leg Drop!&quot;];
     [hogan addAttribute:NSFontAttributeName
                   value:[UIFont systemFontOfSize:30.0]
                   range:NSMakeRange(0, [hogan length])];
-    
+
     //[[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:kFont size:17.0f], NSFontAttributeName, titleColor, NSForegroundColorAttributeName, nil]];
     [hogan2 addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(0, [hogan2 length])];
-    
+
     [alertVC setValue:hogan2 forKey:&#64;&quot;attributedMessage&quot;];
-    
+
     UIAlertAction *button = [UIAlertAction actionWithTitle:&#64;&quot;Label text&quot;
                                                      style:UIAlertActionStyleDefault
                                                    handler:^(UIAlertAction *action){
@@ -170,9 +171,9 @@
                                                    }];
     UIImage *accessoryImage = [UIImage imageNamed:&#64;&quot;someImage&quot;];
     [button setValue:accessoryImage forKey:&#64;&quot;image&quot;];
-    
+
     [alertVC addAction:button];
-    
+
     [alertVC addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         textField.placeholder = NSLocalizedString(&#64;&quot;Code&quot;, nil);
         textField.textColor = [UIColor redColor];
@@ -181,7 +182,7 @@
         textField.borderStyle = UITextBorderStyleRoundedRect;
         textField.keyboardType = UIKeyboardTypeNumberPad;
     }];
-    
+
     [alertVC addAction:[UIAlertAction actionWithTitle:NSLocalizedString(&#64;&quot;OK&quot;, nil)
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction *action)
@@ -190,23 +191,23 @@
                                     NSLog(&#64;&quot;%&#64;&quot;, textField.text);
                                 }]
      ];
-    
+
     //http://stackoverflow.com/a/39853234/2895831
     UIView *firstSubview = alertVC.view.subviews.firstObject;
     UIView *alertContentView = firstSubview.subviews.firstObject;
     for (UIView *subSubView in alertContentView.subviews) { //This is main catch
         subSubView.backgroundColor = [UIColor darkGrayColor]; //Here you change background
     }
-    
+
     [self presentViewController:alertVC animated:YES completion:nil];
     alertVC.view.tintColor = [UIColor purpleColor];
-    
+
     //Change the background color of the UITextField view
     //http://stackoverflow.com/a/30225592/2895831
     for (UIView *textfield in alertVC.textFields) {
         UIView *container = textfield.superview;
         UIView *effectView = container.superview.subviews[0];
-        
+
         if (effectView &amp;&amp; [effectView class] == [UIVisualEffectView class]){
             container.backgroundColor = [UIColor purpleColor]; //[UIColor clearColor];
             //[effectView removeFromSuperview];

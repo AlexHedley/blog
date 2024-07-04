@@ -130,7 +130,7 @@
 <p>Next is the <code>url</code>, this should be amended to your github url and if it isn't the default repo update <code>baseurl</code> to whatever the repo is called i.e. <code>\blog</code>.</p>
 <h2 id="favicon">Favicon</h2>
 <p>To add your own favicon you can add it to the repo then update your html in <a href="../_layouts/default.html">default.html</a>:</p>
-<pre><code class="language-html">&lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot;&gt;
+<pre><code class="language-html">&lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot; /&gt;
 </code></pre>
 <h2 id="author">Author</h2>
 <p>Most individual blogs probably wouldn't need an Author, unless you wanted guest posts but if you wish to add them it doesn't take much.
@@ -138,9 +138,9 @@ I found a <a href="https://blog.sorryapp.com/blogging-with-jekyll/2014/02/06/add
 <p>Create a new file <code>_data/authors.yml</code> and update <code>first_last</code> to your name i.e. <code>alex_hedley</code>.</p>
 <pre><code class="language-yml"># Author details.
 first_last:
-    name: Alex Hedley
-    email: alex&#64;alexhedley.com
-    web: http://twitter.com/alexhedley
+  name: Alex Hedley
+  email: alex&#64;alexhedley.com
+  web: http://twitter.com/alexhedley
 </code></pre>
 <p>In your post md file you can add it to the config at the top:</p>
 <pre><code class="language-yml"># Author.
@@ -163,9 +163,9 @@ permalink: /apps/
 </code></pre>
 <p>Then add it to the main nav, in <a href="../_layouts/default.html">default.html</a>.</p>
 <pre><code class="language-html">&lt;nav&gt;
-    &lt;a href=&quot;{{ site.baseurl }}/&quot;&gt;Blog&lt;/a&gt;
-    &lt;a href=&quot;{{ site.baseurl }}/about&quot;&gt;About&lt;/a&gt;
-    &lt;a href=&quot;{{ site.baseurl }}/apps&quot;&gt;Apps&lt;/a&gt;
+  &lt;a href=&quot;{{ site.baseurl }}/&quot;&gt;Blog&lt;/a&gt;
+  &lt;a href=&quot;{{ site.baseurl }}/about&quot;&gt;About&lt;/a&gt;
+  &lt;a href=&quot;{{ site.baseurl }}/apps&quot;&gt;Apps&lt;/a&gt;
 &lt;/nav&gt;
 </code></pre>
 <p>TODO</p>

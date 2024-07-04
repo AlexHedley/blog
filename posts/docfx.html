@@ -95,6 +95,9 @@
               <div class="mt-3">
                   <a href="/blog/tags/programming" class="badge text-bg-light"> programming</a>
                   <a href="/blog/tags/github" class="badge text-bg-light"> github</a>
+                  <a href="/blog/tags/docfx" class="badge text-bg-light"> docfx</a>
+                  <a href="/blog/tags/microsft" class="badge text-bg-light"> microsft</a>
+                  <a href="/blog/tags/dotnet" class="badge text-bg-light"> dotnet</a>
               </div>
         </div>
       </div>
@@ -137,7 +140,7 @@
 <p>Then we need to run a job on an OS:</p>
 <pre><code class="language-yml">jobs:
   deploy:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 </code></pre>
 <p>Next we need to build the DocFX site, this is done locally running the following command:</p>
 <p><code>docfx docfx.json</code></p>
@@ -147,10 +150,10 @@
 <p>Luckily this GitHub Action has already been built:</p>
 <p><strong><a href="https://github.com/marketplace/actions/docfx-action">docfx-action</a></strong> from <a href="https://github.com/nikeee">nikeee</a> Niklas Mollenhauer</p>
 <p>Just add the following <strong>step</strong>:</p>
-<pre><code class="language-yml">      - name: docfx-action
-        uses: nikeee/docfx-action&#64;v0.1.0
-        with:
-          args: docfx.json
+<pre><code class="language-yml">- name: docfx-action
+  uses: nikeee/docfx-action&#64;v0.1.0
+  with:
+    args: docfx.json
 </code></pre>
 <p>If your <code>docfx.json</code> is in another location update the <code>args</code> input accordingly.</p>
 <p>One thing to note is we can't use <code>windows-latest</code> as we get an error with the &quot;docfx-action&quot;.</p>
@@ -158,11 +161,11 @@
 <p>Now that the site is built we want to publish it to GitHub Pages:</p>
 <p>Again there's an Action already built for this:</p>
 <p><strong><a href="https://github.com/peaceiris/actions-gh-pages">GitHub Actions for GitHub Pages</a></strong> from <a href="https://github.com/peaceiris">peaceiris</a> Shohei Ueda</p>
-<pre><code class="language-yml">      - name: Deploy
-        uses: peaceiris/actions-gh-pages&#64;v3.6.1
-        with:
-          github_token: ${ secrets.GITHUB_TOKEN }
-          publish_dir: ./_site
+<pre><code class="language-yml">- name: Deploy
+  uses: peaceiris/actions-gh-pages&#64;v3.6.1
+  with:
+    github_token: ${ secrets.GITHUB_TOKEN }
+    publish_dir: ./_site
 </code></pre>
 <p>Note: use double &quot;{&quot; and &quot;}&quot; around the <code>github_token</code>.</p>
 <p>If you have changed your <code>dest</code> to another folder name update the <code>publish_dir</code>.</p>
@@ -190,7 +193,7 @@ jobs:
         uses: nikeee/docfx-action&#64;v0.1.0
         with:
           args: docfx.json
-      
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages&#64;v3.6.1
         with:

@@ -61,46 +61,45 @@ ISqlTreeFormatter underlyingFormatter = new TSqlStandardFormatter(indentString, 
 <pre><code class="language-csharp">string formattedSql = _formatter.FormatSQLTree(sql);
 </code></pre>
 <p>This will produce a HTML doc which you can display in a browser control.</p>
-<pre><code class="language-html">&lt;!DOCTYPE html &gt;
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-.SQLCode {
-	font-size: 13px;
-	font-weight: bold;
-	font-family: monospace;;
-	white-space: pre;
-    -o-tab-size: 4;
-    -moz-tab-size: 4;
-    -webkit-tab-size: 4;
-}
-.SQLComment {
-	color: #00AA00;
-}
-.SQLString {
-	color: #AA0000;
-}
-.SQLFunction {
-	color: #AA00AA;
-}
-.SQLKeyword {
-	color: #0000AA;
-}
-.SQLOperator {
-	color: #777777;
-}
-.SQLErrorHighlight {
-	background-color: #FFFF00;
-}
-
-
-&lt;/style&gt;
-&lt;pre class=&quot;SQLCode&quot;&gt;&lt;span class=&quot;SQLKeyword&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;SQLOperator&quot;&gt;*&lt;/span&gt;
+  &lt;head&gt; &lt;/head&gt;
+  &lt;body&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      .SQLCode {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: monospace;
+        white-space: pre;
+        -o-tab-size: 4;
+        -moz-tab-size: 4;
+        -webkit-tab-size: 4;
+      }
+      .SQLComment {
+        color: #00aa00;
+      }
+      .SQLString {
+        color: #aa0000;
+      }
+      .SQLFunction {
+        color: #aa00aa;
+      }
+      .SQLKeyword {
+        color: #0000aa;
+      }
+      .SQLOperator {
+        color: #777777;
+      }
+      .SQLErrorHighlight {
+        background-color: #ffff00;
+      }
+    &lt;/style&gt;
+    &lt;pre
+      class=&quot;SQLCode&quot;
+    &gt;&lt;span class=&quot;SQLKeyword&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;SQLOperator&quot;&gt;*&lt;/span&gt;
 &lt;span class=&quot;SQLKeyword&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;SQLKeyword&quot;&gt;TABLE&lt;/span&gt;
 &lt;/pre&gt;
-&lt;/body&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 <p>As this is in <code>&lt;pre&gt;</code> tags the newline characters matter for formatting.</p>

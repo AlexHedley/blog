@@ -120,7 +120,7 @@
 </blockquote>
 <p>I've used this on some Kotlin/Java projects and wanted to see how easy it was to setup for .NET.</p>
 <p>There are a number of plugins listed for Gradle etc but for .NET I'm going to use the <a href="https://jeremylong.github.io/DependencyCheck/dependency-check-cli/index.html">CLI</a>.</p>
-<p>You can run this locally, first install with <code>brew install dependency-check</code> then for *<strong>nix</strong> systems run <code>dependency-check.sh --project &quot;My App Name&quot; --scan &quot;/java/application/lib&quot;</code>.</p>
+<p>You can run this locally, first install with <code>brew install dependency-check</code> then for <strong>*nix</strong> systems run <code>dependency-check.sh --project &quot;My App Name&quot; --scan &quot;/java/application/lib&quot;</code>.</p>
 <p>Since I'm wanting to also try this out in CI/CD it's straight to GitHub to create a sample repo.</p>
 <ul>
 <li><a href="https://github.com/alex-hedley/dotnet-dependencycheck">dotnet-dependencycheck</a></li>
@@ -162,17 +162,17 @@
 <ul>
 <li><a href="https://github.com/dependency-check/Dependency-Check_Action">Dependency-Check Action</a></li>
 </ul>
-<pre><code class="language-yml">      - name: Depcheck
-        uses: dependency-check/Dependency-Check_Action&#64;main
-        id: Depcheck
-        with:
-          project: 'test'
-          path: '.'
-          format: 'HTML'
-          out: 'reports' # this is the default, no need to specify unless you wish to override it
-          args: &gt;
-            --failOnCVSS 7
-            --enableRetired
+<pre><code class="language-yml">- name: Depcheck
+  uses: dependency-check/Dependency-Check_Action&#64;main
+  id: Depcheck
+  with:
+    project: &quot;test&quot;
+    path: &quot;.&quot;
+    format: &quot;HTML&quot;
+    out: &quot;reports&quot; # this is the default, no need to specify unless you wish to override it
+    args: &gt;
+      --failOnCVSS 7
+      --enableRetired
 </code></pre>
 <p>This has a lot of options to override so check the docs if you want to tweak anything.</p>
 <p>There's an ADO one too (<a href="https://github.com/dependency-check/azuredevops">azuredevops</a>).</p>
@@ -222,15 +222,15 @@
 <p>From the sample there was an added arg of <code>failOnCVSS</code> set to <strong>7</strong> so this was failing the CI/CD, as expected:</p>
 <pre><code class="language-bash">Error:
 
-One or more dependencies were identified with vulnerabilities that have a CVSS score greater than or equal to '7.0': 
+One or more dependencies were identified with vulnerabilities that have a CVSS score greater than or equal to '7.0':
 
 DependencyCheckExample.csproj: CVE-2021-4248(9.8)
 DependencyCheckExample.csproj: CVE-2023-21893(7.5)
 DependencyCheckExample.csproj: CVE-2023-21893(7.5)
 </code></pre>
 <p>Removing this didn't stop the build failing and I couldn't see a default value in the code. Looking at the check <a href="https://github.com/jeremylong/DependencyCheck/blob/6a85d0ffa28d6e625f3ef23db766f651614ad505/cli/src/main/java/org/owasp/dependencycheck/CliParser.java#L906">CliParser - getFailOnCVSS</a> I found it defaulted to <strong>11</strong> so just overrode it for the time being as I wanted the build to pass and produce the report - in a real world situation it would be good to set this to the required limit.</p>
-<pre><code class="language-yml">        args: &gt;
-            --failOnCVSS 11
+<pre><code class="language-yml">args: &gt;
+  --failOnCVSS 11
 </code></pre>
 <ul>
 <li><a href="https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html">Command Line Arguments</a></li>

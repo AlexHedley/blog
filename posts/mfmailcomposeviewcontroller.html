@@ -94,6 +94,7 @@
             <div class="meta">Published on Tuesday, 14 October 2014</div>
               <div class="mt-3">
                   <a href="/blog/tags/ios" class="badge text-bg-light"> iOS</a>
+                  <a href="/blog/tags/objc" class="badge text-bg-light"> objc</a>
                   <a href="/blog/tags/mfmailcomposeviewcontroller" class="badge text-bg-light"> mfmailcomposeviewcontroller</a>
               </div>
         </div>
@@ -111,6 +112,7 @@
 <p><a href="http://www.appcoda.com/tag/mfmailcomposeviewcontroller/">http://www.appcoda.com/tag/mfmailcomposeviewcontroller/</a></p>
 <p>The issue i then came across was it didn't have the white theme I needed.</p>
 <p>[gist d326c1efbd1830d33a48 /]</p>
+<script src="//gist.github.com/d326c1efbd1830d33a48.js" type="text/javascript"></script>
 <pre><code class="language-objectivec">//http://www.appcoda.com/ios-programming-101-send-email-iphone-app/
 - (IBAction)sendEmail:(id)sender {
     // Email Subject
@@ -119,7 +121,7 @@
     NSString *messageBody = &#64;&quot;Sent from iOS App&quot;;
     // To address
     NSArray *toRecipents = [NSArray arrayWithObject:&#64;&quot;unpluggedne&#64;gmail.com&quot;];
-    
+
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;
     [mc setSubject:emailTitle];
@@ -127,12 +129,12 @@
     [mc setToRecipients:toRecipents];
     //[[mc navigationBar] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName]];
     [[mc navigationBar] setTintColor:[UIColor whiteColor]];
-    
+
     // Present mail view controller on screen
     [self presentViewController:mc animated:YES completion:^{
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     }];
-    
+
     //[self applyComposerInterfaceApperance];
 }
 </code></pre>
@@ -155,7 +157,7 @@
         default:
             break;
     }
-    
+
     // Close the Mail Interface
     [self dismissViewControllerAnimated:YES completion:NULL];
 }

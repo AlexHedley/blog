@@ -96,6 +96,7 @@
                   <a href="/blog/tags/programming" class="badge text-bg-light"> programming</a>
                   <a href="/blog/tags/nuget" class="badge text-bg-light"> nuget</a>
                   <a href="/blog/tags/ado" class="badge text-bg-light"> ado</a>
+                  <a href="/blog/tags/dotnet" class="badge text-bg-light"> dotnet</a>
               </div>
         </div>
       </div>
@@ -184,67 +185,66 @@
 
 # the build will trigger on any changes to the master branch
 trigger:
-- master
+  - master
 
 # the build will run on a Microsoft hosted agent, using the lastest Windows VM Image
 pool:
-  vmImage: 'windows-latest'
+  vmImage: &quot;windows-latest&quot;
 
 # these variables are available throughout the build file
 # just the build configuration is defined, in this case we are building Release packages
 variables:
-  buildConfiguration: 'Release'
+  buildConfiguration: &quot;Release&quot;
 
 #The build has # seperate tasks run under 1 step
 steps:
+  - task: NuGetCommand&#64;2
+    inputs:
+      command: &quot;restore&quot;
+      restoreSolution: &quot;**/*.sln&quot;
+      feedsToUse: &quot;config&quot;
 
-- task: NuGetCommand&#64;2
-  inputs:
-    command: 'restore'
-    restoreSolution: '**/*.sln'
-    feedsToUse: 'config'
+  - task: Assembly-Info-NetFramework&#64;2
+    inputs:
+      Path: &quot;$(Build.SourcesDirectory)&quot;
+      FileNames: '**\AssemblyInfo.cs'
+      InsertAttributes: false
+      FileEncoding: &quot;auto&quot;
+      WriteBOM: false
+      Product: &quot;NuGet2&quot;
+      Company: &quot;[CompanyName]&quot;
+      Copyright: &quot;Copyright &amp;copy; yyyy [CompanyName]&quot;
+      VersionNumber: &quot;$(Build.BuildNumber)&quot;
+      FileVersionNumber: &quot;$(Build.BuildNumber)&quot;
+      InformationalVersion: &quot;$(Build.BuildNumber)&quot;
 
-- task: Assembly-Info-NetFramework&#64;2
-  inputs:
-    Path: '$(Build.SourcesDirectory)'
-    FileNames: '**\AssemblyInfo.cs'
-    InsertAttributes: false
-    FileEncoding: 'auto'
-    WriteBOM: false
-    Product: 'NuGet2'
-    Company: '[CompanyName]'
-    Copyright: 'Copyright &amp;copy; yyyy [CompanyName]'
-    VersionNumber: '$(Build.BuildNumber)'
-    FileVersionNumber: '$(Build.BuildNumber)'
-    InformationalVersion: '$(Build.BuildNumber)'
+  - task: VSBuild&#64;1
+    displayName: 'Build solution **\*.sln'
+    inputs:
+      solution: '**\*.sln'
+      configuration: &quot;$(buildConfiguration)&quot;
 
-- task: VSBuild&#64;1
-  displayName: 'Build solution **\*.sln'
-  inputs:
-    solution: '**\*.sln'
-    configuration: '$(buildConfiguration)'
+  - task: NuGetCommand&#64;2
+    displayName: &quot;NuGet pack&quot;
+    inputs:
+      command: pack
+      packagesToPack: '**\*.csproj;!**\*.Tests.csproj'
+      versioningScheme: byBuildNumber
 
-- task: NuGetCommand&#64;2
-  displayName: 'NuGet pack'
-  inputs:
-    command: pack
-    packagesToPack: '**\*.csproj;!**\*.Tests.csproj'
-    versioningScheme: byBuildNumber
-
-# The last task is a nuget command, nuget push
-# This will push any .nupkg files to the '[FEEDNAME]' artifact feed
-# allowPackageConflicts allows us to build the same version and not throw an error when trying to push
-# instead it just ingores the latest package unless the version changes
-- task: NuGetCommand&#64;2
-  displayName: 'nuget push'
-  inputs:
-    command: 'push'
-    feedsToUse: 'select'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: '[FEEDNAME]'
-    versioningScheme: 'off'
-    allowPackageConflicts: true
+  # The last task is a nuget command, nuget push
+  # This will push any .nupkg files to the '[FEEDNAME]' artifact feed
+  # allowPackageConflicts allows us to build the same version and not throw an error when trying to push
+  # instead it just ingores the latest package unless the version changes
+  - task: NuGetCommand&#64;2
+    displayName: &quot;nuget push&quot;
+    inputs:
+      command: &quot;push&quot;
+      feedsToUse: &quot;select&quot;
+      packagesToPush: &quot;$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg&quot;
+      nuGetFeedType: &quot;internal&quot;
+      publishVstsFeed: &quot;[FEEDNAME]&quot;
+      versioningScheme: &quot;off&quot;
+      allowPackageConflicts: true
 </code></pre>
 
 

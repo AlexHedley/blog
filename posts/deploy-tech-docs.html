@@ -5,7 +5,6 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
     <meta name="author" content="alex-hedley">
 
   <title>Alex Hedley - Deploy Tech Docs</title>
@@ -96,6 +95,9 @@
               <div class="mt-3">
                   <a href="/blog/tags/programming" class="badge text-bg-light"> programming</a>
                   <a href="/blog/tags/github" class="badge text-bg-light"> github</a>
+                  <a href="/blog/tags/govuk" class="badge text-bg-light"> govuk</a>
+                  <a href="/blog/tags/ruby" class="badge text-bg-light"> ruby</a>
+                  <a href="/blog/tags/markdown" class="badge text-bg-light"> markdown</a>
               </div>
         </div>
       </div>
@@ -167,28 +169,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout&#64;v2
-        
+
       - name: Set up 💎 Ruby 3.2.0
         uses: ruby/setup-ruby&#64;v1
         with:
           ruby-version: 3.2.0
-#           bundler-cache: true
-        
+      #           bundler-cache: true
+
       - name: Install Dependencies
         run: |
           echo 'Installing bundles...'
           gem install bundler
           bundle install
           bundle list | grep &quot;middleman (&quot;
-        
+
       - name: Build
         run: bundle exec middleman build
-      
+
       - name: Copy CNAME
         run: |
           echo &quot;Copying cname across too&quot;
           cp -a CNAME build
-      
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages&#64;v3.9.2
         with:

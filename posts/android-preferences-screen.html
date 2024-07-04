@@ -93,7 +93,7 @@
           </h1>
             <div class="meta">Published on Friday, 30 January 2015</div>
               <div class="mt-3">
-                  <a href="/blog/tags/android" class="badge text-bg-light"> Android</a>
+                  <a href="/blog/tags/android" class="badge text-bg-light"> android</a>
               </div>
         </div>
       </div>
@@ -115,6 +115,7 @@
 <p><a href="https://androidresearch.wordpress.com/2012/03/09/creating-a-preference-activity-in-android/">https://androidresearch.wordpress.com/2012/03/09/creating-a-preference-activity-in-android/</a></p>
 <p>Added here in case the site goes.</p>
 <p>[gist 9b3d87f19f4a7c3caea6/]</p>
+<script src="//gist.github.com/9b3d87f19f4a7c3caea6.js" type="text/javascript"></script>
 <p><code>AndroidManifest.xml</code></p>
 <pre><code class="language-xml">&lt;application
 ......./&gt;
@@ -132,7 +133,7 @@
      &lt;item&gt;Option 2&lt;/item&gt;
      &lt;item&gt;Option 3&lt;/item&gt;
      &lt;/string-array&gt;
- 
+
    &lt;string-array name=&quot;listValues&quot;&gt;
      &lt;item&gt;1 is selected&lt;/item&gt;
      &lt;item&gt;2 is selected&lt;/item&gt;
@@ -164,19 +165,19 @@ Toast.makeText(getApplicationContext(), &quot;Default URL Updated&quot;, Toast.L
 `PreferenceDemoActivity.java`
 public class PreferenceDemoActivity extends Activity {
 TextView textView;
- 
+
 &#64;Override
 public void onCreate(Bundle savedInstanceState) {
    super.onCreate(savedInstanceState);
    setContentView(R.layout.main);
- 
+
    Button btnPrefs = (Button) findViewById(R.id.btnPrefs);
    Button btnGetPrefs = (Button) findViewById(R.id.btnGetPreferences);
- 
+
    textView = (TextView) findViewById(R.id.txtPrefs);
- 
+
    View.OnClickListener listener = new View.OnClickListener() {
- 
+
    &#64;Override
    public void onClick(View v) {
    switch (v.getId()) {
@@ -185,17 +186,17 @@ public void onCreate(Bundle savedInstanceState) {
         PrefsActivity.class);
         startActivity(intent);
         break;
-   
+
      case R.id.btnGetPreferences:
         displaySharedPreferences();
         break;
-   
+
      default:
        break;
      }
     }
    };
- 
+
    btnPrefs.setOnClickListener(listener);
 }
 </code></pre>
@@ -215,7 +216,7 @@ public void onCreate(Bundle savedInstanceState) {
 </code></pre>
 <p><code>PrefsActivity.java</code></p>
 <pre><code class="language-java">public class PrefsActivity extends PreferenceActivity{
- 
+
   &#64;Override
   protected void onCreate(Bundle savedInstanceState) {
      super.onCreate(savedInstanceState);
