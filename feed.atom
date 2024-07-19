@@ -4,9 +4,51 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2024</rights>
-	<updated>2024-07-04T15:47:34Z</updated>
+	<updated>2024-07-19T12:27:34Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/accessexpertexam</id>
+		<title>Microsoft Access Expert (Office 2019) Certification</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/accessexpertexam" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/microsoft/cert_hero_light.png" />
+		<updated>2024-07-17T00:00:00Z</updated>
+		<content>&lt;!-- # Microsoft Access Expert (Office 2019) Certification --&gt;
+&lt;p&gt;Today I passed the &lt;strong&gt;Microsoft Access Expert (Office 2019)&lt;/strong&gt; &lt;em&gt;Microsoft Office Specialist (MOS)&lt;/em&gt; exam 🎉!&lt;/p&gt;
+&lt;p&gt;I got &lt;strong&gt;953/1000&lt;/strong&gt;, with a required score of &lt;em&gt;700&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Some of you may know that I have a very fond place in my heart for MS Access. Many moons ago I learned Access at University and found a need to use it in some of my previous jobs, Excel is not a database! Some may ask but why, there are better solutions out there? There may very well be but sometimes there are constraints as to what you are allowed to use so best to use the right solution at the time. I also think it is an under appreciated app. It's been a Low Code / No Code solution long before that even became a term, and it allows for quick development, but you can also create quite complex solutions, you just need to know how to do it. Put the Lego bricks together.&lt;/p&gt;
+&lt;p&gt;In my journey to learn Access I came across &lt;a href="https://599cd.com/"&gt;599CD.com&lt;/a&gt; and the rest, I shall say, is history. I've made a life long friend in Rick, who runs the site, and although I haven't needed to open an Access Database in many many years I still like to keep up to date with what's going on and help out on the forums where I can, give back to a community that helped me when I needed it, early in my career.&lt;/p&gt;
+&lt;p&gt;You might ask, why then take the exam? I guess there was no real need, but when has that ever stopped me picking up a new hobby or trying something new. I guess curiosity as to what would be involved. How much can I remember? Collecting another &lt;a href="https://alexhedley.github.io/blog/blog/tags/certification"&gt;Badge&lt;/a&gt; :).&lt;/p&gt;
+&lt;p&gt;It was a practical exam whereby you are given objectives to perform on an actual database. This can vary between the number of tasks per project and there are a number of projects to work on. I really enjoyed this way to assess someones knowledge as it doesn't just test your theory but how to actually use the knowledge you have.&lt;/p&gt;
+&lt;p&gt;Normally I would go to a test center but didn't fancy a trip down to London and unfortunately my local test center didn't provide it. The online proctoring worked really well and it's another experience I can tick off the list.&lt;/p&gt;
+&lt;h2 id="info"&gt;Info&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Demonstrate that you have the skills needed to get the most out of Access 2019 by earning the Microsoft Office Specialist (MOS) Expert certification.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;⏲ You will have 50 minutes to complete this assessment.&lt;/p&gt;
+&lt;h2 id="badge"&gt;Badge&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/microsoft/MOS-Access-Expert-Badge.png" alt="Badge" title="Badge"&gt;&lt;/p&gt;
+&lt;h2 id="price"&gt;💷 Price&lt;/h2&gt;
+&lt;p&gt;£95.00&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://trade.lsbu.ac.uk/product-catalogue/library-and-learning-resources/learning-resource-centre/microsoft-office-specialist-mos-exam-voucher-proctor-fee-non-lsbu-studentalumni"&gt;https://trade.lsbu.ac.uk/product-catalogue/library-and-learning-resources/learning-resource-centre/microsoft-office-specialist-mos-exam-voucher-proctor-fee-non-lsbu-studentalumni&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I got access to GMetrix from the above purchase but the following is found here:&lt;/p&gt;
+&lt;p&gt;GMetrix Tests - Access Expert (Access and Access 2019) Exam MO-500 Practice Tests&lt;/p&gt;
+&lt;p&gt;$40&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gmetrix.com/Products/Details/MOS-Access-2019"&gt;https://www.gmetrix.com/Products/Details/MOS-Access-2019&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-gb/credentials/certifications/mos-access-expert-2019/?practice-assessment-type=certification"&gt;https://learn.microsoft.com/en-gb/credentials/certifications/mos-access-expert-2019/?practice-assessment-type=certification&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Microsoft Office Specialist</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-june-2024</id>
 		<title>ISC2 North East England Chapter - June 2024</title>
@@ -162,6 +204,52 @@ Newcastle upon Tyne NE1&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>.NET meetup</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/access-devcon-vienna-2024</id>
+		<title>Access DevCon Vienna 2024</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/access-devcon-vienna-2024" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/devcon_small.png" />
+		<updated>2024-04-20T00:00:00Z</updated>
+		<content>&lt;!-- # Access DevCon Vienna 2024 --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The DevCon means two days packed with presentations by experts from Europe and the USA, an opportunity to get the latest news on Microsoft Access, to see advanced techniques and thrilling real world applications as well as to virtually meet colleagues from all over the world. All content is in English.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;📅 April 18+19&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.donkarl.com/devcon/index.htm"&gt;https://www.donkarl.com/devcon/index.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.donkarl.com/devcon/archive/devcon2024.htm"&gt;https://www.donkarl.com/devcon/archive/devcon2024.htm&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="agenda"&gt;Agenda&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;News from the Access Team&lt;/li&gt;
+&lt;li&gt;Access Community Update&lt;/li&gt;
+&lt;li&gt;UI Ergonomics and Design&lt;/li&gt;
+&lt;li&gt;Navigating the AI Skies: Unleashing Microsoft Copilot and Azure AI&lt;/li&gt;
+&lt;li&gt;SD OpenAI Add-In for Access + AI Tools&lt;/li&gt;
+&lt;li&gt;You can REALLY do all that with Forms?&lt;/li&gt;
+&lt;li&gt;Microsoft Fabric&lt;/li&gt;
+&lt;li&gt;Custom Add-In Creation with twinBASIC: Tailoring Your VBA IDE to Your Workflow&lt;/li&gt;
+&lt;li&gt;Powerful Customer Communication&lt;/li&gt;
+&lt;li&gt;Centralizing Dispersed Data&lt;/li&gt;
+&lt;li&gt;Tools for Access&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prize"&gt;Prize&lt;/h2&gt;
+&lt;p&gt;I won a prize 🥳&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A free license of MZ-Tools&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.mztools.com/"&gt;https://www.mztools.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="videos"&gt;📹 Videos&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Access DevCon 2024 - You Can REALLY Do All That With Forms?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.youtube.com/watch?v=jIk1KDTQS2U"&gt;https://www.youtube.com/watch?v=jIk1KDTQS2U&lt;/a&gt;&lt;/p&gt;
+&lt;?# YouTube jIk1KDTQS2U /?&gt;
+&lt;p&gt;&lt;strong&gt;Access DevCon 2024 - twinBASIC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.youtube.com/watch?v=7IfAkOOWSao"&gt;https://www.youtube.com/watch?v=7IfAkOOWSao&lt;/a&gt;&lt;/p&gt;
+&lt;?# YouTube 7IfAkOOWSao /?&gt;
+</content>
+		<summary>The DevCon means two days packed with presentations by experts from Europe and the USA, an opportunity to get the latest news on Microsoft Access, to see advanced techniques and thrilling real world applications as well as to virtually meet colleagues from all over the world. All content is in English.</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/dotnet-newcastle-mar-2024</id>
@@ -425,122 +513,5 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>Additions</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/2023-in-review</id>
-		<title>2023 In Review</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/2023-in-review" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2024-01-02T00:00:00Z</updated>
-		<content>&lt;!-- # 2023 in review --&gt;
-&lt;p&gt;A few years back I used to write up a review of my year, not sure why I stopped but thought it would be a good time to start it up again so here's 2023:&lt;/p&gt;
-&lt;p&gt;Looking back I've achieved a lot, both professionally and personally.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Professional Achievements&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I finally took the time to invest in obtaining some certifications. This began in &lt;strong&gt;April&lt;/strong&gt; with achieving my &lt;a href="https://alexhedley.github.io/blog/aws-certified-cloud-practitioner"&gt;AWS Certified Cloud Practitioner&lt;/a&gt;, alongside that I was running through the hands on &lt;a href="https://alexhedley.github.io/blog/aws-cloud-quest"&gt;AWS Cloud Quest&lt;/a&gt; which is my much preferred way of learning! Keeping up to date with the various changes in AWS is key, especially when I might not be working with these resources day to day.&lt;/p&gt;
-&lt;p&gt;The following month I achieved my &lt;a href="https://alexhedley.github.io/blog/cc"&gt;Certified in Cybersecurity℠ - CC&lt;/a&gt; from &lt;a href="https://www.isc2.org/"&gt;ISC2&lt;/a&gt; and have been working on my CPEs for the rest of the year.&lt;/p&gt;
-&lt;p&gt;In &lt;strong&gt;June&lt;/strong&gt; I had the opportunity to travel to the Barbican for the &lt;a href="https://alexhedley.github.io/blog/leaddev-london-2023"&gt;LeadDev London 2023&lt;/a&gt; with only a select number of colleagues. This was a fantastic event.&lt;/p&gt;
-&lt;p&gt;In &lt;strong&gt;October&lt;/strong&gt; I completed the &lt;a href="https://alexhedley.github.io/blog/lfc131"&gt;Green Software for Practitioners (LFC131)&lt;/a&gt; from &lt;a href="https://www.linuxfoundation.org/"&gt;The Linux Foundation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Another goal of mine was to work with .NET, this being Blazor. When I built a tool in Blazor Web Assembly (WASM) - &lt;a href="https://alexhedley.github.io/blog/dotnet-blazor-interactive"&gt;Blazor Interactive&lt;/a&gt; which gave me the opportunity to give a talk on the subject at my local &lt;a href="https://alexhedley.github.io/blog/tags/meetup"&gt;meetup&lt;/a&gt; - &lt;a href="https://alexhedley.github.io/blog/talk-blazorinteractive"&gt;Blazor Interactive (Talk)&lt;/a&gt;. This was a fantastic experience to be able to stand up in front of my peers and talk about something I am passionate about. I'd been giving various &lt;a href="https://alexhedley.github.io/blog/tags/talk"&gt;talks&lt;/a&gt; internally at work but these were via an online meeting.&lt;/p&gt;
-&lt;p&gt;In &lt;strong&gt;October&lt;/strong&gt; I contributed to &lt;a href="https://alexhedley.github.io/blog/hacktoberfest-2023"&gt;Hacktoberfest 2023&lt;/a&gt;. Open Source is key in our industry and I urge anyone to help, no matter how small the piece of work, I tend to do documentation as that's the last thing most people like to do and it's just as important.&lt;/p&gt;
-&lt;p&gt;Finally, &lt;strong&gt;December&lt;/strong&gt; can mean only one thing - &lt;a href="https://alexhedley.github.io/blog/aoc-2023"&gt;⭐ AoC 2023&lt;/a&gt;. I had fun in C# again, got quite a few days done at the start then couldn't really get back into after having a week off. The good thing is I can go back whenever I want and I also got my sticker from the competition at work.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Personal Achievements&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;In &lt;strong&gt;March&lt;/strong&gt; I began my official journey learning the &lt;a href="https://alexhedley.github.io/blog/saxophone"&gt;🎷 Saxophone&lt;/a&gt;. This is something I've wanted to do since being at school, just never got round to it. It's been quite a challenge. Learning to read music has been rather difficult and at times I've lost motivation but I've kept it going and thoroughly enjoying it. One day, I may share my private YouTube playlist of my progression.&lt;/p&gt;
-&lt;p&gt;Fitness has been lacking this year, I've not done as many &lt;a href="https://alexhedley.github.io/blog/tags/the-conqueror"&gt;The Conqueror&lt;/a&gt; challenges, but I did complete &lt;a href="https://alexhedley.github.io/blog/the-conqueror-2023"&gt;The Conqueror 2023&lt;/a&gt; completing over 1700km for the year. I also completed my &lt;a href="https://alexhedley.github.io/blog/parkrun-whitleybay-nov2023"&gt;1st Parkrun&lt;/a&gt;, many thanks to a dear school friend who drove over and ran it with me, knacked my knee as I hadn't done any running at all this year, but it hasn't put me off doing another, just need to train a bit more first, 5km as my first go probably wasn't the best idea!&lt;/p&gt;
-&lt;p&gt;Having dabbled with &lt;a href="https://alexhedley.github.io/blog/tags/electronics"&gt;electronics&lt;/a&gt; over the last couple of years I worked more on my &lt;a href="https://alexhedley.github.io/blog/tags/inventr"&gt;inventr.io&lt;/a&gt; &lt;strong&gt;30 Days Lost in Space&lt;/strong&gt; and started building my own "Smart" &lt;a href="https://alexhedley.github.io/blog/tags/poker"&gt;🃏 Poker&lt;/a&gt; table, it's still a WIP but has been a lot of fun bringing various disciplines together, especially the fact I got to do some woodwork in my workshop (aka the garage).&lt;/p&gt;
-&lt;p&gt;I've continued my &lt;a href="https://alexhedley.com/bowling/"&gt;🎳 Bowling&lt;/a&gt; with the local league I joined last year. I've stayed consistent and still having lots of fun with an average score of &lt;strong&gt;119&lt;/strong&gt; which isn't bad!&lt;/p&gt;
-&lt;p&gt;About 18 months after my first beginners course I completed the second in the series: &lt;a href="https://alexhedley.github.io/blog/blacksmiths-tools"&gt;Blacksmith Tools&lt;/a&gt;. This had me forging many of my own tools ready for my own workshop, one day... This was much more difficult than the first course and I maybe won't leave it as long between the next, more so because I don't have my own forge to practice, so took a while to get back into the swing of things. Very happy with what I produced, and a tough but rewarding 3 days of great work.&lt;/p&gt;
-&lt;!-- Another thing I've been looking to get back into was recording some video training tutorials. I bought a lot of gear a few years back (see [twitch](twitch)) and seems a shame not to use it. I've had the opportunity to record three courses so far: [git Beginner Level 1](https://599cd.com/blog/display-article.asp?ID=2970), [Rubberduck VBA Intro](https://599cd.com/blog/display-article.asp?ID=2972) and [VB.NET Beginner 1](https://599cd.com/blog/display-article.asp?ID=2951) with the intention of re-recording the original [VB6](https://599cd.com/site/courselist/vb/) courses [Rich](https://599cd.com/richardrost) did way back when then adding more content going forward. Still lots to improve on but practice makes perfect. --&gt;
-</content>
-		<summary>A Year in review</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/inventr-ak1-day13</id>
-		<title>Day 13 - 30 Days Lost in Space</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/inventr-ak1-day13" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" />
-		<updated>2024-01-01T00:00:00Z</updated>
-		<content>&lt;!-- # Day 13 - 30 Days Lost in Space - Inventr --&gt;
-&lt;h2 id="lesson-13"&gt;🏫 Lesson 13&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Day 13: HERO Security 101&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-13/"&gt;Original&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/lessons/day-13-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Today was a continuation of &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt; and &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt; but more coding and logic, using the same wiring and setup. This time we need to type in a password to get access to the system. We can also change the password.&lt;/p&gt;
-&lt;!-- !["Day 13"](images/inventr/ak1/Day13.jpg "Day 13") --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/keypad.png" alt="Keypad" title="Keypad"&gt;&lt;/p&gt;
-&lt;p&gt;Trying out the different options.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;11:33:10.390 -&amp;gt; Press * to set a new password.
-11:33:10.432 -&amp;gt; Press # to access the system with the existing one.
-11:33:22.330 -&amp;gt; Unlock Mode: Type Password to continue
-11:33:28.558 -&amp;gt; WRONG PASSWORD
-11:33:28.558 -&amp;gt; 1
-11:33:28.558 -&amp;gt; Password error. Access Denied.
-11:33:33.847 -&amp;gt; Unlock Mode: Type Password to continue
-11:33:37.950 -&amp;gt; ****
-11:33:40.255 -&amp;gt; Device Successfully Unlocked!
-11:33:40.301 -&amp;gt; Welcome, authorized user. You may now begin using the system.
-11:33:55.889 -&amp;gt; Unlock Mode: Type Password to continue
-11:34:08.394 -&amp;gt; WRONG PASSWORD
-11:34:08.394 -&amp;gt; 1
-11:34:08.394 -&amp;gt; Access Denied. Cannot change password without knowing the previous or default.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Hero Board&lt;/li&gt;
-&lt;li&gt;Type B USB Cable&lt;/li&gt;
-&lt;li&gt;8 cables (M-F)&lt;/li&gt;
-&lt;li&gt;8 cables (M-M)&lt;/li&gt;
-&lt;li&gt;Keypad&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Passive Buzzer&lt;/del&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day13-HERO_Security_101"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day13-HERO_Security_101&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="libraries"&gt;Libraries&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Chris--A/Keypad"&gt;https://github.com/Chris--A/Keypad&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.arduinolibraries.info/libraries/keypad"&gt;https://www.arduinolibraries.info/libraries/keypad&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="other-lessons"&gt;Other Lessons&lt;/h2&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day14"&gt;Day 14&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-</content>
-		<summary>Inventr - Adventure Kit 1</summary>
 	</entry>
 </feed>
