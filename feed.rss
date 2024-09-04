@@ -5,8 +5,32 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Wed, 04 Sep 2024 12:33:38 GMT</pubDate>
-		<lastBuildDate>Wed, 04 Sep 2024 12:33:38 GMT</lastBuildDate>
+		<pubDate>Wed, 04 Sep 2024 12:49:14 GMT</pubDate>
+		<lastBuildDate>Wed, 04 Sep 2024 12:49:14 GMT</lastBuildDate>
+		<item>
+			<title>The Key (v2)</title>
+			<link>https://alexhedley.github.io/blog/posts/thekey</link>
+			<description>Ultra-compact macropad</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/thekey</guid>
+			<pubDate>Wed, 04 Sep 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;I managed to pickup The Key (v2) for £16 (+ £3.50 P&amp;amp;P) from eBay.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Become a better coder...with this one weird click. The copy and paste keyboard from our April Fool's joke is real and available for purchase.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You can reconfigure following &lt;a href="https://drop.com/talk/93641/how-to-configure-stack-overflow-the-key-macropad"&gt;How to Configure Stack Overflow The Key and The Key V2 Macropad?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/TheKey.avif" alt="The Key (v2)" title="The Key (v2)"&gt;&lt;/p&gt;
+&lt;h2 id="articles"&gt;Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.blog/2021/04/01/the-key-copy-paste/"&gt;Introducing The Key&lt;/a&gt; 📅 April 1, 2021&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.blog/2021/09/28/become-a-better-coder-with-this-one-weird-click/"&gt;No joke—you can buy our copy/paste keyboard right now&lt;/a&gt; 📅 September 28, 2021&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drop.com/buy/stack-overflow-the-key-v2-macropad"&gt;Stack Overflow The Key V2 Macropad&lt;/a&gt; $29&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drop.com/talk/93641/how-to-configure-stack-overflow-the-key-macropad"&gt;How to Configure Stack Overflow The Key and The Key V2 Macropad?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Microsoft Access Expert (Office 2019) Certification</title>
 			<link>https://alexhedley.github.io/blog/posts/accessexpertexam</link>
@@ -467,39 +491,6 @@ Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
 &lt;li&gt;GitHub Actions&lt;/li&gt;
 &lt;li&gt;GitHub Advanced Security&lt;/li&gt;
 &lt;li&gt;GitHub Administration&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>PC Updates</title>
-			<link>https://alexhedley.github.io/blog/posts/pc-updates</link>
-			<description>Additions</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/pc-updates</guid>
-			<pubDate>Fri, 05 Jan 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # PC Updates --&gt;
-&lt;p&gt;Having a friend build a PC for me a number of years ago I've tweaked a few parts myself since the initial setup.&lt;/p&gt;
-&lt;p&gt;I've been looking to do more &lt;a href="https://alexhedley.github.io/blog/3dprinter"&gt;3D Printing&lt;/a&gt; and there are two ways I can send the models to the machine. One is via a cable connected to the printer directly, or the other is through an SD card.&lt;/p&gt;
-&lt;p&gt;I found an old external SD reader but was having issues getting it to work so I've bought an internal reader instead.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/pc/AllInOne-CardReader.jpg" alt="All In One - Card Reader" title="All In One - Card Reader"&gt;&lt;/p&gt;
-&lt;p&gt;This was a really easy install, just pop the front of the remaining slot and then plug the device into a spare port.&lt;/p&gt;
-&lt;p&gt;The major oversight I had was this is much smaller than the fitting.&lt;/p&gt;
-&lt;p&gt;Back to the shops to by an adapter:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/pc/3.5-device-adapter.jpg" alt="3.5 Device Adapter" title="3.5 Device Adapter"&gt;&lt;/p&gt;
-&lt;p&gt;Hopefully this fits as expected, we shall see when it arrives.&lt;/p&gt;
-&lt;h2 id="products"&gt;Products&lt;/h2&gt;
-&lt;p&gt;DYNAMODE DYNA-USB-ALL-INT USB 2.0 6-Slot 3.5-Inch Internal All-in-One Card Reader - Black&lt;/p&gt;
-&lt;p&gt;£7.99&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/DYNAMODE-DYNA-USB-ALL-INT-6-Slot-3-5-Inch-Internal/dp/B000E9X7WU"&gt;https://www.amazon.co.uk/DYNAMODE-DYNA-USB-ALL-INT-6-Slot-3-5-Inch-Internal/dp/B000E9X7WU&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Akasa 3.5" Device/SSD/HDD Adapter | 5.25" to 3.5" Bay Adapter | 2.5/3.5 Inch Hard Drive Enclosure | SSD Mounting Bracket | for 5.25 inch PC Front Bay | AK-HDA-05&lt;/p&gt;
-&lt;p&gt;£10.50&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/gp/product/B005ZWGEU8/"&gt;https://www.amazon.co.uk/gp/product/B005ZWGEU8/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://akasa.co.uk/update.php?tpl=product/product.detail.tpl&amp;amp;model=AK-HDA-05"&gt;https://akasa.co.uk/update.php?tpl=product/product.detail.tpl&amp;amp;model=AK-HDA-05&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
