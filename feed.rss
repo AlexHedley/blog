@@ -5,8 +5,43 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Wed, 04 Sep 2024 12:49:14 GMT</pubDate>
-		<lastBuildDate>Wed, 04 Sep 2024 12:49:14 GMT</lastBuildDate>
+		<pubDate>Thu, 05 Sep 2024 19:36:58 GMT</pubDate>
+		<lastBuildDate>Thu, 05 Sep 2024 19:36:58 GMT</lastBuildDate>
+		<item>
+			<title>Streaming Equipment</title>
+			<link>https://alexhedley.github.io/blog/posts/streaming-equipment</link>
+			<description>New microphone accessories</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/streaming-equipment</guid>
+			<pubDate>Thu, 05 Sep 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- Streaming Equipment --&gt;
+&lt;p&gt;I've upgraded my Microphone equipment for use with my &lt;a href="https://www.audio-technica.com/en-gb/at2020"&gt;AT2020&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I've bought the Microphone Shock Mount
+&lt;a href="https://www.audio-technica.com/en-gb/microphones/wired/accessories/mounts-clips/at8458a"&gt;AT8458a&lt;/a&gt;. The clip on my existing one wasn't holding it very safely, I kept knocking it out and was possibly going to damage it.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/at8458a.png" alt="AT8458a" title="AT8458a"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.audio-technica.com/en-gb/microphones/wired/accessories/mounts-clips/at8458a"&gt;AT8458a&lt;/a&gt; &lt;strong&gt;£25.00&lt;/strong&gt; (+ £3.99 P&amp;amp;P)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next was a new mic arm, my original was ok but having looked at others I like the fact this one pivots horizontally and vertically and can hide the wires.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/elgato-wave-mic-arm-lp.jpg" alt="Elgato Wave Mic Arm LP" title="Elgato Wave Mic Arm LP"&gt; &lt;strong&gt;£69.98&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A studio-grade boom arm for your premium microphone, Wave Mic Arm offers extra reach, full adjustability, integrated cable channels and compatibility with standard mic mounts.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.elgato.com/uk/en/p/wave-mic-arm"&gt;Wave Mic Arm&lt;/a&gt; RRP &lt;strong&gt;£89.99&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Original:&lt;/p&gt;
+&lt;p&gt;Koolertron USB Condenser Microphone, BM-900 Condenser Microphone Kit with Adjustable Microphone Suspension Scissor Arm, Shock Mount and Double-layer Pop Filter for Studio Recording and Broadcasting&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/peripherals.jpg" alt="Mic / Arm" title="Mic / Arm"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.co.uk/gp/product/B07QV7TS93/"&gt;Purchase&lt;/a&gt; &lt;em&gt;Amazon&lt;/em&gt; &lt;strong&gt;£34.99&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Previous post: &lt;a href="https://alexhedley.github.io/blog/twitch"&gt;Twitch&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>The Key (v2)</title>
 			<link>https://alexhedley.github.io/blog/posts/thekey</link>
@@ -392,105 +427,6 @@ We’ve got an array of features already available with more being developed. Jo
 &lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.forms.service.gov.uk/"&gt;https://www.forms.service.gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>GitHub Foundations</title>
-			<link>https://alexhedley.github.io/blog/posts/github-certifications-foundations</link>
-			<description>Certifications</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/gh/foundations.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/github-certifications-foundations</guid>
-			<pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # GitHub Foundations - Certification --&gt;
-&lt;p&gt;Today I passed the &lt;strong&gt;GitHub Foundations&lt;/strong&gt; exam 🎉!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-foundations.png" alt="GitHub Foundations" title="GitHub Foundations"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/badges/787ea844-a7c7-4d7e-9441-417708998449"&gt;Credly Badge&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.credly.com/users/alexhedley/badges"&gt;Credly Profile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The pass mark is ~70% and I achieved: &lt;strong&gt;45/60&lt;/strong&gt; (75%).&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Highlight your understanding of the foundational topics and concepts of collaborating, contributing, and working on GitHub. This exam covers collaboration, GitHub products, Git basics, and working within GitHub repositories.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1.0  Introduction to Git and GitHub&lt;/td&gt;
-&lt;td&gt;61%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2.0  Working with GitHub Repositories&lt;/td&gt;
-&lt;td&gt;80%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3.0  Collaboration Features&lt;/td&gt;
-&lt;td&gt;77%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4.0  Modern Development&lt;/td&gt;
-&lt;td&gt;87%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5.0  Project Management&lt;/td&gt;
-&lt;td&gt;100%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6.0  Privacy, Security, and Administration&lt;/td&gt;
-&lt;td&gt;33%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7.0  Benefits of the GitHub Community&lt;/td&gt;
-&lt;td&gt;100%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;I took this in a Pearson VUE testing center instead of an online proctored exam. Don't need to worry about the internet dropping out etc.&lt;/p&gt;
-&lt;p&gt;I Took about 30 minutes in total, you do have the option to review answers, which is beneficial, but I didn't want to second guess myself so just submitted.&lt;/p&gt;
-&lt;p&gt;There was a nice screen at the end, clearly coloured green and let me know I'd passed, with the above breakdown of %.&lt;/p&gt;
-&lt;p&gt;I've linked a discussion below which I agree with, there seemed to be some quite specific questions that were less foundation and probably better suite to the further exams. Having weights against each section would be good to know what things need more concentration.&lt;/p&gt;
-&lt;p&gt;I clearly don't know enough around "Privacy, Security, and Administration", this was prob due to the extensive questions on GitHub Enterprise which I've not worked with at all so only had fleeting knowledge from the training material. But who knows, would be interesting to see my actual answers but that'll never happen.&lt;/p&gt;
-&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"&gt;GitHub Foundations&lt;/a&gt; Microsoft Learn&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/FidelusAleksander/ghcertified"&gt;ghcertified&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://ghcertified.com/"&gt;https://ghcertified.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Links&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://examregistration.github.com/"&gt;GitHub Certifications&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Blog: &lt;a href="https://github.blog/2024-01-08-github-certifications-are-generally-available/"&gt;GitHub Certifications are generally available&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/orgs/community/discussions/87415"&gt;GitHub Certifications Feedback #87415&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="exam-overview"&gt;Exam overview&lt;/h2&gt;
-&lt;p&gt;Level: Foundational&lt;br&gt;
-Length: 120 minutes&lt;br&gt;
-Cost: $49.50 (50% + 50% - $200 down to 99 USD)&lt;/p&gt;
-&lt;p&gt;Format: Our current exams are: multiple-choice, have 60 scored items, and around 10-15 pretest items depending on the exam.&lt;br&gt;
-Delivery method: Pearson VUE testing center or online proctored exam.&lt;/p&gt;
-&lt;h2 id="options"&gt;Options&lt;/h2&gt;
-&lt;p&gt;There are other certifications available, I'll probably start on the &lt;strong&gt;Actions&lt;/strong&gt; one next.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GitHub Actions&lt;/li&gt;
-&lt;li&gt;GitHub Advanced Security&lt;/li&gt;
-&lt;li&gt;GitHub Administration&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
