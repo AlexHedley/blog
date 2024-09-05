@@ -42,9 +42,21 @@ Not being the best time to get stock during a global pandemic, being everyone wa
 - Pop Filter
 - peripherals - cables etc
 
+![Focusrite Scarlett Solo 3rd Gen](images/equipment/Focusrite-Scarlett-Solo-3rd-Gen.png "Focusrite Scarlett Solo 3rd Gen")
+
+![AT2020](images/equipment/at2020.png "AT2020")
+
+![Razer Kiyo](images/equipment/razer-kiyo.png "Razer Kiyo")
+
+![Stream Deck](images/equipment/Stream-Deck.jpg "Stream Deck")
+
+![Peripherals](images/equipment/peripherals.jpg "Peripherals")
+
 Then I needed some artwork for scenes etc.
 
 I'm no artist so I took some inspiration for other streamers for layout and positioning of elements and then grabbed some logos from my [website](http://alexhedley.com/)
+
+![Twitch Scene](images/Twitch-Scene.png "Twitch Scene")
 
 Next up was the software.
 
