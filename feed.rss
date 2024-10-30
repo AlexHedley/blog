@@ -5,8 +5,130 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Thu, 05 Sep 2024 19:36:58 GMT</pubDate>
-		<lastBuildDate>Thu, 05 Sep 2024 19:36:58 GMT</lastBuildDate>
+		<pubDate>Wed, 30 Oct 2024 18:55:43 GMT</pubDate>
+		<lastBuildDate>Wed, 30 Oct 2024 18:55:43 GMT</lastBuildDate>
+		<item>
+			<title>🎷 Saxophone - Books 2</title>
+			<link>https://alexhedley.github.io/blog/posts/saxophone-books-2</link>
+			<description>Buying more music.</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/saxophone-books-2</guid>
+			<pubDate>Wed, 30 Oct 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- 🎷 Saxophone - Books 2 --&gt;
+&lt;p&gt;I've bought some more books! This time from &lt;a href="https://www.musicroom.com/"&gt;Music Room&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Best of Metallica for Alto Sax&lt;/li&gt;
+&lt;li&gt;Guest Spot: Keane 'Hopes And Fears'&lt;/li&gt;
+&lt;li&gt;101 Jazz Songs for Alto Sax&lt;/li&gt;
+&lt;li&gt;101 Most Beautiful Songs&lt;/li&gt;
+&lt;li&gt;101 Hit Songs&lt;/li&gt;
+&lt;li&gt;101 Christmas Songs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/BestOfMetallicA.jpg" alt="Best of Metallica for Alto Sax" title="Best of Metallica for Alto Sax"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/saxophone/KeaneHopesAndFears.jpg" alt="Guest Spot: Keane 'Hopes And Fears'" title="Guest Spot: Keane 'Hopes And Fears'"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/saxophone/101JazzSongsforAltoSax.jpg" alt="101 Jazz Songs for Alto Sax" title="101 Jazz Songs for Alto Sax"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/saxophone/101MostBeautifulSongs.jpg" alt="101 Most Beautiful Songs" title="101 Most Beautiful Songs"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/saxophone/101HitSongs.jpg" alt="101 Hit Songs" title="101 Hit Songs"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/saxophone/101ChristmasSongs.jpg" alt="101 Christmas Songs" title="101 Christmas Songs"&gt;&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://alexhedley.github.io/blog/saxophone-books"&gt;🎷 Saxophone - Books&lt;/a&gt; for my previous ones.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.musicroom.com/metallica-best-of-metallica-for-alto-sax-alto-hl02501332"&gt;https://www.musicroom.com/metallica-best-of-metallica-for-alto-sax-alto-hl02501332&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.musicroom.com/keane-guest-spot-keane-hopes-and-fears-alto-musam982817"&gt;https://www.musicroom.com/keane-guest-spot-keane-hopes-and-fears-alto-musam982817&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.musicroom.com/101-jazz-songs-for-alto-sax-alto-saxophone-hl00146366"&gt;https://www.musicroom.com/101-jazz-songs-for-alto-sax-alto-saxophone-hl00146366&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.musicroom.com/101-most-beautiful-songs-alto-saxophone-hl00291042"&gt;https://www.musicroom.com/101-most-beautiful-songs-alto-saxophone-hl00291042&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.musicroom.com/101-hit-songs-alto-saxophone-hl00197183"&gt;https://www.musicroom.com/101-hit-songs-alto-saxophone-hl00197183&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.musicroom.com/101-christmas-songs-alto-saxophone-hl00278639"&gt;https://www.musicroom.com/101-christmas-songs-alto-saxophone-hl00278639&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Archery Scores</title>
+			<link>https://alexhedley.github.io/blog/posts/archery-scores</link>
+			<description>Archery Score Keeper</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/archery-scores</guid>
+			<pubDate>Tue, 29 Oct 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Archery Scores --&gt;
+&lt;p&gt;Since &lt;a href="https://alexhedley.github.io/blog/archery-return"&gt;returning to archery&lt;/a&gt; I thought it might be a good idea to keep a track of my scores.&lt;/p&gt;
+&lt;p&gt;I'd already bought a book to write them in whilst at the venue but shouldn't there be a digital version as well?&lt;/p&gt;
+&lt;p&gt;I went about building one. I've kept it in legacy AngularJS just because it's so easy to work with and my other sites use that too.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.com/archery/"&gt;Archery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I've made initial tabs including &lt;em&gt;Summary&lt;/em&gt;, &lt;em&gt;Scores&lt;/em&gt;, a &lt;em&gt;Score Creator&lt;/em&gt;, a &lt;em&gt;Target&lt;/em&gt;, info about the &lt;em&gt;Club&lt;/em&gt; and my &lt;em&gt;Equipment&lt;/em&gt;. I'll be looking to add &lt;em&gt;Graphs&lt;/em&gt; and some other stats once I've got more weeks added to the data set.&lt;/p&gt;
+&lt;p&gt;The Score Creator is much like the one from my &lt;a href="https://alexhedley.com/bowling/"&gt;Bowling&lt;/a&gt; and it lets me quickly type in my scores and output a json object I can then add to the repo.&lt;/p&gt;
+&lt;p&gt;I found a useful &lt;a href="https://codepen.io/GGalizzi/pen/PogggB"&gt;CodePen&lt;/a&gt; from &lt;a href="https://codepen.io/GGalizzi"&gt;@GGalizzi&lt;/a&gt; which lets you select a point on the target and it will tell you your score. I'm still working on integrating that into the site.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;My club uses &lt;a href="https://archery-records.net/"&gt;Golden Records Online&lt;/a&gt; which I'm adding my scores as well. They have an API, so let's add another App to my &lt;a href="https://alexhedley.com/projects/"&gt;projects&lt;/a&gt; graveyard.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.com/archery/"&gt;https://alexhedley.com/archery/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery"&gt;https://github.com/AlexHedley/archery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Returning to Archery</title>
+			<link>https://alexhedley.github.io/blog/posts/archery-return</link>
+			<description>Club - North East Archers</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/archers/north-east-archers.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/archery-return</guid>
+			<pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Archery --&gt;
+&lt;p&gt;After going to the &lt;a href="https://alexhedley.github.io/blog/archery"&gt;Archery Beginners Course&lt;/a&gt; from &lt;a href="https://www.northeastarchers.co.uk/"&gt;North East Archers&lt;/a&gt; back int 2018 I was unable to commit to their weekly sessions due to an ever changing work schedule.&lt;/p&gt;
+&lt;p&gt;After 🎳 &lt;a href="https://alexhedley.github.io/blog/search?query=bowling"&gt;bowling&lt;/a&gt; for the last couple of years I've decided to return to 🏹 Archery.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.northeastarchers.co.uk/"&gt;North East Archers&lt;/a&gt; offer a &lt;a href="https://www.northeastarchers.co.uk/club/range-returners"&gt;Range Returners&lt;/a&gt; which I went along to on Wednesday. A very warm welcome :).&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/range_returners_2.jpg" alt="Range Returners" title="Range Returners"&gt;&lt;/p&gt;
+&lt;p&gt;After a couple of weeks I took the plunge and bought my own equipment from 🦅 &lt;a href="https://eaglearchery.co.uk/"&gt;Eagle Archery&lt;/a&gt; (and eBay).&lt;/p&gt;
+&lt;p&gt;Reaper Pro Take Down Recurve
+&lt;img src="https://alexhedley.github.io/blog/images/archery/ReaperProTakeDownRecurve.jpg" alt="Reaper Pro Take Down Recurve" title="Reaper Pro Take Down Recurve"&gt;&lt;/p&gt;
+&lt;p&gt;Black Eagle Intrepid ready made Arrows - 600 - Feathers (x6)
+&lt;img src="https://alexhedley.github.io/blog/images/archery/BlackEagleIntrepidreadymadeArrows-600.png" alt="Black Eagle Intrepid ready made Arrows - 600" title="Black Eagle Intrepid ready made Arrows - 600"&gt;&lt;/p&gt;
+&lt;p&gt;Avalon Tyro Recurve Backpack
+&lt;img src="https://alexhedley.github.io/blog/images/archery/AvalonTyroRecurveBackpack.jpg" alt="Avalon Tyro Recurve Backpack" title="Avalon Tyro Recurve Backpack"&gt;&lt;/p&gt;
+&lt;p&gt;Avalon Tec One Quiver
+&lt;img src="https://alexhedley.github.io/blog/images/archery/AvalonTecOneQuiver.png" alt="Avalon Tec One Quiver" title="Avalon Tec One Quiver"&gt;&lt;/p&gt;
+&lt;p&gt;Avalon Bow Stringer
+&lt;img src="https://alexhedley.github.io/blog/images/archery/AvalonBowStringer.jpg" alt="Avalon Bow Stringer" title="Avalon Bow Stringer"&gt;&lt;/p&gt;
+&lt;p&gt;Avalon A3 Magnetic Bow Stand (Red)
+&lt;img src="https://alexhedley.github.io/blog/images/archery/AvalonA3MagneticBowStand.jpg" alt="Avalon A3 Magnetic Bow Stand" title="Avalon A3 Magnetic Bow Stand"&gt;&lt;/p&gt;
+&lt;p&gt;Buck Trail Breeze Leather Armguard
+&lt;img src="https://alexhedley.github.io/blog/images/archery/TrailBreezeLeatherArmguard.jpg" alt="Buck Trail Breeze Leather Armguard" title="Buck Trail Breeze Leather Armguard"&gt;&lt;/p&gt;
+&lt;p&gt;Bucktrail Shooting Glove
+&lt;img src="https://alexhedley.github.io/blog/images/archery/BucktrailShootingGlove.jpg" alt="Bucktrail Shooting Glove" title="Bucktrail Shooting Glove"&gt;&lt;/p&gt;
+&lt;p&gt;Bucktrail Leather String Keeper
+&lt;img src="https://alexhedley.github.io/blog/images/archery/bucktrail_stringkeeper-b.jpg" alt="Bucktrail Leather String Keeper" title="Bucktrail Leather String Keeper"&gt;&lt;/p&gt;
+&lt;p&gt;Bow Bag - 70" - Recurve (Red)
+&lt;img src="https://alexhedley.github.io/blog/images/archery/BowBag.jpg" alt="Bow Bag - 70&amp;quot; - Recurve" title="Bow Bag - 70&amp;quot; - Recurve"&gt;&lt;/p&gt;
+&lt;p&gt;Eagle Archery Patch
+&lt;img src="https://alexhedley.github.io/blog/images/archery/EagleArcheryPatch.jpg" alt="Eagle Archery Patch" title="Eagle Archery Patch"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://eaglearchery.co.uk/products/legend-xt-field-quiver"&gt;https://eaglearchery.co.uk/products/legend-xt-field-quiver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eaglearchery.co.uk/collections/shooting-gloves/products/bucktrail-shooting-glove"&gt;https://eaglearchery.co.uk/collections/shooting-gloves/products/bucktrail-shooting-glove&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eaglearchery.co.uk/products/reaper-pro-take-down-recurve"&gt;https://eaglearchery.co.uk/products/reaper-pro-take-down-recurve&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eaglearchery.co.uk/products/eagle-archery-patch"&gt;https://eaglearchery.co.uk/products/eagle-archery-patch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then a few things on eBay:&lt;/p&gt;
+&lt;p&gt;Archery Score Book
+&lt;img src="https://alexhedley.github.io/blog/images/archery/archery-score-book.png" alt="Archery Score Book" title="Archery Score Book"&gt;&lt;/p&gt;
+&lt;p&gt;Finger Sling (Black)
+&lt;img src="https://alexhedley.github.io/blog/images/archery/finger-sling-black.png" alt="Finger Sling (Black)" title="Finger Sling (Black)"&gt;&lt;/p&gt;
+&lt;p&gt;Finger Sling (Red)
+&lt;img src="https://alexhedley.github.io/blog/images/archery/finger-sling-red.png" alt="Finger Sling (Red)" title="Finger Sling (Red)"&gt;&lt;/p&gt;
+&lt;p&gt;Wrist Sling
+&lt;img src="https://alexhedley.github.io/blog/images/archery/wrist-sling-red.png" alt="Wrist Sling" title="Wrist Sling"&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Streaming Equipment</title>
 			<link>https://alexhedley.github.io/blog/posts/streaming-equipment</link>
@@ -302,132 +424,6 @@ Newcastle upon Tyne NE1&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Access DevCon 2024 - twinBASIC&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;🔗 &lt;a href="https://www.youtube.com/watch?v=7IfAkOOWSao"&gt;https://www.youtube.com/watch?v=7IfAkOOWSao&lt;/a&gt;&lt;/p&gt;
 &lt;?# YouTube 7IfAkOOWSao /?&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Qudos .NET Newcastle Meetup - Mar 2024</title>
-			<link>https://alexhedley.github.io/blog/posts/dotnet-newcastle-mar-2024</link>
-			<description>.NET meetup</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/meetups/dotnet-mar-2024.jpeg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/dotnet-newcastle-mar-2024</guid>
-			<pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Qudos DotNet Newcastle Meetup - March 2024 --&gt;
-&lt;p&gt;📅 Tuesday, March 19, 2024 · 5:30 - 8pm GMT&lt;/p&gt;
-&lt;p&gt;📍 BJSS Newcastle, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ&lt;/p&gt;
-&lt;p&gt;🔗 &lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/299612897/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/299612897/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="description"&gt;Description&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Dan Oliver&lt;/em&gt; - &lt;strong&gt;An Introduction To Azure Open AI &amp;amp; CoPilot&lt;/strong&gt;&lt;/p&gt;
-&lt;?# YouTube _zm2iq5wmgo /?&gt;
-&lt;p&gt;&lt;em&gt;Peter Shaw&lt;/em&gt; - &lt;strong&gt;Azure IoT Using Dotnet Nano Framework&lt;/strong&gt;&lt;/p&gt;
-&lt;?# YouTube 2f7ZmDgU8-Q /?&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;QudosRecruitment"&gt;https://www.youtube.com/&amp;#64;QudosRecruitment&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Day 14 - 30 Days Lost in Space</title>
-			<link>https://alexhedley.github.io/blog/posts/inventr-ak1-day14</link>
-			<description>Inventr - Adventure Kit 1</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/inventr/inventr_io_cover.jpg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/inventr-ak1-day14</guid>
-			<pubDate>Mon, 11 Mar 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Day 14 - 30 Days Lost in Space - Inventr --&gt;
-&lt;h2 id="lesson-14"&gt;🏫 Lesson 14&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Day 14: Advanced security panel&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learn.inventr.io/lessons/day-14/"&gt;Original&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.inventr.io/lessons/day-14-2/"&gt;Remake&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Today was an amalgamation of &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt; and &lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt; so we can combine &lt;em&gt;sound&lt;/em&gt;, &lt;em&gt;light&lt;/em&gt; and the &lt;em&gt;keypad&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;PWM ~ is key on the board.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/inventr/ak1/Day14.jpg" alt="&amp;quot;Day 14&amp;quot;" title="Day 14"&gt;&lt;/p&gt;
-&lt;h3 id="parts"&gt;Parts&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Hero Board&lt;/li&gt;
-&lt;li&gt;Type B USB Cable&lt;/li&gt;
-&lt;li&gt;Breadboard&lt;/li&gt;
-&lt;li&gt;16 cables (M-M)&lt;/li&gt;
-&lt;li&gt;Keypad&lt;/li&gt;
-&lt;li&gt;Passive Buzzer&lt;/li&gt;
-&lt;li&gt;3 220 Ω (Ohm) resistor&lt;/li&gt;
-&lt;li&gt;3 colour LED or RGB LED&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;👩🏻‍💻 Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day14-Advanced_Security_Panel"&gt;https://github.com/inventrdotio/30DaysLostInSpace/tree/main/Day14-Advanced_Security_Panel&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="libraries"&gt;Libraries&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Chris--A/Keypad"&gt;https://github.com/Chris--A/Keypad&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.arduinolibraries.info/libraries/keypad"&gt;https://www.arduinolibraries.info/libraries/keypad&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="videos"&gt;📼 Videos&lt;/h2&gt;
-&lt;p&gt;N/A&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/"&gt;https://inventr.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/product/adventure-kit-30-days-lost-in-space/"&gt;https://inventr.io/product/adventure-kit-30-days-lost-in-space/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://inventr.io/courses/adventurekit30dayslostinspace/"&gt;https://inventr.io/courses/adventurekit30dayslostinspace/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="other-lessons"&gt;Other Lessons&lt;/h2&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1"&gt;30 Days Lost in Space&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day1"&gt;Day 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day2"&gt;Day 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day3"&gt;Day 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day4"&gt;Day 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day5"&gt;Day 5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day6"&gt;Day 6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day7"&gt;Day 7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day8"&gt;Day 8&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day9"&gt;Day 9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day10"&gt;Day 10&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day11"&gt;Day 11&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day12"&gt;Day 12&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day13"&gt;Day 13&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/inventr-ak1-day14"&gt;Day 14&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Introduction to GOV.UK Forms</title>
-			<link>https://alexhedley.github.io/blog/posts/govuk-forms</link>
-			<description>GDS</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/gds-govukforms.jpeg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/govuk-forms</guid>
-			<pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Introduction to GOV.UK Forms --&gt;
-&lt;p&gt;Find out just how easy it is to create online forms using the Government Digital Service new forms builder.&lt;/p&gt;
-&lt;!-- ![Event Info](images/gds-govukforms.jpeg "Event Info") --&gt;
-&lt;h2 id="event"&gt;Event&lt;/h2&gt;
-&lt;p&gt;🗓️ Thursday, 1 February 2024&lt;br /&gt;
-🕰️ 12:00 - 13:00 GMT&lt;br /&gt;
-📍Online&lt;br /&gt;
-🔗 &lt;a href="https://www.eventbrite.co.uk/e/hyhubs-hyheroes-awards-2023-tickets-727053124467"&gt;https://www.eventbrite.co.uk/e/hyhubs-hyheroes-awards-2023-tickets-727053124467&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;p&gt;We’ve launched the early access phase of our new form builder software GOV.UK forms.
-It helps make the switch from document based and printed forms to easy to use, accessible online forms across government. It’s part of our commitment to make it easier for government departments to build digital services.
-We’ve got an array of features already available with more being developed. Join our webinar to find out how simple it is to use and how it's improving the outcomes for the people who complete the forms and the people who process them.&lt;/p&gt;
-&lt;h3 id="agenda"&gt;Agenda&lt;/h3&gt;
-&lt;p&gt;12:00 - 12:10 Introductions&lt;br /&gt;
-12:10 - 12:30 Demonstration and latest features&lt;br /&gt;
-12:30 - 13:00 Questions from the audience&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.forms.service.gov.uk/"&gt;https://www.forms.service.gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
