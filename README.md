@@ -1,6 +1,6 @@
 # Blog
 
-[![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
+[![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)](https://daringfireball.net/projects/markdown/syntax)
 
 [![🚀 Deploy to GitHub Pages](https://github.com/alexhedley/blog/actions/workflows/main.yml/badge.svg)](https://github.com/alexhedley/blog/actions/workflows/main.yml)

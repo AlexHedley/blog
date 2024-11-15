@@ -6,7 +6,7 @@ tags:
 author: alexhedley
 description: Club - North East Archers
 published: 2024-09-11
-image: /posts/images/archers/north-east-archers.png
+image: /posts/images/archery/north-east-archers.png
 imageattribution: https://www.northeastarchers.co.uk/
 ---
 
