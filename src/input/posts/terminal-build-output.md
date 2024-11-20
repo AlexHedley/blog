@@ -2,10 +2,11 @@
 title: Terminal Build Output
 # lead:
 tags:
-    - .NET 8
-    - terminal
+  - dotnet
+  - dotnet 8
+  - terminal
 author: AlexHedley
-# description: 
+# description:
 published: 2023-06-09
 # image:
 # imageattribution:
