@@ -5,8 +5,36 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Sat, 16 Nov 2024 15:33:47 GMT</pubDate>
-		<lastBuildDate>Sat, 16 Nov 2024 15:33:47 GMT</lastBuildDate>
+		<pubDate>Fri, 22 Nov 2024 23:16:06 GMT</pubDate>
+		<lastBuildDate>Fri, 22 Nov 2024 23:16:06 GMT</lastBuildDate>
+		<item>
+			<title>Archery Scores Colours</title>
+			<link>https://alexhedley.github.io/blog/posts/archery-scores-colours</link>
+			<description>Archery Score Keeper</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/archery-scores-colours</guid>
+			<pubDate>Thu, 21 Nov 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Archery Scores Colours --&gt;
+&lt;p&gt;I've made an update to my &lt;a href="https://alexhedley.com/archery/"&gt;Archery Scores&lt;/a&gt; website. I wanted to easily indicate what scores I got and match the colours to the target.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/scores_colours.png" alt="Scores Colours" title="Scores Colours"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/scores_alt_colours.png" alt="Scores (Alt) Colours" title="Scores (Alt) Colours"&gt;&lt;/p&gt;
+&lt;p&gt;Should I add some opacity?&lt;/p&gt;
+&lt;p&gt;Let's see if I can get a full block of gold 🥇 one day!&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.com/archery/"&gt;https://alexhedley.com/archery/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery"&gt;https://github.com/AlexHedley/archery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="related"&gt;Related&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/archery-scores"&gt;Archery Scores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/archery-return"&gt;Returning to Archery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/archery"&gt;Archery Beginners Course&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Becoming the Undertaker</title>
 			<link>https://alexhedley.github.io/blog/posts/undertaker</link>
@@ -95,8 +123,10 @@ I also added a tie and the leg covers. Just bought a pair of grey footy socks an
 &lt;li&gt;&lt;a href="https://alexhedley.com/archery/"&gt;Archery&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I've made initial tabs including &lt;em&gt;Summary&lt;/em&gt;, &lt;em&gt;Scores&lt;/em&gt;, a &lt;em&gt;Score Creator&lt;/em&gt;, a &lt;em&gt;Target&lt;/em&gt;, info about the &lt;em&gt;Club&lt;/em&gt; and my &lt;em&gt;Equipment&lt;/em&gt;. I'll be looking to add &lt;em&gt;Graphs&lt;/em&gt; and some other stats once I've got more weeks added to the data set.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/score-alt.png" alt="Scores (Alt)" title="Scores (Alt)"&gt;&lt;/p&gt;
 &lt;p&gt;The Score Creator is much like the one from my &lt;a href="https://alexhedley.com/bowling/"&gt;Bowling&lt;/a&gt; and it lets me quickly type in my scores and output a json object I can then add to the repo.&lt;/p&gt;
 &lt;p&gt;I found a useful &lt;a href="https://codepen.io/GGalizzi/pen/PogggB"&gt;CodePen&lt;/a&gt; from &lt;a href="https://codepen.io/GGalizzi"&gt;@GGalizzi&lt;/a&gt; which lets you select a point on the target and it will tell you your score. I'm still working on integrating that into the site.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/Archery_Target.png" alt="Archery Target" title="Archery Target"&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;My club uses &lt;a href="https://archery-records.net/"&gt;Golden Records Online&lt;/a&gt; which I'm adding my scores as well. They have an API, so let's add another App to my &lt;a href="https://alexhedley.com/projects/"&gt;projects&lt;/a&gt; graveyard.&lt;/p&gt;
 &lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
@@ -358,61 +388,6 @@ Newcastle upon Tyne NE1&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Issue (40): &lt;a href="https://github.com/AlexHedley/poker-recording/issues/40"&gt;https://github.com/AlexHedley/poker-recording/issues/40&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;MR (39): &lt;a href="https://github.com/AlexHedley/poker-recording/pull/39"&gt;https://github.com/AlexHedley/poker-recording/pull/39&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Qudos .NET Newcastle Meetup - May 2024</title>
-			<link>https://alexhedley.github.io/blog/posts/dotnet-newcastle-may-2024</link>
-			<description>.NET meetup</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/meetups/dotnet-may-2024.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/dotnet-newcastle-may-2024</guid>
-			<pubDate>Tue, 28 May 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Qudos DotNet Newcastle Meetup - May 2024 --&gt;
-&lt;p&gt;📅 Tuesday, May 28, 2024 · 5:30 - 8pm GMT&lt;/p&gt;
-&lt;p&gt;📍 BJSS Newcastle, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ&lt;/p&gt;
-&lt;!-- 🔗 https://www.meetup.com/dotnetmeetupnorth/events/.../ --&gt;
-&lt;p&gt;🔗 &lt;a href="https://www.linkedin.com/posts/qasim-qudos_meetup-qudos-newcastle-activity-7199702440688988160-8DG7"&gt;https://www.linkedin.com/posts/qasim-qudos_meetup-qudos-newcastle-activity-7199702440688988160-8DG7&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="talks"&gt;Talks&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Michael Stephenson&lt;/em&gt; - &lt;strong&gt;Real World Journey Of Saving Lots Of Money In Azure&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Adam Parker&lt;/em&gt; - &lt;strong&gt;Interoperability In .NET Languages&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id="talk-1-real-world-journey-of-saving-lots-of-money-in-azure"&gt;Talk 1: Real World Journey Of Saving Lots Of Money In Azure&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Description&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;In this talk, we will talk about how I worked with a customer last year where we were trying to keep a tight control on our azure costs in our integration team and how we looked at implementing the same approaches in the wider organization.&lt;/p&gt;
-&lt;p&gt;We found a huge amount of waste in the azure spend and we will look at some of the things we found and approaches to optimize and reduce cost. We identified over $1m worth of cost savings.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Speaker Bio&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;Michael Stephenson has worked as an architect on Azure projects for over 10 years developing enterprise solutions with Azure. Many of these solutions involve complex integration scenarios and discussing the advantages and disadvantages for a given use case for technologies like Logic Apps, Functions, Data Factory, Service Bus and others.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Video&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;TBA&lt;/p&gt;
-&lt;h3 id="talk-2-interoperability-in.net-languages"&gt;Talk 2: Interoperability In .NET Languages&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Description&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;Over the course of the talk, we aim to discuss how .NET allows Interoperability between it's languages and how it handles different paradigms in its own ecosystem.&lt;/p&gt;
-&lt;p&gt;Areas include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Basics of how interop in .NET works.&lt;/li&gt;
-&lt;li&gt;Demos of interop between two Object-Oriented languages&lt;/li&gt;
-&lt;li&gt;A small look at functional programming in F#&lt;/li&gt;
-&lt;li&gt;Showing how to cross boundaries between functional and non-functional code&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Speaker Bio&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;Adam Parker has been a software developer for over 6 years, mainly developing in the dotnet ecosystem.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Video&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;TBA&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;p&gt;The good folks over at BJSS in Newcastle will be hosting and sponsoring the event again.&lt;/p&gt;
-&lt;p&gt;We'll be at 12th Floor, Bank House, Pilgrim Street, Newcastle, NE1 6SQ&lt;/p&gt;
-&lt;p&gt;We have a fairly relaxed agenda, but will follow:&lt;/p&gt;
-&lt;p&gt;5:30 - Doors Open&lt;br /&gt;
-5:45 - Pizza arrival&lt;br /&gt;
-6:05 - Introduction / Housekeeping&lt;br /&gt;
-6:10 - Talks begin&lt;br /&gt;
-8:00 - Closing&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;QudosRecruitment"&gt;https://www.youtube.com/&amp;#64;QudosRecruitment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.meetup.com/haintonsdotnetmeetup/"&gt;https://www.meetup.com/haintonsdotnetmeetup/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
