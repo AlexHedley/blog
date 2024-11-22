@@ -24,9 +24,13 @@ I went about building one. I've kept it in legacy AngularJS just because it's so
 
 I've made initial tabs including _Summary_, _Scores_, a _Score Creator_, a _Target_, info about the _Club_ and my _Equipment_. I'll be looking to add _Graphs_ and some other stats once I've got more weeks added to the data set.
 
+![Scores (Alt)](images/archery/score-alt.png "Scores (Alt)")
+
 The Score Creator is much like the one from my [Bowling](https://alexhedley.com/bowling/) and it lets me quickly type in my scores and output a json object I can then add to the repo.
 
 I found a useful [CodePen](https://codepen.io/GGalizzi/pen/PogggB) from [@GGalizzi](https://codepen.io/GGalizzi) which lets you select a point on the target and it will tell you your score. I'm still working on integrating that into the site.
+
+![Archery Target](images/archery/Archery_Target.png "Archery Target")
 
 ---
 
