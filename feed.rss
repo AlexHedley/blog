@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Fri, 29 Nov 2024 15:01:51 GMT</pubDate>
-		<lastBuildDate>Fri, 29 Nov 2024 15:01:51 GMT</lastBuildDate>
+		<pubDate>Fri, 29 Nov 2024 17:32:58 GMT</pubDate>
+		<lastBuildDate>Fri, 29 Nov 2024 17:32:58 GMT</lastBuildDate>
 		<item>
 			<title>Archery Scores Colours</title>
 			<link>https://alexhedley.github.io/blog/posts/archery-scores-colours</link>
@@ -137,6 +137,31 @@ I also added a tie and the leg covers. Just bought a pair of grey footy socks an
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Books</title>
+			<link>https://alexhedley.github.io/blog/posts/books</link>
+			<description>&lt;p&gt;I buy a number of eBooks, especially on &lt;a href="https://www.humblebundle.com/"&gt;Humble Bundle&lt;/a&gt;, the problem is I can never remember which ones I have, and hardly ever make the time to read them, but you never know when they'll come in handy.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/books</guid>
+			<pubDate>Wed, 18 Sep 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;I buy a number of eBooks, especially on &lt;a href="https://www.humblebundle.com/"&gt;Humble Bundle&lt;/a&gt;, the problem is I can never remember which ones I have, and hardly ever make the time to read them, but you never know when they'll come in handy.&lt;/p&gt;
+&lt;p&gt;Of course I made a list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.com/books/"&gt;https://alexhedley.com/books/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/books/"&gt;https://github.com/AlexHedley/books/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I've still got a number of sites to add to it, WIP like most of my other &lt;a href="https://alexhedley.com/projects/"&gt;Projects&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/website/books.png" alt="Books" title="Books"&gt;&lt;/p&gt;
+&lt;!-- ![Books](images/website/books_.png "Books") --&gt;
+&lt;p&gt;Ray Wenderlich&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/website/books_rw.png" alt="Books" title="Books"&gt;&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -331,63 +356,6 @@ Newcastle upon Tyne NE1&lt;/p&gt;
 &lt;h2 id="links"&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-june-2024-tickets-906290508307"&gt;https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-june-2024-tickets-906290508307&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Poker - HUD</title>
-			<link>https://alexhedley.github.io/blog/posts/poker-hud</link>
-			<description>Designing a HUD for the Stats</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/poker-hud</guid>
-			<pubDate>Sun, 02 Jun 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Poker - HUD --&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-recording-games"&gt;Poker - Recording Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-tracking-cards"&gt;Poker - Tracking cards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-table-top"&gt;Poker - Table top&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-chip"&gt;Poker - Chip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-api"&gt;Poker - API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-stats"&gt;Poker - Stats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker - App&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-docs"&gt;Poker - Docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/poker-hud"&gt;Poker - Hud&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;p&gt;I'm back to working on the &lt;a href="https://alexhedley.github.io/blog/poker-app"&gt;Poker Web App&lt;/a&gt;, as you saw from the original post the UI is lacking somewhat.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/testing-table.png" alt="Web App table" title="Web App table"&gt;&lt;/p&gt;
-&lt;p&gt;I've taken some inspiration from live shows and started working on implementing the styles in the app. I've found a number of variations I can work through, so here's the first attempt.&lt;/p&gt;
-&lt;p&gt;This led me to creating a shared &lt;code&gt;Microsoft.NET.Sdk.Razor&lt;/code&gt; project called &lt;strong&gt;Poker.Components&lt;/strong&gt;. (I should have done this with the original &lt;a href="https://alexhedley.github.io/poker-recording/components"&gt;components&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;I've made a start on the first &lt;strong&gt;Board&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Board.png" alt="Board" title="Board"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Board_1.png" alt="Board" title="Board"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Players&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Player1.png" alt="Player 1" title="Player 1"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Player2.png" alt="Player 2" title="Player 2"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Players_1.png" alt="Player 1" title="Players"&gt;&lt;/p&gt;
-&lt;p&gt;And &lt;strong&gt;Pot&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Pot.png" alt="Pot" title="Pot"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/poker/hud/Pot_1.png" alt="Pot" title="Pot"&gt;&lt;/p&gt;
-&lt;!--?# Info ?--&gt;
-&lt;p&gt;Thanks for the card images &lt;a href="https://github.com/danielpaz6"&gt;@danielpaz6&lt;/a&gt; in &lt;a href="https://github.com/danielpaz6/Poker-Hand-Evaluator"&gt;Texas holdem Rank Card Evaluator&lt;/a&gt;&lt;/p&gt;
-&lt;!--?#/ Info ?--&gt;
-&lt;p&gt;With this shared Library it means I can try it out in both my &lt;em&gt;Blazor WASM&lt;/em&gt; app (that I have deployed on GitHub Pages), and my &lt;em&gt;Blazor Server&lt;/em&gt; app which I'll be using as the main app.&lt;/p&gt;
-&lt;p&gt;See the current progress at&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.com/poker-recording/hud"&gt;https://alexhedley.com/poker-recording/hud&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;One very helpful tool I used to layout the &lt;em&gt;Players&lt;/em&gt; was &lt;a href="https://grid.layoutit.com/"&gt;Layoutit!&lt;/a&gt;, which is a &lt;em&gt;CSS Grid Generator&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;I copied the initial output to &lt;a href="https://codepen.io/"&gt;codepen&lt;/a&gt; before moving to my Blazor app.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://codepen.io/AlexHedley/pen/KKLWXpO"&gt;https://codepen.io/AlexHedley/pen/KKLWXpO&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Track it via&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Issue (40): &lt;a href="https://github.com/AlexHedley/poker-recording/issues/40"&gt;https://github.com/AlexHedley/poker-recording/issues/40&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;MR (39): &lt;a href="https://github.com/AlexHedley/poker-recording/pull/39"&gt;https://github.com/AlexHedley/poker-recording/pull/39&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
