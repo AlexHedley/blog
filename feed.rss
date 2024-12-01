@@ -5,8 +5,33 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Sat, 30 Nov 2024 16:34:20 GMT</pubDate>
-		<lastBuildDate>Sat, 30 Nov 2024 16:34:20 GMT</lastBuildDate>
+		<pubDate>Sun, 01 Dec 2024 14:15:39 GMT</pubDate>
+		<lastBuildDate>Sun, 01 Dec 2024 14:15:39 GMT</lastBuildDate>
+		<item>
+			<title>AoC - 2024</title>
+			<link>https://alexhedley.github.io/blog/posts/aoc-2024</link>
+			<description>Advent of Code</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/aoc-2024</guid>
+			<pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Advent of Code - 2023 --&gt;
+&lt;p&gt;AoC 2024 ⭐, C# again this year. Let's see how far I get :).&lt;/p&gt;
+&lt;p&gt;Day 1 &lt;em&gt;Historian Hysteria&lt;/em&gt; was really fun, nice simple way to ease into the challenges. Can I beat 15 from previous years?&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aoc/aoc_2024_1.png" alt="2024 - Day 1" title="2024 - Day 1"&gt;&lt;/p&gt;
+&lt;!-- ![2024](images/aoc/aoc_2024.png "2024") --&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode2024"&gt;https://github.com/AlexHedley/adventofcode2024&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.com/adventofcode/"&gt;https://alexhedley.com/adventofcode/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode"&gt;https://github.com/AlexHedley/adventofcode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Archery Scores Colours</title>
 			<link>https://alexhedley.github.io/blog/posts/archery-scores-colours</link>
@@ -315,47 +340,6 @@ I also added a tie and the leg covers. Just bought a pair of grey footy socks an
 &lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://learn.microsoft.com/en-gb/credentials/certifications/mos-access-expert-2019/?practice-assessment-type=certification"&gt;https://learn.microsoft.com/en-gb/credentials/certifications/mos-access-expert-2019/?practice-assessment-type=certification&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>ISC2 North East England Chapter - June 2024</title>
-			<link>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-june-2024</link>
-			<description>ISC2 Chapter Meetup</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/isc2/isc2chapternortheastengland.jpeg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-june-2024</guid>
-			<pubDate>Tue, 18 Jun 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # ISC2 North East England Chapter June 2024 Meetup --&gt;
-&lt;h2 id="agenda"&gt;Agenda&lt;/h2&gt;
-&lt;p&gt;🕰️ &lt;em&gt;17:00 - 17:30&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Arrivals / Networking&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;🕰️ &lt;em&gt;17:30 - 17:40&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Introductions, Chapter Updates&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Steve Gilray, Chapter Present&lt;/p&gt;
-&lt;p&gt;🕰️ &lt;em&gt;17:40 - 18:00&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Arctic Wolf: Observations from Incident Responders from the last 12 months&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Rich Fenton, Senior Systems Engineer, Arctic Wolf&lt;/p&gt;
-&lt;p&gt;Rich will present on some of the most common observed threats that industry faces, calculating the cost of a cyber-incident and what effective measures can be considered to help protect your organisation from an incident. • What are the major causes of incidents in 2023 – as witnessed by Arctic Wolf’s Incident Response team (1000 cases) • What does the impact of a breach look like ? • Is it possible to measure the potential impact beforehand to understand what your risk profile looks like (in the way a cyber-insurer would)&lt;/p&gt;
-&lt;p&gt;🕰️ &lt;em&gt;18:00 - 18:25&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Insider Threats&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Stuart G, Cyber Security Specialist, Armour Group&lt;/p&gt;
-&lt;p&gt;🕰️ &lt;em&gt;18:25 - 19:20&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Pizza, refreshments&lt;/p&gt;
-&lt;p&gt;🕰️ &lt;em&gt;19:20 - 20:00&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Cyber War &amp;amp; what it actually means in reality for Cyber Security Practitioners&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Andrew Pannell&lt;/p&gt;
-&lt;p&gt;Andrew will scrutinise the widely overused phrase &amp;quot;cyber war&amp;quot; by examining warfare and nation state attacks that have crossed the boundary into offensive cyber operations. Focusing on tactics used by both Hamas and Israel in October 2023 including reverse engineering malware, API security and DDOS attacks in detail. Andrew will offer a view of what future Cyber warfare could look like and what we can do best protect ourselves/ our organisations in such events.&lt;/p&gt;
-&lt;h2 id="date-and-time"&gt;Date and time&lt;/h2&gt;
-&lt;p&gt;🗓️ Tuesday, June 18 · 5 - 8pm GMT+1&lt;/p&gt;
-&lt;h2 id="location"&gt;Location&lt;/h2&gt;
-&lt;p&gt;📍 3rd floor&lt;br /&gt;
-77 Grey St&lt;br /&gt;
-Newcastle upon Tyne NE1&lt;/p&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-june-2024-tickets-906290508307"&gt;https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-june-2024-tickets-906290508307&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
