@@ -4,6 +4,8 @@ title: Twitch
 tags:
   - programming
   - twitch
+  - streaming
+  - equipment
 author: AlexHedley
 # description:
 published: 2020-06-20
