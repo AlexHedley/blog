@@ -1,15 +1,15 @@
 ---
-title: Mermaid
+title: Statiq - Mermaid
 # lead:
+description: How to add mermaid diagrams in statiq
 tags:
   - mermaid
   - js
   - statiq
 author: alexhedley
-description: How to add mermaid diagrams in statiq
 published: 2023-05-16
-# image:
-# imageattribution:
+image: /posts/images/statiq-web.svg
+imageattribution: https://www.statiq.dev/web
 ---
 
 Add a file `_scripts.cshtml`

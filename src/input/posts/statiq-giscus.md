@@ -1,6 +1,7 @@
 ---
-title: giscus
+title: Statiq - giscus
 # lead:
+description: Adding giscus comments to the blog
 tags:
   - github
   - giscus
@@ -8,10 +9,9 @@ tags:
   - comments
   - statiq
 author: alex-hedley
-description:
 published: 2023-05-31
-# image:
-# imageattribution:
+image: /posts/images/statiq-web.svg
+imageattribution: https://www.statiq.dev/web
 ---
 
 What's the best way to allow commenting on your blog? What better way than to have it contained in the system the blog lives in, [GitHub](https://github.com/). I've seen other solutions in the past which used [GitHub Issues](https://github.com/features/issues) but this doesn't seem the right place for it.

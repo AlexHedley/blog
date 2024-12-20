@@ -1,15 +1,15 @@
 ---
-title: Blog Banner
+title: Statiq - Blog Banner
 # lead:
+description: Adding a custom banner image to the blog.
 tags:
   - statiq
   - statiq.web
   - dotnet
 author: alex-hedley
-description: Adding a custom banner image to the blog.
 published: 2023-06-17
-# image:
-# imageattribution:
+image: /posts/images/statiq-web.svg
+imageattribution: https://www.statiq.dev/web
 ---
 
 Create a new banner image.
