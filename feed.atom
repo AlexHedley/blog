@@ -4,9 +4,54 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2024</rights>
-	<updated>2024-12-15T17:28:01Z</updated>
+	<updated>2024-12-20T15:56:31Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/statiq-stats</id>
+		<title>Statiq - Stats</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/statiq-stats" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/statiq-web.svg" />
+		<updated>2024-12-20T00:00:00Z</updated>
+		<content>&lt;!-- # Statiq - Stats --&gt;
+&lt;p&gt;Previously I'd added a count of posts &lt;a href="https://github.com/AlexHedley/blog/commit/ce65090ba756000610f09653603efc6e3e5e7da6"&gt;commit&lt;/a&gt; to the &lt;a href="https://alexhedley.com/blog/posts/"&gt;Posts&lt;/a&gt; page. Adding some styling to the &lt;code&gt;src/input/scss/_overrides.scss&lt;/code&gt; to position it on the right hand side and make it a little smaller, I think it looks quite nice.&lt;/p&gt;
+&lt;p&gt;Who doesn't want a Total count too?! I made a new &lt;strong&gt;Stats&lt;/strong&gt; page just to show the combined total and total for each year.&lt;/p&gt;
+&lt;p&gt;I might add a graph at some point.&lt;/p&gt;
+&lt;p&gt;335 posts isn't bad!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blog/stats.png" alt="Stats" title="Stats"&gt;&lt;/p&gt;
+&lt;h2 id="code"&gt;Code&lt;/h2&gt;
+&lt;p&gt;Create a new page &lt;code&gt;src\input\stats.cshtml&lt;/code&gt;. Update the &lt;code&gt;Order&lt;/code&gt; you want.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Title: Stats
+IsPage: true
+ShowInNavbar: true
+Order: 400
+---
+
+&amp;lt;h1 class="bg-dark text-light p-2"&amp;gt;Total &amp;lt;span class="postCount"&amp;gt;@(Outputs.FromPipeline(nameof(Content))
+                                                                        .Flatten()
+                                                                        .FilterSources($"posts/*")
+                                                                        .Count())&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt;
+
+&amp;lt;hr /&amp;gt;
+
+@* Years Count *@
+@foreach(IGrouping&amp;lt;int, IDocument&amp;gt; group in Outputs
+                                            .FromPipeline(nameof(Content))
+                                            .Flatten()
+                                            .FilterSources($"posts/*")
+                                            .GroupBy(x =&amp;gt; x.GetDateTime(WebKeys.Published).Year)
+                                            .OrderByDescending(x =&amp;gt; x.Key))
+{
+    &amp;lt;h1 class="bg-dark text-light p-2"&amp;gt;@group.Key &amp;lt;span class="postCount"&amp;gt;@group.Count()&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I originally got the syntax wrong, I put a bracket in the wrong place and couldn't see the wood for the trees. Thankfully I got some help from &lt;em&gt;@girlpunk&lt;/em&gt; on Statiq's GitHub Discussions: &lt;a href="https://github.com/orgs/statiqdev/discussions/230"&gt;D#230&lt;/a&gt;.&lt;/p&gt;
+</content>
+		<summary>How to total post counts</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/streaming-equipment-2</id>
 		<title>Streaming Equipment 2</title>
@@ -317,41 +362,5 @@ I also added a tie and the leg covers. Just bought a pair of grey footy socks an
 &lt;img src="https://alexhedley.github.io/blog/images/archery/wrist-sling-red.png" alt="Wrist Sling" title="Wrist Sling"&gt;&lt;/p&gt;
 </content>
 		<summary>Club - North East Archers</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/streaming-equipment</id>
-		<title>Streaming Equipment</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/streaming-equipment" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2024-09-05T00:00:00Z</updated>
-		<content>&lt;!-- Streaming Equipment --&gt;
-&lt;p&gt;I've upgraded my Microphone equipment for use with my &lt;a href="https://www.audio-technica.com/en-gb/at2020"&gt;AT2020&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I've bought the Microphone Shock Mount
-&lt;a href="https://www.audio-technica.com/en-gb/microphones/wired/accessories/mounts-clips/at8458a"&gt;AT8458a&lt;/a&gt;. The clip on my existing one wasn't holding it very safely, I kept knocking it out and was possibly going to damage it.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/at8458a.png" alt="AT8458a" title="AT8458a"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.audio-technica.com/en-gb/microphones/wired/accessories/mounts-clips/at8458a"&gt;AT8458a&lt;/a&gt; &lt;strong&gt;£25.00&lt;/strong&gt; (+ £3.99 P&amp;amp;P)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Next was a new mic arm, my original was ok but having looked at others I like the fact this one pivots horizontally and vertically and can hide the wires.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/elgato-wave-mic-arm-lp.jpg" alt="Elgato Wave Mic Arm LP" title="Elgato Wave Mic Arm LP"&gt; &lt;strong&gt;£69.98&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A studio-grade boom arm for your premium microphone, Wave Mic Arm offers extra reach, full adjustability, integrated cable channels and compatibility with standard mic mounts.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.elgato.com/uk/en/p/wave-mic-arm"&gt;Wave Mic Arm&lt;/a&gt; RRP &lt;strong&gt;£89.99&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;Original:&lt;/p&gt;
-&lt;p&gt;Koolertron USB Condenser Microphone, BM-900 Condenser Microphone Kit with Adjustable Microphone Suspension Scissor Arm, Shock Mount and Double-layer Pop Filter for Studio Recording and Broadcasting&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/peripherals.jpg" alt="Mic / Arm" title="Mic / Arm"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.amazon.co.uk/gp/product/B07QV7TS93/"&gt;Purchase&lt;/a&gt; &lt;em&gt;Amazon&lt;/em&gt; &lt;strong&gt;£34.99&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Previous post: &lt;a href="https://alexhedley.github.io/blog/twitch"&gt;Twitch&lt;/a&gt;.&lt;/p&gt;
-</content>
-		<summary>New microphone accessories</summary>
 	</entry>
 </feed>

@@ -5,12 +5,12 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="alex-hedley">
+    <meta name="description" content="How to total post counts">
+    <meta name="author" content="alexhedley">
 
-  <title>Alex Hedley - giscus</title>
+  <title>Alex Hedley - Statiq - Stats</title>
 
-  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/giscus'>
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/statiq-stats'>
 
       <link type="application/rss+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.rss" />
       <link type="application/atom+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.atom" />
@@ -19,10 +19,10 @@
   <meta name="msapplication-tooltip" content='Alex Hedley' />
   <meta name="msapplication-starturl" content='/blog/' />
 
-  <meta property="og:title" content='Alex Hedley - giscus' />
-    <meta property="og:image" content='/blog/images/banner.png' />
+  <meta property="og:title" content='Alex Hedley - Statiq - Stats' />
+    <meta property="og:image" content='/blog/posts/images/statiq-web.svg' />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/giscus' />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/statiq-stats' />
 
   <link rel="icon" href='/blog/favicon.ico'>
 
@@ -66,6 +66,9 @@
     <a class="nav-link" href="/blog/tags">Tags</a>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="/blog/stats">Stats</a>
+  </li>
+  <li class="nav-item">
     <a class="nav-link" href="/blog/about">About</a>
   </li>
 
@@ -84,26 +87,25 @@
 
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url(&quot;/blog/images/banner.png&quot;)">
+  <header class="masthead" style="background-image: url(&quot;/blog/posts/images/statiq-web.svg&quot;)">
   <div class="container position-relative">
     <div class="row">
       <div class="col-md-12">
         <div class='post-heading'>
           <h1>
-            giscus
+            Statiq - Stats
           </h1>
-            <div class="meta">Published on Wednesday, 31 May 2023</div>
+            <span class="subheading">How to total post counts</span>
+            <div class="meta">Published on Friday, 20 December 2024</div>
               <div class="mt-3">
-                  <a href="/blog/tags/github" class="badge text-bg-light"> github</a>
-                  <a href="/blog/tags/giscus" class="badge text-bg-light"> giscus</a>
-                  <a href="/blog/tags/discussions" class="badge text-bg-light"> discussions</a>
-                  <a href="/blog/tags/comments" class="badge text-bg-light"> comments</a>
                   <a href="/blog/tags/statiq" class="badge text-bg-light"> statiq</a>
               </div>
         </div>
       </div>
     </div>
   </div>
+    <div class="image-attribution badge text-bg-secondary rounded-pill"><p>https://www.statiq.dev/web</p>
+</div>
 </header>
 
 
@@ -111,38 +113,39 @@
   <div class="container">
     <div class="row">
       <div id="content" class="col-md-12">
-        <p>What's the best way to allow commenting on your blog? What better way than to have it contained in the system the blog lives in, <a href="https://github.com/">GitHub</a>. I've seen other solutions in the past which used <a href="https://github.com/features/issues">GitHub Issues</a> but this doesn't seem the right place for it.</p>
-<p>Along comes <a href="https://giscus.app/">giscus</a> which has been built upon it's predecessors.</p>
-<blockquote>
-<p><a href="https://giscus.app/">giscus</a> - A comments system powered by <a href="https://docs.github.com/en/discussions">GitHub Discussions</a>. Let visitors leave comments and reactions on your website via GitHub! Heavily inspired by <a href="https://github.com/utterance/utterances">utterances</a>.</p>
-</blockquote>
-<p>In <a href="https://www.statiq.dev/web">statiq.web</a> there are a couple of ways to achieve this. The simplest one I've found is adding the following to your <code>appsettings.json</code>.</p>
-<pre><code class="language-json">{
-  &quot;CommentEngine&quot;: &quot;giscus&quot;,
-  &quot;GiscusRepoName&quot;: &quot;&quot;,
-  &quot;GiscusRepoId&quot;: &quot;&quot;,
-  &quot;GiscusCategoryId&quot;: &quot;&quot;
+        <!-- # Statiq - Stats -->
+<p>Previously I'd added a count of posts <a href="https://github.com/AlexHedley/blog/commit/ce65090ba756000610f09653603efc6e3e5e7da6">commit</a> to the <a href="https://alexhedley.com/blog/posts/">Posts</a> page. Adding some styling to the <code>src/input/scss/_overrides.scss</code> to position it on the right hand side and make it a little smaller, I think it looks quite nice.</p>
+<p>Who doesn't want a Total count too?! I made a new <strong>Stats</strong> page just to show the combined total and total for each year.</p>
+<p>I might add a graph at some point.</p>
+<p>335 posts isn't bad!</p>
+<p><img src="images/blog/stats.png" alt="Stats" title="Stats" /></p>
+<h2 id="code">Code</h2>
+<p>Create a new page <code>src\input\stats.cshtml</code>. Update the <code>Order</code> you want.</p>
+<pre><code>Title: Stats
+IsPage: true
+ShowInNavbar: true
+Order: 400
+---
+
+&lt;h1 class=&quot;bg-dark text-light p-2&quot;&gt;Total &lt;span class=&quot;postCount&quot;&gt;&#64;(Outputs.FromPipeline(nameof(Content))
+                                                                        .Flatten()
+                                                                        .FilterSources($&quot;posts/*&quot;)
+                                                                        .Count())&lt;/span&gt;&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&#64;* Years Count *&#64;
+&#64;foreach(IGrouping&lt;int, IDocument&gt; group in Outputs
+                                            .FromPipeline(nameof(Content))
+                                            .Flatten()
+                                            .FilterSources($&quot;posts/*&quot;)
+                                            .GroupBy(x =&gt; x.GetDateTime(WebKeys.Published).Year)
+                                            .OrderByDescending(x =&gt; x.Key))
+{
+    &lt;h1 class=&quot;bg-dark text-light p-2&quot;&gt;&#64;group.Key &lt;span class=&quot;postCount&quot;&gt;&#64;group.Count()&lt;/span&gt;&lt;/h1&gt;
 }
 </code></pre>
-<p>You then need to follow the instructions on <a href="https://giscus.app/">giscus</a> to grab the relevant Ids, but first enable Discussions on your repo. Next select your <em>Configuration</em> options then near the end of the page there will be an <em>Enable giscus</em> section to grab the above info.</p>
-<p>Once you have updated these, just push and wait for the site to redeploy, check on a page and you'll have a option to comment, but first you have to sign in.</p>
-<p><img src="images/giscus/sign-in.png" alt="Sign In" title="Sign In" /></p>
-<p>Once signed in you can comment:</p>
-<p><img src="images/giscus/blog-comments.png" alt="Blog Comments" title="Blog Comments" /></p>
-<p>See the actual post: <a href="https://alex-hedley.github.io/statiqweb-example/posts/3">https://alex-hedley.github.io/statiqweb-example/posts/3</a></p>
-<p>Then directly on GitHub:</p>
-<p><img src="images/giscus/github-discussion.png" alt="GitHub Discussion" title="GitHub Discussion" /></p>
-<p>Link: <a href="https://github.com/alex-hedley/statiqweb-example/discussions/5">https://github.com/alex-hedley/statiqweb-example/discussions/5</a></p>
-<p>As this is live, you can comment in either place and it will be updated.</p>
-<hr />
-<p>Example: <a href="https://github.com/TechWatching/techwatching.dev/blob/main/appsettings.json">https://github.com/TechWatching/techwatching.dev/blob/main/appsettings.json</a></p>
-<hr />
-<p>Another option is to add a <code>script</code> tag to the <code>_post-footer.cshtml</code> custom page.</p>
-<p>Update the <code>script</code> tag with the required attributes, taken from the <a href="https://giscus.app/">giscus</a> config page.</p>
-<p>One issue with this is that it needs to go in the <code>theme/input/_post-footer.cshtml</code> folder.</p>
-<p>I have pulled this in as a git submodule so I have tried how to use both. Thankfully the addition to the <code>appsettings.json</code> is enough, but if you wanted to change the layout, formatting etc I can see this being useful.</p>
-<p>Blog Post: <a href="https://beckshome.com/2022/09/beckshome-on-statiq">https://beckshome.com/2022/09/beckshome-on-statiq</a></p>
-<p>Example: <a href="https://github.com/thbst16/dotnet-statiq-beckshome-blog/blob/main/theme/input/_post-footer.cshtml">https://github.com/thbst16/dotnet-statiq-beckshome-blog/blob/main/theme/input/_post-footer.cshtml</a></p>
+<p>I originally got the syntax wrong, I put a bracket in the wrong place and couldn't see the wood for the trees. Thankfully I got some help from <em>&#64;girlpunk</em> on Statiq's GitHub Discussions: <a href="https://github.com/orgs/statiqdev/discussions/230">D#230</a>.</p>
 
 
         
