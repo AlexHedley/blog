@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Using markdown in your pages">
+    <meta name="author" content="alexhedley">
+
+  <title>Alex Hedley - Blazor - FluentUI - Markdown</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/blazor-fluentui-markdownsection'>
+
+      <link type="application/rss+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - Blazor - FluentUI - Markdown' />
+    <meta property="og:image" content='/blog/posts/images/blazor/fluentui-blazor.jpg' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/blazor-fluentui-markdownsection' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="../assets/css/override.css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/stats">Stats</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+          <li class="nav-item">
+            <span class="nav-link">
+              <form class="form-inline my-2 my-lg-0" action="/blog/search" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
+                <input type="submit" hidden />
+              </form>
+            </span>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(&quot;/blog/posts/images/blazor/fluentui-blazor.jpg&quot;)">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            Blazor - FluentUI - Markdown
+          </h1>
+            <span class="subheading">Using markdown in your pages</span>
+            <div class="meta">Published on Monday, 23 December 2024</div>
+              <div class="mt-3">
+                  <a href="/blog/tags/programming" class="badge text-bg-light"> programming</a>
+                  <a href="/blog/tags/dotnet" class="badge text-bg-light"> dotnet</a>
+                  <a href="/blog/tags/blazor" class="badge text-bg-light"> blazor</a>
+                  <a href="/blog/tags/fluentui" class="badge text-bg-light"> fluentui</a>
+                  <a href="/blog/tags/csharp" class="badge text-bg-light"> csharp</a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="image-attribution badge text-bg-secondary rounded-pill"><p>https://github.com/microsoft/fluentui-blazor</p>
+</div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <!-- # Blazor - FluentUI - Markdown -->
+<p>Want to display <a href="https://daringfireball.net/projects/markdown/syntax">markdown</a> in your Blazor app? Of course you do.</p>
+<p>The FluentUI Blazor components have you covered in their 🧪 lab section.</p>
+<ul>
+<li><a href="https://www.fluentui-blazor.net/Lab/MarkdownSection">https://www.fluentui-blazor.net/Lab/MarkdownSection</a></li>
+</ul>
+<p>There's a little bit of work to bring in the component as it's not shipped in the library itself as it contains a dependency of <a href="https://github.com/xoofx/markdig">markdig</a>.</p>
+<p>Please see my previous post <a href="blazor-fluentui-codesnippet">Blazor - FluentUI - Code Snippet</a> for the setup of <em>Highlight.js</em> as this is used by the following component.</p>
+<p>Create a new folder in your Shared project.</p>
+<p>📁 <code>\Infrastructure</code></p>
+<ul>
+<li><a href="https://github.com/microsoft/fluentui-blazor/">https://github.com/microsoft/fluentui-blazor/</a></li>
+</ul>
+<p>Copy the following files from <a href="https://github.com/microsoft/fluentui-blazor/tree/dev/examples/Demo/Shared/Infrastructure">examples/Demo/Shared/Infrastructure</a></p>
+<ul>
+<li>AppVersionService.cs</li>
+<li>CacheStorageAccessor.cs</li>
+<li>HttpBasedStaticAssetService.cs <em>(This is need for Blazor WASM)</em></li>
+<li>IAppVersionService.cs</li>
+<li>IStaticAssetService.cs</li>
+<li>ServerStaticAssetService.cs <em>(This is need for Blazor Server)</em></li>
+<li>ServiceCollectionExtensions.cs</li>
+</ul>
+<p>Then copy the following component files from <a href="https://github.com/microsoft/fluentui-blazor/tree/dev/examples/Demo/Shared/Components">examples/Demo/Shared/Components</a></p>
+<ul>
+<li>MarkdownSection.razor</li>
+<li>MarkdownSection.razor.cs</li>
+<li>MarkdownSection.razor.css</li>
+<li>MarkdownSection.razor.js</li>
+<li>MarkdownSectionPreCodeExtension.cs</li>
+<li>MarkdownSectionPreCodeRenderer.cs</li>
+<li>MarkdownSectionPreCodeRendererOptions.cs</li>
+</ul>
+<p>Something from <a href="https://github.com/microsoft/fluentui-blazor/blob/dev/examples/Demo/Shared/wwwroot/js/">wwwroot/js/</a></p>
+<ul>
+<li>CacheStorageAccessor.js</li>
+</ul>
+<p>Next you want to update a few places.</p>
+<p>In <code>CacheStorageAccessor.cs</code> swap the path to your project.</p>
+<pre><code class="language-cs">public class CacheStorageAccessor(IJSRuntime js, IAppVersionService vs) : JSModule(js, &quot;./_content/FluentUI.Demo.Shared/js/CacheStorageAccessor.js&quot;)
+</code></pre>
+<p>to</p>
+<pre><code class="language-cs">JSModule(js, &quot;./_content/[PROJECT_NAME]/js/CacheStorageAccessor.js&quot;)
+</code></pre>
+<p>In <code>ServiceCollectionExtensions.cs</code> remove the <code>DemoNavProvider</code> unless you are using it. I also renamed to <code>AddFluentUIDemoClientServices()</code> to <code>AddFluentUIClientServices()</code>. Amend accordingly.</p>
+<p>In <code>MarkdownSection.razor.cs</code> swap the path again:</p>
+<pre><code class="language-cs">        _jsModule = await JSRuntime.InvokeAsync&lt;IJSObjectReference&gt;(&quot;import&quot;,
+            &quot;./_content/FluentUI.Demo.Shared/Components/MarkdownSection.razor.js&quot;);
+</code></pre>
+<p>to</p>
+<pre><code class="language-cs">        _jsModule = await JSRuntime.InvokeAsync&lt;IJSObjectReference&gt;(&quot;import&quot;,
+            &quot;./_content/[PROJECT_NAME]/MarkdownSection.razor.js&quot;);
+</code></pre>
+<p>Update the <code>namespaces</code> from <code>namespace FluentUI.Demo.Shared.*</code> to yours.</p>
+<p>In <code>Program.cs</code> of your main app add the helper function <code>AddFluentUIClientServices()</code> from <code>ServiceCollectionExtensions.cs</code> so everything is setup.</p>
+<pre><code class="language-cs">            builder.Services.AddFluentUIClientServices();
+</code></pre>
+<p>Finally you want to add the <em>component</em> to your app.</p>
+<p>You can either use <code>Content</code> and add you markdown directly:</p>
+<pre><code class="language-razor">&lt;MarkdownSection Content=&quot;text in *italics* and **bold**&quot;&gt;&lt;/MarkdownSection&gt;
+</code></pre>
+<p>Or you can use the <code>StaticAssetService</code> to pull in some files.</p>
+<p>Firstly create a new folder 📁 called <code>docs</code> in your <code>wwwroot</code> of your Shared project. Then add the path in the <code>FromAsset</code> property.</p>
+<pre><code class="language-razor">&lt;MarkdownSection FromAsset=&quot;./_content/[PROJECT_NAME]/docs/CodeSetup.md&quot;&gt;&lt;/MarkdownSection&gt;
+</code></pre>
+<p>What's cool about this is that you can pass it any MD file so taking one directly from GitHub with the RAW url and it'll also work.</p>
+<pre><code class="language-razor">&lt;MarkdownSection FromAsset=&quot;https://raw.githubusercontent.com/microsoft/fluentui-blazor/refs/heads/dev/examples/Demo/Shared/wwwroot/docs/DesignTokens.md&quot;&gt;&lt;/MarkdownSection&gt;
+</code></pre>
+<p>One thing I need to check is how it handles images, but that's for another day.</p>
+<h2 id="example">Example</h2>
+<p><code>text in *italics* and **bold**</code></p>
+<blockquote>
+<p>text in <em>italics</em> and <strong>bold</strong></p>
+</blockquote>
+<p><img src="images/blazor/markdownsection.png" alt="Markdown Section" title="Markdown Section" /></p>
+<h2 id="links">🔗 Links</h2>
+<ul>
+<li><p><a href="https://github.com/xoofx/markdig">https://github.com/xoofx/markdig</a></p>
+</li>
+<li><p><a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor">https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor</a></p>
+</li>
+<li><p><a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-9.0">https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-9.0</a></p>
+</li>
+<li><p><a href="https://github.com/dotnet/aspnetcore">https://github.com/dotnet/aspnetcore</a></p>
+<ul>
+<li><a href="https://github.com/dotnet/blazor">https://github.com/dotnet/blazor</a></li>
+</ul>
+</li>
+<li><p><a href="https://github.com/microsoft/fluentui-blazor">https://github.com/microsoft/fluentui-blazor</a></p>
+</li>
+<li><p><a href="https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/blazor">https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/blazor</a></p>
+</li>
+<li><p><a href="https://learn.microsoft.com/en-us/shows/open-at-microsoft/exploring-the-fluent-ui-blazor-components">https://learn.microsoft.com/en-us/shows/open-at-microsoft/exploring-the-fluent-ui-blazor-components</a></p>
+</li>
+<li><p><a href="https://www.fluentui-blazor.net/">https://www.fluentui-blazor.net/</a></p>
+</li>
+<li><p><a href="https://www.nuget.org/profiles/fluentui-blazor">https://www.nuget.org/profiles/fluentui-blazor</a></p>
+</li>
+</ul>
+
+
+        
+
+      </div>
+    </div>
+  <div id="comments-container" class="row">
+    <script src="https://giscus.app/client.js"
+        data-repo='alexhedley/blog'
+        data-repo-id='R_kgDOJjXJmQ'
+        data-category-id='DIC_kwDOJjXJmc4CXRaX'
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2024</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQV2ZWNX32"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CQV2ZWNX32');
+    </script>
+
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js" integrity="sha384-nVmn6yKHyUktDHdQfBgpn1YPgEu8gDXTYI5qccfkF1j6oxBHjKEafySIuNs3UhEW" crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>

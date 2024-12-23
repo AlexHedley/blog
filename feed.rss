@@ -5,8 +5,118 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Mon, 23 Dec 2024 11:35:13 GMT</pubDate>
-		<lastBuildDate>Mon, 23 Dec 2024 11:35:13 GMT</lastBuildDate>
+		<pubDate>Mon, 23 Dec 2024 19:02:38 GMT</pubDate>
+		<lastBuildDate>Mon, 23 Dec 2024 19:02:38 GMT</lastBuildDate>
+		<item>
+			<title>Blazor - FluentUI - Markdown</title>
+			<link>https://alexhedley.github.io/blog/posts/blazor-fluentui-markdownsection</link>
+			<description>Using markdown in your pages</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/blazor/fluentui-blazor.jpg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/blazor-fluentui-markdownsection</guid>
+			<pubDate>Mon, 23 Dec 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Blazor - FluentUI - Markdown --&gt;
+&lt;p&gt;Want to display &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;markdown&lt;/a&gt; in your Blazor app? Of course you do.&lt;/p&gt;
+&lt;p&gt;The FluentUI Blazor components have you covered in their 🧪 lab section.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.fluentui-blazor.net/Lab/MarkdownSection"&gt;https://www.fluentui-blazor.net/Lab/MarkdownSection&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There's a little bit of work to bring in the component as it's not shipped in the library itself as it contains a dependency of &lt;a href="https://github.com/xoofx/markdig"&gt;markdig&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please see my previous post &lt;a href="https://alexhedley.github.io/blog/blazor-fluentui-codesnippet"&gt;Blazor - FluentUI - Code Snippet&lt;/a&gt; for the setup of &lt;em&gt;Highlight.js&lt;/em&gt; as this is used by the following component.&lt;/p&gt;
+&lt;p&gt;Create a new folder in your Shared project.&lt;/p&gt;
+&lt;p&gt;📁 &lt;code&gt;\Infrastructure&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor/"&gt;https://github.com/microsoft/fluentui-blazor/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Copy the following files from &lt;a href="https://github.com/microsoft/fluentui-blazor/tree/dev/examples/Demo/Shared/Infrastructure"&gt;examples/Demo/Shared/Infrastructure&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AppVersionService.cs&lt;/li&gt;
+&lt;li&gt;CacheStorageAccessor.cs&lt;/li&gt;
+&lt;li&gt;HttpBasedStaticAssetService.cs &lt;em&gt;(This is need for Blazor WASM)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;IAppVersionService.cs&lt;/li&gt;
+&lt;li&gt;IStaticAssetService.cs&lt;/li&gt;
+&lt;li&gt;ServerStaticAssetService.cs &lt;em&gt;(This is need for Blazor Server)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;ServiceCollectionExtensions.cs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then copy the following component files from &lt;a href="https://github.com/microsoft/fluentui-blazor/tree/dev/examples/Demo/Shared/Components"&gt;examples/Demo/Shared/Components&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MarkdownSection.razor&lt;/li&gt;
+&lt;li&gt;MarkdownSection.razor.cs&lt;/li&gt;
+&lt;li&gt;MarkdownSection.razor.css&lt;/li&gt;
+&lt;li&gt;MarkdownSection.razor.js&lt;/li&gt;
+&lt;li&gt;MarkdownSectionPreCodeExtension.cs&lt;/li&gt;
+&lt;li&gt;MarkdownSectionPreCodeRenderer.cs&lt;/li&gt;
+&lt;li&gt;MarkdownSectionPreCodeRendererOptions.cs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Something from &lt;a href="https://github.com/microsoft/fluentui-blazor/blob/dev/examples/Demo/Shared/wwwroot/js/"&gt;wwwroot/js/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CacheStorageAccessor.js&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next you want to update a few places.&lt;/p&gt;
+&lt;p&gt;In &lt;code&gt;CacheStorageAccessor.cs&lt;/code&gt; swap the path to your project.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;public class CacheStorageAccessor(IJSRuntime js, IAppVersionService vs) : JSModule(js, "./_content/FluentUI.Demo.Shared/js/CacheStorageAccessor.js")
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;JSModule(js, "./_content/[PROJECT_NAME]/js/CacheStorageAccessor.js")
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In &lt;code&gt;ServiceCollectionExtensions.cs&lt;/code&gt; remove the &lt;code&gt;DemoNavProvider&lt;/code&gt; unless you are using it. I also renamed to &lt;code&gt;AddFluentUIDemoClientServices()&lt;/code&gt; to &lt;code&gt;AddFluentUIClientServices()&lt;/code&gt;. Amend accordingly.&lt;/p&gt;
+&lt;p&gt;In &lt;code&gt;MarkdownSection.razor.cs&lt;/code&gt; swap the path again:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;        _jsModule = await JSRuntime.InvokeAsync&amp;lt;IJSObjectReference&amp;gt;("import",
+            "./_content/FluentUI.Demo.Shared/Components/MarkdownSection.razor.js");
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;        _jsModule = await JSRuntime.InvokeAsync&amp;lt;IJSObjectReference&amp;gt;("import",
+            "./_content/[PROJECT_NAME]/MarkdownSection.razor.js");
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Update the &lt;code&gt;namespaces&lt;/code&gt; from &lt;code&gt;namespace FluentUI.Demo.Shared.*&lt;/code&gt; to yours.&lt;/p&gt;
+&lt;p&gt;In &lt;code&gt;Program.cs&lt;/code&gt; of your main app add the helper function &lt;code&gt;AddFluentUIClientServices()&lt;/code&gt; from &lt;code&gt;ServiceCollectionExtensions.cs&lt;/code&gt; so everything is setup.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;            builder.Services.AddFluentUIClientServices();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally you want to add the &lt;em&gt;component&lt;/em&gt; to your app.&lt;/p&gt;
+&lt;p&gt;You can either use &lt;code&gt;Content&lt;/code&gt; and add you markdown directly:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-razor"&gt;&amp;lt;MarkdownSection Content="text in *italics* and **bold**"&amp;gt;&amp;lt;/MarkdownSection&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or you can use the &lt;code&gt;StaticAssetService&lt;/code&gt; to pull in some files.&lt;/p&gt;
+&lt;p&gt;Firstly create a new folder 📁 called &lt;code&gt;docs&lt;/code&gt; in your &lt;code&gt;wwwroot&lt;/code&gt; of your Shared project. Then add the path in the &lt;code&gt;FromAsset&lt;/code&gt; property.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-razor"&gt;&amp;lt;MarkdownSection FromAsset="./_content/[PROJECT_NAME]/docs/CodeSetup.md"&amp;gt;&amp;lt;/MarkdownSection&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What's cool about this is that you can pass it any MD file so taking one directly from GitHub with the RAW url and it'll also work.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-razor"&gt;&amp;lt;MarkdownSection FromAsset="https://raw.githubusercontent.com/microsoft/fluentui-blazor/refs/heads/dev/examples/Demo/Shared/wwwroot/docs/DesignTokens.md"&amp;gt;&amp;lt;/MarkdownSection&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One thing I need to check is how it handles images, but that's for another day.&lt;/p&gt;
+&lt;h2 id="example"&gt;Example&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;text in *italics* and **bold**&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;text in &lt;em&gt;italics&lt;/em&gt; and &lt;strong&gt;bold&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blazor/markdownsection.png" alt="Markdown Section" title="Markdown Section"&gt;&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/xoofx/markdig"&gt;https://github.com/xoofx/markdig&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"&gt;https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-9.0"&gt;https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-9.0&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/dotnet/aspnetcore"&gt;https://github.com/dotnet/aspnetcore&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/blazor"&gt;https://github.com/dotnet/blazor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor"&gt;https://github.com/microsoft/fluentui-blazor&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/blazor"&gt;https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/blazor&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/shows/open-at-microsoft/exploring-the-fluent-ui-blazor-components"&gt;https://learn.microsoft.com/en-us/shows/open-at-microsoft/exploring-the-fluent-ui-blazor-components&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.fluentui-blazor.net/"&gt;https://www.fluentui-blazor.net/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.nuget.org/profiles/fluentui-blazor"&gt;https://www.nuget.org/profiles/fluentui-blazor&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Blazor - FluentUI - Code Snippet</title>
 			<link>https://alexhedley.github.io/blog/posts/blazor-fluentui-codesnippet</link>
@@ -361,31 +471,6 @@ I also added a tie and the leg covers. Just bought a pair of grey footy socks an
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Books</title>
-			<link>https://alexhedley.github.io/blog/posts/books</link>
-			<description>&lt;p&gt;I buy a number of eBooks, especially on &lt;a href="https://www.humblebundle.com/"&gt;Humble Bundle&lt;/a&gt;, the problem is I can never remember which ones I have, and hardly ever make the time to read them, but you never know when they'll come in handy.&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/books</guid>
-			<pubDate>Wed, 18 Sep 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;I buy a number of eBooks, especially on &lt;a href="https://www.humblebundle.com/"&gt;Humble Bundle&lt;/a&gt;, the problem is I can never remember which ones I have, and hardly ever make the time to read them, but you never know when they'll come in handy.&lt;/p&gt;
-&lt;p&gt;Of course I made a list:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.com/books/"&gt;https://alexhedley.com/books/&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/books/"&gt;https://github.com/AlexHedley/books/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I've still got a number of sites to add to it, WIP like most of my other &lt;a href="https://alexhedley.com/projects/"&gt;Projects&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/website/books.png" alt="Books" title="Books"&gt;&lt;/p&gt;
-&lt;!-- ![Books](images/website/books_.png "Books") --&gt;
-&lt;p&gt;Ray Wenderlich&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/website/books_rw.png" alt="Books" title="Books"&gt;&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
