@@ -5,8 +5,77 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Mon, 23 Dec 2024 19:02:38 GMT</pubDate>
-		<lastBuildDate>Mon, 23 Dec 2024 19:02:38 GMT</lastBuildDate>
+		<pubDate>Tue, 24 Dec 2024 15:07:52 GMT</pubDate>
+		<lastBuildDate>Tue, 24 Dec 2024 15:07:52 GMT</lastBuildDate>
+		<item>
+			<title>Christmas Gifts</title>
+			<link>https://alexhedley.github.io/blog/posts/christmas-gifts</link>
+			<description>Reindeer and Tree</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/christmas-gifts</guid>
+			<pubDate>Tue, 24 Dec 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h1 id="christmas-gifts"&gt;Christmas Gifts&lt;/h1&gt;
+&lt;h2 id="supplies"&gt;Supplies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Champagne Cork&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Wine Cork&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Hairclip&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Red Beads&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Matchsticks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Brown paint&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Red/White pipe cleaners&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mini terracotta pot&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pine cone&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mini pompoms (various colours)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;mdf star (various sizes)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Green paint&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Gold paint&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;PVA glue&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Wire cutters&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
+&lt;h3 id="reindeer"&gt;🦌 Reindeer&lt;/h3&gt;
+&lt;p&gt;Cut some hairclips in half, use the wiggly pieces as legs. Cut the other ends off as the eyes and a smaller piece for the neck.&lt;/p&gt;
+&lt;p&gt;Add eyes to Champagne cork and antlers from the match sticks (need to re-think these).&lt;/p&gt;
+&lt;p&gt;Add a bright red nose&lt;/p&gt;
+&lt;p&gt;Cut a pipe cleaner down to size and add around the neck as a scarf.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/reindeer-2.jpg" alt="Reindeer" title="Reindeer"&gt;&lt;/p&gt;
+&lt;h3 id="tree"&gt;🎄 Tree&lt;/h3&gt;
+&lt;p&gt;Paint the tips of the pine code green&lt;/p&gt;
+&lt;p&gt;Stuff different colour pom poms around the cone.&lt;/p&gt;
+&lt;p&gt;Paint 2 different sized mdf wooden stars gold / bronze and stick together, then glue near the top.&lt;/p&gt;
+&lt;p&gt;Glue the pine cone to the terracotta pot. (You could use a cork instead)&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/tree-1.jpg" alt="Tree" title="Tree"&gt;&lt;/p&gt;
+&lt;h2 id="outcome"&gt;Outcome&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/reindeer-1.jpg" alt="Reindeer" title="Reindeer"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/reindeer-2.jpg" alt="Reindeer" title="Reindeer"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/tree-1.jpg" alt="Tree" title="Tree"&gt;&lt;/p&gt;
+&lt;!-- ### Stages --&gt;
+&lt;!-- ![Stage 1](images/stage1.jpeg "Stage 1") --&gt;
+&lt;h2 id="approx-cost"&gt;Approx Cost&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ## Inspired --&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Blazor - FluentUI - Markdown</title>
 			<link>https://alexhedley.github.io/blog/posts/blazor-fluentui-markdownsection</link>
@@ -437,39 +506,6 @@ I also added a tie and the leg covers. Just bought a pair of grey footy socks an
 &lt;li&gt;&lt;a href="https://www.musicroom.com/101-most-beautiful-songs-alto-saxophone-hl00291042"&gt;https://www.musicroom.com/101-most-beautiful-songs-alto-saxophone-hl00291042&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.musicroom.com/101-hit-songs-alto-saxophone-hl00197183"&gt;https://www.musicroom.com/101-hit-songs-alto-saxophone-hl00197183&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.musicroom.com/101-christmas-songs-alto-saxophone-hl00278639"&gt;https://www.musicroom.com/101-christmas-songs-alto-saxophone-hl00278639&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Archery Scores</title>
-			<link>https://alexhedley.github.io/blog/posts/archery-scores</link>
-			<description>Archery Score Keeper</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/archery-scores</guid>
-			<pubDate>Tue, 29 Oct 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Archery Scores --&gt;
-&lt;p&gt;Since &lt;a href="https://alexhedley.github.io/blog/archery-return"&gt;returning to archery&lt;/a&gt; I thought it might be a good idea to keep a track of my scores.&lt;/p&gt;
-&lt;p&gt;I'd already bought a book to write them in whilst at the venue but shouldn't there be a digital version as well?&lt;/p&gt;
-&lt;p&gt;I went about building one. I've kept it in legacy AngularJS just because it's so easy to work with and my other sites use that too.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.com/archery/"&gt;Archery&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I've made initial tabs including &lt;em&gt;Summary&lt;/em&gt;, &lt;em&gt;Scores&lt;/em&gt;, a &lt;em&gt;Score Creator&lt;/em&gt;, a &lt;em&gt;Target&lt;/em&gt;, info about the &lt;em&gt;Club&lt;/em&gt; and my &lt;em&gt;Equipment&lt;/em&gt;. I'll be looking to add &lt;em&gt;Graphs&lt;/em&gt; and some other stats once I've got more weeks added to the data set.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/score-alt.png" alt="Scores (Alt)" title="Scores (Alt)"&gt;&lt;/p&gt;
-&lt;p&gt;The Score Creator is much like the one from my &lt;a href="https://alexhedley.com/bowling/"&gt;Bowling&lt;/a&gt; and it lets me quickly type in my scores and output a json object I can then add to the repo.&lt;/p&gt;
-&lt;p&gt;I found a useful &lt;a href="https://codepen.io/GGalizzi/pen/PogggB"&gt;CodePen&lt;/a&gt; from &lt;a href="https://codepen.io/GGalizzi"&gt;@GGalizzi&lt;/a&gt; which lets you select a point on the target and it will tell you your score. I'm still working on integrating that into the site.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/Archery_Target.png" alt="Archery Target" title="Archery Target"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;My club uses &lt;a href="https://archery-records.net/"&gt;Golden Records Online&lt;/a&gt; which I'm adding my scores as well. They have an API, so let's add another App to my &lt;a href="https://alexhedley.com/projects/"&gt;projects&lt;/a&gt; graveyard.&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.com/archery/"&gt;https://alexhedley.com/archery/&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery"&gt;https://github.com/AlexHedley/archery&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
