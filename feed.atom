@@ -4,9 +4,48 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2024</rights>
-	<updated>2024-12-24T15:21:02Z</updated>
+	<updated>2024-12-27T16:20:22Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/streamdeck-plugins</id>
+		<title>StreamDeck Plugins</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/streamdeck-plugins" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2024-12-27T00:00:00Z</updated>
+		<content>&lt;!-- StreamDeck Plugins --&gt;
+&lt;p&gt;Whilst recording my tutorials I've needed to change the screen resolution for better uploading to YouTube. I was recording at 1080 but needed it at 720.&lt;/p&gt;
+&lt;p&gt;I went looking for a way to change this but it was a little convoluted. I stubbled across a PowerShell module called &lt;code&gt;DisplaySettings&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.powershellgallery.com/packages/DisplaySettings/0.0.2"&gt;https://www.powershellgallery.com/packages/DisplaySettings/0.0.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lust4life/display-resolution"&gt;https://github.com/lust4life/display-resolution&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It had a simple &lt;code&gt;cmdlet&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1920 -Height 1080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1280 -Height 720
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next was how do I call this from my Stream Deck? I could use the &lt;a href="https://alexhedley.github.io/blog/streamdecktoolkit"&gt;StreamDeck Toolkit&lt;/a&gt; but it's likely someone already has a solution.&lt;/p&gt;
+&lt;p&gt;I found a plugin from @StartAutomating but it was using PS v5. I raised an Issue &lt;a href="https://github.com/StartAutomating/ScriptDeck/issues/120#issuecomment-2563555784"&gt;#120&lt;/a&gt; asking if it were possible to swap to v7. I hadn't seen there were two versions of the plugin.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Website: &lt;a href="https://scriptdeck.start-automating.com/"&gt;https://scriptdeck.start-automating.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href="https://github.com/StartAutomating/"&gt;https://github.com/StartAutomating/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="plugins"&gt;Plugins&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Windows ScriptDeck&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3"&gt;https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ScriptDeck&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18"&gt;https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Calling PowerShell cmdlets</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/christmas-gifts</id>
 		<title>Christmas Gifts</title>
@@ -472,41 +511,5 @@ Order: 400
 &lt;/ul&gt;
 </content>
 		<summary>Archery Score Keeper</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/undertaker</id>
-		<title>Becoming the Undertaker</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/undertaker" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2024-11-09T00:00:00Z</updated>
-		<content>&lt;!-- # Becoming the Undertaker --&gt;
-&lt;p&gt;For Scott's 40th Birthday this year Jennie had arranged a surprise (optional) wrestling themed birthday, I only had one choice... become The Undertaker. Now Scott is also a massive Undertaker fan so I had to switch it up a little....&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Me-Undertaker-1.jpg" alt="Scott &amp;amp; I" title="Scott &amp;amp; I"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Me-Undertaker-2.jpg" alt="Matt, Laura &amp;amp; I" title="Matt, Laura &amp;amp; I"&gt;&lt;/p&gt;
-&lt;p&gt;How about going as the Fake Taker, and making my theme grey instead of purple.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Fake-Taker.jpg" alt="Fake Taker" title="Fake Taker"&gt;&lt;/p&gt;
-&lt;p&gt;I found a pre-made costume on Amazon (or &lt;a href="https://ilovefancydress.com/"&gt;https://ilovefancydress.com/&lt;/a&gt;) which had a strange mix, including a cross - not sure he ever carried one of those around, he put a few people on one, and even got put on his own. I guess I can also re-use this for a MJ costume or Neo from the Matrix. Don't think the goatee would stick to my current beard.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Costume.jpg" alt="Costume" title="Costume"&gt;&lt;/p&gt;
-&lt;p&gt;Next was some gloves, I bought a pair of white ones and stained them with leather dye. A couple of coats later they came out pretty well.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Gloves_2.jpg" alt="Gloves" title="Gloves"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Gloves_3.jpg" alt="Gloves" title="Gloves"&gt;&lt;/p&gt;
-&lt;p&gt;A got a small piece of ribbon to wrap around the hat.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Ribbon.jpg" alt="Ribbon" title="Ribbon"&gt;
-I also added a tie and the leg covers. Just bought a pair of grey footy socks and cut the bottoms off. The tie was a grey &amp;amp; white striped piece of cloth, I couldn't quite find the correct colours, then with a piece of cardboard, with an angle cut into it and stuck with some double sided sticky tape, I don't have a sewing machine! Then some elastic to wrap it round my neck, with some velcro to adjust if needed.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Tie.jpg" alt="Tie" title="Tie"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Hat_Tie.jpg" alt="Hat / Tie" title="Hat / Tie"&gt;&lt;/p&gt;
-&lt;p&gt;Finally a belt&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Belt.avif" alt="Belt" title="Belt"&gt;&lt;/p&gt;
-&lt;p&gt;The black shirt and black jeans I already had finished it off nicely. I didn't cut zig-zags into the sleeves.&lt;/p&gt;
-&lt;p&gt;The wig and hat combo made a very hot afternoon, but was worth it, had such a laugh.&lt;/p&gt;
-&lt;p&gt;I think I got quite close :).&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Fake-Taker-2.jpg" alt="Fake Taker" title="Fake Taker"&gt;&lt;/p&gt;
-&lt;p&gt;Maybe I'll try one of his many other personas another time.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/undertaker/Undertaker.jpg" alt="Undertaker" title="Undertaker"&gt;&lt;/p&gt;
-</content>
-		<summary>Fancy dress themed birthday party.</summary>
 	</entry>
 </feed>
