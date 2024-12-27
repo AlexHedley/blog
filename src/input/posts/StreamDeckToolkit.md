@@ -2,6 +2,7 @@
 title: StreamDeck Toolkit
 # lead:
 tags:
+  - streamdeck
   - dotnet
   - csharp
   - programming
