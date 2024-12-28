@@ -4,9 +4,78 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2024</rights>
-	<updated>2024-12-27T16:20:22Z</updated>
+	<updated>2024-12-28T19:18:32Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/blazored-texteditor</id>
+		<title>Blazored - Text Editor</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/blazored-texteditor" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/blazor/blazored/HTMLExample.png" />
+		<updated>2024-12-27T00:00:00Z</updated>
+		<content>&lt;!-- Blazored - Text Editor --&gt;
+&lt;p&gt;Today I added &lt;em&gt;Syntax Highlighting&lt;/em&gt; to &lt;strong&gt;Blazored TextEditor&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blazor/blazored/SyntaxHighlighterExample.png" alt="Syntax Highlighter Example" title="Syntax Highlighter Example"&gt;&lt;/p&gt;
+&lt;p&gt;I'd been trying out some of the &lt;strong&gt;Blazored&lt;/strong&gt; components in a recent app and needed a WYSIWYG editor, luckily they had one using &lt;a href="https://quilljs.com/"&gt;QuillJS&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When looking at the docs, I'd seen there was an option to add a code block (&lt;kbd&gt;&amp;lt;/&amp;gt;&lt;kbd&gt;) to the editor. But this didn't provide any Syntax Highlighting via the current Blazor config.&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;span class="ql-formats"&amp;gt;
+    &amp;lt;button class="ql-code-block"&amp;gt;&amp;lt;/button&amp;gt;
+&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I raised an issue asking the question &lt;a href="https://github.com/Blazored/TextEditor/issues/79"&gt;#79&lt;/a&gt;. The chief maintainer replied very quickly so I made a start.&lt;/p&gt;
+&lt;p&gt;In their API for &lt;a href="https://quilljs.com/docs/modules/syntax"&gt;syntax&lt;/a&gt; it looked to be a simple addition to the &lt;code&gt;modules&lt;/code&gt; object.&lt;/p&gt;
+&lt;p&gt;I took a look at how it was being implemented in C# and started working on a new branch. Not long after I had made a PR and it was approved and merged.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Blazored/TextEditor/pull/80"&gt;https://github.com/Blazored/TextEditor/pull/80&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Just waiting for a NuGet key to be updated and there should be a new version available soon.&lt;/p&gt;
+&lt;p&gt;See my docs on how to implement it for your sites:&lt;/p&gt;
+&lt;!--?# Markdown ?--&gt;
+&lt;h1 id="syntax-highlighter-example"&gt;Syntax Highlighter Example&lt;/h1&gt;
+&lt;p&gt;See &lt;a href="https://quilljs.com/docs/modules/syntax"&gt;Syntax Highlighter Module&lt;/a&gt; from the &lt;em&gt;QuillJS&lt;/em&gt; docs for more information.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/SyntaxHighlighterExample.png" alt="Syntax Highlighter Example" title="Syntax Highlighter Example"&gt;&lt;/p&gt;
+&lt;p&gt;To turn on &lt;em&gt;Syntax Highlighting&lt;/em&gt; in your &lt;strong&gt;Blazored Text Editor&lt;/strong&gt; just pass the property &lt;code&gt;Syntax="true"&lt;/code&gt; and add the necessary library files (css/js).&lt;/p&gt;
+&lt;p&gt;Then add the &lt;code&gt;ql-code-block&lt;/code&gt; to your &lt;em&gt;Toolbar&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;BlazoredTextEditor Syntax="true"&amp;gt;
+    &amp;lt;ToolbarContent&amp;gt;
+        ...
+        &amp;lt;span class="ql-formats"&amp;gt;
+            &amp;lt;button class="ql-code-block"&amp;gt;&amp;lt;/button&amp;gt;
+        &amp;lt;/span&amp;gt;
+    &amp;lt;/ToolbarContent&amp;gt;
+    &amp;lt;EditorContent&amp;gt;
+        ...
+    &amp;lt;/EditorContent&amp;gt;
+&amp;lt;/BlazoredTextEditor&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="blazor-wasm"&gt;Blazor WASM&lt;/h2&gt;
+&lt;p&gt;Add to the &lt;code&gt;index.html&lt;/code&gt; both CSS and JS for a syntax highlighter, for these examples I've chosen &lt;a href="https://highlightjs.org/"&gt;highlight.js&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;head&amp;gt;
+    ...
+    &amp;lt;!-- Include your favorite highlight.js stylesheet --&amp;gt;
+    &amp;lt;link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" rel="stylesheet"&amp;gt;
+    ...
+&amp;lt;/head&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make sure to add the &lt;code&gt;js&lt;/code&gt; before your Quill js library or you will get an error.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;body&amp;gt;
+    &amp;lt;!-- Include the highlight.js library --&amp;gt;
+    &amp;lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;!-- Quill library --&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="blazor-server"&gt;Blazor Server&lt;/h2&gt;
+&lt;p&gt;Repeat the above but instead of the &lt;code&gt;index.html&lt;/code&gt; you will want to add / update your &lt;code&gt;_Host.cshtml&lt;/code&gt;.&lt;/p&gt;
+&lt;!--?#/ Markdown ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Blazored/TextEditor/blob/main/docs/SyntaxHighlighterExample.md"&gt;https://github.com/Blazored/TextEditor/blob/main/docs/SyntaxHighlighterExample.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Adding Syntax Highlighting</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/streamdeck-plugins</id>
 		<title>StreamDeck Plugins</title>
@@ -482,34 +551,5 @@ Order: 400
 &lt;/ul&gt;
 </content>
 		<summary>Advent of Code</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/archery-scores-colours</id>
-		<title>Archery Scores Colours</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/archery-scores-colours" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2024-11-21T00:00:00Z</updated>
-		<content>&lt;!-- # Archery Scores Colours --&gt;
-&lt;p&gt;I've made an update to my &lt;a href="https://alexhedley.com/archery/"&gt;Archery Scores&lt;/a&gt; website. I wanted to easily indicate what scores I got and match the colours to the target.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/scores_colours.png" alt="Scores Colours" title="Scores Colours"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/scores_alt_colours.png" alt="Scores (Alt) Colours" title="Scores (Alt) Colours"&gt;&lt;/p&gt;
-&lt;p&gt;Should I add some opacity?&lt;/p&gt;
-&lt;p&gt;Let's see if I can get a full block of gold 🥇 one day!&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.com/archery/"&gt;https://alexhedley.com/archery/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery"&gt;https://github.com/AlexHedley/archery&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="related"&gt;Related&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/archery-scores"&gt;Archery Scores&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/archery-return"&gt;Returning to Archery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/archery"&gt;Archery Beginners Course&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Archery Score Keeper</summary>
 	</entry>
 </feed>
