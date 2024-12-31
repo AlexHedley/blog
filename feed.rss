@@ -5,8 +5,60 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2024</copyright>
-		<pubDate>Sat, 28 Dec 2024 19:18:32 GMT</pubDate>
-		<lastBuildDate>Sat, 28 Dec 2024 19:18:32 GMT</lastBuildDate>
+		<pubDate>Tue, 31 Dec 2024 13:00:13 GMT</pubDate>
+		<lastBuildDate>Tue, 31 Dec 2024 13:00:13 GMT</lastBuildDate>
+		<item>
+			<title>Statiq - Plugins - Reading Time</title>
+			<link>https://alexhedley.github.io/blog/posts/statiq-plugins-reading-time</link>
+			<description>Reading Time</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/statiq-web.svg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/statiq-plugins-reading-time</guid>
+			<pubDate>Mon, 30 Dec 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Statiq - Plugins --&gt;
+&lt;p&gt;I've been keeping a list of Statiq Community extensions and uses on the main Discussions list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plugins: &lt;a href="https://github.com/orgs/statiqdev/discussions/223"&gt;https://github.com/orgs/statiqdev/discussions/223&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Themes: &lt;a href="https://github.com/orgs/statiqdev/discussions/227"&gt;https://github.com/orgs/statiqdev/discussions/227&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I was reviewing some blog posts and found a few from &lt;em&gt;Jeremy Davis&lt;/em&gt;, see &lt;a href="https://blog.jermdavis.dev/tags/statiq/"&gt;Statiq&lt;/a&gt; 🏷 tag.&lt;/p&gt;
+&lt;p&gt;To make this easier to add into my own blog I decided to make a new project: &lt;a href="https://github.com/alexhedley/statiq.plugins"&gt;Statiq.Plugins&lt;/a&gt; and port the features there.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Adding reading time estimates to blog posts from @ Jeremy Davis&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.jermdavis.dev/posts/2023/reading-time-estimates-statiq"&gt;https://blog.jermdavis.dev/posts/2023/reading-time-estimates-statiq&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In your &lt;code&gt;appsettings.json&lt;/code&gt; add a new property &lt;code&gt;ReadingSpeed&lt;/code&gt; and set it to your desired value:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;"ReadingSpeed": 200&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can then override the &lt;code&gt;input/_header.cshtml&lt;/code&gt; of your theme and place the calculated time after the tags.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;span&amp;gt;~@Model.GetString("ReadingTime") minutes&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can see an example on my test site: &lt;a href="https://alexhedley.com/statiqweb-example/posts/1"&gt;https://alexhedley.com/statiqweb-example/posts/1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/statiq/reading_time.png" alt="Reading Time" title="Reading Time"&gt;&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/statiq/reading_time-jd.png" alt="Reading Time" title="Reading Time"&gt;&lt;/p&gt;
+&lt;p&gt;In the future I'm looking to add more functionality. I've raised a number of &lt;a href="https://github.com/AlexHedley/statiq.plugins/issues"&gt;Issues&lt;/a&gt; to track them. If you have any ideas please add your own.&lt;/p&gt;
+&lt;h2 id="code"&gt;Code&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/AlexHedley/statiq.plugins/main/src/Statiq.Plugins/icon.png" alt="Statiq.Plugins Icon" title="Statiq.Plugins Icon"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.nuget.org/packages/Statiq.Plugins/"&gt;&lt;img src="https://img.shields.io/nuget/v/Statiq.Plugins.svg?logo=nuget" alt="NuGet Version"&gt;&lt;/a&gt;
+&lt;a href="https://www.nuget.org/packages/Statiq.Plugins/"&gt;&lt;img src="https://img.shields.io/nuget/dt/Statiq.Plugins?logo=nuget/" alt="NuGet Downloads"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dotnet add package Statiq.Plugins --version #.#.#&lt;/code&gt;&lt;/p&gt;
+&lt;!--?# Info ?--&gt;
+&lt;p&gt;Update the &lt;code&gt;version&lt;/code&gt; number (&lt;code&gt;#.#.#&lt;/code&gt;) to the latest release.&lt;/p&gt;
+&lt;!--?#/ Info ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexhedley/statiq.plugins"&gt;https://github.com/alexhedley/statiq.plugins&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/statiq.plugins/pkgs/nuget/Statiq.Plugins"&gt;https://github.com/AlexHedley/statiq.plugins/pkgs/nuget/Statiq.Plugins&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/Statiq.Plugins/"&gt;https://www.nuget.org/packages/Statiq.Plugins/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Blazored - Text Editor</title>
 			<link>https://alexhedley.github.io/blog/posts/blazored-texteditor</link>
@@ -19,7 +71,7 @@
 &lt;p&gt;Today I added &lt;em&gt;Syntax Highlighting&lt;/em&gt; to &lt;strong&gt;Blazored TextEditor&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blazor/blazored/SyntaxHighlighterExample.png" alt="Syntax Highlighter Example" title="Syntax Highlighter Example"&gt;&lt;/p&gt;
 &lt;p&gt;I'd been trying out some of the &lt;strong&gt;Blazored&lt;/strong&gt; components in a recent app and needed a WYSIWYG editor, luckily they had one using &lt;a href="https://quilljs.com/"&gt;QuillJS&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;When looking at the docs, I'd seen there was an option to add a code block (&lt;kbd&gt;&amp;lt;/&amp;gt;&lt;kbd&gt;) to the editor. But this didn't provide any Syntax Highlighting via the current Blazor config.&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;When looking at the docs, I'd seen there was an option to add a code block (&lt;kbd&gt;&amp;lt;/&amp;gt;&lt;/kbd&gt;) to the editor. But this didn't provide any Syntax Highlighting via the current Blazor config.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;span class="ql-formats"&amp;gt;
     &amp;lt;button class="ql-code-block"&amp;gt;&amp;lt;/button&amp;gt;
 &amp;lt;/span&amp;gt;
@@ -513,31 +565,6 @@ Order: 400
 &lt;li&gt;&lt;a href="https://eaglearchery.co.uk/products/arrow-making-workshop"&gt;https://eaglearchery.co.uk/products/arrow-making-workshop&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://eaglearchery.co.uk/products/arrow-making-workshop-1"&gt;https://eaglearchery.co.uk/products/arrow-making-workshop-1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://eaglearchery.co.uk/"&gt;https://eaglearchery.co.uk/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>AoC - 2024</title>
-			<link>https://alexhedley.github.io/blog/posts/aoc-2024</link>
-			<description>Advent of Code</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/aoc-2024</guid>
-			<pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Advent of Code - 2023 --&gt;
-&lt;p&gt;AoC 2024 ⭐, C# again this year. Let's see how far I get :).&lt;/p&gt;
-&lt;p&gt;Day 1 &lt;em&gt;Historian Hysteria&lt;/em&gt; was really fun, nice simple way to ease into the challenges. Can I beat 15 from previous years?&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/aoc/aoc_2024_1.png" alt="2024 - Day 1" title="2024 - Day 1"&gt;&lt;/p&gt;
-&lt;!-- ![2024](images/aoc/aoc_2024.png "2024") --&gt;
-&lt;h2 id="links"&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode2024"&gt;https://github.com/AlexHedley/adventofcode2024&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.com/adventofcode/"&gt;https://alexhedley.com/adventofcode/&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/adventofcode"&gt;https://github.com/AlexHedley/adventofcode&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
