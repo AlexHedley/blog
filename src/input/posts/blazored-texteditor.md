@@ -22,7 +22,7 @@ Today I added _Syntax Highlighting_ to **Blazored TextEditor**.
 
 I'd been trying out some of the **Blazored** components in a recent app and needed a WYSIWYG editor, luckily they had one using [QuillJS](https://quilljs.com/).
 
-When looking at the docs, I'd seen there was an option to add a code block (<kbd></><kbd>) to the editor. But this didn't provide any Syntax Highlighting via the current Blazor config.
+When looking at the docs, I'd seen there was an option to add a code block (<kbd></></kbd>) to the editor. But this didn't provide any Syntax Highlighting via the current Blazor config.
 
 ```html
 <span class="ql-formats">
