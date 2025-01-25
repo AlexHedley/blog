@@ -4,9 +4,83 @@
 		<title>Alex Hedley</title>
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
-		<copyright>Copyright © 2024</copyright>
-		<pubDate>Tue, 31 Dec 2024 13:00:13 GMT</pubDate>
-		<lastBuildDate>Tue, 31 Dec 2024 13:00:13 GMT</lastBuildDate>
+		<copyright>Copyright © 2025</copyright>
+		<pubDate>Sat, 25 Jan 2025 18:14:05 GMT</pubDate>
+		<lastBuildDate>Sat, 25 Jan 2025 18:14:05 GMT</lastBuildDate>
+		<item>
+			<title>Blashing - Blazing Story</title>
+			<link>https://alexhedley.github.io/blog/posts/blashing-blazingstory</link>
+			<description>Adding Blazing Story to Blashing</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/blashing-blazingstory</guid>
+			<pubDate>Sat, 25 Jan 2025 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Blashing - Blazing Story --&gt;
+&lt;p&gt;Having found &lt;a href="https://alexhedley.github.io/blog/blazingstory"&gt;Blazing Story&lt;/a&gt; I had to try it out with some of my own Blazor Components. I thought why not use &lt;a href="https://alexhedley.github.io/blog/the-beginning-of-blashing"&gt;Blashing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I followed the thorough steps in their readme and got to creating the required &lt;code&gt;stories.razor&lt;/code&gt; files. Added the required arguments and ran the app:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blashing/blashing-blazorstory.png" alt="Example" title="Example"&gt;&lt;/p&gt;
+&lt;p&gt;There's a few errors thrown when clicking on the different examples which I need to look into but it's just the beginning.&lt;/p&gt;
+&lt;p&gt;Such a well made project :).&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;branch: &lt;a href="https://github.com/AlexHedley/blashing/tree/blazingstories"&gt;https://github.com/AlexHedley/blashing/tree/blazingstories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href="https://github.com/AlexHedley/blashing/pull/162"&gt;https://github.com/AlexHedley/blashing/pull/162&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;code: &lt;a href="https://github.com/AlexHedley/blashing"&gt;https://github.com/AlexHedley/blashing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="related"&gt;Related&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/blazingstory"&gt;Blazing Story&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/the-beginning-of-blashing"&gt;The Beginning of Blashing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Blazing Story</title>
+			<link>https://alexhedley.github.io/blog/posts/blazingstory</link>
+			<description>The clone of "Storybook" for Blazor, a frontend workshop for building UI components and pages in isolation.</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/blazor/blazing-story/blazing-story.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/blazingstory</guid>
+			<pubDate>Fri, 24 Jan 2025 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Blazing Story --&gt;
+&lt;p&gt;Over the past couple of years I've been working with React and on occasion there have been a &lt;a href="https://storybook.js.org/"&gt;Storybook&lt;/a&gt; of components for the UI libraries I've been working with. This is an excellent way to have examples of the control(s) you may need to implement in your site. It gives you options to try different parameter combinations, see it in action and even grab a copy of the code needed to add it to your page(s).&lt;/p&gt;
+&lt;p&gt;In my pursuit to have all these great options but in .NET I was lucky enough to come across &lt;a href="https://jsakamoto.github.io/BlazingStory/"&gt;Blazing Story&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The clone of "&lt;a href="https://storybook.js.org/"&gt;Storybook&lt;/a&gt;" for Blazor, a frontend workshop for building UI components and pages in isolation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blazor/blazing-story/blazing-story.png" alt="Blazing Story" title="Blazing Story"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The "Blazing Story" is built on almost 100% Blazor native (except only a few JavaScript helper codes), so you don't have to care about npm, package.json, webpack, and any JavaScript/TypeScript code. You can create a UI catalog application on the Blazor way!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;See it in action: &lt;a href="https://jsakamoto.github.io/BlazingStory/"&gt;https://jsakamoto.github.io/BlazingStory/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It's very simple to setup.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dotnet new install BlazingStory.ProjectTemplates&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Add a new Project to your Solution. Add your components Project to this new &lt;em&gt;Stories&lt;/em&gt; Project. Add a new &lt;code&gt;[COMPONENT].stories.razor&lt;/code&gt; Razor file and setup the properties.&lt;/p&gt;
+&lt;p&gt;If you choose the WASM version you can then deploy it via &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; too!&lt;/p&gt;
+&lt;p&gt;There's a discussion showing how: &lt;a href="https://github.com/jsakamoto/BlazingStory/discussions/33"&gt;#33&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/jsakamoto/PublishSPAforGitHubPages.Build"&gt;https://github.com/jsakamoto/PublishSPAforGitHubPages.Build&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;  &amp;lt;ItemGroup&amp;gt;
+    &amp;lt;PackageReference Include="PublishSPAforGitHubPages.Build" Version="3.0.0" /&amp;gt;
+  &amp;lt;/ItemGroup&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I usually just use &lt;code&gt;sed&lt;/code&gt; in the GHA.&lt;/p&gt;
+&lt;p&gt;I quickly built an example and had it published in about 5 mins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/BlazingStoryExample"&gt;https://github.com/AlexHedley/BlazingStoryExample&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/BlazingStoryExample/"&gt;https://alexhedley.github.io/BlazingStoryExample/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Looking forward to adding more of the features and working with some components I've built.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/jsakamoto/BlazingStory"&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jsakamoto.github.io/BlazingStory/"&gt;Website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Statiq - Plugins - Reading Time</title>
 			<link>https://alexhedley.github.io/blog/posts/statiq-plugins-reading-time</link>
@@ -55,6 +129,44 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.nuget.org/packages/Statiq.Plugins/"&gt;https://www.nuget.org/packages/Statiq.Plugins/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>StreamDeck Plugins</title>
+			<link>https://alexhedley.github.io/blog/posts/streamdeck-plugins</link>
+			<description>Calling PowerShell cmdlets</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/streamdeck-plugins</guid>
+			<pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- StreamDeck Plugins --&gt;
+&lt;p&gt;Whilst recording my tutorials I've needed to change the screen resolution for better uploading to YouTube. I was recording at 1080 but needed it at 720.&lt;/p&gt;
+&lt;p&gt;I went looking for a way to change this but it was a little convoluted. I stubbled across a PowerShell module called &lt;code&gt;DisplaySettings&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.powershellgallery.com/packages/DisplaySettings/0.0.2"&gt;https://www.powershellgallery.com/packages/DisplaySettings/0.0.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lust4life/display-resolution"&gt;https://github.com/lust4life/display-resolution&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It had a simple &lt;code&gt;cmdlet&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1920 -Height 1080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1280 -Height 720
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next was how do I call this from my Stream Deck? I could use the &lt;a href="https://alexhedley.github.io/blog/streamdecktoolkit"&gt;StreamDeck Toolkit&lt;/a&gt; but it's likely someone already has a solution.&lt;/p&gt;
+&lt;p&gt;I found a plugin from @StartAutomating but it was using PS v5. I raised an Issue &lt;a href="https://github.com/StartAutomating/ScriptDeck/issues/120#issuecomment-2563555784"&gt;#120&lt;/a&gt; asking if it were possible to swap to v7. I hadn't seen there were two versions of the plugin.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Website: &lt;a href="https://scriptdeck.start-automating.com/"&gt;https://scriptdeck.start-automating.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href="https://github.com/StartAutomating/"&gt;https://github.com/StartAutomating/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="plugins"&gt;Plugins&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Windows ScriptDeck&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3"&gt;https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ScriptDeck&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18"&gt;https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -123,44 +235,6 @@
 &lt;!--?#/ Markdown ?--&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/Blazored/TextEditor/blob/main/docs/SyntaxHighlighterExample.md"&gt;https://github.com/Blazored/TextEditor/blob/main/docs/SyntaxHighlighterExample.md&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>StreamDeck Plugins</title>
-			<link>https://alexhedley.github.io/blog/posts/streamdeck-plugins</link>
-			<description>Calling PowerShell cmdlets</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/streamdeck-plugins</guid>
-			<pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- StreamDeck Plugins --&gt;
-&lt;p&gt;Whilst recording my tutorials I've needed to change the screen resolution for better uploading to YouTube. I was recording at 1080 but needed it at 720.&lt;/p&gt;
-&lt;p&gt;I went looking for a way to change this but it was a little convoluted. I stubbled across a PowerShell module called &lt;code&gt;DisplaySettings&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.powershellgallery.com/packages/DisplaySettings/0.0.2"&gt;https://www.powershellgallery.com/packages/DisplaySettings/0.0.2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/lust4life/display-resolution"&gt;https://github.com/lust4life/display-resolution&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It had a simple &lt;code&gt;cmdlet&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1920 -Height 1080
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1280 -Height 720
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next was how do I call this from my Stream Deck? I could use the &lt;a href="https://alexhedley.github.io/blog/streamdecktoolkit"&gt;StreamDeck Toolkit&lt;/a&gt; but it's likely someone already has a solution.&lt;/p&gt;
-&lt;p&gt;I found a plugin from @StartAutomating but it was using PS v5. I raised an Issue &lt;a href="https://github.com/StartAutomating/ScriptDeck/issues/120#issuecomment-2563555784"&gt;#120&lt;/a&gt; asking if it were possible to swap to v7. I hadn't seen there were two versions of the plugin.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Website: &lt;a href="https://scriptdeck.start-automating.com/"&gt;https://scriptdeck.start-automating.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Code: &lt;a href="https://github.com/StartAutomating/"&gt;https://github.com/StartAutomating/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="plugins"&gt;Plugins&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Windows ScriptDeck&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3"&gt;https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;ScriptDeck&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18"&gt;https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -501,71 +575,6 @@ Order: 400
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I originally got the syntax wrong, I put a bracket in the wrong place and couldn't see the wood for the trees. Thankfully I got some help from &lt;em&gt;@girlpunk&lt;/em&gt; on Statiq's GitHub Discussions: &lt;a href="https://github.com/orgs/statiqdev/discussions/230"&gt;D#230&lt;/a&gt;.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Streaming Equipment 2</title>
-			<link>https://alexhedley.github.io/blog/posts/streaming-equipment-2</link>
-			<description>New Prompter and light</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/streaming-equipment-2</guid>
-			<pubDate>Sun, 15 Dec 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- Streaming Equipment 2 --&gt;
-&lt;p&gt;I treated myself to some more &lt;a href="https://alexhedley.github.io/blog/streaming-equipment"&gt;Streaming Equipment&lt;/a&gt;, this time an Elgato Teleprompter.&lt;/p&gt;
-&lt;p&gt;After setting it all up I thought I'd take a couple of action shots!&lt;/p&gt;
-&lt;p&gt;Just need to write up some scripts to use for my next course(s).&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/Recording-Setup-1.jpg" alt="Recording Setup" title="Recording Setup"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/Recording-Setup-2.jpg" alt="Recording Setup" title="Recording Setup"&gt;&lt;/p&gt;
-&lt;p&gt;There was a deal on their site to get a bundle of all the extra equipment I needed, just need to get the Key Light Mini to connect to my wifi and I'll be able to control that with my Stream Deck (&lt;a href="https://alexhedley.github.io/blog/twitch"&gt;Twitch post&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/teleprompter.png" alt="Teleprompter" title="Teleprompter"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/equipment/key-light-mini.png" alt="Key Light Mini" title="Key Light Mini"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/equipment/cold-shoe.png" alt="Cold Shoe" title="Cold Shoe"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/equipment/master-mount-l.png" alt="Master Mount L" title="Master Mount L"&gt;&lt;/p&gt;
-&lt;p&gt;There's a great app called Camera Hub (&lt;a href="https://www.elgato.com/uk/en/s/downloads"&gt;Downloads&lt;/a&gt;) that lets you add your own content and then control the speed of which it shows on the screen. I might have to get the &lt;a href="https://www.elgato.com/uk/en/p/stream-deck-pedal"&gt;Stream Deck Pedal&lt;/a&gt; next.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/elgato-camera-hub.jpg" alt="Camera Hub" title="Camera Hub"&gt;&lt;/p&gt;
-&lt;p&gt;Finally I received a gift for my Birthday of a &lt;em&gt;Microphone Pop Filter&lt;/em&gt; for my &lt;strong&gt;Audio Technica AT2020&lt;/strong&gt; microphone.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/at8175_01.png" alt="AT8175" title="AT8175"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Microphone Pop Filter - AT8175&lt;/strong&gt;&lt;br&gt;
-🔗 &lt;a href="https://www.audio-technica.com/en-gb/at8175"&gt;https://www.audio-technica.com/en-gb/at8175&lt;/a&gt;&lt;br&gt;
-💷 £19.99&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.elgato.com/uk/en/p/prompter"&gt;https://www.elgato.com/uk/en/p/prompter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.elgato.com/uk/en/p/key-light-mini"&gt;https://www.elgato.com/uk/en/p/key-light-mini&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.elgato.com/uk/en/p/cold-shoe"&gt;https://www.elgato.com/uk/en/p/cold-shoe&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.elgato.com/uk/en/p/master-mount-l"&gt;https://www.elgato.com/uk/en/p/master-mount-l&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.audio-technica.com/en-gb/at8175"&gt;https://www.audio-technica.com/en-gb/at8175&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Arrow Making Workshop</title>
-			<link>https://alexhedley.github.io/blog/posts/archery-arrow</link>
-			<description>Learn how to make a set of arrows</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/archery-arrow</guid>
-			<pubDate>Sat, 14 Dec 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Arrow Making Workshop --&gt;
-&lt;p&gt;This afternoon I went to Eagle Archery 🦅🏹 to learn how to make my own arrows. It lasted about 2 hours and I thoroughly enjoyed it. I now want to build all the tools needed to make my own!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/arrow-making-workshop/course-notes.jpg" alt="Course Notes" title="Course Notes"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/arrow-making-workshop/arrow-holder.jpg" alt="Arrow Holder" title="Arrow Holder"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/arrow-making-workshop/fletching-stand-1.jpg" alt="Fletching" title="Fletching"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/arrow-making-workshop/fletching-stand-2.jpg" alt="Fletching" title="Fletching"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/arrow-making-workshop/fletching-stand-3.jpg" alt="Fletching" title="Fletching"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/arrow-making-workshop/hmg-glue.jpg" alt="HMG" title="HMG"&gt;&lt;/p&gt;
-&lt;p&gt;The real reason I went along was to see the dogs 🐾&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/arrow-making-workshop/dog.jpg" alt="Dog" title="Dog"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://eaglearchery.co.uk/"&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/eagle-archery.png" alt="Eagle Archery" title="Eagle Archery"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://eaglearchery.co.uk/products/arrow-making-workshop"&gt;https://eaglearchery.co.uk/products/arrow-making-workshop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://eaglearchery.co.uk/products/arrow-making-workshop-1"&gt;https://eaglearchery.co.uk/products/arrow-making-workshop-1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://eaglearchery.co.uk/"&gt;https://eaglearchery.co.uk/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
