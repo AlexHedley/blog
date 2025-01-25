@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2025</copyright>
-		<pubDate>Sat, 25 Jan 2025 18:14:05 GMT</pubDate>
-		<lastBuildDate>Sat, 25 Jan 2025 18:14:05 GMT</lastBuildDate>
+		<pubDate>Sat, 25 Jan 2025 18:45:49 GMT</pubDate>
+		<lastBuildDate>Sat, 25 Jan 2025 18:45:49 GMT</lastBuildDate>
 		<item>
 			<title>Blashing - Blazing Story</title>
 			<link>https://alexhedley.github.io/blog/posts/blashing-blazingstory</link>
@@ -78,6 +78,31 @@
 &lt;li&gt;&lt;a href="https://github.com/jsakamoto/BlazingStory"&gt;Code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://jsakamoto.github.io/BlazingStory/"&gt;Website&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>GitHub Contributions Chart Generator</title>
+			<link>https://alexhedley.github.io/blog/posts/github-contributions-2024</link>
+			<description>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/gh/topguntocat.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/github-contributions-2024</guid>
+			<pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;blockquote&gt;
+&lt;p&gt;All your contributions in one image!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github-contributions.vercel.app/"&gt;GitHub Contributions Chart Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alexhedley-2024.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
+&lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
+&lt;!-- ![alex-hedley](images/gh/contributions-alex-hedley-2024.png "Contributions alex-hedley") --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Could not find your profile&lt;/p&gt;
+&lt;/blockquote&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -531,50 +556,6 @@ RRP: £18.99 -23%&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://www.nuget.org/profiles/fluentui-blazor"&gt;https://www.nuget.org/profiles/fluentui-blazor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor/discussions/3043"&gt;https://github.com/microsoft/fluentui-blazor/discussions/3043&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Statiq - Stats</title>
-			<link>https://alexhedley.github.io/blog/posts/statiq-stats</link>
-			<description>How to total post counts</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/statiq-web.svg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/statiq-stats</guid>
-			<pubDate>Fri, 20 Dec 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Statiq - Stats --&gt;
-&lt;p&gt;Previously I'd added a count of posts &lt;a href="https://github.com/AlexHedley/blog/commit/ce65090ba756000610f09653603efc6e3e5e7da6"&gt;commit&lt;/a&gt; to the &lt;a href="https://alexhedley.com/blog/posts/"&gt;Posts&lt;/a&gt; page. Adding some styling to the &lt;code&gt;src/input/scss/_overrides.scss&lt;/code&gt; to position it on the right hand side and make it a little smaller, I think it looks quite nice.&lt;/p&gt;
-&lt;p&gt;Who doesn't want a Total count too?! I made a new &lt;strong&gt;Stats&lt;/strong&gt; page just to show the combined total and total for each year.&lt;/p&gt;
-&lt;p&gt;I might add a graph at some point.&lt;/p&gt;
-&lt;p&gt;335 posts isn't bad!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blog/stats.png" alt="Stats" title="Stats"&gt;&lt;/p&gt;
-&lt;h2 id="code"&gt;Code&lt;/h2&gt;
-&lt;p&gt;Create a new page &lt;code&gt;src\input\stats.cshtml&lt;/code&gt;. Update the &lt;code&gt;Order&lt;/code&gt; you want.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Title: Stats
-IsPage: true
-ShowInNavbar: true
-Order: 400
----
-
-&amp;lt;h1 class="bg-dark text-light p-2"&amp;gt;Total &amp;lt;span class="postCount"&amp;gt;@(Outputs.FromPipeline(nameof(Content))
-                                                                        .Flatten()
-                                                                        .FilterSources($"posts/*")
-                                                                        .Count())&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt;
-
-&amp;lt;hr /&amp;gt;
-
-@* Years Count *@
-@foreach(IGrouping&amp;lt;int, IDocument&amp;gt; group in Outputs
-                                            .FromPipeline(nameof(Content))
-                                            .Flatten()
-                                            .FilterSources($"posts/*")
-                                            .GroupBy(x =&amp;gt; x.GetDateTime(WebKeys.Published).Year)
-                                            .OrderByDescending(x =&amp;gt; x.Key))
-{
-    &amp;lt;h1 class="bg-dark text-light p-2"&amp;gt;@group.Key &amp;lt;span class="postCount"&amp;gt;@group.Count()&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I originally got the syntax wrong, I put a bracket in the wrong place and couldn't see the wood for the trees. Thankfully I got some help from &lt;em&gt;@girlpunk&lt;/em&gt; on Statiq's GitHub Discussions: &lt;a href="https://github.com/orgs/statiqdev/discussions/230"&gt;D#230&lt;/a&gt;.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
