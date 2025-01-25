@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/bin/Debug/net7.0/blog.dll",
+            "program": "${workspaceFolder}/src/bin/Debug/net8.0/blog.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src",
             "console": "internalConsole",
