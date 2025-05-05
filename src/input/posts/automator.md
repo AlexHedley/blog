@@ -15,8 +15,8 @@ I found a tweet about a Standford Mac Dev course.
 
 https://twitter.com/indragie/statuses/457607755621097473
 
-<blockquote class="twitter-tweet" lang="en"><p>TIL Stanford has a class on Cocoa Programming for OS X: <a href="http://t.co/TdFAUYifeX">http://t.co/TdFAUYifeX</a>. Impressive.</p>&mdash; Indragie Karunaratne (@indragie) <a href="https://twitter.com/indragie/statuses/457607755621097473">April 19, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- <blockquote class="twitter-tweet" lang="en"><p>TIL Stanford has a class on Cocoa Programming for OS X: <a href="http://t.co/TdFAUYifeX">http://t.co/TdFAUYifeX</a>. Impressive.</p>&mdash; Indragie Karunaratne (@indragie) <a href="https://twitter.com/indragie/statuses/457607755621097473">April 19, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 http://www.stanford.edu/class/cs193e/
 
