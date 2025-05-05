@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2025</copyright>
-		<pubDate>Mon, 27 Jan 2025 20:40:39 GMT</pubDate>
-		<lastBuildDate>Mon, 27 Jan 2025 20:40:39 GMT</lastBuildDate>
+		<pubDate>Mon, 05 May 2025 08:55:27 GMT</pubDate>
+		<lastBuildDate>Mon, 05 May 2025 08:55:27 GMT</lastBuildDate>
 		<item>
 			<title>Blashing - Blazing Story</title>
 			<link>https://alexhedley.github.io/blog/posts/blashing-blazingstory</link>
@@ -159,44 +159,6 @@
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>StreamDeck Plugins</title>
-			<link>https://alexhedley.github.io/blog/posts/streamdeck-plugins</link>
-			<description>Calling PowerShell cmdlets</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/streamdeck-plugins</guid>
-			<pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- StreamDeck Plugins --&gt;
-&lt;p&gt;Whilst recording my tutorials I've needed to change the screen resolution for better uploading to YouTube. I was recording at 1080 but needed it at 720.&lt;/p&gt;
-&lt;p&gt;I went looking for a way to change this but it was a little convoluted. I stubbled across a PowerShell module called &lt;code&gt;DisplaySettings&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.powershellgallery.com/packages/DisplaySettings/0.0.2"&gt;https://www.powershellgallery.com/packages/DisplaySettings/0.0.2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/lust4life/display-resolution"&gt;https://github.com/lust4life/display-resolution&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It had a simple &lt;code&gt;cmdlet&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1920 -Height 1080
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1280 -Height 720
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next was how do I call this from my Stream Deck? I could use the &lt;a href="https://alexhedley.github.io/blog/streamdecktoolkit"&gt;StreamDeck Toolkit&lt;/a&gt; but it's likely someone already has a solution.&lt;/p&gt;
-&lt;p&gt;I found a plugin from @StartAutomating but it was using PS v5. I raised an Issue &lt;a href="https://github.com/StartAutomating/ScriptDeck/issues/120#issuecomment-2563555784"&gt;#120&lt;/a&gt; asking if it were possible to swap to v7. I hadn't seen there were two versions of the plugin.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Website: &lt;a href="https://scriptdeck.start-automating.com/"&gt;https://scriptdeck.start-automating.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Code: &lt;a href="https://github.com/StartAutomating/"&gt;https://github.com/StartAutomating/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="plugins"&gt;Plugins&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Windows ScriptDeck&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3"&gt;https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;ScriptDeck&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18"&gt;https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
 			<title>Blazored - Text Editor</title>
 			<link>https://alexhedley.github.io/blog/posts/blazored-texteditor</link>
 			<description>Adding Syntax Highlighting</description>
@@ -261,6 +223,70 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/Blazored/TextEditor/blob/main/docs/SyntaxHighlighterExample.md"&gt;https://github.com/Blazored/TextEditor/blob/main/docs/SyntaxHighlighterExample.md&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>StreamDeck Plugins</title>
+			<link>https://alexhedley.github.io/blog/posts/streamdeck-plugins</link>
+			<description>Calling PowerShell cmdlets</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/streamdeck-plugins</guid>
+			<pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- StreamDeck Plugins --&gt;
+&lt;p&gt;Whilst recording my tutorials I've needed to change the screen resolution for better uploading to YouTube. I was recording at 1080 but needed it at 720.&lt;/p&gt;
+&lt;p&gt;I went looking for a way to change this but it was a little convoluted. I stubbled across a PowerShell module called &lt;code&gt;DisplaySettings&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.powershellgallery.com/packages/DisplaySettings/0.0.2"&gt;https://www.powershellgallery.com/packages/DisplaySettings/0.0.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lust4life/display-resolution"&gt;https://github.com/lust4life/display-resolution&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It had a simple &lt;code&gt;cmdlet&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1920 -Height 1080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1280 -Height 720
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next was how do I call this from my Stream Deck? I could use the &lt;a href="https://alexhedley.github.io/blog/streamdecktoolkit"&gt;StreamDeck Toolkit&lt;/a&gt; but it's likely someone already has a solution.&lt;/p&gt;
+&lt;p&gt;I found a plugin from @StartAutomating but it was using PS v5. I raised an Issue &lt;a href="https://github.com/StartAutomating/ScriptDeck/issues/120#issuecomment-2563555784"&gt;#120&lt;/a&gt; asking if it were possible to swap to v7. I hadn't seen there were two versions of the plugin.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Website: &lt;a href="https://scriptdeck.start-automating.com/"&gt;https://scriptdeck.start-automating.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href="https://github.com/StartAutomating/"&gt;https://github.com/StartAutomating/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="plugins"&gt;Plugins&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Windows ScriptDeck&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3"&gt;https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ScriptDeck&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18"&gt;https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>🎷 Saxophone - Books 3</title>
+			<link>https://alexhedley.github.io/blog/posts/saxophone-books-3</link>
+			<description>Buying more music.</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/saxophone-books-3</guid>
+			<pubDate>Tue, 24 Dec 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- 🎷 Saxophone - Books 3 --&gt;
+&lt;p&gt;My uncle introduce my twin and I to Dave Koz many years ago, he's always been a favourite of mine. Not sure how difficult they'll be but be fun to give them a go.&lt;/p&gt;
+&lt;p&gt;Dave Koz: Saxophone Play-Along Volume 6 (Hal Leonard Saxophone Play-Along, 6) Paperback – 1 Oct. 2015&lt;br&gt;
+&lt;a href="https://www.amazon.co.uk/dp/1480337994"&gt;https://www.amazon.co.uk/dp/1480337994&lt;/a&gt;&lt;br&gt;
+£14.59&lt;br&gt;
+RRP: £18.99 -23%&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/DaveKoz.jpg" alt="Dave Koz" title="Dave Koz"&gt;&lt;/p&gt;
+&lt;p&gt;Best of Dave Koz Paperback – 11 Jan. 2006&lt;br&gt;
+&lt;a href="https://www.amazon.co.uk/dp/1575608464"&gt;https://www.amazon.co.uk/dp/1575608464&lt;/a&gt;&lt;br&gt;
+£16.79&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/DaveKoz_BestOf.jpg" alt="Best of Dave Koz" title="Best of Dave Koz"&gt;&lt;/p&gt;
+&lt;p&gt;Found &lt;strong&gt;Gladiator&lt;/strong&gt; in a book so bought it just for that song. There are others I might try.&lt;/p&gt;
+&lt;p&gt;New film Themes Play along For alto Saxophone With CD&lt;br&gt;
+£10.10 (from eBay)&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/NewFilmThemes.jpg" alt="Film Themes" title="Film Themes"&gt;&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -330,32 +356,6 @@
 &lt;li&gt;?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- ## Inspired --&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>🎷 Saxophone - Books 3</title>
-			<link>https://alexhedley.github.io/blog/posts/saxophone-books-3</link>
-			<description>Buying more music.</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/saxophone-books-3</guid>
-			<pubDate>Tue, 24 Dec 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- 🎷 Saxophone - Books 3 --&gt;
-&lt;p&gt;My uncle introduce my twin and I to Dave Koz many years ago, he's always been a favourite of mine. Not sure how difficult they'll be but be fun to give them a go.&lt;/p&gt;
-&lt;p&gt;Dave Koz: Saxophone Play-Along Volume 6 (Hal Leonard Saxophone Play-Along, 6) Paperback – 1 Oct. 2015&lt;br&gt;
-&lt;a href="https://www.amazon.co.uk/dp/1480337994"&gt;https://www.amazon.co.uk/dp/1480337994&lt;/a&gt;&lt;br&gt;
-£14.59&lt;br&gt;
-RRP: £18.99 -23%&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/DaveKoz.jpg" alt="Dave Koz" title="Dave Koz"&gt;&lt;/p&gt;
-&lt;p&gt;Best of Dave Koz Paperback – 11 Jan. 2006&lt;br&gt;
-&lt;a href="https://www.amazon.co.uk/dp/1575608464"&gt;https://www.amazon.co.uk/dp/1575608464&lt;/a&gt;&lt;br&gt;
-£16.79&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/DaveKoz_BestOf.jpg" alt="Best of Dave Koz" title="Best of Dave Koz"&gt;&lt;/p&gt;
-&lt;p&gt;Found &lt;strong&gt;Gladiator&lt;/strong&gt; in a book so bought it just for that song. There are others I might try.&lt;/p&gt;
-&lt;p&gt;New film Themes Play along For alto Saxophone With CD&lt;br&gt;
-£10.10 (from eBay)&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/NewFilmThemes.jpg" alt="Film Themes" title="Film Themes"&gt;&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
