@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2025</rights>
-	<updated>2025-05-05T13:49:37Z</updated>
+	<updated>2025-05-05T14:00:33Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -150,6 +150,40 @@ Venue: The Core, Bath Lane, Newcastle Helix, Newcastle upon Tyne, NE4 5TF&lt;/p&
 &lt;/ul&gt;
 </content>
 		<summary>AWS meetup</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/copper-rose-workshop</id>
+		<title>Copper Rose Workshop</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/copper-rose-workshop" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2025-02-01T00:00:00Z</updated>
+		<content>&lt;!-- Copper Rose Workshop --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/copper/marketing.jpg" alt="Marketing" title="Marketing"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://facebook.com/events/s/copper-rose-workshop/2753565598184924/"&gt;https://facebook.com/events/s/copper-rose-workshop/2753565598184924/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;True North Trades are back - this time they're working with copper to create beautiful roses, ideal as a Valentine's or Mother's Day gift.  The workshop would also make a great gift too.&lt;/p&gt;
+&lt;p&gt;'True North Trades' consists of a Blacksmith, Furniture Maker/Woodworker and a General Handyman, they specialise in a range of products, building talents and activities.&lt;/p&gt;
+&lt;p&gt;We're really pleased that they will be joining us at the Heritage Centre to run more of their metalworking workshops.&lt;/p&gt;
+&lt;p&gt;In this workshop you will be taught how to cut out your blanks with tin snips so a degree of strength in the hand will be needed.  You will learn how to shape and solder your blanks into a beautiful copper rose that can be taken away and admired forever.
+So why not treat yourself to this great workshop - learning a new skill and taking away something special that you have hand-made yourself.&lt;/p&gt;
+&lt;p&gt;Come along with a friend, or maybe buy the workshop experience as a unique gift for someone special.
+Tickets £40 including all materials. Limited places and booking essential.&lt;/p&gt;
+&lt;p&gt;These workshops booked up quickly last time, so please reserve your place as soon as possible to avoid missing out.
+For adults and older children (aged 14+) and must be able to have a degree of strength to cut out the blanks.
+Under 16s must be accompanied by an adult).&lt;/p&gt;
+&lt;p&gt;WWW.LANDOFOAKANDIRON.SHOP&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/copper/finished.jpg" alt="Finished" title="Finished"&gt;&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://truenorthtrades.co.uk/"&gt;https://truenorthtrades.co.uk/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://landofoakandiron.org.uk/"&gt;https://landofoakandiron.org.uk/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/copper/marketing.jpg" alt="Marketing" title="Marketing"&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/govuk-design-system-jan2025</id>
@@ -414,44 +448,5 @@ We will be using &lt;strong&gt;Zoom Meetings&lt;/strong&gt; for video, and &lt;s
 &lt;/ul&gt;
 </content>
 		<summary>Adding Syntax Highlighting</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/streamdeck-plugins</id>
-		<title>StreamDeck Plugins</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/streamdeck-plugins" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2024-12-27T00:00:00Z</updated>
-		<content>&lt;!-- StreamDeck Plugins --&gt;
-&lt;p&gt;Whilst recording my tutorials I've needed to change the screen resolution for better uploading to YouTube. I was recording at 1080 but needed it at 720.&lt;/p&gt;
-&lt;p&gt;I went looking for a way to change this but it was a little convoluted. I stubbled across a PowerShell module called &lt;code&gt;DisplaySettings&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.powershellgallery.com/packages/DisplaySettings/0.0.2"&gt;https://www.powershellgallery.com/packages/DisplaySettings/0.0.2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/lust4life/display-resolution"&gt;https://github.com/lust4life/display-resolution&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It had a simple &lt;code&gt;cmdlet&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1920 -Height 1080
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="language-powershell"&gt;Set-DisplayResolution -Width 1280 -Height 720
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next was how do I call this from my Stream Deck? I could use the &lt;a href="https://alexhedley.github.io/blog/streamdecktoolkit"&gt;StreamDeck Toolkit&lt;/a&gt; but it's likely someone already has a solution.&lt;/p&gt;
-&lt;p&gt;I found a plugin from @StartAutomating but it was using PS v5. I raised an Issue &lt;a href="https://github.com/StartAutomating/ScriptDeck/issues/120#issuecomment-2563555784"&gt;#120&lt;/a&gt; asking if it were possible to swap to v7. I hadn't seen there were two versions of the plugin.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Website: &lt;a href="https://scriptdeck.start-automating.com/"&gt;https://scriptdeck.start-automating.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Code: &lt;a href="https://github.com/StartAutomating/"&gt;https://github.com/StartAutomating/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="plugins"&gt;Plugins&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Windows ScriptDeck&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3"&gt;https://marketplace.elgato.com/product/windows-scriptdeck-857f01dd-8fd4-44d5-8ec7-67ac850b21d3&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;ScriptDeck&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18"&gt;https://marketplace.elgato.com/product/scriptdeck-927e59aa-b42d-4da7-84cc-8c78f4dd7e18&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Calling PowerShell cmdlets</summary>
 	</entry>
 </feed>
