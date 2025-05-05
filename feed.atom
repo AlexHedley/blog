@@ -4,9 +4,193 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2025</rights>
-	<updated>2025-05-05T08:55:27Z</updated>
+	<updated>2025-05-05T13:25:01Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/dotnet-newcastle-april-2025</id>
+		<title>.NET Meetup Newcastle - April 2025</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/dotnet-newcastle-april-2025" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/meetups/dotnet-april-2025.png" />
+		<updated>2025-04-29T00:00:00Z</updated>
+		<content>&lt;!-- # Qudos DotNet Newcastle Meetup - May 2024 --&gt;
+&lt;p&gt;📅 Tuesday, April 29, 2025 · 5:30 - 8pm GMT&lt;/p&gt;
+&lt;p&gt;📍 Haylofts, 5 St. Thomas Street, Newcastle, NE1 4LE.&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/307169799/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/307169799/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="talks"&gt;Talks&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Speaker 1&lt;/strong&gt;: John Staveley&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Title&lt;/strong&gt;: Creating an AI assistant to help run meetups&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;In this session I will explain how I created a cheeky virtual assistant called JaaS to aid in the running of several meetups that I organise.
+How I was able to interact it with it using Azure Speech to Text and Azure Text to Speech.
+How I gave it almost limitless knowledge by incorporating ChatGPT using the Azure OpenAI service.
+And... how once created, it did not put anyone out of a job or take over the world!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;TBA&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speaker Bio&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;John Staveley, Microsoft MVP, Organiser at LeedsSharp, IotNorth and Data Science meetup&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Speaker 2&lt;/strong&gt;: Peter Shaw&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Title&lt;/strong&gt;: Using Postgres SQL With .NET&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;You can use Entity Framework, and get access to Postgres just like you can with every other database system on the planet, but what if I told you that Postgres goes way, way beyond anything you can do with entity framework. What most folks DON'T know is that Postgres touts itself as a &amp;quot;Data Application Framework&amp;quot; and with the latest version of NPG-SQL (The official Postgres driver for dotnet) you can now get access to much of this extra goodness, stick with me while I try to cram as much as I can show you in about an hour, that you probably never realised Postgres could do.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;TBA&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speaker Bio&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;Peter Shaw - I have been a dev for 30 or more years now.&lt;/p&gt;
+&lt;p&gt;I wrote my first bit of code in may 1979 at the age of 7, by the time I was 10 I was programming chip level in machine code on the Z80 &amp;amp; 6502 CPU's, moving into my teenage years I was programming Arm cpu's before anyone knew what they where.&lt;/p&gt;
+&lt;p&gt;I don't really sell myself, I'm a dev after all not a marketer, but there's not many areas of I.T. I've not worked in, from hardware to software, support to management.&lt;/p&gt;
+&lt;p&gt;These days I'm best known for my activities in the .NET &amp;amp; MS Dev scene here in the UK, My blog posts frequently appear on other outlets as well as my own blog, and if you've got the time to sit and listen to what I have to say, I've certainly got the time to tell you.&lt;/p&gt;
+&lt;p&gt;I'm a veteran of the &amp;quot;Developer Developer Developer&amp;quot; series of live developer events here in the UK, and one of the main figures behind &amp;quot;LiDNUG&amp;quot; (&lt;a href="http://lidnug.org/"&gt;http://lidnug.org&lt;/a&gt;) on the linked in network.&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;We’re back at Haylofts for our 2nd .NET meetup of the year! 5 St. Thomas Street, Newcastle, NE1 4LE.&lt;/p&gt;
+&lt;p&gt;We have a fairly relaxed agenda, but will follow:&lt;/p&gt;
+&lt;p&gt;5:30 - Doors Open&lt;br /&gt;
+5:45 - Pizza arrival&lt;br /&gt;
+6:00 - Introduction / Housekeeping&lt;br /&gt;
+6:10 - Talks begin&lt;br /&gt;
+8:00 - Closing&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;QudosRecruitment"&gt;https://www.youtube.com/&amp;#64;QudosRecruitment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/"&gt;https://www.meetup.com/dotnetmeetupnorth/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/307169799/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/307169799/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>.NET meetup</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/govuk-design-system-feb2025</id>
+		<title>Design System Chat - February 2025</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/govuk-design-system-feb2025" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/govuk/govuk-design-system-feb.png" />
+		<updated>2025-02-26T00:00:00Z</updated>
+		<content>&lt;!-- # Design System Chat - February 2025 --&gt;
+&lt;h2 id="event"&gt;Event&lt;/h2&gt;
+&lt;p&gt;🗓️ Wednesday, 26 February
+🕰️ 11:00 - 12:00 BST&lt;br /&gt;
+📍 Online&lt;br /&gt;
+🔗 &lt;a href="https://www.eventbrite.co.uk/e/design-system-chat-february-2025-tickets-1255768008919"&gt;https://www.eventbrite.co.uk/e/design-system-chat-february-2025-tickets-1255768008919&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;You're invited to 2025's second 'design system chat', hosted monthly by the GOV.UK Design System team.&lt;/p&gt;
+&lt;h3 id="agenda"&gt;Agenda&lt;/h3&gt;
+&lt;p&gt;Agenda:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Essential component criteria&lt;/li&gt;
+&lt;li&gt;FrontEnd installation session&lt;/li&gt;
+&lt;li&gt;File upload&lt;/li&gt;
+&lt;li&gt;Lean Coffee: Bring your discussion topics and questions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Session type&lt;/strong&gt;: Show &amp;amp; tell, discussion&lt;br /&gt;
+&lt;strong&gt;Duration&lt;/strong&gt;: 1 hour&lt;br /&gt;
+&lt;strong&gt;Platform&lt;/strong&gt;: Zoom (please make sure your device can access Zoom meetings)&lt;br /&gt;
+If you sign up, please make sure you can attend the whole session, as we sell out quite quickly.
+We will be using &lt;strong&gt;Zoom Meetings&lt;/strong&gt; for video, and &lt;strong&gt;Padlet&lt;/strong&gt; for notes and comments. Please make sure you have a device that can access these, as some organisation’s firewalls block these platforms.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://design-system.service.gov.uk/"&gt;https://design-system.service.gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;GovernmentDigitalService"&gt;https://www.youtube.com/&amp;#64;GovernmentDigitalService&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;UKGovDesign"&gt;https://www.youtube.com/&amp;#64;UKGovDesign&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>GOV.UK Design System team</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/aws-north-east-user-group-feb-2025</id>
+		<title>AWS User Group - North East - Meetup - Feb 2025</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/aws-north-east-user-group-feb-2025" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/meetups/aws-north-east-user-group/banner.png" />
+		<updated>2025-02-12T00:00:00Z</updated>
+		<content>&lt;!-- # AWS User Group - North East - Meetup - Feb 2025 --&gt;
+&lt;p&gt;AWS Community re:Invent re:Cap&lt;/p&gt;
+&lt;p&gt;📅 Wednesday, Feb 12, 2025 · 6pm - 8pm GMT&lt;/p&gt;
+&lt;p&gt;📍 The Core, Bath Lane, Newcastle Helix, Newcastle upon Tyne, NE4 5TF&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.meetup.com/aws-user-group-north-east-england/events/305592946/"&gt;https://www.meetup.com/aws-user-group-north-east-england/events/305592946/&lt;/a&gt;&lt;/p&gt;
+&lt;!-- ![Banner](images/meetups/aws-north-east-user-group/banner.png "Banner") --&gt;
+&lt;h2 id="agenda"&gt;Agenda&lt;/h2&gt;
+&lt;p&gt;Hi everyone&lt;/p&gt;
+&lt;p&gt;Welcome to our first scheduled event of the new year.&lt;/p&gt;
+&lt;p&gt;The tour has already kicked off and with almost 20 venues in the UK over the next couple of months &lt;strong&gt;Matheus Guimaraes&lt;/strong&gt; will be hosting the re:Invent Recap.&lt;/p&gt;
+&lt;p&gt;If you've missed it completely, or went and still missed things (entirely possibly, its huge!), or want a recap of all the major announcements then come and join us.&lt;/p&gt;
+&lt;p&gt;Matheus is an entertaining speaker and you'll definitely have a good night.&lt;/p&gt;
+&lt;p&gt;There will be our usual pizza and drinks provided by our wonderful hosts &lt;strong&gt;Leighton&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Date: Wednesday February 12&lt;br /&gt;
+Time: 18:00-20:00&lt;br /&gt;
+Venue: The Core, Bath Lane, Newcastle Helix, Newcastle upon Tyne, NE4 5TF&lt;/p&gt;
+&lt;p&gt;Many thanks to our sponsors &lt;strong&gt;Leighton&lt;/strong&gt; for hosting us on the night.&lt;/p&gt;
+&lt;p&gt;Hope to see you all there!&lt;/p&gt;
+&lt;h2 id="notes"&gt;Notes&lt;/h2&gt;
+&lt;p&gt;Matheus was a superb presenter, really engaging and loved the enthusiasm for all things AWS!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://linktr.ee/codingmatheus"&gt;https://linktr.ee/codingmatheus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/aws-user-group-north-east-england/"&gt;https://www.meetup.com/aws-user-group-north-east-england/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/developer/community/usergroups/"&gt;https://aws.amazon.com/developer/community/usergroups/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A few links I remembered to scan during&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/aws/announcing-a-visual-update-to-the-aws-management-console-preview/"&gt;Announcing a visual update to the AWS Management Console (preview)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/aws/use-your-on-premises-infrastructure-in-amazon-eks-clusters-with-amazon-eks-hybrid-nodes/"&gt;Use your on-premises infrastructure in Amazon EKS clusters with Amazon EKS Hybrid Nodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/aws/new-aws-security-incident-response-helps-organizations-respond-to-and-recover-from-security-events/"&gt;New AWS Security Incident Response helps organizations respond to and recover from security events&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download the PDF to see the full presentation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://community.aws/recaps"&gt;AWS Community re:Invent re:Caps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>AWS meetup</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/govuk-design-system-jan2025</id>
+		<title>Design System Chat - Jan 2025</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/govuk-design-system-jan2025" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/govuk/govuk-design-system-jan.jpeg" />
+		<updated>2025-01-29T00:00:00Z</updated>
+		<content>&lt;!-- # Design System Chat - Jan 2025 --&gt;
+&lt;h2 id="event"&gt;Event&lt;/h2&gt;
+&lt;p&gt;🗓️ Wednesday, 29 January
+🕰️ 11:00 - 12:00 BST&lt;br /&gt;
+📍 Online&lt;br /&gt;
+🔗 &lt;a href="https://www.eventbrite.co.uk/e/design-system-chat-january-2025-tickets-1214931235029"&gt;https://www.eventbrite.co.uk/e/design-system-chat-january-2025-tickets-1214931235029&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;You're invited to 2025's first 'design system chat', hosted monthly by the GOV.UK Design System team.&lt;/p&gt;
+&lt;h3 id="agenda"&gt;Agenda&lt;/h3&gt;
+&lt;p&gt;Agenda:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Annual UX/FrontEnd survey - what we do with the data and how it feeds into prioritisation&lt;/li&gt;
+&lt;li&gt;WCAG 2.2 video&lt;/li&gt;
+&lt;li&gt;Connecting gov design systems hackathon - What happened and plans for part 2&lt;/li&gt;
+&lt;li&gt;JavaScript API - what we shipped recently&lt;/li&gt;
+&lt;li&gt;Discussion: What are you leaving behind in 2024?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Session type&lt;/strong&gt;: Show &amp;amp; tell, discussion&lt;br /&gt;
+&lt;strong&gt;Duration&lt;/strong&gt;: 1 hour&lt;br /&gt;
+&lt;strong&gt;Platform&lt;/strong&gt;: Zoom (please make sure your device can access Zoom meetings)&lt;br /&gt;
+If you sign up, please make sure you can attend the whole session, as we sell out quite quickly.
+We will be using &lt;strong&gt;Zoom Meetings&lt;/strong&gt; for video, and &lt;strong&gt;Padlet&lt;/strong&gt; for notes and comments. Please make sure you have a device that can access these, as some organisation’s firewalls block these platforms.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://design-system.service.gov.uk/"&gt;https://design-system.service.gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;GovernmentDigitalService"&gt;https://www.youtube.com/&amp;#64;GovernmentDigitalService&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;UKGovDesign"&gt;https://www.youtube.com/&amp;#64;UKGovDesign&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>GOV.UK Design System team</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/blashing-blazingstory</id>
 		<title>Blashing - Blazing Story</title>
@@ -269,304 +453,5 @@
 &lt;/ul&gt;
 </content>
 		<summary>Calling PowerShell cmdlets</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/saxophone-books-3</id>
-		<title>🎷 Saxophone - Books 3</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/saxophone-books-3" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2024-12-24T00:00:00Z</updated>
-		<content>&lt;!-- 🎷 Saxophone - Books 3 --&gt;
-&lt;p&gt;My uncle introduce my twin and I to Dave Koz many years ago, he's always been a favourite of mine. Not sure how difficult they'll be but be fun to give them a go.&lt;/p&gt;
-&lt;p&gt;Dave Koz: Saxophone Play-Along Volume 6 (Hal Leonard Saxophone Play-Along, 6) Paperback – 1 Oct. 2015&lt;br&gt;
-&lt;a href="https://www.amazon.co.uk/dp/1480337994"&gt;https://www.amazon.co.uk/dp/1480337994&lt;/a&gt;&lt;br&gt;
-£14.59&lt;br&gt;
-RRP: £18.99 -23%&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/DaveKoz.jpg" alt="Dave Koz" title="Dave Koz"&gt;&lt;/p&gt;
-&lt;p&gt;Best of Dave Koz Paperback – 11 Jan. 2006&lt;br&gt;
-&lt;a href="https://www.amazon.co.uk/dp/1575608464"&gt;https://www.amazon.co.uk/dp/1575608464&lt;/a&gt;&lt;br&gt;
-£16.79&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/DaveKoz_BestOf.jpg" alt="Best of Dave Koz" title="Best of Dave Koz"&gt;&lt;/p&gt;
-&lt;p&gt;Found &lt;strong&gt;Gladiator&lt;/strong&gt; in a book so bought it just for that song. There are others I might try.&lt;/p&gt;
-&lt;p&gt;New film Themes Play along For alto Saxophone With CD&lt;br&gt;
-£10.10 (from eBay)&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/NewFilmThemes.jpg" alt="Film Themes" title="Film Themes"&gt;&lt;/p&gt;
-</content>
-		<summary>Buying more music.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/christmas-gifts</id>
-		<title>Christmas Gifts</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/christmas-gifts" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2024-12-24T00:00:00Z</updated>
-		<content>&lt;h1 id="christmas-gifts"&gt;Christmas Gifts&lt;/h1&gt;
-&lt;h2 id="supplies"&gt;Supplies&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Champagne Cork&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Wine Cork&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Hairclip&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Red Beads&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Matchsticks&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Brown paint&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Red/White pipe cleaners&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mini terracotta pot&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Pine cone&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mini pompoms (various colours)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;mdf star (various sizes)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Green paint&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Gold paint&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;PVA glue&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Wire cutters&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
-&lt;h3 id="reindeer"&gt;🦌 Reindeer&lt;/h3&gt;
-&lt;p&gt;Cut some hairclips in half, use the wiggly pieces as legs. Cut the other ends off as the eyes and a smaller piece for the neck.&lt;/p&gt;
-&lt;p&gt;Add eyes to Champagne cork and antlers from the match sticks (need to re-think these).&lt;/p&gt;
-&lt;p&gt;Add a bright red nose&lt;/p&gt;
-&lt;p&gt;Cut a pipe cleaner down to size and add around the neck as a scarf.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/reindeer-2.jpg" alt="Reindeer" title="Reindeer"&gt;&lt;/p&gt;
-&lt;h3 id="tree"&gt;🎄 Tree&lt;/h3&gt;
-&lt;p&gt;Paint the tips of the pine code green&lt;/p&gt;
-&lt;p&gt;Stuff different colour pom poms around the cone.&lt;/p&gt;
-&lt;p&gt;Paint 2 different sized mdf wooden stars gold / bronze and stick together, then glue near the top.&lt;/p&gt;
-&lt;p&gt;Glue the pine cone to the terracotta pot. (You could use a cork instead)&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/tree-1.jpg" alt="Tree" title="Tree"&gt;&lt;/p&gt;
-&lt;h2 id="outcome"&gt;Outcome&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/reindeer-1.jpg" alt="Reindeer" title="Reindeer"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/reindeer-2.jpg" alt="Reindeer" title="Reindeer"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/gifts/tree-1.jpg" alt="Tree" title="Tree"&gt;&lt;/p&gt;
-&lt;!-- ### Stages --&gt;
-&lt;!-- ![Stage 1](images/stage1.jpeg "Stage 1") --&gt;
-&lt;h2 id="approx-cost"&gt;Approx Cost&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- ## Inspired --&gt;
-</content>
-		<summary>Reindeer and Tree</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/blazor-fluentui-markdownsection</id>
-		<title>Blazor - FluentUI - Markdown</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/blazor-fluentui-markdownsection" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/blazor/fluentui-blazor.jpg" />
-		<updated>2024-12-23T00:00:00Z</updated>
-		<content>&lt;!-- # Blazor - FluentUI - Markdown --&gt;
-&lt;p&gt;Want to display &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;markdown&lt;/a&gt; in your Blazor app? Of course you do.&lt;/p&gt;
-&lt;p&gt;The FluentUI Blazor components have you covered in their 🧪 lab section.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.fluentui-blazor.net/Lab/MarkdownSection"&gt;https://www.fluentui-blazor.net/Lab/MarkdownSection&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There's a little bit of work to bring in the component as it's not shipped in the library itself as it contains a dependency of &lt;a href="https://github.com/xoofx/markdig"&gt;markdig&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Please see my previous post &lt;a href="https://alexhedley.github.io/blog/blazor-fluentui-codesnippet"&gt;Blazor - FluentUI - Code Snippet&lt;/a&gt; for the setup of &lt;em&gt;Highlight.js&lt;/em&gt; as this is used by the following component.&lt;/p&gt;
-&lt;p&gt;Create a new folder in your Shared project.&lt;/p&gt;
-&lt;p&gt;📁 &lt;code&gt;\Infrastructure&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor/"&gt;https://github.com/microsoft/fluentui-blazor/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Copy the following files from &lt;a href="https://github.com/microsoft/fluentui-blazor/tree/dev/examples/Demo/Shared/Infrastructure"&gt;examples/Demo/Shared/Infrastructure&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;AppVersionService.cs&lt;/li&gt;
-&lt;li&gt;CacheStorageAccessor.cs&lt;/li&gt;
-&lt;li&gt;HttpBasedStaticAssetService.cs &lt;em&gt;(This is need for Blazor WASM)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;IAppVersionService.cs&lt;/li&gt;
-&lt;li&gt;IStaticAssetService.cs&lt;/li&gt;
-&lt;li&gt;ServerStaticAssetService.cs &lt;em&gt;(This is need for Blazor Server)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;ServiceCollectionExtensions.cs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Then copy the following component files from &lt;a href="https://github.com/microsoft/fluentui-blazor/tree/dev/examples/Demo/Shared/Components"&gt;examples/Demo/Shared/Components&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;MarkdownSection.razor&lt;/li&gt;
-&lt;li&gt;MarkdownSection.razor.cs&lt;/li&gt;
-&lt;li&gt;MarkdownSection.razor.css&lt;/li&gt;
-&lt;li&gt;MarkdownSection.razor.js&lt;/li&gt;
-&lt;li&gt;MarkdownSectionPreCodeExtension.cs&lt;/li&gt;
-&lt;li&gt;MarkdownSectionPreCodeRenderer.cs&lt;/li&gt;
-&lt;li&gt;MarkdownSectionPreCodeRendererOptions.cs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Something from &lt;a href="https://github.com/microsoft/fluentui-blazor/blob/dev/examples/Demo/Shared/wwwroot/js/"&gt;wwwroot/js/&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;CacheStorageAccessor.js&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Next you want to update a few places.&lt;/p&gt;
-&lt;p&gt;In &lt;code&gt;CacheStorageAccessor.cs&lt;/code&gt; swap the path to your project.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-cs"&gt;public class CacheStorageAccessor(IJSRuntime js, IAppVersionService vs) : JSModule(js, "./_content/FluentUI.Demo.Shared/js/CacheStorageAccessor.js")
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;to&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-cs"&gt;JSModule(js, "./_content/[PROJECT_NAME]/js/CacheStorageAccessor.js")
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In &lt;code&gt;ServiceCollectionExtensions.cs&lt;/code&gt; remove the &lt;code&gt;DemoNavProvider&lt;/code&gt; unless you are using it. I also renamed to &lt;code&gt;AddFluentUIDemoClientServices()&lt;/code&gt; to &lt;code&gt;AddFluentUIClientServices()&lt;/code&gt;. Amend accordingly.&lt;/p&gt;
-&lt;p&gt;In &lt;code&gt;MarkdownSection.razor.cs&lt;/code&gt; swap the path again:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-cs"&gt;        _jsModule = await JSRuntime.InvokeAsync&amp;lt;IJSObjectReference&amp;gt;("import",
-            "./_content/FluentUI.Demo.Shared/Components/MarkdownSection.razor.js");
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;to&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-cs"&gt;        _jsModule = await JSRuntime.InvokeAsync&amp;lt;IJSObjectReference&amp;gt;("import",
-            "./_content/[PROJECT_NAME]/MarkdownSection.razor.js");
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Update the &lt;code&gt;namespaces&lt;/code&gt; from &lt;code&gt;namespace FluentUI.Demo.Shared.*&lt;/code&gt; to yours.&lt;/p&gt;
-&lt;p&gt;In &lt;code&gt;Program.cs&lt;/code&gt; of your main app add the helper function &lt;code&gt;AddFluentUIClientServices()&lt;/code&gt; from &lt;code&gt;ServiceCollectionExtensions.cs&lt;/code&gt; so everything is setup.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-cs"&gt;            builder.Services.AddFluentUIClientServices();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Finally you want to add the &lt;em&gt;component&lt;/em&gt; to your app.&lt;/p&gt;
-&lt;p&gt;You can either use &lt;code&gt;Content&lt;/code&gt; and add you markdown directly:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-razor"&gt;&amp;lt;MarkdownSection Content="text in *italics* and **bold**"&amp;gt;&amp;lt;/MarkdownSection&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Or you can use the &lt;code&gt;StaticAssetService&lt;/code&gt; to pull in some files.&lt;/p&gt;
-&lt;p&gt;Firstly create a new folder 📁 called &lt;code&gt;docs&lt;/code&gt; in your &lt;code&gt;wwwroot&lt;/code&gt; of your Shared project. Then add the path in the &lt;code&gt;FromAsset&lt;/code&gt; property.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-razor"&gt;&amp;lt;MarkdownSection FromAsset="./_content/[PROJECT_NAME]/docs/CodeSetup.md"&amp;gt;&amp;lt;/MarkdownSection&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;What's cool about this is that you can pass it any MD file so taking one directly from GitHub with the RAW url and it'll also work.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-razor"&gt;&amp;lt;MarkdownSection FromAsset="https://raw.githubusercontent.com/microsoft/fluentui-blazor/refs/heads/dev/examples/Demo/Shared/wwwroot/docs/DesignTokens.md"&amp;gt;&amp;lt;/MarkdownSection&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;One thing I need to check is how it handles images, but that's for another day.&lt;/p&gt;
-&lt;h2 id="example"&gt;Example&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;text in *italics* and **bold**&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;text in &lt;em&gt;italics&lt;/em&gt; and &lt;strong&gt;bold&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blazor/markdownsection.png" alt="Markdown Section" title="Markdown Section"&gt;&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/xoofx/markdig"&gt;https://github.com/xoofx/markdig&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"&gt;https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-9.0"&gt;https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-9.0&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/dotnet/aspnetcore"&gt;https://github.com/dotnet/aspnetcore&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/blazor"&gt;https://github.com/dotnet/blazor&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor"&gt;https://github.com/microsoft/fluentui-blazor&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/blazor"&gt;https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/blazor&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/shows/open-at-microsoft/exploring-the-fluent-ui-blazor-components"&gt;https://learn.microsoft.com/en-us/shows/open-at-microsoft/exploring-the-fluent-ui-blazor-components&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.fluentui-blazor.net/"&gt;https://www.fluentui-blazor.net/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.nuget.org/profiles/fluentui-blazor"&gt;https://www.nuget.org/profiles/fluentui-blazor&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Using markdown in your pages</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/blazor-fluentui-codesnippet</id>
-		<title>Blazor - FluentUI - Code Snippet</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/blazor-fluentui-codesnippet" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/blazor/fluentui-blazor.jpg" />
-		<updated>2024-12-23T00:00:00Z</updated>
-		<content>&lt;!-- # Blazor - FluentUI - Code Snippet --&gt;
-&lt;p&gt;I've been working with &lt;a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"&gt;Blazor&lt;/a&gt; for a number of years, you can see &lt;a href="https://alexhedley.github.io/blog/utility-blazor"&gt;Utility Blazor&lt;/a&gt; and &lt;a href="https://alexhedley.github.io/blog/dotnet-blazor-interactive"&gt;.NET Blazor Interactive&lt;/a&gt; etc for examples.&lt;/p&gt;
-&lt;p&gt;When the &lt;a href="https://www.fluentui-blazor.net/"&gt;FluentUI Blazor&lt;/a&gt; was released I started upgrading a few of the sites to use the new theme/components but hadn't spent much time as the originally functionality was working so wanted to spend my time adding new features, not refactoring existing.&lt;/p&gt;
-&lt;p&gt;Recently I've started a brand new &lt;a href="https://alexhedley.com/projects/"&gt;project&lt;/a&gt; and thought I'd make it from scratch. One piece of functionality I wanted was displaying code snippets with syntax hightlighting functionality. Previously I've used &lt;a href="https://github.com/syntaxhighlighter/syntaxhighlighter"&gt;SyntaxHighlighter&lt;/a&gt; from &lt;a href="https://github.com/alexgorbatchev"&gt;@Alex Gorbatchev&lt;/a&gt; but there are many others, one being &lt;a href="https://highlightjs.org/"&gt;Highlight.js&lt;/a&gt; (&lt;a href="https://github.com/highlightjs/highlight.js"&gt;GitHub Code&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;A &lt;a href="https://github.com/microsoft/fluentui-blazor/discussions"&gt;Discussion&lt;/a&gt; was raised on their &lt;a href="https://github.com/microsoft/fluentui-blazor/"&gt;GitHub repo&lt;/a&gt; page:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Does this library has any component to display code snippet? #3043
-&lt;a href="https://github.com/microsoft/fluentui-blazor/discussions/3043"&gt;https://github.com/microsoft/fluentui-blazor/discussions/3043&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Firstly you need to copy a number of the files to your project.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor/blob/dev/examples/Demo/Shared/Components/CodeSnippet.razor"&gt;CodeSnippet.razor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor/blob/dev/examples/Demo/Shared/Components/CodeSnippet.razor.cs"&gt;CodeSnippet.razor.cs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor/blob/dev/examples/Demo/Shared/Components/CodeSnippet.razor.css"&gt;CodeSnippet.razor.css&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor/blob/dev/examples/Demo/Shared/Components/CodeSnippet.razor.js"&gt;CodeSnippet.razor.js&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I have another project for &lt;em&gt;Components&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;You also need some custom js for the app, this needs to go into your 📂 &lt;code&gt;wwwroot/js/&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/examples/Demo/Shared/wwwroot/js/highlight-extensions.js"&gt;highlight-extensions.js&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In your &lt;code&gt;index.html&lt;/code&gt; add a reference to the &lt;code&gt;js&lt;/code&gt;. Makes sure to update the &lt;code&gt;[PROJECT_NAME]&lt;/code&gt; to the relevant value you have.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;    &amp;lt;!-- highlight --&amp;gt;
-    &amp;lt;script type="text/javascript" src="_content/[PROJECT_NAME]/js/highlight-extensions.js"&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For example they have the following in &lt;a href="https://github.com/microsoft/fluentui-blazor/blob/main/examples/Demo/Server/Pages/_Layout.cshtml#L39"&gt;_Layout.cshtml #L39&lt;/a&gt; or
-&lt;a href="https://github.com/microsoft/fluentui-blazor/blob/main/examples/Demo/Client/wwwroot/index.html#L59"&gt;index.html #L59&lt;/a&gt; depending on whether it's a &lt;em&gt;Server&lt;/em&gt; or &lt;em&gt;Client&lt;/em&gt; app.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;    &amp;lt;!-- highlight --&amp;gt;
-    &amp;lt;script type="text/javascript" src="_content/FluentUI.Demo.Shared/js/highlight-extensions.js"&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The next thing to update is the reference to the &lt;code&gt;.js&lt;/code&gt; file in the &lt;code&gt;.cs&lt;/code&gt; code file. Find your &lt;a href="https://github.com/microsoft/fluentui-blazor/blob/main/examples/Demo/Shared/Components/CodeSnippet.razor.cs#L35"&gt;CodeSnippet.razor.cs #L35&lt;/a&gt;. Update &lt;code&gt;FluentUI.Demo.Shared/Components/&lt;/code&gt; to the path where you have stored yours.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-cs"&gt;            _jsModule = await JSRuntime.InvokeAsync&amp;lt;IJSObjectReference&amp;gt;("import",
-                "./_content/FluentUI.Demo.Shared/Components/CodeSnippet.razor.js");
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next you just need to use the component!&lt;/p&gt;
-&lt;p&gt;Add the &lt;code&gt;CodeSnippet&lt;/code&gt; tag with the &lt;code&gt;Language&lt;/code&gt; you need. You can find a list of &lt;a href="https://highlightjs.readthedocs.io/en/latest/supported-languages.html"&gt;Supported Languages&lt;/a&gt; on their &lt;a href="https://highlightjs.readthedocs.io/en/latest/"&gt;docs&lt;/a&gt; site.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;CodeSnippet Language="razor"&amp;gt;
-@(@"
-...
-")
-&amp;lt;/CodeSnippet&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Example:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;CodeSnippet Language="razor"&amp;gt;
-    @(
-@"&amp;lt;main&amp;gt;
-    &amp;lt;nav&amp;gt;
-        &amp;lt;!-- --&amp;gt;
-    &amp;lt;/nav&amp;gt;
-    &amp;lt;div class=""content""&amp;gt;
-        &amp;lt;article id=""article""&amp;gt;
-            @Body
-        &amp;lt;/article&amp;gt;
-    &amp;lt;/div&amp;gt;
-    &amp;lt;FluentDialogProvider /&amp;gt;
-&amp;lt;/main&amp;gt;"
-    )
-&amp;lt;/CodeSnippet&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then you will have some beautiful code with a &lt;strong&gt;copy&lt;/strong&gt; button too.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blazor/highlight-example.png" alt="Highlight Example" title="Highlight Example"&gt;&lt;/p&gt;
-&lt;p&gt;You can even use their &lt;code&gt;StaticAssetsService&lt;/code&gt; to pull in &lt;code&gt;.txt&lt;/code&gt; file versions of the code.&lt;/p&gt;
-&lt;p&gt;Thanks to &lt;em&gt;@vnbaaij&lt;/em&gt;, &lt;em&gt;@dvoituron&lt;/em&gt; and others for help with my noob questions.&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"&gt;https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-9.0"&gt;https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-9.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/aspnetcore"&gt;https://github.com/dotnet/aspnetcore&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dotnet/blazor"&gt;https://github.com/dotnet/blazor&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor"&gt;https://github.com/microsoft/fluentui-blazor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/blazor"&gt;https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/blazor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/shows/open-at-microsoft/exploring-the-fluent-ui-blazor-components"&gt;https://learn.microsoft.com/en-us/shows/open-at-microsoft/exploring-the-fluent-ui-blazor-components&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.fluentui-blazor.net/"&gt;https://www.fluentui-blazor.net/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.nuget.org/profiles/fluentui-blazor"&gt;https://www.nuget.org/profiles/fluentui-blazor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/microsoft/fluentui-blazor/discussions/3043"&gt;https://github.com/microsoft/fluentui-blazor/discussions/3043&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Using a code snippet / syntax highlighter</summary>
 	</entry>
 </feed>
