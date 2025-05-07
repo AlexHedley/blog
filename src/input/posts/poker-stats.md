@@ -4,7 +4,7 @@ title: Poker - Stats
 tags:
   - poker
   - api
-  - .net
+  - dotnet
   - csharp
 author: alexhedley
 description: Displaying stats for the given game.
