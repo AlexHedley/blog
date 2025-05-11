@@ -30,8 +30,7 @@ When looking at the docs, I'd seen there was an option to add a code block (<kbd
 </span>
 ```
 
-I raised an issue asking the question [#79](
-https://github.com/Blazored/TextEditor/issues/79). The chief maintainer replied very quickly so I made a start.
+I raised an issue asking the question [#79](https://github.com/Blazored/TextEditor/issues/79). The chief maintainer replied very quickly so I made a start.
 
 In their API for [syntax](https://quilljs.com/docs/modules/syntax) it looked to be a simple addition to the `modules` object.
 
@@ -43,8 +42,14 @@ Just waiting for a NuGet key to be updated and there should be a new version ava
 
 See my docs on how to implement it for your sites:
 
+---
+
 <?# Markdown ?>
 <?!^ "https://raw.githubusercontent.com/Blazored/TextEditor/refs/heads/main/docs/SyntaxHighlighterExample.md" /?>
 <?#/ Markdown ?>
+
+---
+
+Original source:
 
 - https://github.com/Blazored/TextEditor/blob/main/docs/SyntaxHighlighterExample.md
