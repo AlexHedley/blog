@@ -5,8 +5,289 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2025</copyright>
-		<pubDate>Mon, 05 May 2025 14:00:33 GMT</pubDate>
-		<lastBuildDate>Mon, 05 May 2025 14:00:33 GMT</lastBuildDate>
+		<pubDate>Sun, 11 May 2025 18:27:41 GMT</pubDate>
+		<lastBuildDate>Sun, 11 May 2025 18:27:41 GMT</lastBuildDate>
+		<item>
+			<title>.NET Tool Example</title>
+			<link>https://alexhedley.github.io/blog/posts/dotnet-tool-example</link>
+			<description>Create a .NET tool using the .NET CLI</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/dotnet-tool-example</guid>
+			<pubDate>Sun, 11 May 2025 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- .NET Tool Example --&gt;
+&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
+&lt;p&gt;In this tutorial I will expand on the &lt;a href="https://learn.microsoft.com/en-gb/training/"&gt;Microsoft Learn&lt;/a&gt; tutorials site. They give a great starting point for the minimum settings you need but I'll add a couple more I've found useful. See the 🔗 links at the end if you want to run through them.&lt;/p&gt;
+&lt;p&gt;Once you have created a new .NET exe, aka Console App, you can start updating the necessary config.&lt;/p&gt;
+&lt;p&gt;On the &lt;code&gt;.csproj&lt;/code&gt; click &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Enter&lt;/kbd&gt; or &lt;em&gt;Right-Click&lt;/em&gt; &lt;strong&gt;Properties&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Scroll down to &lt;strong&gt;Package&lt;/strong&gt; and complete the properties you require.
+This will update the underlying &lt;code&gt;.csproj&lt;/code&gt; or you could change them there directly but be careful as some only allow certain values.&lt;/p&gt;
+&lt;p&gt;In the original Tutorial they suggest the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;&amp;lt;PackAsTool&amp;gt;true&amp;lt;/PackAsTool&amp;gt;
+&amp;lt;ToolCommandName&amp;gt;botsay&amp;lt;/ToolCommandName&amp;gt;
+&amp;lt;PackageOutputPath&amp;gt;./nupkg&amp;lt;/PackageOutputPath&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Which is the minium you need, but I like to add a few more i.e. the ones below, to add an icon, tags, description etc to make it easier for your consumers and yourself to know what the app does.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;General&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Property&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Generate NuGet package on build&lt;/td&gt;
+&lt;td&gt;Produce a package file during build operations.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;GeneratePackageOnBuild&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Package ID&lt;/td&gt;
+&lt;td&gt;The case-insensitive package identifier, which must be unique across nuget.org or whatever gallery the package resides in. IDs may not contain spaces or characters that are not valid for a URL, and generally follow .NET namespace rules.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageId&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Title&lt;/td&gt;
+&lt;td&gt;A human-friendly title of the package, typically used in Ul displays as on nuget.org and the Package Manager in Visual Studio.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Title&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Package Version&lt;/td&gt;
+&lt;td&gt;The version of the package, following the major.minor.patch pattern. Version numbers may include a pre-release suffix.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Version&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Authors&lt;/td&gt;
+&lt;td&gt;A comma-separated list of packages authors, matching the profile names on nuget.org. These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Authors&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Company&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Company&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Product&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Description&lt;/td&gt;
+&lt;td&gt;A description of the package for UI display.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Description&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Copyright&lt;/td&gt;
+&lt;td&gt;Copyright details for the package.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Copyright&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Project URL&lt;/td&gt;
+&lt;td&gt;A URL for the package's home page, often shown in UI displays as well as nuget.org.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageProjectUrl&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Icon&lt;/td&gt;
+&lt;td&gt;The icon image for the package. Image file size is limited to 1 MB. Supported file formats include JPEG and PNG. An image resolution of 128x128 is recommended.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageIcon&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;README&lt;/td&gt;
+&lt;td&gt;The README document for the package. Must be a Markdown (.md) file.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageIcon&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Repository URL&lt;/td&gt;
+&lt;td&gt;Specifies the URL for the repository where the source code for the package resides and/or from which it's being built. For linking to the project page, use the 'Project URL' field, instead.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;RepositoryUrl&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Repository type&lt;/td&gt;
+&lt;td&gt;Specifies the type of the repository. Default is 'git'.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;RepositoryType&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tags&lt;/td&gt;
+&lt;td&gt;A semicolon-delimited list of tags and keywords that describe the package and aid discoverability of packages through search and filtering.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageTags&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Release notes&lt;/td&gt;
+&lt;td&gt;A description of the changes made in this release of the package, often used in UI like the Updates tab of the Visual Studio Package Manager in place of the package description.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageReleaseNotes&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pack as a .NET tool&lt;/td&gt;
+&lt;td&gt;Packs this project as a special package that contains a console application that may be installed via the "dotnet tool" command.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackAsTool&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NET tool command name&lt;/td&gt;
+&lt;td&gt;The command name via which the .NET tool will be invoked on the command line.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ToolCommandName&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Package Output Path&lt;/td&gt;
+&lt;td&gt;Determines the output path in which the package will be dropped.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageOutputPath&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Assembly neutral language&lt;/td&gt;
+&lt;td&gt;(None)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;NeutralLanguage&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Assembly version&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;AssemblyVersion&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;File version&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;FileVersion&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;License&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Property&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Package License&lt;/td&gt;
+&lt;td&gt;Specify a license for the project's package.&lt;/td&gt;
+&lt;td&gt;None&lt;br&gt;SPDX License Expression&lt;br&gt;Embedded File&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;License file&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageLicenseFile&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Require license acceptance&lt;/td&gt;
+&lt;td&gt;Prompt the user to accept the license when installing this package&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageRequireLicenseAcceptance&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;License expression&lt;/td&gt;
+&lt;td&gt;An SPDX license expression, often shown in UIs like nuget.org&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PackageLicenseExpression&lt;/code&gt; &lt;a href="https://spdx.org/licenses/"&gt;link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Symbols&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Property&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Produce a symbol package&lt;/td&gt;
+&lt;td&gt;Create an additional symbol package when the project is packed.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;IncludeSymbols&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Symbol package format&lt;/td&gt;
+&lt;td&gt;Specifies the format of the symbols package.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SymbolPackageFormat&lt;/code&gt; (symbols.nupkg/snupkg)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/tool/nuget-package-properties-1.png" alt=".NET" title=".NET"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/dotNET/tool/nuget-package-properties-2.png" alt=".NET" title=".NET"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/dotNET/tool/nuget-package-properties-3.png" alt=".NET" title=".NET"&gt;&lt;/p&gt;
+&lt;p&gt;This translates to the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;&amp;lt;Project Sdk="Microsoft.NET.Sdk"&amp;gt;
+
+  &amp;lt;PropertyGroup&amp;gt;
+    &amp;lt;OutputType&amp;gt;Exe&amp;lt;/OutputType&amp;gt;
+    &amp;lt;TargetFramework&amp;gt;net9.0&amp;lt;/TargetFramework&amp;gt;
+    &amp;lt;ImplicitUsings&amp;gt;enable&amp;lt;/ImplicitUsings&amp;gt;
+    &amp;lt;Nullable&amp;gt;enable&amp;lt;/Nullable&amp;gt;
+
+    &amp;lt;!-- package properties --&amp;gt;
+    &amp;lt;PackageId&amp;gt;alexhedley.botsay&amp;lt;/PackageId&amp;gt;
+    &amp;lt;Version&amp;gt;1.0.0&amp;lt;/Version&amp;gt;
+    &amp;lt;Authors&amp;gt;Alex Hedley&amp;lt;/Authors&amp;gt;
+    &amp;lt;Company&amp;gt;Alex Hedley&amp;lt;/Company&amp;gt;
+    &amp;lt;Product&amp;gt;Microsoft BotSay&amp;lt;/Product&amp;gt;
+
+    &amp;lt;Title&amp;gt;Microsoft Bot Say&amp;lt;/Title&amp;gt;
+    &amp;lt;PackageTags&amp;gt;Microsoft;Bot;Say&amp;lt;/PackageTags&amp;gt;
+    &amp;lt;Description&amp;gt;This tool is a console application that takes a message as input and displays the message along with lines of text that create the image of a robot.&amp;lt;/Description&amp;gt;
+    &amp;lt;PackageIcon&amp;gt;icon.png&amp;lt;/PackageIcon&amp;gt;
+    &amp;lt;PackageReadmeFile&amp;gt;README.md&amp;lt;/PackageReadmeFile&amp;gt;
+    &amp;lt;PackageRequireLicenseAcceptance&amp;gt;False&amp;lt;/PackageRequireLicenseAcceptance&amp;gt;
+    &amp;lt;PackageLicenseFile&amp;gt;LICENSE&amp;lt;/PackageLicenseFile&amp;gt;
+    &amp;lt;!-- &amp;lt;PackageLicenseExpression&amp;gt;MIT&amp;lt;/PackageLicenseExpression&amp;gt; --&amp;gt;
+    &amp;lt;PackageReleaseNotes&amp;gt;Release Notes are the following...&amp;lt;/PackageReleaseNotes&amp;gt;
+    &amp;lt;RepositoryType&amp;gt;git&amp;lt;/RepositoryType&amp;gt;
+    &amp;lt;RepositoryUrl&amp;gt;https://github.com/AlexHedley/dotnet-tool-example&amp;lt;/RepositoryUrl&amp;gt;
+    &amp;lt;PackageProjectUrl&amp;gt;https://github.com/AlexHedley/dotnet-tool-example&amp;lt;/PackageProjectUrl&amp;gt;
+    &amp;lt;Copyright&amp;gt;© 2025&amp;lt;/Copyright&amp;gt;
+    
+    &amp;lt;!-- Tool settings --&amp;gt;
+    &amp;lt;PackAsTool&amp;gt;true&amp;lt;/PackAsTool&amp;gt;
+    &amp;lt;ToolCommandName&amp;gt;botsay&amp;lt;/ToolCommandName&amp;gt;
+    &amp;lt;PackageOutputPath&amp;gt;./nupkg&amp;lt;/PackageOutputPath&amp;gt;
+    &amp;lt;!-- &amp;lt;GeneratePackageOnBuild&amp;gt;true&amp;lt;/GeneratePackageOnBuild&amp;gt; --&amp;gt;
+  &amp;lt;/PropertyGroup&amp;gt;
+
+  &amp;lt;ItemGroup&amp;gt;
+    &amp;lt;None Include="..\..\LICENSE" Pack="true" PackagePath="\" /&amp;gt;
+    &amp;lt;None Include="images\icon.png" Pack="true" PackagePath="" /&amp;gt;
+    &amp;lt;None Include="..\assets\README.md" Pack="true" PackagePath="" /&amp;gt;
+  &amp;lt;/ItemGroup&amp;gt;
+
+&amp;lt;/Project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build the app then open the &lt;code&gt;.nupkg&lt;/code&gt; it in the &lt;strong&gt;NuGet Package Explorer&lt;/strong&gt; to confirm if your properties have been set correctly.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/tool/NuGet_Package_Explorer.png" alt="NuGet Package Explorer" title="NuGet Package Explorer"&gt;&lt;/p&gt;
+&lt;p&gt;If you don't have the app installed you can find it on GitHub or the Microsoft Store.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/NuGetPackageExplorer/NuGetPackageExplorer"&gt;https://github.com/NuGetPackageExplorer/NuGetPackageExplorer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://apps.microsoft.com/detail/9wzdncrdmdm3"&gt;https://apps.microsoft.com/detail/9wzdncrdmdm3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;p&gt;You can download the example I built on &lt;em&gt;GitHub&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnet-tool-example"&gt;https://github.com/AlexHedley/dotnet-tool-example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Release: &lt;a href="https://github.com/AlexHedley/dotnet-tool-example/releases/tag/1.0.0"&gt;https://github.com/AlexHedley/dotnet-tool-example/releases/tag/1.0.0&lt;/a&gt;&lt;br&gt;
+GitHub nuget: &lt;a href="https://github.com/AlexHedley/dotnet-tool-example/pkgs/nuget/alexhedley.botsay"&gt;https://github.com/AlexHedley/dotnet-tool-example/pkgs/nuget/alexhedley.botsay&lt;/a&gt;&lt;br&gt;
+nuget: &lt;a href="https://www.nuget.org/packages/alexhedley.botsay/"&gt;https://www.nuget.org/packages/alexhedley.botsay/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tutorial: Create a .NET tool using the .NET CLI
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create"&gt;https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tutorial: Install and use a .NET global tool using the .NET CLI
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-use"&gt;https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tutorial: Install and use a .NET local tool using the .NET CLI
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/core/tools/local-tools-how-to-use"&gt;https://learn.microsoft.com/en-us/dotnet/core/tools/local-tools-how-to-use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>.NET Meetup Newcastle - April 2025</title>
 			<link>https://alexhedley.github.io/blog/posts/dotnet-newcastle-april-2025</link>
@@ -367,74 +648,6 @@ We will be using &lt;strong&gt;Zoom Meetings&lt;/strong&gt; for video, and &lt;s
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.nuget.org/packages/Statiq.Plugins/"&gt;https://www.nuget.org/packages/Statiq.Plugins/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Blazored - Text Editor</title>
-			<link>https://alexhedley.github.io/blog/posts/blazored-texteditor</link>
-			<description>Adding Syntax Highlighting</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/blazor/blazored/HTMLExample.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/blazored-texteditor</guid>
-			<pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- Blazored - Text Editor --&gt;
-&lt;p&gt;Today I added &lt;em&gt;Syntax Highlighting&lt;/em&gt; to &lt;strong&gt;Blazored TextEditor&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blazor/blazored/SyntaxHighlighterExample.png" alt="Syntax Highlighter Example" title="Syntax Highlighter Example"&gt;&lt;/p&gt;
-&lt;p&gt;I'd been trying out some of the &lt;strong&gt;Blazored&lt;/strong&gt; components in a recent app and needed a WYSIWYG editor, luckily they had one using &lt;a href="https://quilljs.com/"&gt;QuillJS&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;When looking at the docs, I'd seen there was an option to add a code block (&lt;kbd&gt;&amp;lt;/&amp;gt;&lt;/kbd&gt;) to the editor. But this didn't provide any Syntax Highlighting via the current Blazor config.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;span class="ql-formats"&amp;gt;
-    &amp;lt;button class="ql-code-block"&amp;gt;&amp;lt;/button&amp;gt;
-&amp;lt;/span&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I raised an issue asking the question &lt;a href="https://github.com/Blazored/TextEditor/issues/79"&gt;#79&lt;/a&gt;. The chief maintainer replied very quickly so I made a start.&lt;/p&gt;
-&lt;p&gt;In their API for &lt;a href="https://quilljs.com/docs/modules/syntax"&gt;syntax&lt;/a&gt; it looked to be a simple addition to the &lt;code&gt;modules&lt;/code&gt; object.&lt;/p&gt;
-&lt;p&gt;I took a look at how it was being implemented in C# and started working on a new branch. Not long after I had made a PR and it was approved and merged.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Blazored/TextEditor/pull/80"&gt;https://github.com/Blazored/TextEditor/pull/80&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Just waiting for a NuGet key to be updated and there should be a new version available soon.&lt;/p&gt;
-&lt;p&gt;See my docs on how to implement it for your sites:&lt;/p&gt;
-&lt;!--?# Markdown ?--&gt;
-&lt;h1 id="syntax-highlighter-example"&gt;Syntax Highlighter Example&lt;/h1&gt;
-&lt;p&gt;See &lt;a href="https://quilljs.com/docs/modules/syntax"&gt;Syntax Highlighter Module&lt;/a&gt; from the &lt;em&gt;QuillJS&lt;/em&gt; docs for more information.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/SyntaxHighlighterExample.png" alt="Syntax Highlighter Example" title="Syntax Highlighter Example"&gt;&lt;/p&gt;
-&lt;p&gt;To turn on &lt;em&gt;Syntax Highlighting&lt;/em&gt; in your &lt;strong&gt;Blazored Text Editor&lt;/strong&gt; just pass the property &lt;code&gt;Syntax="true"&lt;/code&gt; and add the necessary library files (css/js).&lt;/p&gt;
-&lt;p&gt;Then add the &lt;code&gt;ql-code-block&lt;/code&gt; to your &lt;em&gt;Toolbar&lt;/em&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;BlazoredTextEditor Syntax="true"&amp;gt;
-    &amp;lt;ToolbarContent&amp;gt;
-        ...
-        &amp;lt;span class="ql-formats"&amp;gt;
-            &amp;lt;button class="ql-code-block"&amp;gt;&amp;lt;/button&amp;gt;
-        &amp;lt;/span&amp;gt;
-    &amp;lt;/ToolbarContent&amp;gt;
-    &amp;lt;EditorContent&amp;gt;
-        ...
-    &amp;lt;/EditorContent&amp;gt;
-&amp;lt;/BlazoredTextEditor&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="blazor-wasm"&gt;Blazor WASM&lt;/h2&gt;
-&lt;p&gt;Add to the &lt;code&gt;index.html&lt;/code&gt; both CSS and JS for a syntax highlighter, for these examples I've chosen &lt;a href="https://highlightjs.org/"&gt;highlight.js&lt;/a&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;head&amp;gt;
-    ...
-    &amp;lt;!-- Include your favorite highlight.js stylesheet --&amp;gt;
-    &amp;lt;link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" rel="stylesheet"&amp;gt;
-    ...
-&amp;lt;/head&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Make sure to add the &lt;code&gt;js&lt;/code&gt; before your Quill js library or you will get an error.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;body&amp;gt;
-    &amp;lt;!-- Include the highlight.js library --&amp;gt;
-    &amp;lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"&amp;gt;&amp;lt;/script&amp;gt;
-    &amp;lt;!-- Quill library --&amp;gt;
-&amp;lt;/body&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="blazor-server"&gt;Blazor Server&lt;/h2&gt;
-&lt;p&gt;Repeat the above but instead of the &lt;code&gt;index.html&lt;/code&gt; you will want to add / update your &lt;code&gt;_Host.cshtml&lt;/code&gt;.&lt;/p&gt;
-&lt;!--?#/ Markdown ?--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Blazored/TextEditor/blob/main/docs/SyntaxHighlighterExample.md"&gt;https://github.com/Blazored/TextEditor/blob/main/docs/SyntaxHighlighterExample.md&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
