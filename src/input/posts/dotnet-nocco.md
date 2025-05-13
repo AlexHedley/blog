@@ -5,9 +5,9 @@ description: Nocco is a quick-and-dirty, literate-programming-style documentatio
 tags:
   - programming
   - dotnet
-  - csharp..
+  - csharp
 author: AlexHedley
-published: 2025-05-11
+published: 2025-05-12
 image: /posts/images/dotNET/dotNET.png
 imageattribution: https://neosmart.net/blog/new-dot-net-standard-framework-logo/
 ---
@@ -49,7 +49,9 @@ I made the project use the SDK: `Microsoft.NET.Sdk.Razor` then added the `Micros
 
 Next the `GenerateHtml()` method was where I got to work updating. Following the above tutorial was very quick. I renamed the original `Nocco.cshtml` to `Webpage.razor` and added in the corresponding `@code {}` and `[Parameter]`s. This now allows me to pass a `Dictionary` of KVPs matching the Parameter names with the corresponding data types. It didn't like passing the `Func<>` directly as an `object?` so I made it it's own variable and passed that in.
 
-<?# Include "https://github.com/AlexHedley/nocco/blob/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs#L116-L153" /?>
+Source: https://github.com/AlexHedley/nocco/blob/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs#L116-L153
+
+<!-- https://raw.githubusercontent.com/AlexHedley/nocco/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs -->
 
 <details>
 <summary>GenerateHtml</summary>
