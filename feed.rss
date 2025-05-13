@@ -5,8 +5,177 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2025</copyright>
-		<pubDate>Mon, 12 May 2025 17:44:24 GMT</pubDate>
-		<lastBuildDate>Mon, 12 May 2025 17:44:24 GMT</lastBuildDate>
+		<pubDate>Tue, 13 May 2025 18:02:58 GMT</pubDate>
+		<lastBuildDate>Tue, 13 May 2025 18:02:58 GMT</lastBuildDate>
+		<item>
+			<title>Deploying .NET nocco using GitHub Action</title>
+			<link>https://alexhedley.github.io/blog/posts/dotnet-nocco-github-actions</link>
+			<description>&lt;p&gt;In my previous blog post &lt;a href="https://alexhedley.github.io/blog/dotnet-nocco"&gt;.NET nocco&lt;/a&gt; I explained upgrading an old version of &lt;strong&gt;nocco&lt;/strong&gt; to the latest, and making it a &lt;a href="https://alexhedley.github.io/blog/dotnet-tool-example"&gt;.NET tool&lt;/a&gt;. Now that I have both of these setup and configured I can use &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; &lt;a href="https://pages.github.com/"&gt;Pages&lt;/a&gt; to deploy my code.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/dotnet-nocco-github-actions</guid>
+			<pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- .NET nocco using GitHub Action --&gt;
+&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
+&lt;p&gt;In my previous blog post &lt;a href="https://alexhedley.github.io/blog/dotnet-nocco"&gt;.NET nocco&lt;/a&gt; I explained upgrading an old version of &lt;strong&gt;nocco&lt;/strong&gt; to the latest, and making it a &lt;a href="https://alexhedley.github.io/blog/dotnet-tool-example"&gt;.NET tool&lt;/a&gt;. Now that I have both of these setup and configured I can use &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; &lt;a href="https://pages.github.com/"&gt;Pages&lt;/a&gt; to deploy my code.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yaml"&gt;jobs:
+    steps:
+     - name: ⬇️ Install nocco
+       run: dotnet tool install --global Nocco --version 0.2.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It needs to be &lt;strong&gt;N&lt;/strong&gt;occo with a capital N as I forgot to add &lt;code&gt;&amp;lt;ToolCommandName&amp;gt;nocco&amp;lt;/ToolCommandName&amp;gt;&lt;/code&gt; to the &lt;code&gt;.csproj&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Once that is installed you can navigate to your source folder then run the tool.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yaml"&gt;    - name: 📄 Generate Docs
+      run: |
+        cd src
+        Nocco *.cs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the files have been generated you can save them to a &lt;code&gt;gh-pages&lt;/code&gt; branch and deploy them as a static site.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-yaml"&gt;    - name: ⬇️ Commit docs to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4.7.3
+      with:
+        branch: gh-pages
+        folder: src/docs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Others are available&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/JamesIves/github-pages-deploy-action"&gt;https://github.com/JamesIves/github-pages-deploy-action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/actions/deploy-pages"&gt;https://github.com/actions/deploy-pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/peaceiris/actions-gh-pages"&gt;https://github.com/peaceiris/actions-gh-pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As there isn't an index.html page generated if you go to the root page you will get an error. &lt;a href="https://alexhedley.github.io/nocco-example/"&gt;https://alexhedley.github.io/nocco-example/&lt;/a&gt;. Instead go directly to one of the files: &lt;a href="https://alexhedley.github.io/nocco-example/nocco.html"&gt;https://alexhedley.github.io/nocco-example/nocco.html&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If there were multiple files a picker is generated and added to the top right of the screen where you can switch between all the files.&lt;/p&gt;
+&lt;p&gt;See the yaml source for full steps.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco-example/blob/main/.github/workflows/generate-docs-and-deploy.yml"&gt;https://github.com/AlexHedley/nocco-example/blob/main/.github/workflows/generate-docs-and-deploy.yml&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/AlexHedley/nocco-example/refs/heads/main/.github/workflows/generate-docs-and-deploy.yml"&gt;https://raw.githubusercontent.com/AlexHedley/nocco-example/refs/heads/main/.github/workflows/generate-docs-and-deploy.yml&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco-example"&gt;https://github.com/AlexHedley/nocco-example&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco"&gt;https://github.com/AlexHedley/nocco&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dontangg/nocco"&gt;https://github.com/dontangg/nocco&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://donwilson.net/nocco/"&gt;http://donwilson.net/nocco/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ashkenas.com/docco/"&gt;https://ashkenas.com/docco/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>.NET nocco</title>
+			<link>https://alexhedley.github.io/blog/posts/dotnet-nocco</link>
+			<description>Nocco is a quick-and-dirty, literate-programming-style documentation generator</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/dotnet-nocco</guid>
+			<pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- .NET nocco --&gt;
+&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
+&lt;p&gt;In this post I will talk through how I updated Don Wilson's (&lt;a href="https://github.com/dontangg"&gt;@dontangg&lt;/a&gt;) &lt;strong&gt;nocco&lt;/strong&gt; from .NET Framework v4.0 to .NET (Core) v9.&lt;/p&gt;
+&lt;p&gt;So what is nocco? It's a .NET port of &lt;a href="https://ashkenas.com/docco/"&gt;Docco&lt;/a&gt;. What is Docco?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docco is a quick-and-dirty documentation generator, written in &lt;a href="https://coffeescript.org/#literate"&gt;Literate CoffeeScript&lt;/a&gt;. It produces an HTML document that displays your comments intermingled with your code. All prose is passed through &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;, and code is passed through &lt;a href="http://highlightjs.org/"&gt;Highlight.js&lt;/a&gt; syntax highlighting. This page is the result of running Docco against its own &lt;a href="https://github.com/jashkenas/docco/blob/master/docco.litcoffee"&gt;source file&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Nocco is a quick-and-dirty, literate-programming-style&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You can see an original output of &lt;code&gt;nocco.cs&lt;/code&gt; on &lt;a href="http://donwilson.net/nocco/"&gt;http://donwilson.net/nocco/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/nocco/nocco.cs.html.png" alt="nocco" title="nocco"&gt;&lt;/p&gt;
+&lt;p&gt;What does it do? The original takes a list of files, these could be C#, VB.NET, SQL or JS and produces a side by side view of code comments and their respective code.&lt;/p&gt;
+&lt;p&gt;From the &lt;code&gt;nocco.cs&lt;/code&gt; page at the Razor section their notes are the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Setup the Razor templating engine so that we can quickly pass the data in and generate HTML.
+The file &lt;code&gt;Resources\Nocco.cshtml&lt;/code&gt; is read and compiled into a new dll with a type that extends the &lt;code&gt;TemplateBase&lt;/code&gt; class. This new assembly is loaded so that we can create an instance and pass data into it and generate the HTML.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This file was then executed to produce the output, along with the html documentation and syntax highlighted code, you can read more about it on the linked page or in the code itself.&lt;/p&gt;
+&lt;p&gt;I've got some experience with building DLLs using &lt;code&gt;Microsoft.CodeAnalysis.CSharp&lt;/code&gt; when I built &lt;a href="https://github.com/alex-hedley/BlazorInteractive"&gt;BlazorInteractive&lt;/a&gt; but this has changed a little from the original &lt;code&gt;CSharpCodeProvider&lt;/code&gt; used here.&lt;/p&gt;
+&lt;p&gt;For the first pass I thought it might be easier to not have the code be compiled in the same way, instead I'll just build a Razor page, like before, and then pass the data I needed. Luckily &lt;a href="https://robanderson.dev/"&gt;Rob Anderson&lt;/a&gt; had told me about a method he'd used to do this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Render Razor components outside of ASP.NET Core
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-components-outside-of-aspnetcore?view=aspnetcore-9.0"&gt;https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-components-outside-of-aspnetcore?view=aspnetcore-9.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.web.htmlrenderer?view=aspnetcore-9.0"&gt;&lt;code&gt;HtmlRenderer&lt;/code&gt;&lt;/a&gt; to the rescue.&lt;/p&gt;
+&lt;p&gt;I made the project use the SDK: &lt;code&gt;Microsoft.NET.Sdk.Razor&lt;/code&gt; then added the &lt;code&gt;Microsoft.AspNetCore.Components.Web&lt;/code&gt; library.&lt;/p&gt;
+&lt;p&gt;Next the &lt;code&gt;GenerateHtml()&lt;/code&gt; method was where I got to work updating. Following the above tutorial was very quick. I renamed the original &lt;code&gt;Nocco.cshtml&lt;/code&gt; to &lt;code&gt;Webpage.razor&lt;/code&gt; and added in the corresponding &lt;code&gt;@code {}&lt;/code&gt; and &lt;code&gt;[Parameter]&lt;/code&gt;s. This now allows me to pass a &lt;code&gt;Dictionary&lt;/code&gt; of KVPs matching the Parameter names with the corresponding data types. It didn't like passing the &lt;code&gt;Func&amp;lt;&amp;gt;&lt;/code&gt; directly as an &lt;code&gt;object?&lt;/code&gt; so I made it it's own variable and passed that in.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href="https://github.com/AlexHedley/nocco/blob/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs#L116-L153"&gt;https://github.com/AlexHedley/nocco/blob/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs#L116-L153&lt;/a&gt;&lt;/p&gt;
+&lt;!-- https://raw.githubusercontent.com/AlexHedley/nocco/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs --&gt;
+&lt;details&gt;
+&lt;summary&gt;GenerateHtml&lt;/summary&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;private static async void GenerateHtml(string source, List&amp;lt;Section&amp;gt; sections)
+{
+    int depth;
+    var destination = GetDestination(source, out depth);
+        
+    string pathToRoot = string.Concat(Enumerable.Repeat(".." + Path.DirectorySeparatorChar, depth));
+
+    IServiceCollection services = new ServiceCollection();
+    services.AddLogging();
+    IServiceProvider serviceProvider = services.BuildServiceProvider();
+    ILoggerFactory loggerFactory = serviceProvider.GetRequiredService&amp;lt;ILoggerFactory&amp;gt;();
+    await using var htmlRenderer = new HtmlRenderer(serviceProvider, loggerFactory);
+
+    var html = await htmlRenderer.Dispatcher.InvokeAsync(async () =&amp;gt;
+    {
+        Func&amp;lt;string, string&amp;gt; getSourcePath = s =&amp;gt;
+            Path.Combine(pathToRoot, Path.ChangeExtension(s.ToLower(), ".html").Substring(2)).Replace('\\', '/');
+        var dictionary = new Dictionary&amp;lt;string, object?&amp;gt;
+        {
+            { "Title", Path.GetFileName(source) },
+            { "PathToCss", Path.Combine(pathToRoot, "nocco.css").Replace('\\', '/') },
+            { "PathToJs", Path.Combine(pathToRoot, "prettify.js").Replace('\\', '/') },
+            { "GetSourcePath", getSourcePath },
+            { "Sections", sections },
+            { "Sources", _files },
+        };
+
+        var parameters = ParameterView.FromDictionary(dictionary);
+        var output = await htmlRenderer.RenderComponentAsync&amp;lt;Webpage&amp;gt;(parameters);
+
+        return output.ToHtmlString();
+    });
+    
+    File.WriteAllText(destination, html);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;p&gt;Build the app.&lt;/p&gt;
+&lt;p&gt;Navigate to the folder with your source files in&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;nocco *.cs&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Open the newly created &lt;code&gt;docs&lt;/code&gt; folder and open any of the matching &lt;code&gt;*.html&lt;/code&gt; files.&lt;/p&gt;
+&lt;h3 id="dependencies"&gt;Dependencies&lt;/h3&gt;
+&lt;p&gt;The original also used &lt;a href="https://www.nuget.org/packages/MarkdownSharp/1.13.0"&gt;MarkdownSharp&lt;/a&gt; &lt;em&gt;v1.13.0.0&lt;/em&gt;, I updated this to &lt;a href="https://www.nuget.org/packages/MarkdownSharpCore"&gt;MarkdownSharpCore&lt;/a&gt; &lt;em&gt;v1.2.0&lt;/em&gt; just to make the upgrade easier, I'm contemplating swapping to &lt;a href="https://www.nuget.org/packages/MarkDig"&gt;Markdig&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco"&gt;https://github.com/AlexHedley/nocco&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco-example"&gt;https://github.com/AlexHedley/nocco-example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/dontangg/nocco"&gt;https://github.com/dontangg/nocco&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://donwilson.net/nocco/"&gt;http://donwilson.net/nocco/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ashkenas.com/docco/"&gt;https://ashkenas.com/docco/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>.NET Tool Example</title>
 			<link>https://alexhedley.github.io/blog/posts/dotnet-tool-example</link>
@@ -284,108 +453,6 @@ nuget: &lt;a href="https://www.nuget.org/packages/alexhedley.botsay/"&gt;https:/
 &lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/core/tools/local-tools-how-to-use"&gt;https://learn.microsoft.com/en-us/dotnet/core/tools/local-tools-how-to-use&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>.NET nocco</title>
-			<link>https://alexhedley.github.io/blog/posts/dotnet-nocco</link>
-			<description>Nocco is a quick-and-dirty, literate-programming-style documentation generator</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/dotnet-nocco</guid>
-			<pubDate>Sun, 11 May 2025 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- .NET nocco --&gt;
-&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
-&lt;p&gt;In this post I will talk through how I updated Don Wilson's (&lt;a href="https://github.com/dontangg"&gt;@dontangg&lt;/a&gt;) &lt;strong&gt;nocco&lt;/strong&gt; from .NET Framework v4.0 to .NET (Core) v9.&lt;/p&gt;
-&lt;p&gt;So what is nocco? It's a .NET port of &lt;a href="https://ashkenas.com/docco/"&gt;Docco&lt;/a&gt;. What is Docco?&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Docco is a quick-and-dirty documentation generator, written in &lt;a href="https://coffeescript.org/#literate"&gt;Literate CoffeeScript&lt;/a&gt;. It produces an HTML document that displays your comments intermingled with your code. All prose is passed through &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;, and code is passed through &lt;a href="http://highlightjs.org/"&gt;Highlight.js&lt;/a&gt; syntax highlighting. This page is the result of running Docco against its own &lt;a href="https://github.com/jashkenas/docco/blob/master/docco.litcoffee"&gt;source file&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nocco is a quick-and-dirty, literate-programming-style&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You can see an original output of &lt;code&gt;nocco.cs&lt;/code&gt; on &lt;a href="http://donwilson.net/nocco/"&gt;http://donwilson.net/nocco/&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/nocco/nocco.cs.html.png" alt="nocco" title="nocco"&gt;&lt;/p&gt;
-&lt;p&gt;What does it do? The original takes a list of files, these could be C#, VB.NET, SQL or JS and produces a side by side view of code comments and their respective code.&lt;/p&gt;
-&lt;p&gt;From the &lt;code&gt;nocco.cs&lt;/code&gt; page at the Razor section their notes are the following:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Setup the Razor templating engine so that we can quickly pass the data in and generate HTML.
-The file &lt;code&gt;Resources\Nocco.cshtml&lt;/code&gt; is read and compiled into a new dll with a type that extends the &lt;code&gt;TemplateBase&lt;/code&gt; class. This new assembly is loaded so that we can create an instance and pass data into it and generate the HTML.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This file was then executed to produce the output, along with the html documentation and syntax highlighted code, you can read more about it on the linked page or in the code itself.&lt;/p&gt;
-&lt;p&gt;I've got some experience with building DLLs using &lt;code&gt;Microsoft.CodeAnalysis.CSharp&lt;/code&gt; when I built &lt;a href="https://github.com/alex-hedley/BlazorInteractive"&gt;BlazorInteractive&lt;/a&gt; but this has changed a little from the original &lt;code&gt;CSharpCodeProvider&lt;/code&gt; used here.&lt;/p&gt;
-&lt;p&gt;For the first pass I thought it might be easier to not have the code be compiled in the same way, instead I'll just build a Razor page, like before, and then pass the data I needed. Luckily &lt;a href="https://robanderson.dev/"&gt;Rob Anderson&lt;/a&gt; had told me about a method he'd used to do this:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Render Razor components outside of ASP.NET Core
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-components-outside-of-aspnetcore?view=aspnetcore-9.0"&gt;https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-components-outside-of-aspnetcore?view=aspnetcore-9.0&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.web.htmlrenderer?view=aspnetcore-9.0"&gt;&lt;code&gt;HtmlRenderer&lt;/code&gt;&lt;/a&gt; to the rescue.&lt;/p&gt;
-&lt;p&gt;I made the project use the SDK: &lt;code&gt;Microsoft.NET.Sdk.Razor&lt;/code&gt; then added the &lt;code&gt;Microsoft.AspNetCore.Components.Web&lt;/code&gt; library.&lt;/p&gt;
-&lt;p&gt;Next the &lt;code&gt;GenerateHtml()&lt;/code&gt; method was where I got to work updating. Following the above tutorial was very quick. I renamed the original &lt;code&gt;Nocco.cshtml&lt;/code&gt; to &lt;code&gt;Webpage.razor&lt;/code&gt; and added in the corresponding &lt;code&gt;@code {}&lt;/code&gt; and &lt;code&gt;[Parameter]&lt;/code&gt;s. This now allows me to pass a &lt;code&gt;Dictionary&lt;/code&gt; of KVPs matching the Parameter names with the corresponding data types. It didn't like passing the &lt;code&gt;Func&amp;lt;&amp;gt;&lt;/code&gt; directly as an &lt;code&gt;object?&lt;/code&gt; so I made it it's own variable and passed that in.&lt;/p&gt;
-&lt;!--?# Include "https://github.com/AlexHedley/nocco/blob/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs#L116-L153" /?--&gt;
-&lt;details&gt;
-&lt;summary&gt;GenerateHtml&lt;/summary&gt;
-&lt;pre&gt;&lt;code class="language-cs"&gt;private static async void GenerateHtml(string source, List&amp;lt;Section&amp;gt; sections)
-{
-    int depth;
-    var destination = GetDestination(source, out depth);
-        
-    string pathToRoot = string.Concat(Enumerable.Repeat(".." + Path.DirectorySeparatorChar, depth));
-
-    IServiceCollection services = new ServiceCollection();
-    services.AddLogging();
-    IServiceProvider serviceProvider = services.BuildServiceProvider();
-    ILoggerFactory loggerFactory = serviceProvider.GetRequiredService&amp;lt;ILoggerFactory&amp;gt;();
-    await using var htmlRenderer = new HtmlRenderer(serviceProvider, loggerFactory);
-
-    var html = await htmlRenderer.Dispatcher.InvokeAsync(async () =&amp;gt;
-    {
-        Func&amp;lt;string, string&amp;gt; getSourcePath = s =&amp;gt;
-            Path.Combine(pathToRoot, Path.ChangeExtension(s.ToLower(), ".html").Substring(2)).Replace('\\', '/');
-        var dictionary = new Dictionary&amp;lt;string, object?&amp;gt;
-        {
-            { "Title", Path.GetFileName(source) },
-            { "PathToCss", Path.Combine(pathToRoot, "nocco.css").Replace('\\', '/') },
-            { "PathToJs", Path.Combine(pathToRoot, "prettify.js").Replace('\\', '/') },
-            { "GetSourcePath", getSourcePath },
-            { "Sections", sections },
-            { "Sources", _files },
-        };
-
-        var parameters = ParameterView.FromDictionary(dictionary);
-        var output = await htmlRenderer.RenderComponentAsync&amp;lt;Webpage&amp;gt;(parameters);
-
-        return output.ToHtmlString();
-    });
-    
-    File.WriteAllText(destination, html);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/details&gt;
-&lt;p&gt;Build the app.&lt;/p&gt;
-&lt;p&gt;Navigate to the folder with your source files in&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;nocco *.cs&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Open the newly created &lt;code&gt;docs&lt;/code&gt; folder and open any of the matching &lt;code&gt;*.html&lt;/code&gt; files.&lt;/p&gt;
-&lt;h3 id="dependencies"&gt;Dependencies&lt;/h3&gt;
-&lt;p&gt;The original also used &lt;a href="https://www.nuget.org/packages/MarkdownSharp/1.13.0"&gt;MarkdownSharp&lt;/a&gt; &lt;em&gt;v1.13.0.0&lt;/em&gt;, I updated this to &lt;a href="https://www.nuget.org/packages/MarkdownSharpCore"&gt;MarkdownSharpCore&lt;/a&gt; &lt;em&gt;v1.2.0&lt;/em&gt; just to make the upgrade easier, I'm contemplating swapping to &lt;a href="https://www.nuget.org/packages/MarkDig"&gt;Markdig&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco"&gt;https://github.com/AlexHedley/nocco&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco-example"&gt;https://github.com/AlexHedley/nocco-example&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dontangg/nocco"&gt;https://github.com/dontangg/nocco&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://donwilson.net/nocco/"&gt;http://donwilson.net/nocco/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ashkenas.com/docco/"&gt;https://ashkenas.com/docco/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -674,31 +741,6 @@ We will be using &lt;strong&gt;Zoom Meetings&lt;/strong&gt; for video, and &lt;s
 &lt;li&gt;&lt;a href="https://github.com/jsakamoto/BlazingStory"&gt;Code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://jsakamoto.github.io/BlazingStory/"&gt;Website&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>GitHub Contributions Chart Generator</title>
-			<link>https://alexhedley.github.io/blog/posts/github-contributions-2024</link>
-			<description>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/gh/topguntocat.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/github-contributions-2024</guid>
-			<pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;blockquote&gt;
-&lt;p&gt;All your contributions in one image!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github-contributions.vercel.app/"&gt;GitHub Contributions Chart Generator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alexhedley-2024.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
-&lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
-&lt;!-- ![alex-hedley](images/gh/contributions-alex-hedley-2024.png "Contributions alex-hedley") --&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Could not find your profile&lt;/p&gt;
-&lt;/blockquote&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
