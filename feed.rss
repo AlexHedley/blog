@@ -5,8 +5,45 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2025</copyright>
-		<pubDate>Tue, 13 May 2025 18:02:58 GMT</pubDate>
-		<lastBuildDate>Tue, 13 May 2025 18:02:58 GMT</lastBuildDate>
+		<pubDate>Fri, 06 Jun 2025 21:09:33 GMT</pubDate>
+		<lastBuildDate>Fri, 06 Jun 2025 21:09:33 GMT</lastBuildDate>
+		<item>
+			<title>.NET by Example</title>
+			<link>https://alexhedley.github.io/blog/posts/dotnet-by-example</link>
+			<description>.NET by Example is a hands-on introduction to .NET using annotated example programs.</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/dotnet-by-example</guid>
+			<pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- .NET by Example --&gt;
+&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
+&lt;p&gt;In this post I will explain how I built &lt;strong&gt;.NET by Example&lt;/strong&gt;, a clone of &lt;a href="https://gobyexample.com/"&gt;Go by Example&lt;/a&gt;, using the updated &lt;a href="https://alexhedley.github.io/blog/nocco"&gt;nocco&lt;/a&gt; tool I've recently been working on.&lt;/p&gt;
+&lt;p&gt;I've modified the code a little to take a list of files: &lt;code&gt;.cs&lt;/code&gt;, &lt;code&gt;.vb&lt;/code&gt;, &lt;code&gt;.fs&lt;/code&gt;, in a folder, with a &lt;code&gt;.bat&lt;/code&gt; to explain how to run the provided scripts and it builds a tabbed page of each of the files.&lt;/p&gt;
+&lt;p&gt;It also has a &lt;em&gt;copy&lt;/em&gt; button option to make working with the code a little easier.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/byexample/hello-world.png" alt="Hello World" title="Hello World"&gt;&lt;/p&gt;
+&lt;p&gt;The home page is then built with the list of the examples.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/byexample/home.png" alt="Home" title="Home"&gt;&lt;/p&gt;
+&lt;p&gt;If you have any ideas of other examples please add a new 💡&lt;a href="https://github.com/AlexHedley/dotnetbyexample/discussions/new?category=ideas"&gt;Discussion&lt;/a&gt; item. I'll be working on adding more in the near future.&lt;/p&gt;
+&lt;p&gt;I added a build and deploy &lt;a href="https://github.com/AlexHedley/dotnetbyexample/blob/main/.github/workflows/build-deploy.yml"&gt;script&lt;/a&gt; via GitHub Actions and deployed it via GitHub Pages: &lt;a href="https://alexhedley.github.io/dotnetbyexample"&gt;https://alexhedley.github.io/dotnetbyexample&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/dotnetbyexample"&gt;https://alexhedley.github.io/dotnetbyexample&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample"&gt;https://github.com/AlexHedley/dotnetbyexample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/mmcgrana/gobyexample"&gt;https://github.com/mmcgrana/gobyexample&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://gobyexample.com/"&gt;https://gobyexample.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Deploying .NET nocco using GitHub Action</title>
 			<link>https://alexhedley.github.io/blog/posts/dotnet-nocco-github-actions</link>
@@ -14,7 +51,7 @@
 			<author>AlexHedley</author>
 			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
 			<guid>https://alexhedley.github.io/blog/posts/dotnet-nocco-github-actions</guid>
-			<pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+			<pubDate>Tue, 13 May 2025 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;!-- .NET nocco using GitHub Action --&gt;
 &lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
 &lt;p&gt;In my previous blog post &lt;a href="https://alexhedley.github.io/blog/dotnet-nocco"&gt;.NET nocco&lt;/a&gt; I explained upgrading an old version of &lt;strong&gt;nocco&lt;/strong&gt; to the latest, and making it a &lt;a href="https://alexhedley.github.io/blog/dotnet-tool-example"&gt;.NET tool&lt;/a&gt;. Now that I have both of these setup and configured I can use &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; &lt;a href="https://pages.github.com/"&gt;Pages&lt;/a&gt; to deploy my code.&lt;/p&gt;
@@ -694,52 +731,6 @@ We will be using &lt;strong&gt;Zoom Meetings&lt;/strong&gt; for video, and &lt;s
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/blazingstory"&gt;Blazing Story&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/the-beginning-of-blashing"&gt;The Beginning of Blashing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Blazing Story</title>
-			<link>https://alexhedley.github.io/blog/posts/blazingstory</link>
-			<description>The clone of "Storybook" for Blazor, a frontend workshop for building UI components and pages in isolation.</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/blazor/blazing-story/blazing-story.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/blazingstory</guid>
-			<pubDate>Fri, 24 Jan 2025 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Blazing Story --&gt;
-&lt;p&gt;Over the past couple of years I've been working with React and on occasion there have been a &lt;a href="https://storybook.js.org/"&gt;Storybook&lt;/a&gt; of components for the UI libraries I've been working with. This is an excellent way to have examples of the control(s) you may need to implement in your site. It gives you options to try different parameter combinations, see it in action and even grab a copy of the code needed to add it to your page(s).&lt;/p&gt;
-&lt;p&gt;In my pursuit to have all these great options but in .NET I was lucky enough to come across &lt;a href="https://jsakamoto.github.io/BlazingStory/"&gt;Blazing Story&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The clone of "&lt;a href="https://storybook.js.org/"&gt;Storybook&lt;/a&gt;" for Blazor, a frontend workshop for building UI components and pages in isolation.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blazor/blazing-story/blazing-story.png" alt="Blazing Story" title="Blazing Story"&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The "Blazing Story" is built on almost 100% Blazor native (except only a few JavaScript helper codes), so you don't have to care about npm, package.json, webpack, and any JavaScript/TypeScript code. You can create a UI catalog application on the Blazor way!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;See it in action: &lt;a href="https://jsakamoto.github.io/BlazingStory/"&gt;https://jsakamoto.github.io/BlazingStory/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;It's very simple to setup.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;dotnet new install BlazingStory.ProjectTemplates&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Add a new Project to your Solution. Add your components Project to this new &lt;em&gt;Stories&lt;/em&gt; Project. Add a new &lt;code&gt;[COMPONENT].stories.razor&lt;/code&gt; Razor file and setup the properties.&lt;/p&gt;
-&lt;p&gt;If you choose the WASM version you can then deploy it via &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; too!&lt;/p&gt;
-&lt;p&gt;There's a discussion showing how: &lt;a href="https://github.com/jsakamoto/BlazingStory/discussions/33"&gt;#33&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/jsakamoto/PublishSPAforGitHubPages.Build"&gt;https://github.com/jsakamoto/PublishSPAforGitHubPages.Build&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class="language-xml"&gt;  &amp;lt;ItemGroup&amp;gt;
-    &amp;lt;PackageReference Include="PublishSPAforGitHubPages.Build" Version="3.0.0" /&amp;gt;
-  &amp;lt;/ItemGroup&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I usually just use &lt;code&gt;sed&lt;/code&gt; in the GHA.&lt;/p&gt;
-&lt;p&gt;I quickly built an example and had it published in about 5 mins:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/BlazingStoryExample"&gt;https://github.com/AlexHedley/BlazingStoryExample&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/BlazingStoryExample/"&gt;https://alexhedley.github.io/BlazingStoryExample/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Looking forward to adding more of the features and working with some components I've built.&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/jsakamoto/BlazingStory"&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://jsakamoto.github.io/BlazingStory/"&gt;Website&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
