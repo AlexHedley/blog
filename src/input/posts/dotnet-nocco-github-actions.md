@@ -9,7 +9,7 @@ tags:
   - github-actions
   - yml
 author: AlexHedley
-published: 2025-05-12
+published: 2025-05-13
 image: /posts/images/dotNET/dotNET.png
 imageattribution: https://neosmart.net/blog/new-dot-net-standard-framework-logo/
 ---
