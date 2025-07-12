@@ -5,8 +5,41 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2025</copyright>
-		<pubDate>Sat, 12 Jul 2025 13:13:11 GMT</pubDate>
-		<lastBuildDate>Sat, 12 Jul 2025 13:13:11 GMT</lastBuildDate>
+		<pubDate>Sat, 12 Jul 2025 17:52:35 GMT</pubDate>
+		<lastBuildDate>Sat, 12 Jul 2025 17:52:35 GMT</lastBuildDate>
+		<item>
+			<title>Streaming Equipment 3</title>
+			<link>https://alexhedley.github.io/blog/posts/streaming-equipment-3</link>
+			<description>Pedal and Green Screen</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/streaming-equipment-3</guid>
+			<pubDate>Sat, 12 Jul 2025 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- Streaming Equipment 3 --&gt;
+&lt;p&gt;There was an Amazon Prime sale so I bought more recording equipment I &lt;em&gt;probably&lt;/em&gt; don't need but have been on my wishlist for a while.&lt;/p&gt;
+&lt;p&gt;Previous purchases: &lt;a href="https://alexhedley.github.io/blog/streaming-equipment"&gt;Streaming Equipment&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-2"&gt;Streaming Equipment 2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stream Deck Pedal&lt;/strong&gt;&lt;br&gt;
+Streamline Your Setup.&lt;br&gt;
+Sturdy, customizable and discreet, Stream Deck Pedal gives you instant hands-free control of your apps and tools.&lt;br&gt;
+🔗 &lt;a href="https://www.elgato.com/uk/en/p/stream-deck-pedal"&gt;https://www.elgato.com/uk/en/p/stream-deck-pedal&lt;/a&gt;&lt;br&gt;
+💷 RRP £69.99 &lt;del&gt;£79.99&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/sd-pedal.png" alt="Stream Deck Pedal" title="Stream Deck Pedal"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Green Screen XL&lt;/strong&gt;&lt;br&gt;
+Extra Wide Chroma Key Panel.&lt;br&gt;
+An extra-wide, portable green screen optimized for webcam background removal. Green Screen XL takes live streaming and video conferencing to the next level.&lt;br&gt;
+🔗 &lt;a href="https://www.elgato.com/uk/en/p/green-screen-xl"&gt;https://www.elgato.com/uk/en/p/green-screen-xl&lt;/a&gt;&lt;br&gt;
+💷 RRP £124.99 &lt;del&gt;£179.99&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/green-screen-xl.png" alt="Green Screen XL" title="Green Screen XL"&gt;&lt;/p&gt;
+&lt;!-- **Green Screen**  
+Collapsible Chroma Key Panel.  
+A portable chroma key panel optimized for webcam background removal, Green Screen sets the stage for truly immersive broadcasting in a matter of seconds.  
+🔗 https://www.elgato.com/uk/en/p/green-screen  
+💷 RRP £169.99  
+
+![Green Screen](images/equipment/green-screen.png "Green Screen") --&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>.NET by Example</title>
 			<link>https://alexhedley.github.io/blog/posts/dotnet-by-example</link>
@@ -703,34 +736,6 @@ We will be using &lt;strong&gt;Zoom Meetings&lt;/strong&gt; for video, and &lt;s
 &lt;li&gt;&lt;a href="https://design-system.service.gov.uk/"&gt;https://design-system.service.gov.uk&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;GovernmentDigitalService"&gt;https://www.youtube.com/&amp;#64;GovernmentDigitalService&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;UKGovDesign"&gt;https://www.youtube.com/&amp;#64;UKGovDesign&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Blashing - Blazing Story</title>
-			<link>https://alexhedley.github.io/blog/posts/blashing-blazingstory</link>
-			<description>Adding Blazing Story to Blashing</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/blashing-blazingstory</guid>
-			<pubDate>Sat, 25 Jan 2025 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Blashing - Blazing Story --&gt;
-&lt;p&gt;Having found &lt;a href="https://alexhedley.github.io/blog/blazingstory"&gt;Blazing Story&lt;/a&gt; I had to try it out with some of my own Blazor Components. I thought why not use &lt;a href="https://alexhedley.github.io/blog/the-beginning-of-blashing"&gt;Blashing&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I followed the thorough steps in their readme and got to creating the required &lt;code&gt;stories.razor&lt;/code&gt; files. Added the required arguments and ran the app:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blashing/blashing-blazorstory.png" alt="Example" title="Example"&gt;&lt;/p&gt;
-&lt;p&gt;There's a few errors thrown when clicking on the different examples which I need to look into but it's just the beginning.&lt;/p&gt;
-&lt;p&gt;Such a well made project :).&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;branch: &lt;a href="https://github.com/AlexHedley/blashing/tree/blazingstories"&gt;https://github.com/AlexHedley/blashing/tree/blazingstories&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;PR: &lt;a href="https://github.com/AlexHedley/blashing/pull/162"&gt;https://github.com/AlexHedley/blashing/pull/162&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;code: &lt;a href="https://github.com/AlexHedley/blashing"&gt;https://github.com/AlexHedley/blashing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="related"&gt;Related&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/blazingstory"&gt;Blazing Story&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/the-beginning-of-blashing"&gt;The Beginning of Blashing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
