@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2025</rights>
-	<updated>2025-07-12T17:52:35Z</updated>
+	<updated>2025-07-12T19:55:50Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -78,6 +78,40 @@ A portable chroma key panel optimized for webcam background removal, Green Scree
 &lt;/ul&gt;
 </content>
 		<summary>.NET by Example is a hands-on introduction to .NET using annotated example programs.</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/keyboards</id>
+		<title>Keyboards</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/keyboards" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/equipment/redragon.png" />
+		<updated>2025-06-05T00:00:00Z</updated>
+		<content>&lt;!-- # Keyboards --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/redragon.jpg" alt="Redragon" title="Redragon"&gt;&lt;/p&gt;
+&lt;p&gt;A few years back when I was watching a stream from &lt;a href="https://x.com/praeclarum"&gt;@praeclarum&lt;/a&gt; on his &lt;a href="https://twitch.tv/FrankKrueger"&gt;Twitch&lt;/a&gt; channel I heard the dulcet tones of a mechanical keyboard. I think it was a Redragon which is probably why I purchased my own.&lt;/p&gt;
+&lt;p&gt;I chose the following due to it having a numpad, which I couldn't live without.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Redragon K551 Mechanical Gaming Keyboard, Wired, 104 Keys for PC Computer Gamer UK QWERTY (RGB Backlit with Red Switches)&lt;/strong&gt;&lt;br&gt;
+🔗 &lt;a href="https://www.amazon.co.uk/dp/B07CMLBFPY"&gt;https://www.amazon.co.uk/dp/B07CMLBFPY&lt;/a&gt;&lt;br&gt;
+🔗 &lt;a href="https://www.redragonzone.com/products/redragon-k551-mitr-104-key-led-backlit-mechanical-keyboard-with-blue-switches"&gt;https://www.redragonzone.com/products/redragon-k551-mitr-104-key-led-backlit-mechanical-keyboard-with-blue-switches&lt;/a&gt;&lt;br&gt;
+💷 £56.99&lt;br&gt;
+Ordered on 19 November 2020&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/K551.jpg" alt="K551" title="K551"&gt;&lt;/p&gt;
+&lt;p&gt;I was wired which saves from having to charge it but swapping between desktop and laptop and having to unplug it became a little annoying, first world problems! I decided to buy a new one, this time it was wireless and though might as well get a mouse too. I found the following:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;K628 75% Mechanical Gaming Keyboard M693 Gaming Mouse Tri-Modes Combo&lt;/strong&gt;&lt;br&gt;
+🔗 &lt;a href="https://redragonshop.com/products/redragon-bs136-tri-mode-gaming-keyboard-and-mouse-combo"&gt;https://redragonshop.com/products/redragon-bs136-tri-mode-gaming-keyboard-and-mouse-combo&lt;/a&gt;&lt;br&gt;
+💷 £58.80 GBP (£48 &lt;del&gt;£60&lt;/del&gt;)&lt;br&gt;
+February 25, 2025&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/K628_M693.png" alt="K628 M693" title="K628 M693"&gt;&lt;/p&gt;
+&lt;p&gt;I'd not used a 75% keyboard before and very much a trend I probably rushed into the decision. It did have a numpad but my muscle memory just couldn't get used to it. It didn't take long for me to buy another. This time, another wireless but very similar to the original. The only problem is it isn't a UK layout. Luckily I've just swapped some of the keys from my original. Let's see how long this one will last.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DHARMA PRO K556 PRO Aluminum Keyboard&lt;/strong&gt;&lt;br&gt;
+🔗 &lt;a href="https://redragonshop.com/products/dharma-k556-pro-aluminum-keyboard"&gt;https://redragonshop.com/products/dharma-k556-pro-aluminum-keyboard&lt;/a&gt;&lt;br&gt;
+💷 £57.60 GBP (£49)&lt;br&gt;
+June 4, 2025&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/K556P.png" alt="K556P" title="K556P"&gt;&lt;/p&gt;
+</content>
+		<summary>Redragon</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/dotnet-nocco-github-actions</id>
@@ -709,45 +743,5 @@ Under 16s must be accompanied by an adult).&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/copper/marketing.jpg" alt="Marketing" title="Marketing"&gt;&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/govuk-design-system-jan2025</id>
-		<title>Design System Chat - Jan 2025</title>
-		<author>
-			<name>alex-hedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/govuk-design-system-jan2025" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/govuk/govuk-design-system-jan.jpeg" />
-		<updated>2025-01-29T00:00:00Z</updated>
-		<content>&lt;!-- # Design System Chat - Jan 2025 --&gt;
-&lt;h2 id="event"&gt;Event&lt;/h2&gt;
-&lt;p&gt;🗓️ Wednesday, 29 January
-🕰️ 11:00 - 12:00 BST&lt;br /&gt;
-📍 Online&lt;br /&gt;
-🔗 &lt;a href="https://www.eventbrite.co.uk/e/design-system-chat-january-2025-tickets-1214931235029"&gt;https://www.eventbrite.co.uk/e/design-system-chat-january-2025-tickets-1214931235029&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;p&gt;You're invited to 2025's first 'design system chat', hosted monthly by the GOV.UK Design System team.&lt;/p&gt;
-&lt;h3 id="agenda"&gt;Agenda&lt;/h3&gt;
-&lt;p&gt;Agenda:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Annual UX/FrontEnd survey - what we do with the data and how it feeds into prioritisation&lt;/li&gt;
-&lt;li&gt;WCAG 2.2 video&lt;/li&gt;
-&lt;li&gt;Connecting gov design systems hackathon - What happened and plans for part 2&lt;/li&gt;
-&lt;li&gt;JavaScript API - what we shipped recently&lt;/li&gt;
-&lt;li&gt;Discussion: What are you leaving behind in 2024?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Session type&lt;/strong&gt;: Show &amp;amp; tell, discussion&lt;br /&gt;
-&lt;strong&gt;Duration&lt;/strong&gt;: 1 hour&lt;br /&gt;
-&lt;strong&gt;Platform&lt;/strong&gt;: Zoom (please make sure your device can access Zoom meetings)&lt;br /&gt;
-If you sign up, please make sure you can attend the whole session, as we sell out quite quickly.
-We will be using &lt;strong&gt;Zoom Meetings&lt;/strong&gt; for video, and &lt;strong&gt;Padlet&lt;/strong&gt; for notes and comments. Please make sure you have a device that can access these, as some organisation’s firewalls block these platforms.&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://design-system.service.gov.uk/"&gt;https://design-system.service.gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;GovernmentDigitalService"&gt;https://www.youtube.com/&amp;#64;GovernmentDigitalService&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;UKGovDesign"&gt;https://www.youtube.com/&amp;#64;UKGovDesign&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>GOV.UK Design System team</summary>
 	</entry>
 </feed>
