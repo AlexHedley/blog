@@ -6,13 +6,13 @@ tags:
   - equipment
 author: AlexHedley
 published: 2025-06-05
-image: /posts/images/equipment/redragon.png
+image: /posts/images/equipment/redragon.jpg
 imageattribution: https://redragonshop.com/
 ---
 
 <!-- # Keyboards -->
 
-![Redragon](images/equipment/redragon.jpg "Redragon")
+<!-- ![Redragon](images/equipment/redragon.jpg "Redragon") -->
 
 A few years back when I was watching a stream from [@praeclarum](https://x.com/praeclarum) on his [Twitch](https://twitch.tv/FrankKrueger) channel I heard the dulcet tones of a mechanical keyboard. I think it was a Redragon which is probably why I purchased my own.
 
