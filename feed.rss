@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2025</copyright>
-		<pubDate>Mon, 16 Jun 2025 17:32:40 GMT</pubDate>
-		<lastBuildDate>Mon, 16 Jun 2025 17:32:40 GMT</lastBuildDate>
+		<pubDate>Sat, 12 Jul 2025 13:13:11 GMT</pubDate>
+		<lastBuildDate>Sat, 12 Jul 2025 13:13:11 GMT</lastBuildDate>
 		<item>
 			<title>.NET by Example</title>
 			<link>https://alexhedley.github.io/blog/posts/dotnet-by-example</link>
@@ -17,7 +17,7 @@
 			<pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;!-- .NET by Example --&gt;
 &lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
-&lt;p&gt;In this post I will explain how I built &lt;strong&gt;.NET by Example&lt;/strong&gt;, a clone of &lt;a href="https://gobyexample.com/"&gt;Go by Example&lt;/a&gt;, using the updated &lt;a href="https://alexhedley.github.io/blog/nocco"&gt;nocco&lt;/a&gt; tool I've recently been working on.&lt;/p&gt;
+&lt;p&gt;In this post I will explain how I built &lt;strong&gt;.NET by Example&lt;/strong&gt;, a clone of &lt;a href="https://gobyexample.com/"&gt;Go by Example&lt;/a&gt;, using the updated &lt;a href="https://alexhedley.github.io/blog/dotnet-nocco"&gt;nocco&lt;/a&gt; tool I've recently been working on.&lt;/p&gt;
 &lt;p&gt;I've modified the code a little to take a list of files: &lt;code&gt;.cs&lt;/code&gt;, &lt;code&gt;.vb&lt;/code&gt;, &lt;code&gt;.fs&lt;/code&gt;, in a folder, with a &lt;code&gt;.bat&lt;/code&gt; to explain how to run the provided scripts and it builds a tabbed page of each of the files.&lt;/p&gt;
 &lt;p&gt;It also has a &lt;em&gt;copy&lt;/em&gt; button option to make working with the code a little easier.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/byexample/hello-world.png" alt="Hello World" title="Hello World"&gt;&lt;/p&gt;
