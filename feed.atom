@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2025</rights>
-	<updated>2025-07-12T19:55:50Z</updated>
+	<updated>2025-07-12T20:14:05Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -86,10 +86,10 @@ A portable chroma key panel optimized for webcam background removal, Green Scree
 			<name>AlexHedley</name>
 		</author>
 		<link href="https://alexhedley.github.io/blog/posts/keyboards" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/equipment/redragon.png" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/equipment/redragon.jpg" />
 		<updated>2025-06-05T00:00:00Z</updated>
 		<content>&lt;!-- # Keyboards --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/redragon.jpg" alt="Redragon" title="Redragon"&gt;&lt;/p&gt;
+&lt;!-- ![Redragon](images/equipment/redragon.jpg "Redragon") --&gt;
 &lt;p&gt;A few years back when I was watching a stream from &lt;a href="https://x.com/praeclarum"&gt;@praeclarum&lt;/a&gt; on his &lt;a href="https://twitch.tv/FrankKrueger"&gt;Twitch&lt;/a&gt; channel I heard the dulcet tones of a mechanical keyboard. I think it was a Redragon which is probably why I purchased my own.&lt;/p&gt;
 &lt;p&gt;I chose the following due to it having a numpad, which I couldn't live without.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Redragon K551 Mechanical Gaming Keyboard, Wired, 104 Keys for PC Computer Gamer UK QWERTY (RGB Backlit with Red Switches)&lt;/strong&gt;&lt;br&gt;
