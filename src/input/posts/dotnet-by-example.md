@@ -15,7 +15,7 @@ imageattribution: https://neosmart.net/blog/new-dot-net-standard-framework-logo/
 <!-- .NET by Example -->
 <!-- ![.NET](images/dotNET/dotNET.png ".NET") -->
 
-In this post I will explain how I built **.NET by Example**, a clone of [Go by Example](https://gobyexample.com/), using the updated [nocco](nocco) tool I've recently been working on.
+In this post I will explain how I built **.NET by Example**, a clone of [Go by Example](https://gobyexample.com/), using the updated [nocco](dotnet-nocco) tool I've recently been working on.
 
 I've modified the code a little to take a list of files: `.cs`, `.vb`, `.fs`, in a folder, with a `.bat` to explain how to run the provided scripts and it builds a tabbed page of each of the files.
 
