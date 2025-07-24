@@ -13,7 +13,7 @@ published: 2024-12-24
 
 <!-- 🎷 Saxophone - Books 3 -->
 
-My uncle introduce my twin and I to Dave Koz many years ago, he's always been a favourite of mine. Not sure how difficult they'll be but be fun to give them a go.
+My uncle introduced my twin and I to Dave Koz many years ago, he's always been a favourite of mine. Not sure how difficult they'll be but be fun to give them a go.
 
 
 Dave Koz: Saxophone Play-Along Volume 6 (Hal Leonard Saxophone Play-Along, 6) Paperback – 1 Oct. 2015  
