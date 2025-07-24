@@ -26,7 +26,7 @@ Ordered on 19 November 2020
 
 ![K551](images/equipment/K551.jpg "K551")
 
-I was wired which saves from having to charge it but swapping between desktop and laptop and having to unplug it became a little annoying, first world problems! I decided to buy a new one, this time it was wireless and though might as well get a mouse too. I found the following:
+It was wired which saves from having to charge it but swapping between desktop and laptop and having to unplug it became a little annoying, first world problems! I decided to buy a new one, this time it was wireless and though might as well get a mouse too. I found the following:
 
 **K628 75% Mechanical Gaming Keyboard M693 Gaming Mouse Tri-Modes Combo**  
 🔗 https://redragonshop.com/products/redragon-bs136-tri-mode-gaming-keyboard-and-mouse-combo  
