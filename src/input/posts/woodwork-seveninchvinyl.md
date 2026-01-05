@@ -4,7 +4,7 @@ title: 7" Vinyl Holder
 description: Building a 7" Vinyl Holder for a friend
 tags:
   - woodwork
-author: alex-hedley
+author: alexhedley
 published: 2021-06-08
 # image:
 # imageattribution:
