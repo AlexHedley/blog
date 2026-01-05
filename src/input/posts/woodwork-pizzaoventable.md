@@ -4,7 +4,7 @@ title: Pizza Oven Table
 description: Building a table top for the Ooni
 tags:
   - woodwork
-author: alex-hedley
+author: alexhedley
 published: 2022-03-26
 # image:
 # imageattribution:
