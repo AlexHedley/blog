@@ -3,10 +3,62 @@
 	<id>https://alexhedley.github.io/blog</id>
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
-	<rights>Copyright © 2025</rights>
-	<updated>2025-09-15T21:40:02Z</updated>
+	<rights>Copyright © 2026</rights>
+	<updated>2026-01-05T17:49:17Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/2025-in-review</id>
+		<title>2025 In Review</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/2025-in-review" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2026-01-05T00:00:00Z</updated>
+		<content>&lt;!-- # 2025 in review --&gt;
+&lt;p&gt;Last year I wrote my &lt;a href="https://alexhedley.github.io/blog/2024-in-review"&gt;2024 In Review&lt;/a&gt;, it's time for &lt;strong&gt;2025&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Professional Achievements&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Completed the &lt;strong&gt;Java Foundations Professional Certificate by JetBrains&lt;/strong&gt; &lt;a href="https://blog.jetbrains.com/team/2025/01/29/jetbrains-and-linkedin-partner-to-launch-a-professional-certificate/"&gt;JetBrains and LinkedIn Partner to Launch a Professional Certificate&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Also recertified my &lt;a href="https://alexhedley.com/blog/posts/aws-certified-cloud-practitioner"&gt;AWS Cloud Practitioner&lt;/a&gt;, that came round quickly.&lt;/p&gt;
+&lt;p&gt;Planning on &lt;a href="https://learn.microsoft.com/en-us/credentials/certifications/github-actions/?practice-assessment-type=certification"&gt;GitHub Actions Certification&lt;/a&gt; later this year.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Personal Achievements&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I did some more workshops this year including &lt;a href="https://alexhedley.github.io/blog/copper-rose-workshop"&gt;Copper Rose Workshop&lt;/a&gt; and managed to go on a number of holidays, adding more stamps to my passport :). The idea is to spend money on experiences instead of "things", but I can't stop myself with the clutter :p. See &lt;a href="https://alexhedley.com/lego/"&gt;Lego&lt;/a&gt; and &lt;a href="https://alexhedley.com/funkopop/"&gt;Funko Pop&lt;/a&gt;. A few more &lt;a href="https://alexhedley.com/escaperooms/"&gt;Escape Rooms&lt;/a&gt; completed. Lots more &lt;a href="https://alexhedley.com/Gigs/"&gt;Gigs&lt;/a&gt; attended, plus added some charts to show off the data a little.&lt;/p&gt;
+&lt;p&gt;Lots of great movies this year from my &lt;a href="https://alexhedley.com/FilmsBlog/"&gt;FilmsBlog&lt;/a&gt;. Thoroughly enjoyed &lt;em&gt;The Ballad of Wallis Island&lt;/em&gt; which I managed to get the vinyl soundtrack for :).&lt;/p&gt;
+&lt;p&gt;I ported &lt;a href="https://alexhedley.github.io/blog/dotnet-nocco"&gt;nocco&lt;/a&gt; to .NET 9 and built &lt;a href="https://alexhedley.github.io/blog/dotnet-by-example"&gt;.NET by Example&lt;/a&gt; using it. Just need to start adding some content.&lt;/p&gt;
+&lt;p&gt;I worked on adding some external community widgets to &lt;a href="https://alexhedley.github.io/blog/the-beginning-of-blashing"&gt;Blashing&lt;/a&gt;. Bits and pieces with &lt;a href="https://alexhedley.github.io/blog/utility-blazor"&gt;Utility Blazor&lt;/a&gt; and started a KMP version - &lt;a href="https://github.com/Alex-Hedley/Utility-Kotlin"&gt;Utility Kotlin&lt;/a&gt;. A little work on the &lt;a href="https://alexhedley.github.io/blog/tags/poker"&gt;Poker&lt;/a&gt; recording app, making it easier to share content between Server and Client, then split the UI out into it's own &lt;a href="https://github.com/AlexHedley/poker-hud"&gt;GitHub Project&lt;/a&gt; (&lt;a href="https://alexhedley.com/poker-hud/"&gt;Site&lt;/a&gt;) to ease working on that. Need to finish at least one and try it out on the &lt;a href="https://alexhedley.com/poker-recording/screen"&gt;Screen&lt;/a&gt;. Also integrated some of the calculations from the external libs to show there too.&lt;/p&gt;
+&lt;p&gt;During the back end of the year I got back into recording some 599CD &lt;a href="https://599cd.com/blog/display-article.asp?ID=1275"&gt;TechHelp&lt;/a&gt; videos (&lt;a href="https://alexhedley.com/courses/"&gt;courses&lt;/a&gt;) with the help of some new &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-3"&gt;Streaming Equipment 3&lt;/a&gt; including a &lt;strong&gt;Green Screen XL&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://599cd.com/blog/display-article.asp?ID=2971"&gt;VB.NET&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://599cd.com/blog/display-article.asp?ID=4267"&gt;VB.NET Beginner 0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://599cd.com/blog/display-article.asp?ID=4284"&gt;SQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I'm building up a set of intro videos on how to use &lt;em&gt;MS SQL Server&lt;/em&gt; with the goal to show how to use it in &lt;em&gt;VB.NET&lt;/em&gt;. Just need to lay a lot of the groundwork, so many interlinked things to cover.&lt;/p&gt;
+&lt;p&gt;I also recorded &lt;a href="https://599cd.com/blog/display-article.asp?ID=2953"&gt;VB.NET Beginner 3&lt;/a&gt; which is due for release soon. Hoping to finish off the rest of the Beginner/Expert and start building my own course outlines.&lt;/p&gt;
+</content>
+		<summary>A Year in review</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/streaming-equipment-4</id>
+		<title>Streaming Equipment 4</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/streaming-equipment-4" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2025-07-20T00:00:00Z</updated>
+		<content>&lt;!-- Streaming Equipment 4 --&gt;
+&lt;p&gt;A peek behind the curtain, or in front of the green screen :p.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/Recording-Setup-3.jpg" alt="Recording Setup" title="Recording Setup"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/equipment/Recording-Setup-4.jpg" alt="Recording Setup" title="Recording Setup"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/equipment/Recording-Setup-5.jpg" alt="Recording Setup" title="Recording Setup"&gt;&lt;/p&gt;
+&lt;p&gt;Previous purchases: &lt;a href="https://alexhedley.github.io/blog/streaming-equipment"&gt;Streaming Equipment&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-2"&gt;Streaming Equipment 2&lt;/a&gt; &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-3"&gt;Streaming Equipment 3&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>Pedal and Green Screen</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/streaming-equipment-3</id>
 		<title>Streaming Equipment 3</title>
@@ -40,6 +92,67 @@ A portable chroma key panel optimized for webcam background removal, Green Scree
 ![Green Screen](images/equipment/green-screen.png "Green Screen") --&gt;
 </content>
 		<summary>Pedal and Green Screen</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/streaming-setup</id>
+		<title>Streaming Setup</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/streaming-setup" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2025-07-12T00:00:00Z</updated>
+		<content>&lt;!-- # Streaming Setup --&gt;
+&lt;p&gt;Previous purchases: &lt;a href="https://alexhedley.github.io/blog/streaming-equipment"&gt;Streaming Equipment&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-2"&gt;Streaming Equipment 2&lt;/a&gt; &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-3"&gt;Streaming Equipment 3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://alexhedley.github.io/blog/streamdecktoolkit"&gt;StreamDeck Toolkit&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/streamdeck-plugins"&gt;StreamDeck Plugins&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/jeffgoldblum"&gt;Jeff Goldblum StreamDeck Action&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="audio-filters"&gt;Audio Filters&lt;/h2&gt;
+&lt;p&gt;Mixer&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/Settings_Mixer_Streamlabs.png" alt="Mixer" title="Mixer"&gt;&lt;/p&gt;
+&lt;p&gt;Add New - Filter&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/AddNew_Filters_Settings_Mixer_Streamlabs.png" alt="Add New - Filter" title="Add New - Filter"&gt;&lt;/p&gt;
+&lt;p&gt;Filters&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/Filters_Settings_Mixer_Streamlabs.png" alt="Filters" title="Filters"&gt;&lt;/p&gt;
+&lt;p&gt;Filters - Options&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/Options_Filters_Settings_Mixer_Streamlabs.png" alt="Filters - Options" title="Filters - Options"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Downmix to Mono&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Microphone ⚙️ | Properties&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/mix_aux.png" alt="Advanced Audio Settings" title="Advanced Audio Settings"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/AdvancedAudioSettings_Streamlabs.png" alt="Advanced Audio Settings" title="Advanced Audio Settings"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Route audio to the central channel instead of left or right stereo channels&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="green-screen"&gt;Green-screen&lt;/h2&gt;
+&lt;p&gt;I recently bought a Green Screen XL from &lt;a href="https://www.elgato.com/uk/en/p/green-screen-xl"&gt;Elgato&lt;/a&gt; (&lt;a href="https://alexhedley.github.io/blog/streaming-equipment-3"&gt;Streaming Equipment 3&lt;/a&gt;) and now need to setup the scenes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Open up Streamlabs Desktop, go to your camera source, right-click on it and go to filters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;From there, you will see chroma key as a filter type. You’re going to see a many different settings that you’re going to have to play around with to find what works for you. There is no one correct answer for these settings as everybody’s lighting situations different, hair is different, skin color is different, and background is different, which is why you’re going to have to play around with it until you refine it down.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="videos"&gt;Videos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=_E2Mmvwmzpo"&gt;How to chroma key / remove green screen from webcam in Streamlabs OBS&lt;/a&gt;
+&lt;a href="https://www.youtube.com/@MikeTheTech"&gt;MikeTheTech&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://streamlabs.com/content-hub/post/how-to-improve-mic-quality-in-streamlabs-desktop"&gt;How to Improve Mic Quality in Streamlabs Desktop&lt;/a&gt; Last Updated on January 28, 2022&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://streamlabs.com/content-hub/post/how-to-set-up-a-green-screen-in-streamlabs"&gt;How to set up a Green Screen in Streamlabs&lt;/a&gt; Last Updated on October 11, 2023&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://streamlabs.com/content-hub/post/green-screen-101-why-do-you-need-it-and-how-to-use-it-in-talk-studio"&gt;Green Screen 101: Why Do You Need It and How To Use It&lt;/a&gt; Last Updated on May 02, 2024&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="stream-deck-pedal"&gt;Stream Deck Pedal&lt;/h2&gt;
+&lt;p&gt;How cool is the teamDeck Pedal Action Bar!! It shows you what actions you have configured for each pedal and floats above any app on your screen.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/sd-pedal-action-bar.png" alt="SteamDeck Pedal Action Bar"&gt;&lt;/p&gt;
+&lt;p&gt;If you close this, click in the &lt;em&gt;Task Bar&lt;/em&gt; icon to get the Stream Deck options then &lt;em&gt;Stream Deck Pedal&lt;/em&gt; will have a &lt;strong&gt;Show/Hide Action Bar&lt;/strong&gt; toggle option.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/SteamDeck-Options.png" alt="SteamDeck Options" title="SteamDeck Options"&gt;&lt;/p&gt;
+&lt;p&gt;Show Action Bar&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/SteamDeck-Options-PedalAction-Show.png" alt="SteamDeck Options Show" title="SteamDeck Options Show"&gt;&lt;/p&gt;
+&lt;p&gt;Hide Action Bar&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/SteamDeck-Options-PedalAction-Hide.png" alt="SteamDeck Options Hide" title="SteamDeck Options Hide"&gt;&lt;/p&gt;
+</content>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/dotnet-by-example</id>
@@ -98,7 +211,7 @@ A portable chroma key panel optimized for webcam background removal, Green Scree
 💷 £56.99&lt;br&gt;
 Ordered on 19 November 2020&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/K551.jpg" alt="K551" title="K551"&gt;&lt;/p&gt;
-&lt;p&gt;I was wired which saves from having to charge it but swapping between desktop and laptop and having to unplug it became a little annoying, first world problems! I decided to buy a new one, this time it was wireless and though might as well get a mouse too. I found the following:&lt;/p&gt;
+&lt;p&gt;It was wired which saves from having to charge it but swapping between desktop and laptop and having to unplug it became a little annoying, first world problems! I decided to buy a new one, this time it was wireless and though might as well get a mouse too. I found the following:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;K628 75% Mechanical Gaming Keyboard M693 Gaming Mouse Tri-Modes Combo&lt;/strong&gt;&lt;br&gt;
 🔗 &lt;a href="https://redragonshop.com/products/redragon-bs136-tri-mode-gaming-keyboard-and-mouse-combo"&gt;https://redragonshop.com/products/redragon-bs136-tri-mode-gaming-keyboard-and-mouse-combo&lt;/a&gt;&lt;br&gt;
 💷 £58.80 GBP (£48 &lt;del&gt;£60&lt;/del&gt;)&lt;br&gt;
@@ -620,128 +733,5 @@ And... how once created, it did not put anyone out of a job or take over the wor
 &lt;/ul&gt;
 </content>
 		<summary>.NET meetup</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/govuk-design-system-feb2025</id>
-		<title>Design System Chat - February 2025</title>
-		<author>
-			<name>alex-hedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/govuk-design-system-feb2025" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/govuk/govuk-design-system-feb.png" />
-		<updated>2025-02-26T00:00:00Z</updated>
-		<content>&lt;!-- # Design System Chat - February 2025 --&gt;
-&lt;h2 id="event"&gt;Event&lt;/h2&gt;
-&lt;p&gt;🗓️ Wednesday, 26 February
-🕰️ 11:00 - 12:00 BST&lt;br /&gt;
-📍 Online&lt;br /&gt;
-🔗 &lt;a href="https://www.eventbrite.co.uk/e/design-system-chat-february-2025-tickets-1255768008919"&gt;https://www.eventbrite.co.uk/e/design-system-chat-february-2025-tickets-1255768008919&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;p&gt;You're invited to 2025's second 'design system chat', hosted monthly by the GOV.UK Design System team.&lt;/p&gt;
-&lt;h3 id="agenda"&gt;Agenda&lt;/h3&gt;
-&lt;p&gt;Agenda:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Essential component criteria&lt;/li&gt;
-&lt;li&gt;FrontEnd installation session&lt;/li&gt;
-&lt;li&gt;File upload&lt;/li&gt;
-&lt;li&gt;Lean Coffee: Bring your discussion topics and questions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Session type&lt;/strong&gt;: Show &amp;amp; tell, discussion&lt;br /&gt;
-&lt;strong&gt;Duration&lt;/strong&gt;: 1 hour&lt;br /&gt;
-&lt;strong&gt;Platform&lt;/strong&gt;: Zoom (please make sure your device can access Zoom meetings)&lt;br /&gt;
-If you sign up, please make sure you can attend the whole session, as we sell out quite quickly.
-We will be using &lt;strong&gt;Zoom Meetings&lt;/strong&gt; for video, and &lt;strong&gt;Padlet&lt;/strong&gt; for notes and comments. Please make sure you have a device that can access these, as some organisation’s firewalls block these platforms.&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://design-system.service.gov.uk/"&gt;https://design-system.service.gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;GovernmentDigitalService"&gt;https://www.youtube.com/&amp;#64;GovernmentDigitalService&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;UKGovDesign"&gt;https://www.youtube.com/&amp;#64;UKGovDesign&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>GOV.UK Design System team</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/aws-north-east-user-group-feb-2025</id>
-		<title>AWS User Group - North East - Meetup - Feb 2025</title>
-		<author>
-			<name>alex-hedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/aws-north-east-user-group-feb-2025" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/meetups/aws-north-east-user-group/banner.png" />
-		<updated>2025-02-12T00:00:00Z</updated>
-		<content>&lt;!-- # AWS User Group - North East - Meetup - Feb 2025 --&gt;
-&lt;p&gt;AWS Community re:Invent re:Cap&lt;/p&gt;
-&lt;p&gt;📅 Wednesday, Feb 12, 2025 · 6pm - 8pm GMT&lt;/p&gt;
-&lt;p&gt;📍 The Core, Bath Lane, Newcastle Helix, Newcastle upon Tyne, NE4 5TF&lt;/p&gt;
-&lt;p&gt;🔗 &lt;a href="https://www.meetup.com/aws-user-group-north-east-england/events/305592946/"&gt;https://www.meetup.com/aws-user-group-north-east-england/events/305592946/&lt;/a&gt;&lt;/p&gt;
-&lt;!-- ![Banner](images/meetups/aws-north-east-user-group/banner.png "Banner") --&gt;
-&lt;h2 id="agenda"&gt;Agenda&lt;/h2&gt;
-&lt;p&gt;Hi everyone&lt;/p&gt;
-&lt;p&gt;Welcome to our first scheduled event of the new year.&lt;/p&gt;
-&lt;p&gt;The tour has already kicked off and with almost 20 venues in the UK over the next couple of months &lt;strong&gt;Matheus Guimaraes&lt;/strong&gt; will be hosting the re:Invent Recap.&lt;/p&gt;
-&lt;p&gt;If you've missed it completely, or went and still missed things (entirely possibly, its huge!), or want a recap of all the major announcements then come and join us.&lt;/p&gt;
-&lt;p&gt;Matheus is an entertaining speaker and you'll definitely have a good night.&lt;/p&gt;
-&lt;p&gt;There will be our usual pizza and drinks provided by our wonderful hosts &lt;strong&gt;Leighton&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Date: Wednesday February 12&lt;br /&gt;
-Time: 18:00-20:00&lt;br /&gt;
-Venue: The Core, Bath Lane, Newcastle Helix, Newcastle upon Tyne, NE4 5TF&lt;/p&gt;
-&lt;p&gt;Many thanks to our sponsors &lt;strong&gt;Leighton&lt;/strong&gt; for hosting us on the night.&lt;/p&gt;
-&lt;p&gt;Hope to see you all there!&lt;/p&gt;
-&lt;h2 id="notes"&gt;Notes&lt;/h2&gt;
-&lt;p&gt;Matheus was a superb presenter, really engaging and loved the enthusiasm for all things AWS!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://linktr.ee/codingmatheus"&gt;https://linktr.ee/codingmatheus&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.meetup.com/aws-user-group-north-east-england/"&gt;https://www.meetup.com/aws-user-group-north-east-england/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/developer/community/usergroups/"&gt;https://aws.amazon.com/developer/community/usergroups/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A few links I remembered to scan during&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/aws/announcing-a-visual-update-to-the-aws-management-console-preview/"&gt;Announcing a visual update to the AWS Management Console (preview)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/aws/use-your-on-premises-infrastructure-in-amazon-eks-clusters-with-amazon-eks-hybrid-nodes/"&gt;Use your on-premises infrastructure in Amazon EKS clusters with Amazon EKS Hybrid Nodes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/aws/new-aws-security-incident-response-helps-organizations-respond-to-and-recover-from-security-events/"&gt;New AWS Security Incident Response helps organizations respond to and recover from security events&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Download the PDF to see the full presentation&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://community.aws/recaps"&gt;AWS Community re:Invent re:Caps&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>AWS meetup</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/copper-rose-workshop</id>
-		<title>Copper Rose Workshop</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/copper-rose-workshop" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2025-02-01T00:00:00Z</updated>
-		<content>&lt;!-- Copper Rose Workshop --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/copper/marketing.jpg" alt="Marketing" title="Marketing"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://facebook.com/events/s/copper-rose-workshop/2753565598184924/"&gt;https://facebook.com/events/s/copper-rose-workshop/2753565598184924/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;True North Trades are back - this time they're working with copper to create beautiful roses, ideal as a Valentine's or Mother's Day gift.  The workshop would also make a great gift too.&lt;/p&gt;
-&lt;p&gt;'True North Trades' consists of a Blacksmith, Furniture Maker/Woodworker and a General Handyman, they specialise in a range of products, building talents and activities.&lt;/p&gt;
-&lt;p&gt;We're really pleased that they will be joining us at the Heritage Centre to run more of their metalworking workshops.&lt;/p&gt;
-&lt;p&gt;In this workshop you will be taught how to cut out your blanks with tin snips so a degree of strength in the hand will be needed.  You will learn how to shape and solder your blanks into a beautiful copper rose that can be taken away and admired forever.
-So why not treat yourself to this great workshop - learning a new skill and taking away something special that you have hand-made yourself.&lt;/p&gt;
-&lt;p&gt;Come along with a friend, or maybe buy the workshop experience as a unique gift for someone special.
-Tickets £40 including all materials. Limited places and booking essential.&lt;/p&gt;
-&lt;p&gt;These workshops booked up quickly last time, so please reserve your place as soon as possible to avoid missing out.
-For adults and older children (aged 14+) and must be able to have a degree of strength to cut out the blanks.
-Under 16s must be accompanied by an adult).&lt;/p&gt;
-&lt;p&gt;WWW.LANDOFOAKANDIRON.SHOP&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/copper/finished.jpg" alt="Finished" title="Finished"&gt;&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://truenorthtrades.co.uk/"&gt;https://truenorthtrades.co.uk/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://landofoakandiron.org.uk/"&gt;https://landofoakandiron.org.uk/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/crafting/copper/marketing.jpg" alt="Marketing" title="Marketing"&gt;&lt;/p&gt;</summary>
 	</entry>
 </feed>
