@@ -22,6 +22,18 @@ I went looking for a way to change this but it was a little convoluted. I stubbl
 - https://www.powershellgallery.com/packages/DisplaySettings/0.0.2
 - https://github.com/lust4life/display-resolution
 
+```powershell
+Install-Module -Name DisplaySettings
+```
+ 
+<!-- ```powershell
+Import-Module set-display-resolution.psm1
+``` -->
+
+```bash
+dotnet tool install --global ChangeDisplaySettings
+```
+
 It had a simple `cmdlet`:
 
 ```powershell
