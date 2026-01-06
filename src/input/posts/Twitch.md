@@ -43,6 +43,7 @@ Not being the best time to get stock during a global pandemic, being everyone wa
 - Mic arm
 - Pop Filter
 - peripherals - cables etc
+- XLR Cable
 
 ![Focusrite Scarlett Solo 3rd Gen](images/equipment/Focusrite-Scarlett-Solo-3rd-Gen.png "Focusrite Scarlett Solo 3rd Gen")
 
@@ -53,6 +54,14 @@ Not being the best time to get stock during a global pandemic, being everyone wa
 ![Stream Deck](images/equipment/Stream-Deck.jpg "Stream Deck")
 
 ![Peripherals](images/equipment/peripherals.jpg "Peripherals")
+
+![XLR Cable](images/equipment/XLR-Cable.jpg "XLR Cable")
+
+<!-- Order placed
+30 May 2020 Total £3.99
+
+XLR Cable // Microphone Lead // Male to Female XLR // Black, Blue, Red (1M, Red)
+https://www.amazon.co.uk/dp/B07GXNXWDW -->
 
 Then I needed some artwork for scenes etc.
 
