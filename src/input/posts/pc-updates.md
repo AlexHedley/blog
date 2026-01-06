@@ -12,7 +12,7 @@ published: 2024-01-05
 
 <!-- # PC Updates -->
 
-Having a friend build a PC for me a number of years ago I've tweaked a few parts myself since the initial setup.
+Having a friend build a [PC](pc) for me a number of years ago I've tweaked a few parts myself since the initial setup.
 
 I've been looking to do more [3D Printing](3dprinter) and there are two ways I can send the models to the machine. One is via a cable connected to the printer directly, or the other is through an SD card.
 
