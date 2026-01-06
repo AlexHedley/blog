@@ -4,7 +4,7 @@ title: Poker - API
 tags:
   - poker
   - api
-  - .net
+  - dotnet
   - csharp
 author: alexhedley
 description: Building an API to control the game.
