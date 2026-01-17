@@ -5,8 +5,53 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2026</copyright>
-		<pubDate>Tue, 06 Jan 2026 18:09:03 GMT</pubDate>
-		<lastBuildDate>Tue, 06 Jan 2026 18:09:03 GMT</lastBuildDate>
+		<pubDate>Sat, 17 Jan 2026 12:44:25 GMT</pubDate>
+		<lastBuildDate>Sat, 17 Jan 2026 12:44:25 GMT</lastBuildDate>
+		<item>
+			<title>twinBASIC Docs</title>
+			<link>https://alexhedley.github.io/blog/posts/twinbasic-docs</link>
+			<description>&lt;p&gt;I've been following the &lt;a href="https://twinbasic.com/"&gt;twinBASIC&lt;/a&gt; journey for a number of years and as it's nearing v1 so I thought I'd give it another go.
+I think the last time I used it, it was a &lt;a href="https://marketplace.visualstudio.com/items?itemName=twinbasic.twinbasic"&gt;VSCode Ext&lt;/a&gt;, but now it is an EXE. One push for this was the &lt;a href="https://docs.twinbasic.com/Challenges/1"&gt;twinBASIC Monthly Challenge #1&lt;/a&gt; &lt;strong&gt;Self-Contained Diagnostic Tool&lt;/strong&gt;. I downloaded the latest &lt;a href="https://github.com/twinbasic/twinbasic/releases"&gt;Release&lt;/a&gt; from GitHub and started trying it out.&lt;/p&gt;</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/twinBASIC.jpeg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/twinbasic-docs</guid>
+			<pubDate>Sat, 17 Jan 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # twinBASIC Docs --&gt;
+&lt;!-- ![twinBASIC](images/twinBASIC.jpeg "twinBASIC") --&gt;
+&lt;p&gt;I've been following the &lt;a href="https://twinbasic.com/"&gt;twinBASIC&lt;/a&gt; journey for a number of years and as it's nearing v1 so I thought I'd give it another go.
+I think the last time I used it, it was a &lt;a href="https://marketplace.visualstudio.com/items?itemName=twinbasic.twinbasic"&gt;VSCode Ext&lt;/a&gt;, but now it is an EXE. One push for this was the &lt;a href="https://docs.twinbasic.com/Challenges/1"&gt;twinBASIC Monthly Challenge #1&lt;/a&gt; &lt;strong&gt;Self-Contained Diagnostic Tool&lt;/strong&gt;. I downloaded the latest &lt;a href="https://github.com/twinbasic/twinbasic/releases"&gt;Release&lt;/a&gt; from GitHub and started trying it out.&lt;/p&gt;
+&lt;p&gt;I was already a member of the &lt;a href="https://discord.gg/UaW9GgKKuE"&gt;Discord Server&lt;/a&gt; but if you aren't already, please join.&lt;/p&gt;
+&lt;p&gt;I had a couple of questions on how the IDE worked and since these weren't answered by the &lt;a href="https://docs.twinbasic.com/"&gt;docs&lt;/a&gt;, at the moment, I thought I can't be the only one who might ask so why don't I contribute to them to help others!&lt;/p&gt;
+&lt;p&gt;Alongside this I added/updated some of the &lt;a href="https://github.com/just-the-docs/just-the-docs"&gt;Just The Docs&lt;/a&gt; config &lt;a href="https://github.com/twinbasic/documentation/pull/30"&gt;#30&lt;/a&gt; to make it easier for others to contribute.&lt;/p&gt;
+&lt;p&gt;I added the &lt;a href="https://docs.twinbasic.com/Challenges/1"&gt;twinBASIC Monthly Challenge #1&lt;/a&gt; for better visibility and a historic item if people arrive to it late and still want a go. The subsequent ones can be added each month.&lt;/p&gt;
+&lt;p&gt;There are some legacy videos &lt;a href="https://github.com/twinbasic/documentation/pull/34"&gt;#34&lt;/a&gt; on &lt;a href="https://www.youtube.com/twinBASIC"&gt;&amp;#64;twinBASIC&lt;/a&gt; YouTube channel which would be useful to accompany the docs too.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://docs.twinbasic.com/tB/IDE"&gt;IDE&lt;/a&gt; &lt;em&gt;Tour&lt;/em&gt; &lt;a href="https://github.com/twinbasic/documentation/pull/25"&gt;#25&lt;/a&gt; and &lt;em&gt;Controls&lt;/em&gt; &lt;a href="https://github.com/twinbasic/documentation/pull/23"&gt;#23&lt;/a&gt; sections will probably take a while to produce but I might just get the boiler plate pages built so others can contribute too. Also if there is a way to autogenerate all the Properties/Methods etc like &lt;a href="https://dotnet.github.io/docfx/"&gt;docfx&lt;/a&gt; does that would save some work.&lt;/p&gt;
+&lt;h2 id="prs"&gt;PRs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;[Draft]&lt;/em&gt; Add Controls Section &lt;a href="https://github.com/twinbasic/documentation/pull/23"&gt;#23&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;✔ Challenges &lt;a href="https://github.com/twinbasic/documentation/pull/24"&gt;#24&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;[Draft]&lt;/em&gt; IDE Tour &lt;a href="https://github.com/twinbasic/documentation/pull/25"&gt;#25&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;✔ Update config &lt;a href="https://github.com/twinbasic/documentation/pull/30"&gt;#30&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Videos &lt;a href="https://github.com/twinbasic/documentation/pull/34"&gt;#34&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://twinbasic.com/"&gt;https://twinbasic.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://docs.twinbasic.com/"&gt;https://docs.twinbasic.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/twinbasic/documentation"&gt;https://github.com/twinbasic/documentation&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/twinbasic/documentation/issues"&gt;https://github.com/twinbasic/documentation/issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/twinbasic/documentation/pulls"&gt;https://github.com/twinbasic/documentation/pulls&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://discord.gg/UaW9GgKKuE"&gt;https://discord.gg/UaW9GgKKuE&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>2025 In Review</title>
 			<link>https://alexhedley.github.io/blog/posts/2025-in-review</link>
@@ -394,109 +439,6 @@ June 4, 2025&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco"&gt;https://github.com/AlexHedley/nocco&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dontangg/nocco"&gt;https://github.com/dontangg/nocco&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://donwilson.net/nocco/"&gt;http://donwilson.net/nocco/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ashkenas.com/docco/"&gt;https://ashkenas.com/docco/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>.NET nocco</title>
-			<link>https://alexhedley.github.io/blog/posts/dotnet-nocco</link>
-			<description>Nocco is a quick-and-dirty, literate-programming-style documentation generator</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/dotnet-nocco</guid>
-			<pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- .NET nocco --&gt;
-&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
-&lt;p&gt;In this post I will talk through how I updated Don Wilson's (&lt;a href="https://github.com/dontangg"&gt;@dontangg&lt;/a&gt;) &lt;strong&gt;nocco&lt;/strong&gt; from .NET Framework v4.0 to .NET (Core) v9.&lt;/p&gt;
-&lt;p&gt;So what is nocco? It's a .NET port of &lt;a href="https://ashkenas.com/docco/"&gt;Docco&lt;/a&gt;. What is Docco?&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Docco is a quick-and-dirty documentation generator, written in &lt;a href="https://coffeescript.org/#literate"&gt;Literate CoffeeScript&lt;/a&gt;. It produces an HTML document that displays your comments intermingled with your code. All prose is passed through &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;, and code is passed through &lt;a href="http://highlightjs.org/"&gt;Highlight.js&lt;/a&gt; syntax highlighting. This page is the result of running Docco against its own &lt;a href="https://github.com/jashkenas/docco/blob/master/docco.litcoffee"&gt;source file&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nocco is a quick-and-dirty, literate-programming-style&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You can see an original output of &lt;code&gt;nocco.cs&lt;/code&gt; on &lt;a href="http://donwilson.net/nocco/"&gt;http://donwilson.net/nocco/&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/nocco/nocco.cs.html.png" alt="nocco" title="nocco"&gt;&lt;/p&gt;
-&lt;p&gt;What does it do? The original takes a list of files, these could be C#, VB.NET, SQL or JS and produces a side by side view of code comments and their respective code.&lt;/p&gt;
-&lt;p&gt;From the &lt;code&gt;nocco.cs&lt;/code&gt; page at the Razor section their notes are the following:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Setup the Razor templating engine so that we can quickly pass the data in and generate HTML.
-The file &lt;code&gt;Resources\Nocco.cshtml&lt;/code&gt; is read and compiled into a new dll with a type that extends the &lt;code&gt;TemplateBase&lt;/code&gt; class. This new assembly is loaded so that we can create an instance and pass data into it and generate the HTML.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This file was then executed to produce the output, along with the html documentation and syntax highlighted code, you can read more about it on the linked page or in the code itself.&lt;/p&gt;
-&lt;p&gt;I've got some experience with building DLLs using &lt;code&gt;Microsoft.CodeAnalysis.CSharp&lt;/code&gt; when I built &lt;a href="https://github.com/alex-hedley/BlazorInteractive"&gt;BlazorInteractive&lt;/a&gt; but this has changed a little from the original &lt;code&gt;CSharpCodeProvider&lt;/code&gt; used here.&lt;/p&gt;
-&lt;p&gt;For the first pass I thought it might be easier to not have the code be compiled in the same way, instead I'll just build a Razor page, like before, and then pass the data I needed. Luckily &lt;a href="https://robanderson.dev/"&gt;Rob Anderson&lt;/a&gt; had told me about a method he'd used to do this:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Render Razor components outside of ASP.NET Core
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-components-outside-of-aspnetcore?view=aspnetcore-9.0"&gt;https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-components-outside-of-aspnetcore?view=aspnetcore-9.0&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.web.htmlrenderer?view=aspnetcore-9.0"&gt;&lt;code&gt;HtmlRenderer&lt;/code&gt;&lt;/a&gt; to the rescue.&lt;/p&gt;
-&lt;p&gt;I made the project use the SDK: &lt;code&gt;Microsoft.NET.Sdk.Razor&lt;/code&gt; then added the &lt;code&gt;Microsoft.AspNetCore.Components.Web&lt;/code&gt; library.&lt;/p&gt;
-&lt;p&gt;Next the &lt;code&gt;GenerateHtml()&lt;/code&gt; method was where I got to work updating. Following the above tutorial was very quick. I renamed the original &lt;code&gt;Nocco.cshtml&lt;/code&gt; to &lt;code&gt;Webpage.razor&lt;/code&gt; and added in the corresponding &lt;code&gt;@code {}&lt;/code&gt; and &lt;code&gt;[Parameter]&lt;/code&gt;s. This now allows me to pass a &lt;code&gt;Dictionary&lt;/code&gt; of KVPs matching the Parameter names with the corresponding data types. It didn't like passing the &lt;code&gt;Func&amp;lt;&amp;gt;&lt;/code&gt; directly as an &lt;code&gt;object?&lt;/code&gt; so I made it it's own variable and passed that in.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href="https://github.com/AlexHedley/nocco/blob/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs#L116-L153"&gt;https://github.com/AlexHedley/nocco/blob/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs#L116-L153&lt;/a&gt;&lt;/p&gt;
-&lt;!-- https://raw.githubusercontent.com/AlexHedley/nocco/d6f7f65e519d66056db67f5c5430f8d9ee94da1a/src/Nocco/Nocco.cs --&gt;
-&lt;details&gt;
-&lt;summary&gt;GenerateHtml&lt;/summary&gt;
-&lt;pre&gt;&lt;code class="language-cs"&gt;private static async void GenerateHtml(string source, List&amp;lt;Section&amp;gt; sections)
-{
-    int depth;
-    var destination = GetDestination(source, out depth);
-        
-    string pathToRoot = string.Concat(Enumerable.Repeat(".." + Path.DirectorySeparatorChar, depth));
-
-    IServiceCollection services = new ServiceCollection();
-    services.AddLogging();
-    IServiceProvider serviceProvider = services.BuildServiceProvider();
-    ILoggerFactory loggerFactory = serviceProvider.GetRequiredService&amp;lt;ILoggerFactory&amp;gt;();
-    await using var htmlRenderer = new HtmlRenderer(serviceProvider, loggerFactory);
-
-    var html = await htmlRenderer.Dispatcher.InvokeAsync(async () =&amp;gt;
-    {
-        Func&amp;lt;string, string&amp;gt; getSourcePath = s =&amp;gt;
-            Path.Combine(pathToRoot, Path.ChangeExtension(s.ToLower(), ".html").Substring(2)).Replace('\\', '/');
-        var dictionary = new Dictionary&amp;lt;string, object?&amp;gt;
-        {
-            { "Title", Path.GetFileName(source) },
-            { "PathToCss", Path.Combine(pathToRoot, "nocco.css").Replace('\\', '/') },
-            { "PathToJs", Path.Combine(pathToRoot, "prettify.js").Replace('\\', '/') },
-            { "GetSourcePath", getSourcePath },
-            { "Sections", sections },
-            { "Sources", _files },
-        };
-
-        var parameters = ParameterView.FromDictionary(dictionary);
-        var output = await htmlRenderer.RenderComponentAsync&amp;lt;Webpage&amp;gt;(parameters);
-
-        return output.ToHtmlString();
-    });
-    
-    File.WriteAllText(destination, html);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/details&gt;
-&lt;p&gt;Build the app.&lt;/p&gt;
-&lt;p&gt;Navigate to the folder with your source files in&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;nocco *.cs&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Open the newly created &lt;code&gt;docs&lt;/code&gt; folder and open any of the matching &lt;code&gt;*.html&lt;/code&gt; files.&lt;/p&gt;
-&lt;h3 id="dependencies"&gt;Dependencies&lt;/h3&gt;
-&lt;p&gt;The original also used &lt;a href="https://www.nuget.org/packages/MarkdownSharp/1.13.0"&gt;MarkdownSharp&lt;/a&gt; &lt;em&gt;v1.13.0.0&lt;/em&gt;, I updated this to &lt;a href="https://www.nuget.org/packages/MarkdownSharpCore"&gt;MarkdownSharpCore&lt;/a&gt; &lt;em&gt;v1.2.0&lt;/em&gt; just to make the upgrade easier, I'm contemplating swapping to &lt;a href="https://www.nuget.org/packages/MarkDig"&gt;Markdig&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco"&gt;https://github.com/AlexHedley/nocco&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco-example"&gt;https://github.com/AlexHedley/nocco-example&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
 &lt;ul&gt;
