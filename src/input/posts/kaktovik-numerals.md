@@ -1,7 +1,7 @@
 ---
 title: Kaktovik Numerals
 # lead:
-description: Documenting the Kaktovik Numerals
+description: Documenting the Kaktovik Numerals system
 tags:
   - number system
 author: AlexHedley
