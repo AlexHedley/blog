@@ -4,9 +4,1110 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2026</rights>
-	<updated>2026-01-17T12:44:25Z</updated>
+	<updated>2026-04-02T16:51:26Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/vb-form-builder</id>
+		<title>VB Form Builder</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/vb-form-builder" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2026-03-31T00:00:00Z</updated>
+		<content>&lt;!-- VB Form Builder --&gt;
+&lt;p&gt;In a past life I was a &lt;a href="https://balsamiq.com/"&gt;balsamiq&lt;/a&gt; user. I loved a quick way to mockup a design with a set of common controls. There are many other tools you can do this with.&lt;/p&gt;
+&lt;p&gt;Not sure how much need there would be for an &lt;a href="https://www.microsoft.com/en-us/microsoft-365/access"&gt;MS Access&lt;/a&gt; version but thought why not give it a go.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href="https://alexhedley.github.io/blog/copilot"&gt;copilot&lt;/a&gt; to build the app with the following prompt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Build a Microsoft Access VBA Form Builder as a website using the 98.css theme.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://jdan.github.io/98.css/"&gt;https://jdan.github.io/98.css/&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://unpkg.com/98.css@0.1.21/dist/98.css"&gt;https://unpkg.com/98.css@0.1.21/dist/98.css&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With the additional prompts&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;add and import and export option&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To test this out I've take a &lt;code&gt;CustomerF&lt;/code&gt; from the &lt;a href="https://599cd.com/"&gt;599CD&lt;/a&gt; &lt;a href="https://599cd.com/blog/display-article.asp?ID=1413"&gt;Blank Template&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599cd/vb-form-builder/sample-form.jpg" alt="Sample Form" title="Sample Form"&gt;&lt;/p&gt;
+&lt;p&gt;Then I've created the same &lt;code&gt;Form&lt;/code&gt; with the new tool to see how it looks:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599cd/vb-form-builder/pcresale.net_vb-form-builder.png" alt="CustomerF" title="CustomerF"&gt;&lt;/p&gt;
+&lt;p&gt;It created a number of controls originally, then I asked it to add more:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://support.microsoft.com/en-us/office/introduction-to-controls-4a8cf5f2-d739-4ae9-b1e0-510c3f4d6975"&gt;Introduction to controls&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-vb"&gt;  // Access VBA control-type constants
+  const AC = {
+    Label:            { vba: 'acLabel',            n: 100 },
+    TextBox:          { vba: 'acTextBox',          n: 109 },
+    CommandButton:    { vba: 'acCommandButton',    n: 104 },
+    CheckBox:         { vba: 'acCheckBox',         n: 106 },
+    OptionButton:     { vba: 'acOptionButton',     n: 105 },
+    ComboBox:         { vba: 'acComboBox',         n: 111 },
+    ListBox:          { vba: 'acListBox',          n: 110 },
+    Frame:            { vba: 'acRectangle',        n: 101 },
+    Image:            { vba: 'acImage',            n: 103 },
+    ToggleButton:     { vba: 'acToggleButton',     n: 122 },
+    Line:             { vba: 'acLine',             n: 102 },
+    TabStrip:         { vba: 'acTabCtl',           n: 123 },
+    SubForm:          { vba: 'acSubForm',          n: 112 },
+    PageBreak:        { vba: 'acPageBreak',        n: 118 },
+    OptionGroup:      { vba: 'acOptionGroup',      n: 107 },
+    ObjectFrame:      { vba: 'acObjectFrame',      n: 114 },
+    BoundObjectFrame: { vba: 'acBoundObjectFrame', n: 108 },
+    Attachment:       { vba: 'acAttachment',       n: 126 },
+  };
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A few more prompts were asked:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Allow the toolbox to be 1 or 2 columns&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can minimise but not restore the code output panel&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The main Form isn't resizable, you can't drag the corner.
+When you change the width and height properties it doesn't resize the Form.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Allow for the different panels to be adjustable.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It worked really for a majority of the work. There are still some tweaks I need to make but as an initial app it does more than what I needed or had in my head before I began.&lt;/p&gt;
+&lt;p&gt;The Import / Export and Save Code option were really cool additions.&lt;/p&gt;
+&lt;h3 id="code-output"&gt;Code Output&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Customer F.vbfb.json&lt;/summary&gt;
+&lt;pre&gt;&lt;code class="language-json"&gt;{
+  "_version": 1,
+  "_app": "VB Form Builder",
+  "form": {
+    "name": "Customer F",
+    "caption": "Customer",
+    "width": 544,
+    "height": 264,
+    "backColor": "#d4d0c8"
+  },
+  "controls": [
+    {
+      "id": "_c781thv",
+      "type": "TextBox",
+      "name": "CustomerID",
+      "left": 88,
+      "top": 8,
+      "width": 120,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_hs98uso",
+      "type": "TextBox",
+      "name": "First",
+      "left": 88,
+      "top": 32,
+      "width": 120,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_4q66qws",
+      "type": "TextBox",
+      "name": "Last",
+      "left": 208,
+      "top": 32,
+      "width": 120,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_8q2kiag",
+      "type": "TextBox",
+      "name": "CompanyName",
+      "left": 88,
+      "top": 56,
+      "width": 248,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_2k62j39",
+      "type": "CheckBox",
+      "name": "Check1",
+      "left": 256,
+      "top": 8,
+      "width": 72,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Active"
+    },
+    {
+      "id": "_3xz8l9h",
+      "type": "TextBox",
+      "name": "Address",
+      "left": 88,
+      "top": 80,
+      "width": 240,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_5175abg",
+      "type": "TextBox",
+      "name": "State",
+      "left": 184,
+      "top": 104,
+      "width": 64,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_ks2n5x9",
+      "type": "TextBox",
+      "name": "City",
+      "left": 88,
+      "top": 104,
+      "width": 96,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_er8y4rr",
+      "type": "TextBox",
+      "name": "ZIP",
+      "left": 248,
+      "top": 104,
+      "width": 80,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_8nt7gpy",
+      "type": "TextBox",
+      "name": "Country",
+      "left": 88,
+      "top": 128,
+      "width": 240,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_g4gqyex",
+      "type": "TextBox",
+      "name": "Email",
+      "left": 88,
+      "top": 152,
+      "width": 240,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_xq0w79g",
+      "type": "TextBox",
+      "name": "Website",
+      "left": 88,
+      "top": 176,
+      "width": 240,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_n35gvys",
+      "type": "TextBox",
+      "name": "Phone",
+      "left": 88,
+      "top": 200,
+      "width": 240,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_32kp3r9",
+      "type": "TextBox",
+      "name": "CustomerSince",
+      "left": 88,
+      "top": 224,
+      "width": 240,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_i9vneir",
+      "type": "Label",
+      "name": "Label1",
+      "left": 8,
+      "top": 8,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Customer ID:"
+    },
+    {
+      "id": "_11whonp",
+      "type": "Label",
+      "name": "Label2",
+      "left": 8,
+      "top": 32,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "First, Last, Names:"
+    },
+    {
+      "id": "_qzvc20v",
+      "type": "Label",
+      "name": "Label3",
+      "left": 8,
+      "top": 56,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Company Name"
+    },
+    {
+      "id": "_eto8nap",
+      "type": "Label",
+      "name": "Label4",
+      "left": 8,
+      "top": 80,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Adddress"
+    },
+    {
+      "id": "_ljj8txa",
+      "type": "Label",
+      "name": "Label5",
+      "left": 8,
+      "top": 104,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "City, State, ZIP"
+    },
+    {
+      "id": "_613df84",
+      "type": "Label",
+      "name": "Label6",
+      "left": 8,
+      "top": 128,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Country"
+    },
+    {
+      "id": "_oo6m3uo",
+      "type": "Label",
+      "name": "Label7",
+      "left": 8,
+      "top": 152,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Email"
+    },
+    {
+      "id": "_vxbg61c",
+      "type": "Label",
+      "name": "Label8",
+      "left": 8,
+      "top": 176,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Website"
+    },
+    {
+      "id": "_qsl0gqg",
+      "type": "Label",
+      "name": "Label9",
+      "left": 8,
+      "top": 200,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Phone"
+    },
+    {
+      "id": "_3bxqrg1",
+      "type": "Label",
+      "name": "Label10",
+      "left": 8,
+      "top": 224,
+      "width": 80,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Customer Since"
+    },
+    {
+      "id": "_snbv7o7",
+      "type": "TextBox",
+      "name": "Employees",
+      "left": 440,
+      "top": 176,
+      "width": 88,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_r38w8jj",
+      "type": "Label",
+      "name": "Label11",
+      "left": 368,
+      "top": 176,
+      "width": 64,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Employees"
+    },
+    {
+      "id": "_f5xfpfp",
+      "type": "TextBox",
+      "name": "DiscountRate",
+      "left": 440,
+      "top": 200,
+      "width": 88,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_cz9zpwg",
+      "type": "Label",
+      "name": "Label12",
+      "left": 368,
+      "top": 200,
+      "width": 72,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Discount Rate"
+    },
+    {
+      "id": "_wnij37q",
+      "type": "TextBox",
+      "name": "CreditLimit",
+      "left": 440,
+      "top": 224,
+      "width": 88,
+      "height": 21,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffffff"
+    },
+    {
+      "id": "_b8w401v",
+      "type": "Label",
+      "name": "Label13",
+      "left": 368,
+      "top": 224,
+      "width": 64,
+      "height": 18,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "caption": "Credit Limit"
+    },
+    {
+      "id": "_ab9btu3",
+      "type": "TextBox",
+      "name": "Notes",
+      "left": 360,
+      "top": 8,
+      "width": 168,
+      "height": 160,
+      "visible": true,
+      "enabled": true,
+      "fontSize": 8,
+      "fontBold": false,
+      "fontItalic": false,
+      "foreColor": "#000000",
+      "text": "",
+      "backColor": "#ffff00"
+    }
+  ],
+  "counters": {
+    "TextBox": 17,
+    "CheckBox": 1,
+    "Label": 13
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt;Customer F_VBA.bas&lt;/summary&gt;
+&lt;pre&gt;&lt;code class="language-vb"&gt;' ========================================================
+' VB Form Builder — Generated Microsoft Access VBA Code
+' Form   : Customer F
+' Caption: Customer
+' Created: Apr 2, 2026
+' ========================================================
+'
+' HOW TO USE:
+'   1. Open your Access database.
+'   2. Press Alt+F11 to open the VBA editor.
+'   3. Insert &amp;gt; Module, paste this code, then run CreateForm_Customer F().
+' ========================================================
+
+Option Explicit
+
+Sub CreateForm_Customer F()
+    Dim frm  As Form
+    Dim ctrl As Control
+
+    ' ---- Create the form ----
+    Set frm = CreateForm()
+    frm.Caption = "Customer"
+
+    ' ---- Controls ----
+    ' CustomerID (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "CustomerID", 1320, 120, 1800, 315)
+
+    ' First (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "First", 1320, 480, 1800, 315)
+
+    ' Last (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "Last", 3120, 480, 1800, 315)
+
+    ' CompanyName (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "CompanyName", 1320, 840, 3720, 315)
+
+    ' Check1 (CheckBox)
+    Set ctrl = CreateControl(frm.Name, acCheckBox, acDetail, , "Check1", 3840, 120, 1080, 270)
+    ctrl.Caption = "Active"
+
+    ' Address (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "Address", 1320, 1200, 3600, 315)
+
+    ' State (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "State", 2760, 1560, 960, 315)
+
+    ' City (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "City", 1320, 1560, 1440, 315)
+
+    ' ZIP (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "ZIP", 3720, 1560, 1200, 315)
+
+    ' Country (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "Country", 1320, 1920, 3600, 315)
+
+    ' Email (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "Email", 1320, 2280, 3600, 315)
+
+    ' Website (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "Website", 1320, 2640, 3600, 315)
+
+    ' Phone (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "Phone", 1320, 3000, 3600, 315)
+
+    ' CustomerSince (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "CustomerSince", 1320, 3360, 3600, 315)
+
+    ' Label1 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label1", 120, 120, 1200, 270)
+    ctrl.Caption = "Customer ID:"
+
+    ' Label2 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label2", 120, 480, 1200, 270)
+    ctrl.Caption = "First, Last, Names:"
+
+    ' Label3 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label3", 120, 840, 1200, 270)
+    ctrl.Caption = "Company Name"
+
+    ' Label4 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label4", 120, 1200, 1200, 270)
+    ctrl.Caption = "Adddress"
+
+    ' Label5 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label5", 120, 1560, 1200, 270)
+    ctrl.Caption = "City, State, ZIP"
+
+    ' Label6 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label6", 120, 1920, 1200, 270)
+    ctrl.Caption = "Country"
+
+    ' Label7 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label7", 120, 2280, 1200, 270)
+    ctrl.Caption = "Email"
+
+    ' Label8 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label8", 120, 2640, 1200, 270)
+    ctrl.Caption = "Website"
+
+    ' Label9 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label9", 120, 3000, 1200, 270)
+    ctrl.Caption = "Phone"
+
+    ' Label10 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label10", 120, 3360, 1200, 270)
+    ctrl.Caption = "Customer Since"
+
+    ' Employees (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "Employees", 6600, 2640, 1320, 315)
+
+    ' Label11 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label11", 5520, 2640, 960, 270)
+    ctrl.Caption = "Employees"
+
+    ' DiscountRate (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "DiscountRate", 6600, 3000, 1320, 315)
+
+    ' Label12 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label12", 5520, 3000, 1080, 270)
+    ctrl.Caption = "Discount Rate"
+
+    ' CreditLimit (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "CreditLimit", 6600, 3360, 1320, 315)
+
+    ' Label13 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , "Label13", 5520, 3360, 960, 270)
+    ctrl.Caption = "Credit Limit"
+
+    ' Notes (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , "Notes", 5400, 120, 2520, 2400)
+    ctrl.BackColor = RGB(255, 255, 0)
+
+    ' ---- Save &amp;amp; close ----
+    DoCmd.Save acForm, frm.Name
+    DoCmd.Close acForm, frm.Name, acSaveYes
+    MsgBox "Form '" &amp;amp; frm.Name &amp;amp; "' created successfully!", vbInformation
+End Sub
+
+' ========================================================
+' Event-handler stubs
+' (Paste these into your form's code module in Access)
+' ========================================================
+
+Private Sub CustomerID_Change()
+    ' TODO: handle CustomerID change
+End Sub
+
+Private Sub CustomerID_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate CustomerID
+End Sub
+
+Private Sub First_Change()
+    ' TODO: handle First change
+End Sub
+
+Private Sub First_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate First
+End Sub
+
+Private Sub Last_Change()
+    ' TODO: handle Last change
+End Sub
+
+Private Sub Last_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Last
+End Sub
+
+Private Sub CompanyName_Change()
+    ' TODO: handle CompanyName change
+End Sub
+
+Private Sub CompanyName_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate CompanyName
+End Sub
+
+Private Sub Check1_Click()
+    ' TODO: handle Check1 toggle
+    ' Me.Check1 = True or False
+End Sub
+
+Private Sub Address_Change()
+    ' TODO: handle Address change
+End Sub
+
+Private Sub Address_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Address
+End Sub
+
+Private Sub State_Change()
+    ' TODO: handle State change
+End Sub
+
+Private Sub State_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate State
+End Sub
+
+Private Sub City_Change()
+    ' TODO: handle City change
+End Sub
+
+Private Sub City_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate City
+End Sub
+
+Private Sub ZIP_Change()
+    ' TODO: handle ZIP change
+End Sub
+
+Private Sub ZIP_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate ZIP
+End Sub
+
+Private Sub Country_Change()
+    ' TODO: handle Country change
+End Sub
+
+Private Sub Country_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Country
+End Sub
+
+Private Sub Email_Change()
+    ' TODO: handle Email change
+End Sub
+
+Private Sub Email_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Email
+End Sub
+
+Private Sub Website_Change()
+    ' TODO: handle Website change
+End Sub
+
+Private Sub Website_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Website
+End Sub
+
+Private Sub Phone_Change()
+    ' TODO: handle Phone change
+End Sub
+
+Private Sub Phone_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Phone
+End Sub
+
+Private Sub CustomerSince_Change()
+    ' TODO: handle CustomerSince change
+End Sub
+
+Private Sub CustomerSince_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate CustomerSince
+End Sub
+
+Private Sub Employees_Change()
+    ' TODO: handle Employees change
+End Sub
+
+Private Sub Employees_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Employees
+End Sub
+
+Private Sub DiscountRate_Change()
+    ' TODO: handle DiscountRate change
+End Sub
+
+Private Sub DiscountRate_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate DiscountRate
+End Sub
+
+Private Sub CreditLimit_Change()
+    ' TODO: handle CreditLimit change
+End Sub
+
+Private Sub CreditLimit_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate CreditLimit
+End Sub
+
+Private Sub Notes_Change()
+    ' TODO: handle Notes change
+End Sub
+
+Private Sub Notes_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Notes
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+    ' TODO: initialize form
+End Sub
+
+Private Sub Form_Close()
+    ' TODO: clean up
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;h2 id="site"&gt;Site&lt;/h2&gt;
+&lt;p&gt;I've deployed this via Rick's &lt;a href="http://pcresale.net/"&gt;PC Resale&lt;/a&gt; website as it's Access related and linked to &lt;a href="https://599cd.com/"&gt;599CD&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🌍 &lt;a href="http://pcresale.net/vb-form-builder/"&gt;http://pcresale.net/vb-form-builder/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 &lt;a href="https://github.com/599CD/vb-form-builder"&gt;https://github.com/599CD/vb-form-builder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pcresale.net/vb-form-builder/"&gt;http://pcresale.net/vb-form-builder/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Building a web version of a VB/VBA Form Builder like MS Access</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/vba-object-browser</id>
+		<title>VBA Object Browser</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/vba-object-browser" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2026-03-16T00:00:00Z</updated>
+		<content>&lt;!-- VBA Object Browser --&gt;
+&lt;p&gt;A number of years ago I found a UI lib called &lt;a href="https://jdan.github.io/98.css/"&gt;98.css&lt;/a&gt; with the tag line "A design system for building faithful recreations of old UIs." I've been wanting a reason to use this in some app and thought this might be a good use case.&lt;/p&gt;
+&lt;p&gt;What is the &lt;a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/object-browser"&gt;Object Browser&lt;/a&gt;?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A dialog box in which you can examine the contents of an object library to get information about the objects provided.&lt;/p&gt;
+&lt;p&gt;Displays the &lt;a href="https://learn.microsoft.com/en-us/office/vba/language/glossary/vbe-glossary#class"&gt;classes&lt;/a&gt;, properties, methods, events, and constants available from &lt;a href="https://learn.microsoft.com/en-us/office/vba/language/glossary/vbe-glossary#object-library"&gt;object libraries&lt;/a&gt; and the &lt;a href="https://learn.microsoft.com/en-us/office/vba/language/glossary/vbe-glossary#procedure"&gt;procedures&lt;/a&gt; in your project. Use it to find and use objects you create, as well as objects from other applications.&lt;/p&gt;
+&lt;p&gt;You can get Help for the &lt;strong&gt;Object Browser&lt;/strong&gt; by searching for Object Browser in Help.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An original screenshot of the Object Browser.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599CD/VBA-Object-Browser/ObjectBrowser.jpg" alt="Object Browser" title="Object Browser"&gt;&lt;/p&gt;
+&lt;p&gt;The list of Libraries comes from the &lt;a href="https://learn.microsoft.com/"&gt;MS Learn&lt;/a&gt; &lt;a href="https://learn.microsoft.com/en-us/office/vba/api/overview/"&gt;Office VBA Reference&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VBA&lt;/li&gt;
+&lt;li&gt;Excel&lt;/li&gt;
+&lt;li&gt;Office&lt;/li&gt;
+&lt;li&gt;Word&lt;/li&gt;
+&lt;li&gt;PowerPoint&lt;/li&gt;
+&lt;li&gt;Access&lt;/li&gt;
+&lt;li&gt;Outlook&lt;/li&gt;
+&lt;li&gt;Scripting&lt;/li&gt;
+&lt;li&gt;ADODB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I thought why not use this type of project as a way to try out &lt;a href="https://alexhedley.github.io/blog/copilot"&gt;Copilot&lt;/a&gt; so I asked the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Build the VBA Object Browser as a website.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I then raised a new Issue and assigned Copilot to see what they would add:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Use the following links as a reference:&lt;/p&gt;
+&lt;p&gt;Use the Object Browser&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/use-the-object-browser"&gt;https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/use-the-object-browser&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Object Browser&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/object-browser"&gt;https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/object-browser&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Code window and Object Browser icons&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/icons-used-in-the-object-browser-and-code-windows"&gt;https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/icons-used-in-the-object-browser-and-code-windows&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With the following prompts:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;are there any missing classes/methods?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;VBA&lt;/strong&gt; &lt;code&gt;&amp;lt;globals&amp;gt;&lt;/code&gt; — 27 new methods: &lt;code&gt;AppActivate&lt;/code&gt;, &lt;code&gt;Beep&lt;/code&gt;, &lt;code&gt;CallByName&lt;/code&gt;, &lt;code&gt;ChDir&lt;/code&gt;, &lt;code&gt;ChDrive&lt;/code&gt;, &lt;code&gt;CVErr&lt;/code&gt;, &lt;code&gt;DeleteSetting&lt;/code&gt;, &lt;code&gt;FileCopy&lt;/code&gt;, &lt;code&gt;FileDateTime&lt;/code&gt;, &lt;code&gt;FileLen&lt;/code&gt;, &lt;code&gt;FreeFile&lt;/code&gt;, &lt;code&gt;GetAllSettings&lt;/code&gt;, &lt;code&gt;GetAttr&lt;/code&gt;, &lt;code&gt;GetSetting&lt;/code&gt;, &lt;code&gt;InputBox&lt;/code&gt;, &lt;code&gt;Kill&lt;/code&gt;, &lt;code&gt;MkDir&lt;/code&gt;, &lt;code&gt;Partition&lt;/code&gt;, &lt;code&gt;QBColor&lt;/code&gt;, &lt;code&gt;Randomize&lt;/code&gt;, &lt;code&gt;RmDir&lt;/code&gt;, &lt;code&gt;SaveSetting&lt;/code&gt;, &lt;code&gt;SendKeys&lt;/code&gt;, &lt;code&gt;SetAttr&lt;/code&gt;, &lt;code&gt;Shell&lt;/code&gt;, &lt;code&gt;Spc&lt;/code&gt;, &lt;code&gt;Tab&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VBA enums&lt;/strong&gt; — 2 new: &lt;code&gt;VbFirstWeekOfYear&lt;/code&gt; (was already referenced in the &lt;code&gt;DateDiff&lt;/code&gt;/&lt;code&gt;DatePart&lt;/code&gt; signatures but the enum itself was absent), &lt;code&gt;VbTriState&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Excel&lt;/strong&gt; &lt;code&gt;&amp;lt;globals&amp;gt;&lt;/code&gt; — 4 added: &lt;code&gt;ActiveChart&lt;/code&gt;, &lt;code&gt;Charts&lt;/code&gt;, &lt;code&gt;Names&lt;/code&gt;, &lt;code&gt;Sheets&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Excel&lt;/strong&gt; existing classes — missing members added to Application (+7: &lt;code&gt;ActiveChart&lt;/code&gt;, &lt;code&gt;Charts&lt;/code&gt;, &lt;code&gt;GetOpenFilename&lt;/code&gt;, &lt;code&gt;GetSaveAsFilename&lt;/code&gt;, &lt;code&gt;OnTime&lt;/code&gt;, &lt;code&gt;Run&lt;/code&gt;, &lt;code&gt;Wait&lt;/code&gt;), &lt;code&gt;Workbook&lt;/code&gt; (+6: &lt;code&gt;ActiveChart&lt;/code&gt;, &lt;code&gt;Charts&lt;/code&gt;, &lt;code&gt;Names&lt;/code&gt;, &lt;code&gt;PrintOut&lt;/code&gt;, &lt;code&gt;Protect&lt;/code&gt;, &lt;code&gt;Unprotect&lt;/code&gt;), &lt;code&gt;Worksheet&lt;/code&gt; (+7: &lt;code&gt;Calculate&lt;/code&gt;, &lt;code&gt;ChartObjects&lt;/code&gt;, &lt;code&gt;ListObjects&lt;/code&gt;, &lt;code&gt;PageSetup&lt;/code&gt;, &lt;code&gt;PrintOut&lt;/code&gt;, &lt;code&gt;Protect&lt;/code&gt;, &lt;code&gt;Shapes&lt;/code&gt;), &lt;code&gt;Range&lt;/code&gt; (+11: &lt;code&gt;Activate&lt;/code&gt;, &lt;code&gt;Borders&lt;/code&gt;, &lt;code&gt;Calculate&lt;/code&gt;, &lt;code&gt;FillDown&lt;/code&gt;/&lt;code&gt;Left&lt;/code&gt;/&lt;code&gt;Right&lt;/code&gt;/&lt;code&gt;Up&lt;/code&gt;, &lt;code&gt;NumberFormatLocal&lt;/code&gt;, &lt;code&gt;Select&lt;/code&gt;, &lt;code&gt;Text&lt;/code&gt;, &lt;code&gt;WrapText&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;New Excel classes&lt;/strong&gt; — &lt;code&gt;Chart&lt;/code&gt;, &lt;code&gt;Name&lt;/code&gt;, &lt;code&gt;PivotTable&lt;/code&gt;, &lt;code&gt;ListObject&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;can you implement all classes/methods etc from all Office programs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Word&lt;/strong&gt; (19 classes, 218 members): &lt;code&gt;Application&lt;/code&gt;, &lt;code&gt;Document&lt;/code&gt;, &lt;code&gt;Documents&lt;/code&gt;, &lt;code&gt;Selection&lt;/code&gt;, &lt;code&gt;Range&lt;/code&gt;, &lt;code&gt;Paragraph&lt;/code&gt;, &lt;code&gt;Table&lt;/code&gt;, &lt;code&gt;Find&lt;/code&gt;, &lt;code&gt;Bookmark&lt;/code&gt;, and enums &lt;code&gt;WdParagraphAlignment&lt;/code&gt;, &lt;code&gt;WdSaveFormat&lt;/code&gt;, &lt;code&gt;WdSaveOptions&lt;/code&gt;, &lt;code&gt;WdUnits&lt;/code&gt;, &lt;code&gt;WdCollapseDirection&lt;/code&gt;, &lt;code&gt;WdMovementType&lt;/code&gt;, &lt;code&gt;WdSelectionType&lt;/code&gt;, &lt;code&gt;WdProtectionType&lt;/code&gt;, &lt;code&gt;WdFindWrap&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PowerPoint&lt;/strong&gt; (11 classes, 122 members): &lt;code&gt;Application&lt;/code&gt;, &lt;code&gt;Presentation&lt;/code&gt;, &lt;code&gt;Presentations&lt;/code&gt;, &lt;code&gt;Slide&lt;/code&gt;, &lt;code&gt;Slides&lt;/code&gt;, &lt;code&gt;Shape&lt;/code&gt;, &lt;code&gt;TextFrame&lt;/code&gt;, &lt;code&gt;TextRange&lt;/code&gt;, and enums &lt;code&gt;PpSlideLayout&lt;/code&gt;, &lt;code&gt;PpSaveAsFileType&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;add Access, Outlook, Scripting (FileSystemObject), and ADODB&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With the following responses:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Access&lt;/strong&gt; (9 classes, 106 members): &lt;code&gt;Application&lt;/code&gt;, &lt;code&gt;DoCmd&lt;/code&gt; (30 actions: &lt;code&gt;OpenForm&lt;/code&gt;, &lt;code&gt;OpenReport&lt;/code&gt;, &lt;code&gt;RunSQL&lt;/code&gt;, &lt;code&gt;TransferSpreadsheet&lt;/code&gt;, &lt;code&gt;SendObject&lt;/code&gt;, etc.), &lt;code&gt;Form&lt;/code&gt;, &lt;code&gt;Report&lt;/code&gt; + enums &lt;code&gt;AcFormView&lt;/code&gt;, &lt;code&gt;AcObjectType&lt;/code&gt;, &lt;code&gt;AcRecord&lt;/code&gt;, &lt;code&gt;AcQuitOption&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outlook&lt;/strong&gt; (11 classes, 114 members): &lt;code&gt;Application&lt;/code&gt;, &lt;code&gt;NameSpace&lt;/code&gt;, &lt;code&gt;MailItem&lt;/code&gt; (22 members), &lt;code&gt;MAPIFolder&lt;/code&gt;, &lt;code&gt;AppointmentItem&lt;/code&gt;, &lt;code&gt;ContactItem&lt;/code&gt; + enums &lt;code&gt;OlItemType&lt;/code&gt;, &lt;code&gt;OlDefaultFolders&lt;/code&gt;, &lt;code&gt;OlImportance&lt;/code&gt;, &lt;code&gt;OlSaveAsType&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Scripting&lt;/strong&gt; (9 classes, 98 members): &lt;code&gt;FileSystemObject&lt;/code&gt; (24 members: &lt;code&gt;CopyFile&lt;/code&gt;, &lt;code&gt;DeleteFolder&lt;/code&gt;, &lt;code&gt;OpenTextFile&lt;/code&gt;, etc.), &lt;code&gt;TextStream&lt;/code&gt;, &lt;code&gt;File&lt;/code&gt;, &lt;code&gt;Folder&lt;/code&gt;, &lt;code&gt;Drive&lt;/code&gt; + enums &lt;code&gt;IOMode&lt;/code&gt;, &lt;code&gt;SpecialFolderConst&lt;/code&gt;, &lt;code&gt;FileAttribute&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ADODB&lt;/strong&gt; (11 classes, 117 members): &lt;code&gt;Connection&lt;/code&gt;, &lt;code&gt;Recordset&lt;/code&gt; (38 members: &lt;code&gt;MoveNext&lt;/code&gt;, &lt;code&gt;AddNew&lt;/code&gt;, &lt;code&gt;Update&lt;/code&gt;, &lt;code&gt;GetRows&lt;/code&gt;, etc.), &lt;code&gt;Command&lt;/code&gt;, &lt;code&gt;Field&lt;/code&gt;, &lt;code&gt;Parameter&lt;/code&gt; + enums &lt;code&gt;CursorTypeEnum&lt;/code&gt;, &lt;code&gt;LockTypeEnum&lt;/code&gt;, &lt;code&gt;CommandTypeEnum&lt;/code&gt;, &lt;code&gt;ParameterDirectionEnum&lt;/code&gt;, &lt;code&gt;ConnectModeEnum&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;My outputs after accepting the changes from &lt;a href="https://github.com/features/copilot"&gt;GitHub Copilot&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599CD/VBA-Object-Browser/copilot-1.png" alt="Object Browser" title="Object Browser"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/599CD/VBA-Object-Browser/copilot-2.png" alt="Object Browser" title="Object Browser"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/599CD/VBA-Object-Browser/copilot-3.png" alt="Object Browser" title="Object Browser"&gt;&lt;/p&gt;
+&lt;p&gt;I thought it might be &lt;em&gt;helpful&lt;/em&gt; to have the ? link go to "https://learn.microsoft.com/en-gb/office/vba/api/overview/language-reference then it was updated to use the method etc but I think that needs some work...&lt;/p&gt;
+&lt;h2 id="site"&gt;Site&lt;/h2&gt;
+&lt;p&gt;I've deployed this via Rick's &lt;a href="http://pcresale.net/"&gt;PC Resale&lt;/a&gt; website as it's Access related and linked to &lt;a href="https://599cd.com/"&gt;599CD&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🌍 &lt;a href="http://pcresale.net/vba-object-browser/"&gt;http://pcresale.net/vba-object-browser/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 &lt;a href="https://github.com/599CD/VBA-Object-Browser"&gt;https://github.com/599CD/VBA-Object-Browser&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🔗 &lt;a href="https://github.com/jdan/98.css"&gt;https://github.com/jdan/98.css&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🌍 &lt;a href="https://jdan.github.io/98.css/"&gt;https://jdan.github.io/98.css/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Building a web version of the Object Browser</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/devhub-north-feb-2026</id>
+		<title>Devhub North - February 2026</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/devhub-north-feb-2026" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/meetups/devhub/feb-2026.jpeg" />
+		<updated>2026-02-05T00:00:00Z</updated>
+		<content>&lt;!-- # Devhub North - February --&gt;
+&lt;!-- ![Banner](images/meetups/devhub/feb-2026.jpeg "Banner") --&gt;
+&lt;p&gt;📅 Thursday, Feb 5 from 5:30 pm to 8 pm GMT&lt;/p&gt;
+&lt;p&gt;📍 One Strawberry LaneNewcastle upon Tyne, England&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.eventbrite.co.uk/e/devhub-north-february-tickets-1979864131915"&gt;https://www.eventbrite.co.uk/e/devhub-north-february-tickets-1979864131915&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;DevHub North is the North's biggest developer community! Join us to network and talk all things tech :)
+We’re back with another exciting DevHub North in-person event at a brand new location, One Strawberry Lane, Newcastle - and once again, we’re proudly sponsored by MHR!&lt;/p&gt;
+&lt;p&gt;📅 Date: Thursday 5th February&lt;br /&gt;
+🕠 Time: Doors open at 5:30pm&lt;br /&gt;
+📍 Location: One Strawberry Lane, Newcastle&lt;/p&gt;
+&lt;p&gt;Whether you’re a developer, a tech professional, a student, or just someone who’s fascinated by technology, you’re invited to join us for an evening of learning, networking, and (of course) pizza and beers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;About our sponsor: MHR&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;MHR is a global leader in HR, payroll, and analytics solutions, helping organisations transform the way they work. With innovation at their core, they’ve been empowering businesses to streamline operations, enhance employee experiences, and embrace the future of work for over 40 years. They’re not just backing this event - they’re sharing their own journey of transformation, design excellence, and AI-driven development through our speaker sessions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What to expect:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inspiring talks from industry experts (see below!)&lt;/li&gt;
+&lt;li&gt;Networking with like-minded professionals&lt;/li&gt;
+&lt;li&gt;Free pizza, beers, and soft drinks&lt;/li&gt;
+&lt;li&gt;Knowledge sharing in a friendly, open community&lt;/li&gt;
+&lt;li&gt;Lanyards to make meeting new people even easier&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="our-speakers"&gt;Our Speakers:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Welcome &amp;amp; Company Introduction&lt;/strong&gt;&lt;br /&gt;
+Presented by: Rosie (Host)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Talk One – Emerging patterns for use with LLM's&lt;/strong&gt;&lt;br /&gt;
+Presented by: Mark Williams (Director of Innovation)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Talk Two - Creating generative UI with LLM's&lt;/strong&gt;&lt;br /&gt;
+Presented by: Anthony Porthouse (Senior Web Application Developer)&lt;/p&gt;
+&lt;p&gt;Don’t miss it!&lt;/p&gt;
+&lt;p&gt;Spaces fill up quickly, so register now to secure your lanyard and your spot for an evening of inspiration, connection, and great conversation.&lt;/p&gt;
+&lt;p&gt;We can’t wait to see you there 👋&lt;/p&gt;
+&lt;p&gt;Your DevHub North Team 💬&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Good to know&lt;/p&gt;
+&lt;p&gt;Highlights&lt;/p&gt;
+&lt;p&gt;🕰️ 2 hours 30 minutes&lt;br /&gt;
+📍 In person&lt;/p&gt;
+</content>
+		<summary>meetup By Ronald James Group</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/dotnet-newcastle-jan-2026</id>
+		<title>.NET Meetup Newcastle - Jan 2026</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/dotnet-newcastle-jan-2026" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/meetups/dotnet-jan-2026.png" />
+		<updated>2026-01-27T00:00:00Z</updated>
+		<content>&lt;!-- # Qudos .NET Newcastle Meetup - Jan 2026 --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet-jan-2026.png" alt=".NET Meetup" title=".NET Meetup"&gt;&lt;/p&gt;
+&lt;p&gt;📅 Tuesday, Jan 27, 2025 · 5:30 - 8pm GMT&lt;/p&gt;
+&lt;p&gt;📍 Building 5, Airport Freightway Freight Village, Woolsington, Newcastle upon Tyne NE13 8BH · Newcastle upon Tyne&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/312759966/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/312759966/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For our first 2 meetups in 2026, the folks over at &lt;strong&gt;QGEMS&lt;/strong&gt; have kindly offered to host and sponsor.&lt;/p&gt;
+&lt;p&gt;We will be at &lt;strong&gt;Building 5, Airport Freightway Freight Village, Woolsington, Newcastle upon Tyne NE13 8BH&lt;/strong&gt; - plenty of free parking on site and a short walk from the nearest Metro.&lt;/p&gt;
+&lt;p&gt;We have a fairly relaxed agenda, but will follow:&lt;/p&gt;
+&lt;p&gt;5:30 - Doors Open&lt;br&gt;
+5:45 - Pizza arrival&lt;br&gt;
+6:00 - Introduction / Housekeeping&lt;br&gt;
+6:10 - Talks begin&lt;br&gt;
+8:00 - Closing&lt;/p&gt;
+&lt;p&gt;Who should attend:&lt;/p&gt;
+&lt;p&gt;Beginners and experienced .NET developers, architects, cloud engineers, and anyone curious about building smarter, AI-enhanced applications with Microsoft technologies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speaker 1:&lt;/strong&gt; Peter Bull&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; Take a Note of UI with .NET 10&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Take a Note of UI with .NET 10 is an ambitious whistle-stop tour through the A to (almost) Z of first-party Microsoft user interface technologies supported in .NET 10 with C# 14 including ASP.NET Core, Blazor, Console, .NET MAUI, Windows, Forms, Windows Presentation Foundation, WinUI with Windows App SDK and more!&lt;/p&gt;
+&lt;p&gt;See what is possible with .NET 10 and C# 14 using Visual Studio 2026 and how GitHub Copilot accelerated the process of creating the epic notes app demo that features a showcase of first-party UI possible in Windows 11, cross platform and more with Take a Note of UI with .NET 10!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;TBA&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speaker Bio:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Peter Bull is a senior software engineer at Klipboard and has over 25 years of professional experience and 35 years of personal experience as a programmer. Peter has used every major version of .NET since it began from .NET Framework 1.0 to .NET 10 along with every major version of Visual Studio from Visual Studio 97 to Visual Studio 2026.&lt;/p&gt;
+&lt;p&gt;Peter is a twice-awarded Microsoft MVP for .NET and Windows thanks to his articles and podcast at rogueplanetoid.com along with tutorials, talks and workshops at tutorialr.com. Peter also has his own open-source packages and upcoming live-streamed course at comentsys.com&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speaker 2:&lt;/strong&gt; James Murphy&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; Keeping it Simple with Falco and HTMX&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is an experience report from developing a small web based utility to solve a specific problem within Footy.com&lt;/p&gt;
+&lt;p&gt;I'll talk about the tools I chose, why I chose them, how that aligns with keeping it simple.&lt;/p&gt;
+&lt;p&gt;Bits of F#, HTMX, Aspire, MongoDB, and maybe some other stuff.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;TBA&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speaker Bio:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;James Murphy (Murph) has been attempting to learn to write code for 45 years and feels that given another decade or two he might just get the hang of it...despite this he's managed to earn a living in the software industry for almost 40 years (James’ words not ours!)&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/@QudosRecruitment"&gt;https://www.youtube.com/@QudosRecruitment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/"&gt;https://www.meetup.com/dotnetmeetupnorth/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/312759966/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/312759966/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>.NET meetup</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/twinbasic-docs</id>
 		<title>twinBASIC Docs</title>
@@ -88,378 +1189,179 @@ I think the last time I used it, it was a &lt;a href="https://marketplace.visual
 		<summary>A Year in review</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/darts</id>
-		<title>🎯 Darts</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/darts" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2025-09-21T00:00:00Z</updated>
-		<content>&lt;!-- # Darts --&gt;
-&lt;p&gt;Back when I passed my G.C.S.E.s many moons ago I got a dart board and some Eric Bristow darts. It was a staple game played in my Gran's garage for many years. It since moved with me to various houses then it was up in my garage for a number of years. Must have gotten damaged as I bought a new one with a cabinet. That lost the will in weather so I thought let's move in doors.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/darts/setup.jpeg" alt="Setup" title="Setup"&gt;&lt;/p&gt;
-&lt;p&gt;Next item is some sort of auto scoring system to work with &lt;a href="https://autodarts.io/"&gt;Autodarts&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="products"&gt;Products&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Date&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;th&gt;Price&lt;/th&gt;
-&lt;th&gt;Image&lt;/th&gt;
-&lt;th&gt;Link&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;14 Mar 2018&lt;/td&gt;
-&lt;td&gt;WINMAU Professional Dart Set includes Diamond Plus Dartboard - Black Cabinet - 2 Sets of Darts - Official Oche Line, 49.2 x 47 x 4.6 cm&lt;/td&gt;
-&lt;td&gt;£64.00&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://alexhedley.github.io/blog/images/darts/dartset.jpg" alt=""&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.amazon.co.uk/dp/B0018D9D38"&gt;https://www.amazon.co.uk/dp/B0018D9D38&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Date&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;th&gt;Price&lt;/th&gt;
-&lt;th&gt;Image&lt;/th&gt;
-&lt;th&gt;Link&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;6 September 2025&lt;/td&gt;
-&lt;td&gt;WINMAU Darts Blade 6 Triple Core Carbon Professional PDC Dartboard with Official tournament specifications Endorsed by the PDC&lt;/td&gt;
-&lt;td&gt;£79.95&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://alexhedley.github.io/blog/images/darts/board.jpg" alt=""&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.amazon.co.uk/dp/B09HR18Y55"&gt;https://www.amazon.co.uk/dp/B09HR18Y55&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;WINMAU Darts Mat - Pro Zone Precision Blade 6 Soft Feel Dart Mat with Raised Integrated Oche Line for Steel Tip - Floor Protection for Dart Board&lt;/td&gt;
-&lt;td&gt;£49.95&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://alexhedley.github.io/blog/images/darts/mat.jpg" alt=""&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.amazon.co.uk/dp/B0DJMDY7RT%7C"&gt;https://www.amazon.co.uk/dp/B0DJMDY7RT|&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;Winmau Wispa Dartboard Sound Reduction System&lt;/td&gt;
-&lt;td&gt;£87.90&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://alexhedley.github.io/blog/images/darts/sound-reduction-system.jpg" alt=""&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.amazon.co.uk/dp/B0CJVN36ZM"&gt;https://www.amazon.co.uk/dp/B0CJVN36ZM&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;WINMAU Plasma Dartboard Light in Black – Ultimate Surround Dart Board Lighting – Slim Design LED Surround Ring for 360° Shadow-Free Illumination&lt;/td&gt;
-&lt;td&gt;£69.95&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://alexhedley.github.io/blog/images/darts/lighting.jpg" alt=""&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.amazon.co.uk/dp/B07K1G7C4G"&gt;https://www.amazon.co.uk/dp/B07K1G7C4G&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;WINMAU Red Printed Dart Board Surround Ring – Durable Backboard Wall Protector for Dartboards - Professional Darts Accessories&lt;/td&gt;
-&lt;td&gt;£39.95&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://alexhedley.github.io/blog/images/darts/surround.jpg" alt=""&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href="https://www.amazon.co.uk/dp/B00GJOHMRU"&gt;https://www.amazon.co.uk/dp/B00GJOHMRU&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</content>
-		<summary>Darts Setup</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/saxophone-books-4</id>
-		<title>🎷 Saxophone - Books 4</title>
-		<author>
-			<name>alexhedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/saxophone-books-4" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2025-07-24T00:00:00Z</updated>
-		<content>&lt;!-- 🎷 Saxophone - Books 4 --&gt;
-&lt;p&gt;Classic Rock Instrumental Play-Along for Alto Sax&lt;br&gt;
-&lt;a href="https://www.amazon.co.uk/dp/1540053261"&gt;https://www.amazon.co.uk/dp/1540053261&lt;/a&gt;&lt;br&gt;
-£14.99&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/saxophone/ClassicRock.jpg" alt="Classic Rock" title="Classic Rock"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.halleonard.com/product/294358/classic-rock"&gt;https://www.halleonard.com/product/294358/classic-rock&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="song-list"&gt;Song List&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Don't Fear The Reaper&lt;/li&gt;
-&lt;li&gt;Fortunate Son&lt;/li&gt;
-&lt;li&gt;Free Fallin'&lt;/li&gt;
-&lt;li&gt;Go Your Own Way&lt;/li&gt;
-&lt;li&gt;It's Only Rock 'N' Roll (But I Like It)&lt;/li&gt;
-&lt;li&gt;Jack And Diane&lt;/li&gt;
-&lt;li&gt;Layla&lt;/li&gt;
-&lt;li&gt;The Logical Song&lt;/li&gt;
-&lt;li&gt;Money&lt;/li&gt;
-&lt;li&gt;More Than A Feeling&lt;/li&gt;
-&lt;li&gt;My Life&lt;/li&gt;
-&lt;li&gt;Old Time Rock &amp;amp; Roll&lt;/li&gt;
-&lt;li&gt;Renegade&lt;/li&gt;
-&lt;li&gt;Sweet Home Alabama&lt;/li&gt;
-&lt;li&gt;25 Or 6 To 4&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Buying more music.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/streaming-equipment-4</id>
-		<title>Streaming Equipment 4</title>
+		<id>https://alexhedley.github.io/blog/posts/github-contributions-2025</id>
+		<title>GitHub Contributions Chart Generator</title>
 		<author>
 			<name>AlexHedley</name>
 		</author>
-		<link href="https://alexhedley.github.io/blog/posts/streaming-equipment-4" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2025-07-20T00:00:00Z</updated>
-		<content>&lt;!-- Streaming Equipment 4 --&gt;
-&lt;p&gt;A peek behind the curtain, or in front of the green screen :p.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/Recording-Setup-3.jpg" alt="Recording Setup" title="Recording Setup"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/equipment/Recording-Setup-4.jpg" alt="Recording Setup" title="Recording Setup"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/equipment/Recording-Setup-5.jpg" alt="Recording Setup" title="Recording Setup"&gt;&lt;/p&gt;
-&lt;p&gt;Previous purchases: &lt;a href="https://alexhedley.github.io/blog/streaming-equipment"&gt;Streaming Equipment&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-2"&gt;Streaming Equipment 2&lt;/a&gt; &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-3"&gt;Streaming Equipment 3&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>Pedal and Green Screen</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/streaming-equipment-3</id>
-		<title>Streaming Equipment 3</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/streaming-equipment-3" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2025-07-12T00:00:00Z</updated>
-		<content>&lt;!-- Streaming Equipment 3 --&gt;
-&lt;p&gt;There was an Amazon Prime sale so I bought more recording equipment I &lt;em&gt;probably&lt;/em&gt; don't need but have been on my wishlist for a while.&lt;/p&gt;
-&lt;p&gt;Previous purchases: &lt;a href="https://alexhedley.github.io/blog/streaming-equipment"&gt;Streaming Equipment&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-2"&gt;Streaming Equipment 2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Stream Deck Pedal&lt;/strong&gt;&lt;br&gt;
-Streamline Your Setup.&lt;br&gt;
-Sturdy, customizable and discreet, Stream Deck Pedal gives you instant hands-free control of your apps and tools.&lt;br&gt;
-🔗 &lt;a href="https://www.elgato.com/uk/en/p/stream-deck-pedal"&gt;https://www.elgato.com/uk/en/p/stream-deck-pedal&lt;/a&gt;&lt;br&gt;
-💷 RRP £69.99 &lt;del&gt;£79.99&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/sd-pedal.png" alt="Stream Deck Pedal" title="Stream Deck Pedal"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Green Screen XL&lt;/strong&gt;&lt;br&gt;
-Extra Wide Chroma Key Panel.&lt;br&gt;
-An extra-wide, portable green screen optimized for webcam background removal. Green Screen XL takes live streaming and video conferencing to the next level.&lt;br&gt;
-🔗 &lt;a href="https://www.elgato.com/uk/en/p/green-screen-xl"&gt;https://www.elgato.com/uk/en/p/green-screen-xl&lt;/a&gt;&lt;br&gt;
-💷 RRP £124.99 &lt;del&gt;£179.99&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/green-screen-xl.png" alt="Green Screen XL" title="Green Screen XL"&gt;&lt;/p&gt;
-&lt;!-- **Green Screen**  
-Collapsible Chroma Key Panel.  
-A portable chroma key panel optimized for webcam background removal, Green Screen sets the stage for truly immersive broadcasting in a matter of seconds.  
-🔗 https://www.elgato.com/uk/en/p/green-screen  
-💷 RRP £169.99  
-
-![Green Screen](images/equipment/green-screen.png "Green Screen") --&gt;
-</content>
-		<summary>Pedal and Green Screen</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/streaming-setup</id>
-		<title>Streaming Setup</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/streaming-setup" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2025-07-12T00:00:00Z</updated>
-		<content>&lt;!-- # Streaming Setup --&gt;
-&lt;p&gt;Previous purchases: &lt;a href="https://alexhedley.github.io/blog/streaming-equipment"&gt;Streaming Equipment&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-2"&gt;Streaming Equipment 2&lt;/a&gt; &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-3"&gt;Streaming Equipment 3&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.github.io/blog/streamdecktoolkit"&gt;StreamDeck Toolkit&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/streamdeck-plugins"&gt;StreamDeck Plugins&lt;/a&gt;, &lt;a href="https://alexhedley.github.io/blog/jeffgoldblum"&gt;Jeff Goldblum StreamDeck Action&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="audio-filters"&gt;Audio Filters&lt;/h2&gt;
-&lt;p&gt;Mixer&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/Settings_Mixer_Streamlabs.png" alt="Mixer" title="Mixer"&gt;&lt;/p&gt;
-&lt;p&gt;Add New - Filter&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/AddNew_Filters_Settings_Mixer_Streamlabs.png" alt="Add New - Filter" title="Add New - Filter"&gt;&lt;/p&gt;
-&lt;p&gt;Filters&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/Filters_Settings_Mixer_Streamlabs.png" alt="Filters" title="Filters"&gt;&lt;/p&gt;
-&lt;p&gt;Filters - Options&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/Options_Filters_Settings_Mixer_Streamlabs.png" alt="Filters - Options" title="Filters - Options"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Downmix to Mono&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Microphone ⚙️ | Properties&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/mix_aux.png" alt="Advanced Audio Settings" title="Advanced Audio Settings"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/recording/AdvancedAudioSettings_Streamlabs.png" alt="Advanced Audio Settings" title="Advanced Audio Settings"&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Route audio to the central channel instead of left or right stereo channels&lt;/p&gt;
+		<link href="https://alexhedley.github.io/blog/posts/github-contributions-2025" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/topguntocat.png" />
+		<updated>2026-01-05T00:00:00Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;All your contributions in one image!&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="green-screen"&gt;Green-screen&lt;/h2&gt;
-&lt;p&gt;I recently bought a Green Screen XL from &lt;a href="https://www.elgato.com/uk/en/p/green-screen-xl"&gt;Elgato&lt;/a&gt; (&lt;a href="https://alexhedley.github.io/blog/streaming-equipment-3"&gt;Streaming Equipment 3&lt;/a&gt;) and now need to setup the scenes.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Open up Streamlabs Desktop, go to your camera source, right-click on it and go to filters.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;From there, you will see chroma key as a filter type. You’re going to see a many different settings that you’re going to have to play around with to find what works for you. There is no one correct answer for these settings as everybody’s lighting situations different, hair is different, skin color is different, and background is different, which is why you’re going to have to play around with it until you refine it down.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="videos"&gt;Videos&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=_E2Mmvwmzpo"&gt;How to chroma key / remove green screen from webcam in Streamlabs OBS&lt;/a&gt;
-&lt;a href="https://www.youtube.com/@MikeTheTech"&gt;MikeTheTech&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github-contributions.vercel.app/"&gt;GitHub Contributions Chart Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alexhedley-2025.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/git-wrapped-AlexHedley.png" alt="git-wrapped" title="git-wrapped AlexHedley"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-wrapped-AlexHedley.jpeg" alt="github-wrapped" title="github-wrapped AlexHedley"&gt;&lt;/p&gt;
+&lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alex-hedley-2025.png" alt="alex-hedley" title="Contributions alex-hedley"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/git-wrapped-alex-hedley.png" alt="git-wrapped" title="git-wrapped alex-hedley"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-wrapped-alex-hedley.jpeg" alt="github-wrapped" title="github-wrapped alex-hedley"&gt;&lt;/p&gt;
+&lt;h2 id="others"&gt;Others&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-wrapped.com/"&gt;https://git-wrapped.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.trygitwrap.com/"&gt;https://www.trygitwrap.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2025</id>
+		<title>ISC2 North East England Chapter - November 2025</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2025" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/isc2/isc2chapternortheastengland.jpeg" />
+		<updated>2025-11-11T00:00:00Z</updated>
+		<content>&lt;!-- # ISC2 North East England Chapter November 2025 Meetup --&gt;
+&lt;p&gt;Come and join our in person event on 11 November at the Newcastle Building Society office at Cobalt Business park.
+The ISC North East Chapter welcomes all ISC2 members, anyone working in cyber / infosec and students. Come join us for an evening to network and the usual: talk, talk, pizza, talk format.&lt;/p&gt;
+&lt;p&gt;The theme for the evening: Challenging Times in Cyber Security.&lt;/p&gt;
+&lt;p&gt;Category: Science &amp;amp; Tech, Science&lt;/p&gt;
+&lt;h2 id="agenda"&gt;Agenda&lt;/h2&gt;
+&lt;p&gt;Opening: ISC2 Updates for our members&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;&lt;strong&gt;Updates on Cyber Regulations&lt;/strong&gt;&lt;/del&gt;.
+&lt;del&gt;Kristina Holt - Managing Associate at Foot Anstey&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Operational Resilience&lt;/strong&gt;&lt;br /&gt;
+Jenny Wilkinson - Rule21&lt;/p&gt;
+&lt;p&gt;Operational Resilience: Bridging the Technical-Operational-Cyber Divide. Jenny will discuss alignment of strategy, metrics, exercises and regulations across the technical, operational and cyber domains to build effective operational resilience.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quantum Readiness&lt;/strong&gt;&lt;br /&gt;
+&lt;del&gt;Dr Meera Sharma - Cystel&lt;/del&gt;&lt;br /&gt;
+&lt;del&gt;Dr Sharma will tell us what this means to cyber professionals and key aspects we need to understand.&lt;/del&gt;&lt;br /&gt;
+Dr. Thomas Matheus&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pizza and refreshments&lt;/strong&gt;&lt;br /&gt;
+Networking and chatter with some pizza and refreshments&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How You May Have Built an Unconditional Access Policy&lt;/strong&gt;&lt;br /&gt;
+Anthony Holt from PenTest Consultants&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rewriting the rules of Cyber Defence&lt;/strong&gt;&lt;br /&gt;
+Gareth Pritchard - Sapphire&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Competition time&lt;/strong&gt;&lt;br /&gt;
+We've got some ISC2 goodies to give away.&lt;/p&gt;
+&lt;h2 id="date-and-time"&gt;🗓️ Date and time&lt;/h2&gt;
+&lt;p&gt;🗓️ Tuesday, November 11 · 5 - 8pm GMT+1&lt;/p&gt;
+&lt;h2 id="location"&gt;📍 Location&lt;/h2&gt;
+&lt;p&gt;📍 1 Cobalt Park Way&lt;br /&gt;
+Wallsend&lt;br /&gt;
+NE28 9EJ&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-november-2025-tickets-1758664816809"&gt;https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-november-2025-tickets-1758664816809&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/o/isc2-north-east-england-chapter-13131159160"&gt;https://www.eventbrite.co.uk/o/isc2-north-east-england-chapter-13131159160&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>ISC2 Chapter Meetup</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/govuk-design-system-oct2025</id>
+		<title>Design System Chat - October-ish 2025</title>
+		<author>
+			<name>alex-hedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/govuk-design-system-oct2025" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/govuk/govuk-design-system-oct2025.jpeg" />
+		<updated>2025-11-05T00:00:00Z</updated>
+		<content>&lt;!-- # Design System Chat - September 2025 --&gt;
+&lt;!-- ![Banner](images/govuk/govuk-design-system-sept.jpeg "Banner") --&gt;
+&lt;p&gt;Join us for October 2025's Design System Chat to discuss Service Patterns. Hosted by the GOV.UK Design System.&lt;/p&gt;
+&lt;h2 id="event"&gt;Event&lt;/h2&gt;
+&lt;p&gt;🗓️ Wednesday, 5th Nov&lt;br /&gt;
+🕰️ 11:00 - 12:00 BST&lt;br /&gt;
+📍 Online&lt;br /&gt;
+🔗 &lt;a href="https://www.eventbrite.co.uk/e/design-system-chat-october-ish-2025-tickets-1867454459559"&gt;https://www.eventbrite.co.uk/e/design-system-chat-october-ish-2025-tickets-1867454459559&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;Hello,&lt;/p&gt;
+&lt;p&gt;You're invited to October 2025's Design System Chat (yes, we know that it is technically November), hosted monthly by the GOV.UK Design System team. We'll be continuing on from last month's discussion about &lt;strong&gt;Service Patterns&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id="agenda"&gt;Agenda&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Show &amp;amp; tell: Service Patterns in ScotGov - Kirsty Sinclair and Fraser Smith, ScotGov&lt;/li&gt;
+&lt;li&gt;Show &amp;amp; tell: Service Patterns in Wales - Adrian Ortega and Liam Collins, CDPS&lt;/li&gt;
+&lt;li&gt;Are you working on patterns in your organisation or service?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Session type:&lt;/strong&gt; Workshop/discusssion&lt;br /&gt;
+&lt;strong&gt;Duration:&lt;/strong&gt; 1 hour&lt;br /&gt;
+&lt;strong&gt;Platform:&lt;/strong&gt; Microsoft Teams.&lt;/p&gt;
+&lt;p&gt;If you sign up, please make sure you can attend the whole session, as we sell out quite quickly.
+We will be using &lt;strong&gt;MS Teams&lt;/strong&gt; for video, and &lt;strong&gt;Padlet&lt;/strong&gt; for notes and comments. Please make sure you have a device that can access these, as some organisation’s firewalls block these platforms.&lt;/p&gt;
+&lt;p&gt;We hope to see you there!
+The GOV.UK Design System team&lt;/p&gt;
+&lt;h2 id="notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://streamlabs.com/content-hub/post/how-to-improve-mic-quality-in-streamlabs-desktop"&gt;How to Improve Mic Quality in Streamlabs Desktop&lt;/a&gt; Last Updated on January 28, 2022&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://streamlabs.com/content-hub/post/how-to-set-up-a-green-screen-in-streamlabs"&gt;How to set up a Green Screen in Streamlabs&lt;/a&gt; Last Updated on October 11, 2023&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://streamlabs.com/content-hub/post/green-screen-101-why-do-you-need-it-and-how-to-use-it-in-talk-studio"&gt;Green Screen 101: Why Do You Need It and How To Use It&lt;/a&gt; Last Updated on May 02, 2024&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://design-system.service.gov.uk/"&gt;https://design-system.service.gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;GovernmentDigitalService"&gt;https://www.youtube.com/&amp;#64;GovernmentDigitalService&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;UKGovDesign"&gt;https://www.youtube.com/&amp;#64;UKGovDesign&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="stream-deck-pedal"&gt;Stream Deck Pedal&lt;/h2&gt;
-&lt;p&gt;How cool is the teamDeck Pedal Action Bar!! It shows you what actions you have configured for each pedal and floats above any app on your screen.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/sd-pedal-action-bar.png" alt="SteamDeck Pedal Action Bar"&gt;&lt;/p&gt;
-&lt;p&gt;If you close this, click in the &lt;em&gt;Task Bar&lt;/em&gt; icon to get the Stream Deck options then &lt;em&gt;Stream Deck Pedal&lt;/em&gt; will have a &lt;strong&gt;Show/Hide Action Bar&lt;/strong&gt; toggle option.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/SteamDeck-Options.png" alt="SteamDeck Options" title="SteamDeck Options"&gt;&lt;/p&gt;
-&lt;p&gt;Show Action Bar&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/SteamDeck-Options-PedalAction-Show.png" alt="SteamDeck Options Show" title="SteamDeck Options Show"&gt;&lt;/p&gt;
-&lt;p&gt;Hide Action Bar&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/SteamDeck-Options-PedalAction-Hide.png" alt="SteamDeck Options Hide" title="SteamDeck Options Hide"&gt;&lt;/p&gt;
 </content>
+		<summary>GOV.UK Design System team</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/dotnet-by-example</id>
-		<title>.NET by Example</title>
+		<id>https://alexhedley.github.io/blog/posts/dotnet-newcastle-feb-2025</id>
+		<title>.NET Meetup Newcastle - Feb 2025</title>
 		<author>
-			<name>AlexHedley</name>
+			<name>alex-hedley</name>
 		</author>
-		<link href="https://alexhedley.github.io/blog/posts/dotnet-by-example" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" />
-		<updated>2025-06-06T00:00:00Z</updated>
-		<content>&lt;!-- .NET by Example --&gt;
-&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
-&lt;p&gt;In this post I will explain how I built &lt;strong&gt;.NET by Example&lt;/strong&gt;, a clone of &lt;a href="https://gobyexample.com/"&gt;Go by Example&lt;/a&gt;, using the updated &lt;a href="https://alexhedley.github.io/blog/dotnet-nocco"&gt;nocco&lt;/a&gt; tool I've recently been working on.&lt;/p&gt;
-&lt;p&gt;I've modified the code a little to take a list of files: &lt;code&gt;.cs&lt;/code&gt;, &lt;code&gt;.vb&lt;/code&gt;, &lt;code&gt;.fs&lt;/code&gt;, in a folder, with a &lt;code&gt;.bat&lt;/code&gt; to explain how to run the provided scripts and it builds a tabbed page of each of the files.&lt;/p&gt;
-&lt;p&gt;It also has a &lt;em&gt;copy&lt;/em&gt; button option to make working with the code a little easier.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/byexample/hello-world.png" alt="Hello World" title="Hello World"&gt;&lt;/p&gt;
-&lt;p&gt;The home page is then built with the list of the examples.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/dotNET/byexample/home.png" alt="Home" title="Home"&gt;&lt;/p&gt;
-&lt;p&gt;If you have any ideas of other examples please add a new 💡&lt;a href="https://github.com/AlexHedley/dotnetbyexample/discussions/new?category=ideas"&gt;Discussion&lt;/a&gt; item. I'll be working on adding more in the near future.&lt;/p&gt;
-&lt;p&gt;I added a build and deploy &lt;a href="https://github.com/AlexHedley/dotnetbyexample/blob/main/.github/workflows/build-deploy.yml"&gt;script&lt;/a&gt; via GitHub Actions and deployed it via GitHub Pages: &lt;a href="https://alexhedley.github.io/dotnetbyexample"&gt;https://alexhedley.github.io/dotnetbyexample&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/dotnetbyexample"&gt;https://alexhedley.github.io/dotnetbyexample&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample"&gt;https://github.com/AlexHedley/dotnetbyexample&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+		<link href="https://alexhedley.github.io/blog/posts/dotnet-newcastle-feb-2025" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/meetups/dotnet-oct-2025.png" />
+		<updated>2025-10-29T00:00:00Z</updated>
+		<content>&lt;!-- # Qudos .NET Newcastle Meetup - Feb 2025 --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet-feb-2025.png" alt=".NET Meetup" title=".NET Meetup"&gt;&lt;/p&gt;
+&lt;p&gt;📅 Tue, Feb 25, 2025 · 5:30 PM to 7:30 PM GMT&lt;/p&gt;
+&lt;p&gt;📍 Haylofts, 5 St. Thomas Street, Newcastle, NE1 4LE · Newcastle upon Tyne&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/305987440/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/305987440/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;New venue! We are now going to be running the events at &lt;strong&gt;Haylofts, 5 St. Thomas Street, Newcastle, NE1 4LE&lt;/strong&gt; moving forward.&lt;/p&gt;
+&lt;p&gt;We have a fairly relaxed agenda, but will follow:&lt;/p&gt;
+&lt;p&gt;5:30 - Doors Open&lt;br&gt;
+5:45 - Pizza arrival&lt;br&gt;
+6:00 - Introduction / Housekeeping&lt;br&gt;
+6:10 - Talks begin&lt;br&gt;
+8:00 - Closing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speaker 1:&lt;/strong&gt; Kevin Smith&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; Let's start using MongoDB in our next .NET project!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I’ve been passionate about MongoDB since its very first release, and for good reason—it’s evolved into the most popular general-purpose document database, packed with powerful features. But why should you choose MongoDB over a traditional relational database, and how does it fit into a modern .NET application?&lt;/p&gt;
+&lt;p&gt;In this talk, we’ll explore MongoDB from the ground up, starting with the raw power of BSON, moving through the MongoDB .NET driver, and finally diving into the brand-new MongoDB EF Core provider—a game-changer for developers familiar with Entity Framework. Whether you’re a seasoned .NET developer or just curious about NoSQL, this session will give you practical insights and techniques to harness the full potential of MongoDB in your applications.&lt;/p&gt;
+&lt;p&gt;Join me to discover why MongoDB isn’t just an alternative to relational databases—it’s a paradigm shift for building scalable, high-performance .NET applications!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
+&lt;!--?# YouTube gHxcA56c5zA /?--&gt;
+&lt;p&gt;&lt;strong&gt;Speaker Bio:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Kevin Smith is an accomplished Principal Software Engineer and technology enthusiast with a strong background in a wide range of technologies. He has been recognized as a Microsoft MVP and MongoDB Champion for his expertise and contributions to the industry.&lt;/p&gt;
+&lt;p&gt;Beyond his work as a software engineer, Kevin is heavily involved in the technology community. He runs three community groups, including dotnet York and dotnetsheff in the North of England, as well as a virtual hackathon group called MiniHack. He is passionate about sharing his knowledge and expertise with others, regularly speaking at user groups and conferences and contributing to the open-source community.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speaker 2:&lt;/strong&gt; Mark Jose&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; A JavaScript convert steps back into .NET and the world is good&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Returning to dotNET after a decade in the world of JS&lt;/p&gt;
+&lt;p&gt;Over 15 years ago, I worked solely in the world of Microsoft Windows. I've now spent nearly a decade in the world of JavaScript and I'm about to explore what's changed.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
+&lt;!--?# YouTube Ps96ccmcM3o /?--&gt;
+&lt;p&gt;&lt;strong&gt;Speaker Bio:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A hands-on, seasoned technology leader with over 25 years of engineering expertise, specialising in architecture and developing software across diverse sectors such as Investment Banking, Energy Trading, and Gaming. I have overseen the entire technical landscape of businesses, driving the engineering function, shaping the technical vision, and ensuring the successful delivery of cutting-edge solutions.&lt;/p&gt;
 &lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/mmcgrana/gobyexample"&gt;https://github.com/mmcgrana/gobyexample&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://gobyexample.com/"&gt;https://gobyexample.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/@QudosRecruitment"&gt;https://www.youtube.com/@QudosRecruitment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/"&gt;https://www.meetup.com/dotnetmeetupnorth/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/305987440/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/305987440/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-		<summary>.NET by Example is a hands-on introduction to .NET using annotated example programs.</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/keyboards</id>
-		<title>Keyboards</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/keyboards" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/equipment/redragon.jpg" />
-		<updated>2025-06-05T00:00:00Z</updated>
-		<content>&lt;!-- # Keyboards --&gt;
-&lt;!-- ![Redragon](images/equipment/redragon.jpg "Redragon") --&gt;
-&lt;p&gt;A few years back when I was watching a stream from &lt;a href="https://x.com/praeclarum"&gt;@praeclarum&lt;/a&gt; on his &lt;a href="https://twitch.tv/FrankKrueger"&gt;Twitch&lt;/a&gt; channel I heard the dulcet tones of a mechanical keyboard. I think it was a Redragon which is probably why I purchased my own.&lt;/p&gt;
-&lt;p&gt;I chose the following due to it having a numpad, which I couldn't live without.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Redragon K551 Mechanical Gaming Keyboard, Wired, 104 Keys for PC Computer Gamer UK QWERTY (RGB Backlit with Red Switches)&lt;/strong&gt;&lt;br&gt;
-🔗 &lt;a href="https://www.amazon.co.uk/dp/B07CMLBFPY"&gt;https://www.amazon.co.uk/dp/B07CMLBFPY&lt;/a&gt;&lt;br&gt;
-🔗 &lt;a href="https://www.redragonzone.com/products/redragon-k551-mitr-104-key-led-backlit-mechanical-keyboard-with-blue-switches"&gt;https://www.redragonzone.com/products/redragon-k551-mitr-104-key-led-backlit-mechanical-keyboard-with-blue-switches&lt;/a&gt;&lt;br&gt;
-💷 £56.99&lt;br&gt;
-Ordered on 19 November 2020&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/K551.jpg" alt="K551" title="K551"&gt;&lt;/p&gt;
-&lt;p&gt;It was wired which saves from having to charge it but swapping between desktop and laptop and having to unplug it became a little annoying, first world problems! I decided to buy a new one, this time it was wireless and though might as well get a mouse too. I found the following:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;K628 75% Mechanical Gaming Keyboard M693 Gaming Mouse Tri-Modes Combo&lt;/strong&gt;&lt;br&gt;
-🔗 &lt;a href="https://redragonshop.com/products/redragon-bs136-tri-mode-gaming-keyboard-and-mouse-combo"&gt;https://redragonshop.com/products/redragon-bs136-tri-mode-gaming-keyboard-and-mouse-combo&lt;/a&gt;&lt;br&gt;
-💷 £58.80 GBP (£48 &lt;del&gt;£60&lt;/del&gt;)&lt;br&gt;
-February 25, 2025&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/K628_M693.png" alt="K628 M693" title="K628 M693"&gt;&lt;/p&gt;
-&lt;p&gt;I'd not used a 75% keyboard before and very much a trend I probably rushed into the decision. It did have a numpad but my muscle memory just couldn't get used to it. It didn't take long for me to buy another. This time, another wireless but very similar to the original. The only problem is it isn't a UK layout. Luckily I've just swapped some of the keys from my original. Let's see how long this one will last.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;DHARMA PRO K556 PRO Aluminum Keyboard&lt;/strong&gt;&lt;br&gt;
-🔗 &lt;a href="https://redragonshop.com/products/dharma-k556-pro-aluminum-keyboard"&gt;https://redragonshop.com/products/dharma-k556-pro-aluminum-keyboard&lt;/a&gt;&lt;br&gt;
-💷 £57.60 GBP (£49)&lt;br&gt;
-June 4, 2025&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/equipment/K556P.png" alt="K556P" title="K556P"&gt;&lt;/p&gt;
-</content>
-		<summary>Redragon</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/dotnet-nocco-github-actions</id>
-		<title>Deploying .NET nocco using GitHub Action</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/dotnet-nocco-github-actions" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" />
-		<updated>2025-05-13T00:00:00Z</updated>
-		<content>&lt;!-- .NET nocco using GitHub Action --&gt;
-&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
-&lt;p&gt;In my previous blog post &lt;a href="https://alexhedley.github.io/blog/dotnet-nocco"&gt;.NET nocco&lt;/a&gt; I explained upgrading an old version of &lt;strong&gt;nocco&lt;/strong&gt; to the latest, and making it a &lt;a href="https://alexhedley.github.io/blog/dotnet-tool-example"&gt;.NET tool&lt;/a&gt;. Now that I have both of these setup and configured I can use &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; &lt;a href="https://pages.github.com/"&gt;Pages&lt;/a&gt; to deploy my code.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;jobs:
-    steps:
-     - name: ⬇️ Install nocco
-       run: dotnet tool install --global Nocco --version 0.2.0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It needs to be &lt;strong&gt;N&lt;/strong&gt;occo with a capital N as I forgot to add &lt;code&gt;&amp;lt;ToolCommandName&amp;gt;nocco&amp;lt;/ToolCommandName&amp;gt;&lt;/code&gt; to the &lt;code&gt;.csproj&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Once that is installed you can navigate to your source folder then run the tool.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;    - name: 📄 Generate Docs
-      run: |
-        cd src
-        Nocco *.cs
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Once the files have been generated you can save them to a &lt;code&gt;gh-pages&lt;/code&gt; branch and deploy them as a static site.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-yaml"&gt;    - name: ⬇️ Commit docs to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.7.3
-      with:
-        branch: gh-pages
-        folder: src/docs
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Others are available&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/JamesIves/github-pages-deploy-action"&gt;https://github.com/JamesIves/github-pages-deploy-action&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/actions/deploy-pages"&gt;https://github.com/actions/deploy-pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/peaceiris/actions-gh-pages"&gt;https://github.com/peaceiris/actions-gh-pages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As there isn't an index.html page generated if you go to the root page you will get an error. &lt;a href="https://alexhedley.github.io/nocco-example/"&gt;https://alexhedley.github.io/nocco-example/&lt;/a&gt;. Instead go directly to one of the files: &lt;a href="https://alexhedley.github.io/nocco-example/nocco.html"&gt;https://alexhedley.github.io/nocco-example/nocco.html&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If there were multiple files a picker is generated and added to the top right of the screen where you can switch between all the files.&lt;/p&gt;
-&lt;p&gt;See the yaml source for full steps.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco-example/blob/main/.github/workflows/generate-docs-and-deploy.yml"&gt;https://github.com/AlexHedley/nocco-example/blob/main/.github/workflows/generate-docs-and-deploy.yml&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/AlexHedley/nocco-example/refs/heads/main/.github/workflows/generate-docs-and-deploy.yml"&gt;https://raw.githubusercontent.com/AlexHedley/nocco-example/refs/heads/main/.github/workflows/generate-docs-and-deploy.yml&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco-example"&gt;https://github.com/AlexHedley/nocco-example&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nocco"&gt;https://github.com/AlexHedley/nocco&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/dontangg/nocco"&gt;https://github.com/dontangg/nocco&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://donwilson.net/nocco/"&gt;http://donwilson.net/nocco/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ashkenas.com/docco/"&gt;https://ashkenas.com/docco/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;In my previous blog post &lt;a href="https://alexhedley.github.io/blog/dotnet-nocco"&gt;.NET nocco&lt;/a&gt; I explained upgrading an old version of &lt;strong&gt;nocco&lt;/strong&gt; to the latest, and making it a &lt;a href="https://alexhedley.github.io/blog/dotnet-tool-example"&gt;.NET tool&lt;/a&gt;. Now that I have both of these setup and configured I can use &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; &lt;a href="https://pages.github.com/"&gt;Pages&lt;/a&gt; to deploy my code.&lt;/p&gt;</summary>
+		<summary>.NET meetup</summary>
 	</entry>
 </feed>

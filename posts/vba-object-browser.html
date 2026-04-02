@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Building a web version of the Object Browser">
+    <meta name="author" content="AlexHedley">
+
+  <title>Alex Hedley - VBA Object Browser</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/vba-object-browser'>
+
+      <link type="application/rss+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - VBA Object Browser' />
+    <meta property="og:image" content='/blog/images/banner.png' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/vba-object-browser' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="../assets/css/override.css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/stats">Stats</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+          <li class="nav-item">
+            <span class="nav-link">
+              <form class="form-inline my-2 my-lg-0" action="/blog/search" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
+                <input type="submit" hidden />
+              </form>
+            </span>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(&quot;/blog/images/banner.png&quot;)">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            VBA Object Browser
+          </h1>
+            <span class="subheading">Building a web version of the Object Browser</span>
+            <div class="meta">Published on Monday 16 March 2026</div>
+              <div class="mt-3">
+                  <a href="/blog/tags/vba" class="badge text-bg-light"> vba</a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <!-- VBA Object Browser -->
+<p>A number of years ago I found a UI lib called <a href="https://jdan.github.io/98.css/">98.css</a> with the tag line &quot;A design system for building faithful recreations of old UIs.&quot; I've been wanting a reason to use this in some app and thought this might be a good use case.</p>
+<p>What is the <a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/object-browser">Object Browser</a>?</p>
+<blockquote>
+<p>A dialog box in which you can examine the contents of an object library to get information about the objects provided.</p>
+<p>Displays the <a href="https://learn.microsoft.com/en-us/office/vba/language/glossary/vbe-glossary#class">classes</a>, properties, methods, events, and constants available from <a href="https://learn.microsoft.com/en-us/office/vba/language/glossary/vbe-glossary#object-library">object libraries</a> and the <a href="https://learn.microsoft.com/en-us/office/vba/language/glossary/vbe-glossary#procedure">procedures</a> in your project. Use it to find and use objects you create, as well as objects from other applications.</p>
+<p>You can get Help for the <strong>Object Browser</strong> by searching for Object Browser in Help.</p>
+</blockquote>
+<p>An original screenshot of the Object Browser.</p>
+<p><img src="images/599CD/VBA-Object-Browser/ObjectBrowser.jpg" alt="Object Browser" title="Object Browser" /></p>
+<p>The list of Libraries comes from the <a href="https://learn.microsoft.com/">MS Learn</a> <a href="https://learn.microsoft.com/en-us/office/vba/api/overview/">Office VBA Reference</a></p>
+<ul>
+<li>VBA</li>
+<li>Excel</li>
+<li>Office</li>
+<li>Word</li>
+<li>PowerPoint</li>
+<li>Access</li>
+<li>Outlook</li>
+<li>Scripting</li>
+<li>ADODB</li>
+</ul>
+<p>I thought why not use this type of project as a way to try out <a href="copilot">Copilot</a> so I asked the following:</p>
+<blockquote>
+<p>Build the VBA Object Browser as a website.</p>
+</blockquote>
+<p>I then raised a new Issue and assigned Copilot to see what they would add:</p>
+<blockquote>
+<p>Use the following links as a reference:</p>
+<p>Use the Object Browser</p>
+<p><a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/use-the-object-browser">https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/use-the-object-browser</a></p>
+<p>Object Browser</p>
+<p><a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/object-browser">https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/object-browser</a></p>
+<p>Code window and Object Browser icons</p>
+<p><a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/icons-used-in-the-object-browser-and-code-windows">https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/icons-used-in-the-object-browser-and-code-windows</a></p>
+</blockquote>
+<p>With the following prompts:</p>
+<blockquote>
+<p>are there any missing classes/methods?</p>
+</blockquote>
+<p><strong>VBA</strong> <code>&lt;globals&gt;</code> — 27 new methods: <code>AppActivate</code>, <code>Beep</code>, <code>CallByName</code>, <code>ChDir</code>, <code>ChDrive</code>, <code>CVErr</code>, <code>DeleteSetting</code>, <code>FileCopy</code>, <code>FileDateTime</code>, <code>FileLen</code>, <code>FreeFile</code>, <code>GetAllSettings</code>, <code>GetAttr</code>, <code>GetSetting</code>, <code>InputBox</code>, <code>Kill</code>, <code>MkDir</code>, <code>Partition</code>, <code>QBColor</code>, <code>Randomize</code>, <code>RmDir</code>, <code>SaveSetting</code>, <code>SendKeys</code>, <code>SetAttr</code>, <code>Shell</code>, <code>Spc</code>, <code>Tab</code></p>
+<p><strong>VBA enums</strong> — 2 new: <code>VbFirstWeekOfYear</code> (was already referenced in the <code>DateDiff</code>/<code>DatePart</code> signatures but the enum itself was absent), <code>VbTriState</code></p>
+<p><strong>Excel</strong> <code>&lt;globals&gt;</code> — 4 added: <code>ActiveChart</code>, <code>Charts</code>, <code>Names</code>, <code>Sheets</code></p>
+<p><strong>Excel</strong> existing classes — missing members added to Application (+7: <code>ActiveChart</code>, <code>Charts</code>, <code>GetOpenFilename</code>, <code>GetSaveAsFilename</code>, <code>OnTime</code>, <code>Run</code>, <code>Wait</code>), <code>Workbook</code> (+6: <code>ActiveChart</code>, <code>Charts</code>, <code>Names</code>, <code>PrintOut</code>, <code>Protect</code>, <code>Unprotect</code>), <code>Worksheet</code> (+7: <code>Calculate</code>, <code>ChartObjects</code>, <code>ListObjects</code>, <code>PageSetup</code>, <code>PrintOut</code>, <code>Protect</code>, <code>Shapes</code>), <code>Range</code> (+11: <code>Activate</code>, <code>Borders</code>, <code>Calculate</code>, <code>FillDown</code>/<code>Left</code>/<code>Right</code>/<code>Up</code>, <code>NumberFormatLocal</code>, <code>Select</code>, <code>Text</code>, <code>WrapText</code>)</p>
+<p><strong>New Excel classes</strong> — <code>Chart</code>, <code>Name</code>, <code>PivotTable</code>, <code>ListObject</code></p>
+<blockquote>
+<p>can you implement all classes/methods etc from all Office programs</p>
+</blockquote>
+<p><strong>Word</strong> (19 classes, 218 members): <code>Application</code>, <code>Document</code>, <code>Documents</code>, <code>Selection</code>, <code>Range</code>, <code>Paragraph</code>, <code>Table</code>, <code>Find</code>, <code>Bookmark</code>, and enums <code>WdParagraphAlignment</code>, <code>WdSaveFormat</code>, <code>WdSaveOptions</code>, <code>WdUnits</code>, <code>WdCollapseDirection</code>, <code>WdMovementType</code>, <code>WdSelectionType</code>, <code>WdProtectionType</code>, <code>WdFindWrap</code></p>
+<p><strong>PowerPoint</strong> (11 classes, 122 members): <code>Application</code>, <code>Presentation</code>, <code>Presentations</code>, <code>Slide</code>, <code>Slides</code>, <code>Shape</code>, <code>TextFrame</code>, <code>TextRange</code>, and enums <code>PpSlideLayout</code>, <code>PpSaveAsFileType</code></p>
+<blockquote>
+<p>add Access, Outlook, Scripting (FileSystemObject), and ADODB</p>
+</blockquote>
+<p>With the following responses:</p>
+<p><strong>Access</strong> (9 classes, 106 members): <code>Application</code>, <code>DoCmd</code> (30 actions: <code>OpenForm</code>, <code>OpenReport</code>, <code>RunSQL</code>, <code>TransferSpreadsheet</code>, <code>SendObject</code>, etc.), <code>Form</code>, <code>Report</code> + enums <code>AcFormView</code>, <code>AcObjectType</code>, <code>AcRecord</code>, <code>AcQuitOption</code></p>
+<p><strong>Outlook</strong> (11 classes, 114 members): <code>Application</code>, <code>NameSpace</code>, <code>MailItem</code> (22 members), <code>MAPIFolder</code>, <code>AppointmentItem</code>, <code>ContactItem</code> + enums <code>OlItemType</code>, <code>OlDefaultFolders</code>, <code>OlImportance</code>, <code>OlSaveAsType</code></p>
+<p><strong>Scripting</strong> (9 classes, 98 members): <code>FileSystemObject</code> (24 members: <code>CopyFile</code>, <code>DeleteFolder</code>, <code>OpenTextFile</code>, etc.), <code>TextStream</code>, <code>File</code>, <code>Folder</code>, <code>Drive</code> + enums <code>IOMode</code>, <code>SpecialFolderConst</code>, <code>FileAttribute</code></p>
+<p><strong>ADODB</strong> (11 classes, 117 members): <code>Connection</code>, <code>Recordset</code> (38 members: <code>MoveNext</code>, <code>AddNew</code>, <code>Update</code>, <code>GetRows</code>, etc.), <code>Command</code>, <code>Field</code>, <code>Parameter</code> + enums <code>CursorTypeEnum</code>, <code>LockTypeEnum</code>, <code>CommandTypeEnum</code>, <code>ParameterDirectionEnum</code>, <code>ConnectModeEnum</code></p>
+<p>My outputs after accepting the changes from <a href="https://github.com/features/copilot">GitHub Copilot</a>:</p>
+<p><img src="images/599CD/VBA-Object-Browser/copilot-1.png" alt="Object Browser" title="Object Browser" />
+<img src="images/599CD/VBA-Object-Browser/copilot-2.png" alt="Object Browser" title="Object Browser" />
+<img src="images/599CD/VBA-Object-Browser/copilot-3.png" alt="Object Browser" title="Object Browser" /></p>
+<p>I thought it might be <em>helpful</em> to have the ? link go to &quot;https://learn.microsoft.com/en-gb/office/vba/api/overview/language-reference then it was updated to use the method etc but I think that needs some work...</p>
+<h2 id="site">Site</h2>
+<p>I've deployed this via Rick's <a href="http://pcresale.net/">PC Resale</a> website as it's Access related and linked to <a href="https://599cd.com/">599CD</a>.</p>
+<ul>
+<li>🌍 <a href="http://pcresale.net/vba-object-browser/">http://pcresale.net/vba-object-browser/</a></li>
+<li>🔗 <a href="https://github.com/599CD/VBA-Object-Browser">https://github.com/599CD/VBA-Object-Browser</a></li>
+</ul>
+<h2 id="links">🔗Links</h2>
+<ul>
+<li>🔗 <a href="https://github.com/jdan/98.css">https://github.com/jdan/98.css</a></li>
+<li>🌍 <a href="https://jdan.github.io/98.css/">https://jdan.github.io/98.css/</a></li>
+</ul>
+
+
+        
+
+      </div>
+    </div>
+  <div id="comments-container" class="row">
+    <script src="https://giscus.app/client.js"
+        data-repo='alexhedley/blog'
+        data-repo-id='R_kgDOJjXJmQ'
+        data-category-id='DIC_kwDOJjXJmc4CXRaX'
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2026</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQV2ZWNX32"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CQV2ZWNX32');
+    </script>
+
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js" integrity="sha384-nVmn6yKHyUktDHdQfBgpn1YPgEu8gDXTYI5qccfkF1j6oxBHjKEafySIuNs3UhEW" crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>

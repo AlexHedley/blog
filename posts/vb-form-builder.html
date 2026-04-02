@@ -1,0 +1,1084 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Building a web version of a VB/VBA Form Builder like MS Access">
+    <meta name="author" content="AlexHedley">
+
+  <title>Alex Hedley - VB Form Builder</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/vb-form-builder'>
+
+      <link type="application/rss+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - VB Form Builder' />
+    <meta property="og:image" content='/blog/images/banner.png' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/vb-form-builder' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="../assets/css/override.css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/stats">Stats</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+          <li class="nav-item">
+            <span class="nav-link">
+              <form class="form-inline my-2 my-lg-0" action="/blog/search" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
+                <input type="submit" hidden />
+              </form>
+            </span>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(&quot;/blog/images/banner.png&quot;)">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            VB Form Builder
+          </h1>
+            <span class="subheading">Building a web version of a VB/VBA Form Builder like MS Access</span>
+            <div class="meta">Published on Tuesday 31 March 2026</div>
+              <div class="mt-3">
+                  <a href="/blog/tags/vba" class="badge text-bg-light"> vba</a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <!-- VB Form Builder -->
+<p>In a past life I was a <a href="https://balsamiq.com/">balsamiq</a> user. I loved a quick way to mockup a design with a set of common controls. There are many other tools you can do this with.</p>
+<p>Not sure how much need there would be for an <a href="https://www.microsoft.com/en-us/microsoft-365/access">MS Access</a> version but thought why not give it a go.</p>
+<p>I used <a href="copilot">copilot</a> to build the app with the following prompt:</p>
+<blockquote>
+<p>Build a Microsoft Access VBA Form Builder as a website using the 98.css theme.</p>
+<p><a href="https://jdan.github.io/98.css/">https://jdan.github.io/98.css/</a><br />
+<a href="https://unpkg.com/98.css&#64;0.1.21/dist/98.css">https://unpkg.com/98.css&#64;0.1.21/dist/98.css</a></p>
+</blockquote>
+<p>With the additional prompts</p>
+<blockquote>
+<p>add and import and export option</p>
+</blockquote>
+<p>To test this out I've take a <code>CustomerF</code> from the <a href="https://599cd.com/">599CD</a> <a href="https://599cd.com/blog/display-article.asp?ID=1413">Blank Template</a>.</p>
+<p><img src="images/599cd/vb-form-builder/sample-form.jpg" alt="Sample Form" title="Sample Form" /></p>
+<p>Then I've created the same <code>Form</code> with the new tool to see how it looks:</p>
+<p><img src="images/599cd/vb-form-builder/pcresale.net_vb-form-builder.png" alt="CustomerF" title="CustomerF" /></p>
+<p>It created a number of controls originally, then I asked it to add more:</p>
+<ul>
+<li><a href="https://support.microsoft.com/en-us/office/introduction-to-controls-4a8cf5f2-d739-4ae9-b1e0-510c3f4d6975">Introduction to controls</a></li>
+</ul>
+<pre><code class="language-vb">  // Access VBA control-type constants
+  const AC = {
+    Label:            { vba: 'acLabel',            n: 100 },
+    TextBox:          { vba: 'acTextBox',          n: 109 },
+    CommandButton:    { vba: 'acCommandButton',    n: 104 },
+    CheckBox:         { vba: 'acCheckBox',         n: 106 },
+    OptionButton:     { vba: 'acOptionButton',     n: 105 },
+    ComboBox:         { vba: 'acComboBox',         n: 111 },
+    ListBox:          { vba: 'acListBox',          n: 110 },
+    Frame:            { vba: 'acRectangle',        n: 101 },
+    Image:            { vba: 'acImage',            n: 103 },
+    ToggleButton:     { vba: 'acToggleButton',     n: 122 },
+    Line:             { vba: 'acLine',             n: 102 },
+    TabStrip:         { vba: 'acTabCtl',           n: 123 },
+    SubForm:          { vba: 'acSubForm',          n: 112 },
+    PageBreak:        { vba: 'acPageBreak',        n: 118 },
+    OptionGroup:      { vba: 'acOptionGroup',      n: 107 },
+    ObjectFrame:      { vba: 'acObjectFrame',      n: 114 },
+    BoundObjectFrame: { vba: 'acBoundObjectFrame', n: 108 },
+    Attachment:       { vba: 'acAttachment',       n: 126 },
+  };
+</code></pre>
+<p>A few more prompts were asked:</p>
+<blockquote>
+<p>Allow the toolbox to be 1 or 2 columns</p>
+</blockquote>
+<blockquote>
+<p>You can minimise but not restore the code output panel</p>
+</blockquote>
+<blockquote>
+<p>The main Form isn't resizable, you can't drag the corner.
+When you change the width and height properties it doesn't resize the Form.</p>
+</blockquote>
+<blockquote>
+<p>Allow for the different panels to be adjustable.</p>
+</blockquote>
+<p>It worked really for a majority of the work. There are still some tweaks I need to make but as an initial app it does more than what I needed or had in my head before I began.</p>
+<p>The Import / Export and Save Code option were really cool additions.</p>
+<h3 id="code-output">Code Output</h3>
+<details>
+<summary>Customer F.vbfb.json</summary>
+<pre><code class="language-json">{
+  &quot;_version&quot;: 1,
+  &quot;_app&quot;: &quot;VB Form Builder&quot;,
+  &quot;form&quot;: {
+    &quot;name&quot;: &quot;Customer F&quot;,
+    &quot;caption&quot;: &quot;Customer&quot;,
+    &quot;width&quot;: 544,
+    &quot;height&quot;: 264,
+    &quot;backColor&quot;: &quot;#d4d0c8&quot;
+  },
+  &quot;controls&quot;: [
+    {
+      &quot;id&quot;: &quot;_c781thv&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;CustomerID&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 8,
+      &quot;width&quot;: 120,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_hs98uso&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;First&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 32,
+      &quot;width&quot;: 120,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_4q66qws&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;Last&quot;,
+      &quot;left&quot;: 208,
+      &quot;top&quot;: 32,
+      &quot;width&quot;: 120,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_8q2kiag&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;CompanyName&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 56,
+      &quot;width&quot;: 248,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_2k62j39&quot;,
+      &quot;type&quot;: &quot;CheckBox&quot;,
+      &quot;name&quot;: &quot;Check1&quot;,
+      &quot;left&quot;: 256,
+      &quot;top&quot;: 8,
+      &quot;width&quot;: 72,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Active&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_3xz8l9h&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;Address&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 80,
+      &quot;width&quot;: 240,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_5175abg&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;State&quot;,
+      &quot;left&quot;: 184,
+      &quot;top&quot;: 104,
+      &quot;width&quot;: 64,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_ks2n5x9&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;City&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 104,
+      &quot;width&quot;: 96,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_er8y4rr&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;ZIP&quot;,
+      &quot;left&quot;: 248,
+      &quot;top&quot;: 104,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_8nt7gpy&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;Country&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 128,
+      &quot;width&quot;: 240,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_g4gqyex&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;Email&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 152,
+      &quot;width&quot;: 240,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_xq0w79g&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;Website&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 176,
+      &quot;width&quot;: 240,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_n35gvys&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;Phone&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 200,
+      &quot;width&quot;: 240,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_32kp3r9&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;CustomerSince&quot;,
+      &quot;left&quot;: 88,
+      &quot;top&quot;: 224,
+      &quot;width&quot;: 240,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_i9vneir&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label1&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 8,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Customer ID:&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_11whonp&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label2&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 32,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;First, Last, Names:&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_qzvc20v&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label3&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 56,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Company Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_eto8nap&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label4&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 80,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Adddress&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_ljj8txa&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label5&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 104,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;City, State, ZIP&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_613df84&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label6&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 128,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Country&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_oo6m3uo&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label7&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 152,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Email&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_vxbg61c&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label8&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 176,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Website&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_qsl0gqg&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label9&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 200,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Phone&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_3bxqrg1&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label10&quot;,
+      &quot;left&quot;: 8,
+      &quot;top&quot;: 224,
+      &quot;width&quot;: 80,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Customer Since&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_snbv7o7&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;Employees&quot;,
+      &quot;left&quot;: 440,
+      &quot;top&quot;: 176,
+      &quot;width&quot;: 88,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_r38w8jj&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label11&quot;,
+      &quot;left&quot;: 368,
+      &quot;top&quot;: 176,
+      &quot;width&quot;: 64,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Employees&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_f5xfpfp&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;DiscountRate&quot;,
+      &quot;left&quot;: 440,
+      &quot;top&quot;: 200,
+      &quot;width&quot;: 88,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_cz9zpwg&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label12&quot;,
+      &quot;left&quot;: 368,
+      &quot;top&quot;: 200,
+      &quot;width&quot;: 72,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Discount Rate&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_wnij37q&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;CreditLimit&quot;,
+      &quot;left&quot;: 440,
+      &quot;top&quot;: 224,
+      &quot;width&quot;: 88,
+      &quot;height&quot;: 21,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffffff&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_b8w401v&quot;,
+      &quot;type&quot;: &quot;Label&quot;,
+      &quot;name&quot;: &quot;Label13&quot;,
+      &quot;left&quot;: 368,
+      &quot;top&quot;: 224,
+      &quot;width&quot;: 64,
+      &quot;height&quot;: 18,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;caption&quot;: &quot;Credit Limit&quot;
+    },
+    {
+      &quot;id&quot;: &quot;_ab9btu3&quot;,
+      &quot;type&quot;: &quot;TextBox&quot;,
+      &quot;name&quot;: &quot;Notes&quot;,
+      &quot;left&quot;: 360,
+      &quot;top&quot;: 8,
+      &quot;width&quot;: 168,
+      &quot;height&quot;: 160,
+      &quot;visible&quot;: true,
+      &quot;enabled&quot;: true,
+      &quot;fontSize&quot;: 8,
+      &quot;fontBold&quot;: false,
+      &quot;fontItalic&quot;: false,
+      &quot;foreColor&quot;: &quot;#000000&quot;,
+      &quot;text&quot;: &quot;&quot;,
+      &quot;backColor&quot;: &quot;#ffff00&quot;
+    }
+  ],
+  &quot;counters&quot;: {
+    &quot;TextBox&quot;: 17,
+    &quot;CheckBox&quot;: 1,
+    &quot;Label&quot;: 13
+  }
+}
+</code></pre>
+</details>
+<details>
+<summary>Customer F_VBA.bas</summary>
+<pre><code class="language-vb">' ========================================================
+' VB Form Builder — Generated Microsoft Access VBA Code
+' Form   : Customer F
+' Caption: Customer
+' Created: Apr 2, 2026
+' ========================================================
+'
+' HOW TO USE:
+'   1. Open your Access database.
+'   2. Press Alt+F11 to open the VBA editor.
+'   3. Insert &gt; Module, paste this code, then run CreateForm_Customer F().
+' ========================================================
+
+Option Explicit
+
+Sub CreateForm_Customer F()
+    Dim frm  As Form
+    Dim ctrl As Control
+
+    ' ---- Create the form ----
+    Set frm = CreateForm()
+    frm.Caption = &quot;Customer&quot;
+
+    ' ---- Controls ----
+    ' CustomerID (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;CustomerID&quot;, 1320, 120, 1800, 315)
+
+    ' First (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;First&quot;, 1320, 480, 1800, 315)
+
+    ' Last (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;Last&quot;, 3120, 480, 1800, 315)
+
+    ' CompanyName (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;CompanyName&quot;, 1320, 840, 3720, 315)
+
+    ' Check1 (CheckBox)
+    Set ctrl = CreateControl(frm.Name, acCheckBox, acDetail, , &quot;Check1&quot;, 3840, 120, 1080, 270)
+    ctrl.Caption = &quot;Active&quot;
+
+    ' Address (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;Address&quot;, 1320, 1200, 3600, 315)
+
+    ' State (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;State&quot;, 2760, 1560, 960, 315)
+
+    ' City (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;City&quot;, 1320, 1560, 1440, 315)
+
+    ' ZIP (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;ZIP&quot;, 3720, 1560, 1200, 315)
+
+    ' Country (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;Country&quot;, 1320, 1920, 3600, 315)
+
+    ' Email (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;Email&quot;, 1320, 2280, 3600, 315)
+
+    ' Website (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;Website&quot;, 1320, 2640, 3600, 315)
+
+    ' Phone (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;Phone&quot;, 1320, 3000, 3600, 315)
+
+    ' CustomerSince (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;CustomerSince&quot;, 1320, 3360, 3600, 315)
+
+    ' Label1 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label1&quot;, 120, 120, 1200, 270)
+    ctrl.Caption = &quot;Customer ID:&quot;
+
+    ' Label2 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label2&quot;, 120, 480, 1200, 270)
+    ctrl.Caption = &quot;First, Last, Names:&quot;
+
+    ' Label3 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label3&quot;, 120, 840, 1200, 270)
+    ctrl.Caption = &quot;Company Name&quot;
+
+    ' Label4 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label4&quot;, 120, 1200, 1200, 270)
+    ctrl.Caption = &quot;Adddress&quot;
+
+    ' Label5 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label5&quot;, 120, 1560, 1200, 270)
+    ctrl.Caption = &quot;City, State, ZIP&quot;
+
+    ' Label6 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label6&quot;, 120, 1920, 1200, 270)
+    ctrl.Caption = &quot;Country&quot;
+
+    ' Label7 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label7&quot;, 120, 2280, 1200, 270)
+    ctrl.Caption = &quot;Email&quot;
+
+    ' Label8 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label8&quot;, 120, 2640, 1200, 270)
+    ctrl.Caption = &quot;Website&quot;
+
+    ' Label9 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label9&quot;, 120, 3000, 1200, 270)
+    ctrl.Caption = &quot;Phone&quot;
+
+    ' Label10 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label10&quot;, 120, 3360, 1200, 270)
+    ctrl.Caption = &quot;Customer Since&quot;
+
+    ' Employees (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;Employees&quot;, 6600, 2640, 1320, 315)
+
+    ' Label11 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label11&quot;, 5520, 2640, 960, 270)
+    ctrl.Caption = &quot;Employees&quot;
+
+    ' DiscountRate (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;DiscountRate&quot;, 6600, 3000, 1320, 315)
+
+    ' Label12 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label12&quot;, 5520, 3000, 1080, 270)
+    ctrl.Caption = &quot;Discount Rate&quot;
+
+    ' CreditLimit (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;CreditLimit&quot;, 6600, 3360, 1320, 315)
+
+    ' Label13 (Label)
+    Set ctrl = CreateControl(frm.Name, acLabel, acDetail, , &quot;Label13&quot;, 5520, 3360, 960, 270)
+    ctrl.Caption = &quot;Credit Limit&quot;
+
+    ' Notes (TextBox)
+    Set ctrl = CreateControl(frm.Name, acTextBox, acDetail, , &quot;Notes&quot;, 5400, 120, 2520, 2400)
+    ctrl.BackColor = RGB(255, 255, 0)
+
+    ' ---- Save &amp; close ----
+    DoCmd.Save acForm, frm.Name
+    DoCmd.Close acForm, frm.Name, acSaveYes
+    MsgBox &quot;Form '&quot; &amp; frm.Name &amp; &quot;' created successfully!&quot;, vbInformation
+End Sub
+
+' ========================================================
+' Event-handler stubs
+' (Paste these into your form's code module in Access)
+' ========================================================
+
+Private Sub CustomerID_Change()
+    ' TODO: handle CustomerID change
+End Sub
+
+Private Sub CustomerID_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate CustomerID
+End Sub
+
+Private Sub First_Change()
+    ' TODO: handle First change
+End Sub
+
+Private Sub First_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate First
+End Sub
+
+Private Sub Last_Change()
+    ' TODO: handle Last change
+End Sub
+
+Private Sub Last_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Last
+End Sub
+
+Private Sub CompanyName_Change()
+    ' TODO: handle CompanyName change
+End Sub
+
+Private Sub CompanyName_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate CompanyName
+End Sub
+
+Private Sub Check1_Click()
+    ' TODO: handle Check1 toggle
+    ' Me.Check1 = True or False
+End Sub
+
+Private Sub Address_Change()
+    ' TODO: handle Address change
+End Sub
+
+Private Sub Address_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Address
+End Sub
+
+Private Sub State_Change()
+    ' TODO: handle State change
+End Sub
+
+Private Sub State_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate State
+End Sub
+
+Private Sub City_Change()
+    ' TODO: handle City change
+End Sub
+
+Private Sub City_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate City
+End Sub
+
+Private Sub ZIP_Change()
+    ' TODO: handle ZIP change
+End Sub
+
+Private Sub ZIP_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate ZIP
+End Sub
+
+Private Sub Country_Change()
+    ' TODO: handle Country change
+End Sub
+
+Private Sub Country_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Country
+End Sub
+
+Private Sub Email_Change()
+    ' TODO: handle Email change
+End Sub
+
+Private Sub Email_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Email
+End Sub
+
+Private Sub Website_Change()
+    ' TODO: handle Website change
+End Sub
+
+Private Sub Website_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Website
+End Sub
+
+Private Sub Phone_Change()
+    ' TODO: handle Phone change
+End Sub
+
+Private Sub Phone_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Phone
+End Sub
+
+Private Sub CustomerSince_Change()
+    ' TODO: handle CustomerSince change
+End Sub
+
+Private Sub CustomerSince_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate CustomerSince
+End Sub
+
+Private Sub Employees_Change()
+    ' TODO: handle Employees change
+End Sub
+
+Private Sub Employees_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Employees
+End Sub
+
+Private Sub DiscountRate_Change()
+    ' TODO: handle DiscountRate change
+End Sub
+
+Private Sub DiscountRate_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate DiscountRate
+End Sub
+
+Private Sub CreditLimit_Change()
+    ' TODO: handle CreditLimit change
+End Sub
+
+Private Sub CreditLimit_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate CreditLimit
+End Sub
+
+Private Sub Notes_Change()
+    ' TODO: handle Notes change
+End Sub
+
+Private Sub Notes_BeforeUpdate(Cancel As Integer)
+    ' TODO: validate Notes
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+    ' TODO: initialize form
+End Sub
+
+Private Sub Form_Close()
+    ' TODO: clean up
+End Sub
+</code></pre>
+</details>
+<h2 id="site">Site</h2>
+<p>I've deployed this via Rick's <a href="http://pcresale.net/">PC Resale</a> website as it's Access related and linked to <a href="https://599cd.com/">599CD</a>.</p>
+<ul>
+<li>🌍 <a href="http://pcresale.net/vb-form-builder/">http://pcresale.net/vb-form-builder/</a></li>
+<li>🔗 <a href="https://github.com/599CD/vb-form-builder">https://github.com/599CD/vb-form-builder</a></li>
+</ul>
+<h2 id="links">🔗 Links</h2>
+<ul>
+<li><a href="http://pcresale.net/vb-form-builder/">http://pcresale.net/vb-form-builder/</a></li>
+</ul>
+
+
+        
+
+      </div>
+    </div>
+  <div id="comments-container" class="row">
+    <script src="https://giscus.app/client.js"
+        data-repo='alexhedley/blog'
+        data-repo-id='R_kgDOJjXJmQ'
+        data-category-id='DIC_kwDOJjXJmc4CXRaX'
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2026</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQV2ZWNX32"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CQV2ZWNX32');
+    </script>
+
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js" integrity="sha384-nVmn6yKHyUktDHdQfBgpn1YPgEu8gDXTYI5qccfkF1j6oxBHjKEafySIuNs3UhEW" crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>
