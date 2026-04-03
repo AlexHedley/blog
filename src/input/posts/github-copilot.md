@@ -8,13 +8,13 @@ tags:
   - ai
 author: AlexHedley
 published: 2026-03-14
-image: /posts/blog/images/gh/copilot-chat.png
+image: /posts/images/gh/copilot-chat.png
 imageattribution: https://www.github.com/
 ---
 
 <!-- GitHub Copilot -->
 
-![GitHub Copilot](images/gh/copilot-chat.png "GitHub Copilot")
+<!-- ![GitHub Copilot](images/gh/copilot-chat.png "GitHub Copilot") -->
 
 I signed up for the free one month trial of GitHub Copilot today, and got to work looking through all those hobby projects I've said I'll work on and never get round to it.
 
