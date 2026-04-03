@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2026</copyright>
-		<pubDate>Fri, 03 Apr 2026 11:53:37 GMT</pubDate>
-		<lastBuildDate>Fri, 03 Apr 2026 11:53:37 GMT</lastBuildDate>
+		<pubDate>Fri, 03 Apr 2026 14:55:25 GMT</pubDate>
+		<lastBuildDate>Fri, 03 Apr 2026 14:55:25 GMT</lastBuildDate>
 		<item>
 			<title>VB Form Builder</title>
 			<link>https://alexhedley.github.io/blog/posts/vb-form-builder</link>
@@ -999,6 +999,62 @@ End Sub
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>Johari / Nohari Window</title>
+			<link>https://alexhedley.github.io/blog/posts/johari-nohari-window</link>
+			<description>A tool for self-awareness and personal development</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/johari-nohari-window</guid>
+			<pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Johari / Nohari Window --&gt;
+&lt;p&gt;During a workshop I was asked to use create a Johari Window, so of course I wanted to build an app for it. I started this back in May 2023 and it's sat on the back burner for a few years.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Johari window is a technique designed to help people better understand their relationship with themselves and others. It was created by psychologists Joseph Luft (1916–2014) and Harrington Ingham (1916–1995) in 1955, and is used primarily in self-help groups and corporate settings as a heuristic exercise. Luft and Ingham named their model "Johari" using a combination of their first names.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A model for self-awareness and interpersonal communication&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Producing the graph I thought I could lean into my favourite diagraming tool &lt;a href="https://mermaid.ai/"&gt;MermaidJS&lt;/a&gt; and used a &lt;a href="https://mermaid.ai/open-source/syntax/quadrantChart.html"&gt;Quadrant Chart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I build a list of the items and made them clickable but never got round to using those to calculate the result, taking that as a starting point and using my &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; trial I got to it:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/johari-window.png" alt="Johari / Nohari Window" title="Johari / Nohari Window"&gt;&lt;/p&gt;
+&lt;h2 id="site"&gt;Site&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🌍 &lt;a href="https://alex-hedley.github.io/johari-window/"&gt;https://alex-hedley.github.io/johari-window/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window"&gt;https://github.com/alex-hedley/johari-window&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/johari-window/issues/2"&gt;https://github.com/alex-hedley/johari-window/issues/2&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/pull/3"&gt;https://github.com/alex-hedley/johari-window/pull/3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/tasks/5e462668-d146-4e3c-8347-bd3c52a394a6?author=AlexHedley"&gt;https://github.com/alex-hedley/johari-window/tasks/5e462668-d146-4e3c-8347-bd3c52a394a6?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/johari-window/issues/1"&gt;https://github.com/alex-hedley/johari-window/issues/1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/pull/4"&gt;https://github.com/alex-hedley/johari-window/pull/4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/tasks/b5972e31-4002-4561-b651-806af4c0a6e8?author=AlexHedley"&gt;https://github.com/alex-hedley/johari-window/tasks/b5972e31-4002-4561-b651-806af4c0a6e8?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/johari-window/pull/9"&gt;https://github.com/alex-hedley/johari-window/pull/9&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/tasks/f1324688-c830-4cb4-b9d7-e759264f8b41?author=AlexHedley"&gt;https://github.com/alex-hedley/johari-window/tasks/f1324688-c830-4cb4-b9d7-e759264f8b41?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Johari_window"&gt;https://en.wikipedia.org/wiki/Johari_window&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://kevan.org/johari"&gt;https://kevan.org/johari&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://kevan.org/nohari"&gt;https://kevan.org/nohari&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Kaktovik Numerals Equations</title>
 			<link>https://alexhedley.github.io/blog/posts/kaktovik-numerals-equations</link>
 			<description>Add equations to the Kaktovik Numerals system</description>
@@ -1264,6 +1320,92 @@ $10 USD per user / month&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>Archery Targets</title>
+			<link>https://alexhedley.github.io/blog/posts/archery-targets</link>
+			<description>Adding targets to the Archery Score Keeper</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/archery-targets</guid>
+			<pubDate>Sat, 14 Mar 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Archery Targets --&gt;
+&lt;p&gt;When building the &lt;a href="https://alexhedley.github.io/blog/archery-scores"&gt;Archery App&lt;/a&gt; I had it in mind to keep track of my shots in an interactive target.&lt;/p&gt;
+&lt;p&gt;Some people much cleverer than me had already created some on Codepen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://codepen.io/GGalizzi/pen/PogggB"&gt;https://codepen.io/GGalizzi/pen/PogggB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codepen.io/clairecodes/pen/JZqMRy"&gt;https://codepen.io/clairecodes/pen/JZqMRy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/Archery_Target.png" alt="Target" title="Target"&gt;&lt;/p&gt;
+&lt;p&gt;I wanted two options, one that I could transfer my scratches in the paper scoresheet from the game and plot them onto the interactive target, this could then auto score the games, but I'd also wanted a way of storing that info and the positions to show them on the main scores page.&lt;/p&gt;
+&lt;p&gt;Taking that as a starting point and using my &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; trial I got to it:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Create an interactive target that allows you to select points to show where you hit and their corresponding value is displayed in a table.
+If missed show M.
+Total the sum of scores also.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/target.png" alt="Target" title="Target"&gt;&lt;/p&gt;
+&lt;p&gt;I've got to review the &lt;a href="https://github.com/AlexHedley/archery/pull/6"&gt;MR #6&lt;/a&gt; properly but it's looking good at first glance.&lt;/p&gt;
+&lt;h2 id="site"&gt;Site&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🌍 &lt;a href="https://alexhedley.com/archery/"&gt;https://alexhedley.com/archery/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery/"&gt;https://github.com/AlexHedley/archery/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/AlexHedley/archery/issues/5"&gt;https://github.com/AlexHedley/archery/issues/5&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery/pull/6"&gt;https://github.com/AlexHedley/archery/pull/6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery/tasks/35d338b4-1adb-4086-8da8-66af8e10eced?author=AlexHedley"&gt;https://github.com/AlexHedley/archery/tasks/35d338b4-1adb-4086-8da8-66af8e10eced?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://codepen.io/GGalizzi/pen/PogggB"&gt;https://codepen.io/GGalizzi/pen/PogggB&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://codepen.io/clairecodes/pen/JZqMRy"&gt;https://codepen.io/clairecodes/pen/JZqMRy&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Cistercian Numerals</title>
+			<link>https://alexhedley.github.io/blog/posts/cistercian-numerals</link>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/cistercian-numerals</guid>
+			<pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- # Cistercian Numerals --&gt;
+&lt;p&gt;As you know I have a fascination with numbers and a few years ago (Jul 25, 2023 / Jul 1, 2024) I found &lt;strong&gt;Cistercian Numerals&lt;/strong&gt; so I built a site to document them. Luckily there were some CodePens with interactive tools to work with.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The medieval Cistercian numerals, or "ciphers" in nineteenth-century parlance, were developed by the Cistercian monastic order in the early thirteenth century at about the time that Arabic numerals were introduced to northwestern Europe. They are more compact than Arabic or Roman numerals, with a single glyph able to indicate any integer from 1 to 9,999.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There isn't much I can add to them but I've kept a copy for myself.&lt;/p&gt;
+&lt;p&gt;But this could work well to help with additions/updates to &lt;a href="https://alexhedley.github.io/blog/kaktovik-numerals"&gt;Kaktovik Numerals&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="site"&gt;Site&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🌍 &lt;a href="https://alex-hedley.github.io/cistercian-numerals/"&gt;https://alex-hedley.github.io/cistercian-numerals/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🔗 &lt;a href="https://github.com/alex-hedley/cistercian-numerals"&gt;https://github.com/alex-hedley/cistercian-numerals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Cistercian_numerals"&gt;https://en.wikipedia.org/wiki/Cistercian_numerals&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.unicode.org/L2/L2020/20290-cistercian-digits.pdf"&gt;https://www.unicode.org/L2/L2020/20290-cistercian-digits.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://adrianroselli.com/2021/02/cistercian-svg.html"&gt;https://adrianroselli.com/2021/02/cistercian-svg.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codepo8.github.io/cistercian/"&gt;https://codepo8.github.io/cistercian/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bobbiec.github.io/cistercian-font.html"&gt;https://bobbiec.github.io/cistercian-font.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://digitalseams.com/blog/making-a-font-with-9999-ligatures-to-display-thirteenth-century-monk-numerals"&gt;https://digitalseams.com/blog/making-a-font-with-9999-ligatures-to-display-thirteenth-century-monk-numerals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Devhub North - February 2026</title>
 			<link>https://alexhedley.github.io/blog/posts/devhub-north-feb-2026</link>
 			<description>meetup By Ronald James Group</description>
@@ -1309,136 +1451,6 @@ Presented by: Anthony Porthouse (Senior Web Application Developer)&lt;/p&gt;
 &lt;p&gt;Highlights&lt;/p&gt;
 &lt;p&gt;🕰️ 2 hours 30 minutes&lt;br /&gt;
 📍 In person&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>.NET Meetup Newcastle - Jan 2026</title>
-			<link>https://alexhedley.github.io/blog/posts/dotnet-newcastle-jan-2026</link>
-			<description>.NET meetup</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/meetups/dotnet-jan-2026.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/dotnet-newcastle-jan-2026</guid>
-			<pubDate>Tue, 27 Jan 2026 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Qudos .NET Newcastle Meetup - Jan 2026 --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet-jan-2026.png" alt=".NET Meetup" title=".NET Meetup"&gt;&lt;/p&gt;
-&lt;p&gt;📅 Tuesday, Jan 27, 2025 · 5:30 - 8pm GMT&lt;/p&gt;
-&lt;p&gt;📍 Building 5, Airport Freightway Freight Village, Woolsington, Newcastle upon Tyne NE13 8BH · Newcastle upon Tyne&lt;/p&gt;
-&lt;p&gt;🔗 &lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/312759966/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/312759966/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;For our first 2 meetups in 2026, the folks over at &lt;strong&gt;QGEMS&lt;/strong&gt; have kindly offered to host and sponsor.&lt;/p&gt;
-&lt;p&gt;We will be at &lt;strong&gt;Building 5, Airport Freightway Freight Village, Woolsington, Newcastle upon Tyne NE13 8BH&lt;/strong&gt; - plenty of free parking on site and a short walk from the nearest Metro.&lt;/p&gt;
-&lt;p&gt;We have a fairly relaxed agenda, but will follow:&lt;/p&gt;
-&lt;p&gt;5:30 - Doors Open&lt;br&gt;
-5:45 - Pizza arrival&lt;br&gt;
-6:00 - Introduction / Housekeeping&lt;br&gt;
-6:10 - Talks begin&lt;br&gt;
-8:00 - Closing&lt;/p&gt;
-&lt;p&gt;Who should attend:&lt;/p&gt;
-&lt;p&gt;Beginners and experienced .NET developers, architects, cloud engineers, and anyone curious about building smarter, AI-enhanced applications with Microsoft technologies.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Speaker 1:&lt;/strong&gt; Peter Bull&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; Take a Note of UI with .NET 10&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Take a Note of UI with .NET 10 is an ambitious whistle-stop tour through the A to (almost) Z of first-party Microsoft user interface technologies supported in .NET 10 with C# 14 including ASP.NET Core, Blazor, Console, .NET MAUI, Windows, Forms, Windows Presentation Foundation, WinUI with Windows App SDK and more!&lt;/p&gt;
-&lt;p&gt;See what is possible with .NET 10 and C# 14 using Visual Studio 2026 and how GitHub Copilot accelerated the process of creating the epic notes app demo that features a showcase of first-party UI possible in Windows 11, cross platform and more with Take a Note of UI with .NET 10!&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;TBA&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Speaker Bio:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Peter Bull is a senior software engineer at Klipboard and has over 25 years of professional experience and 35 years of personal experience as a programmer. Peter has used every major version of .NET since it began from .NET Framework 1.0 to .NET 10 along with every major version of Visual Studio from Visual Studio 97 to Visual Studio 2026.&lt;/p&gt;
-&lt;p&gt;Peter is a twice-awarded Microsoft MVP for .NET and Windows thanks to his articles and podcast at rogueplanetoid.com along with tutorials, talks and workshops at tutorialr.com. Peter also has his own open-source packages and upcoming live-streamed course at comentsys.com&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Speaker 2:&lt;/strong&gt; James Murphy&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; Keeping it Simple with Falco and HTMX&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This is an experience report from developing a small web based utility to solve a specific problem within Footy.com&lt;/p&gt;
-&lt;p&gt;I'll talk about the tools I chose, why I chose them, how that aligns with keeping it simple.&lt;/p&gt;
-&lt;p&gt;Bits of F#, HTMX, Aspire, MongoDB, and maybe some other stuff.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;TBA&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Speaker Bio:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;James Murphy (Murph) has been attempting to learn to write code for 45 years and feels that given another decade or two he might just get the hang of it...despite this he's managed to earn a living in the software industry for almost 40 years (James’ words not ours!)&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/@QudosRecruitment"&gt;https://www.youtube.com/@QudosRecruitment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/"&gt;https://www.meetup.com/dotnetmeetupnorth/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/312759966/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/312759966/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>twinBASIC Docs</title>
-			<link>https://alexhedley.github.io/blog/posts/twinbasic-docs</link>
-			<description>&lt;p&gt;I've been following the &lt;a href="https://twinbasic.com/"&gt;twinBASIC&lt;/a&gt; journey for a number of years and as it's nearing v1 so I thought I'd give it another go.
-I think the last time I used it, it was a &lt;a href="https://marketplace.visualstudio.com/items?itemName=twinbasic.twinbasic"&gt;VSCode Ext&lt;/a&gt;, but now it is an EXE. One push for this was the &lt;a href="https://docs.twinbasic.com/Challenges/1"&gt;twinBASIC Monthly Challenge #1&lt;/a&gt; &lt;strong&gt;Self-Contained Diagnostic Tool&lt;/strong&gt;. I downloaded the latest &lt;a href="https://github.com/twinbasic/twinbasic/releases"&gt;Release&lt;/a&gt; from GitHub and started trying it out.&lt;/p&gt;</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/twinBASIC.jpeg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/twinbasic-docs</guid>
-			<pubDate>Sat, 17 Jan 2026 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # twinBASIC Docs --&gt;
-&lt;!-- ![twinBASIC](images/twinBASIC.jpeg "twinBASIC") --&gt;
-&lt;p&gt;I've been following the &lt;a href="https://twinbasic.com/"&gt;twinBASIC&lt;/a&gt; journey for a number of years and as it's nearing v1 so I thought I'd give it another go.
-I think the last time I used it, it was a &lt;a href="https://marketplace.visualstudio.com/items?itemName=twinbasic.twinbasic"&gt;VSCode Ext&lt;/a&gt;, but now it is an EXE. One push for this was the &lt;a href="https://docs.twinbasic.com/Challenges/1"&gt;twinBASIC Monthly Challenge #1&lt;/a&gt; &lt;strong&gt;Self-Contained Diagnostic Tool&lt;/strong&gt;. I downloaded the latest &lt;a href="https://github.com/twinbasic/twinbasic/releases"&gt;Release&lt;/a&gt; from GitHub and started trying it out.&lt;/p&gt;
-&lt;p&gt;I was already a member of the &lt;a href="https://discord.gg/UaW9GgKKuE"&gt;Discord Server&lt;/a&gt; but if you aren't already, please join.&lt;/p&gt;
-&lt;p&gt;I had a couple of questions on how the IDE worked and since these weren't answered by the &lt;a href="https://docs.twinbasic.com/"&gt;docs&lt;/a&gt;, at the moment, I thought I can't be the only one who might ask so why don't I contribute to them to help others!&lt;/p&gt;
-&lt;p&gt;Alongside this I added/updated some of the &lt;a href="https://github.com/just-the-docs/just-the-docs"&gt;Just The Docs&lt;/a&gt; config &lt;a href="https://github.com/twinbasic/documentation/pull/30"&gt;#30&lt;/a&gt; to make it easier for others to contribute.&lt;/p&gt;
-&lt;p&gt;I added the &lt;a href="https://docs.twinbasic.com/Challenges/1"&gt;twinBASIC Monthly Challenge #1&lt;/a&gt; for better visibility and a historic item if people arrive to it late and still want a go. The subsequent ones can be added each month.&lt;/p&gt;
-&lt;p&gt;There are some legacy videos &lt;a href="https://github.com/twinbasic/documentation/pull/34"&gt;#34&lt;/a&gt; on &lt;a href="https://www.youtube.com/twinBASIC"&gt;&amp;#64;twinBASIC&lt;/a&gt; YouTube channel which would be useful to accompany the docs too.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://docs.twinbasic.com/tB/IDE"&gt;IDE&lt;/a&gt; &lt;em&gt;Tour&lt;/em&gt; &lt;a href="https://github.com/twinbasic/documentation/pull/25"&gt;#25&lt;/a&gt; and &lt;em&gt;Controls&lt;/em&gt; &lt;a href="https://github.com/twinbasic/documentation/pull/23"&gt;#23&lt;/a&gt; sections will probably take a while to produce but I might just get the boiler plate pages built so others can contribute too. Also if there is a way to autogenerate all the Properties/Methods etc like &lt;a href="https://dotnet.github.io/docfx/"&gt;docfx&lt;/a&gt; does that would save some work.&lt;/p&gt;
-&lt;h2 id="prs"&gt;PRs&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;[Draft]&lt;/em&gt; Add Controls Section &lt;a href="https://github.com/twinbasic/documentation/pull/23"&gt;#23&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;✔ Challenges &lt;a href="https://github.com/twinbasic/documentation/pull/24"&gt;#24&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;[Draft]&lt;/em&gt; IDE Tour &lt;a href="https://github.com/twinbasic/documentation/pull/25"&gt;#25&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;✔ Update config &lt;a href="https://github.com/twinbasic/documentation/pull/30"&gt;#30&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Videos &lt;a href="https://github.com/twinbasic/documentation/pull/34"&gt;#34&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://twinbasic.com/"&gt;https://twinbasic.com/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://docs.twinbasic.com/"&gt;https://docs.twinbasic.com/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/twinbasic/documentation"&gt;https://github.com/twinbasic/documentation&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/twinbasic/documentation/issues"&gt;https://github.com/twinbasic/documentation/issues&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/twinbasic/documentation/pulls"&gt;https://github.com/twinbasic/documentation/pulls&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://discord.gg/UaW9GgKKuE"&gt;https://discord.gg/UaW9GgKKuE&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>2025 In Review</title>
-			<link>https://alexhedley.github.io/blog/posts/2025-in-review</link>
-			<description>A Year in review</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/2025-in-review</guid>
-			<pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # 2025 in review --&gt;
-&lt;p&gt;Last year I wrote my &lt;a href="https://alexhedley.github.io/blog/2024-in-review"&gt;2024 In Review&lt;/a&gt;, it's time for &lt;strong&gt;2025&lt;/strong&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Professional Achievements&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Completed the &lt;strong&gt;Java Foundations Professional Certificate by JetBrains&lt;/strong&gt; &lt;a href="https://blog.jetbrains.com/team/2025/01/29/jetbrains-and-linkedin-partner-to-launch-a-professional-certificate/"&gt;JetBrains and LinkedIn Partner to Launch a Professional Certificate&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Also recertified my &lt;a href="https://alexhedley.com/blog/posts/aws-certified-cloud-practitioner"&gt;AWS Cloud Practitioner&lt;/a&gt;, that came round quickly.&lt;/p&gt;
-&lt;p&gt;Planning on &lt;a href="https://learn.microsoft.com/en-us/credentials/certifications/github-actions/?practice-assessment-type=certification"&gt;GitHub Actions Certification&lt;/a&gt; later this year.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Personal Achievements&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I did some more workshops this year including &lt;a href="https://alexhedley.github.io/blog/copper-rose-workshop"&gt;Copper Rose Workshop&lt;/a&gt; and managed to go on a number of holidays, adding more stamps to my passport :). The idea is to spend money on experiences instead of "things", but I can't stop myself with the clutter :p. See &lt;a href="https://alexhedley.com/lego/"&gt;Lego&lt;/a&gt; and &lt;a href="https://alexhedley.com/funkopop/"&gt;Funko Pop&lt;/a&gt;. A few more &lt;a href="https://alexhedley.com/escaperooms/"&gt;Escape Rooms&lt;/a&gt; completed. Lots more &lt;a href="https://alexhedley.com/Gigs/"&gt;Gigs&lt;/a&gt; attended, plus added some charts to show off the data a little.&lt;/p&gt;
-&lt;p&gt;Lots of great movies this year from my &lt;a href="https://alexhedley.com/FilmsBlog/"&gt;FilmsBlog&lt;/a&gt;. Thoroughly enjoyed &lt;em&gt;The Ballad of Wallis Island&lt;/em&gt; which I managed to get the vinyl soundtrack for :).&lt;/p&gt;
-&lt;p&gt;I ported &lt;a href="https://alexhedley.github.io/blog/dotnet-nocco"&gt;nocco&lt;/a&gt; to .NET 9 and built &lt;a href="https://alexhedley.github.io/blog/dotnet-by-example"&gt;.NET by Example&lt;/a&gt; using it. Just need to start adding some content.&lt;/p&gt;
-&lt;p&gt;I worked on adding some external community widgets to &lt;a href="https://alexhedley.github.io/blog/the-beginning-of-blashing"&gt;Blashing&lt;/a&gt;. Bits and pieces with &lt;a href="https://alexhedley.github.io/blog/utility-blazor"&gt;Utility Blazor&lt;/a&gt; and started a KMP version - &lt;a href="https://github.com/Alex-Hedley/Utility-Kotlin"&gt;Utility Kotlin&lt;/a&gt;. A little work on the &lt;a href="https://alexhedley.github.io/blog/tags/poker"&gt;Poker&lt;/a&gt; recording app, making it easier to share content between Server and Client, then split the UI out into it's own &lt;a href="https://github.com/AlexHedley/poker-hud"&gt;GitHub Project&lt;/a&gt; (&lt;a href="https://alexhedley.com/poker-hud/"&gt;Site&lt;/a&gt;) to ease working on that. Need to finish at least one and try it out on the &lt;a href="https://alexhedley.com/poker-recording/screen"&gt;Screen&lt;/a&gt;. Also integrated some of the calculations from the external libs to show there too.&lt;/p&gt;
-&lt;p&gt;During the back end of the year I got back into recording some 599CD &lt;a href="https://599cd.com/blog/display-article.asp?ID=1275"&gt;TechHelp&lt;/a&gt; videos (&lt;a href="https://alexhedley.com/courses/"&gt;courses&lt;/a&gt;) with the help of some new &lt;a href="https://alexhedley.github.io/blog/streaming-equipment-3"&gt;Streaming Equipment 3&lt;/a&gt; including a &lt;strong&gt;Green Screen XL&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://599cd.com/blog/display-article.asp?ID=2971"&gt;VB.NET&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://599cd.com/blog/display-article.asp?ID=4267"&gt;VB.NET Beginner 0&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://599cd.com/blog/display-article.asp?ID=4284"&gt;SQL&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I'm building up a set of intro videos on how to use &lt;em&gt;MS SQL Server&lt;/em&gt; with the goal to show how to use it in &lt;em&gt;VB.NET&lt;/em&gt;. Just need to lay a lot of the groundwork, so many interlinked things to cover.&lt;/p&gt;
-&lt;p&gt;I also recorded &lt;a href="https://599cd.com/blog/display-article.asp?ID=2953"&gt;VB.NET Beginner 3&lt;/a&gt; which is due for release soon. Hoping to finish off the rest of the Beginner/Expert and start building my own course outlines.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
