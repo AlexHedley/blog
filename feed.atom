@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2026</rights>
-	<updated>2026-04-03T11:38:38Z</updated>
+	<updated>2026-04-03T11:50:38Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -1001,6 +1001,139 @@ End Sub
 		<summary>Getting AI to build up the .NET by Example samples</summary>
 	</entry>
 	<entry>
+		<id>https://alexhedley.github.io/blog/posts/kaktovik-numerals-equations</id>
+		<title>Kaktovik Numerals Equations</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/kaktovik-numerals-equations" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2026-03-17T00:00:00Z</updated>
+		<content>&lt;!-- Kaktovik Numerals Equations --&gt;
+&lt;p&gt;In a previous post about &lt;a href="https://alexhedley.github.io/blog/kaktovik-numerals"&gt;Kaktovik Numerals&lt;/a&gt;/&lt;a href="https://alexhedley.github.io/blog/kaktovik-numerals-svg"&gt;KN SVG&lt;/a&gt; I started a site to show the numbers in this system.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; to build the calculations:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Addition, Subtraction, Simple Division, Long Division&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;New&lt;/strong&gt;: &lt;code&gt;src/js/kaktovik.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Pure arithmetic module with full input validation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;numberToKaktovik(n)&lt;/code&gt; / &lt;code&gt;kaktovikToNumber(s)&lt;/code&gt; — decimal ↔ Kaktovik (U+1D2C0–U+1D2D3)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;add(a, b)&lt;/code&gt;, &lt;code&gt;subtract(a, b)&lt;/code&gt; — validated non-negative integer ops&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;divide(a, b)&lt;/code&gt; → &lt;code&gt;{ quotient, remainder }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;longDivide(a, b)&lt;/code&gt; → &lt;code&gt;{ quotient, remainder, steps[] }&lt;/code&gt; — step-by-step base-20 workings per digit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;longDivide(8400, 20)
+// { quotient: 420, remainder: 0, steps: [
+//   { partialDividend: 1,  quotientDigit: 0, product: 0,  remainder: 1 },
+//   { partialDividend: 21, quotientDigit: 1, product: 20, remainder: 1 },
+//   { partialDividend: 20, quotientDigit: 1, product: 20, remainder: 0 },
+//   { partialDividend: 0,  quotientDigit: 0, product: 0,  remainder: 0 }
+// ]}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Updated&lt;/strong&gt;: &lt;code&gt;src/index.html&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Arithmetic calculator&lt;/strong&gt;: Four panels (addition, subtraction, simple division, long division). Each shows decimal inputs, the result as Kaktovik glyphs (via existing Unifont-Upper font), and a decimal reference. Long division additionally renders the per-step table. All four panels are &lt;strong&gt;auto-run on page load&lt;/strong&gt; so results are immediately visible.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Examples section&lt;/strong&gt;: A new section below the calculator with pre-computed examples for each operation:
+&lt;ul&gt;
+&lt;li&gt;Addition, Subtraction, Simple Division: a table of 7 examples each, with columns for the expression, the Kaktovik font rendering, a &lt;strong&gt;colored SVG rendering&lt;/strong&gt;, and the decimal equivalent.&lt;/li&gt;
+&lt;li&gt;Long Division: 4 worked examples (400÷20, 8400÷20, 441÷21, 399÷19), each with the full step-by-step base-20 breakdown table and a &lt;strong&gt;colored SVG expression header&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Colored SVG rendering&lt;/strong&gt;: Each digit is rendered from the existing per-digit SVG files with a two-tone color scheme matching the reference visual — &lt;strong&gt;teal&lt;/strong&gt; (&lt;code&gt;#00a1a4&lt;/code&gt;) for pure multiples of 5 (digits 5, 10, 15) and &lt;strong&gt;purple&lt;/strong&gt; (&lt;code&gt;#9e2194&lt;/code&gt;) for all unit-bearing digits — using async &lt;code&gt;fetchSVGText&lt;/code&gt; / &lt;code&gt;numberToColoredSVG&lt;/code&gt; / &lt;code&gt;renderSVGCells&lt;/code&gt; helpers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ![Addition and Subtraction SVG examples](https://github.com/user-attachments/assets/35c57b82-164f-4b9e-8d30-d1923a2939b0) --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/Addition-Subtraction.png" alt="Addition and Subtraction SVG examples" title="Addition and Subtraction SVG examples"&gt;&lt;/p&gt;
+&lt;!-- ![Simple Division and Long Division SVG examples](https://github.com/user-attachments/assets/523995ae-af31-4cde-aa07-a6f7847256a1) --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/Simple-Division.png" alt="Simple Division and Long Division SVG examples" title="Simple Division and Long Division SVG examples"&gt;&lt;/p&gt;
+&lt;!-- ![Long Division step tables](https://github.com/user-attachments/assets/ffbdf020-b880-4f12-9e21-4fd14294a5e1) --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/Long-Division.png" alt="Long Division step tables" title="Long Division step tables"&gt;&lt;/p&gt;
+&lt;h2 id="updated-srccssstyles.css"&gt;Updated: &lt;code&gt;src/css/styles.css&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Styles for &lt;code&gt;.kaktovik&lt;/code&gt; (large glyph display), &lt;code&gt;.arithmetic&lt;/code&gt; flex layout, &lt;code&gt;.operation-group&lt;/code&gt; cards, &lt;code&gt;.long-division&lt;/code&gt; step table, &lt;code&gt;.examples-table&lt;/code&gt; / &lt;code&gt;.ldiv-example&lt;/code&gt; for the Examples section, and &lt;code&gt;.svg-kak&lt;/code&gt; / &lt;code&gt;.svg-expr&lt;/code&gt; / &lt;code&gt;.svg-op&lt;/code&gt; / &lt;code&gt;.ldiv-header&lt;/code&gt; / &lt;code&gt;.ldiv-svg&lt;/code&gt; for the colored SVG column.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I then asked&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Use the following image alongside the existing code base to build an interactive number picker using the SVGs and match the colours&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Adds a new &lt;code&gt;picker.html&lt;/code&gt; page that lets users build arbitrary base-20 numbers by clicking Kaktovik digit buttons, displaying the result in both Kaktovik SVG notation and decimal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;New files&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;src/picker.html&lt;/code&gt;&lt;/strong&gt; — Picker page: 4×5 digit grid, Kaktovik display, decimal readout, Backspace/Clear controls; fully accessible (&lt;code&gt;aria-live&lt;/code&gt;, &lt;code&gt;role="group"&lt;/code&gt;, &lt;code&gt;aria-label&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;src/js/picker.js&lt;/code&gt;&lt;/strong&gt; — Fetches all 20 SVG digit files in parallel, builds clean inline SVGs with per-digit colouring, handles base-20 digit accumulation and leading-zero suppression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Modified files&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;src/css/styles.css&lt;/code&gt;&lt;/strong&gt; — Grid layout, rounded cells with hover/active states, display area and control button styles&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;src/index.html&lt;/code&gt;&lt;/strong&gt; — Link to the picker from the main page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Colour mapping (matches reference)&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Digits&lt;/th&gt;
+&lt;th&gt;Colour&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;#595959&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1–4&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;#9e2194&lt;/code&gt; purple&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5, 10, 15&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;#00a1a4&lt;/code&gt; cyan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6–9, 11–14, 16–18&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;#595959&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;19 (= 15+4, max digit)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;#9e2194&lt;/code&gt; purple&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Screenshots&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Initial state — full digit grid with correct colouring:&lt;/p&gt;
+&lt;!-- ![Initial state](https://github.com/user-attachments/assets/04d7cd86-1951-4fdf-b7fd-29b548f66fb1) --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/picker-1.png" alt="Picker 1" title="Picker 1"&gt;&lt;/p&gt;
+&lt;p&gt;After selecting digits 2 and 19 → decimal 59:&lt;/p&gt;
+&lt;!-- ![Digits 2,19 = 59](https://github.com/user-attachments/assets/437c6899-6517-408a-a5cb-b6de7d64eabf) --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/picker-2.png" alt="Picker 2" title="Picker 2"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I still need to review this but it's got me started for sure.&lt;/p&gt;
+&lt;h2 id="site"&gt;🌍 Site&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alex-hedley.github.io/kaktovik-numerals/"&gt;https://alex-hedley.github.io/kaktovik-numerals/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Alex-Hedley/kaktovik-numerals"&gt;https://github.com/Alex-Hedley/kaktovik-numerals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/issues/1"&gt;https://github.com/alex-hedley/kaktovik-numerals/issues/1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/pull/2"&gt;https://github.com/alex-hedley/kaktovik-numerals/pull/2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/tasks/f2cf528e-fc6d-4e16-9671-bd7caa781774?author=AlexHedley"&gt;https://github.com/alex-hedley/kaktovik-numerals/tasks/f2cf528e-fc6d-4e16-9671-bd7caa781774?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/issues/3"&gt;https://github.com/alex-hedley/kaktovik-numerals/issues/3&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/tasks/49513b60-7102-4b9e-9c47-449a13cfb3ce?author=AlexHedley"&gt;https://github.com/alex-hedley/kaktovik-numerals/tasks/49513b60-7102-4b9e-9c47-449a13cfb3ce?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/pull/4"&gt;https://github.com/alex-hedley/kaktovik-numerals/pull/4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Add equations to the Kaktovik Numerals system</summary>
+	</entry>
+	<entry>
 		<id>https://alexhedley.github.io/blog/posts/vba-object-browser</id>
 		<title>VBA Object Browser</title>
 		<author>
@@ -1317,37 +1450,5 @@ I think the last time I used it, it was a &lt;a href="https://marketplace.visual
 &lt;p&gt;I also recorded &lt;a href="https://599cd.com/blog/display-article.asp?ID=2953"&gt;VB.NET Beginner 3&lt;/a&gt; which is due for release soon. Hoping to finish off the rest of the Beginner/Expert and start building my own course outlines.&lt;/p&gt;
 </content>
 		<summary>A Year in review</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/github-contributions-2025</id>
-		<title>GitHub Contributions Chart Generator</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/github-contributions-2025" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/topguntocat.png" />
-		<updated>2026-01-05T00:00:00Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;All your contributions in one image!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github-contributions.vercel.app/"&gt;GitHub Contributions Chart Generator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/sallar/github-contributions-chart"&gt;github-contributions-chart&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="alex-hedley"&gt;Alex Hedley&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alexhedley-2025.png" alt="alexhedley" title="Contributions alexhedley"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/git-wrapped-AlexHedley.png" alt="git-wrapped" title="git-wrapped AlexHedley"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-wrapped-AlexHedley.jpeg" alt="github-wrapped" title="github-wrapped AlexHedley"&gt;&lt;/p&gt;
-&lt;h2 id="alex-hedley-1"&gt;alex-hedley&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/contributions-alex-hedley-2025.png" alt="alex-hedley" title="Contributions alex-hedley"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/git-wrapped-alex-hedley.png" alt="git-wrapped" title="git-wrapped alex-hedley"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-wrapped-alex-hedley.jpeg" alt="github-wrapped" title="github-wrapped alex-hedley"&gt;&lt;/p&gt;
-&lt;h2 id="others"&gt;Others&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://git-wrapped.com/"&gt;https://git-wrapped.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.trygitwrap.com/"&gt;https://www.trygitwrap.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;All your contributions in one image!&lt;/p&gt;</summary>
 	</entry>
 </feed>
