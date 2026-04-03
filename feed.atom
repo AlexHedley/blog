@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2026</rights>
-	<updated>2026-04-03T11:50:38Z</updated>
+	<updated>2026-04-03T11:53:37Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -19,7 +19,7 @@
 		<content>&lt;!-- VB Form Builder --&gt;
 &lt;p&gt;In a past life I was a &lt;a href="https://balsamiq.com/"&gt;balsamiq&lt;/a&gt; user. I loved a quick way to mockup a design with a set of common controls. There are many other tools you can do this with.&lt;/p&gt;
 &lt;p&gt;Not sure how much need there would be for an &lt;a href="https://www.microsoft.com/en-us/microsoft-365/access"&gt;MS Access&lt;/a&gt; version but thought why not give it a go.&lt;/p&gt;
-&lt;p&gt;I used &lt;a href="https://alexhedley.github.io/blog/copilot"&gt;copilot&lt;/a&gt; to build the app with the following prompt:&lt;/p&gt;
+&lt;p&gt;I used &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; to build the app with the following prompt:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Build a Microsoft Access VBA Form Builder as a website using the 98.css theme.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://jdan.github.io/98.css/"&gt;https://jdan.github.io/98.css/&lt;/a&gt;&lt;br&gt;
@@ -30,9 +30,10 @@
 &lt;p&gt;add and import and export option&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;To test this out I've take a &lt;code&gt;CustomerF&lt;/code&gt; from the &lt;a href="https://599cd.com/"&gt;599CD&lt;/a&gt; &lt;a href="https://599cd.com/blog/display-article.asp?ID=1413"&gt;Blank Template&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599cd/vb-form-builder/sample-form.jpg" alt="Sample Form" title="Sample Form"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599CD/vb-form-builder/sample-form.jpg" alt="Sample Form" title="Sample Form"&gt;&lt;/p&gt;
 &lt;p&gt;Then I've created the same &lt;code&gt;Form&lt;/code&gt; with the new tool to see how it looks:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599cd/vb-form-builder/pcresale.net_vb-form-builder.png" alt="CustomerF" title="CustomerF"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599CD/vb-form-builder/pcresale.net_vb-form-builder.png" alt="CustomerF" title="CustomerF"&gt;&lt;/p&gt;
+&lt;!-- ![CustomerF](images/599CD/vb-form-builder/pcresale.net_vb-form-builder_2.png "CustomerF") --&gt;
 &lt;p&gt;It created a number of controls originally, then I asked it to add more:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://support.microsoft.com/en-us/office/introduction-to-controls-4a8cf5f2-d739-4ae9-b1e0-510c3f4d6975"&gt;Introduction to controls&lt;/a&gt;&lt;/li&gt;
@@ -1164,7 +1165,7 @@ End Sub
 &lt;li&gt;Scripting&lt;/li&gt;
 &lt;li&gt;ADODB&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I thought why not use this type of project as a way to try out &lt;a href="https://alexhedley.github.io/blog/copilot"&gt;Copilot&lt;/a&gt; so I asked the following:&lt;/p&gt;
+&lt;p&gt;I thought why not use this type of project as a way to try out &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; so I asked the following:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Build the VBA Object Browser as a website.&lt;/p&gt;
 &lt;/blockquote&gt;
