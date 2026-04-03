@@ -38,7 +38,7 @@ The list of Libraries comes from the [MS Learn](https://learn.microsoft.com/) [O
 - Scripting
 - ADODB
 
-I thought why not use this type of project as a way to try out [Copilot](copilot) so I asked the following:
+I thought why not use this type of project as a way to try out [GitHub Copilot](github-copilot) so I asked the following:
 
 > Build the VBA Object Browser as a website.
 

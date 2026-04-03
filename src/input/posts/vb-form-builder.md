@@ -16,7 +16,7 @@ In a past life I was a [balsamiq](https://balsamiq.com/) user. I loved a quick w
 
 Not sure how much need there would be for an [MS Access](https://www.microsoft.com/en-us/microsoft-365/access) version but thought why not give it a go.
 
-I used [copilot](copilot) to build the app with the following prompt:
+I used [GitHub Copilot](github-copilot) to build the app with the following prompt:
 
 > Build a Microsoft Access VBA Form Builder as a website using the 98.css theme.
 >   
@@ -29,11 +29,13 @@ With the additional prompts
 
 To test this out I've take a `CustomerF` from the [599CD](https://599cd.com/) [Blank Template](https://599cd.com/blog/display-article.asp?ID=1413).
 
-![Sample Form](images/599cd/vb-form-builder/sample-form.jpg "Sample Form")
+![Sample Form](images/599CD/vb-form-builder/sample-form.jpg "Sample Form")
 
 Then I've created the same `Form` with the new tool to see how it looks:
 
-![CustomerF](images/599cd/vb-form-builder/pcresale.net_vb-form-builder.png "CustomerF")
+![CustomerF](images/599CD/vb-form-builder/pcresale.net_vb-form-builder.png "CustomerF")
+
+<!-- ![CustomerF](images/599CD/vb-form-builder/pcresale.net_vb-form-builder_2.png "CustomerF") -->
 
 It created a number of controls originally, then I asked it to add more:
 
