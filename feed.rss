@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2026</copyright>
-		<pubDate>Thu, 02 Apr 2026 16:51:26 GMT</pubDate>
-		<lastBuildDate>Thu, 02 Apr 2026 16:51:26 GMT</lastBuildDate>
+		<pubDate>Fri, 03 Apr 2026 11:38:38 GMT</pubDate>
+		<lastBuildDate>Fri, 03 Apr 2026 11:38:38 GMT</lastBuildDate>
 		<item>
 			<title>VB Form Builder</title>
 			<link>https://alexhedley.github.io/blog/posts/vb-form-builder</link>
@@ -919,6 +919,85 @@ End Sub
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>Fast Food Order System</title>
+			<link>https://alexhedley.github.io/blog/posts/fast-food-order-system</link>
+			<description>A KDS System</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/fast-food-order-system</guid>
+			<pubDate>Wed, 25 Mar 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- Fast Food Order System --&gt;
+&lt;p&gt;For some strange reason I've wanted to create my own_ Fast Food Order System_, I've always liked how the the terminal looked for the staff, although I never worked in one to raise some beer money.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; to build the app with the following prompt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Create a vanilla web based fast food ordering system with customer and client apps. Produce the page that shows the valid orders in an old school terminal/dos like screen that lists the choices&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kds/LandingPage.png" alt="Landing Page" title="Landing Page"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kds/CustomerApp.png" alt="Customer App" title="Customer App"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/kds/CustomerApp-Cart.png" alt="Customer App - Cart" title="Customer App - Cart"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kds/CustomerApp-Confirm.png" alt="Customer App - Confirm" title="Customer App - Confirm"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/kds/CustomerApp-Order.png" alt="Customer App - Order" title="Customer App - Order"&gt;&lt;/p&gt;
+&lt;p&gt;Because of the terminal/dos request I got the following, which I LOVE but thinking it won't work well for a touch screen system and thought I need it to look more like the ones I'd expected to see in McD / KFC etc.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kds/Kitchen-Terminal.png" alt="Kitchen Terminal" title="Kitchen Terminal"&gt;
+&lt;img src="https://alexhedley.github.io/blog/images/kds/Kitchen-Terminal-Expanded.png" alt="Kitchen Terminal - Expanded" title="Kitchen Terminal - Expanded"&gt;&lt;/p&gt;
+&lt;p&gt;Another prompt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;create some alternative KDS layouts for the vendors management of the orders&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;⬛ Board (Kanban) — three columns: New Orders | Preparing | Ready. See the full pipeline at a glance and advance orders with one click.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kds/KDS-Board.png" alt="KDS - Board" title="KDS - Board"&gt;&lt;/p&gt;
+&lt;p&gt;⊞ Grid — responsive card tiles sorted by urgency, full order details visible without expanding. Orders turn amber at 5 min and pulse red at 10 min.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kds/KDS-Grid.png" alt="KDS - Grid" title="KDS - Grid"&gt;&lt;/p&gt;
+&lt;p&gt;☰ List — compact table for high-volume kitchens, maximum information density with inline action buttons.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kds/KDS-List.png" alt="KDS - List" title="KDS - List"&gt;&lt;/p&gt;
+&lt;p&gt;All layouts share the same localStorage order data and auto-refresh every 5 s. Layout preference persists between sessions. Keyboard shortcuts: &lt;code&gt;1&lt;/code&gt;/&lt;code&gt;2&lt;/code&gt;/&lt;code&gt;3&lt;/code&gt; to switch layout, &lt;code&gt;R&lt;/code&gt; refresh, &lt;code&gt;C&lt;/code&gt; clear completed, &lt;code&gt;D&lt;/code&gt; load demo.&lt;/p&gt;
+&lt;p&gt;Finally I asked for a 🍔 favicon because it's a must!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Add a favicon&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I was very impressed with the design, it would have taken me an age to come up with something that looks as nice, and it implemented some cool functionality to handle state. Just need to build an API and release :p.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/fast-food-order-system/"&gt;https://github.com/AlexHedley/fast-food-order-system/&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/fast-food-order-system/pull/1"&gt;https://github.com/AlexHedley/fast-food-order-system/pull/1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>.NET by Example - Samples</title>
+			<link>https://alexhedley.github.io/blog/posts/dotnet-by-example-samples</link>
+			<description>Getting AI to build up the .NET by Example samples</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/dotnet-by-example-samples</guid>
+			<pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- .NET by Example - Samples --&gt;
+&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
+&lt;p&gt;Last year I build &lt;a href="https://alexhedley.github.io/blog/dotnet-by-example"&gt;.NET by Example&lt;/a&gt; with &lt;a href="https://alexhedley.github.io/blog/nocco"&gt;nocco&lt;/a&gt; and upgraded it to .NET 10 in February.&lt;/p&gt;
+&lt;p&gt;Having the &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; free month I thought it might be a good use of a request.&lt;/p&gt;
+&lt;p&gt;I already had an Issue with the original list &lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;#11&lt;/a&gt; so I set the Agent to work in &lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;PR #33&lt;/a&gt;. Just 332 files to look through...&lt;/p&gt;
+&lt;p&gt;I've yet to review everything and need to work on some of the layout to fit a larger amount of code.&lt;/p&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/dotnetbyexample"&gt;https://alexhedley.github.io/dotnetbyexample&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample"&gt;https://github.com/AlexHedley/dotnetbyexample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;https://github.com/AlexHedley/dotnetbyexample/issues/11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;https://github.com/AlexHedley/dotnetbyexample/pull/33&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>VBA Object Browser</title>
 			<link>https://alexhedley.github.io/blog/posts/vba-object-browser</link>
 			<description>Building a web version of the Object Browser</description>
@@ -1000,6 +1079,54 @@ End Sub
 &lt;li&gt;🔗 &lt;a href="https://github.com/jdan/98.css"&gt;https://github.com/jdan/98.css&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;🌍 &lt;a href="https://jdan.github.io/98.css/"&gt;https://jdan.github.io/98.css/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>GitHub Copilot</title>
+			<link>https://alexhedley.github.io/blog/posts/github-copilot</link>
+			<description>A trial of GitHub Copilot</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/blog/images/gh/copilot-chat.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/github-copilot</guid>
+			<pubDate>Sat, 14 Mar 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- GitHub Copilot --&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/copilot-chat.png" alt="GitHub Copilot" title="GitHub Copilot"&gt;&lt;/p&gt;
+&lt;p&gt;I signed up for the free one month trial of GitHub Copilot today, and got to work looking through all those hobby projects I've said I'll work on and never get round to it.&lt;/p&gt;
+&lt;p&gt;Looking forward to seeing what I can achieve and might actually finish something from the &lt;a href="https://alexhedley.com/projects/"&gt;projects&lt;/a&gt; &lt;del&gt;graveyard&lt;/del&gt;.&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/features/copilot"&gt;https://github.com/features/copilot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What's included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;50 agent mode or chat requests per month&lt;/li&gt;
+&lt;li&gt;2,000 completions per month&lt;/li&gt;
+&lt;li&gt;Access to Haiku 4.5, GPT-5 mini, and more&lt;/li&gt;
+&lt;li&gt;Copilot CLI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pro · Most popular · Accelerate workflows with GitHub Copilot.&lt;br&gt;
+$10 USD per user / month&lt;/p&gt;
+&lt;p&gt;Everything in Free and:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copilot cloud agent&lt;/li&gt;
+&lt;li&gt;Copilot code review&lt;/li&gt;
+&lt;li&gt;Claude and Codex on GitHub and VS Code&lt;/li&gt;
+&lt;li&gt;300 premium requests to use latest models, with the option to buy more&lt;/li&gt;
+&lt;li&gt;Unlimited agent mode and chats with GPT-5 mini&lt;/li&gt;
+&lt;li&gt;Unlimited inline suggestions&lt;/li&gt;
+&lt;li&gt;Access to models from Anthropic, Google, OpenAI, and more, including Opus 4.6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/features/copilot"&gt;https://github.com/features/copilot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/features/copilot/cli"&gt;https://github.com/features/copilot/cli&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://code.visualstudio.com/docs/copilot/overview"&gt;https://code.visualstudio.com/docs/copilot/overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"&gt;https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat"&gt;https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ![Icon](images/gh/Microsoft.VisualStudio.Services.Icons.Default.png "Icon") --&gt;
+&lt;!-- ![Icon](images/gh/GitHub-Copilot.png "Icon") --&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -1209,147 +1336,6 @@ I think the last time I used it, it was a &lt;a href="https://marketplace.visual
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://git-wrapped.com/"&gt;https://git-wrapped.com/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.trygitwrap.com/"&gt;https://www.trygitwrap.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>ISC2 North East England Chapter - November 2025</title>
-			<link>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2025</link>
-			<description>ISC2 Chapter Meetup</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/isc2/isc2chapternortheastengland.jpeg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/isc2-ne-chapter-nov-2025</guid>
-			<pubDate>Tue, 11 Nov 2025 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # ISC2 North East England Chapter November 2025 Meetup --&gt;
-&lt;p&gt;Come and join our in person event on 11 November at the Newcastle Building Society office at Cobalt Business park.
-The ISC North East Chapter welcomes all ISC2 members, anyone working in cyber / infosec and students. Come join us for an evening to network and the usual: talk, talk, pizza, talk format.&lt;/p&gt;
-&lt;p&gt;The theme for the evening: Challenging Times in Cyber Security.&lt;/p&gt;
-&lt;p&gt;Category: Science &amp;amp; Tech, Science&lt;/p&gt;
-&lt;h2 id="agenda"&gt;Agenda&lt;/h2&gt;
-&lt;p&gt;Opening: ISC2 Updates for our members&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;&lt;strong&gt;Updates on Cyber Regulations&lt;/strong&gt;&lt;/del&gt;.
-&lt;del&gt;Kristina Holt - Managing Associate at Foot Anstey&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Operational Resilience&lt;/strong&gt;&lt;br /&gt;
-Jenny Wilkinson - Rule21&lt;/p&gt;
-&lt;p&gt;Operational Resilience: Bridging the Technical-Operational-Cyber Divide. Jenny will discuss alignment of strategy, metrics, exercises and regulations across the technical, operational and cyber domains to build effective operational resilience.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Quantum Readiness&lt;/strong&gt;&lt;br /&gt;
-&lt;del&gt;Dr Meera Sharma - Cystel&lt;/del&gt;&lt;br /&gt;
-&lt;del&gt;Dr Sharma will tell us what this means to cyber professionals and key aspects we need to understand.&lt;/del&gt;&lt;br /&gt;
-Dr. Thomas Matheus&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pizza and refreshments&lt;/strong&gt;&lt;br /&gt;
-Networking and chatter with some pizza and refreshments&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How You May Have Built an Unconditional Access Policy&lt;/strong&gt;&lt;br /&gt;
-Anthony Holt from PenTest Consultants&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Rewriting the rules of Cyber Defence&lt;/strong&gt;&lt;br /&gt;
-Gareth Pritchard - Sapphire&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Competition time&lt;/strong&gt;&lt;br /&gt;
-We've got some ISC2 goodies to give away.&lt;/p&gt;
-&lt;h2 id="date-and-time"&gt;🗓️ Date and time&lt;/h2&gt;
-&lt;p&gt;🗓️ Tuesday, November 11 · 5 - 8pm GMT+1&lt;/p&gt;
-&lt;h2 id="location"&gt;📍 Location&lt;/h2&gt;
-&lt;p&gt;📍 1 Cobalt Park Way&lt;br /&gt;
-Wallsend&lt;br /&gt;
-NE28 9EJ&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-november-2025-tickets-1758664816809"&gt;https://www.eventbrite.co.uk/e/isc2-north-east-england-chapter-november-2025-tickets-1758664816809&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.eventbrite.co.uk/o/isc2-north-east-england-chapter-13131159160"&gt;https://www.eventbrite.co.uk/o/isc2-north-east-england-chapter-13131159160&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Design System Chat - October-ish 2025</title>
-			<link>https://alexhedley.github.io/blog/posts/govuk-design-system-oct2025</link>
-			<description>GOV.UK Design System team</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/govuk/govuk-design-system-oct2025.jpeg" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/govuk-design-system-oct2025</guid>
-			<pubDate>Wed, 05 Nov 2025 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Design System Chat - September 2025 --&gt;
-&lt;!-- ![Banner](images/govuk/govuk-design-system-sept.jpeg "Banner") --&gt;
-&lt;p&gt;Join us for October 2025's Design System Chat to discuss Service Patterns. Hosted by the GOV.UK Design System.&lt;/p&gt;
-&lt;h2 id="event"&gt;Event&lt;/h2&gt;
-&lt;p&gt;🗓️ Wednesday, 5th Nov&lt;br /&gt;
-🕰️ 11:00 - 12:00 BST&lt;br /&gt;
-📍 Online&lt;br /&gt;
-🔗 &lt;a href="https://www.eventbrite.co.uk/e/design-system-chat-october-ish-2025-tickets-1867454459559"&gt;https://www.eventbrite.co.uk/e/design-system-chat-october-ish-2025-tickets-1867454459559&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;p&gt;Hello,&lt;/p&gt;
-&lt;p&gt;You're invited to October 2025's Design System Chat (yes, we know that it is technically November), hosted monthly by the GOV.UK Design System team. We'll be continuing on from last month's discussion about &lt;strong&gt;Service Patterns&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id="agenda"&gt;Agenda&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Show &amp;amp; tell: Service Patterns in ScotGov - Kirsty Sinclair and Fraser Smith, ScotGov&lt;/li&gt;
-&lt;li&gt;Show &amp;amp; tell: Service Patterns in Wales - Adrian Ortega and Liam Collins, CDPS&lt;/li&gt;
-&lt;li&gt;Are you working on patterns in your organisation or service?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Session type:&lt;/strong&gt; Workshop/discusssion&lt;br /&gt;
-&lt;strong&gt;Duration:&lt;/strong&gt; 1 hour&lt;br /&gt;
-&lt;strong&gt;Platform:&lt;/strong&gt; Microsoft Teams.&lt;/p&gt;
-&lt;p&gt;If you sign up, please make sure you can attend the whole session, as we sell out quite quickly.
-We will be using &lt;strong&gt;MS Teams&lt;/strong&gt; for video, and &lt;strong&gt;Padlet&lt;/strong&gt; for notes and comments. Please make sure you have a device that can access these, as some organisation’s firewalls block these platforms.&lt;/p&gt;
-&lt;p&gt;We hope to see you there!
-The GOV.UK Design System team&lt;/p&gt;
-&lt;h2 id="notes"&gt;Notes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://design-system.service.gov.uk/"&gt;https://design-system.service.gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;GovernmentDigitalService"&gt;https://www.youtube.com/&amp;#64;GovernmentDigitalService&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/&amp;#64;UKGovDesign"&gt;https://www.youtube.com/&amp;#64;UKGovDesign&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>.NET Meetup Newcastle - Feb 2025</title>
-			<link>https://alexhedley.github.io/blog/posts/dotnet-newcastle-feb-2025</link>
-			<description>.NET meetup</description>
-			<author>alex-hedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/meetups/dotnet-oct-2025.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/dotnet-newcastle-feb-2025</guid>
-			<pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Qudos .NET Newcastle Meetup - Feb 2025 --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet-feb-2025.png" alt=".NET Meetup" title=".NET Meetup"&gt;&lt;/p&gt;
-&lt;p&gt;📅 Tue, Feb 25, 2025 · 5:30 PM to 7:30 PM GMT&lt;/p&gt;
-&lt;p&gt;📍 Haylofts, 5 St. Thomas Street, Newcastle, NE1 4LE · Newcastle upon Tyne&lt;/p&gt;
-&lt;p&gt;🔗 &lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/305987440/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/305987440/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;p&gt;New venue! We are now going to be running the events at &lt;strong&gt;Haylofts, 5 St. Thomas Street, Newcastle, NE1 4LE&lt;/strong&gt; moving forward.&lt;/p&gt;
-&lt;p&gt;We have a fairly relaxed agenda, but will follow:&lt;/p&gt;
-&lt;p&gt;5:30 - Doors Open&lt;br&gt;
-5:45 - Pizza arrival&lt;br&gt;
-6:00 - Introduction / Housekeeping&lt;br&gt;
-6:10 - Talks begin&lt;br&gt;
-8:00 - Closing&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Speaker 1:&lt;/strong&gt; Kevin Smith&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; Let's start using MongoDB in our next .NET project!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I’ve been passionate about MongoDB since its very first release, and for good reason—it’s evolved into the most popular general-purpose document database, packed with powerful features. But why should you choose MongoDB over a traditional relational database, and how does it fit into a modern .NET application?&lt;/p&gt;
-&lt;p&gt;In this talk, we’ll explore MongoDB from the ground up, starting with the raw power of BSON, moving through the MongoDB .NET driver, and finally diving into the brand-new MongoDB EF Core provider—a game-changer for developers familiar with Entity Framework. Whether you’re a seasoned .NET developer or just curious about NoSQL, this session will give you practical insights and techniques to harness the full potential of MongoDB in your applications.&lt;/p&gt;
-&lt;p&gt;Join me to discover why MongoDB isn’t just an alternative to relational databases—it’s a paradigm shift for building scalable, high-performance .NET applications!&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
-&lt;!--?# YouTube gHxcA56c5zA /?--&gt;
-&lt;p&gt;&lt;strong&gt;Speaker Bio:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Kevin Smith is an accomplished Principal Software Engineer and technology enthusiast with a strong background in a wide range of technologies. He has been recognized as a Microsoft MVP and MongoDB Champion for his expertise and contributions to the industry.&lt;/p&gt;
-&lt;p&gt;Beyond his work as a software engineer, Kevin is heavily involved in the technology community. He runs three community groups, including dotnet York and dotnetsheff in the North of England, as well as a virtual hackathon group called MiniHack. He is passionate about sharing his knowledge and expertise with others, regularly speaking at user groups and conferences and contributing to the open-source community.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Speaker 2:&lt;/strong&gt; Mark Jose&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Title:&lt;/strong&gt; A JavaScript convert steps back into .NET and the world is good&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Returning to dotNET after a decade in the world of JS&lt;/p&gt;
-&lt;p&gt;Over 15 years ago, I worked solely in the world of Microsoft Windows. I've now spent nearly a decade in the world of JavaScript and I'm about to explore what's changed.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;📼 Video&lt;/em&gt;:&lt;/p&gt;
-&lt;!--?# YouTube Ps96ccmcM3o /?--&gt;
-&lt;p&gt;&lt;strong&gt;Speaker Bio:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A hands-on, seasoned technology leader with over 25 years of engineering expertise, specialising in architecture and developing software across diverse sectors such as Investment Banking, Energy Trading, and Gaming. I have overseen the entire technical landscape of businesses, driving the engineering function, shaping the technical vision, and ensuring the successful delivery of cutting-edge solutions.&lt;/p&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/@QudosRecruitment"&gt;https://www.youtube.com/@QudosRecruitment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/"&gt;https://www.meetup.com/dotnetmeetupnorth/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/305987440/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/305987440/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
