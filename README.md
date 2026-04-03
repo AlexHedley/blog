@@ -41,6 +41,6 @@ Started in 2010 as a Classic ASP site, taken from my [Wordpress](https://www.wor
 - https://github.com/AlexHedley/blog_legacy
   - 2013: https://web.archive.org/web/20131211111731/http://alexhedley.com/blog/
 
-## Depedency Check
+## Dependency Check
 
 - [Report](https://alexhedley.com/blog/reports/dependency-check-report.html)
