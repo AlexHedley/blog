@@ -3,7 +3,7 @@ title: Cistercian Numerals
 # lead:
 description: 
 tags:
-  - numerals
+  - number system
 author: AlexHedley
 published: 2026-02-10
 # image:
