@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Image Gallery">
+    <meta name="author" content="alexhedley">
+
+  <title>Alex Hedley - Statiq - Plugins - Image Gallery</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/statiq-plugins-image-gallery'>
+
+      <link type="application/rss+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - Statiq - Plugins - Image Gallery' />
+    <meta property="og:image" content='/blog/posts/images/statiq-web.svg' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/statiq-plugins-image-gallery' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="../assets/css/override.css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/stats">Stats</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+          <li class="nav-item">
+            <span class="nav-link">
+              <form class="form-inline my-2 my-lg-0" action="/blog/search" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
+                <input type="submit" hidden />
+              </form>
+            </span>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(&quot;/blog/posts/images/statiq-web.svg&quot;)">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            Statiq - Plugins - Image Gallery
+          </h1>
+            <span class="subheading">Building Statiq plugins</span>
+            <div class="meta">Published on Friday 12 June 2026</div>
+              <div class="mt-3">
+                  <a href="/blog/tags/statiq" class="badge text-bg-light"> statiq</a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="image-attribution badge text-bg-secondary rounded-pill"><p>https://www.statiq.dev/web</p>
+</div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        
+<!-- # Statiq - Plugins -->
+<p>It's been  a little while since I've added any new features to my <a href="statiq-plugins">Static.Plugins</a> library, the last was a <a href="statiq-plugins-reading-time">Reading Time</a> option to see how long an article might take to get through.</p>
+<p>One I've been after for a while is a way to show a number of images in a gallery but without having to resort to swapping to a razor page or adding html in markdown.</p>
+<p>You have probably come across <a href="https://lokeshdhakar.com/projects/lightbox/">Lightbox JS</a>, <a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox2</a>, <a href="https://lokeshdhakar.com/projects/lightbox3/">Lightbox3</a> from <a href="https://lokeshdhakar.com/">Lokesh Dhakar</a>.</p>
+<p>Before the changes to <a href="github-copilot">GitHub Copilot</a> I thought I'd put it to some use working on my outstanding ideas/<a href="https://github.com/AlexHedley/statiq.plugins/issues">issues</a>:</p>
+<ul>
+<li><a href="https://github.com/AlexHedley/statiq.plugins/issues/10">https://github.com/AlexHedley/statiq.plugins/issues/10</a></li>
+<li><a href="https://github.com/AlexHedley/statiq.plugins/pull/11">https://github.com/AlexHedley/statiq.plugins/pull/11</a></li>
+</ul>
+<p>Add the <code>ImageGalleryConfigurator</code> to your bootstrapper:</p>
+<pre><code class="language-cs">return await Bootstrapper
+  .Factory
+  .CreateWeb(args)
+  .AddConfigurator&lt;Bootstrapper&gt;(new ImageGalleryConfigurator())
+  .RunAsync();
+</code></pre>
+<p>Include the Lightbox2 CSS and JS in your layout (e.g. via CDN):</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot; /&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>Then use the <code>shortcode</code> in any Markdown file and check you are using the correct pre-processor (<code>&lt;?!</code>) so it won't add any stray <code>&lt;p&gt;</code> tags in the outputted html.</p>
+<pre><code class="language-markdown">&lt;?! ImageGallery Name=my-gallery ?&gt;
+/images/photo1.jpg|Caption for photo 1|Image Alt
+/images/photo2.jpg|Caption for photo 2
+/images/photo3.jpg
+&lt;?!/ ImageGallery ?&gt;
+</code></pre>
+<p>You can see it in action in the Sample site with the repo.</p>
+<p><img src="images/statiq/image-gallery-1.png" alt="Image Gallery" title="Image Gallery" /></p>
+<p><img src="images/statiq/image-gallery-2.png" alt="Image selected" title="Image selected" /></p>
+<h2 id="code">Code</h2>
+<p><img src="https://raw.githubusercontent.com/AlexHedley/statiq.plugins/main/src/Statiq.Plugins/icon.png" alt="Statiq.Plugins Icon" title="Statiq.Plugins Icon" /></p>
+<p><a href="https://www.nuget.org/packages/Statiq.Plugins/"><img src="https://img.shields.io/nuget/v/Statiq.Plugins.svg?logo=nuget" alt="NuGet Version" /></a>
+<a href="https://www.nuget.org/packages/Statiq.Plugins/"><img src="https://img.shields.io/nuget/dt/Statiq.Plugins?logo=nuget/" alt="NuGet Downloads" /></a></p>
+<p><code>dotnet add package Statiq.Plugins --version #.#.#</code></p>
+<?# Info ?>
+<p>Update the <code>version</code> number (<code>#.#.#</code>) to the latest release.</p>
+<?#/ Info ?>
+<ul>
+<li><a href="https://github.com/alexhedley/statiq.plugins">https://github.com/alexhedley/statiq.plugins</a>
+<ul>
+<li><a href="https://github.com/AlexHedley/statiq.plugins/pkgs/nuget/Statiq.Plugins">https://github.com/AlexHedley/statiq.plugins/pkgs/nuget/Statiq.Plugins</a></li>
+</ul>
+</li>
+<li><a href="https://www.nuget.org/packages/Statiq.Plugins/">https://www.nuget.org/packages/Statiq.Plugins/</a></li>
+</ul>
+
+
+
+        
+
+      </div>
+    </div>
+  <div id="comments-container" class="row">
+    <script src="https://giscus.app/client.js"
+        data-repo='alexhedley/blog'
+        data-repo-id='R_kgDOJjXJmQ'
+        data-category-id='DIC_kwDOJjXJmc4CXRaX'
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2026</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQV2ZWNX32"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CQV2ZWNX32');
+    </script>
+
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js" integrity="sha384-nVmn6yKHyUktDHdQfBgpn1YPgEu8gDXTYI5qccfkF1j6oxBHjKEafySIuNs3UhEW" crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>

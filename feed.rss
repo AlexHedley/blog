@@ -5,8 +5,67 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2026</copyright>
-		<pubDate>Fri, 03 Apr 2026 17:53:08 GMT</pubDate>
-		<lastBuildDate>Fri, 03 Apr 2026 17:53:08 GMT</lastBuildDate>
+		<pubDate>Fri, 12 Jun 2026 20:00:23 GMT</pubDate>
+		<lastBuildDate>Fri, 12 Jun 2026 20:00:23 GMT</lastBuildDate>
+		<item>
+			<title>Statiq - Plugins - Image Gallery</title>
+			<link>https://alexhedley.github.io/blog/posts/statiq-plugins-image-gallery</link>
+			<description>Image Gallery</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/statiq-web.svg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/statiq-plugins-image-gallery</guid>
+			<pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!--?# Raw ?--&gt;
+&lt;!-- # Statiq - Plugins --&gt;
+&lt;p&gt;It's been  a little while since I've added any new features to my &lt;a href="https://alexhedley.github.io/blog/statiq-plugins"&gt;Static.Plugins&lt;/a&gt; library, the last was a &lt;a href="https://alexhedley.github.io/blog/statiq-plugins-reading-time"&gt;Reading Time&lt;/a&gt; option to see how long an article might take to get through.&lt;/p&gt;
+&lt;p&gt;One I've been after for a while is a way to show a number of images in a gallery but without having to resort to swapping to a razor page or adding html in markdown.&lt;/p&gt;
+&lt;p&gt;You have probably come across &lt;a href="https://lokeshdhakar.com/projects/lightbox/"&gt;Lightbox JS&lt;/a&gt;, &lt;a href="https://lokeshdhakar.com/projects/lightbox2/"&gt;Lightbox2&lt;/a&gt;, &lt;a href="https://lokeshdhakar.com/projects/lightbox3/"&gt;Lightbox3&lt;/a&gt; from &lt;a href="https://lokeshdhakar.com/"&gt;Lokesh Dhakar&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Before the changes to &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; I thought I'd put it to some use working on my outstanding ideas/&lt;a href="https://github.com/AlexHedley/statiq.plugins/issues"&gt;issues&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/statiq.plugins/issues/10"&gt;https://github.com/AlexHedley/statiq.plugins/issues/10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/statiq.plugins/pull/11"&gt;https://github.com/AlexHedley/statiq.plugins/pull/11&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Add the &lt;code&gt;ImageGalleryConfigurator&lt;/code&gt; to your bootstrapper:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;return await Bootstrapper
+  .Factory
+  .CreateWeb(args)
+  .AddConfigurator&amp;lt;Bootstrapper&amp;gt;(new ImageGalleryConfigurator())
+  .RunAsync();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Include the Lightbox2 CSS and JS in your layout (e.g. via CDN):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" /&amp;gt;
+&amp;lt;script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then use the &lt;code&gt;shortcode&lt;/code&gt; in any Markdown file and check you are using the correct pre-processor (&lt;code&gt;&amp;lt;?!&lt;/code&gt;) so it won't add any stray &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags in the outputted html.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-markdown"&gt;&amp;lt;?! ImageGallery Name=my-gallery ?&amp;gt;
+/images/photo1.jpg|Caption for photo 1|Image Alt
+/images/photo2.jpg|Caption for photo 2
+/images/photo3.jpg
+&amp;lt;?!/ ImageGallery ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can see it in action in the Sample site with the repo.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/statiq/image-gallery-1.png" alt="Image Gallery" title="Image Gallery"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/statiq/image-gallery-2.png" alt="Image selected" title="Image selected"&gt;&lt;/p&gt;
+&lt;h2 id="code"&gt;Code&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/AlexHedley/statiq.plugins/main/src/Statiq.Plugins/icon.png" alt="Statiq.Plugins Icon" title="Statiq.Plugins Icon"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.nuget.org/packages/Statiq.Plugins/"&gt;&lt;img src="https://img.shields.io/nuget/v/Statiq.Plugins.svg?logo=nuget" alt="NuGet Version"&gt;&lt;/a&gt;
+&lt;a href="https://www.nuget.org/packages/Statiq.Plugins/"&gt;&lt;img src="https://img.shields.io/nuget/dt/Statiq.Plugins?logo=nuget/" alt="NuGet Downloads"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dotnet add package Statiq.Plugins --version #.#.#&lt;/code&gt;&lt;/p&gt;
+&lt;!--?# Info ?--&gt;
+&lt;p&gt;Update the &lt;code&gt;version&lt;/code&gt; number (&lt;code&gt;#.#.#&lt;/code&gt;) to the latest release.&lt;/p&gt;
+&lt;!--?#/ Info ?--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexhedley/statiq.plugins"&gt;https://github.com/alexhedley/statiq.plugins&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/statiq.plugins/pkgs/nuget/Statiq.Plugins"&gt;https://github.com/AlexHedley/statiq.plugins/pkgs/nuget/Statiq.Plugins&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/Statiq.Plugins/"&gt;https://www.nuget.org/packages/Statiq.Plugins/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--?#/ Raw ?--&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>VB Form Builder</title>
 			<link>https://alexhedley.github.io/blog/posts/vb-form-builder</link>
@@ -969,6 +1028,36 @@ End Sub
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>.NET by Example - Samples</title>
+			<link>https://alexhedley.github.io/blog/posts/dotnet-by-example-samples</link>
+			<description>Getting AI to build up the .NET by Example samples</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/dotnet-by-example-samples</guid>
+			<pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;!-- .NET by Example - Samples --&gt;
+&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
+&lt;p&gt;Last year I build &lt;a href="https://alexhedley.github.io/blog/dotnet-by-example"&gt;.NET by Example&lt;/a&gt; with &lt;a href="https://alexhedley.github.io/blog/nocco"&gt;nocco&lt;/a&gt; and upgraded it to .NET 10 in February.&lt;/p&gt;
+&lt;p&gt;Having the &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; free month I thought it might be a good use of a request.&lt;/p&gt;
+&lt;p&gt;I already had an Issue with the original list &lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;#11&lt;/a&gt; so I set the Agent to work in &lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;PR #33&lt;/a&gt;. Just 332 files to look through...&lt;/p&gt;
+&lt;p&gt;I've yet to review everything and need to work on some of the layout to fit a larger amount of code.&lt;/p&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/dotnetbyexample"&gt;https://alexhedley.github.io/dotnetbyexample&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample"&gt;https://github.com/AlexHedley/dotnetbyexample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;https://github.com/AlexHedley/dotnetbyexample/issues/11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;https://github.com/AlexHedley/dotnetbyexample/pull/33&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Maya</title>
 			<link>https://alexhedley.github.io/blog/posts/maya</link>
 			<description>The native writing system of the Maya civilization of Mesoameric</description>
@@ -1000,36 +1089,6 @@ End Sub
 &lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Maya_script"&gt;https://en.wikipedia.org/wiki/Maya_script&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>.NET by Example - Samples</title>
-			<link>https://alexhedley.github.io/blog/posts/dotnet-by-example-samples</link>
-			<description>Getting AI to build up the .NET by Example samples</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/dotnet-by-example-samples</guid>
-			<pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- .NET by Example - Samples --&gt;
-&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
-&lt;p&gt;Last year I build &lt;a href="https://alexhedley.github.io/blog/dotnet-by-example"&gt;.NET by Example&lt;/a&gt; with &lt;a href="https://alexhedley.github.io/blog/nocco"&gt;nocco&lt;/a&gt; and upgraded it to .NET 10 in February.&lt;/p&gt;
-&lt;p&gt;Having the &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; free month I thought it might be a good use of a request.&lt;/p&gt;
-&lt;p&gt;I already had an Issue with the original list &lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;#11&lt;/a&gt; so I set the Agent to work in &lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;PR #33&lt;/a&gt;. Just 332 files to look through...&lt;/p&gt;
-&lt;p&gt;I've yet to review everything and need to work on some of the layout to fit a larger amount of code.&lt;/p&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/dotnetbyexample"&gt;https://alexhedley.github.io/dotnetbyexample&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample"&gt;https://github.com/AlexHedley/dotnetbyexample&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;https://github.com/AlexHedley/dotnetbyexample/issues/11&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;https://github.com/AlexHedley/dotnetbyexample/pull/33&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -1078,6 +1137,50 @@ End Sub
 &lt;li&gt;&lt;a href="https://www.dcode.fr/nyctography-lewis-carroll"&gt;dCode – Nyctography Tool&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://nyctotyper.netlify.app/"&gt;Nyctotyper&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.cedricchase.com/blog/nyctography-in-the-modern-age"&gt;Nyctography in the Modern Age&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Statiq - Themes - terminal-css</title>
+			<link>https://alexhedley.github.io/blog/posts/statiq-themes-terminal-css</link>
+			<description>&lt;p&gt;Ever since coming across the &lt;a href="https://panr.github.io/terminal-css/"&gt;terminal-css&lt;/a&gt; theme I've needed a use for it, once of which could be this blog, which uses &lt;a href="https://www.statiq.dev/"&gt;Statiq&lt;/a&gt; so I'd need to create a &lt;a href="https://www.statiq.dev/guide/themes/"&gt;theme&lt;/a&gt; for it.&lt;/p&gt;</description>
+			<author>alexhedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/posts/images/statiq-web.svg" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/statiq-themes-terminal-css</guid>
+			<pubDate>Fri, 20 Mar 2026 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Ever since coming across the &lt;a href="https://panr.github.io/terminal-css/"&gt;terminal-css&lt;/a&gt; theme I've needed a use for it, once of which could be this blog, which uses &lt;a href="https://www.statiq.dev/"&gt;Statiq&lt;/a&gt; so I'd need to create a &lt;a href="https://www.statiq.dev/guide/themes/"&gt;theme&lt;/a&gt; for it.&lt;/p&gt;
+&lt;p&gt;Using the &lt;a href="https://github.com/statiqdev/CleanBlog"&gt;Clean Blog&lt;/a&gt; theme as template I could get started, trusty &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; to the rescue:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Creating a new Statiq theme using CleanBlog and terminal-css styling&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/statiq-theme-terminal-css/pull/1"&gt;https://github.com/AlexHedley/statiq-theme-terminal-css/pull/1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/statiq-theme-terminal-css/tasks/92cc75a4-dd0f-430f-879a-e8ae0979540c?author=AlexHedley"&gt;https://github.com/AlexHedley/statiq-theme-terminal-css/tasks/92cc75a4-dd0f-430f-879a-e8ae0979540c?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use it in my &lt;a href="https://github.com/AlexHedley/statiqweb-example"&gt;statiqweb-example&lt;/a&gt; repo and you get:&lt;/p&gt;
+&lt;p&gt;Posts&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/statiq/themes/terminal-css-1.jpeg" alt="Posts" title="Posts"&gt;&lt;/p&gt;
+&lt;p&gt;Post&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/statiq/themes/terminal-css-2.jpeg" alt="Post" title="Post"&gt;&lt;/p&gt;
+&lt;p&gt;The image header needs a little work.&lt;/p&gt;
+&lt;!-- ## Site
+
+- 🌍 https://www.alexhedley.com/... --&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/statiq-theme-terminal-css"&gt;https://github.com/AlexHedley/statiq-theme-terminal-css&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://panr.github.io/terminal-css/"&gt;https://panr.github.io/terminal-css/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/panr/terminal-css"&gt;https://github.com/panr/terminal-css&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Themes: &lt;a href="https://github.com/orgs/statiqdev/discussions/227"&gt;https://github.com/orgs/statiqdev/discussions/227&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/AlexHedley/statiqweb-example"&gt;https://github.com/AlexHedley/statiqweb-example&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -1351,103 +1454,6 @@ End Sub
 &lt;ul&gt;
 &lt;li&gt;🔗 &lt;a href="https://github.com/jdan/98.css"&gt;https://github.com/jdan/98.css&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;🌍 &lt;a href="https://jdan.github.io/98.css/"&gt;https://jdan.github.io/98.css/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>GitHub Copilot</title>
-			<link>https://alexhedley.github.io/blog/posts/github-copilot</link>
-			<description>A trial of GitHub Copilot</description>
-			<author>AlexHedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/gh/copilot-chat.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/github-copilot</guid>
-			<pubDate>Sat, 14 Mar 2026 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- GitHub Copilot --&gt;
-&lt;!-- ![GitHub Copilot](images/gh/copilot-chat.png "GitHub Copilot") --&gt;
-&lt;p&gt;I signed up for the free one month trial of GitHub Copilot today, and got to work looking through all those hobby projects I've said I'll work on and never get round to it.&lt;/p&gt;
-&lt;p&gt;Looking forward to seeing what I can achieve and might actually finish something from the &lt;a href="https://alexhedley.com/projects/"&gt;projects&lt;/a&gt; &lt;del&gt;graveyard&lt;/del&gt;.&lt;/p&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/features/copilot"&gt;https://github.com/features/copilot&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;What's included:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;50 agent mode or chat requests per month&lt;/li&gt;
-&lt;li&gt;2,000 completions per month&lt;/li&gt;
-&lt;li&gt;Access to Haiku 4.5, GPT-5 mini, and more&lt;/li&gt;
-&lt;li&gt;Copilot CLI&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Pro · Most popular · Accelerate workflows with GitHub Copilot.&lt;br /&gt;
-$10 USD per user / month&lt;/p&gt;
-&lt;p&gt;Everything in Free and:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Copilot cloud agent&lt;/li&gt;
-&lt;li&gt;Copilot code review&lt;/li&gt;
-&lt;li&gt;Claude and Codex on GitHub and VS Code&lt;/li&gt;
-&lt;li&gt;300 premium requests to use latest models, with the option to buy more&lt;/li&gt;
-&lt;li&gt;Unlimited agent mode and chats with GPT-5 mini&lt;/li&gt;
-&lt;li&gt;Unlimited inline suggestions&lt;/li&gt;
-&lt;li&gt;Access to models from Anthropic, Google, OpenAI, and more, including Opus 4.6&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/features/copilot"&gt;https://github.com/features/copilot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/features/copilot/cli"&gt;https://github.com/features/copilot/cli&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://code.visualstudio.com/docs/copilot/overview"&gt;https://code.visualstudio.com/docs/copilot/overview&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"&gt;https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat"&gt;https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- ![Icon](images/gh/Microsoft.VisualStudio.Services.Icons.Default.png "Icon") --&gt;
-&lt;!-- ![Icon](images/gh/GitHub-Copilot.png "Icon") --&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Archery Targets</title>
-			<link>https://alexhedley.github.io/blog/posts/archery-targets</link>
-			<description>Adding targets to the Archery Score Keeper</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/archery-targets</guid>
-			<pubDate>Sat, 14 Mar 2026 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Archery Targets --&gt;
-&lt;p&gt;When building the &lt;a href="https://alexhedley.github.io/blog/archery-scores"&gt;Archery App&lt;/a&gt; I had it in mind to keep track of my shots in an interactive target.&lt;/p&gt;
-&lt;p&gt;Some people much cleverer than me had already created some on Codepen&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://codepen.io/GGalizzi/pen/PogggB"&gt;https://codepen.io/GGalizzi/pen/PogggB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://codepen.io/clairecodes/pen/JZqMRy"&gt;https://codepen.io/clairecodes/pen/JZqMRy&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/Archery_Target.png" alt="Target" title="Target"&gt;&lt;/p&gt;
-&lt;p&gt;I wanted two options, one that I could transfer my scratches in the paper scoresheet from the game and plot them onto the interactive target, this could then auto score the games, but I'd also wanted a way of storing that info and the positions to show them on the main scores page.&lt;/p&gt;
-&lt;p&gt;Taking that as a starting point and using my &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; trial I got to it:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Create an interactive target that allows you to select points to show where you hit and their corresponding value is displayed in a table.
-If missed show M.
-Total the sum of scores also.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/archery/target.png" alt="Target" title="Target"&gt;&lt;/p&gt;
-&lt;p&gt;I've got to review the &lt;a href="https://github.com/AlexHedley/archery/pull/6"&gt;MR #6&lt;/a&gt; properly but it's looking good at first glance.&lt;/p&gt;
-&lt;h2 id="site"&gt;Site&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;🌍 &lt;a href="https://alexhedley.com/archery/"&gt;https://alexhedley.com/archery/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery/"&gt;https://github.com/AlexHedley/archery/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/AlexHedley/archery/issues/5"&gt;https://github.com/AlexHedley/archery/issues/5&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery/pull/6"&gt;https://github.com/AlexHedley/archery/pull/6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/archery/tasks/35d338b4-1adb-4086-8da8-66af8e10eced?author=AlexHedley"&gt;https://github.com/AlexHedley/archery/tasks/35d338b4-1adb-4086-8da8-66af8e10eced?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://codepen.io/GGalizzi/pen/PogggB"&gt;https://codepen.io/GGalizzi/pen/PogggB&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://codepen.io/clairecodes/pen/JZqMRy"&gt;https://codepen.io/clairecodes/pen/JZqMRy&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
