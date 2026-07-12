@@ -2,6 +2,7 @@
 using Statiq.Alerts;
 using Statiq.App;
 using Statiq.Web;
+using Statiq.Plugins;
 
 return await Bootstrapper
   .Factory
@@ -9,4 +10,5 @@ return await Bootstrapper
   .AddTabGroupShortCode()
   .AddIncludeCodeShortCode()
   .AddAlertShortCodes()
+  .AddConfigurator<Bootstrapper>(new ReadingTimeConfigurator())
   .RunAsync();
