@@ -18,3 +18,11 @@ img[title="Wordpress"] {
     margin-left: unset;
     margin-right: unset;
 }
+
+.image-gallery > a > img { 
+    /* all: revert; */
+    max-width: unset;
+    display: unset;
+    margin-left: unset;
+    margin-right: unset;
+}

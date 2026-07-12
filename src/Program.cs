@@ -10,5 +10,6 @@ return await Bootstrapper
   .AddTabGroupShortCode()
   .AddIncludeCodeShortCode()
   .AddAlertShortCodes()
+  .AddConfigurator<Bootstrapper>(new ImageGalleryConfigurator())
   .AddConfigurator<Bootstrapper>(new ReadingTimeConfigurator())
   .RunAsync();
