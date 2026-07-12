@@ -4,9 +4,258 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2026</rights>
-	<updated>2026-06-12T20:00:23Z</updated>
+	<updated>2026-07-12T11:41:47Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/youtube-stats-mid-2026</id>
+		<title>YouTube Stats - Mid 2026</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/youtube-stats-mid-2026" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/google/youtube/youtube_1500x500.jpeg" />
+		<updated>2026-07-12T00:00:00Z</updated>
+		<content>&lt;!-- YouTube Stats - Mid 2026 --&gt;
+&lt;!-- ![YouTube](images/google/youtube/youtube_1500x500.jpeg "YouTube") --&gt;
+&lt;p&gt;I've been trying to release a weekly recording, on a Saturday, since about Nov 2025, you can see the full list &lt;a href="https://599cd.com/blog/display-articles2.asp?PAGETAG=FORUMADMIN"&gt;here&lt;/a&gt;/&lt;a href="https://alexhedley.github.io/blog/courses"&gt;courses&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In 2024 I'd concentrated on some &lt;a href="https://learn.microsoft.com/en-us/powershell/"&gt;PowerShell&lt;/a&gt; videos: &lt;a href="https://www.youtube.com/playlist?list=PL_HSdprUDuLwyuMT3dM6GftkZUjEOYG0R"&gt;YouTube Playlist&lt;/a&gt; (PowerShell Tech Helps: &lt;a href="https://599cd.com/blog/display-article.asp?ID=3259"&gt;videos&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Please 👍🏻 Like and &lt;strong&gt;Subscribe&lt;/strong&gt; : &lt;a href="https://www.youtube.com/@AlexHedley8"&gt;@AlexHedley8&lt;/a&gt; and add a comment below with any video suggestions you'd want me to cover.&lt;/p&gt;
+&lt;p&gt;High level:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Channel&lt;/th&gt;
+&lt;th&gt;Views&lt;/th&gt;
+&lt;th&gt;Videos&lt;/th&gt;
+&lt;th&gt;Subscribers&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;AlexHedley&lt;/td&gt;
+&lt;td&gt;39,701&lt;/td&gt;
+&lt;td&gt;118&lt;/td&gt;
+&lt;td&gt;259&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;599CDTechHelp&lt;/td&gt;
+&lt;td&gt;55,855&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;447&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;I've split my two channels below:&lt;/p&gt;
+&lt;h2 id="alexhedley"&gt;AlexHedley&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/@AlexHedley8"&gt;https://www.youtube.com/@AlexHedley8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;=======================================================
+ Channel Stats: Alex Hedley
+=======================================================
+  Country:                       GB
+  Created:               2007-10-18
+  Subscribers:                  259
+  Total Views:               39,701
+  Total Videos:                 118
+
+  Videos analyzed:              118
+  Views (analyzed):          39,733
+  Total Likes:                  159
+  Total Watch Time:           8h 3m
+
+  Most Watched:     The Heist - Box, Level 15 Solution
+  (views)                    25,224
+
+--- Videos by Year ------------------------------------
+
+Year    Videos    Views            Likes         Watch Time
+------  --------  ---------------  ------------  --------------
+2026          82            7,206            91          6h 16m
+2021           2              373             7          0h 10m
+2020           3              576             9          0h 51m
+2017           1               66             0           0h 1m
+2016          12            3,902            29          0h 22m
+2015           3              702             8           0h 5m
+2013           4              572             4          0h 13m
+2012           8              748             3           0h 1m
+2011           3           25,588             8           0h 1m
+
+[ Views by Year ]
+  2011  ████████████████████████████████████████  25,588
+  2012  █                                            748
+  2013  █                                            572
+  2015  █                                            702
+  2016  ██████                                     3,902
+  2017                                                66
+  2020  █                                            576
+  2021  █                                            373
+  2026  ███████████                                7,206
+
+--- Most Watched Video by Year ------------------------
+
+Year    Views            Title
+------  ---------------  ---------------------------------------------
+2026              1,354                                       00 Intro
+2021                198                     Genealogy Website WalkThru
+2020                277            Genealogy Website WalkThru (Simple)
+2017                 66                                   599CD Demo 4
+2016              2,250             Person of Interest - Samaritan (1)
+2015                626                     Scott Keirs - Duke Special
+2013                265  Duke Special - The Sage Gateshead - 13th Mar…
+2012                300               Cargo-Bot Tutorials From Beneath
+2011             25,224             The Heist - Box, Level 15 Solution
+
+--- Videos by Month (most recent 24) ------------------
+
+Month      Videos    Views            Watch Time
+---------  --------  ---------------  --------------
+2026-07           2               38           0h 8m
+2026-06           4              390          0h 17m
+2026-05           3              346          0h 14m
+2026-02          73            6,432          5h 36m
+2021-03           1              175           0h 6m
+2021-02           1              198           0h 3m
+2020-09           2              503          0h 17m
+2020-06           1               73          0h 33m
+2017-01           1               66           0h 1m
+2016-11           1               32           0h 1m
+2016-08           2            3,023           0h 0m
+2016-06           1               74           0h 1m
+2016-05           3              532          0h 16m
+2016-03           4              156           0h 2m
+2016-01           1               85           0h 0m
+2015-11           2               76           0h 0m
+2015-04           1              626           0h 4m
+2013-11           1              164           0h 3m
+2013-07           2              143           0h 6m
+2013-03           1              265           0h 4m
+2012-05           8              748           0h 1m
+2011-05           3           25,588           0h 1m
+
+[ Views by Month ]
+  2011-05  ████████████████████████████████████████  25,588
+  2012-05  █                                            748
+  2013-03                                               265
+  2013-07                                               143
+  2013-11                                               164
+  2015-04  █                                            626
+  2015-11                                                76
+  2016-01                                                85
+  2016-03                                               156
+  2016-05  █                                            532
+  2016-06                                                74
+  2016-08  █████                                      3,023
+  2016-11                                                32
+  2017-01                                                66
+  2020-06                                                73
+  2020-09  █                                            503
+  2021-02                                               198
+  2021-03                                               175
+  2026-02  ██████████                                 6,432
+  2026-05  █                                            346
+  2026-06  █                                            390
+  2026-07                                                38
+
+--- Most Watched Video by Month (most recent 24) ------
+
+Month      Views            Title
+---------  ---------------  ---------------------------------------------
+2026-07                 22                       Repository Collaborators
+2026-06                226            Interactive Microsoft Access Web UI
+2026-05                170                                VB Form Builder
+2026-02              1,354                                       00 Intro
+2021-03                175         MS Access Version Control System (vcs)
+2021-02                198                     Genealogy Website WalkThru
+2020-09                277            Genealogy Website WalkThru (Simple)
+2020-06                 73  Build Light - Visual Studio Extension for Wi…
+2017-01                 66                                   599CD Demo 4
+2016-11                 32                                   599CD Demo 3
+2016-08              2,250             Person of Interest - Samaritan (1)
+2016-06                 74                                   599CD Demo 2
+2016-05                355  Nick Harper - Purple Rain, at The Cumberland…
+2016-03                 68                 Movem Amiga Game - iOS App [2]
+2016-01                 85                                   599CD Demo 1
+2015-11                 48                    BSL Matching Game  (In Dev)
+2015-04                626                     Scott Keirs - Duke Special
+2013-11                164    Kodaline - The Sage, Gateshead [16.11.2013]
+2013-07                128                Cheer Up, Redwings - David Ford
+2013-03                265  Duke Special - The Sage Gateshead - 13th Mar…
+2012-05                300               Cargo-Bot Tutorials From Beneath
+2011-05             25,224             The Heist - Box, Level 15 Solution
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="cdtechhelp"&gt;599CDTechHelp&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/@599CDTechHelp"&gt;https://www.youtube.com/@599CDTechHelp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;=======================================================
+ Channel Stats: 599CD Tech Help
+=======================================================
+  Tech Help videos on Microsoft Access, Excel, vbscr…
+
+  Created:               2011-10-17
+  Subscribers:                  447
+  Total Views:               55,855
+  Total Videos:                   6
+
+  Videos analyzed:                6
+  Views (analyzed):          55,855
+  Total Likes:                  197
+  Total Watch Time:          0h 50m
+
+  Most Watched:     MS Access - Check for Empty/Null Controls
+  (views)                    35,939
+
+--- Videos by Year ------------------------------------
+
+Year    Videos    Views            Likes         Watch Time
+------  --------  ---------------  ------------  --------------
+2016           1              271             5          0h 11m
+2013           1            1,129            12          0h 14m
+2012           4           54,455           180          0h 24m
+
+[ Views by Year ]
+  2012  ████████████████████████████████████████  54,455
+  2013  █                                          1,129
+  2016                                               271
+
+--- Most Watched Video by Year ------------------------
+
+Year    Views            Title
+------  ---------------  ---------------------------------------------
+2016                271         Backup a file Seminar - VBLearningZone
+2013              1,129                               VBScript Archive
+2012             35,939      MS Access - Check for Empty/Null Controls
+
+--- Videos by Month (most recent 24) ------------------
+
+Month      Videos    Views            Watch Time
+---------  --------  ---------------  --------------
+2016-01           1              271          0h 11m
+2013-07           1            1,129          0h 14m
+2012-07           3           54,296          0h 23m
+2012-05           1              159           0h 1m
+
+[ Views by Month ]
+  2012-05                                               159
+  2012-07  ████████████████████████████████████████  54,296
+  2013-07  █                                          1,129
+  2016-01                                               271
+
+--- Most Watched Video by Month (most recent 24) ------
+
+Month      Views            Title
+---------  ---------------  ---------------------------------------------
+2016-01                271         Backup a file Seminar - VBLearningZone
+2013-07              1,129                               VBScript Archive
+2012-07             35,939      MS Access - Check for Empty/Null Controls
+2012-05                159                   599CD on the iPad (&amp;amp; iPhone)
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+		<summary>Statistics for my YouTube channel</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/statiq-plugins-image-gallery</id>
 		<title>Statiq - Plugins - Image Gallery</title>
@@ -1381,91 +1630,5 @@ End Sub
 &lt;/ul&gt;
 </content>
 		<summary>Add equations to the Kaktovik Numerals system</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/vba-object-browser</id>
-		<title>VBA Object Browser</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/vba-object-browser" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2026-03-16T00:00:00Z</updated>
-		<content>&lt;!-- VBA Object Browser --&gt;
-&lt;p&gt;A number of years ago I found a UI lib called &lt;a href="https://jdan.github.io/98.css/"&gt;98.css&lt;/a&gt; with the tag line "A design system for building faithful recreations of old UIs." I've been wanting a reason to use this in some app and thought this might be a good use case.&lt;/p&gt;
-&lt;p&gt;What is the &lt;a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/object-browser"&gt;Object Browser&lt;/a&gt;?&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A dialog box in which you can examine the contents of an object library to get information about the objects provided.&lt;/p&gt;
-&lt;p&gt;Displays the &lt;a href="https://learn.microsoft.com/en-us/office/vba/language/glossary/vbe-glossary#class"&gt;classes&lt;/a&gt;, properties, methods, events, and constants available from &lt;a href="https://learn.microsoft.com/en-us/office/vba/language/glossary/vbe-glossary#object-library"&gt;object libraries&lt;/a&gt; and the &lt;a href="https://learn.microsoft.com/en-us/office/vba/language/glossary/vbe-glossary#procedure"&gt;procedures&lt;/a&gt; in your project. Use it to find and use objects you create, as well as objects from other applications.&lt;/p&gt;
-&lt;p&gt;You can get Help for the &lt;strong&gt;Object Browser&lt;/strong&gt; by searching for Object Browser in Help.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;An original screenshot of the Object Browser.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599CD/VBA-Object-Browser/ObjectBrowser.jpg" alt="Object Browser" title="Object Browser"&gt;&lt;/p&gt;
-&lt;p&gt;The list of Libraries comes from the &lt;a href="https://learn.microsoft.com/"&gt;MS Learn&lt;/a&gt; &lt;a href="https://learn.microsoft.com/en-us/office/vba/api/overview/"&gt;Office VBA Reference&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;VBA&lt;/li&gt;
-&lt;li&gt;Excel&lt;/li&gt;
-&lt;li&gt;Office&lt;/li&gt;
-&lt;li&gt;Word&lt;/li&gt;
-&lt;li&gt;PowerPoint&lt;/li&gt;
-&lt;li&gt;Access&lt;/li&gt;
-&lt;li&gt;Outlook&lt;/li&gt;
-&lt;li&gt;Scripting&lt;/li&gt;
-&lt;li&gt;ADODB&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I thought why not use this type of project as a way to try out &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; so I asked the following:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Build the VBA Object Browser as a website.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I then raised a new Issue and assigned Copilot to see what they would add:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Use the following links as a reference:&lt;/p&gt;
-&lt;p&gt;Use the Object Browser&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/use-the-object-browser"&gt;https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/use-the-object-browser&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Object Browser&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/object-browser"&gt;https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/object-browser&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Code window and Object Browser icons&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/icons-used-in-the-object-browser-and-code-windows"&gt;https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/icons-used-in-the-object-browser-and-code-windows&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;With the following prompts:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;are there any missing classes/methods?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;VBA&lt;/strong&gt; &lt;code&gt;&amp;lt;globals&amp;gt;&lt;/code&gt; — 27 new methods: &lt;code&gt;AppActivate&lt;/code&gt;, &lt;code&gt;Beep&lt;/code&gt;, &lt;code&gt;CallByName&lt;/code&gt;, &lt;code&gt;ChDir&lt;/code&gt;, &lt;code&gt;ChDrive&lt;/code&gt;, &lt;code&gt;CVErr&lt;/code&gt;, &lt;code&gt;DeleteSetting&lt;/code&gt;, &lt;code&gt;FileCopy&lt;/code&gt;, &lt;code&gt;FileDateTime&lt;/code&gt;, &lt;code&gt;FileLen&lt;/code&gt;, &lt;code&gt;FreeFile&lt;/code&gt;, &lt;code&gt;GetAllSettings&lt;/code&gt;, &lt;code&gt;GetAttr&lt;/code&gt;, &lt;code&gt;GetSetting&lt;/code&gt;, &lt;code&gt;InputBox&lt;/code&gt;, &lt;code&gt;Kill&lt;/code&gt;, &lt;code&gt;MkDir&lt;/code&gt;, &lt;code&gt;Partition&lt;/code&gt;, &lt;code&gt;QBColor&lt;/code&gt;, &lt;code&gt;Randomize&lt;/code&gt;, &lt;code&gt;RmDir&lt;/code&gt;, &lt;code&gt;SaveSetting&lt;/code&gt;, &lt;code&gt;SendKeys&lt;/code&gt;, &lt;code&gt;SetAttr&lt;/code&gt;, &lt;code&gt;Shell&lt;/code&gt;, &lt;code&gt;Spc&lt;/code&gt;, &lt;code&gt;Tab&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;VBA enums&lt;/strong&gt; — 2 new: &lt;code&gt;VbFirstWeekOfYear&lt;/code&gt; (was already referenced in the &lt;code&gt;DateDiff&lt;/code&gt;/&lt;code&gt;DatePart&lt;/code&gt; signatures but the enum itself was absent), &lt;code&gt;VbTriState&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Excel&lt;/strong&gt; &lt;code&gt;&amp;lt;globals&amp;gt;&lt;/code&gt; — 4 added: &lt;code&gt;ActiveChart&lt;/code&gt;, &lt;code&gt;Charts&lt;/code&gt;, &lt;code&gt;Names&lt;/code&gt;, &lt;code&gt;Sheets&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Excel&lt;/strong&gt; existing classes — missing members added to Application (+7: &lt;code&gt;ActiveChart&lt;/code&gt;, &lt;code&gt;Charts&lt;/code&gt;, &lt;code&gt;GetOpenFilename&lt;/code&gt;, &lt;code&gt;GetSaveAsFilename&lt;/code&gt;, &lt;code&gt;OnTime&lt;/code&gt;, &lt;code&gt;Run&lt;/code&gt;, &lt;code&gt;Wait&lt;/code&gt;), &lt;code&gt;Workbook&lt;/code&gt; (+6: &lt;code&gt;ActiveChart&lt;/code&gt;, &lt;code&gt;Charts&lt;/code&gt;, &lt;code&gt;Names&lt;/code&gt;, &lt;code&gt;PrintOut&lt;/code&gt;, &lt;code&gt;Protect&lt;/code&gt;, &lt;code&gt;Unprotect&lt;/code&gt;), &lt;code&gt;Worksheet&lt;/code&gt; (+7: &lt;code&gt;Calculate&lt;/code&gt;, &lt;code&gt;ChartObjects&lt;/code&gt;, &lt;code&gt;ListObjects&lt;/code&gt;, &lt;code&gt;PageSetup&lt;/code&gt;, &lt;code&gt;PrintOut&lt;/code&gt;, &lt;code&gt;Protect&lt;/code&gt;, &lt;code&gt;Shapes&lt;/code&gt;), &lt;code&gt;Range&lt;/code&gt; (+11: &lt;code&gt;Activate&lt;/code&gt;, &lt;code&gt;Borders&lt;/code&gt;, &lt;code&gt;Calculate&lt;/code&gt;, &lt;code&gt;FillDown&lt;/code&gt;/&lt;code&gt;Left&lt;/code&gt;/&lt;code&gt;Right&lt;/code&gt;/&lt;code&gt;Up&lt;/code&gt;, &lt;code&gt;NumberFormatLocal&lt;/code&gt;, &lt;code&gt;Select&lt;/code&gt;, &lt;code&gt;Text&lt;/code&gt;, &lt;code&gt;WrapText&lt;/code&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;New Excel classes&lt;/strong&gt; — &lt;code&gt;Chart&lt;/code&gt;, &lt;code&gt;Name&lt;/code&gt;, &lt;code&gt;PivotTable&lt;/code&gt;, &lt;code&gt;ListObject&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;can you implement all classes/methods etc from all Office programs&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Word&lt;/strong&gt; (19 classes, 218 members): &lt;code&gt;Application&lt;/code&gt;, &lt;code&gt;Document&lt;/code&gt;, &lt;code&gt;Documents&lt;/code&gt;, &lt;code&gt;Selection&lt;/code&gt;, &lt;code&gt;Range&lt;/code&gt;, &lt;code&gt;Paragraph&lt;/code&gt;, &lt;code&gt;Table&lt;/code&gt;, &lt;code&gt;Find&lt;/code&gt;, &lt;code&gt;Bookmark&lt;/code&gt;, and enums &lt;code&gt;WdParagraphAlignment&lt;/code&gt;, &lt;code&gt;WdSaveFormat&lt;/code&gt;, &lt;code&gt;WdSaveOptions&lt;/code&gt;, &lt;code&gt;WdUnits&lt;/code&gt;, &lt;code&gt;WdCollapseDirection&lt;/code&gt;, &lt;code&gt;WdMovementType&lt;/code&gt;, &lt;code&gt;WdSelectionType&lt;/code&gt;, &lt;code&gt;WdProtectionType&lt;/code&gt;, &lt;code&gt;WdFindWrap&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;PowerPoint&lt;/strong&gt; (11 classes, 122 members): &lt;code&gt;Application&lt;/code&gt;, &lt;code&gt;Presentation&lt;/code&gt;, &lt;code&gt;Presentations&lt;/code&gt;, &lt;code&gt;Slide&lt;/code&gt;, &lt;code&gt;Slides&lt;/code&gt;, &lt;code&gt;Shape&lt;/code&gt;, &lt;code&gt;TextFrame&lt;/code&gt;, &lt;code&gt;TextRange&lt;/code&gt;, and enums &lt;code&gt;PpSlideLayout&lt;/code&gt;, &lt;code&gt;PpSaveAsFileType&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;add Access, Outlook, Scripting (FileSystemObject), and ADODB&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;With the following responses:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Access&lt;/strong&gt; (9 classes, 106 members): &lt;code&gt;Application&lt;/code&gt;, &lt;code&gt;DoCmd&lt;/code&gt; (30 actions: &lt;code&gt;OpenForm&lt;/code&gt;, &lt;code&gt;OpenReport&lt;/code&gt;, &lt;code&gt;RunSQL&lt;/code&gt;, &lt;code&gt;TransferSpreadsheet&lt;/code&gt;, &lt;code&gt;SendObject&lt;/code&gt;, etc.), &lt;code&gt;Form&lt;/code&gt;, &lt;code&gt;Report&lt;/code&gt; + enums &lt;code&gt;AcFormView&lt;/code&gt;, &lt;code&gt;AcObjectType&lt;/code&gt;, &lt;code&gt;AcRecord&lt;/code&gt;, &lt;code&gt;AcQuitOption&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Outlook&lt;/strong&gt; (11 classes, 114 members): &lt;code&gt;Application&lt;/code&gt;, &lt;code&gt;NameSpace&lt;/code&gt;, &lt;code&gt;MailItem&lt;/code&gt; (22 members), &lt;code&gt;MAPIFolder&lt;/code&gt;, &lt;code&gt;AppointmentItem&lt;/code&gt;, &lt;code&gt;ContactItem&lt;/code&gt; + enums &lt;code&gt;OlItemType&lt;/code&gt;, &lt;code&gt;OlDefaultFolders&lt;/code&gt;, &lt;code&gt;OlImportance&lt;/code&gt;, &lt;code&gt;OlSaveAsType&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Scripting&lt;/strong&gt; (9 classes, 98 members): &lt;code&gt;FileSystemObject&lt;/code&gt; (24 members: &lt;code&gt;CopyFile&lt;/code&gt;, &lt;code&gt;DeleteFolder&lt;/code&gt;, &lt;code&gt;OpenTextFile&lt;/code&gt;, etc.), &lt;code&gt;TextStream&lt;/code&gt;, &lt;code&gt;File&lt;/code&gt;, &lt;code&gt;Folder&lt;/code&gt;, &lt;code&gt;Drive&lt;/code&gt; + enums &lt;code&gt;IOMode&lt;/code&gt;, &lt;code&gt;SpecialFolderConst&lt;/code&gt;, &lt;code&gt;FileAttribute&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ADODB&lt;/strong&gt; (11 classes, 117 members): &lt;code&gt;Connection&lt;/code&gt;, &lt;code&gt;Recordset&lt;/code&gt; (38 members: &lt;code&gt;MoveNext&lt;/code&gt;, &lt;code&gt;AddNew&lt;/code&gt;, &lt;code&gt;Update&lt;/code&gt;, &lt;code&gt;GetRows&lt;/code&gt;, etc.), &lt;code&gt;Command&lt;/code&gt;, &lt;code&gt;Field&lt;/code&gt;, &lt;code&gt;Parameter&lt;/code&gt; + enums &lt;code&gt;CursorTypeEnum&lt;/code&gt;, &lt;code&gt;LockTypeEnum&lt;/code&gt;, &lt;code&gt;CommandTypeEnum&lt;/code&gt;, &lt;code&gt;ParameterDirectionEnum&lt;/code&gt;, &lt;code&gt;ConnectModeEnum&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;My outputs after accepting the changes from &lt;a href="https://github.com/features/copilot"&gt;GitHub Copilot&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/599CD/VBA-Object-Browser/copilot-1.png" alt="Object Browser" title="Object Browser"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/599CD/VBA-Object-Browser/copilot-2.png" alt="Object Browser" title="Object Browser"&gt;
-&lt;img src="https://alexhedley.github.io/blog/images/599CD/VBA-Object-Browser/copilot-3.png" alt="Object Browser" title="Object Browser"&gt;&lt;/p&gt;
-&lt;p&gt;I thought it might be &lt;em&gt;helpful&lt;/em&gt; to have the ? link go to "https://learn.microsoft.com/en-gb/office/vba/api/overview/language-reference then it was updated to use the method etc but I think that needs some work...&lt;/p&gt;
-&lt;h2 id="site"&gt;Site&lt;/h2&gt;
-&lt;p&gt;I've deployed this via Rick's &lt;a href="http://pcresale.net/"&gt;PC Resale&lt;/a&gt; website as it's Access related and linked to &lt;a href="https://599cd.com/"&gt;599CD&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;🌍 &lt;a href="http://pcresale.net/vba-object-browser/"&gt;http://pcresale.net/vba-object-browser/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🔗 &lt;a href="https://github.com/599CD/VBA-Object-Browser"&gt;https://github.com/599CD/VBA-Object-Browser&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;🔗 &lt;a href="https://github.com/jdan/98.css"&gt;https://github.com/jdan/98.css&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🌍 &lt;a href="https://jdan.github.io/98.css/"&gt;https://jdan.github.io/98.css/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Building a web version of the Object Browser</summary>
 	</entry>
 </feed>
