@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2026</rights>
-	<updated>2026-07-12T11:41:47Z</updated>
+	<updated>2026-08-24T15:55:46Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -315,6 +315,96 @@ Month      Views            Title
 &lt;!--?#/ Raw ?--&gt;
 </content>
 		<summary>Image Gallery</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/talk-an-intro-to-blazor</id>
+		<title>An Intro To Blazor (Talk)</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/talk-an-intro-to-blazor" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/meetups/dotnet/dotnet-may-2026.png" />
+		<updated>2026-05-27T00:00:00Z</updated>
+		<content>&lt;!-- # An Intro To Blazor (Talk) --&gt;
+&lt;!-- ![Flyer](images/meetups/dotnet/dotnet-may-2026.png "Flyer") --&gt;
+&lt;p&gt;May’s North East .NET Meetup - hosted by Opencast&lt;/p&gt;
+&lt;p&gt;The lovely folks over at Opencast have kindly offered to host the North East .NET Meetup as part of their Open Spaces initiative.&lt;/p&gt;
+&lt;p&gt;We will now be based at Unit 2, The Kiln, Hoults Yard, Newcastle‑upon‑Tyne NE6 1AB - plenty of free parking on site (input your reg at reception) and a short walk from the nearest Metro&lt;/p&gt;
+&lt;p&gt;We have a fairly relaxed agenda, but will follow:&lt;/p&gt;
+&lt;p&gt;5:30 - Doors Open&lt;br&gt;
+5:45 - Pizza arrival&lt;br&gt;
+6:00 - Introduction / Housekeeping&lt;br&gt;
+6:10 - Talks begin&lt;br&gt;
+8:00 - Closing&lt;/p&gt;
+&lt;p&gt;Who should attend:&lt;/p&gt;
+&lt;p&gt;Beginners and experienced .NET developers, architects, cloud engineers, and anyone curious about building smarter, AI-enhanced applications with Microsoft technologies.&lt;/p&gt;
+&lt;p&gt;Speaker 1: Babatunde Esanju&lt;/p&gt;
+&lt;p&gt;Title: Building Developer Tools in the Open: Lessons from PayBridge &amp;amp; CronCraft&lt;/p&gt;
+&lt;p&gt;Description:&lt;/p&gt;
+&lt;p&gt;Building a developer tool is one thing; building one that others actually adopt, contribute to, and integrate into their own production systems is something else entirely. In this talk, Babatunde will take you behind the scenes of two open-source projects: PayBridge.SDK, a unified .NET payment gateway abstraction adopted by developers across the .NET ecosystem, and CronCraft, a background job scheduling library that has been integrated into larger production projects and gained significant traction on GitHub.&lt;/p&gt;
+&lt;p&gt;He will unpack the full lifecycle of building developer tools in the open, from the initial problem-solving itch that sparked each project, through the painful API design decisions, versioning challenges, and documentation trade-offs, to the community dynamics that determine whether a library quietly fades or genuinely takes off. He will also explore what happens when your tool gets adopted by a larger project, and what that teaches you about writing code for an audience you'll never meet.&lt;/p&gt;
+&lt;p&gt;Whether you're thinking about open-sourcing your first library or you're already maintaining one, this talk will offer honest, practical insights into the craft of building tools that earn the trust of other engineers.&lt;/p&gt;
+&lt;p&gt;Speaker Bio:&lt;/p&gt;
+&lt;p&gt;Babatunde is a Software Engineer at TixTrack, where he architects enterprise-scale ticketing systems, and a co-founder of CareSyntra, an AI-powered care management platform built for UK care homes and domiciliary agencies. An active open-source contributor, he created PayBridge.SDK and CronCraft, tools now used by thousands of developers across the .NET ecosystem. He is the Lead Organizer of the .NET Nigeria Community, a Global AI Delegate for GAFAI, and the founder and host of TechNaija FM, a podcast amplifying African tech voices on the global stage. Based in Liverpool, he is passionate about building tools, communities, and conversations that bridge ecosystems.&lt;/p&gt;
+&lt;p&gt;Speaker 2: Alex Hedley&lt;/p&gt;
+&lt;p&gt;Title: An Intro to Blazor&lt;/p&gt;
+&lt;p&gt;Description:&lt;/p&gt;
+&lt;p&gt;In this presentation you will learn about the .NET Blazor framework, how to get started and a few interesting libraries.&lt;/p&gt;
+&lt;p&gt;Speaker Bio:&lt;/p&gt;
+&lt;p&gt;Alex Hedley is a Senior IT Consultant at Opencast, specialising in Software Development.&lt;/p&gt;
+&lt;p&gt;He has 15+ years consulting experience building Enterprise security applications, integrations etc.&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;🗓️ Wednesday, May 27&lt;br&gt;
+🕰 5:30 PM to 7:30 PM BST&lt;br&gt;
+📍 Hoults Estate, Unit 2, The Kiln, Walker Rd, Byker · Tyne and Wear&lt;br&gt;
+🔗 &lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/314552885/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/314552885/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="photos"&gt;📸 Photos&lt;/h2&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Qasim-1.jpeg" data-lightbox="my-gallery" data-title="Qasim" data-alt="Qasim"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Qasim-1.jpeg" alt="Qasim" width="100pxpx"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Qasim-2.jpeg" data-lightbox="my-gallery" data-title="Qasim" data-alt="Qasim"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Qasim-2.jpeg" alt="Qasim" width="100pxpx"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Alex-1.jpeg" data-lightbox="my-gallery" data-title="Alex" data-alt="Alex"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Alex-1.jpeg" alt="Alex" width="100pxpx"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Alex-2.jpeg" data-lightbox="my-gallery" data-title="Alex" data-alt="Alex"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Alex-2.jpeg" alt="Alex" width="100pxpx"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Alex-3.jpeg" data-lightbox="my-gallery" data-title="Alex" data-alt="Alex"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Alex-3.jpeg" alt="Alex" width="100pxpx"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Babatunde-2.jpeg" data-lightbox="my-gallery" data-title="Babatunde" data-alt="Babatunde"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Babatunde-2.jpeg" alt="Babatunde" width="100pxpx"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Babatunde-3.jpeg" data-lightbox="my-gallery" data-title="Babatunde" data-alt="Babatunde"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/images/meetups/dotnet/may2026/Babatunde-3.jpeg" alt="Babatunde" width="100pxpx"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- ![Qasim](images/meetups/dotnet/may2026/Qasim-1.jpeg "Qasim") --&gt;
+&lt;!-- ![Qasim](images/meetups/dotnet/may2026/Qasim-2.jpeg "Qasim") --&gt;
+&lt;!-- ![Alex](images/meetups/dotnet/may2026/Alex-1.jpeg "Alex") --&gt;
+&lt;!-- ![Alex](images/meetups/dotnet/may2026/Alex-2.jpeg "Alex") --&gt;
+&lt;!-- ![Alex](images/meetups/dotnet/may2026/Alex-3.jpeg "Alex") --&gt;
+&lt;!-- ![Babatunde](images/meetups/dotnet/may2026/Babatunde-2.jpeg "Babatunde") --&gt;
+&lt;!-- ![Babatunde](images/meetups/dotnet/may2026/Babatunde-3.jpeg "Babatunde") --&gt;
+&lt;!-- ![Speakers](images/meetups/dotnet/may2026/Speakers.jpeg "Speakers") --&gt;
+&lt;h2 id="video"&gt;Video&lt;/h2&gt;
+&lt;p&gt;Unfortunately it wasn't recorded but you can read the presentation in the links below.&lt;/p&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/events/314552885/"&gt;https://www.meetup.com/dotnetmeetupnorth/events/314552885/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.meetup.com/dotnetmeetupnorth/"&gt;https://www.meetup.com/dotnetmeetupnorth/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://alex-hedley.github.io/talk-blazor/"&gt;https://alex-hedley.github.io/talk-blazor/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/talk-blazor"&gt;https://github.com/alex-hedley/talk-blazor&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Delivering a talk on Building a clone of Try.NET in Blazor WASM.</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/vb-form-builder</id>
@@ -1280,37 +1370,6 @@ End Sub
 		<summary>A KDS System</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/dotnet-by-example-samples</id>
-		<title>.NET by Example - Samples</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/dotnet-by-example-samples" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" />
-		<updated>2026-03-21T00:00:00Z</updated>
-		<content>&lt;!-- .NET by Example - Samples --&gt;
-&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
-&lt;p&gt;Last year I build &lt;a href="https://alexhedley.github.io/blog/dotnet-by-example"&gt;.NET by Example&lt;/a&gt; with &lt;a href="https://alexhedley.github.io/blog/nocco"&gt;nocco&lt;/a&gt; and upgraded it to .NET 10 in February.&lt;/p&gt;
-&lt;p&gt;Having the &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; free month I thought it might be a good use of a request.&lt;/p&gt;
-&lt;p&gt;I already had an Issue with the original list &lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;#11&lt;/a&gt; so I set the Agent to work in &lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;PR #33&lt;/a&gt;. Just 332 files to look through...&lt;/p&gt;
-&lt;p&gt;I've yet to review everything and need to work on some of the layout to fit a larger amount of code.&lt;/p&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.github.io/dotnetbyexample"&gt;https://alexhedley.github.io/dotnetbyexample&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample"&gt;https://github.com/AlexHedley/dotnetbyexample&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;https://github.com/AlexHedley/dotnetbyexample/issues/11&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;https://github.com/AlexHedley/dotnetbyexample/pull/33&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Getting AI to build up the .NET by Example samples</summary>
-	</entry>
-	<entry>
 		<id>https://alexhedley.github.io/blog/posts/maya</id>
 		<title>Maya</title>
 		<author>
@@ -1397,6 +1456,37 @@ End Sub
 		<summary>A form of substitution cipher writing created by Lewis Carroll</summary>
 	</entry>
 	<entry>
+		<id>https://alexhedley.github.io/blog/posts/dotnet-by-example-samples</id>
+		<title>.NET by Example - Samples</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/dotnet-by-example-samples" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/dotNET/dotNET.png" />
+		<updated>2026-03-21T00:00:00Z</updated>
+		<content>&lt;!-- .NET by Example - Samples --&gt;
+&lt;!-- ![.NET](images/dotNET/dotNET.png ".NET") --&gt;
+&lt;p&gt;Last year I build &lt;a href="https://alexhedley.github.io/blog/dotnet-by-example"&gt;.NET by Example&lt;/a&gt; with &lt;a href="https://alexhedley.github.io/blog/nocco"&gt;nocco&lt;/a&gt; and upgraded it to .NET 10 in February.&lt;/p&gt;
+&lt;p&gt;Having the &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; free month I thought it might be a good use of a request.&lt;/p&gt;
+&lt;p&gt;I already had an Issue with the original list &lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;#11&lt;/a&gt; so I set the Agent to work in &lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;PR #33&lt;/a&gt;. Just 332 files to look through...&lt;/p&gt;
+&lt;p&gt;I've yet to review everything and need to work on some of the layout to fit a larger amount of code.&lt;/p&gt;
+&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/dotnetbyexample"&gt;https://alexhedley.github.io/dotnetbyexample&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample"&gt;https://github.com/AlexHedley/dotnetbyexample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/issues/11"&gt;https://github.com/AlexHedley/dotnetbyexample/issues/11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/dotnetbyexample/pull/33"&gt;https://github.com/AlexHedley/dotnetbyexample/pull/33&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Getting AI to build up the .NET by Example samples</summary>
+	</entry>
+	<entry>
 		<id>https://alexhedley.github.io/blog/posts/statiq-themes-terminal-css</id>
 		<title>Statiq - Themes - terminal-css</title>
 		<author>
@@ -1440,63 +1530,6 @@ End Sub
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;Ever since coming across the &lt;a href="https://panr.github.io/terminal-css/"&gt;terminal-css&lt;/a&gt; theme I've needed a use for it, once of which could be this blog, which uses &lt;a href="https://www.statiq.dev/"&gt;Statiq&lt;/a&gt; so I'd need to create a &lt;a href="https://www.statiq.dev/guide/themes/"&gt;theme&lt;/a&gt; for it.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/johari-nohari-window</id>
-		<title>Johari / Nohari Window</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/johari-nohari-window" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2026-03-17T00:00:00Z</updated>
-		<content>&lt;!-- # Johari / Nohari Window --&gt;
-&lt;p&gt;During a workshop I was asked to use create a Johari Window, so of course I wanted to build an app for it. I started this back in May 2023 and it's sat on the back burner for a few years.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The Johari window is a technique designed to help people better understand their relationship with themselves and others. It was created by psychologists Joseph Luft (1916–2014) and Harrington Ingham (1916–1995) in 1955, and is used primarily in self-help groups and corporate settings as a heuristic exercise. Luft and Ingham named their model "Johari" using a combination of their first names.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A model for self-awareness and interpersonal communication&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Producing the graph I thought I could lean into my favourite diagraming tool &lt;a href="https://mermaid.ai/"&gt;MermaidJS&lt;/a&gt; and used a &lt;a href="https://mermaid.ai/open-source/syntax/quadrantChart.html"&gt;Quadrant Chart&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I build a list of the items and made them clickable but never got round to using those to calculate the result, taking that as a starting point and using my &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; trial I got to it:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/johari-window.png" alt="Johari / Nohari Window" title="Johari / Nohari Window"&gt;&lt;/p&gt;
-&lt;h2 id="site"&gt;Site&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;🌍 &lt;a href="https://alex-hedley.github.io/johari-window/"&gt;https://alex-hedley.github.io/johari-window/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window"&gt;https://github.com/alex-hedley/johari-window&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/johari-window/issues/2"&gt;https://github.com/alex-hedley/johari-window/issues/2&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/pull/3"&gt;https://github.com/alex-hedley/johari-window/pull/3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/tasks/5e462668-d146-4e3c-8347-bd3c52a394a6?author=AlexHedley"&gt;https://github.com/alex-hedley/johari-window/tasks/5e462668-d146-4e3c-8347-bd3c52a394a6?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/johari-window/issues/1"&gt;https://github.com/alex-hedley/johari-window/issues/1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/pull/4"&gt;https://github.com/alex-hedley/johari-window/pull/4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/tasks/b5972e31-4002-4561-b651-806af4c0a6e8?author=AlexHedley"&gt;https://github.com/alex-hedley/johari-window/tasks/b5972e31-4002-4561-b651-806af4c0a6e8?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/johari-window/pull/9"&gt;https://github.com/alex-hedley/johari-window/pull/9&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/johari-window/tasks/f1324688-c830-4cb4-b9d7-e759264f8b41?author=AlexHedley"&gt;https://github.com/alex-hedley/johari-window/tasks/f1324688-c830-4cb4-b9d7-e759264f8b41?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Johari_window"&gt;https://en.wikipedia.org/wiki/Johari_window&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://kevan.org/johari"&gt;https://kevan.org/johari&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://kevan.org/nohari"&gt;https://kevan.org/nohari&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>A tool for self-awareness and personal development</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/kaktovik-numerals-equations</id>
