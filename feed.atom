@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2026</rights>
-	<updated>2026-08-24T15:55:46Z</updated>
+	<updated>2026-08-25T16:15:50Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -255,6 +255,303 @@ Month      Views            Title
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>Statistics for my YouTube channel</summary>
+	</entry>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/epson-tm-t88v</id>
+		<title>Epson TM-T88V thermal receipt printer</title>
+		<author>
+			<name>AlexHedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/epson-tm-t88v" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<updated>2026-07-11T00:00:00Z</updated>
+		<content>&lt;!-- Epson TM-T88V thermal receipt printer --&gt;
+&lt;!-- ![](images/ "") --&gt;
+&lt;p&gt;To add to the graveyard of &lt;a href="https://alexhedley.com/projects/"&gt;Projects&lt;/a&gt; I bought an &lt;em&gt;Epson TM-T88V&lt;/em&gt; thermal receipt printer. I'd seen some videos online of people scanning an NFC tag in their kitchen and it printing out the current weather, or their shopping list. Someone also put theirs on the web and allowed anyone to send a message, I need to find the original post about that.&lt;/p&gt;
+&lt;p&gt;Firstly I needed to buy the hardware, this has been on my watch list on eBay for a while but I didn't want to spend too much for a hobby project I &lt;em&gt;might&lt;/em&gt; not finish.&lt;/p&gt;
+&lt;p&gt;I found the following which isn't too bad of a price.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Qty&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;th&gt;P&amp;amp;P&lt;/th&gt;
+&lt;th&gt;VAT&lt;/th&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Original Epson TM-T88V M244A Thermal Receipt Printer With PSU &amp;amp; Power Cable&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;£27.71&lt;/td&gt;
+&lt;td&gt;£4.34&lt;/td&gt;
+&lt;td&gt;£1.16&lt;/td&gt;
+&lt;td&gt;£33.21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Thermal Paper EPOS System Printer Receipt Till Roll 80 x 80 80mm x 80mm Free P&amp;amp;P&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;£9.99&lt;/td&gt;
+&lt;td&gt;FREE&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;£9.99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;USB (from a previous project)&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/tm-t88v.png" data-lightbox="hardware" data-title="Epson TM-T88V Series" data-alt="Epson TM-T88V Series"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/tm-t88v.png" alt="Epson TM-T88V Series" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/ThermalPaper-80x80.png" data-lightbox="hardware" data-title="Thermal Paper EPOS System Printer Receipt Till Roll 80mm x 80mm" data-alt="Thermal Paper EPOS System Printer Receipt Till Roll 80mm x 80mm"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/ThermalPaper-80x80.png" alt="Thermal Paper EPOS System Printer Receipt Till Roll 80mm x 80mm" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/USB_cable_A_B.jpg" data-lightbox="cables" data-title="USB A-B cable" data-alt="USB A-B cable"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/USB_cable_A_B.jpg" alt="USB A-B cable" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/USB_A_end.jpg" data-lightbox="cables" data-title="Close-up - 'A end' (connect to a computer's USB port)" data-alt="Close-up - 'A end' (connect to a computer's USB port)"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/USB_A_end.jpg" alt="Close-up - 'A end' (connect to a computer's USB port)" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/USB_B_end.jpg" data-lightbox="cables" data-title="Close-up - 'B end' (connect to the Epson product's USB port)" data-alt="Close-up - 'B end' (connect to the Epson product's USB port)"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/USB_B_end.jpg" alt="Close-up - 'B end' (connect to the Epson product's USB port)" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The fun then began to get everything installed and setup.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Epson Monitoring Tool&lt;/li&gt;
+&lt;li&gt;EPSON TM Virtual Port Driver Port Assignment Tool&lt;/li&gt;
+&lt;li&gt;EPSON TM-T88V Utility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you have the &lt;strong&gt;TM-T88V Utility Ver.1.72&lt;/strong&gt; app installed, open and &lt;strong&gt;Add Port&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Click on &lt;strong&gt;Operation Check&lt;/strong&gt; and &lt;strong&gt;Test Printing&lt;/strong&gt; to confirm the connection is working. This works great for checking the printer is functional.&lt;/p&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/TM-T88V_Utility_Ver.1.72.png" data-lightbox="Utility" data-title="TM-T88V Utility Ver.1.72" data-alt="TM-T88V Utility Ver.1.72"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/TM-T88V_Utility_Ver.1.72.png" alt="TM-T88V Utility Ver.1.72" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/TM-T88V_Utility_Ver.1.72-OperationCheck.png" data-lightbox="Utility" data-title="TM-T88V Utility Ver.1.72 - Operation Check" data-alt="TM-T88V Utility Ver.1.72 - Operation Check"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/TM-T88V_Utility_Ver.1.72-OperationCheck.png" alt="TM-T88V Utility Ver.1.72 - Operation Check" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;You can then use the &lt;strong&gt;EPSON TM Virtual Port Driver Port Assignment Tool&lt;/strong&gt; to link the COM port to the printer, this can have issues if you use a lower COM # and make sure you don't have any other USB devices using that port.&lt;/p&gt;
+&lt;p&gt;Also check if the &lt;strong&gt;TM-T88V Utility&lt;/strong&gt; app is open as this can override the connection to the virtual port app and can cause a headache.&lt;/p&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870.png" data-lightbox="Virtual" data-title="Epson TM-Virtual Port Assignment Tool Ver.870" data-alt="Epson TM-Virtual Port Assignment Tool Ver.870"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870.png" alt="Epson TM-Virtual Port Assignment Tool Ver.870" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870_1.png" data-lightbox="Virtual" data-title="Epson TM-Virtual Port Assignment Tool Ver.870" data-alt="Epson TM-Virtual Port Assignment Tool Ver.870"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870_1.png" alt="Epson TM-Virtual Port Assignment Tool Ver.870" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870-AssignPort.png" data-lightbox="Virtual" data-title="Assign Port" data-alt="Assign Port"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870-AssignPort.png" alt="Assign Port" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870_Error.png" data-lightbox="Virtual" data-title="Error" data-alt="Error"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870_Error.png" alt="Error" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870-CannotSetTimeouts.png" data-lightbox="Virtual" data-title="Epson TM-Virtual Port Assignment Tool Ver.870" data-alt="Epson TM-Virtual Port Assignment Tool Ver.870"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870-CannotSetTimeouts.png" alt="Epson TM-Virtual Port Assignment Tool Ver.870" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870-CannotSendData.png" data-lightbox="Virtual" data-title="Epson TM-Virtual Port Assignment Tool Ver.870" data-alt="Epson TM-Virtual Port Assignment Tool Ver.870"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/Epson-TM-VirtualPortAssignmentToolVer.870-CannotSendData.png" alt="Epson TM-Virtual Port Assignment Tool Ver.870" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Adding the printer via a local port didn't work for me.&lt;/p&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/AddPrinter_Local.png" data-lightbox="AddPrinter" data-title="Add Printer - Local" data-alt="Add Printer - Local"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/AddPrinter_Local.png" alt="Add Printer - Local" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/AddPrinter_Port.png" data-lightbox="AddPrinter" data-title="Add Printer - Port" data-alt="Add Printer - Port"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/AddPrinter_Port.png" alt="Add Printer - Port" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Once you have plugged in the Printer you can try letting Windows install the drivers it needs, but there can be issues. I just used the installers listed below.&lt;/p&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/InstallPrinter-DriverError.png" data-lightbox="InstallPrinter" data-title="Install Printer - Driver Error" data-alt="Install Printer - Driver Error"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/InstallPrinter-DriverError.png" alt="Install Printer - Driver Error" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/InstallPrinter-SearchForDrivers.png" data-lightbox="InstallPrinter" data-title="Install Printer - Search For Drivers" data-alt="Install Printer - Search For Drivers"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/InstallPrinter-SearchForDrivers.png" alt="Install Printer - Search For Drivers" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Check your device manager for COM Ports and USBs that are being used or already assigned.&lt;/p&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/DeviceManager_Ports.png" data-lightbox="misc" data-title="Device Manager - Ports" data-alt="Device Manager - Ports"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/DeviceManager_Ports.png" alt="Device Manager - Ports" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/DeviceManager_USBs.png" data-lightbox="misc" data-title="Device Manager - USBs" data-alt="Device Manager - USBs"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/DeviceManager_USBs.png" alt="Device Manager - USBs" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Also run&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-powershell"&gt;Get-Printer
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;Name                           ComputerName    Type         DriverName                PortName        Shared   Published
+----                           ------------    ----         ----------                --------        ------   ---------
+HP ...                                         Local        HP ...                    USB001          False    False
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="code"&gt;Code&lt;/h2&gt;
+&lt;p&gt;Instead of reinventing the wheel I looked for an existing .NET library for communicating with a printer and found:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ESCPOS.NET - Easy to use, Cross-Platform, Fast and Efficient.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/lukevp/ESC-POS-.NET/"&gt;https://github.com/lukevp/ESC-POS-.NET/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Although it hasn't been updated in a few years it still works fine.&lt;/p&gt;
+&lt;p&gt;I tried using the lib and connecting to the printer but various combinations of scenarios were causing problems so I raised an issue and got a response the same day, thanks so much for the support &lt;em&gt;@igorocampos&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Printing via USB (Epson TM-T88V)
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/lukevp/ESC-POS-.NET/issues/301"&gt;https://github.com/lukevp/ESC-POS-.NET/issues/301&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using the &lt;code&gt;ESCPOS_NET.ConsoleTest&lt;/code&gt; I can print out a receipt
+: &lt;a href="https://github.com/lukevp/ESC-POS-.NET/blob/ac185fc58bf9e5ad937750b8fc92c02baf344cc9/ESCPOS_NET.ConsoleTest/Program.cs#L67"&gt;https://github.com/lukevp/ESC-POS-.NET/blob/ac185fc58bf9e5ad937750b8fc92c02baf344cc9/ESCPOS_NET.ConsoleTest/Program.cs#L67&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since that now works &lt;em&gt;I&lt;/em&gt; decided to make my own app:&lt;/p&gt;
+&lt;p&gt;Using my monthly &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; tokens to build a GUI:&lt;/p&gt;
+&lt;p&gt;GitHub Copilot Agent Prompt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Create a .NET GUI for creating a way to print a receipt on an Epson TM-T88V Series POS thermal receipt printer&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I worked on the app with additional prompts and settled on a v0.1 with the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Receipt Builder&lt;/li&gt;
+&lt;li&gt;Store Settings&lt;/li&gt;
+&lt;li&gt;Logo Maker&lt;/li&gt;
+&lt;li&gt;Printer Settings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-ReceiptBuilder.png" data-lightbox="app" data-title="Receipt Printer - Receipt Builder" data-alt="Receipt Printer - Receipt Builder"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-ReceiptBuilder.png" alt="Receipt Printer - Receipt Builder" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-StoreSettings.png" data-lightbox="app" data-title="Receipt Printer - Store Settings" data-alt="Receipt Printer - Store Settings"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-StoreSettings.png" alt="Receipt Printer - Store Settings" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-LogoMaker.png" data-lightbox="app" data-title="Receipt Printer - Logo Maker" data-alt="Receipt Printer - Logo Maker"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-LogoMaker.png" alt="Receipt Printer - Logo Maker" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-PrinterSettings.png" data-lightbox="app" data-title="Receipt Printer - Printer Settings" data-alt="Receipt Printer - Printer Settings"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-PrinterSettings.png" alt="Receipt Printer - Printer Settings" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The &lt;em&gt;Logo Maker&lt;/em&gt; needs a lot of work but thought it was a cool addition.&lt;/p&gt;
+&lt;p&gt;The samples of the lib print out some images which I also need to look into further.&lt;/p&gt;
+&lt;p&gt;Example with an item populated&lt;/p&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-ReceiptBuilder-Items.png" data-lightbox="app" data-title="Receipt Printer - Receipt Builder - Items" data-alt="Receipt Printer - Receipt Builder - Items"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-ReceiptBuilder-Items.png" alt="Receipt Printer - Receipt Builder - Items" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-StoreSettings-Items.png" data-lightbox="app" data-title="Receipt Printer - Store Settings - Items" data-alt="Receipt Printer - Store Settings - Items"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-StoreSettings-Items.png" alt="Receipt Printer - Store Settings - Items" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-LogoMaker.png" data-lightbox="app" data-title="Receipt Printer - Logo Maker" data-alt="Receipt Printer - Logo Maker"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-LogoMaker.png" alt="Receipt Printer - Logo Maker" width="200px"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-PrinterSettings-Items.png" data-lightbox="app" data-title="Receipt Printer - Printer Settings - Items" data-alt="Receipt Printer - Printer Settings - Items"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/ReceiptPrinter-PrinterSettings-Items.png" alt="Receipt Printer - Printer Settings - Items" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;One issue I'm working on is printing receipts one after the other, there is an error due to the connection not being handled correctly, which I'm still investigating.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;var printer = new SerialPrinter(printerSettings.SerialPort, printerSettings.BaudRate);
+printer.Write(receiptData);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;private static BasePrinter printer;
+printer = new SerialPrinter(printerSettings.SerialPort, printerSettings.BaudRate);
+printer.Write(receiptData);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Prints first time then you get the following error:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;System.UnauthorizedAccessException: 'Access to the path 'COM3' is denied.'&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;BasePrinter&lt;/code&gt; is &lt;code&gt;IDisposable&lt;/code&gt; but unless I debug into the app and add a breakpoint before the &lt;code&gt;printer.Write&lt;/code&gt; it doesn't work and can still be flakey.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;using var printer = new SerialPrinter(printerSettings.SerialPort, printerSettings.BaudRate);
+printer.Write(receiptData);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-cs"&gt;using (var printer = new SerialPrinter(printerSettings.SerialPort, printerSettings.BaudRate))
+{
+    printer.Write(receiptData);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There's an existing Issue and PR discussing this in more detail:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Clean up object disposal and shutdown long running tasks. #143&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/lukevp/ESC-POS-.NET/pull/143"&gt;https://github.com/lukevp/ESC-POS-.NET/pull/143&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Native USB Printing support windows #234&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/lukevp/ESC-POS-.NET/pull/234"&gt;https://github.com/lukevp/ESC-POS-.NET/pull/234&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I'm looking forward to building in more features and not receipt type ideas in the future but here's the progress for now.&lt;/p&gt;
+&lt;h2 id="project"&gt;Project&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🔒 &lt;a href="https://github.com/AlexHedley/pos-thermal-receipt-printer"&gt;https://github.com/AlexHedley/pos-thermal-receipt-printer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="helpful-links"&gt;Helpful Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Epson TM-T88V Series&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.epson.co.uk/en_GB/products/printers/pos-printers/pos-printers/pc-pos-printers/epson-tm-t88v-series/p/8396"&gt;https://www.epson.co.uk/en_GB/products/printers/pos-printers/pos-printers/pc-pos-printers/epson-tm-t88v-series/p/8396&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;TM-T88V&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://support.epson.net/setupnavi/?LG2=EN&amp;amp;OSC=WS&amp;amp;MKN=TM-T88V&amp;amp;PINF=menu&amp;amp;linkflg=alllist"&gt;https://support.epson.net/setupnavi/?LG2=EN&amp;amp;OSC=WS&amp;amp;MKN=TM-T88V&amp;amp;PINF=menu&amp;amp;linkflg=alllist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;TM-T88V Related Software &amp;amp; Documentation List&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://download-center.epson.com/softwares/?device_id=TM-T88V&amp;amp;os=WIN1164&amp;amp;language=en&amp;amp;region=GB"&gt;https://download-center.epson.com/softwares/?device_id=TM-T88V&amp;amp;os=WIN1164&amp;amp;language=en&amp;amp;region=GB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Why doesn't Epson include a USB cable in the box along with the printer?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.epson.co.uk/en_GB/faq/KA-01574/contents?loc=en-us"&gt;https://www.epson.co.uk/en_GB/faq/KA-01574/contents?loc=en-us&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="sdks"&gt;SDKs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Microsoft Point of Service for .NET v1.14.1 (POS for .NET)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.microsoft.com/en-us/download/details.aspx?id=55758"&gt;https://www.microsoft.com/en-us/download/details.aspx?id=55758&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Microsoft Point of Service for .NET v1.14 (POS for .NET)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft Point of Service for .NET (POS for .NET) v1.14 is a class library that enables POS developers to apply Microsoft .NET technologies in their products.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.microsoft.com/en-us/download/details.aspx?id=42081"&gt;https://www.microsoft.com/en-us/download/details.aspx?id=42081&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;OPOS ADK for .NET v1.14.21&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://epson.com/Support/Point-of-Sale/Thermal-Printers/Epson-TM-T88V-Series/s/SPT_C31CA85011?review-filter=Windows+11"&gt;https://epson.com/Support/Point-of-Sale/Thermal-Printers/Epson-TM-T88V-Series/s/SPT_C31CA85011?review-filter=Windows+11&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Make sure to install the POS for .NET before the OPOS ADK.&lt;/p&gt;
+&lt;div class="image-gallery"&gt;
+  &lt;a href="https://alexhedley.github.io/blog/posts/images/epson/OPOSADKforNETv1.14.21_InstallError.png" data-lightbox="OPOS" data-title="Install Error" data-alt="Install Error"&gt;
+    &lt;img src="https://alexhedley.github.io/blog/posts/images/epson/OPOSADKforNETv1.14.21_InstallError.png" alt="Install Error" width="200px"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+</content>
+		<summary>&lt;p&gt;To add to the graveyard of &lt;a href="https://alexhedley.com/projects/"&gt;Projects&lt;/a&gt; I bought an &lt;em&gt;Epson TM-T88V&lt;/em&gt; thermal receipt printer. I'd seen some videos online of people scanning an NFC tag in their kitchen and it printing out the current weather, or their shopping list. Someone also put theirs on the web and allowed anyone to send a message, I need to find the original post about that.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/statiq-plugins-image-gallery</id>
@@ -1530,138 +1827,5 @@ End Sub
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;Ever since coming across the &lt;a href="https://panr.github.io/terminal-css/"&gt;terminal-css&lt;/a&gt; theme I've needed a use for it, once of which could be this blog, which uses &lt;a href="https://www.statiq.dev/"&gt;Statiq&lt;/a&gt; so I'd need to create a &lt;a href="https://www.statiq.dev/guide/themes/"&gt;theme&lt;/a&gt; for it.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/kaktovik-numerals-equations</id>
-		<title>Kaktovik Numerals Equations</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/kaktovik-numerals-equations" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2026-03-17T00:00:00Z</updated>
-		<content>&lt;!-- Kaktovik Numerals Equations --&gt;
-&lt;p&gt;In a previous post about &lt;a href="https://alexhedley.github.io/blog/kaktovik-numerals"&gt;Kaktovik Numerals&lt;/a&gt;/&lt;a href="https://alexhedley.github.io/blog/kaktovik-numerals-svg"&gt;KN SVG&lt;/a&gt; I started a site to show the numbers in this system.&lt;/p&gt;
-&lt;p&gt;I used &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; to build the calculations:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Addition, Subtraction, Simple Division, Long Division&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;New&lt;/strong&gt;: &lt;code&gt;src/js/kaktovik.js&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Pure arithmetic module with full input validation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;numberToKaktovik(n)&lt;/code&gt; / &lt;code&gt;kaktovikToNumber(s)&lt;/code&gt; — decimal ↔ Kaktovik (U+1D2C0–U+1D2D3)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;add(a, b)&lt;/code&gt;, &lt;code&gt;subtract(a, b)&lt;/code&gt; — validated non-negative integer ops&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;divide(a, b)&lt;/code&gt; → &lt;code&gt;{ quotient, remainder }&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;longDivide(a, b)&lt;/code&gt; → &lt;code&gt;{ quotient, remainder, steps[] }&lt;/code&gt; — step-by-step base-20 workings per digit&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class="language-js"&gt;longDivide(8400, 20)
-// { quotient: 420, remainder: 0, steps: [
-//   { partialDividend: 1,  quotientDigit: 0, product: 0,  remainder: 1 },
-//   { partialDividend: 21, quotientDigit: 1, product: 20, remainder: 1 },
-//   { partialDividend: 20, quotientDigit: 1, product: 20, remainder: 0 },
-//   { partialDividend: 0,  quotientDigit: 0, product: 0,  remainder: 0 }
-// ]}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Updated&lt;/strong&gt;: &lt;code&gt;src/index.html&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Arithmetic calculator&lt;/strong&gt;: Four panels (addition, subtraction, simple division, long division). Each shows decimal inputs, the result as Kaktovik glyphs (via existing Unifont-Upper font), and a decimal reference. Long division additionally renders the per-step table. All four panels are &lt;strong&gt;auto-run on page load&lt;/strong&gt; so results are immediately visible.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Examples section&lt;/strong&gt;: A new section below the calculator with pre-computed examples for each operation:
-&lt;ul&gt;
-&lt;li&gt;Addition, Subtraction, Simple Division: a table of 7 examples each, with columns for the expression, the Kaktovik font rendering, a &lt;strong&gt;colored SVG rendering&lt;/strong&gt;, and the decimal equivalent.&lt;/li&gt;
-&lt;li&gt;Long Division: 4 worked examples (400÷20, 8400÷20, 441÷21, 399÷19), each with the full step-by-step base-20 breakdown table and a &lt;strong&gt;colored SVG expression header&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Colored SVG rendering&lt;/strong&gt;: Each digit is rendered from the existing per-digit SVG files with a two-tone color scheme matching the reference visual — &lt;strong&gt;teal&lt;/strong&gt; (&lt;code&gt;#00a1a4&lt;/code&gt;) for pure multiples of 5 (digits 5, 10, 15) and &lt;strong&gt;purple&lt;/strong&gt; (&lt;code&gt;#9e2194&lt;/code&gt;) for all unit-bearing digits — using async &lt;code&gt;fetchSVGText&lt;/code&gt; / &lt;code&gt;numberToColoredSVG&lt;/code&gt; / &lt;code&gt;renderSVGCells&lt;/code&gt; helpers.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- ![Addition and Subtraction SVG examples](https://github.com/user-attachments/assets/35c57b82-164f-4b9e-8d30-d1923a2939b0) --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/Addition-Subtraction.png" alt="Addition and Subtraction SVG examples" title="Addition and Subtraction SVG examples"&gt;&lt;/p&gt;
-&lt;!-- ![Simple Division and Long Division SVG examples](https://github.com/user-attachments/assets/523995ae-af31-4cde-aa07-a6f7847256a1) --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/Simple-Division.png" alt="Simple Division and Long Division SVG examples" title="Simple Division and Long Division SVG examples"&gt;&lt;/p&gt;
-&lt;!-- ![Long Division step tables](https://github.com/user-attachments/assets/ffbdf020-b880-4f12-9e21-4fd14294a5e1) --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/Long-Division.png" alt="Long Division step tables" title="Long Division step tables"&gt;&lt;/p&gt;
-&lt;h2 id="updated-srccssstyles.css"&gt;Updated: &lt;code&gt;src/css/styles.css&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Styles for &lt;code&gt;.kaktovik&lt;/code&gt; (large glyph display), &lt;code&gt;.arithmetic&lt;/code&gt; flex layout, &lt;code&gt;.operation-group&lt;/code&gt; cards, &lt;code&gt;.long-division&lt;/code&gt; step table, &lt;code&gt;.examples-table&lt;/code&gt; / &lt;code&gt;.ldiv-example&lt;/code&gt; for the Examples section, and &lt;code&gt;.svg-kak&lt;/code&gt; / &lt;code&gt;.svg-expr&lt;/code&gt; / &lt;code&gt;.svg-op&lt;/code&gt; / &lt;code&gt;.ldiv-header&lt;/code&gt; / &lt;code&gt;.ldiv-svg&lt;/code&gt; for the colored SVG column.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;I then asked&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Use the following image alongside the existing code base to build an interactive number picker using the SVGs and match the colours&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Adds a new &lt;code&gt;picker.html&lt;/code&gt; page that lets users build arbitrary base-20 numbers by clicking Kaktovik digit buttons, displaying the result in both Kaktovik SVG notation and decimal.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;New files&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;src/picker.html&lt;/code&gt;&lt;/strong&gt; — Picker page: 4×5 digit grid, Kaktovik display, decimal readout, Backspace/Clear controls; fully accessible (&lt;code&gt;aria-live&lt;/code&gt;, &lt;code&gt;role="group"&lt;/code&gt;, &lt;code&gt;aria-label&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;src/js/picker.js&lt;/code&gt;&lt;/strong&gt; — Fetches all 20 SVG digit files in parallel, builds clean inline SVGs with per-digit colouring, handles base-20 digit accumulation and leading-zero suppression&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Modified files&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;src/css/styles.css&lt;/code&gt;&lt;/strong&gt; — Grid layout, rounded cells with hover/active states, display area and control button styles&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;src/index.html&lt;/code&gt;&lt;/strong&gt; — Link to the picker from the main page&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Colour mapping (matches reference)&lt;/strong&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Digits&lt;/th&gt;
-&lt;th&gt;Colour&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;#595959&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1–4&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;#9e2194&lt;/code&gt; purple&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5, 10, 15&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;#00a1a4&lt;/code&gt; cyan&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6–9, 11–14, 16–18&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;#595959&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;19 (= 15+4, max digit)&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;#9e2194&lt;/code&gt; purple&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Screenshots&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Initial state — full digit grid with correct colouring:&lt;/p&gt;
-&lt;!-- ![Initial state](https://github.com/user-attachments/assets/04d7cd86-1951-4fdf-b7fd-29b548f66fb1) --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/picker-1.png" alt="Picker 1" title="Picker 1"&gt;&lt;/p&gt;
-&lt;p&gt;After selecting digits 2 and 19 → decimal 59:&lt;/p&gt;
-&lt;!-- ![Digits 2,19 = 59](https://github.com/user-attachments/assets/437c6899-6517-408a-a5cb-b6de7d64eabf) --&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/kaktovik-numerals/picker-2.png" alt="Picker 2" title="Picker 2"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;I still need to review this but it's got me started for sure.&lt;/p&gt;
-&lt;h2 id="site"&gt;🌍 Site&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alex-hedley.github.io/kaktovik-numerals/"&gt;https://alex-hedley.github.io/kaktovik-numerals/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Alex-Hedley/kaktovik-numerals"&gt;https://github.com/Alex-Hedley/kaktovik-numerals&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/issues/1"&gt;https://github.com/alex-hedley/kaktovik-numerals/issues/1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/pull/2"&gt;https://github.com/alex-hedley/kaktovik-numerals/pull/2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/tasks/f2cf528e-fc6d-4e16-9671-bd7caa781774?author=AlexHedley"&gt;https://github.com/alex-hedley/kaktovik-numerals/tasks/f2cf528e-fc6d-4e16-9671-bd7caa781774?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/issues/3"&gt;https://github.com/alex-hedley/kaktovik-numerals/issues/3&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/tasks/49513b60-7102-4b9e-9c47-449a13cfb3ce?author=AlexHedley"&gt;https://github.com/alex-hedley/kaktovik-numerals/tasks/49513b60-7102-4b9e-9c47-449a13cfb3ce?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alex-hedley/kaktovik-numerals/pull/4"&gt;https://github.com/alex-hedley/kaktovik-numerals/pull/4&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Add equations to the Kaktovik Numerals system</summary>
 	</entry>
 </feed>
