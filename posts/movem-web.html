@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="AlexHedley">
+
+  <title>Alex Hedley - Movem Web</title>
+
+  <link rel="canonical" href='https://alexhedley.github.io/blog/posts/movem-web'>
+
+      <link type="application/rss+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.rss" />
+      <link type="application/atom+xml" rel="alternate" title="Alex Hedley" href="/blog/feed.atom" />
+
+  <meta name="application-name" content='Alex Hedley' />
+  <meta name="msapplication-tooltip" content='Alex Hedley' />
+  <meta name="msapplication-starturl" content='/blog/' />
+
+  <meta property="og:title" content='Alex Hedley - Movem Web' />
+    <meta property="og:image" content='/blog/images/banner.png' />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content='https://alexhedley.github.io/blog/posts/movem-web' />
+
+  <link rel="icon" href='/blog/favicon.ico'>
+
+  <!-- Custom fonts for this template -->
+  <link href='/blog/vendor/fontawesome-free/css/all.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" data-no-mirror>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" data-no-mirror>
+
+  <!-- Styles for this template (also includes Bootstrap) -->
+  <link href='/blog/scss/clean-blog.css' rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
+
+  <link href="/blog/scss/TabGroup.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="../assets/css/override.css">
+
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href='/blog/'>Alex Hedley</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+    <a class="nav-link" href="/blog/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/tags">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/stats">Stats</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/blog/about">About</a>
+  </li>
+
+          <li class="nav-item">
+            <span class="nav-link">
+              <form class="form-inline my-2 my-lg-0" action="/blog/search" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
+                <input type="submit" hidden />
+              </form>
+            </span>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  
+<header class="masthead" style="background-image: url(&quot;/blog/images/banner.png&quot;)">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='post-heading'>
+          <h1>
+            Movem Web
+          </h1>
+            <div class="meta">Published on Friday 20 March 2026</div>
+              <div class="mt-3">
+                  <a href="/blog/tags/movem" class="badge text-bg-light"> movem</a>
+                  <a href="/blog/tags/game" class="badge text-bg-light"> game</a>
+                  <a href="/blog/tags/copilot" class="badge text-bg-light"> copilot</a>
+                <span>~1 minutes</span>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="content" class="col-md-12">
+        <!-- # Movem Web -->
+<p>I've built a couple of 🏷️<a href="tags/movem">movem</a> games over the years, all at various levels of completion.</p>
+<p>Using <a href="github-copilot">GitHub Copilot</a> I got it to build a vanilla website using just HTML/CSS/JS.</p>
+<p>Using my existing Swift project I used the following simple prompt:</p>
+<blockquote>
+<p>Build a web version of sokoban using the movem assets</p>
+</blockquote>
+<pre><code>The web Sokoban is fully working. Here's a summary of what's in web/:
+
+index.html – main menu, game screen (canvas + HUD), level select, and win screen
+css/style.css – Movem font, brand pink (#eb1588 / #ad0063) colour scheme
+js/levels.js – all 50 levels extracted from LevelData.swift
+js/game.js – full Sokoban engine (movement, box pushing, undo, win detection)
+assets/ – all original PNG sprites (Wall, Block, Block_store, Holder, Man_Up/Down/Left/Right, Background) plus Movem.ttf
+Controls: Arrow keys / WASD, on-screen d-pad (mobile), swipe gestures.
+</code></pre>
+<p>Screenshots:</p>
+<p>Main Menu</p>
+<p><img src="images/movem/web/main-menu_1.png" alt="Main Menu" title="Main Menu" /></p>
+<p>Game Screen – Level 1</p>
+<p><img src="images/movem/web/game-screen-level-1_1.png" alt="Game Screen – Level 1" title="Game Screen – Level 1" />
+<img src="images/movem/web/game-screen-level-1_2.png" alt="Game Screen – Level 1" title="Game Screen – Level 1" /></p>
+<p>Level Select (all 50 levels)</p>
+<p><img src="images/movem/web/game-screen-level-select_1.png" alt="Level Select" title="Level Select" /></p>
+<p>My implementation on Apple used a flipped co-ords so I needed to flip this:</p>
+<p><img src="images/movem/web/game-screen-level-1_3.png" alt="Game Screen – Level 1" title="Game Screen – Level 1" /></p>
+<p>I then asked for a mini map to be added.</p>
+<p><img src="images/movem/web/game-screen-level-1_4.png" alt="Game Screen – Level 1" title="Game Screen – Level 1" /></p>
+<p>I asked for the HUD to be updated to match the one used in the game and also add the info on Moves/Pushes and Level.</p>
+<p><img src="images/movem/web/game-screen-level-1_5.png" alt="Game Screen – Level 1" title="Game Screen – Level 1" /></p>
+<p><img src="images/movem/web/game-screen-level-1_6.png" alt="Game Screen – Level 1" title="Game Screen – Level 1" /></p>
+<p>A few more prompts to add other functionality and more screens, a nice stary background and some <code>localStorage</code> to remember your progress.</p>
+<p><img src="images/movem/web/hi-score_1.png" alt="Hi Score" title="Hi Score" /></p>
+<h2 id="site">🌍 Site</h2>
+<ul>
+<li><a href="https://alexhedley.com/movem-web/">https://alexhedley.com/movem-web/</a></li>
+</ul>
+<h2 id="project">Project</h2>
+<ul>
+<li><a href="https://github.com/AlexHedley/movem-web">https://github.com/AlexHedley/movem-web</a></li>
+<li>🔒 <a href="https://github.com/AlexHedley/Movem-Apple">https://github.com/AlexHedley/Movem-Apple</a></li>
+</ul>
+<h2 id="links">🔗 Links</h2>
+<ul>
+<li><a href="https://www.lemonamiga.com/game/movem">https://www.lemonamiga.com/game/movem</a></li>
+</ul>
+
+
+        
+
+      </div>
+    </div>
+  <div id="comments-container" class="row">
+    <script src="https://giscus.app/client.js"
+        data-repo='alexhedley/blog'
+        data-repo-id='R_kgDOJjXJmQ'
+        data-category-id='DIC_kwDOJjXJmc4CXRaX'
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="copyright">Copyright &#xA9; 2026</p>
+
+        <ul class="list-inline text-center small">
+            <li class="list-inline-item">
+              <a href="/blog/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/blog/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+            </li>
+        </ul>
+        <br />
+        <div class="font-weight-bold small"><a href="https://statiq.dev">Generated by Statiq</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src='/blog/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src='/blog/vendor/startbootstrap-clean-blog/js/scripts.js'></script>
+  <script src='/blog/js/clean-blog.js'></script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQV2ZWNX32"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CQV2ZWNX32');
+    </script>
+
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js" integrity="sha384-nVmn6yKHyUktDHdQfBgpn1YPgEu8gDXTYI5qccfkF1j6oxBHjKEafySIuNs3UhEW" crossorigin="anonymous"></script>
+
+    <!-- Statiq.Plugins - Image Gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+
+</body>
+
+</html>
