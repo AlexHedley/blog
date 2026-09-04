@@ -4,9 +4,72 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2026</rights>
-	<updated>2026-08-31T20:45:31Z</updated>
+	<updated>2026-09-04T20:58:27Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
+	<entry>
+		<id>https://alexhedley.github.io/blog/posts/github-certifications-copilot</id>
+		<title>GitHub Copilot</title>
+		<author>
+			<name>alexhedley</name>
+		</author>
+		<link href="https://alexhedley.github.io/blog/posts/github-certifications-copilot" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/gh/copilot.png" />
+		<updated>2026-09-04T00:00:00Z</updated>
+		<content>&lt;!-- # GitHub Copilot - Certification --&gt;
+&lt;!-- ![Copilot](images/gh/copilot.png "Copilot") --&gt;
+&lt;p&gt;Today I passed the &lt;strong&gt;GitHub Copilot&lt;/strong&gt; exam 🎉!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/gh/github-copilot.svg" alt="GitHub Copilot" title="GitHub Copilot"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/users/alexhedley8/credentials/dd68756f3f2ef4f1"&gt;MS Learn Badge&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-gb/users/alexhedley8/"&gt;MS Learn Profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The pass mark is 700 and I achieved: &lt;strong&gt;742&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This exam evaluates your skill in using the AI-driven code completion tool in various programming languages, certifying your capability to optimize software development workflows efficiently.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I took this in a Pearson VUE testing center.&lt;/p&gt;
+&lt;p&gt;I took about 30 minutes in total, you do have the option to review answers, which is beneficial, but I didn't want to second guess myself so just submitted.&lt;/p&gt;
+&lt;p&gt;There wasn't a breakdown like &lt;a href="https://alexhedley.github.io/blog/github-certifications-foundations"&gt;GitHub Foundations&lt;/a&gt; but it did tell you your score.&lt;/p&gt;
+&lt;h2 id="training-material"&gt;Training Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.github.com/certification/COPILOT"&gt;GitHub Copilot&lt;/a&gt; GitHub&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/?practice-assessment-type=certification"&gt;GitHub Copilot&lt;/a&gt; Microsoft Learn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/FidelusAleksander/ghcertified"&gt;ghcertified&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ghcertified.com/"&gt;https://ghcertified.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://examregistration.github.com/"&gt;GitHub Certifications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href="https://github.blog/2024-01-08-github-certifications-are-generally-available/"&gt;GitHub Certifications are generally available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/orgs/community/discussions/87415"&gt;GitHub Certifications Feedback #87415&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="exam-overview"&gt;Exam overview&lt;/h2&gt;
+&lt;p&gt;Level: Intermediate&lt;br&gt;
+Length: 100 minutes&lt;br&gt;
+Cost: £64 GBP&lt;/p&gt;
+&lt;p&gt;49 Questions&lt;/p&gt;
+&lt;h2 id="options"&gt;Options&lt;/h2&gt;
+&lt;p&gt;There are other certifications available, I'll probably take the &lt;strong&gt;Actions&lt;/strong&gt; one next.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.github.io/blog/github-certifications-foundations"&gt;GitHub Foundations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub Actions&lt;/li&gt;
+&lt;li&gt;GitHub Advanced Security&lt;/li&gt;
+&lt;li&gt;GitHub Administration&lt;/li&gt;
+&lt;li&gt;GitHub Agentic AI Developer&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Certifications</summary>
+	</entry>
 	<entry>
 		<id>https://alexhedley.github.io/blog/posts/youtube-stats-mid-2026</id>
 		<title>YouTube Stats - Mid 2026</title>
@@ -1782,54 +1845,5 @@ End Sub
 &lt;/ul&gt;
 </content>
 		<summary>The native writing system of the Maya civilization of Mesoameric</summary>
-	</entry>
-	<entry>
-		<id>https://alexhedley.github.io/blog/posts/nyctography</id>
-		<title>Nyctography</title>
-		<author>
-			<name>AlexHedley</name>
-		</author>
-		<link href="https://alexhedley.github.io/blog/posts/nyctography" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
-		<updated>2026-03-21T00:00:00Z</updated>
-		<content>&lt;!-- Nyctography --&gt;
-&lt;p&gt;To continue my journey of numerals and alphabets like &lt;a href="https://alexhedley.github.io/blog/kaktovik-numerals"&gt;Kaktovik Numerals&lt;/a&gt; and &lt;a href="https://alexhedley.github.io/blog/cistercian-numerals"&gt;Cistercian Numerals&lt;/a&gt; I kept a note of others to work on later, I've finally gotten round to producing a site for this too.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nyctography is a form of substitution cipher writing created by Lewis Carroll (Charles Lutwidge Dodgson) in 1891.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/nyctography.jpeg" alt="Nyctography" title="Nyctography"&gt;&lt;/p&gt;
-&lt;p&gt;Back to my tool of the month &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; assigning it to the following issue &lt;a href="https://github.com/AlexHedley/nyctography/issues/1"&gt;#1&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It produced a very clean site with 3 main parts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The Square Alphabet&lt;/li&gt;
-&lt;li&gt;Encoder&lt;/li&gt;
-&lt;li&gt;Character Builder&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/nyctography.png" alt="Nyctography" title="Nyctography"&gt;&lt;/p&gt;
-&lt;h2 id="site"&gt;Site&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;🌍 &lt;a href="https://alexhedley.com/nyctography/"&gt;https://alexhedley.com/nyctography/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;🔗 &lt;a href="https://github.com/AlexHedley/nyctography"&gt;https://github.com/AlexHedley/nyctography&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/AlexHedley/nyctography/issues/1"&gt;https://github.com/AlexHedley/nyctography/issues/1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nyctography/pull/2"&gt;https://github.com/AlexHedley/nyctography/pull/2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nyctography/tasks/385a0a7f-fbd9-49cd-afc6-ae6c48f43d98?author=AlexHedley"&gt;https://github.com/AlexHedley/nyctography/tasks/385a0a7f-fbd9-49cd-afc6-ae6c48f43d98?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Nyctography"&gt;Wikipedia – Nyctography&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.dafont.com/nyctographic.font"&gt;Nyctographic Font (dafont.com)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.dcode.fr/nyctography-lewis-carroll"&gt;dCode – Nyctography Tool&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://nyctotyper.netlify.app/"&gt;Nyctotyper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.cedricchase.com/blog/nyctography-in-the-modern-age"&gt;Nyctography in the Modern Age&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>A form of substitution cipher writing created by Lewis Carroll</summary>
 	</entry>
 </feed>
