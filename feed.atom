@@ -4,7 +4,7 @@
 	<title>Alex Hedley</title>
 	<link rel="self" href="https://alexhedley.github.io/blog" />
 	<rights>Copyright © 2026</rights>
-	<updated>2026-10-19T16:29:22Z</updated>
+	<updated>2026-10-19T16:29:53Z</updated>
 	<logo>https://alexhedley.github.io/blog/images/banner.png</logo>
 	<subtitle>Welcome to my blog!</subtitle>
 	<entry>
@@ -1810,52 +1810,50 @@ End Sub
 		<summary>A KDS System</summary>
 	</entry>
 	<entry>
-		<id>https://alexhedley.github.io/blog/posts/nyctography</id>
-		<title>Nyctography</title>
+		<id>https://alexhedley.github.io/blog/posts/blashing-updates</id>
+		<title>Blashing Updates</title>
 		<author>
-			<name>AlexHedley</name>
+			<name>alexhedley</name>
 		</author>
-		<link href="https://alexhedley.github.io/blog/posts/nyctography" />
-		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/images/banner.png" />
+		<link href="https://alexhedley.github.io/blog/posts/blashing-updates" />
+		<link rel="enclosure" type="image" href="https://alexhedley.github.io/blog/posts/images/blashing/Banner.png" />
 		<updated>2026-03-21T00:00:00Z</updated>
-		<content>&lt;!-- Nyctography --&gt;
-&lt;p&gt;To continue my journey of numerals and alphabets like &lt;a href="https://alexhedley.github.io/blog/kaktovik-numerals"&gt;Kaktovik Numerals&lt;/a&gt; and &lt;a href="https://alexhedley.github.io/blog/cistercian-numerals"&gt;Cistercian Numerals&lt;/a&gt; I kept a note of others to work on later, I've finally gotten round to producing a site for this too.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nyctography is a form of substitution cipher writing created by Lewis Carroll (Charles Lutwidge Dodgson) in 1891.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/nyctography.jpeg" alt="Nyctography" title="Nyctography"&gt;&lt;/p&gt;
-&lt;p&gt;Back to my tool of the month &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; assigning it to the following issue &lt;a href="https://github.com/AlexHedley/nyctography/issues/1"&gt;#1&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It produced a very clean site with 3 main parts:&lt;/p&gt;
+		<content>&lt;!-- # Blashing Updates --&gt;
+&lt;!-- ![Banner](images/blashing/Banner.png "Banner") --&gt;
+&lt;p&gt;Continuing on my &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; journey of raising MRs and not finding time to review them, I thought I'd try some on the Blashing app.&lt;/p&gt;
+&lt;p&gt;I started with a Review, then tried to complete some outstanding work.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The Square Alphabet&lt;/li&gt;
-&lt;li&gt;Encoder&lt;/li&gt;
-&lt;li&gt;Character Builder&lt;/li&gt;
+&lt;li&gt;Review and fixes &lt;a href="https://github.com/AlexHedley/blashing/pull/270"&gt;https://github.com/AlexHedley/blashing/pull/270&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Status Widget param &lt;a href="https://github.com/AlexHedley/blashing/pull/271"&gt;https://github.com/AlexHedley/blashing/pull/271&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Scheduler &lt;a href="https://github.com/AlexHedley/blashing/pull/277"&gt;https://github.com/AlexHedley/blashing/pull/277&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MeterWidget as SVG &lt;a href="https://github.com/AlexHedley/blashing/pull/278"&gt;https://github.com/AlexHedley/blashing/pull/278&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/nyctography.png" alt="Nyctography" title="Nyctography"&gt;&lt;/p&gt;
-&lt;h2 id="site"&gt;Site&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blashing/gauge.png" alt="Graph" title="Gauge"&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;🌍 &lt;a href="https://alexhedley.com/nyctography/"&gt;https://alexhedley.com/nyctography/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GraphWidget SVG &lt;a href="https://github.com/AlexHedley/blashing/pull/279"&gt;https://github.com/AlexHedley/blashing/pull/279&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blashing/graph.png" alt="Graph" title="Graph"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Timeline &lt;a href="https://github.com/AlexHedley/blashing/pull/281"&gt;https://github.com/AlexHedley/blashing/pull/281&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blashing/timeline.png" alt="Timeline" title="Timeline"&gt;&lt;/p&gt;
+&lt;p&gt;I might try doing the timeline one manually, like I did with the others and see how it comes out in comparison.&lt;/p&gt;
+&lt;!-- ![Demo](images/blashing/demo.png "Demo") --&gt;
+&lt;!-- ![Original Screenshot](images/blashing/original_screenshot.png "Original Screenshot") --&gt;
+&lt;h2 id="site"&gt;🌍 Site&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alexhedley.com/blashing/"&gt;https://alexhedley.com/blashing/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;🔗 &lt;a href="https://github.com/AlexHedley/nyctography"&gt;https://github.com/AlexHedley/nyctography&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/AlexHedley/nyctography/issues/1"&gt;https://github.com/AlexHedley/nyctography/issues/1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nyctography/pull/2"&gt;https://github.com/AlexHedley/nyctography/pull/2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nyctography/tasks/385a0a7f-fbd9-49cd-afc6-ae6c48f43d98?author=AlexHedley"&gt;https://github.com/AlexHedley/nyctography/tasks/385a0a7f-fbd9-49cd-afc6-ae6c48f43d98?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/blashing"&gt;https://github.com/AlexHedley/blashing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
+&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Nyctography"&gt;Wikipedia – Nyctography&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.dafont.com/nyctographic.font"&gt;Nyctographic Font (dafont.com)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.dcode.fr/nyctography-lewis-carroll"&gt;dCode – Nyctography Tool&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://nyctotyper.netlify.app/"&gt;Nyctotyper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.cedricchase.com/blog/nyctography-in-the-modern-age"&gt;Nyctography in the Modern Age&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Shopify/dashing"&gt;https://github.com/Shopify/dashing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Smashing/smashing"&gt;https://github.com/Smashing/smashing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-		<summary>A form of substitution cipher writing created by Lewis Carroll</summary>
+		<summary>More updates/widgets in Blashing</summary>
 	</entry>
 </feed>
