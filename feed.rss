@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2026</copyright>
-		<pubDate>Fri, 04 Sep 2026 20:58:27 GMT</pubDate>
-		<lastBuildDate>Fri, 04 Sep 2026 20:58:27 GMT</lastBuildDate>
+		<pubDate>Mon, 19 Oct 2026 16:29:22 GMT</pubDate>
+		<lastBuildDate>Mon, 19 Oct 2026 16:29:22 GMT</lastBuildDate>
 		<item>
 			<title>GitHub Copilot</title>
 			<link>https://alexhedley.github.io/blog/posts/github-certifications-copilot</link>
@@ -1801,37 +1801,49 @@ End Sub
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Maya</title>
-			<link>https://alexhedley.github.io/blog/posts/maya</link>
-			<description>The native writing system of the Maya civilization of Mesoameric</description>
+			<title>Nyctography</title>
+			<link>https://alexhedley.github.io/blog/posts/nyctography</link>
+			<description>A form of substitution cipher writing created by Lewis Carroll</description>
 			<author>AlexHedley</author>
 			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/maya</guid>
+			<guid>https://alexhedley.github.io/blog/posts/nyctography</guid>
 			<pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Maya --&gt;
-&lt;p&gt;I'd first come across Maya in Nov 2023 and added it as a discussion on &lt;a href="https://alexhedley.github.io/blog/cistercian-numerals"&gt;Cistercian Numerals/&lt;/a&gt; &lt;a href="https://github.com/alex-hedley/cistercian-numerals/discussions/1"&gt;#1&lt;/a&gt; to work on later. As with most of these &lt;a href="https://alexhedley.com/projects/"&gt;projects&lt;/a&gt; I forgot about it. It wasn't until I was looking back through them all and though I know something that can help.&lt;/p&gt;
+			<content:encoded>&lt;!-- Nyctography --&gt;
+&lt;p&gt;To continue my journey of numerals and alphabets like &lt;a href="https://alexhedley.github.io/blog/kaktovik-numerals"&gt;Kaktovik Numerals&lt;/a&gt; and &lt;a href="https://alexhedley.github.io/blog/cistercian-numerals"&gt;Cistercian Numerals&lt;/a&gt; I kept a note of others to work on later, I've finally gotten round to producing a site for this too.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The native writing system of the Maya civilization of Mesoamerica — the only Mesoamerican writing system that has been substantially deciphered.&lt;/p&gt;
+&lt;p&gt;Nyctography is a form of substitution cipher writing created by Lewis Carroll (Charles Lutwidge Dodgson) in 1891.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; to the rescue :)&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/maya.png" alt="Maya" title="Maya"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/nyctography.jpeg" alt="Nyctography" title="Nyctography"&gt;&lt;/p&gt;
+&lt;p&gt;Back to my tool of the month &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; assigning it to the following issue &lt;a href="https://github.com/AlexHedley/nyctography/issues/1"&gt;#1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It produced a very clean site with 3 main parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Square Alphabet&lt;/li&gt;
+&lt;li&gt;Encoder&lt;/li&gt;
+&lt;li&gt;Character Builder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/nyctography.png" alt="Nyctography" title="Nyctography"&gt;&lt;/p&gt;
 &lt;h2 id="site"&gt;Site&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;🌍 &lt;a href="https://alexhedley.com/maya/"&gt;https://alexhedley.com/maya/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🌍 &lt;a href="https://alexhedley.com/nyctography/"&gt;https://alexhedley.com/nyctography/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;🔗 &lt;a href="https://github.com/AlexHedley/maya"&gt;https://github.com/AlexHedley/maya&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/maya/issues/1"&gt;https://github.com/AlexHedley/maya/issues/1&lt;/a&gt;
+&lt;li&gt;&lt;p&gt;🔗 &lt;a href="https://github.com/AlexHedley/nyctography"&gt;https://github.com/AlexHedley/nyctography&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/AlexHedley/nyctography/issues/1"&gt;https://github.com/AlexHedley/nyctography/issues/1&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/maya/pull/2"&gt;https://github.com/AlexHedley/maya/pull/2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/maya/tasks/d25d6bd9-457b-4ebe-941a-4465632370fb?author=AlexHedley"&gt;https://github.com/AlexHedley/maya/tasks/d25d6bd9-457b-4ebe-941a-4465632370fb?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nyctography/pull/2"&gt;https://github.com/AlexHedley/nyctography/pull/2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/nyctography/tasks/385a0a7f-fbd9-49cd-afc6-ae6c48f43d98?author=AlexHedley"&gt;https://github.com/AlexHedley/nyctography/tasks/385a0a7f-fbd9-49cd-afc6-ae6c48f43d98?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Maya_script"&gt;https://en.wikipedia.org/wiki/Maya_script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Nyctography"&gt;Wikipedia – Nyctography&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.dafont.com/nyctographic.font"&gt;Nyctographic Font (dafont.com)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.dcode.fr/nyctography-lewis-carroll"&gt;dCode – Nyctography Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nyctotyper.netlify.app/"&gt;Nyctotyper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.cedricchase.com/blog/nyctography-in-the-modern-age"&gt;Nyctography in the Modern Age&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
