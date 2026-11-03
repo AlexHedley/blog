@@ -5,8 +5,8 @@
 		<link>https://alexhedley.github.io/blog</link>
 		<description>Welcome to my blog!</description>
 		<copyright>Copyright © 2026</copyright>
-		<pubDate>Mon, 19 Oct 2026 16:29:53 GMT</pubDate>
-		<lastBuildDate>Mon, 19 Oct 2026 16:29:53 GMT</lastBuildDate>
+		<pubDate>Tue, 03 Nov 2026 19:32:57 GMT</pubDate>
+		<lastBuildDate>Tue, 03 Nov 2026 19:32:57 GMT</lastBuildDate>
 		<item>
 			<title>GitHub Copilot</title>
 			<link>https://alexhedley.github.io/blog/posts/github-certifications-copilot</link>
@@ -1801,47 +1801,37 @@ End Sub
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Blashing Updates</title>
-			<link>https://alexhedley.github.io/blog/posts/blashing-updates</link>
-			<description>More updates/widgets in Blashing</description>
-			<author>alexhedley</author>
-			<enclosure url="https://alexhedley.github.io/blog/posts/images/blashing/Banner.png" length="0" type="image" />
-			<guid>https://alexhedley.github.io/blog/posts/blashing-updates</guid>
+			<title>Maya</title>
+			<link>https://alexhedley.github.io/blog/posts/maya</link>
+			<description>The native writing system of the Maya civilization of Mesoameric</description>
+			<author>AlexHedley</author>
+			<enclosure url="https://alexhedley.github.io/blog/images/banner.png" length="0" type="image" />
+			<guid>https://alexhedley.github.io/blog/posts/maya</guid>
 			<pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;!-- # Blashing Updates --&gt;
-&lt;!-- ![Banner](images/blashing/Banner.png "Banner") --&gt;
-&lt;p&gt;Continuing on my &lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; journey of raising MRs and not finding time to review them, I thought I'd try some on the Blashing app.&lt;/p&gt;
-&lt;p&gt;I started with a Review, then tried to complete some outstanding work.&lt;/p&gt;
+			<content:encoded>&lt;!-- # Maya --&gt;
+&lt;p&gt;I'd first come across Maya in Nov 2023 and added it as a discussion on &lt;a href="https://alexhedley.github.io/blog/cistercian-numerals"&gt;Cistercian Numerals/&lt;/a&gt; &lt;a href="https://github.com/alex-hedley/cistercian-numerals/discussions/1"&gt;#1&lt;/a&gt; to work on later. As with most of these &lt;a href="https://alexhedley.com/projects/"&gt;projects&lt;/a&gt; I forgot about it. It wasn't until I was looking back through them all and though I know something that can help.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The native writing system of the Maya civilization of Mesoamerica — the only Mesoamerican writing system that has been substantially deciphered.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://alexhedley.github.io/blog/github-copilot"&gt;GitHub Copilot&lt;/a&gt; to the rescue :)&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/maya.png" alt="Maya" title="Maya"&gt;&lt;/p&gt;
+&lt;h2 id="site"&gt;Site&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Review and fixes &lt;a href="https://github.com/AlexHedley/blashing/pull/270"&gt;https://github.com/AlexHedley/blashing/pull/270&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Status Widget param &lt;a href="https://github.com/AlexHedley/blashing/pull/271"&gt;https://github.com/AlexHedley/blashing/pull/271&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Scheduler &lt;a href="https://github.com/AlexHedley/blashing/pull/277"&gt;https://github.com/AlexHedley/blashing/pull/277&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;MeterWidget as SVG &lt;a href="https://github.com/AlexHedley/blashing/pull/278"&gt;https://github.com/AlexHedley/blashing/pull/278&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blashing/gauge.png" alt="Graph" title="Gauge"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GraphWidget SVG &lt;a href="https://github.com/AlexHedley/blashing/pull/279"&gt;https://github.com/AlexHedley/blashing/pull/279&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blashing/graph.png" alt="Graph" title="Graph"&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Timeline &lt;a href="https://github.com/AlexHedley/blashing/pull/281"&gt;https://github.com/AlexHedley/blashing/pull/281&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://alexhedley.github.io/blog/images/blashing/timeline.png" alt="Timeline" title="Timeline"&gt;&lt;/p&gt;
-&lt;p&gt;I might try doing the timeline one manually, like I did with the others and see how it comes out in comparison.&lt;/p&gt;
-&lt;!-- ![Demo](images/blashing/demo.png "Demo") --&gt;
-&lt;!-- ![Original Screenshot](images/blashing/original_screenshot.png "Original Screenshot") --&gt;
-&lt;h2 id="site"&gt;🌍 Site&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alexhedley.com/blashing/"&gt;https://alexhedley.com/blashing/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🌍 &lt;a href="https://alexhedley.com/maya/"&gt;https://alexhedley.com/maya/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="code"&gt;&amp;lt;/&amp;gt; Code&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/AlexHedley/blashing"&gt;https://github.com/AlexHedley/blashing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="links"&gt;🔗 Links&lt;/h2&gt;
+&lt;li&gt;🔗 &lt;a href="https://github.com/AlexHedley/maya"&gt;https://github.com/AlexHedley/maya&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/maya/issues/1"&gt;https://github.com/AlexHedley/maya/issues/1&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Shopify/dashing"&gt;https://github.com/Shopify/dashing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/Smashing/smashing"&gt;https://github.com/Smashing/smashing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/maya/pull/2"&gt;https://github.com/AlexHedley/maya/pull/2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AlexHedley/maya/tasks/d25d6bd9-457b-4ebe-941a-4465632370fb?author=AlexHedley"&gt;https://github.com/AlexHedley/maya/tasks/d25d6bd9-457b-4ebe-941a-4465632370fb?author=AlexHedley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="links"&gt;🔗Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Maya_script"&gt;https://en.wikipedia.org/wiki/Maya_script&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
